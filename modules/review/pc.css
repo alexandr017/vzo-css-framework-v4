@@ -1,0 +1,320 @@
+.reviews h2 {
+    text-align: center;
+    width: 70%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.reviews .rating {
+    text-align: center;
+    width: 70%;
+}
+
+.sort {
+    list-style: none;
+    float: right;
+}
+
+.sort li .main {
+    color: #352D39 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort li .main svg{
+    margin-left: 5px;
+}
+
+
+.sort li {
+    margin-right: 50px;
+    position: relative;
+}
+
+.sort li a {
+    display: block;
+    padding: 8px;
+}
+
+.sub-menu-container {
+    display: flex;
+    position: absolute;
+    right: -9999px;
+    list-style:none;
+    padding: 10px 0 0 0;
+}
+
+.sort li:hover .sub-menu-container {
+    right: 0;
+}
+
+.sort li:hover svg{
+    transform: rotate(180deg);
+}
+
+.sub-nav_one-column {
+    z-index: 1;
+    background: #fff;
+}
+
+.sub-nav_one-column {
+    min-width:260px;
+    padding: 20px;
+}
+
+.sub-nav_one-column a {
+    transition: background ease .3s;
+    color: #87919F;
+}
+
+.sub-nav_one-column a:hover,
+.sub-nav_one-column a.active {
+    color: #2ED47A;
+    cursor: pointer;
+}
+
+.reviews .block-reviews {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.reviews .block-reviews .text-review .user-logo {
+    margin-top: 50px;
+}
+
+.reviews .block-reviews .text-review .user-logo svg {
+    position: absolute;
+}
+
+.reviews .block-reviews .text-review .user-logo span,
+.reviews .block-reviews .text-review .user-rating,
+.reviews .block-reviews .text-review .plus,
+.reviews .block-reviews .text-review .minus,
+.reviews .block-reviews .text-review .comment {
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+.reviews .block-reviews .text-review .user-logo span,
+.reviews .block-reviews .text-review .comment span:first-of-type,
+.reviews .block-reviews .text-review .replace div span:first-of-type {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.reviews .block-reviews .text-review .plus span,
+.reviews .block-reviews .text-review .minus span,
+.reviews .block-reviews .text-review .comment span{
+    display: block;
+}
+
+.reviews .block-reviews .text-review .plus span:first-of-type {
+    color: #2ED47A;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.reviews .block-reviews .text-review .minus span:first-of-type {
+    color: #FF4D4A;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.reviews .block-reviews .text-review .minus span:last-of-type,
+.reviews .block-reviews .text-review .plus span:last-of-type,
+.reviews .block-reviews .text-review .comment span:last-of-type {
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+.reviews .block-reviews .text-review .comment {
+    margin-bottom: 80px;
+}
+
+.reviews .block-reviews .text-review .comment a {
+    float: right;
+    border: none;
+    cursor: pointer;
+    margin-top: 21px;
+}
+
+.reviews .block-reviews .text-review hr {
+    margin-top:30px;
+    margin-bottom: 22px;
+    border: 1px solid #E7EBEE;
+}
+
+.reviews .block-reviews .text-review .replace {
+    margin-left: 130px;
+}
+
+.reviews .block-reviews .text-review .replace div svg {
+    position: absolute;
+    margin-left: -30px!important;
+    margin-top: 3px;
+}
+
+.reviews .block-reviews .text-review .replace div span:last-child {
+    margin-top:5px;
+}
+
+.reviews .aside-rating {
+    height: 450px;
+    margin-left: 50px;
+}
+
+.reviews .aside-rating .scale {
+    width: 85%;
+    height: 6px;
+    background:#EBEBEB;
+    border-radius: 28px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.reviews .aside-rating .scale .percent {
+    height: 6px;
+    border-radius: 28px;
+    margin: 0;
+}
+
+.reviews .aside-rating .reviews-rating {
+    font-weight: 600;
+    margin: 25px 10px 15px 0;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.reviews .aside-rating .info{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.reviews .aside-rating .info .info-title {
+    font-size: 0.87em;
+    color:#87919f;
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.reviews .aside-rating .info .reviews-count {
+    font-size: 0.87em;
+    color:#87919f;
+    margin-bottom: 0;
+    font-weight: 700;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 80%;
+}
+
+.reviews .aside-rating .buttons{
+    align-items: center;
+    margin-top: 26px;
+}
+
+.reviews .aside-rating .buttons .btn{
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0 2em;
+    color: #57BD62;
+    background: #fff;
+    border: 1px solid #2ED47A;
+}
+
+.reviews .review-f {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 115px;
+}
+
+.reviews .review-f .review-form {
+    width:39%;
+}
+
+.reviews .review-f .review-form input,
+.reviews .review-f .review-form textarea {
+    background: #F6F7F9;
+    color: #C3CAD3;
+    border-radius: 10px;
+    width: 453px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 14px 42px;
+    font-size: 0.87em;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+.reviews .review-f .review-form input {
+    padding: 14px 42px;
+}
+
+.reviews .review-f .review-form textarea {
+    height: 144px;
+    resize: none;
+    padding:21px 42px;
+}
+
+.reviews .review-f .review-form .form-svg {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.reviews .review-f .review-form .form-svg_minus {
+   margin-top: 35px;
+}
+
+.reviews .review-f .review-form .buttons {
+    margin-top: 20px;
+    float: left;
+}
+
+.reviews .review-f .review-form .buttons .btn{
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0 2em;
+    color: #57BD62;
+    background: #fff;
+    border: 1px solid #2ED47A;
+}
+
+.reviews .review-f .review-form .rating {
+    text-align: left;
+    margin: 23px 0;
+}
+
+.reviews .review-f .info {
+    width: 30%;
+    height: 324px;
+    margin-top: 145px;
+    margin-left: 45px;
+    padding: 76px 43px 80px 53px;
+    color: #352D39;
+}
+
+.reviews .review-f .info svg {
+    margin-top: 30px;
+}
+
+
+h4:not(.review-f h4){
+    text-align: center;
+}
+
