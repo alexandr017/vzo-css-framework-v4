@@ -1,0 +1,25 @@
+.pagination {
+    font-family: 'Proxima Nova Rg';
+    font-size: .75em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.pagination .page {
+    margin:0 15px;
+    border-radius: 5px;
+    color: #87919F !important;
+    text-decoration: none;
+}
+.pagination .active, .pagination .page:hover {
+    color: #2ED47A !important;
+    font-size: 1.5em;
+    display: flex;
+    align-items: flex-start;
+}
+
+.pagination .ellipsis {
+    color: #87919F;
+    margin:0 17px;
+}

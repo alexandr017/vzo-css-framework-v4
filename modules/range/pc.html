@@ -1,0 +1,176 @@
+<h1>Range</h1>
+
+<div class="main-range">
+    <div class="loan shadow border-radius">
+
+        <div class="range-title">Рассчитать займ в Займер</div>
+
+        <div class="loan-title">Сумма</div>
+
+        <div class=" first-slider-container range">
+            <input type="range" min="0" max="100" step="1" value="50"class="tick" >
+        </div>
+
+        <div class="overpayment">
+            <span>500</span>
+            <span>7875</span>
+            <span>15250</span>
+            <span>22625</span>
+            <span>30000</span>
+        </div>
+
+        <hr>
+        <div class="sum">
+
+            <div>
+                <span>Сумма:</span>
+                <span>20 100 руб</span>
+            </div>
+
+            <div>
+                <span>Срок:</span>
+                <span>183 дн.</span>
+            </div>
+
+            <div>
+                <span>Процентная ставка:</span>
+                <span>1%</span>
+            </div>
+
+            <div>
+                <span>Переплата:</span>
+                <span class="last">36 783 руб</span>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <a class="btn">Оформить займ</a>
+
+        </div>
+
+        <div class="note">
+            <p>
+                Вышеуказанная форма используется для имитации расчета стоимости займа с ориентировочными значениями.
+                Для уточнения информации нажмите кнопку. Минимальная сумма займа: 2 000 рублей, максимальная: 30 000 рублей.
+                Процентная ставка в год: 365% . Минимальный срок: 5 дней, максимальный: 365 дней. Предложение не является
+                офертой.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="credit-sum">
+
+        <span>Сумма кредита</span>
+
+        <div class="calc">
+            <div class="range-slider">
+                <input type="number" id="sum" class="range-value" step="100" min="0" max="1200000" value="486000"  onclick="calc()" />
+                <div class="clr"></div>
+                <input class="input-range" type="range" step="100" min="0" max="1200000" value="486000"   onclick="calc()">
+            </div>
+        </div>
+
+        <div class="select">
+
+            <h4>Подбор расчетного счета</h4>
+
+
+            <div class=" second-slider-container" style="width:857px; margin-top:21px;">
+                <span>Количество платежей:</span>
+                <span id="count_range_input_sum">50</span><br>
+                <input  type="range" min="0" max="100" value="50" step="1" class="last-slider" id="count_range_input">
+            </div>
+
+            <div id="container" style="margin-top:-20px; "><ul id="ul"></ul></div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    var countRage = document.getElementById("count_range_input"),
+        res = document.getElementById("count_range_input_sum");
+
+    countRage.addEventListener("input", function() {
+        res.innerHTML = "" + countRage.value;
+    }, false);
+
+
+
+    document.addEventListener('input', event => {
+        const {value, min, max, parentNode} = event.srcElement;
+        parentNode
+            .querySelector('.l-slider-track > div')
+            .style
+            .width = 100 * (value - min) / (max - min) + '%';
+    });
+    $('input[type=range]').on('input', function(e){
+        var min = e.target.min,
+            max = e.target.max,
+            val = e.target.value;
+        $(e.target).css({
+            'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
+        });
+    }).trigger('input');
+
+    function getListContent() {
+        let result = [];
+
+        for(let i = 0; i<=100; i+=5) {
+            let li = document.createElement('li');
+            li.append(i);
+            result.push(li);
+        }
+
+        return result;
+    }
+
+    ul.append(...getListContent());
+
+    function imposeMinMax(el) {
+        if (el.value != "") {
+            if (parseInt(el.value) < parseInt(el.min)) {
+                el.value = el.min;
+            } else if (parseInt(el.value) > parseInt(el.max)) {
+                el.value = el.max;
+            }
+        }
+    }
+
+    document.addEventListener('input', event => {
+        const {value, min, max, parentNode} = event.srcElement;
+        parentNode
+            .querySelector('.l-slider-track > div')
+            .style
+            .width = 100 * (value - min) / (max - min) + '%';
+    });
+    $('input[type=range]').on('input', function(e){
+        var min = e.target.min,
+            max = e.target.max,
+            val = e.target.value;
+        $(e.target).css({
+            'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
+        });
+    }).trigger('input');
+    range = $('.range-slider > .input-range');
+    value = $('.range-slider > .range-value');
+    value.val(range.attr('value'));
+    range.on('input', function(){
+        monparent=this.parentNode;
+        value=$(monparent).find('.range-value');
+        $(value).val(this.value);
+    });
+    value.on('input', function(){
+        monparent=this.parentNode;
+        range=$(monparent).find('.input-range');
+        $(range).val(this.value);
+    });
+    function calc() {
+        var summa = document.getElementById('sum').value;
+    }
+</script>

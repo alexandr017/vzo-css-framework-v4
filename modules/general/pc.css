@@ -11,13 +11,17 @@ body{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #292929;
+    color: #352D39;
     text-align: left;
     background-color: #fff;
 }
 
 body, input, textarea, select{
     font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+.btn {
+    font-family: 'Inter', sans-serif;
 }
 
 a, a:visited:not(a.btn,.breadcrumbs a) {
@@ -33,6 +37,27 @@ img {
 }
 p {margin-top: 0;}
 
+.content ul li{
+    position: relative;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+
+.content ul li:before{
+    content: "";
+    background: #2ED47A;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.lead-wrap li::marker{
+    color: #2ED47A;
+}
 
 .container{
     max-width: 1200px;

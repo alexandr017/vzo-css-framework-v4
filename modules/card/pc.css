@@ -195,7 +195,6 @@
 
 .card-wrap .card-body .hidden-card-info .two-columns .scale-card .scale-card-el .scale-text {
     font-size: .87em;
-    color:#352D39;
     text-align: center;
     margin-top: 5px;
 }
@@ -268,7 +267,7 @@
 
 .hidden-card-info .tabs-items .tabcontent .table .tr .td:first-of-type {
     width: 35%;
-    background: #FAFAFA;
+    background: #F6F7F9;
     font-weight: 600;
 }
 
