@@ -1,0 +1,36 @@
+.compare-programme .compare-table{
+    margin-top: 33px;
+}
+
+.compare-programme .compare-table .tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.compare-programme .compare-table .tr .td:nth-child(2){
+    border-left: 1px solid #EBEDEF;
+}
+
+.compare-programme .compare-table .tr .td {
+    padding: 42px 86px;
+    width: 50%;
+    border-left: 1px solid #EBEDEF;
+    border-left: none;
+}
+
+.compare-programme .compare-table .tr .td h5{
+    font-weight: 600;
+}
+
+.compare-programme .compare-table .tr .th {
+    display: flex;
+    align-items: center;
+}
+
+.compare-programme .compare-table .tr .td  ul  {
+    padding: 0 !important;
+}
+
+.compare-programme .compare-table .tr .td  ul li {
+    margin-top: 6px;
+}

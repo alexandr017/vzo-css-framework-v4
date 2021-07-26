@@ -1,0 +1,125 @@
+.tab-wrap {
+    display: flex;
+    flex-direction: row;
+}
+.tab {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.tab .tablinks {
+    padding: 16px;
+    cursor: pointer;
+}
+
+.tab .tablinks svg {
+    stroke: #352D39;
+    fill:  #352D39;
+    transform: rotate(-90deg);
+    margin-right: 10px;
+}
+
+.tab .tablinks.on {
+    color: #2ED47A;
+}
+
+.tab .tablinks.on svg {
+    transform: rotate(0deg);
+    fill: #2ED47A;
+    stroke: #2ED47A;
+}
+
+
+.tabs-items {
+    margin-right: -100px;
+}
+
+.tabs-items .tabcontent.on {
+    display:block;
+    margin-left: 100px;
+    width: 622px;
+}
+
+.tabs-items .tabcontent {
+    display: none;
+}
+
+.tabs-items .tabcontent .vertical-tab-list ul,
+.tabs-items .tabcontent .vertical-tab-support {
+    padding: 40px 0;
+    margin: 0;
+}
+
+.tabs-items .tabcontent .vertical-tab-support .content-title {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+
+
+.tabs-items .tabcontent .vertical-tab-support .content-body {
+    margin-top: 17px;
+    margin-bottom: 20px;
+}
+
+.tabs-items .tabcontent .vertical-tab-support .table .tr .td {
+    background: #fff !important;
+    padding-left: 0 !important;
+    font-weight: 400 !important;
+    font-size: 1em;
+}
+
+.tabs-items .tabcontent .vertical-tab-support .table .tr .td:first-of-type {
+    width: 20%;
+}
+
+.tabs-items .tabcontent .vertical-tab-support .table .tr .td:last-of-type {
+    width: 80%;
+}
+
+.tabs-items .tabcontent .vertical-tab-support .content-soc-icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tabs-items .tabcontent .vertical-tab-support .content-soc-icon svg {
+    margin-right: 22px;
+}
+
+.tabs-items .tabcontent .vertical-tab-support .content-body .content-body-info {
+    display: flex;
+}
+
+.tabs-items .tabcontent .vertical-tab-support .content-address {
+    margin-top: 15px;
+}
+
+.tabs-items .tabcontent .vertical-tab-support .content-map {
+    margin-top: 15px;
+}
+
+.tabs-items .tabcontent .table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.tabs-items .tabcontent .table .tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs-items .tabcontent .table .tr .td {
+    padding: 8px 20px;
+    line-height: 1.5em;
+}
+
+
+.tabs-items .tabcontent .table .tr .td:first-of-type {
+    width: 35%;
+    background: #F6F7F9;
+    font-weight: 600;
+}
+
+.tabs-items .tabcontent .table .tr .td:last-of-type {
+    width: 65%;
+}

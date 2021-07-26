@@ -1,0 +1,31 @@
+.compare-programme {
+    padding: 30px;
+}
+
+.compare-programme h4 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+.compare-programme .compare-list{
+    margin-top: 33px;
+}
+
+
+.compare-programme .compare-list .compare-body .compare-body-inner h5{
+    font-weight: 600;
+}
+
+.compare-programme .compare-list .compare-body .compare-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.compare-programme .compare-list .compare-body .compare-body-inner  ul  {
+    padding: 0 !important;
+}
+
+.compare-programme .compare-list .compare-body .compare-body-inner  ul li {
+    margin-top: 6px;
+}

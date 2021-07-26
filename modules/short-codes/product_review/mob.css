@@ -1,20 +1,23 @@
+.product_review-block,
+.product_review-short-block {
+    width: 100%;
+}
 .rat-block-header {
-    display: flex;
-    padding: 2em;
+    padding: 20px;
     margin-top: 37px;
 }
 
 .rat-block-sticker {
+    margin-top: 30px;
     float: right;
-    background: #FFE769;
-    border-radius: 0px 25px;
+    background: #FFF697;
+    border-radius: 25px 0px 0px 25px;
     width: 154px;
-    height: 76px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 1.1em;
+    font-weight: 600;
 }
 
 .rat-block-logo {
@@ -22,17 +25,15 @@
     height: 100px;
 }
 
-.rat-block-text {
-    margin-left: 64px;
-}
 
 .rat-block-title {
     font-weight: 700;
     font-size: 1.25em;
+    margin-top: 10px;
 }
 
 .rat-block-content {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.1em;
     line-height: 1.6em;
 }
@@ -42,7 +43,7 @@
 }
 
 .rat-block-info .block-info_content {
-    padding: 35px 82px;
+    padding: 23px 35px;
     background: #F6F7F9;
     font-size: 1.1em;
     line-height: 1.6;
@@ -52,17 +53,16 @@
 .rat-block-items {
     justify-content: space-around;
     align-items: stretch;
-    margin: 2em 0;
     padding: 0 2em;
 }
 
 .rat-block-items .rat_block_item {
-    flex-grow: 5;
+    margin-top: 20px;
     padding: 16px 20px;
 }
 
-.rat_block_item .rat_block_item {
-    flex-grow: 2;
+.rat-block-items .rat_block_item span:last-of-type{
+    float: right;
 }
 
 .rat-block-items .title {
@@ -100,13 +100,16 @@
     top: 8px;
 }
 
-.rat-block .button {
-   display: flex;
+.product_review-block .button,
+.product_review-short-block .button{
+    display: flex;
     justify-content: center;
     padding-bottom: 36px;
+    margin-top: 20px;
 }
 
-.rat-block .button .btn {
+.product_review-block .button .btn,
+.product_review-short-block .button .btn {
     margin-left: 30px;
     width: 230px;
     height: 46px;
@@ -120,7 +123,70 @@
     font-weight: 600;
 }
 
+.rat-block-table table {
+    margin-top: 20px;
+}
+
 .rat-block-table table tr td {
-    padding: 8px 65px;
     font-size: .87em;
 }
+
+.rat-block-table table tr td:first-of-type{
+    width:35px;
+    padding: 5px 30px !important;
+}
+
+.rat-block-table table tr td:last-of-type{
+    width:65px;
+    padding-left: 10px;
+}
+
+.product_review-short-block {
+    margin-top: 50px;
+}
+
+.accordion-container .plus-minus-title {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 40px 0 30px 35px;
+}
+
+.accordion {
+    background-color: #fff;
+    cursor: pointer;
+    padding: 16px 29px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.accordion span {
+   padding-left: 20px;
+}
+
+.accordion .arrow {
+    transform: rotate(-90deg);
+}
+
+.accordion.active .arrow {
+    transform: rotate(0deg);
+}
+
+.active, .accordion:hover {
+    background-color: #fff;
+}
+
+.panel {
+    padding: 0 35px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
+
