@@ -164,11 +164,13 @@
     </div>
 </div>
 
+<div class="search-bg"></div>
+
 <div class="search-block" style="display: none;">
     <form>
         <div class="search-block-container">
 
-            <input class="search-block__input" type="text" placeholder="Что хотите найти?">
+            <input class="search-block__input" id="searchInput" type="text" placeholder="Что хотите найти?">
             <div>
                 <div class="search-block__button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -186,15 +188,7 @@
             </div>
         </div>
     </form>
-
-    <!--<ul>-->
-        <!--<li>Value 1</li>-->
-        <!--<li>Value 2</li>-->
-        <!--<li>Value 3</li>-->
-        <!--<li>Value 4</li>-->
-    <!--</ul>-->
 </div>
-<div class="body"></div>
 
 <div class="modal-choose-city" id="modal-city">
     <div class="modal-bg modal-exit"></div>
@@ -206,21 +200,18 @@
                     <path d="M8.32868 7.50002L14.8284 1.00029C15.0572 0.771451 15.0572 0.400436 14.8284 0.171628C14.5996 -0.0571801 14.2285 -0.0572094 13.9997 0.171628L7.49999 6.67136L1.00029 0.171628C0.771451 -0.0572094 0.400436 -0.0572094 0.171628 0.171628C-0.0571801 0.400466 -0.0572094 0.771481 0.171628 1.00029L6.67133 7.49999L0.171628 13.9997C-0.0572094 14.2286 -0.0572094 14.5996 0.171628 14.8284C0.286032 14.9428 0.436003 15 0.585973 15C0.735943 15 0.885885 14.9428 1.00032 14.8284L7.49999 8.32868L13.9997 14.8284C14.1141 14.9428 14.2641 15 14.414 15C14.564 15 14.714 14.9428 14.8284 14.8284C15.0572 14.5996 15.0572 14.2285 14.8284 13.9997L8.32868 7.50002Z" fill="black"/>
                 </svg>
             </button>
+            <div class="modal-block-container">
 
-            <div class="search-block-container">
-
-                <input class="search-block__input" type="text" placeholder="Например, Новосибирск">
-
+                <input class="modal-block__input" id="searchCity" type="text" placeholder="Например, Новосибирск">
                 <div>
-                    <div class="clear">
+                    <div class="clear modal-close-block__button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                             <rect width="1.69846" height="16.4653" rx="0.849231" transform="matrix(0.710426 -0.703772 0.70577 0.708441 0.000488281 1.19531)" fill="#87919F"/>
                             <rect width="1.69845" height="16.4655" rx="0.849226" transform="matrix(0.708106 0.706106 -0.708106 0.706106 11.6592 0.00195312)" fill="#87919F"/>
                         </svg>
                     </div>
                 </div>
-
-                <div class="search-block__button">
+                <div class="modal-search-block__button">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M15.2124 14.5735L11.4044 10.6129C12.3835 9.44901 12.92 7.98455 12.92 6.45999C12.92 2.89801 10.022 0 6.45999 0C2.89801 0 0 2.89801 0 6.45999C0 10.022 2.89801 12.92 6.45999 12.92C7.79721 12.92 9.07152 12.5167 10.161 11.751L13.998 15.7416C14.1583 15.9082 14.374 16 14.6052 16C14.824 16 15.0316 15.9166 15.1891 15.7649C15.5239 15.4428 15.5346 14.9085 15.2124 14.5735ZM6.45999 1.68522C9.09286 1.68522 11.2348 3.82713 11.2348 6.45999C11.2348 9.09286 9.09286 11.2348 6.45999 11.2348C3.82713 11.2348 1.68522 9.09286 1.68522 6.45999C1.68522 3.82713 3.82713 1.68522 6.45999 1.68522Z" fill="#87919F"/>
@@ -279,6 +270,109 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
+
+    function autocompleteCity(input, arr) {
+        var focus;
+        input.addEventListener("input", function(e) {
+            var a, b, i, val = this.value;
+            close();
+            // let searchBg = document.getElementsByClassName('search-bg')[0]
+            let searchCityModule = document.getElementsByClassName('modal-block__input')[0]
+            if (!val) { return false;}
+            focus = -1;
+            a = document.createElement("div");
+            a.setAttribute("id", this.id + "autocomplete-city-list");
+            a.setAttribute("class", "autocomplete-city-items");
+            this.parentNode.appendChild(a);
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                    // searchBg.style.display = 'block';
+                    searchCityModule.style.border = 'none';
+                    searchCityModule.style.borderRadius = '25px 25px 0 0';
+                    searchCityModule.style.boxShadow = '0px 6px 20px rgba(135, 145, 159, 0.15)';
+                    b = document.createElement("div");
+                    b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                    b.innerHTML += arr[i].substr(val.length);
+                    b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                    b.addEventListener("click", function(e) {
+                        input.value = this.getElementsByTagName("input")[0].value;
+                        close();
+                    });
+                    a.appendChild(b);
+                }
+            }
+        });
+
+        function close(elem) {
+            // let searchBg = document.getElementsByClassName('search-bg')[0]
+            let searchCityModule = document.getElementsByClassName('search-block__input')[0]
+            var x = document.getElementsByClassName("autocomplete-city-items");
+            for (var i = 0; i < x.length; i++) {
+                if (elem != x[i] && elem != inp) {
+                    x[i].parentNode.removeChild(x[i]);
+                    // searchBg.style.display = 'none';
+                    searchCityModule.style.border = '1px solid #C3CAD3';
+                    searchCityModule.style.borderRadius = '25px';
+                }
+            }
+        }
+        document.addEventListener("click", function (el) {
+            close(el.target);
+        });
+    }
+    var searchCity = ["Новосибирск","Новокузнецк","Новочеркасск","Новороссийск","Норильск"];
+    autocompleteCity(document.getElementById("searchCity"), searchCity);
+
+    function autocomplete(inp, arr) {
+        var currentFocus;
+        inp.addEventListener("input", function(e) {
+            var a, b, i, val = this.value;
+            closeAllLists();
+            let searchBg = document.getElementsByClassName('search-bg')[0]
+            let searchModule = document.getElementsByClassName('search-block__input')[0]
+            if (!val) { return false;}
+            currentFocus = -1;
+            a = document.createElement("div");
+            a.setAttribute("id", this.id + "autocomplete-list");
+            a.setAttribute("class", "autocomplete-items");
+            this.parentNode.appendChild(a);
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                    searchBg.style.display = 'block';
+                    searchModule.style.border = 'none';
+                    searchModule.style.borderRadius = '25px 25px 0 0';
+                    b = document.createElement("div");
+                    b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                    b.innerHTML += arr[i].substr(val.length);
+                    b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                    b.addEventListener("click", function(e) {
+                        inp.value = this.getElementsByTagName("input")[0].value;
+                        closeAllLists();
+                    });
+                    a.appendChild(b);
+                }
+            }
+        });
+
+        function closeAllLists(element) {
+            let searchBg = document.getElementsByClassName('search-bg')[0]
+            let searchModule = document.getElementsByClassName('search-block__input')[0]
+            var x = document.getElementsByClassName("autocomplete-items");
+            for (var i = 0; i < x.length; i++) {
+                if (element != x[i] && element != inp) {
+                    x[i].parentNode.removeChild(x[i]);
+                    searchBg.style.display = 'none';
+                    searchModule.style.border = '1px solid #C3CAD3';
+                    searchModule.style.borderRadius = '25px';
+                }
+            }
+        }
+        document.addEventListener("click", function (e) {
+            closeAllLists(e.target);
+        });
+    }
+    var links = ["Займы без отказа","Займы без залога","Запуск нового МФО Займиго","Займиго проводит акцию"];
+    autocomplete(document.getElementById("searchInput"), links);
 
     $(window).scroll(function(){
         if ($(window).scrollTop() > 100){
