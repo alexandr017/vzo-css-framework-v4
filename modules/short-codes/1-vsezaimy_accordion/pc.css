@@ -1,12 +1,12 @@
 .accordion {
     background-color: #fff;
+    font-weight: 700;
     cursor: pointer;
     padding: 16px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 18px;
     transition: 0.5s;
     display: flex;
     flex-direction: row;
@@ -61,7 +61,6 @@
 
 
 .second .accordion {
-
     display: flex;
     justify-content: left;
 }
@@ -72,8 +71,8 @@
 
 
 .second .accordion span {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 1.1em;
+    font-weight: 700;
     font-family: 'Manrope';
     margin-left: 20px;
 }

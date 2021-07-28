@@ -41,7 +41,7 @@
     display: flex;
     position: absolute;
     right: -9999px;
-    list-style:none;
+    list-style: none;
     padding: 10px 0 0 0;
 }
 
@@ -193,14 +193,14 @@
 }
 
 .reviews .aside-rating .info .info-title {
-    font-size: 0.87em;
+    font-size: 0.75em;
     color:#87919f;
     margin: 5px 0;
     font-weight: 700;
 }
 
 .reviews .aside-rating .info .reviews-count {
-    font-size: 0.87em;
+    font-size: 0.75em;
     color:#87919f;
     margin-bottom: 0;
     font-weight: 700;
@@ -216,16 +216,15 @@
 
 .reviews .aside-rating .buttons .btn{
     margin: 0 auto;
-    font-family: 'Inter';
-    font-weight: 600;
+    font-family: 'Inter', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 50px;
+    width: 190px;
+    height: 44px;
     cursor: pointer;
     padding: 0 2em;
-    color: #57BD62;
+    color:#2ED47A;
     background: #fff;
     border: 1px solid #2ED47A;
 }
@@ -281,7 +280,7 @@
 
 .reviews .review-f .review-form .buttons .btn{
     margin: 0 auto;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     display: flex;
     align-items: center;

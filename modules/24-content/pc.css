@@ -1,63 +1,66 @@
-.content {
+.main-content {
     display: flex;
 }
 
-.content .content-block {
+.main-content .content-block {
     width: 50%;
     float: right;
 }
 
-.content .content-block .left-btn {
+.main-content .content-block .left-btn {
     position: absolute;
     right: 50%;
 }
 
-.content .h2 {
+.main-content .h2 {
     font-weight: 600;
 }
 
-.content .content-block .close_first-element {
+.main-content .content-block .close_first-element {
     position: absolute;
     right: 48%;
     margin-top: 120px;
     cursor: pointer;
 }
 
-.content .content-block .content-list {
+.main-content .content-block .content-list {
     margin-top: 140px;
     padding: 20px 41px;
     width: 400px;
     float: right;
 }
 
-.content .content-block .content-list ul{
+.main-content .content-block .content-list .h2 {
+    line-height: 1.3em;
+}
+
+.main-content .content-block .content-list ul{
     list-style-type: none;
     padding: 0;
 }
 
-.content .content-block .content-list ul li {
+.main-content .content-block .content-list ul li {
     display: flex;
     align-items: flex-start;
     margin-top: 10px;
 }
 
-.content .content-block .content-list ul li a {
+.main-content .content-block .content-list ul li a {
     margin-left: 10px;
     color: #87919F;
-    font-size: 1em;
 }
 
-.content .content-block .content-list ul li a:hover {
+.main-content .content-block .content-list ul li a:hover {
     color: #2ED47A;
     cursor: pointer;
 }
 
-.content .content-block_second .right-btn {
+.main-content .content-block_second .right-btn {
     position: absolute;
     left: 52%;
 }
 
-.content .content-block_second .close_second-element {
+.main-content .content-block_second .close_second-element {
     position: absolute;
     margin-top: 120px;
     margin-left: 350px;
@@ -65,32 +68,31 @@
 }
 
 
-.content .content-block_second .content-second-list {
+.main-content .content-block_second .content-second-list {
     margin-top: 140px;
     padding: 20px 25px;
     width: 300px;
     margin-left: 50px;
 }
 
-.content .content-block_second .content-second-list ul {
+.main-content .content-block_second .content-second-list ul {
     list-style-type: none;
     padding: 0;
 }
 
-.content .content-block_second .content-second-list ul li {
+.main-content .content-block_second .content-second-list ul li {
     display: flex;
     align-items: flex-start;
     line-height: 20px;
     margin-top: 10px;
 }
 
-.content .content-block_second .content-second-list ul li a {
+.main-content .content-block_second .content-second-list ul li a {
     margin-left: 10px;
     color: #87919F;
-    font-size: 1em;
 }
 
-.content .content-block_second .content-second-list ul li a:hover {
+.main-content .content-block_second .content-second-list ul li a:hover {
     color: #2ED47A;
     cursor: pointer;
 }

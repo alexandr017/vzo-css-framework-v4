@@ -5,6 +5,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 0 1.5em;
+    font-family: 'Inter', sans-serif;
 }
 
 .header .logo {
@@ -36,33 +37,35 @@
 }
 
 .header .links a.main {
-    color: #37383D;
+    color: #222735;
     margin-right: 10px;
-    stroke: #37383D;
+    stroke: #222735;
 }
 
 .header .links a.main_active {
     color: #2ED47A !important;
+    font-weight: 600;
 }
 
 .header .links a.main-last {
-    color:#37383D;
-    stroke: #37383D;
+    color: #222735;
+    stroke: #222735;
+
 }
 
 .header .links a.secondary-last,
 .header .links a.secondary {
-    color: #37383D;
+    color: #222735;
     margin-left: 10px;
 }
 
 .header .icons {
     justify-content: space-between;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .header .icons .search{
-    stroke: #37383D;
+    stroke: #222735;
     margin-left: 10px;
 }
 
@@ -74,8 +77,8 @@
 }
 
 .header .icons .header-icon svg.icon{
-    stroke: #37383D;
-    fill:#37383D;
+    stroke: #222735;
+    fill: #222735;
 }
 
 .header .icons .header-icon svg.icon:hover,
@@ -87,7 +90,7 @@
 }
 
 .header .icons .header-icon:first-of-type{
-    margin-right: 26px;
+    margin-right: 20px;
 }
 
 .header .icons a {
@@ -107,9 +110,13 @@
 
 
 .links,
-.choose-city,
 .auth-icon {
-    margin-left: 20px;
+    margin-left: 15px;
+    list-style: none;
+}
+
+.choose-city {
+    margin-left: 10px;
     list-style: none;
 }
 
@@ -155,6 +162,7 @@
     left: -9999px;
     list-style: none;
     padding: 15px 0 0 0;
+
 }
 
 .auth-icon li:hover .sub-menu-container-auth {
@@ -169,12 +177,13 @@
 
 .auth-icon li .sub-menu-container-auth .sub-nav_one-column a{
     margin-top: 10px;
+    font-family: 'Proxima Nova Rg', sans-serif;
 }
 
 .choose-city li a svg ,
 .auth-icon li a svg {
-    stroke: #37383D;
-    fill: #37383D;
+    stroke: #222735;
+    fill: #222735;
 }
 
 .links > li:hover > a,
@@ -184,6 +193,7 @@
     color: #2ED47A !important;
     stroke: #2ED47A !important;
     fill:  #2ED47A !important;
+    font-weight: 600;
 }
 
 .sub-nav_one-column, .sub-nav_two-column {
@@ -212,7 +222,7 @@
 
 .sub-nav_one-column a, .sub-nav_two-column a {
     transition: background ease .3s;
-    color: #37383D !important;
+    color: #222735 !important;
 }
 
 .sub-nav_one-column a:hover,
@@ -220,11 +230,13 @@
 .sub-nav_one-column a.active,
 .sub-nav_two-column a.active {
     color: #2ED47A !important;
+    font-weight: 600;
 }
 
-.choose-city li:hover .sub-menu-container-city .sub-nav_one-column a {
-    color: #4FABFA !important;
-    border-bottom: 1px dashed #4FABFA !important;
+.choose-city li:hover .sub-menu-container-city .sub-nav_one-column span {
+    color: #4FABFA;
+    border-bottom: 1px dashed #4FABFA;
+    cursor: pointer;
 }
 
 .modal-choose-city {
@@ -287,9 +299,11 @@
 .modal__title {
     font-size: 1.18em;
     margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
-.modal-close-block__button {
+.modal-clear-block__button {
     position: absolute;
     margin-left: 420px;
     cursor: pointer;
@@ -324,7 +338,7 @@
 }
 
 .modal-list__el a {
-    color: #87919F !important;
+    color: #95A5B0 !important;
 }
 
 .modal-list__el a:hover {
@@ -360,18 +374,19 @@
 }
 
 .search-block__input,
-.modal-block__input{
+.modal-block__input {
     width: 100%;
     border-radius: 23px;
     height: 50px;
-    border: 1px solid #C3CAD3;
+    border: 1px solid #C2CFD8;
     outline:none;
     font-size:0.87em;
     padding: 0 25px;
 }
 
-.search-block__input::placeholder {
-    color: #C3CAD3;
+.search-block__input::placeholder,
+.modal-block__input::placeholder {
+    color: #C2CFD8;
 }
 
 .search-block__button {
@@ -430,7 +445,6 @@
     cursor: pointer;
     font-size: 1em;
     background: #fff;
-    color: #222735;
 }
 .autocomplete-items div:hover {
     background: #F6F7F9;
@@ -468,23 +482,25 @@
     position: absolute;
     width: 457px;
     z-index: 999;
-    top: 120px;
+    top: 118px;
     left: 30px;
     right: 0;
     border-radius: 0 0 25px 25px;
-    overflow: auto;
-    max-height: 100px;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 120px;
     border: none;
-    box-shadow: 0px 6px 20px rgba(135, 145, 159, 0.15);
+    box-shadow: -2px 18px 30px 0px rgba(135, 145, 159, 0.15);
 }
+
 .autocomplete-city-items div {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1em;
     background: #fff;
     color: #222735;
-
 }
+
 .autocomplete-city-items div:hover {
     background: #F6F7F9;
     color: #2ED47A;
@@ -507,15 +523,6 @@
 }
 
 .autocomplete-city-items::-webkit-scrollbar {
-    width: 5px;
-    background: #fff;
+    width: 0;
 }
-
-.autocomplete-city-items::-webkit-scrollbar-thumb {
-    height: 41px;
-    background: rgba(135, 145, 159, 0.4);
-    border-radius: 2px;
-}
-
-
 

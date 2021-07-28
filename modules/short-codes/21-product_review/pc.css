@@ -45,7 +45,7 @@
     padding: 35px 82px;
     background: #F6F7F9;
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.6em;
     font-weight: 600;
 }
 
@@ -133,7 +133,6 @@
     padding: 40px;
 }
 
-
 .product_review-short-block .rat-block-items {
     padding: 0;
 }
@@ -164,7 +163,7 @@
     border: none;
     text-align: left;
     outline: none;
-    font-size: 18px;
+    font-size: 1.1em;
     transition: 0.5s;
     display: flex;
     flex-direction: row;

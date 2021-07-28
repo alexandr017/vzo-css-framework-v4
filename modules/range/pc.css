@@ -142,9 +142,8 @@ input[type=range]::-moz-range-thumb {
 }
 
 .main-range .loan .note p {
-    margin-top: 30px;
+    margin-top: 38px;
     font-size: 0.75em;
-    font-style: italic;
     line-height: 1.31em;
     margin-left: 30px;
     margin-right: 30px;
@@ -169,7 +168,7 @@ input[type=range]::-moz-range-thumb {
 
 .main-range .select h4 {
     font-size: 1em;
-    font-weight: 600 ;
+    font-weight: 600;
     margin-top: 94px;
     margin-bottom: 20px;
 }
