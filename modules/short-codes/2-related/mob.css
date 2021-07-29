@@ -1,0 +1,18 @@
+.related {
+    margin-top: 30px;
+    padding: 19px 30px ;
+}
+
+.related .related-title {
+    font-weight: 600;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.related .related-link-wrap{
+    margin-top: 20px;
+}
+
+.related .related-link-first_el{
+    margin-top: 15px;
+}

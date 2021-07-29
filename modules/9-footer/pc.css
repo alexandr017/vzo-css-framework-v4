@@ -1,4 +1,4 @@
-footer {
+.f-block {
     padding: 0;
     margin: 0;
 }
@@ -103,7 +103,7 @@ footer {
     color: #222735 !important;
 }
 
-footer ul.f-2-menu {
+.f-block  ul.f-2-menu {
     display: flex;
     justify-content: space-between ;
     font-weight: 600;
@@ -111,14 +111,12 @@ footer ul.f-2-menu {
     margin-top: 30px;
 }
 
-.f-2-menu li,
-.f-3-menu li {
+.f-2-menu li {
     list-style-type: none;
     font-family: 'Inter', sans-serif;
 }
 
-.f-2-menu a,
-.f-3-menu a {
+.f-2-menu a {
     color: #95A5B0 !important;
 }
 
@@ -126,16 +124,11 @@ footer ul.f-2-menu {
     color: #2ED47A !important;
 }
 
-.f-2-menu li a:hover,
-.f-3-menu li a:hover {
+.f-2-menu li a:hover {
     color: #2ED47A !important;
 }
 
-.f-3-menu li:last-of-type {
-    margin-left: 50px;
-}
-
-footer ul.f-3-menu {
+.f-block  ul.f-3-menu {
     display: flex;
     flex-wrap: wrap;
     font-weight: 600;
@@ -159,37 +152,38 @@ footer ul.f-3-menu {
     margin-right: 42px;
 }
 
-footer .social {
+.f-block .social {
     display: flex;
     justify-content: space-between;
     margin-top: 28px;
 }
-footer .social .soc-network a,
-footer .social .soc-reviews a {
+
+.f-block .social .soc-network a,
+.f-block .social .soc-reviews a {
     margin-right: 35px;
 }
 
-footer .social .soc-reviews  {
+.f-block  .social .soc-reviews  {
     display: flex;
     text-align: center;
     justify-content: center;
     margin-top: -5px;
 }
 
-footer .social .soc-reviews a:first-of-type  {
+.f-block .social .soc-reviews a:first-of-type  {
     margin-top: -10px;
 }
 
-footer .f-3 {
+.f-block .f-3 {
     margin-top: 30px;
 }
 
-footer .f-3 .policy {
+.f-block .f-3 .policy {
     display: flex;
     justify-content: space-between;
 }
 
-footer .f-3 .policy a {
+.f-block .f-3 .policy a {
     display: flex;
     justify-content: space-between;
     font-size: 0.81em;
@@ -197,12 +191,12 @@ footer .f-3 .policy a {
     color: #C2CFD8;
 }
 
-footer .f-3 .policy .copy{
+.f-block .f-3 .policy .copyright{
     color: #C2CFD8;
     font-size: 0.8em;
 }
 
-footer hr {
+.f-block  hr {
     height: 1px;
     border: none;
     background-color:#EBEBEB;

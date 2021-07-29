@@ -1,0 +1,46 @@
+.go-to-acc {
+    padding: 28px 65px;
+}
+
+.go-to-acc_body {
+    display: flex;
+}
+
+.go-to-acc_body .go-to-acc_text {
+    margin-left: 45px;
+}
+
+.go-to-acc .go-to-acc_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.go-to-acc .go-to-acc_btn .btn {
+    width: 245px;
+    height: 44px;
+    background:  #2ED47A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.go-to-acc_content {
+    margin-top: 75px;
+}
+
+.go-to-acc_content .content_title {
+    text-align: center;
+}
+
+.go-to-acc_content .content_title .h2 {
+    font-weight: 700;
+}
+
+.go-to-acc_content .content_text {
+    margin-top: 28px;
+}

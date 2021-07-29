@@ -1,0 +1,33 @@
+.go-to-acc {
+    padding: 30px 27px;
+}
+
+.go-to-acc .go-to-acc_body .go-to-acc_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-to-acc .go-to-acc_body .go-to-acc_text {
+    margin-top: 13px;
+    text-align: center;
+}
+
+.go-to-acc .go-to-acc_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.go-to-acc .go-to-acc_btn .btn {
+    width: 245px;
+    height: 44px;
+    background:  #2ED47A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1em;
+}

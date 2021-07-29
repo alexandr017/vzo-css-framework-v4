@@ -1,0 +1,40 @@
+.phone-complaint h4 {
+    font-weight: 700;
+}
+
+.phone-complaint .table {
+    width: 70%;
+    margin-bottom: 0;
+    margin-top: 21px;
+}
+
+.phone-complaint .table .tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-complaint .table .tr .td {
+    padding: 16px 41px;
+    line-height: 1.5em;
+
+}
+
+.phone-complaint .table .tr .td svg {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.phone-complaint .table .tr .td:first-of-type {
+    width: 50%;
+    background: #FAFAFA;
+    font-weight: 600;
+}
+
+.phone-complaint .table .tr .td:last-of-type {
+    width: 50%;
+    padding-right: 20%;
+}
+
+.phone-complaint .table .tr .td svg:last-of-type{
+    float: right;
+}

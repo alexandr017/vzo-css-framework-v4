@@ -1,0 +1,65 @@
+.tariff-block {
+    padding: 46px 65px;
+    display: flex;
+}
+
+.tariff-title{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: #4FABFA !important;
+}
+
+.tariff-block .first-element {
+    width: 10%;
+}
+
+.tariff-img {
+    margin-top: 10px;
+}
+
+.tariff-img img {
+    width: 100%;
+    max-width: fit-content;
+}
+
+.tariff-block .second-element {
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.tariff-block .second-element .second-element_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tariff-label {
+    padding-top: 5px;
+    font-weight: 700;
+}
+
+.tariff-label-title {
+    color: #87919F;
+    font-size: 0.87em;
+}
+
+.tariff-block-btn .btn {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    width: 190px;
+    height: 44px;
+    background:  #2ED47A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.tariff-block-btn svg {
+    position: absolute;
+    margin-top: -27px;
+    margin-left: 160px;
+}
+
