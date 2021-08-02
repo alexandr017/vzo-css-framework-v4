@@ -4,20 +4,18 @@
 }
 
 .card-stock{
-    border: 3px solid #2ED47A;
+    border: 3px solid #FFF697;
 }
 
 .card-wrap .stock {
     position: absolute;
-    margin-left: 60px;
-    background: #2ED47A;
+    background: #FFF697;
     font-weight: 600;
     width: 120px;
     height: 40px;
     text-align: center;
     padding: 5px;
-    color: #ffffff;
-    border-radius: 0 0 10px 10px;
+    border-radius: 25px 0px;
     font-size: 1.2em;
 }
 
@@ -33,7 +31,7 @@
 
 .card-wrap .card-header .card-first-line {
     margin-top: 10px;
-    margin-left: 18%;
+    margin-left: 15%;
     width: 82%;
     display: flex;
     justify-content: space-between;
@@ -42,41 +40,31 @@
 .card-wrap .card-header .card-first-line a {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
+    margin-top:10px;
+}
+
+.card-wrap .card-header .card-first-line .card-icons svg:first-of-type{
+    margin-right: 32px;
 }
 
 .card-wrap .card-header .card-top-inner {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 15px;
 }
 
 .card-wrap .card-header .card-top-inner .logo {
-    width: 117px;
-    height: 116px;
+    width: 80px;
+    height: 80px;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
+    margin-top: -30px;
 
-.card-wrap .card-header .card-top-inner .price {
-    margin-left: 72px;
-}
-
-.card-wrap .card-header .card-top-inner .percent {
-    margin-left: 65px;
-}
-
-.card-wrap .card-header .card-top-inner .period{
-    margin-left: 65px;
-}
-
-.card-wrap .card-header .card-top-inner .comprasion {
-    margin-left: 75px;
 }
 
 .card-wrap .card-header .card-top-inner .comprasion .btn{
-    width: 230px;
-    height: 46px;
+    width: 190px;
+    height: 44px;
     background: #2ED47A;
     border-radius: 23px;
     color: #fff;
@@ -88,31 +76,7 @@
 
 }
 
-.card-wrap .card-header .card-top-inner .comprasion .comp-btn {
-    color: #4FABFA;
-    font-size: 1em;
-    line-height: 1.3em;
-    text-align: center;
-    margin-top: 10px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.card-wrap .card-header .card-top-inner .comprasion .comp-btn svg {
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.card-wrap .card-header .card-top-inner_second-row .decision {
-    margin-left:18.5%;
-    margin-top: -70px;
-}
-
 .card-wrap .card-header .card-top-inner .block-row .card-head-intro {
-    height: 1em;
     font-weight: 600;
 }
 
@@ -120,17 +84,12 @@
     color: #87919F;
     font-size:0.9em;
     line-height: 1.2em;
-    margin-top: 10px;
-}
-
-.card-wrap .card-header .reviews {
-    margin: 0 0 0 15px;
-    font-size: 0.9em;
-    line-height: 1.3em;
+    margin-top: 18px;
 }
 
 .card-wrap .card-header .reviews span {
-    color: #87919F;
+   font-size: 1em;
+    margin-left: 5px;
 }
 
 .card-wrap .card-body {
@@ -139,12 +98,11 @@
 
 .card-wrap .card-body .card-body-inner .card-more {
     display: block;
-    text-align: center;
-    margin: 0 0 15px;
-    color: #017AD3;
+    color: #4FABFA;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
     cursor: pointer;
+    margin-left: 65px;
+    margin-bottom: 15px;
 }
 
 .card-wrap .card-body .card-body-inner .hidden-card-info {
@@ -162,41 +120,34 @@
 
 .card-wrap .card-body .hidden-card-info .card-upd {
     color: #87919F;
-    float: right;
     font-size:  .87em;
     line-height: 1.3em;
-    padding: 0 60px 0 60px;
+    padding: 10px 0;
 }
 
 .card-wrap .card-body .hidden-card-info .two-columns {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0 60px 0 60px;
 }
 
-.card-wrap .card-body .hidden-card-info .two-columns .card-license {
-    font-size: .87em;
-    color: #87919F;
+.card-wrap .card-body .hidden-card-info .two-columns .rating-info-card {
+    margin-left: 160px;
+    display: flex;
+    margin-top: -10px;
 }
 
-.card-wrap .card-body .hidden-card-info .two-columns .scale-card .scale-card-el {
-    width: 302px;
-    height: 19px;
-    background:#EAEAEA;
-    border-radius: 28px;
-}
-
-.card-wrap .card-body .hidden-card-info .two-columns .scale-card .scale-card-el .percent {
-    height: 19px;
-    background: #2ED47A;
-    border-radius: 28px;
-    margin: 0;
-}
-
-.card-wrap .card-body .hidden-card-info .two-columns .scale-card .scale-card-el .scale-text {
-    font-size: .87em;
+.card-wrap .card-body .hidden-card-info .two-columns .rating-info-card .row-card-el {
     text-align: center;
-    margin-top: 5px;
+}
+
+.card-wrap .card-body .hidden-card-info .two-columns .rating-info-card .row-card-el:last-of-type{
+    margin-left: 67px;
+}
+
+.card-wrap .card-body .hidden-card-info .two-columns .rating-info-card .row-card-el .percent {
+    font-size: 2.25em;
+    font-weight: 600;
 }
 
 .hidden-card-info .tab {
@@ -210,7 +161,7 @@
 
 .hidden-card-info .tab .tablinks {
     background-color: inherit;
-    color: #87919F;
+    color: #95A5B0;
     font-size: .87em;
     text-align: center;
     border: none;
@@ -218,16 +169,15 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    border-bottom: 3px solid #DCDFE2;
+    border-bottom: 1px solid #E6EBEF;
     width: 33%;
-    font-family: 'Inter', sans-serif;
 }
 
 .hidden-card-info .tab .tablinks.on {
     color: #352D39;
     font-size: 1em;
     font-weight: 600;
-    border-bottom: 6px solid  #2ED47A;
+    border-bottom: 2px solid  #2ED47A;
 }
 
 .hidden-card-info .tabs-items .tabcontent.on{
@@ -255,7 +205,7 @@
 }
 
 .hidden-card-info .tabs-items .tabcontent .table .tr .td {
-    padding: 16px 93px;
+    padding: 8px 65px;
     line-height: 1.5em;
 
 }
@@ -276,8 +226,8 @@
 }
 
 .card-wrap .hidden-card-info .slider {
-    margin-top: 30px;
-    padding: 0 100px 0 100px;
+    margin-top: 50px;
+    padding: 0 100px 40px 100px;
 }
 
 .card-wrap .hidden-card-info .slider .slider-block {
@@ -288,7 +238,6 @@
 .card-wrap .hidden-card-info .slider .slider-block .slider-button {
     width: 50px;
     height: 50px;
-    margin-top: 45px;
     cursor: pointer;
 }
 
@@ -306,52 +255,43 @@
 
 .card-wrap .hidden-card-info  .slider .slider-block .slider-info .text-cont {
     font-size: 0.9em;
-    margin-top: 10px;
 }
 
 
-.hidden-card-info .slider {
-    padding-bottom: 40px;
-}
-
-.hidden-card-info .slider .slider-block {
+.hidden-card-info .list-card-block {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 67px;
 }
 
-
-.hidden-card-info .slider .slider-block .slider-info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    width: 100%;
-}
-
-.hidden-card-info .slider .slider-block .slider-info li {
-    margin-left: 30px;
-    width: 50%;
-}
-
-.hidden-card-info .slider .slider-block .slider-info li:last-child {
-    margin-left: 20px;
+.hidden-card-info .list-card-block .list-card_el {
+    width: 30%;
+    margin-top: 32px;
 }
 
 .hidden-card-info .print {
-    float: right;
+    float: left;
     margin-top: 55px;
     cursor: pointer;
-    padding: 0 80px 0 0;
+    padding: 0 0 0 65px;
+}
+
+.hidden-card-info .print .warning-icon {
+    position: relative;
+    top: -30px;
+    right: 45px;
 }
 
 .hidden-card-info .buttons {
     display: flex;
+    float: right;
     margin-top: 62px;
     margin-bottom: 50px;
     padding: 0 0 0 100px;
 }
 
 .hidden-card-info .buttons .btn {
-    width:380px;
+    width:220px;
     height: 46px;
     background: #fff;
     color: #2ED47A;
@@ -364,4 +304,5 @@
 
 .hidden-card-info .buttons .btn:last-of-type{
     margin-left: 62px;
+    margin-right: 95px;
 }

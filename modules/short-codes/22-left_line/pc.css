@@ -1,0 +1,27 @@
+.l_line_wrap {
+    padding-left: 58px;
+    position: relative;
+}
+
+.l_line_wrap:before {
+    content: '';
+    width: 7px;
+    height: 100%;
+    background: #2ED47A;
+    position: absolute;
+    left: 0;
+    border-radius: 6px;
+}
+
+.l_line_wrap .h5 {
+    font-weight: 600;
+}
+
+.l_line-text {
+    font-weight: 600;
+}
+
+.l_line-bank-list {
+    list-style-type: none;
+    padding: 0;
+}

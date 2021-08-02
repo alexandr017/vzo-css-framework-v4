@@ -1,0 +1,19 @@
+.short-code-quote{
+    background: #FAFAFA;
+    padding: 30px;
+    display: flex;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.short-code-quote .quote-text {
+    margin-top: 25px;
+    margin-left: 28px;
+}
+.quote-author{
+    margin-top: 30px;
+    display: block;
+    font-size: 0.87em;
+    font-weight: normal;
+}

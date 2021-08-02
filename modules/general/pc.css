@@ -25,7 +25,7 @@ body, input, textarea, select{
 }
 
 a, a:visited:not(a.btn,.breadcrumbs a) {
-    color: #017AD3;
+    color: #4FABFA;
 }
 
 a {

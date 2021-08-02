@@ -1,6 +1,13 @@
-document.querySelector('header').onscroll = function() {
-    this.classList[this.scrollTop > 20 ? 'add' : 'remove']('shadow');
-};
+window.onscroll = function() {shadowMenu()};
+
+function shadowMenu() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("headerMenu").className = "shadow";
+    } else {
+        document.getElementById("headerMenu").className = " ";
+    }
+}
+
 var modals = document.querySelectorAll("[data-modal]");
 
 modals.forEach(function (trigger) {
@@ -17,8 +24,6 @@ modals.forEach(function (trigger) {
         });
     });
 });
-
-
 
 function autocompleteCity(input, arr) {
     var focus;

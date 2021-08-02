@@ -1,0 +1,28 @@
+.phone-complaint_content .content-title {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.phone-complaint_content .content-body {
+    margin-top: 17px;
+    margin-bottom: 20px;
+}
+
+.phone-complaint_content .table .tr {
+    display: flex;
+    width:30%;
+}
+
+.phone-complaint_content .table .tr .td {
+    background: #fff !important;
+    padding-left: 0 !important;
+    margin-top: 17px;
+}
+.phone-complaint_content .table .tr .td:first-of-type {
+    font-weight: 600;
+    width: 30%;
+}
+
+.phone-complaint_content .table .tr .td:last-of-type {
+    width: 80%;
+}
