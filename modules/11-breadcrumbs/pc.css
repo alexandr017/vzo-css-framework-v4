@@ -1,0 +1,21 @@
+.breadcrumbs {
+    font-size: .87em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:visited{
+    color: #222735 !important;
+}
+
+.breadcrumbs span:not(:last-of-type) {
+    margin: 0 10px;
+}
+
+.kb_title {
+    color: #87919F;
+}
+
+
+

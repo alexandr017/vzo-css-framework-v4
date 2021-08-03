@@ -318,16 +318,10 @@
     font-weight: 700;
 }
 
-.modal-clear-block__button {
-    position: absolute;
-    margin-left: 420px;
-    cursor: pointer;
-    margin-top: -35px;
-}
 
 .modal-search-block__button {
     position: absolute;
-    margin-left: 390px;
+    margin-left: 410px;
     cursor: pointer;
     margin-top: -33px;
 }
@@ -365,7 +359,7 @@
     width: 717px;
     position: absolute;
     margin-top: -105px;
-    margin-left: 240px;
+    margin-left: 230px;
     z-index: 5;
 }
 

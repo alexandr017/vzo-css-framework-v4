@@ -1,5 +1,5 @@
 .insert-video-block {
-    max-width: 476px;
+    max-width: 314px;
     width: 100%;
     position: relative;
 }
@@ -24,7 +24,7 @@
 }
 
 .circle-play {
-   fill: white;
+    fill: white;
 }
 
 .icon-play {
@@ -34,7 +34,7 @@
 .play-video-el {
     background: #000;
     line-height: 0;
-    border-radius: 17px;
+    border-radius: 13px;
 }
 
 .play-video-el svg:hover .circle-play {

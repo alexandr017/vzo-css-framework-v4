@@ -1,0 +1,131 @@
+.accordion {
+    margin-top: 15px;
+    background-color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.accordion svg {
+    stroke: #222735;
+    fill:  #222735;
+    transform: rotate(-90deg);
+    margin-right: 10px;
+}
+
+.accordion:hover,
+.accordion.active{
+    color: #2ED47A;
+}
+
+.accordion:hover svg {
+    fill: #2ED47A;
+    stroke: #2ED47A;
+}
+
+.accordion.active svg {
+    transform: rotate(0deg);
+    fill: #2ED47A;
+    stroke: #2ED47A;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.panel .vertical-tab-list ul,
+.panel .vertical-docs-list ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.panel .vertical-docs-list ul li {
+    margin-top: 10px;
+}
+
+.panel .vertical-docs-list ul li svg {
+    float: right;
+}
+
+.vertical-tab-support .content-title {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.vertical-tab-support .content-body {
+    margin-top: 17px;
+    margin-bottom: 20px;
+}
+
+.vertical-tab-support .table .tr .td {
+    background: #fff !important;
+    padding-left: 0 !important;
+}
+
+.vertical-tab-support .table .tr .td:first-of-type {
+    width: 30%;
+}
+
+.vertical-tab-support .table .tr .td:last-of-type {
+    width: 70%;
+}
+
+.vertical-tab-support .content-soc-icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vertical-tab-support .content-soc-icon svg {
+    margin-right: 22px;
+}
+
+.vertical-tab-support .content-body .content-body-info {
+    display: flex;
+}
+
+.vertical-tab-support .content-address {
+    margin-top: 15px;
+}
+
+.vertical-tab-support .content-map {
+    margin-top: 15px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.table .tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table .tr .td {
+    font-size: .87em;
+    padding: 8px 20px;
+    line-height: 1.5em;
+}
+
+
+.table .tr .td:first-of-type {
+    width: 45%;
+    background: #F6F7F9;
+    font-weight: 600;
+}
+
+.table .tr .td:last-of-type {
+    width: 55%;
+}

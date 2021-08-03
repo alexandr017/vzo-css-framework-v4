@@ -123,6 +123,22 @@
     font-weight: 600;
 }
 
+.rat-block-table table tr:first-of-type td {
+    padding-top: 25px;
+}
+
+.rat-block-table table tr:last-of-type td {
+    padding-bottom: 25px;
+}
+
+.rat-block-table table tr td:first-of-type {
+    width: 30%;
+}
+
+.rat-block-table table tr td:last-of-type {
+    width: 70%;
+}
+
 .rat-block-table table tr td {
     padding: 8px 65px;
     font-size: .87em;

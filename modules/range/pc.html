@@ -66,9 +66,8 @@
 
         <div class="calc">
             <div class="range-slider">
-                <input type="number" id="sum" class="range-value" step="100" min="0" max="1200000" value="486000"  onclick="calc()" />
-                <div class="clr"></div>
-                <input class="input-range" type="range" step="100" min="0" max="1200000" value="486000"   onclick="calc()">
+                <input type="number" id="rangenumber" step="100" min="0" max="1200000" value="600000"   oninput="range.value=value">
+                <input type="range" class="range-value" step="100" min="0" max="1200000" value="600000"  id="range" oninput="rangenumber.value=value"/>
             </div>
         </div>
 
@@ -89,4 +88,3 @@
 
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

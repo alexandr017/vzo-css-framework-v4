@@ -44,11 +44,17 @@
     margin-left: 22px;
 }
 
+.main-range .credit-sum .range-slider .range-value {
+    position: relative;
+    top: -18px;
+}
+
 input[type=range] {
     outline: none;
     padding: 0;
     width: 99.1%;
     height: 4px;
+    background-size: 50% 100%;
     background-color: #ebebeb;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%,  #2ED47A), color-stop(100%, #2ED47A));
     background-image: -webkit-linear-gradient(#2ED47A, #2ED47A);
@@ -209,7 +215,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 input[type=number] {
-    border: 1px solid #ebebeb;
+    border: none;
     height: 50px;
     width: 350px;
     padding: 1em;

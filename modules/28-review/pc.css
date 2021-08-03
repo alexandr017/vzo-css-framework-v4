@@ -65,12 +65,12 @@
 
 .sub-nav_one-column a {
     transition: background ease .3s;
-    color: #87919F;
+    color: #95A5B0 !important;
 }
 
 .sub-nav_one-column a:hover,
 .sub-nav_one-column a.active {
-    color: #2ED47A;
+    color: #2ED47A !important;
     cursor: pointer;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .reviews .block-reviews .text-review hr {
-    margin-top:30px;
+    margin-top:25px;
     margin-bottom: 22px;
     border: 1px solid #E7EBEE;
 }
@@ -214,9 +214,10 @@
     margin-top: 26px;
 }
 
-.reviews .aside-rating .buttons .btn{
+.reviews .aside-rating .buttons .btn,
+.reviews .review-f .review-form .buttons .btn{
     margin: 0 auto;
-    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,8 +226,9 @@
     cursor: pointer;
     padding: 0 2em;
     color:#2ED47A;
-    background: #fff;
-    border: 1px solid #2ED47A;
+    background: #E3FFED;
+    border: none;
+    font-family: 'Proxima Nova Rg', sans-serif;
 }
 
 .reviews .review-f {
@@ -276,22 +278,6 @@
 .reviews .review-f .review-form .buttons {
     margin-top: 20px;
     float: left;
-}
-
-.reviews .review-f .review-form .buttons .btn{
-    margin: 0 auto;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    cursor: pointer;
-    padding: 0 2em;
-    color: #57BD62;
-    background: #fff;
-    border: 1px solid #2ED47A;
 }
 
 .reviews .review-f .review-form .rating {

@@ -1,0 +1,32 @@
+.application-block {
+    padding: 51px 160px;
+}
+
+.application-block .h2 {
+    font-weight: 700;
+}
+
+.application_text {
+    margin-top: 22px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.application_img {
+    margin-top: 20px;
+}
+
+.application_form {
+    margin-top: 84px;
+    align-items: center;
+}
+
+.application-form-title {
+    text-align: center;
+}
+
+.application-form-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

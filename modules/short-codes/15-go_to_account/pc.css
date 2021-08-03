@@ -1,5 +1,6 @@
 .go-to-acc {
     padding: 28px 65px;
+    width: 920px;
 }
 
 .go-to-acc_body {
@@ -30,6 +31,7 @@
 }
 
 .go-to-acc_content {
+    width: 920px;
     margin-top: 75px;
 }
 

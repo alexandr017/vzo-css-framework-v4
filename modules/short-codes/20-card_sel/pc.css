@@ -1,0 +1,46 @@
+.card-sel-block {
+    padding: 15px 0;
+    margin: 15px 0;
+    border-bottom: 1px solid #F6F8FB;
+}
+
+.card-sel-block .h2 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-sel-body {
+    display: flex;
+    margin-top: 50px;
+}
+
+.card-sel-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.card-sel-left {
+    width: 70%;
+}
+
+.card-sel-left ul {
+    margin-top: 40px;
+    padding: 0;
+}
+
+.card-sel-left ul li {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card-sel-right {
+    width: 30%;
+    text-align: right;
+}
+
+.card-sel-text {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+

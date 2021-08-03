@@ -134,7 +134,7 @@
 .card-wrap .card-body .hidden-card-info .two-columns .rating-info-card {
     margin-left: 160px;
     display: flex;
-    margin-top: -10px;
+    margin-top: 15px;
 }
 
 .card-wrap .card-body .hidden-card-info .two-columns .rating-info-card .row-card-el {
@@ -217,7 +217,7 @@
 
 .hidden-card-info .tabs-items .tabcontent .table .tr .td:first-of-type {
     width: 35%;
-    background: #F6F7F9;
+    background: #F6F8FB;
     font-weight: 600;
 }
 

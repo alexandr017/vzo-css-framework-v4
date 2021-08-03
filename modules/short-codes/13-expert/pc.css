@@ -1,0 +1,92 @@
+.h5 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.expert-opinion-block {
+    padding: 42px 95px;
+}
+
+.expert-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expert-img {
+    width: 118px;
+    height: 118px;
+    border-radius: 18px;
+}
+.expert-name {
+    display: block;
+    margin-top: 2em;
+}
+.expert-name a {
+    font-weight: 600;
+}
+
+.button_show,
+.button_hide{
+    float: right;
+    cursor: pointer;
+}
+.button_show .btn {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    height: 44px;
+    color: #2ED47A;
+    background: rgba(46, 212, 122, 0.16);
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+.button_show .btn:hover {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    height: 44px;
+    color: #fff;
+    background: #2ED47A;
+    border-radius: 23px;
+    cursor: pointer;
+
+}
+
+.button_show .btn:hover svg{
+    position: relative;
+    left: 75%;
+    transition: .5s all ease-in-out;
+}
+
+.button_show .btn svg {
+    margin-top: 5px;
+}
+
+.data-more-less-inner {
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.less-active .action-more {display: none;}
+
+.data-more-less:not(.less-active):not(.action-disabled) .data-more-less-inner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    height: 50px;}
+
+.data-more-less.action-disabled .more-less-action {display: none;}
+
+.action-less {display: none;}
+
+.less-active .action-less {display: inline-block;}
+

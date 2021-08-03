@@ -11,7 +11,7 @@
 .vzo-ux-framework-section-title {text-transform: uppercase;color: #85888d;font-weight: 200;font-size: 13px;letter-spacing: 1px;margin:15px;}
 .vzo-ux-framework-section-list a {display: block; padding: 6px 20px;}
 .vzo-ux-framework-section-list a:hover {background-color: rgba(255, 255, 255, 0.1);text-decoration: none;}
-@media all and (min-width: 1900px) {
-    .vzo-ux-framework-menu {left: 0}
-    .vzo-ux-framework-switch{display: none}
-}
+/*@media all and (min-width: 1900px) {*/
+    /*.vzo-ux-framework-menu {left: 0}*/
+    /*.vzo-ux-framework-switch{display: none}*/
+/*}*/
