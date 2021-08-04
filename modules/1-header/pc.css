@@ -386,7 +386,8 @@
     width: 100%;
     border-radius: 23px;
     height: 50px;
-    border: 1px solid #C2CFD8;
+    border: none;
+    background: #F6F8FB;
     outline:none;
     font-size:0.87em;
     padding: 0 25px;

@@ -1,0 +1,51 @@
+
+.light-border .tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.light-border .tr .td {
+    padding: 1.2em;
+    width: 50%;
+    text-align: center;
+}
+
+.light-border .tr .th{
+    background: #FAFAFA;
+    font-weight: 700;
+}
+
+.light-border  .border-radius-1 {
+    border-radius: 25px 0 0 0 ;
+}
+
+.light-border .tr:not(:last-of-type):not(:first-of-type){
+    border-bottom: 1px solid #E7EBEE;
+}
+
+.light-border  .border-radius-2 {
+    border-radius: 0 25px 0 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 36px;
+    margin-top: 20px;
+}
+
+.button .btn {
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 230px;
+    height: 46px;
+    border: 1px solid #2ED47A;
+    background: #fff;
+    border-radius: 23px;
+    color:  #2ED47A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+}

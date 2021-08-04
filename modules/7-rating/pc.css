@@ -1,0 +1,29 @@
+.rating-container {
+    width: 300px;
+}
+
+.rating-container span {
+    color: #222735;
+   font-weight: 600;
+}
+
+.rating-container a.rating-title {
+    display: block;
+}
+
+
+.rating-container-face{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.rating-container-face svg {
+    margin-right: 5px;
+}
+
+.rating-container-face span {
+    margin-left:12px;
+    color: #95A5B0;
+}
+

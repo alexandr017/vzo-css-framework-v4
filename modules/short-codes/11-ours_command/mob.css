@@ -1,0 +1,253 @@
+.command-inner-block {
+    display: flex;
+}
+
+.command-img {
+    margin: 0 5px 0 5px;
+}
+
+.command-img .command-icon {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 190px;
+}
+
+.slick-center .command-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 203px;
+    width: 251px;
+    z-index: 1;
+    margin-top: -211px;
+    position: fixed;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 0 0 25px 25px;
+
+}
+
+.info-name {
+    position: absolute;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 60px;
+}
+
+.info-post {
+    position: absolute;
+    color: #fff;
+    margin-top: 110px;
+}
+
+.command-img img {
+   max-width: 230px;
+    width: 100%;
+}
+
+.slick-slide {
+    height: 300px;
+    padding-top: 15px;
+}
+
+.slick-center {
+    padding-top:0;
+
+}
+
+.slick-center img {
+   max-width: 251px;
+}
+
+.slick-dots {
+    list-style-type: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+ul.slick-dots {
+    padding: 0;
+}
+
+.slider__dots .slick-active {
+    background: #2ED47A;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: url('/v4/images/dots_slider.svg');
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.slick-dots li.slick-active button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: url('/v4/images/dots_active-slider.svg');
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.our_command_slider_btn.slick-slide{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.our_command_slider_btn .btn {
+    width: 143px;
+    height: 40px;
+    background:  #2ED47A;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin: 20px 7px;
+}
+
+.our_command_slider_btn .btn-1 {
+    width: 143px;
+    height: 40px;
+    background: #F3F5F7;
+    color: #95A5B0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin: 20px 7px;
+    padding: 0 !important;
+}
+
+.modal-command-team {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    background: rgba(55, 56, 61, 0.23);
+    overflow-y: auto;
+    padding: 20% 0;
+
+}
+
+.modal-command-team.open {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+    z-index:5;
+}
+
+.modal-content {
+    padding: 30px;
+}
+
+.modal-container {
+    margin-top: 180px;
+    border-radius: 25px 25px 0 0;
+    background: #fff;
+    width: 375px !important;
+}
+
+.modal__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px ;
+}
+
+.modal-close {
+    margin-top: 15px;
+    float: right;
+    outline: none;
+    appearance: none;
+    color: red;
+    background: none;
+    border: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-block-container .modal-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.modal-block-container .modal-img svg {
+    position: relative;
+    margin-left: -20px;
+}
+
+.modal-block-container .modal-info {
+    margin-top: 22px;
+}
+
+.modal-block-container .modal-info .modal-name {
+    text-align: center;
+    font-weight: 600;
+}
+
+.modal-block-container .modal-info .modal-description {
+    margin-top: 15px;
+}
+
+.modal-block-container .modal-info .modal-email {
+    margin-top: 32px;
+}
+
+

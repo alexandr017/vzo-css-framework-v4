@@ -43,6 +43,7 @@
 .f-line-1 .f-support .call-back-info {
     line-height: 1.56em;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .f-line-1 .f-support .call-back {

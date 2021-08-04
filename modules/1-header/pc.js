@@ -1,21 +1,28 @@
-window.onscroll = function() {shadowMenu()};
-
-function shadowMenu() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("headerMenu").className = "shadow";
+function $$(selector) {
+    if (selector[0] == '#') {
+        return  document.querySelector(selector);
     } else {
-        document.getElementById("headerMenu").className = " ";
+        return document.querySelectorAll(selector);
     }
 }
 
-var modals = document.querySelectorAll("[data-modal]");
+window.onscroll = function() {shadowMenu()};
+function shadowMenu() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        $$("#headerMenu").className = "shadow";
+    } else {
+        $$("#headerMenu").className = " ";
+    }
+}
+
+var modals = $$("[data-modal]");
 
 modals.forEach(function (trigger) {
     trigger.addEventListener("click", function (event) {
         event.preventDefault();
         var modal = document.getElementById(trigger.dataset.modal);
         modal.classList.add("open");
-        var exits = modal.querySelectorAll(".modal-exit");
+        var exits = $$(".modal-exit");
         exits.forEach(function (exit) {
             exit.addEventListener("click", function (event) {
                 event.preventDefault();
@@ -30,7 +37,7 @@ function autocompleteCity(input, arr) {
     input.addEventListener("input", function(e) {
         var a, b, i, val = this.value;
         closeAllLists();
-        let searchCityModule = document.getElementsByClassName('modal-block__input')[0]
+        let searchCityModule = $$('.search-block__input')[0]
         if (!val) { return false;}
         focus = -1;
         a = document.createElement("div");
@@ -55,12 +62,11 @@ function autocompleteCity(input, arr) {
         }
     });
     function closeAllLists(elem) {
-        let searchCityModule = document.getElementsByClassName('search-block__input')[0]
-        var x = document.getElementsByClassName("autocomplete-city-items");
+        let searchCityModule = $$('.search-block__input')[0]
+        var x = $$(".autocomplete-city-items");
         for (var i = 0; i < x.length; i++) {
             if (elem != x[i] && elem != inp) {
                 x[i].parentNode.removeChild(x[i]);
-                searchCityModule.style.border = '1px solid #C3CAD3';
                 searchCityModule.style.borderRadius = '25px';
             }
         }
@@ -70,15 +76,15 @@ function autocompleteCity(input, arr) {
     });
 }
 var searchCity = ["Новосибирск","Новокузнецк","Новочеркасск","Новороссийск","Норильск"];
-autocompleteCity(document.getElementById("searchCity"), searchCity);
+autocompleteCity($$("#searchCity"), searchCity);
 
 function autocomplete(inp, arr) {
     var currentFocus;
     inp.addEventListener("input", function(e) {
         var a, b, i, val = this.value;
         closeAllLists();
-        let searchBg = document.getElementsByClassName('search-bg')[0]
-        let searchModule = document.getElementsByClassName('search-block__input')[0]
+        let searchBg = $$('.search-bg')[0]
+        let searchModule = $$('.search-block__input')[0]
         if (!val) { return false;}
         currentFocus = -1;
         a = document.createElement("div");
@@ -95,7 +101,7 @@ function autocomplete(inp, arr) {
                 b.innerHTML += arr[i].substr(val.length);
                 b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                 b.addEventListener("click", function(e) {
-                    inp.value = this.getElementsByTagName("input")[0].value;
+                    inp.value = this.$$("input")[0].value;
                     closeAllLists();
                 });
                 a.appendChild(b);
@@ -104,9 +110,9 @@ function autocomplete(inp, arr) {
     });
 
     function closeAllLists(element) {
-        let searchBg = document.getElementsByClassName('search-bg')[0]
-        let searchModule = document.getElementsByClassName('search-block__input')[0]
-        var x = document.getElementsByClassName("autocomplete-items");
+        let searchBg = $$('.search-bg')[0]
+        let searchModule = $$('.search-block__input')[0]
+        var x = $$(".autocomplete-items");
         for (var i = 0; i < x.length; i++) {
             if (element != x[i] && element != inp) {
                 x[i].parentNode.removeChild(x[i]);
@@ -121,12 +127,11 @@ function autocomplete(inp, arr) {
     });
 }
 var links = ["Займы без отказа","Займы без залога","Запуск нового МФО Займиго","Займиго проводит акцию"];
-autocomplete(document.getElementById("searchInput"), links);
-
+autocomplete($$("#searchInput"), links);
 
 function searchToggle(){
-    let searchBlock = document.getElementsByClassName('search-block')[0]
-    let closeBtn = document.getElementsByClassName('search-close-btn')[0]
+    let searchBlock = $$('.search-block')[0]
+    let closeBtn = $$('.search-close-btn')[0]
     if(searchBlock.style.display != 'none') {
         searchBlock.style.display = 'none'
         closeBtn.style.display = 'none'
@@ -135,4 +140,5 @@ function searchToggle(){
         closeBtn.style.display = 'block'
     }
 }
+
 
