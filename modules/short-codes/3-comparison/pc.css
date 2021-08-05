@@ -2,6 +2,11 @@
     margin-top: 33px;
 }
 
+.compare-programme .compare-table .th img {
+    height: 80px;
+    width: 80px;
+}
+
 .compare-programme .compare-table .tr {
     display: flex;
     justify-content: space-between;

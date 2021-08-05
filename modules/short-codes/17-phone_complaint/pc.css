@@ -16,7 +16,9 @@
 .phone-complaint .table .tr .td {
     padding: 16px 41px;
     line-height: 1.5em;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .phone-complaint .table .tr .td svg {

@@ -1,20 +1,20 @@
 $('.our_command_slider').slick({
+    infinite: true,
     slidesToShow: 3,
     centerMode: true,
     slidesToScroll: 1,
     dots: true,
     arrows:false,
-    infinite: true,
     variableWidth: true,
     dotsClass: 'slick-dots',
 });
 
 $('.our_command_slider_btn').slick({
+    infinite: false,
     slidesToShow:1,
     slidesToScroll: 1,
     dots: false,
     arrows:false,
-    infinite: true,
     variableWidth: true,
 });
 

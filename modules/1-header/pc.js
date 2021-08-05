@@ -1,17 +1,11 @@
-function $$(selector) {
-    if (selector[0] == '#') {
-        return  document.querySelector(selector);
-    } else {
-        return document.querySelectorAll(selector);
-    }
-}
+const $$ = (s) => document.querySelectorAll(s);
 
 window.onscroll = function() {shadowMenu()};
 function shadowMenu() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        $$("#headerMenu").className = "shadow";
+        $$("#headerMenu")[0].className = "shadow";
     } else {
-        $$("#headerMenu").className = " ";
+        $$("#headerMenu")[0].className = " ";
     }
 }
 

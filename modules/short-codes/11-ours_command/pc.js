@@ -4,12 +4,13 @@ let showBlock = document.querySelectorAll('.commandShowBlock');
         buttonHide = value.querySelector('.command__button_hide'),
         allBlock = value.querySelector('.command-inner-block'),
         hiddenText = value.querySelector('.block__hide');
-    buttonShow.addEventListener('click', event => {
-        hiddenText.style.display = 'inline';
-        allBlock.style.width = '855px';
-        buttonHide.style.display = 'block';
-        buttonShow.style.display = 'none';
-    });
+        buttonShow.addEventListener('click', event => {
+            allBlock.style.width = '855px';
+            hiddenText.style.display = 'inline';
+            buttonHide.style.display = 'block';
+            buttonShow.style.display = 'none';
+        });
+
     buttonHide.addEventListener('click', event => {
         hiddenText.style.display = 'none';
         allBlock.style.width = '410px';
@@ -19,7 +20,7 @@ let showBlock = document.querySelectorAll('.commandShowBlock');
 });
 
 $('.our_command_slider').slick({
-    infinite: true,
+    infinite:true,
     speed: 400,
     slidesToShow: 2,
     prevArrow: '<div class="prev_el"><img src="/v4/images/prev.png"></div>',
@@ -32,7 +33,7 @@ $('.our_command_slider').slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                infinite:true
+                infinite:false
             }
         },
         {

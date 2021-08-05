@@ -57,6 +57,7 @@
 
 
 .similar-offers_el .info_el {
+    padding-left: 20px;
     margin-top: 15px;
     display: flex;
 }

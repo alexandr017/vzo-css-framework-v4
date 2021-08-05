@@ -20,6 +20,7 @@
 }
 
 .go-to-acc .go-to-acc_btn .btn {
+    font-family: 'Proxima Nova Rg', sans-serif;
     width: 245px;
     height: 44px;
     background:  #2ED47A;
@@ -28,6 +29,6 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.1em;
 }

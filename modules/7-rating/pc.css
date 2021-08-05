@@ -2,6 +2,10 @@
     width: 300px;
 }
 
+.rating-company-name {
+    margin-bottom: 38px;
+}
+
 .rating-container span {
     color: #222735;
    font-weight: 600;

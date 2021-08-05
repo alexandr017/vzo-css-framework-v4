@@ -4,6 +4,7 @@
 }
 
 .tariff-title{
+    margin-top: -10px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
     color: #4FABFA !important;
@@ -29,6 +30,7 @@
 }
 
 .tariff-block .second-element .second-element_info {
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -55,11 +57,5 @@
     cursor: pointer;
     font-weight: 700;
     font-size: 1.1em;
-}
-
-.tariff-block-btn svg {
-    position: absolute;
-    margin-top: -27px;
-    margin-left: 160px;
 }
 

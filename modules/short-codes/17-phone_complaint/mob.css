@@ -50,7 +50,9 @@
     padding: 16px 0 16px 23px;
     line-height: 1.5em;
     font-size: .87em;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .phone-complaint .table .tr .td svg {
@@ -59,13 +61,13 @@
 }
 
 .phone-complaint .table .tr .td:first-of-type {
-    width: 50%;
+    width: 40%;
     background: #FAFAFA;
     font-weight: 600;
 }
 
 .phone-complaint .table .tr .td:last-of-type {
-    width: 50%;
+    width: 60%;
 }
 
 .phone-complaint .table .tr .td svg:last-of-type{

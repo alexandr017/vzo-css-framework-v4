@@ -7,6 +7,11 @@
     margin-top: 37px;
 }
 
+.rat-block-header img {
+    width: 80px;
+    height: 80px;
+}
+
 .rat-block-sticker {
     margin-top: 30px;
     float: right;
@@ -19,12 +24,6 @@
     justify-content: center;
     font-weight: 600;
 }
-
-.rat-block-logo {
-    width: 100px;
-    height: 100px;
-}
-
 
 .rat-block-title {
     font-weight: 700;
@@ -57,6 +56,7 @@
 }
 
 .rat-block-items .rat_block_item {
+    width: 100%;
     margin-top: 20px;
     padding: 16px 20px;
 }
@@ -109,7 +109,6 @@
 
 .product_review-block .button .btn,
 .product_review-short-block .button .btn {
-    margin-left: 30px;
     width: 230px;
     height: 46px;
     background: #2ED47A;
@@ -151,6 +150,8 @@
 }
 
 .accordion {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 600;
     background-color: #fff;
     cursor: pointer;
     padding: 16px 29px;
@@ -180,11 +181,16 @@
 }
 
 .panel {
+
     padding: 0 35px;
     background-color: #fff;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+}
+
+.panel div{
+    margin-left: 20px;
 }
 
 

@@ -19,12 +19,6 @@
     margin: 15px 15px 0 15px;
 }
 
-.expert-img .expert-icon {
-    position: absolute;
-    margin-top: -10px;
-    margin-left: -10px;
-}
-
 .expert-info {
     margin: 15px 15px 15px 0;
 }
@@ -33,13 +27,6 @@
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-}
-
-.expert-email {
-    position: relative;
-    top: 20px;
-    margin-right:70%;
-    color: #95A5B0;
 }
 
 .expert__button_show {
@@ -69,38 +56,8 @@
 
 }
 
-.expert__button_show .btn:hover svg {
-    position: relative;
-    left: 75%;
-    transition: .5s all ease-in-out;
-}
-
 .expert__button_show .btn svg {
     margin-top: 5px;
-}
-
-.expert__button_hide span svg {
-    margin-top: -10px;
-    float: right;
-    display: flex;
-    justify-content: flex-end;
-    vertical-align: bottom;
-    cursor: pointer;
-}
-.expert__button_hide span svg .ellipse_el {
-    fill: white;
-}
-
-.expert__button_hide span svg:hover .ellipse_el {
-    fill:#2ED47A;
-}
-
-.expert__button_hide span svg .arrow_el {
-    fill: #87919F;
-}
-
-.expert__button_hide span svg:hover .arrow_el {
-    fill: white;
 }
 
 .prev_el {

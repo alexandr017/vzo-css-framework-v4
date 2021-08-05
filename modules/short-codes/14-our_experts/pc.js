@@ -1,23 +1,3 @@
-let showBlock = document.querySelectorAll('.expertShowBlock');
-showBlock.forEach(function (value, index) {
-    let buttonShow = value.querySelector('.expert__button_show'),
-        buttonHide = value.querySelector('.expert__button_hide'),
-        allBlock = value.querySelector('.expert-inner-block'),
-        hiddenText = value.querySelector('.block__hide');
-    buttonShow.addEventListener('click', event => {
-        hiddenText.style.display = 'inline';
-        allBlock.style.width = '855px';
-        buttonHide.style.display = 'block';
-        buttonShow.style.display = 'none';
-    });
-    buttonHide.addEventListener('click', event => {
-        hiddenText.style.display = 'none';
-        allBlock.style.width = '435px';
-        buttonShow.style.display = 'block';
-        buttonHide.style.display = 'none';
-    });
-});
-
 $('.our_expert_slider').slick({
     infinite: true,
     speed: 400,
