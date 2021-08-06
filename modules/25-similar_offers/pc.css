@@ -14,6 +14,7 @@
 }
 
 .similar-offers_el {
+    width: 347px;
     padding: 30px 32px;
 }
 
@@ -62,6 +63,7 @@
 }
 
 .offer-label-title {
+    margin-top: 5px;
     width: 40%;
     color: #828282;
     font-size: 0.87em;

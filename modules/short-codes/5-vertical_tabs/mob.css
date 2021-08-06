@@ -59,12 +59,12 @@
     float: right;
 }
 
-.vertical-tab-support .content-title {
+.vertical-tab-support .vertical-inner-title {
     font-size: 1.1em;
     font-weight: 600;
 }
 
-.vertical-tab-support .content-body {
+.vertical-tab-support .vertical-body {
     margin-top: 17px;
     margin-bottom: 20px;
 }
@@ -91,15 +91,15 @@
     margin-right: 22px;
 }
 
-.vertical-tab-support .content-body .content-body-info {
+.vertical-tab-support .vertical-body .vertical-body-info {
     display: flex;
 }
 
-.vertical-tab-support .content-address {
+.vertical-tab-support .vertical-address {
     margin-top: 15px;
 }
 
-.vertical-tab-support .content-map {
+.vertical-tab-support .vertical-map {
     margin-top: 15px;
 }
 

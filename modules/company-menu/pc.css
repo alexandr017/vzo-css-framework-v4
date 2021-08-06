@@ -1,0 +1,86 @@
+.company-menu {
+    background: #CCFFEF;
+    width: 1110px;
+    padding: 46px 0 0 73px;
+}
+
+.company-header {
+    display: flex;
+}
+
+.company-header .company-title {
+    width: 80%;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+.company-header .company-img img{
+    width: 277px !important;
+    height: 246px;
+}
+
+.company-tabs {
+    width: 1110px;
+}
+
+.company-tabs .tab-wrap {
+    margin-top: -100px;
+    width: 80%;
+    margin-left: 37px;
+}
+
+.company-tabs .tab {
+    margin-top: 45px;
+    display: inline-flex;
+    overflow: hidden;
+    flex: 20%;
+    padding: 15px 0 ;
+    width:100%;
+}
+
+.company-tabs .tab .tablinks {
+    background-color: inherit;
+    font-size: .87em;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width: 33%;
+}
+
+.company-tabs .tab .tablinks.on {
+    background: #FFFFFF;
+    border-radius: 25px 25px 0 0;
+    font-weight: 600;
+}
+
+.company-tabs .tabs-items .tabcontent.on{
+    display:flex;
+}
+
+.company-tabs .tabs-items .tabcontent {
+    display: none;
+    padding: 6px 0;
+    margin-top: 32px;
+}
+
+.link_el .icon-bg {
+    width: 71px;
+    height: 71px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.link_el {
+    text-align: center;
+    margin: 0 25px;
+}
+
+.link_el .icon-text {
+    width: 71px;
+}

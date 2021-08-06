@@ -20,7 +20,7 @@ let showBlock = document.querySelectorAll('.commandShowBlock');
 });
 
 $('.our_command_slider').slick({
-    infinite:true,
+    infinite:false,
     speed: 400,
     slidesToShow: 2,
     prevArrow: '<div class="prev_el"><img src="/v4/images/prev.png"></div>',

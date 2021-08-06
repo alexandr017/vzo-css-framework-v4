@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-.accordion span {
+.accordion .accordion-title {
     margin-left: 20px;
 }
 
@@ -55,10 +55,12 @@
     margin-top: 10px;
 }
 
-.panel span {
-    display: inline-block;
-    margin-left: 45px;
+.panel ul,
+.panel p{
+    padding: 0;
+    margin-left: 35px;
 }
+
 
 
 .second .accordion {

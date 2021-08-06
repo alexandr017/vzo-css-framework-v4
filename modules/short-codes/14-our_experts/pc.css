@@ -64,10 +64,12 @@
     position: absolute;
     margin-top: 90px;
     margin-left: -70px;
+    cursor: pointer;
 }
 
 .next_el {
     margin-top: -380px;
     margin-right: -80px;
     float: right;
+    cursor: pointer;
 }
