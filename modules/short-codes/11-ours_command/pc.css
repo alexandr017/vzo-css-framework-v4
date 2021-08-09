@@ -46,6 +46,8 @@
 }
 
 .command__button_show .btn {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 600;
     display: flex;
     align-items: center;
     width: 190px;
@@ -70,7 +72,7 @@
 
 .command__button_show .btn:hover svg {
     position: relative;
-    left: 75%;
+    left: 73%;
     transition: .5s all ease-in-out;
 }
 

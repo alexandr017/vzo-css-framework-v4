@@ -1,16 +1,16 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-            panel.style.maxHeight = null;
-            panel.style.borderBottom = null;
-
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-            this.style.borderBottom = "0";
+$(document).ready(function(){
+    $(".set > button").on("click", function(){
+        if($(this).hasClass('active')){
+            $(this).removeClass("active");
+            $(this).siblings('.panel').slideUp(200);
+            $(".set > a svg").removeClass("hide").addClass("show");
+        }else{
+            $(".set > a svg").removeClass("hide").addClass("show");
+            $(this).find("svg").removeClass("show").addClass("hide");
+            $(".set > button").removeClass("active");
+            $(this).addClass("active");
+            $('.panel').slideUp(200);
+            $(this).siblings('.panel').slideDown(200);
         }
     });
-}
+});

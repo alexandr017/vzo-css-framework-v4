@@ -20,7 +20,7 @@
 }
 
 .similar-offers_title a {
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 .similar-offers_img {
@@ -36,7 +36,7 @@
 }
 
 .similar-offers_rating svg {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .similar-offers_img img {
@@ -45,12 +45,12 @@
 }
 
 .offer-label{
-    width: 60%;
+    width: 65%;
     font-size: 0.87em;
 }
 
 .offer-label-title {
-    width: 40%;
+    width: 35%;
     color: #828282;
     font-size: 0.87em;
 }

@@ -1,23 +1,31 @@
 let showBlock = document.querySelectorAll('.commandShowBlock');
     showBlock.forEach(function (value, index) {
-    let buttonShow = value.querySelector('.command__button_show'),
-        buttonHide = value.querySelector('.command__button_hide'),
-        allBlock = value.querySelector('.command-inner-block'),
-        hiddenText = value.querySelector('.block__hide');
+        let buttonShow = value.querySelector('.command__button_show'),
+            buttonHide = value.querySelector('.command__button_hide'),
+            allBlock = value.querySelector('.command-inner-block'),
+            hiddenText = value.querySelector('.block__hide');
+
         buttonShow.addEventListener('click', event => {
+            document.querySelectorAll('.command-inner-block').forEach(function (value, index) {
+                value.querySelector('.block__hide').style.display = 'none';
+                value.style.width = '410px';
+                value.querySelector('.command__button_show').style.display = 'block';
+                value.querySelector('.command__button_hide').style.display = 'none';
+            });
+
             allBlock.style.width = '855px';
             hiddenText.style.display = 'inline';
             buttonHide.style.display = 'block';
             buttonShow.style.display = 'none';
         });
 
-    buttonHide.addEventListener('click', event => {
-        hiddenText.style.display = 'none';
-        allBlock.style.width = '410px';
-        buttonShow.style.display = 'block';
-        buttonHide.style.display = 'none';
+        buttonHide.addEventListener('click', event => {
+            hiddenText.style.display = 'none';
+            allBlock.style.width = '410px';
+            buttonShow.style.display = 'block';
+            buttonHide.style.display = 'none';
+        });
     });
-});
 
 $('.our_command_slider').slick({
     infinite:false,

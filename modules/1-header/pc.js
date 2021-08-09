@@ -31,7 +31,7 @@ function autocompleteCity(input, arr) {
     input.addEventListener("input", function(e) {
         var a, b, i, val = this.value;
         closeAllLists();
-        let searchCityModule = $$('.search-block__input')[0]
+        let searchCityModule = $$('.modal-block__input')[0]
         if (!val) { return false;}
         focus = -1;
         a = document.createElement("div");
@@ -42,6 +42,7 @@ function autocompleteCity(input, arr) {
             if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
                 searchCityModule.style.border = 'none';
                 searchCityModule.style.borderRadius = '25px 25px 0 0';
+                searchCityModule.style.background = '#fff';
                 searchCityModule.style.boxShadow = '2px -18px 30px 0px rgba(135, 145, 159, 0.15)';
                 b = document.createElement("div");
                 b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
@@ -70,7 +71,7 @@ function autocompleteCity(input, arr) {
     });
 }
 var searchCity = ["Новосибирск","Новокузнецк","Новочеркасск","Новороссийск","Норильск"];
-autocompleteCity($$("#searchCity"), searchCity);
+autocompleteCity($$("#searchCity")[0], searchCity);
 
 function autocomplete(inp, arr) {
     var currentFocus;
@@ -89,6 +90,7 @@ function autocomplete(inp, arr) {
             if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
                 searchBg.style.display = 'block';
                 searchModule.style.border = 'none';
+                searchModule.style.background = '#fff';
                 searchModule.style.borderRadius = '25px 25px 0 0';
                 b = document.createElement("div");
                 b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
@@ -121,7 +123,7 @@ function autocomplete(inp, arr) {
     });
 }
 var links = ["Займы без отказа","Займы без залога","Запуск нового МФО Займиго","Займиго проводит акцию"];
-autocomplete($$("#searchInput"), links);
+autocomplete($$("#searchInput")[0], links);
 
 function searchToggle(){
     let searchBlock = $$('.search-block')[0]

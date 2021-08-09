@@ -37,28 +37,31 @@
     stroke: #2ED47A;
 }
 
-.panel {
-    padding: 0 18px;
-    background-color: #fff;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
+
+.set > button{
+    display: block;
+    padding: 25px 20px 25px 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 20px;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    transition:all 0.2s linear;
 }
 
-.panel .vertical-tab-list ul,
-.panel .vertical-docs-list ul{
-    list-style-type: none;
+.panel {
+    position:relative;
+    width: 100%;
+    font-size: 18px;
+    height: auto;
+    background-color: #fff;
+    display:none;
+}
+
+.panel ul {
     padding: 0;
 }
-
-.panel .vertical-docs-list ul li {
-    margin-top: 10px;
-}
-
-.panel .vertical-docs-list ul li svg {
-    float: right;
-}
-
 .vertical-tab-support .vertical-inner-title {
     font-size: 1.1em;
     font-weight: 600;
@@ -69,26 +72,26 @@
     margin-bottom: 20px;
 }
 
-.vertical-tab-support .table .tr .td {
-    background: #fff !important;
-    padding-left: 0 !important;
+ .vertical-tab-support .vertical-body .vertical-body-info .info_el {
+    margin-top: 1em;
 }
 
-.vertical-tab-support .table .tr .td:first-of-type {
+ .vertical-tab-support .vertical-body .vertical-body-info .info_el:first-of-type {
     width: 30%;
 }
 
-.vertical-tab-support .table .tr .td:last-of-type {
+.vertical-tab-support .table .vertical-body-info .info_el:last-of-type {
     width: 70%;
 }
 
-.vertical-tab-support .content-soc-icon {
+
+.vertical-tab-support .vertical-soc-icon {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.vertical-tab-support .content-soc-icon svg {
-    margin-right: 22px;
+.vertical-soc-icon svg {
+    margin-right: 20px;
 }
 
 .vertical-tab-support .vertical-body .vertical-body-info {
