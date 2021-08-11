@@ -11,28 +11,32 @@
 }
 
 .sort {
-    list-style: none;
     float: right;
+    margin-right: -55px!important;
 }
 
-.sort li .main {
+.sort .sort_el {
+    margin-left: 50px;
+}
+
+.sort .sort_el .main {
     color: #352D39 !important;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sort li .main svg{
+.sort .sort_el .main svg{
     margin-left: 5px;
 }
 
 
-.sort li {
+.sort .sort_el {
     margin-right: 50px;
     position: relative;
 }
 
-.sort li a {
+.sort .sort_el a {
     display: block;
     padding: 8px;
 }
@@ -45,11 +49,11 @@
     padding: 10px 0 0 0;
 }
 
-.sort li:hover .sub-menu-container {
+.sort .sort_el:hover .sub-menu-container {
     right: 0;
 }
 
-.sort li:hover svg{
+.sort .sort_el:hover svg{
     transform: rotate(180deg);
 }
 

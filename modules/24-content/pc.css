@@ -60,6 +60,15 @@
     left: 52%;
 }
 
+.main-content .content-block_second .right-btn:hover svg{
+    display: none;
+}
+
+.main-content .content-block_second .right-btn:hover {
+    content: url("/v4/images/content-icon.svg");
+    display: block;
+}
+
 .main-content .content-block_second .close_second-element {
     position: absolute;
     margin-top: 120px;

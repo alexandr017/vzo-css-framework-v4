@@ -10,12 +10,22 @@
 }
 
 .bank_review_slider .slick-slide {
-    height: 600px;
+    height: 620px;
 }
 
 .bank_review_slider,
 .smi_slider {
     padding: 0 50px;
+}
+
+.bank_review-inner-block {
+    min-height: 360px;
+}
+
+.bank_review-inner-block:hover {
+    min-height: 380px;
+    width: 300px;
+    margin-top: 5px;
 }
 
 .bank_review-inner-block,

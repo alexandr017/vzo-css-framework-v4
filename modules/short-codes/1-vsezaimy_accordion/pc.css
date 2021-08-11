@@ -43,15 +43,11 @@
     flex-wrap: wrap;
 }
 
-.panel .accordion-list ul {
-    list-style-type: none;
-}
-
-.panel .accordion-list ul:not(:first-of-type) {
+.panel .accordion-list .accordion-col:not(:first-of-type) {
     margin-left: 60px;
 }
 
-.panel .accordion-list ul li {
+.panel .accordion-list .accordion-col .accordion-row {
     margin-top: 10px;
 }
 

@@ -57,6 +57,7 @@
     height: auto;
     background-color: #fff;
     display:none;
+    padding: 0 40px;
 }
 
 .panel ul {

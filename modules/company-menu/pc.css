@@ -40,7 +40,6 @@
 
 .company-tabs .tab .tablinks {
     background-color: inherit;
-    font-size: .87em;
     text-align: center;
     border: none;
     outline: none;
@@ -58,6 +57,7 @@
 
 .company-tabs .tabs-items .tabcontent.on{
     display:flex;
+    font-size: .87em;
 }
 
 .company-tabs .tabs-items .tabcontent {

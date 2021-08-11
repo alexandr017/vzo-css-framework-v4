@@ -31,7 +31,7 @@
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 0 55px;
     background-color: #fff;
     max-height: 0;
     overflow: hidden;
@@ -39,26 +39,20 @@
 }
 
 .panel .accordion-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+}
+.panel .accordion-list .accordion-col {
+    margin-top: 25px;
 }
 
-.panel .accordion-list ul {
-    list-style-type: none;
-}
-
-.panel .accordion-list ul:not(:first-of-type) {
-    margin-left: 60px;
-}
-
-.panel .accordion-list ul li {
+.panel .accordion-list .accordion-col .accordion-row {
     margin-top: 10px;
 }
 
+
 .panel ul,
-.panel p{
+.panel p {
     padding: 0;
-    margin-left: 35px;
 }
 
 

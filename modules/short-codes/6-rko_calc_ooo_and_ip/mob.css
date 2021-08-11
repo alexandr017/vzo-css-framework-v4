@@ -19,6 +19,9 @@
     width:100%;
 }
 
+.range {
+    margin-top: 25px;
+}
 
 .calculator .calculator-block .check-box {
     margin-top: 37px;
@@ -74,11 +77,6 @@
 
 .calculator .calculator-block .btn {
     margin-top: 31px;
-}
-
-
-ul.range-slider-points {
-    padding-left: 0;
 }
 
 input.range-value:before{
