@@ -1,3 +1,7 @@
+.vertical-tab-container {
+    width: 920px;
+}
+
 .tab-wrap {
     display: flex;
     flex-direction: row;
@@ -32,12 +36,12 @@
 
 
 .tabs-items {
-    margin-right: -100px;
+    margin-right: -150px;
 }
 
 .tabs-items .tabcontent.on {
     display:block;
-    margin-left: 100px;
+    margin-left: 50px;
     width: 622px;
 }
 

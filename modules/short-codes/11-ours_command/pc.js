@@ -8,12 +8,12 @@ let showBlock = document.querySelectorAll('.commandShowBlock');
         buttonShow.addEventListener('click', event => {
             document.querySelectorAll('.command-inner-block').forEach(function (value, index) {
                 value.querySelector('.block__hide').style.display = 'none';
-                value.style.width = '410px';
+                value.style.width = '435px';
                 value.querySelector('.command__button_show').style.display = 'block';
                 value.querySelector('.command__button_hide').style.display = 'none';
             });
 
-            allBlock.style.width = '855px';
+            allBlock.style.width = '900px';
             hiddenText.style.display = 'inline';
             buttonHide.style.display = 'block';
             buttonShow.style.display = 'none';
@@ -21,7 +21,7 @@ let showBlock = document.querySelectorAll('.commandShowBlock');
 
         buttonHide.addEventListener('click', event => {
             hiddenText.style.display = 'none';
-            allBlock.style.width = '410px';
+            allBlock.style.width = '435px';
             buttonShow.style.display = 'block';
             buttonHide.style.display = 'none';
         });

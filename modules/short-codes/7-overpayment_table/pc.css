@@ -1,3 +1,10 @@
+.overpayment-block {
+    width: 790px;
+}
+
+.light-border{
+    width: 790px !important;
+}
 
 .light-border .tr {
     display: flex;

@@ -1,5 +1,6 @@
 .timeline-wrap_row {
     display: flex;
+    width: 790px;
 }
 
 .timeline-wrap_row:last-of-type {

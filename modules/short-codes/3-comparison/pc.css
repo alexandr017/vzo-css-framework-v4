@@ -1,3 +1,7 @@
+.compare-programme {
+    width: 790px;
+}
+
 .compare-programme .compare-block{
     margin-top: 33px;
 }
@@ -17,9 +21,9 @@
 }
 
 .compare-programme .compare-block .compare-two-col .compare_el {
-    padding: 42px 86px;
+    padding: 36px 45px;
     width: 50%;
-    border-left: 1px solid #EBEDEF;
+    border-left: 1px solid #F3F5F7;
     border-left: none;
 }
 

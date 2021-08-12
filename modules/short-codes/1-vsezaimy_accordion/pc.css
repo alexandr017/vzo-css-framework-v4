@@ -1,3 +1,7 @@
+.accordion-container {
+    width:790px;
+}
+
 .accordion {
     font-family: 'Proxima Nova Rg', sans-serif;
     background-color: #fff;

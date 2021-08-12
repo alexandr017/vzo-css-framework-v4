@@ -1,3 +1,7 @@
+.product_review-block {
+    width: 920px;
+}
+
 .rat-block-header {
     display: flex;
     padding: 2em;
@@ -17,13 +21,14 @@
     font-size: 1.1em;
 }
 
-.rat-block-logo {
-    width: 100px;
-    height: 100px;
+.rat-block-header img{
+    width: 80px;
+    height: 80px;
 }
 
 .rat-block-text {
-    margin-left: 64px;
+    margin-left: 31px;
+    margin-top: 25px;
 }
 
 .rat-block-title {
@@ -32,6 +37,7 @@
 }
 
 .rat-block-content {
+    padding: 0 2em;
     margin-top: 20px;
     font-size: 1.1em;
     line-height: 1.6em;
@@ -58,7 +64,8 @@
 
 .rat-block-items .rat_block_item {
     flex-grow: 5;
-    padding: 16px 20px;
+    width: 150px;
+    padding: 16px 10px;
 }
 
 .rat_block_item .rat_block_item {
@@ -133,6 +140,8 @@
 
 .rat-block-table table tr td:first-of-type {
     width: 30%;
+    background: #F6F8FB;
+    font-weight: 600;
 }
 
 .rat-block-table table tr td:last-of-type {
@@ -140,13 +149,14 @@
 }
 
 .rat-block-table table tr td {
-    padding: 8px 65px;
+    padding: 8px 30px 8px 65px;
     font-size: .87em;
 }
 
 .product_review-short-block {
     margin-top: 50px;
     padding: 40px;
+    width: 920px;
 }
 
 .product_review-short-block .rat-block-items {
@@ -173,6 +183,7 @@
 }
 
 .accordion {
+    font-family: 'Proxima Nova Rg', sans-serif;
     background-color: #fff;
     cursor: pointer;
     padding: 16px 0;
@@ -183,11 +194,13 @@
     transition: 0.5s;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
 }
 
 .accordion span {
     margin-left: 20px;
+    font-weight: 600;
+    line-height: 1.6em;
 }
 
 .accordion .arrow {

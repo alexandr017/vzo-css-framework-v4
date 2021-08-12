@@ -1,3 +1,7 @@
+.phone-complaint_content {
+    width: 790px;
+}
+
 .phone-complaint_content .content-title {
     font-size: 1.1em;
     font-weight: 600;
@@ -10,7 +14,7 @@
 
 .phone-complaint_content .table .tr {
     display: flex;
-    width:30%;
+    width:40%;
 }
 
 .phone-complaint_content .table .tr .td {
@@ -19,9 +23,9 @@
     margin-top: 17px;
 }
 .phone-complaint_content .table .tr .td:first-of-type {
-    width: 30%;
+    width: 35%;
 }
 
 .phone-complaint_content .table .tr .td:last-of-type {
-    width: 80%;
+    width: 65%;
 }
