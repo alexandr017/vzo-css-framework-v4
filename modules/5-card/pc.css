@@ -122,33 +122,60 @@
     color: #87919F;
     font-size:  .87em;
     line-height: 1.3em;
-    padding: 10px 0;
+    padding: 10px 60px;
 }
 
-.card-wrap .card-body .hidden-card-info .two-columns {
+.card-wrap .card-body .hidden-card-info .card-video {
+    height: 172px;
+    background: #F6F8FB;
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 60px 0 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 65px;
 }
 
-.card-wrap .card-body .hidden-card-info .two-columns .rating-info-card {
-    margin-left: 160px;
+.review-btn {
+    width: 204px;
+    height: 44px;
+    border-radius: 23px;
+    background: #fff;
     display: flex;
-    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+.review-btn svg {
+    margin-right: 15px;
 }
 
-.card-wrap .card-body .hidden-card-info .two-columns .rating-info-card .row-card-el {
+
+
+/*.card-wrap .card-body .hidden-card-info .two-columns {*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*padding: 0 60px 0 60px;*/
+/*}*/
+
+/*.card-wrap .card-body .hidden-card-info .card-video .rating-info-card {*/
+    /*margin-left: 160px;*/
+    /*display: flex;*/
+    /*margin-top: 15px;*/
+/*}*/
+
+.card-wrap .card-body .hidden-card-info .card-video .row-card-el {
     text-align: center;
 }
 
-.card-wrap .card-body .hidden-card-info .two-columns .rating-info-card .row-card-el:last-of-type{
+.card-wrap .card-body .hidden-card-info .card-video .row-card-el:last-of-type{
     margin-left: 67px;
 }
 
-.card-wrap .card-body .hidden-card-info .two-columns .rating-info-card .row-card-el .percent {
+.card-wrap .card-body .hidden-card-info .card-video .row-card-el .percent {
     font-size: 2.25em;
     font-weight: 600;
 }
+
 
 .hidden-card-info .tab {
     margin-top: 45px;
@@ -202,6 +229,14 @@
 .hidden-card-info .tabs-items .tabcontent .table .tr {
     display: flex;
     justify-content: space-between;
+}
+
+.hidden-card-info .tabs-items .tabcontent .table .tr:hover .td:first-of-type {
+    background: #E6EBEF;
+}
+
+.hidden-card-info .tabs-items .tabcontent .table .tr:hover .td:last-of-type {
+    background: #F6F8FB;
 }
 
 .hidden-card-info .tabs-items .tabcontent .table .tr .td {

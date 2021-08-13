@@ -60,11 +60,19 @@
 .sub-nav_one-column {
     z-index: 1;
     background: #fff;
+    min-width:260px;
 }
 
-.sub-nav_one-column {
-    min-width:260px;
-    padding: 20px;
+.sub-nav_one-column .p-col {
+    padding: 0 20px;
+}
+
+.sub-nav_one-column .p-col:first-of-type {
+    margin-top: 10px;
+}
+
+.sub-nav_one-column .p-col:first-of-type {
+    margin-bottom: 10px;
 }
 
 .sub-nav_one-column a {
@@ -304,5 +312,11 @@
 
 h4:not(.review-f h4){
     text-align: center;
+}
+
+.reviews hr {
+    height: 1px;
+    border: none;
+    background-color: #E6EBEF;
 }
 
