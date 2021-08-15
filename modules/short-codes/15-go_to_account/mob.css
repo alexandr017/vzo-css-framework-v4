@@ -1,5 +1,6 @@
 .go-to-acc {
-    padding: 30px 27px;
+    padding: 30px 25px;
+    margin: 30px 0;
 }
 
 .go-to-acc .go-to-acc_body .go-to-acc_img {
@@ -13,22 +14,8 @@
     text-align: center;
 }
 
-.go-to-acc .go-to-acc_btn {
+.go-to-acc .go-to-acc-btn-wrap {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-}
-
-.go-to-acc .go-to-acc_btn .btn {
-    font-family: 'Proxima Nova Rg', sans-serif;
-    width: 245px;
-    height: 44px;
-    background:  #2ED47A;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 1.1em;
 }

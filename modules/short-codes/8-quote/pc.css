@@ -2,10 +2,9 @@
     background: #F6F8FB;
     padding: 30px;
     display: flex;
-    margin: 15px 0;
+    margin: 30px 0;
     font-weight: bold;
     font-size: 1.1em;
-    width: 790px;
 }
 
 .short-code-quote .quote-text {

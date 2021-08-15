@@ -1,45 +1,35 @@
-.compare-programme {
-    width: 790px;
+.compare-block{
+    margin: 35px 0;
 }
-
-.compare-programme .compare-block{
-    margin-top: 33px;
-}
-
-.compare-programme .compare-block .compare-img img {
-    height: 80px;
-    width: 80px;
-}
-
-.compare-programme .compare-block .compare-two-col {
+.compare-block .compare-two-col {
     display: flex;
     justify-content: space-between;
 }
 
-.compare-programme .compare-block .compare-two-col .compare_el:first-child {
+.compare-block .compare-two-col .compare_el:first-child {
     border-right: 1px solid #EBEDEF;
 }
 
-.compare-programme .compare-block .compare-two-col .compare_el {
-    padding: 36px 45px;
+.compare-block .compare-two-col .compare_el {
+    padding: 35px 45px;
     width: 50%;
     border-left: 1px solid #F3F5F7;
     border-left: none;
 }
 
-.compare-programme .compare-block .compare-two-col .compare_el h5{
+.compare-block .h4{
     font-weight: 600;
 }
 
-.compare-programme .compare-block .compare-two-col .compare-img{
+.compare-block .compare-two-col .compare-img{
     display: flex;
     align-items: center;
 }
 
-.compare-programme .compare-block .compare-two-col .compare_el  ul  {
+.compare-block .compare-two-col .compare_el  ul  {
     padding: 0 !important;
 }
 
-.compare-programme .compare-block .compare-two-col .compare_el  ul li {
-    margin-top: 6px;
+.compare-block .compare-two-col .compare_el  ul li {
+    margin-top: 5px;
 }

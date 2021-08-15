@@ -1,20 +1,7 @@
-.accordion-container {
-    width:790px;
-}
-
 .accordion {
-    font-family: 'Proxima Nova Rg', sans-serif;
-    background-color: #fff;
-    font-weight: 700;
     cursor: pointer;
-    padding: 16px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
+    padding: 15px 15px 15px 0;
     transition: 0.5s;
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -30,21 +17,15 @@
     transform: rotate(0deg);
 }
 
-.active, .accordion:hover {
-    background-color: #fff;
-}
-
 .panel {
-    padding: 0 18px;
-    background-color: #fff;
+    padding: 0 20px 0 40px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
 
-.panel .accordion-list {
-    display: flex;
-    flex-wrap: wrap;
+.accordion-line {
+    line-height: 2em;
 }
 
 .panel .accordion-list .accordion-col:not(:first-of-type) {
@@ -53,27 +34,4 @@
 
 .panel .accordion-list .accordion-col .accordion-row {
     margin-top: 10px;
-}
-
-.panel ul,
-.panel p{
-    padding: 0;
-    margin-left: 35px;
-}
-
-.second .accordion {
-    display: flex;
-    justify-content: left;
-}
-
-.second .accordion svg {
-    margin-right: 12px;
-}
-
-
-.second .accordion span {
-    font-size: 1.1em;
-    font-weight: 700;
-    font-family: 'Proxima Nova Rg', sans-serif;
-    margin-left: 20px;
 }

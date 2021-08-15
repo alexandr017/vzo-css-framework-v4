@@ -1,31 +1,22 @@
-.compare-programme {
-    padding: 30px;
+.compare-block{
+    margin: 35px 0;
 }
 
-.compare-programme h4 {
-    font-weight: 700;
-    font-family: 'Inter', sans-serif;
-}
-.compare-programme .compare-list{
-    margin-top: 33px;
-}
-
-
-.compare-programme .compare-list .compare-body .compare-body-inner h5{
+.compare-block .h4{
     font-weight: 600;
 }
 
-.compare-programme .compare-list .compare-body .compare-logo {
+.compare-block .compare-list .compare-body .compare-logo {
     display: flex;
     align-items: center;
     margin-top: 25px;
 
 }
 
-.compare-programme .compare-list .compare-body .compare-body-inner  ul  {
+.compare-block .compare-list .compare-body .compare-body-inner  ul  {
     padding: 0 !important;
 }
 
-.compare-programme .compare-list .compare-body .compare-body-inner  ul li {
-    margin-top: 6px;
+.compare-block .compare-list .compare-body .compare-body-inner  ul li {
+    margin-top: 5px;
 }

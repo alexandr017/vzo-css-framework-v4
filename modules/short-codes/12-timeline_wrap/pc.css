@@ -1,6 +1,6 @@
 .timeline-wrap_row {
     display: flex;
-    width: 790px;
+    margin: 30px 0;
 }
 
 .timeline-wrap_row:last-of-type {
@@ -11,6 +11,11 @@
     width: 350px;
     text-align: center;
     stroke: black;
+    height: 95px;
+}
+
+.timeline-wrap-circle{
+    height: 35px;
 }
 
 .timeline-wrap_el-text {

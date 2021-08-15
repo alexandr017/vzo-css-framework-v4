@@ -1,14 +1,9 @@
 .card-sel-block {
-    width: 790px;
     padding: 15px 0;
     margin: 15px 0;
     border-bottom: 1px solid #F6F8FB;
 }
 
-.card-sel-block .h2 {
-    font-weight: 700;
-    text-align: center;
-}
 
 .card-sel-body {
     display: flex;

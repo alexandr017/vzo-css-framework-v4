@@ -1,58 +1,37 @@
-.overpayment-block {
-    width: 790px;
+.overpayment-block{
+    margin: 30px 0;
 }
 
-.light-border{
-    width: 790px !important;
-}
-
-.light-border .tr {
+.overpayment-block .tr {
     display: flex;
     justify-content: space-between;
 }
 
-.light-border .tr .td {
+.overpayment-block .tr .td {
     padding: 1.2em;
     width: 50%;
     text-align: center;
 }
 
-.light-border .tr .th{
+.overpayment-block .tr .th{
     background: #FAFAFA;
     font-weight: 700;
 }
 
-.light-border  .border-radius-1 {
-    border-radius: 25px 0 0 0 ;
+.overpayment-block  .border-radius-1 {
+    border-radius: 25px 0 0 0;
 }
 
-.light-border .tr:not(:last-of-type):not(:first-of-type){
+.overpayment-block .tr:not(:last-of-type):not(:first-of-type){
     border-bottom: 1px solid #E7EBEE;
 }
 
-.light-border  .border-radius-2 {
+.overpayment-block  .border-radius-2 {
     border-radius: 0 25px 0 0;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 36px;
-    margin-top: 20px;
-}
+.overpayment-button-wrap{
+    margin: 20px 0;
+    text-align: center;
 
-.button .btn {
-    margin-top: 50px;
-    margin-left: 30px;
-    width: 230px;
-    height: 46px;
-    border: 1px solid #2ED47A;
-    background: #fff;
-    border-radius: 23px;
-    color:  #2ED47A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-weight: 700;
 }
