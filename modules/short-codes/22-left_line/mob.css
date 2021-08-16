@@ -1,6 +1,7 @@
 .l_line_wrap {
-    padding-left: 58px;
+    padding-left: 55px;
     position: relative;
+    margin: 30px 0;
 }
 
 .l_line_wrap:before {

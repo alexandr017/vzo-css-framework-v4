@@ -1,0 +1,149 @@
+.card-face {
+    width: 1110px ;
+    margin: 30px 0;
+    padding: 0 0 50px 0;
+}
+
+.card-face .face-header {
+    padding: 20px 60px 20px 60px;
+}
+
+.card-face  hr {
+    height: 1px;
+    border: none;
+    background-color:#EBEBEB;
+}
+
+.card-face .face-header .face-first-line {
+    margin-top: 10px;
+    margin-left: 15%;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-face .face-header .face-first-line a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top:10px;
+}
+
+.card-face .face-header .face-first-line .face-icons svg:first-of-type{
+    margin-right: 32px;
+}
+
+.card-face .face-header .face-top-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.card-face .face-header .face-top-inner .logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+
+}
+
+.card-face .face-header .face-top-inner .block-row {
+    margin-right: 65px;
+}
+
+
+.card-face .face-header .face-top-inner .block-row .face-head-intro {
+    font-weight: 600;
+}
+
+.card-face .face-header .face-top-inner .block-row .face-cont {
+    color: #87919F;
+    font-size:0.9em;
+    line-height: 1.2em;
+    margin-top: 18px;
+}
+
+.card-face .face-header .reviews span {
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+
+.card-face .card-more {
+    display: block;
+    float: right;
+    color: #4FABFA;
+    cursor: pointer;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.face-body .face-content {
+    padding: 5px 60px;
+}
+
+.face-body .credit-types {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 60px;
+}
+
+.face-body .credit-types a {
+    padding: 6px 25px;
+    background: #F6F8FB;
+    color: #222735 !important;
+}
+
+
+.face-body .hidden-block {
+    overflow: hidden;
+    max-height: 0;
+}
+
+.table-vertical-block {
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.table-vertical-block .tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-vertical-block .tr .th {
+    background: #F6F7F9;
+    border-bottom: none;
+    font-weight: 700;
+}
+
+.table-vertical-block .tr .td {
+    padding: 1.2em;
+    width: 25%;
+}
+
+
+.list-card-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 67px;
+}
+
+.list-card-block .list-card_el {
+    width: 30%;
+    margin-top: 32px;
+}
+
+.buttons {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 450px;
+    height: 45px;
+    margin-right: 60px;
+}
+
+
+

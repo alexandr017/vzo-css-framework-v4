@@ -1,12 +1,14 @@
 <div class="content">
-    <div class="calculator">
-    <h2>Калькулятор РКО</h2>
+
+    <div class="h4">Калькулятор РКО</div>
+
+    <div class="calculator-rko">
     <p>
         Если вы все еще сомневаетесь в том, какой расчетный счет стоит оформить для вашего ИП, я сделал специальный калькулятор.
         Укажите в нем желаемые характеристики счета и нажмите кнопку «Подобрать»,
         после чего вы увидите подходящие предложения. Также вы сможете более подробно узнать об условиях счетов.
     </p>
-    <div class="calculator-block border-radius">
+    <div class="calculator-rko-block border-radius">
         <div class="input-title">Количество платежей: <input type="number" id="rangenumber" step="1" min="0" max="100" value="50"   oninput="range.value=value"></div>
 
         <div class="range">
@@ -72,9 +74,31 @@
 
         </div>
 
-        <div class="btn">
-            [button]
-            [button]
+        <div class="calculator-rko-btn-wrap">
+            <div style="margin: 0 auto;">
+            <a href="#" class="btn-1 btn-light-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                    <g filter="url(#filter0_d)">
+                        <circle cx="27" cy="23" r="17" fill="white"/>
+                    </g>
+                    <path d="M21 21.002L27.0013 27.0006L33 20.9993" stroke="#2BC77E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <filter id="filter0_d" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.584314 0 0 0 0 0.647059 0 0 0 0 0.690196 0 0 0 0.15 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                        </filter>
+                    </defs>
+                </svg>
+                <span>Больше</span>
+            </a>
+
+            <a href="#" class="btn btn-dark">Найти</a>
+            </div>
         </div>
 
     </div>

@@ -1,6 +1,6 @@
 .vertical-tab-container {
-    width: 920px;
-    margin: 30px 0 30px -65px;
+    width: 1110px;
+    margin: 30px 0 30px -155px;
 }
 
 .tab-wrap {
@@ -16,6 +16,7 @@
 .tab .tab-links {
     padding: 16px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .tab .tab-links svg {
@@ -35,7 +36,6 @@
     stroke: #2ED47A;
 }
 
-
 .tabs-items {
     margin-right: -150px;
 }
@@ -51,28 +51,9 @@
     padding: 15px;
 }
 
-/*.tabs-items .tab-content .table {*/
-/*    width: 100%;*/
-/*    margin-bottom: 0;*/
-/*}*/
-
-/*.tabs-items .tab-content .table .tr {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*}*/
-
-/*.tabs-items .tab-content .table .tr .td {*/
-/*    padding: 8px 20px;*/
-/*    line-height: 1.5em;*/
-/*}*/
-
-
-.tabs-items .tab-content .table .tr .td:first-of-type {
-    width: 35%;
-    background: #F6F7F9;
+.tabs-items .tab-content p {
     font-weight: 600;
 }
 
-.tabs-items .tab-content .table .tr .td:last-of-type {
-    width: 65%;
-}
+
+

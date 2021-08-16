@@ -37,15 +37,21 @@ img {
 }
 p {margin-top: 0;}
 
-.content{
+.content {
     max-width: 790px;
     margin: 0 auto;
+    font-size: 1.1em;
+}
+
+.content ul {
+    padding: 0;
 }
 
 .content ul li{
     position: relative;
     list-style-type: none;
     padding-left: 20px;
+    margin-top: 12px;
 }
 
 

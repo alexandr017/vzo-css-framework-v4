@@ -17,19 +17,13 @@
     border-left: none;
 }
 
-.compare-block .h4{
+.compare-block .compare-title {
+    font-size: 1.5em;
     font-weight: 600;
+    margin-top: 20;
 }
 
 .compare-block .compare-two-col .compare-img{
     display: flex;
     align-items: center;
-}
-
-.compare-block .compare-two-col .compare_el  ul  {
-    padding: 0 !important;
-}
-
-.compare-block .compare-two-col .compare_el  ul li {
-    margin-top: 5px;
 }

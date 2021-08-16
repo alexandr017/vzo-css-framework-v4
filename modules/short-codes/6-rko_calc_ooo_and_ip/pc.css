@@ -4,6 +4,9 @@
     padding: 40px 65px;
 }
 
+.h2 {
+    font-weight: 700;
+}
 
 .calculator-rko .calculator-rko-block .input-title,
 .calculator-rko .calculator-rko-block .check-box-title{
@@ -19,7 +22,7 @@
 input[type=range] {
     outline: none;
     padding: 0;
-    width: 99.1%;
+    width: 99%;
     height: 4px;
     background-size: 47% 100%;
     background-color: #ebebeb;
@@ -115,8 +118,8 @@ input.range-value:before{
     height: 10px;
     width: 3px!important;
     background-color: #ebebeb;
-    margin-top: -25px;
-    margin-left: 10px;
+    margin-top: -26px;
+    margin-left: 13px;
     z-index: 0;
 }
 
@@ -165,6 +168,8 @@ input.range-value:before{
     margin-right: 300px;
 }
 
-.calculator-rko .calculator-rko-block .btn {
+.calculator-rko .calculator-rko-block .calculator-rko-btn-wrap {
+    display: flex;
+    justify-content: space-between;
     margin-top: 31px;
 }

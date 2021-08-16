@@ -5,6 +5,8 @@
 
 .related .related-title {
     padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.2em;
 }
 
 .related .related-link-wrap {

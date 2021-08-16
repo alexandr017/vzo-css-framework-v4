@@ -45,18 +45,3 @@
     color: #87919F;
     font-size: 0.87em;
 }
-
-.tariff-block-btn .btn {
-    font-family: 'Proxima Nova Rg', sans-serif;
-    width: 190px;
-    height: 44px;
-    background:  #2ED47A;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.1em;
-}
-

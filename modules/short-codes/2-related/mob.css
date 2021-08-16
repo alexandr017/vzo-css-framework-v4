@@ -1,11 +1,13 @@
 .related {
     margin: 30px 0;
-    padding: 19px 30px;
+    padding: 20px 30px;
 }
 
 
 .related .related-title {
     padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.2em;
 }
 
 .related .related-link-wrap {

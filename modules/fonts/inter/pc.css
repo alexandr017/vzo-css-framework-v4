@@ -1,0 +1,8 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    src: url('/modules/fonts/inter/Inter-Regular.ttf');
+    src: local('Inter Regular'), local('Inter');
+    font-weight: normal;
+    font-style: normal;
+}
