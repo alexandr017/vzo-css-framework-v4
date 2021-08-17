@@ -6,15 +6,15 @@
 .rat-block-header {
     display: flex;
     padding: 2em;
-    margin-top: 37px;
+    margin-top: 35px;
 }
 
 .rat-block-sticker {
     float: right;
     background: #FFE769;
     border-radius: 0px 25px;
-    width: 154px;
-    height: 76px;
+    width: 160px;
+    height: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,12 +23,11 @@
 }
 
 .rat-block-header img{
-    width: 80px;
-    height: 80px;
+   max-width: fit-content;
 }
 
 .rat-block-text {
-    margin-left: 31px;
+    margin-left: 30px;
     margin-top: 25px;
 }
 
@@ -49,11 +48,10 @@
 }
 
 .rat-block-info .block-info_content {
-    padding: 35px 82px;
+    padding: 15px 30px;
     background: #F6F7F9;
     font-size: 1.1em;
     line-height: 1.6em;
-    font-weight: 600;
 }
 
 .rat-block-items {
@@ -108,50 +106,27 @@
     top: 8px;
 }
 
-.product_review-block .button,
-.product_review-short-block .button {
+.product_review-block .product_review-btn-wrap,
+.product_review-short-block .product_review-btn-wrap {
     display: flex;
     justify-content: center;
     padding-bottom: 36px;
     margin-top: 20px;
 }
 
-.product_review-block .button .btn,
-.product_review-short-block .button .btn {
-    margin-left: 30px;
-    width: 230px;
-    height: 46px;
-    background: #2ED47A;
-    border-radius: 23px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.rat-block-table table tr:first-of-type td {
-    padding-top: 25px;
-}
-
-.rat-block-table table tr:last-of-type td {
-    padding-bottom: 25px;
-}
-
 .rat-block-table table tr td:first-of-type {
-    width: 30%;
+    width: 35%;
     background: #F6F8FB;
     font-weight: 600;
 }
 
 .rat-block-table table tr td:last-of-type {
-    width: 70%;
+    width: 65%;
 }
 
 .rat-block-table table tr td {
     padding: 8px 30px 8px 65px;
-    font-size: .87em;
+    font-size: 1em;
 }
 
 .product_review-short-block {
@@ -184,25 +159,17 @@
 }
 
 .accordion {
-    font-family: 'Proxima Nova Rg', sans-serif;
-    background-color: #fff;
     cursor: pointer;
-    padding: 16px 0;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.1em;
+    padding: 10px 0;
     transition: 0.5s;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-
-.accordion span {
-    margin-left: 20px;
     font-weight: 600;
     line-height: 1.6em;
 }
+
+.accordion span {
+    margin-left: 10px;
+}
+
 
 .accordion .arrow {
     transform: rotate(-90deg);

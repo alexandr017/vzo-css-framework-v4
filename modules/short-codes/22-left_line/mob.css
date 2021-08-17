@@ -14,15 +14,7 @@
     border-radius: 6px;
 }
 
-.l_line_wrap .l_line-title {
-    font-weight: 600;
-}
-
+.l_line_wrap .l_line-title,
 .l_line-text {
     font-weight: 600;
-}
-
-.l_line-bank-list {
-    list-style-type: none;
-    padding: 0;
 }

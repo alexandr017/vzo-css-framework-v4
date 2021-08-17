@@ -1,15 +1,15 @@
 .product_review-block,
 .product_review-short-block {
     width: 100%;
+    margin: 30px 0;
 }
 .rat-block-header {
     padding: 20px;
-    margin-top: 37px;
+    margin-top: 35px;
 }
 
 .rat-block-header img {
-    width: 80px;
-    height: 80px;
+   max-width: fit-content;
 }
 
 .rat-block-sticker {
@@ -33,7 +33,6 @@
 
 .rat-block-content {
     margin-top: 10px;
-    font-size: 1.1em;
     line-height: 1.6em;
 }
 
@@ -42,10 +41,9 @@
 }
 
 .rat-block-info .block-info_content {
-    padding: 23px 35px;
+    padding: 20px 25px;
     background: #F6F7F9;
-    font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.6em;
     font-weight: 600;
 }
 
@@ -99,26 +97,12 @@
     top: 8px;
 }
 
-.product_review-block .button,
-.product_review-short-block .button{
+.product_review-block .product_review-btn-wrap,
+.product_review-short-block .product_review-btn-wrap {
     display: flex;
     justify-content: center;
     padding-bottom: 36px;
     margin-top: 20px;
-}
-
-.product_review-block .button .btn,
-.product_review-short-block .button .btn {
-    width: 230px;
-    height: 46px;
-    background: #2ED47A;
-    border-radius: 23px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-weight: 600;
 }
 
 .rat-block-table table {
@@ -131,7 +115,6 @@
 
 .rat-block-table table tr td:first-of-type{
     width:35px;
-    padding: 5px 30px !important;
 }
 
 .rat-block-table table tr td:last-of-type{
@@ -150,23 +133,17 @@
 }
 
 .accordion {
-    font-family: 'Proxima Nova Rg', sans-serif;
-    font-weight: 600;
-    background-color: #fff;
     cursor: pointer;
-    padding: 16px 29px;
-    border: none;
-    text-align: left;
-    outline: none;
+    padding: 10px 20px;
     transition: 0.5s;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    font-weight: 600;
+    line-height: 1.6em;
 }
 
 .accordion span {
-   padding-left: 20px;
+    margin-left: 10px;
 }
+
 
 .accordion .arrow {
     transform: rotate(-90deg);
@@ -181,7 +158,6 @@
 }
 
 .panel {
-
     padding: 0 35px;
     background-color: #fff;
     max-height: 0;
@@ -189,9 +165,7 @@
     transition: max-height 0.3s ease-out;
 }
 
-.panel div{
-    margin-left: 20px;
-}
+
 
 
 

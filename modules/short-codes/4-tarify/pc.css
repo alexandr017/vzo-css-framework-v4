@@ -1,5 +1,6 @@
 .tariff-block {
-    margin: 30px 0;
+    width: 1110px;
+    margin: 30px 0 30px -160px;
     padding: 45px 30px;
     display: flex;
 }

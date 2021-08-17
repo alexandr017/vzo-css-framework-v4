@@ -4,7 +4,7 @@ table {
 }
 
 table td, table th {
-    padding: 1.5em 2em;
+    padding: 1em 2em;
 }
 
 table .main-td {
@@ -14,6 +14,14 @@ table .main-td {
 
 table.table-vertical {
     border-collapse: collapse;
+}
+
+table.table-vertical tr:first-of-type td {
+    padding-top: 25px;
+}
+
+table.table-vertical tr:last-of-type td {
+    padding-bottom: 25px;
 }
 
 table.table-horizontal {

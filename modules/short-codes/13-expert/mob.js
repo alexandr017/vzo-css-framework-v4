@@ -19,7 +19,7 @@ function actionMoreLess(){
         e.preventDefault();
         var $this = $(this),
             boxInnerH = $this.closest(boxOuter).find(boxInner).height(),
-            boxInnerUpdate = boxInnerH + $this.closest(boxOuter).find(boxInner).data("increase-by"),
+            boxInnerUpdate = boxInnerH + $this.closest(boxOuter).find(boxInner).data("max-height"),
             boxBodyH = $this.closest(boxOuter).find(boxBody).height();
         setTimeout(function(){
             if(boxBodyH > boxInnerUpdate){

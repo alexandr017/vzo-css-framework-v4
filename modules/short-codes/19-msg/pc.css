@@ -1,22 +1,15 @@
 .msg-wrap {
-    padding: 35px 70px 25px;
+    padding: 30px 45px;
     margin: 15px 0;
 }
 
 .msg-title {
-    font-size: 1.2em;
     font-weight: 600;
 }
 
-.msg-wrap.success,
-.msg-wrap.danger {
-    font-weight: 600;
-    font-size: 1.1em;
-}
 
 .msg-wrap.default {
     background: #FAFAFA;
-    font-size: 1.1em;
 }
 
 .msg-wrap.success {

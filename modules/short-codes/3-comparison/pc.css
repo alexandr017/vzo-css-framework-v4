@@ -3,7 +3,6 @@
 }
 .compare-block .compare-two-col {
     display: flex;
-    justify-content: space-between;
 }
 
 .compare-block .compare-two-col .compare_el:first-child {
@@ -13,17 +12,10 @@
 .compare-block .compare-two-col .compare_el {
     padding: 35px 45px;
     width: 50%;
-    border-left: 1px solid #F3F5F7;
-    border-left: none;
 }
 
 .compare-block .compare-title {
     font-size: 1.5em;
     font-weight: 600;
-    margin-top: 20;
-}
-
-.compare-block .compare-two-col .compare-img{
-    display: flex;
-    align-items: center;
+    margin-top: 20px;
 }

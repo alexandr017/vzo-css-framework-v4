@@ -43,8 +43,16 @@ p {margin-top: 0;}
     font-size: 1.1em;
 }
 
-.content ul {
+.content ul{
     padding: 0;
+}
+
+.content ol {
+    padding-left: 20px;
+}
+
+.content ol li {
+    margin-top: 12px;
 }
 
 .content ul li{

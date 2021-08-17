@@ -1,8 +1,7 @@
 .insert-video-block {
     max-width: 315px;
-    width: 100%;
     position: relative;
-    margin: 30px 0;
+    margin: 30px  auto;
 }
 
 .video-img {
@@ -11,12 +10,14 @@
     z-index: 0;
 }
 
+.play-video-el {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .play-video-el svg {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     margin: auto;
     cursor: pointer;
     z-index: 10;

@@ -1,5 +1,5 @@
 function actionMoreLess(){
-    var boxOuter = ".data-more-less",
+    var boxOuter = ".data-more-less,
         boxInner = ".data-more-less-inner",
         boxBody = ".data-more-less-body",
         showMore = $(".action-more"),
