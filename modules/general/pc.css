@@ -32,7 +32,7 @@ a {
     text-decoration:none;
 }
 
-img {
+img, iframe {
     max-width: 100%;
 }
 p {margin-top: 0;}

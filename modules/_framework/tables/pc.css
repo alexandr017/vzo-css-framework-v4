@@ -8,7 +8,7 @@ table td, table th {
 }
 
 table .main-td {
-    background: #F6F7F9;
+    background: #F6F8FB;
     font-weight: bold;
 }
 
@@ -38,7 +38,7 @@ table.table-info .border-radius-1{
 
 table.table-horizontal tr:not(:last-of-type),
 table.table-limit tr:not(:last-of-type):not(:first-of-type),
-table.table-info tr:not(:last-of-type){
+table.table-info tr:not(:last-of-type) td:last-of-type {
     border-bottom: 1px solid #E7EBEE;
 }
 

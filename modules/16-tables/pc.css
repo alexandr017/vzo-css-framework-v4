@@ -1,86 +1,3 @@
-table {
-    width: 100%;
-    table-layout:fixed;
-}
-
-table td, table th {
-    padding: 1.5em 2em;
-}
-
-table .main-td{
-    background: #F6F7F9;
-    font-weight: bold;
-}
-
-table.table-vertical {
-    border-collapse: collapse;
-}
-
-table.table-horizontal {
-    border-radius: 25px;
-    text-align: center;
-    border-collapse: collapse;
-}
-
-table.table-horizontal .border-radius-1,
-table.table-limit .border-radius-1,
-table.table-info .border-radius-1{
-    border-radius: 25px 0 0 0;
-}
-
-table.table-horizontal tr:not(:last-of-type):not(:first-of-type),
-table.table-limit tr:not(:last-of-type):not(:first-of-type),
-table.table-info tr:not(:last-of-type){
-    border-bottom: 1px solid #E7EBEE;
-}
-
-table.table-horizontal .border-radius-2,
-table.table-limit .border-radius-2,
-table.table-info .border-radius-2{
-    border-radius: 0 25px 0 0;
-}
-
-
-
-table.table-limit {
-    border-radius: 25px;
-    border-collapse: collapse;
-}
-
-table.table-limit td {
-    text-align: center;
-}
-
-table.table-limit td:first-child {
-    text-align: left;
-}
-
-table.table-limit tr td:first-of-type{
-    color: #017AD3;
-}
-
-table.table-limit td th svg{
-    margin-left: 10px;
-}
-
-table.table-limit tr th svg:active{
-    transform: rotate(180deg);
-}
-
-
-table.table-info {
-    border-radius: 25px;
-    text-align: left;
-    border-collapse: collapse;
-}
-
-table.table-info .border-radius-3,
-.table .tr .border-radius-3{
-    border-radius: 0 0 0 25px;
-}
-
-
-
 /*div table*/
 
 .table {
@@ -131,7 +48,7 @@ table.table-info .border-radius-3,
 
 .table-limit-block .tr:not(:last-of-type):not(:first-of-type),
 .light-border .tr:not(:last-of-type):not(:first-of-type),
-.table .tr:not(:last-of-type){
+.table .tr:not(:last-of-type) .td:last-of-type {
     border-bottom: 1px solid #E7EBEE;
 }
 

@@ -208,6 +208,10 @@
     box-shadow: none;
 }
 
+.prev-btn {
+    cursor: pointer;
+}
+
 .prev-btn svg .ellipse_el {
     fill: white;
 }
@@ -226,6 +230,13 @@
 
 .prev-btn svg:active .ellipse_el {
     fill:#2BC77E;
+}
+
+.up-btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
 }
 
 .up-btn svg .circle_el {
@@ -248,6 +259,13 @@
     fill:#2BC77E;
 }
 
+.claim-btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
 .claim-btn svg .circle_el {
     fill: white;
 }
@@ -266,6 +284,61 @@
 
 .claim-btn svg:active .circle_el {
     fill:#EF3B46;
+}
+
+
+.print-btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.print-btn svg .circle_el {
+    fill: white;
+}
+
+.print-btn svg:hover .circle_el {
+    fill:#2CDD88;
+}
+
+.print-btn svg .print_el {
+    stroke: #222735;
+}
+
+.print-btn svg:hover .print_el {
+    stroke: white;
+}
+
+.print-btn svg:active .circle_el {
+    fill:#2BC77E;
+}
+
+.next-btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.next-btn svg .ellipse_el {
+    fill: white;
+}
+
+.next-btn svg:hover .ellipse_el {
+    fill:#2ED47A;
+}
+
+.next-btn svg .arrow_el {
+    fill: #87919F;
+}
+
+.next-btn svg:hover .arrow_el {
+    fill: white;
+}
+
+.next-btn svg:active .ellipse_el {
+    fill:#2BC77E;
 }
 
 

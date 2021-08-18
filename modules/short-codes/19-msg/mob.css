@@ -8,16 +8,26 @@
 }
 
 .msg-wrap.default {
-    background: #FAFAFA;
+    background: #F6F8FB;
 }
 
 .msg-wrap.success {
-    background: #E3FFED;
+    background: #E3FFF0;
 }
 
 .msg-wrap.danger {
-    background: #FFEBF0
+    background: #FFEDF3;
 }
+
+
+.msg-wrap.info {
+    background: #EDFCFF;
+}
+
+.msg-wrap.warning {
+    background: #FFFBDD;
+}
+
 
 .msg-flex {
     display: flex;

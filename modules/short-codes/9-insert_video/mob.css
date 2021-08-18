@@ -2,6 +2,7 @@
     max-width: 315px;
     position: relative;
     margin: 30px  auto;
+    border-radius: 15px;
 }
 
 .video-img {
@@ -14,6 +15,9 @@
    display: flex;
     align-items: center;
     justify-content: center;
+}
+.play-video-el img {
+    border-radius: 15px;
 }
 
 .play-video-el svg {

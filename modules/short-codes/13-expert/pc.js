@@ -1,5 +1,5 @@
 function actionMoreLess(){
-    var boxOuter = ".data-more-less,
+    var boxOuter = ".data-more-less",
         boxInner = ".data-more-less-inner",
         boxBody = ".data-more-less-body",
         showMore = $(".action-more"),
@@ -29,8 +29,8 @@ function actionMoreLess(){
             }
         },10);
     });
-showLess.click(function(){
-    $(this).closest(boxOuter).removeClass("less-active").find(boxInner).css("max-height", $(this).closest(boxOuter).find(boxInner).data("height"));
+    showLess.click(function(){
+        $(this).closest(boxOuter).removeClass("less-active").find(boxInner).css("max-height", $(this).closest(boxOuter).find(boxInner).data("height"));
     return false;
 });
 } actionMoreLess();
