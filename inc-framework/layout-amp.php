@@ -9,6 +9,9 @@
     <meta name="format-detection" content="telephone=no">
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+<!--    <script async custom-element="amp-inline-gallery" src="https://cdn.ampproject.org/v0/amp-inline-gallery-0.1.js"></script>-->
+<!--    <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>-->
+<!--    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>-->
     <link rel="canonical" href="https://vsezaimyonline.ru">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <style amp-custom>
@@ -22,30 +25,6 @@
             max-width: 768px;
             margin: 0 auto;
         }
-        .light-border {
-            border: 1px solid #EBEBEB;
-        }
-        .border-radius {
-            border-radius: 5px;
-        }
-        .text-center {
-            text-align: center;
-        }
-        .btn {
-            min-width: 225px;
-            padding: .6em 2em;
-            outline: 0;
-            border: 0;
-            text-decoration: none;
-            text-align: center;
-            display: inline-block;
-            max-height: 50px;
-            vertical-align: top;
-            font-size: 1em;
-        }
-
-
-
         :root {
             --color-primary: #005AF0;
             --space-1: .5rem;  /* 8px */
@@ -59,20 +38,14 @@
         }
         amp-selector[role=tablist].tabs-with-flex [role=tab] {
             flex-grow: 1;
+            /* custom styling, feel free to change */
             text-align: center;
             padding: var(--space-1);
-            width: 100%;
-            text-align: left;
-            font-size: 1em;
-            font-weight: bold;
-            border-bottom: 2px solid #EBEBEB;
-            font-family: "Futura PT";
-            padding: 14px 16px;
         }
-        amp-selector[role=tablist].tabs-with-flex [role=tab][selected], amp-selector[role=tablist].tabs-with-flex [role=tab]:hover {
+        amp-selector[role=tablist].tabs-with-flex [role=tab][selected] {
             outline: none;
-            color: #017AD3;
-            border-bottom: 2px solid #017AD3;
+            /* custom styling, feel free to change */
+            border-bottom: 2px solid var(--color-primary);
         }
         amp-selector[role=tablist].tabs-with-flex [role=tabpanel] {
             display: none;
@@ -91,7 +64,8 @@
         }
         amp-selector[role=tablist].tabs-with-selector [role=tab][selected] {
             outline: none;
-            border-bottom: 2px solid #017AD3;
+            /* custom styling, feel free to change */
+            border-bottom: 2px solid var(--color-primary);
         }
         amp-selector[role=tablist].tabs-with-selector {
             display: flex;
@@ -111,8 +85,12 @@
             outline: none;
             display: block;
         }
-
         <?php
+        include('modules/general/mob.css');
+        include('modules/_framework/buttons/amp.css');
+        include('modules/_framework/tables/pc.css');
+        include('modules/_framework/titles/pc.css');
+        include('modules/_framework/grid/pc.css');
             $mode = $_GET['mode'] ?? 'pc';
             $module = $_GET['module'];
             $mode_style = $_SERVER['DOCUMENT_ROOT'].'/modules/'.$module.'/amp.css';
@@ -124,16 +102,12 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-md-9">
-            <?php
-            $mode_content = $_SERVER['DOCUMENT_ROOT'].'/modules/'.$module.'/amp.html';
-            if(file_exists($mode_content)){
-                include ($mode_content);
-            }
-            ?>
-        </div>
-    </div>
+    <?php
+    $mode_content = $_SERVER['DOCUMENT_ROOT'].'/modules/'.$module.'/amp.html';
+    if(file_exists($mode_content)){
+        include ($mode_content);
+    }
+    ?>
 </div>
 </body>
 </html>

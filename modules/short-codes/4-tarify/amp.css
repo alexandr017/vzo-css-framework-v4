@@ -1,0 +1,45 @@
+.tariff-block {
+    margin: 30px 0;
+    padding: 30px;
+}
+
+.tariff-title {
+    margin-top: 22px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.tariff-img {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tariff-img img {
+    width: 100%;
+    max-width: fit-content;
+}
+
+.tariff-label {
+    width: 70%;
+    font-weight: 600;
+}
+
+.tariff-label-title {
+    margin-top: 5px;
+    width: 30%;
+    color: #87919F;
+    font-size: 0.87em;
+}
+
+.tariff-block .info_el {
+    margin-top: 15px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.tariff-block-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
