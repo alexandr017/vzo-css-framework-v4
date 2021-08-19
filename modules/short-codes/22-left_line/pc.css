@@ -14,3 +14,6 @@
     border-radius: 6px;
 }
 
+.l_line_wrap p {
+    font-weight: 600;
+}
