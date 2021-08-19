@@ -10,7 +10,7 @@
         <div class="face-top-inner">
 
             <div class="logo border-radius">
-                <img src="/v4/images/ellipse-logo.png" alt="logo">
+                <img src="/v4/images/ellipse-logo.png" loading="lazy" alt="">
             </div>
             <div class="block-row reviews">
                 <div class="card-head-intro">
@@ -97,28 +97,83 @@
             <div class="tr">
                 <div class="td th">Сумма</div>
                 <div class="td">от 3 000 до 30 000 руб.</div>
-                <div class="td th">Документы</div>
-                <div class="td">Паспорт</div>
+                <div class="td th">Условия кредитования</div>
+                <div class="td l-el">
+                    <div class="face-rating">
+                        <div class="percent" style="width: 80%; background: #2ED47A;"></div>
+                    </div>
+                    <div class="rating-val">
+                        8/10
+                    </div>
+                </div>
             </div>
             <div class="tr">
                 <div class="td th">Ставка в день</div>
                 <div class="td">0.83%</div>
-                <div class="td th">Плохая КИ</div>
-                <div class="td">Нет</div>
+                <div class="td th">Удобство для заемщика</div>
+                <div class="td l-el">
+                    <div class="face-rating">
+                        <div class="percent" style="width: 80%; background: #2ED47A;"></div>
+                    </div>
+                    <div class="rating-val">
+                        8/10
+                    </div>
+                </div>
             </div>
             <div class="tr">
                 <div class="td th">Переплата,от</div>
                 <div class="td">174 руб.</div>
                 <div class="td th">Продление</div>
-                <div class="td">Нет</div>
+                <div class="td l-el">
+                    <div class="face-rating">
+                        <div class="percent" style="width: 80%; background: #2ED47A;"></div>
+                    </div>
+                    <div class="rating-val">
+                        8/10
+                    </div>
+                </div>
             </div>
             <div class="tr">
                 <div class="td th">Возраст заемщика</div>
                 <div class="td">от 18 до 90 лет</div>
-                <div class="td th">Скорость выплаты</div>
-                <div class="td">Моментально</div>
+                <div class="td th">Оформление и погашение</div>
+                <div class="td l-el">
+                    <div class="face-rating">
+                        <div class="percent" style="width: 60%; background: #2ED47A;"></div>
+                    </div>
+                    <div class="rating-val">
+                        6/10
+                    </div>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="td th">Возраст заемщика</div>
+                <div class="td">от 18 до 90 лет</div>
+                <div class="td th">Надежность банка</div>
+                <div class="td l-el">
+                    <div class="face-rating">
+                        <div class="percent" style="width: 60%; background: #2ED47A;"></div>
+                    </div>
+                    <div class="rating-val">
+                        6/10
+                    </div>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="td th">Возраст заемщика</div>
+                <div class="td">от 18 до 90 лет</div>
+                <div class="td th">Доступность для заемщиков</div>
+                <div class="td l-el">
+                    <div class="face-rating">
+                        <div class="percent" style="width: 70%; background: #2ED47A;"></div>
+                    </div>
+                    <div class="rating-val">
+                        7/10
+                    </div>
+                </div>
             </div>
         </div>
+
 
         <div class="list-card-block">
             <div class="list-card_el">
@@ -146,33 +201,11 @@
             </div>
         </div>
 
-        <div class="buttons">
-            <a href="#" class="btn btn-1-outline btn-support border-radius">Все продукты компании</a>
-            <a href="#" class="btn btn-1-outline btn-auth border-radius">Оформить</a>
+        <div class="face-btn-wrap">
+            <a href="#" class="btn btn-light">Все продукты компании</a>
+            <a href="#" class="btn btn-success">Оформить</a>
         </div>
 
     </div>
 
 </div>
-
-<script>
-    document.addEventListener("click", function(e) {
-        if(e.target && e.target.classList.contains("card-more")) {
-            e.target.classList.toggle("active");
-            var panel = e.target.previousElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-                e.target.innerHTML = 'Больше <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">\n' +
-                    '<path d="M10 1L5.5 5L1 1" stroke="#4FABFA"/>\n' +
-                    '</svg>\n' +
-                    '<span uk-icon="icon: chevron-down"></span> ';
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + 0+ "px";
-                e.target.innerHTML = 'Скрыть <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">\n' +
-                    '<path d="M1 5L5.5 1L10 5" stroke="#4FABFA"/>\n' +
-                    '</svg> '+'<span uk-icon="icon: chevron-up"></span>';
-            }
-        }
-    });
-
-</script>

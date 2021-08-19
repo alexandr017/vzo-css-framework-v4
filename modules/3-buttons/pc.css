@@ -6,7 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Proxima Nova Rg', sans-serif;
     cursor: pointer;
     font-weight: 600;
 }
@@ -55,7 +54,6 @@
 }
 
 .btn-1 {
-    font-family: 'Proxima Nova Rg', sans-serif;
     font-weight: 600;
     display: flex;
     align-items: center;

@@ -61,40 +61,6 @@
     margin-top: 30px;
 }
 
-.f-line-1 .f-support .btn-chat .btn {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    min-width: 200px;
-    max-height: 50px;
-    cursor: pointer;
-    padding: 0 2em;
-
-}
-
-.f-line-1 .f-support .btn-chat .btn-1-outline{
-    background: #fff;
-    color: #FF4D4A;
-}
-
-.f-line-1 .f-support .btn-chat .btn-whats-app {
-    color: #57BD62;
-    background: #fff;
-}
-
-.f-line-1 .f-support .btn-chat .btn-telegram {
-    color: #2FB3F4;
-    background: #fff;
-}
-
-.f-line-1 .f-support .btn-chat .btn svg {
-    margin-right: 16px;
-}
-
-
 .f-line-1 ul li {
     line-height: 3;
     list-style-type: none;

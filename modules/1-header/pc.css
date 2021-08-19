@@ -207,11 +207,6 @@
     cursor: pointer;
 }
 
-.sub-nav_one-column, .sub-nav_two-column {
-    z-index: 5;
-    background: #fff;
-}
-
 .sub-nav_one-column {
     min-width:280px;
 }
@@ -222,7 +217,9 @@
 
 .sub-nav_one-column,
 .sub-nav_two-column {
-    border-radius: 29px;
+    z-index: 5;
+    background: #fff;
+    border-radius:10px;
     padding: 20px;
 }
 

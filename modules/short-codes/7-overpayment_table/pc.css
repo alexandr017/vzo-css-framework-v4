@@ -8,3 +8,17 @@
     align-items: center;
     justify-content: center;
 }
+
+.table-horizontal tbody tr td:first-of-type,
+.table-horizontal thead tr th:first-of-type{
+    border-right:1px solid #E6EBEF;
+}
+
+
+.hiddenStyle {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 0;
+    width: 0;
+}
