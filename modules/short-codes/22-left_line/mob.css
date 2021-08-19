@@ -14,7 +14,6 @@
     border-radius: 6px;
 }
 
-.l_line_wrap .l_line-title,
-.l_line-text {
+.l_line_wrap p {
     font-weight: 600;
 }
