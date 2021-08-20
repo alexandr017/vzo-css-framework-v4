@@ -37,10 +37,13 @@ table.table-info .border-radius-1{
     border-radius: 25px 0 0 0;
 }
 
-table.table-horizontal tr:not(:last-of-type),
 table.table-limit tr:not(:last-of-type),
 table.table-info tr:not(:last-of-type) td:last-of-type {
     border-bottom: 1px solid #E7EBEE;
+}
+
+table.table-horizontal tr:not(:last-of-type) {
+    border-top: 1px solid #E7EBEE;
 }
 
 table.table-horizontal .border-radius-2,
@@ -62,10 +65,6 @@ table.table-limit td {
 
 table.table-limit td:first-child {
     text-align: left;
-}
-
-table.table-limit tr td:first-of-type{
-    color: #017AD3;
 }
 
 table.table-limit td th svg{
@@ -175,10 +174,6 @@ table.table-info .border-radius-3,
     width: 25%;
 }
 
-.table-limit-block .tr .td:first-of-type {
-    color: #017AD3;
-}
-
 /*table 3*/
 
 .table-vertical-block {
@@ -192,7 +187,7 @@ table.table-info .border-radius-3,
 }
 
 .table-vertical-block .tr .th {
-    background: #F6F7F9;
+    background: #F6F8FB;
     border-bottom: none;
     font-weight: 700;
 }
@@ -220,6 +215,6 @@ table.table-info .border-radius-3,
 }
 
 .light-border .tr .th{
-    background: #F6F7F9;
+    background: #F6F8FB;
     font-weight: 700;
 }

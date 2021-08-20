@@ -15,13 +15,7 @@ items.forEach(function (item, index) {
         loadLess.style.display = "none";
     }
 
-    if (index === 7) {
-        item.style.borderBottom = "none";
-    }
 
-    if (index === 8) {
-        item.style.borderTop = "1px solid #E5E5E5";
-    }
 
 });
 
