@@ -16,13 +16,10 @@ body{
     background-color: #fff;
 }
 
-body, input, textarea, select{
+body, input, textarea, select, .btn , .btn-1{
     font-family: 'Proxima Nova Rg', sans-serif;
 }
 
-.btn {
-    font-family: 'Inter', sans-serif;
-}
 
 a, a:visited:not(a.btn,.breadcrumbs a) {
     color: #4FABFA;

@@ -5,7 +5,7 @@
 }
 
 .card-face .face-header {
-    padding: 20px 60px 20px 60px;
+    padding: 20px 60px;
 }
 
 .card-face  hr {
@@ -60,7 +60,7 @@
     color: #87919F;
     font-size:0.9em;
     line-height: 1.2em;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .card-face .face-header .reviews span {
@@ -100,50 +100,50 @@
     max-height: 0;
 }
 
-.table-vertical-block {
-    margin-top: 50px;
-    width: 100%;
-    margin-bottom: 50px;
+.face-body .table-vertical-block .tr .td:first-of-type {
+    padding-left: 60px;
 }
 
-.table-vertical-block .tr {
+.face-body .list-card-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+.face-body .list-card-block .list-card_el {
+    width: 30%;
+    margin-top: 35px;
+}
+
+.face-body .table-vertical-block .tr .l-el {
+    display: flex;
+}
+
+.face-body .table-vertical-block .tr .l-el  .face-rating {
+    width: 70%;
+    height: 10px;
+    background: #E6EBEF;
+    border-radius: 28px;
+    margin-top: 6px;
+}
+.face-body .table-vertical-block .tr .l-el .face-rating .percent {
+    height: 10px;
+    background: #2ED47A;
+    border-radius: 28px;
+}
+.face-body .table-vertical-block .tr .l-el .rating-val {
+    margin-left: 10px;
+}
+
+.face-body .face-btn-wrap {
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
 }
 
-.table-vertical-block .tr .th {
-    background: #F6F7F9;
-    border-bottom: none;
-    font-weight: 700;
-}
-
-.table-vertical-block .tr .td {
-    padding: 1.2em;
-    width: 25%;
-}
-
-
-.list-card-block {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 67px;
-}
-
-.list-card-block .list-card_el {
-    width: 30%;
-    margin-top: 32px;
-}
-
-.buttons {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.btn {
+.face-body .face-btn-wrap .btn {
     width: 450px;
     height: 45px;
-    margin-right: 60px;
 }
-
 
 

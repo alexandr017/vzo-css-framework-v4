@@ -3,7 +3,7 @@
     padding: 30px;
 }
 
-.go-to-acc img {
+.go-to-acc .go-to-acc_body img {
     max-width: fit-content;
 }
 
@@ -11,7 +11,7 @@
     display: flex;
 }
 
-.go-to-acc_body .go-to-acc_text {
+.go-to-acc_body p {
     margin-left: 35px;
 }
 
