@@ -37,6 +37,15 @@ p {margin-top: 0;}
     padding: 0;
 }
 
+.content table {
+    font-size: .9em;
+}
+
+.content .table-bl {
+    font-size: .9em;
+}
+
+
 .content ul li{
     position: relative;
     list-style-type: none;

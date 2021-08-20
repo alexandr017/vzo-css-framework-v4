@@ -1,5 +1,3 @@
-const $$ = (s) => document.querySelectorAll(s);
-
 window.onscroll = function() {shadowMenu()};
 function shadowMenu() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {

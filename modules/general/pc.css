@@ -40,6 +40,14 @@ p {margin-top: 0;}
     font-size: 1.1em;
 }
 
+.content table {
+    font-size: .9em;
+}
+
+.content .table-bl {
+    font-size: .9em;
+}
+
 .content ul{
     padding: 0;
 }

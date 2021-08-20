@@ -60,7 +60,7 @@
     color: #87919F;
     font-size:0.9em;
     line-height: 1.2em;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .card-face .face-header .reviews span {
@@ -85,7 +85,7 @@
 .face-body .credit-types {
     display: flex;
     justify-content: space-between;
-    padding: 5px 60px;
+    padding:20px 60px 0 60px;
 }
 
 .face-body .credit-types a {
@@ -94,10 +94,13 @@
     color: #222735 !important;
 }
 
-
 .face-body .hidden-block {
     overflow: hidden;
     max-height: 0;
+}
+
+.face-body .table-vertical-block {
+    margin: 10px 0;
 }
 
 .face-body .table-vertical-block .tr .td:first-of-type {
@@ -106,37 +109,46 @@
 
 .face-body .list-card-block {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 70px;
+    flex-wrap: wrap;
+    padding: 0 65px;
 }
 
 .face-body .list-card-block .list-card_el {
+    display: flex;
     width: 30%;
-    margin-top: 35px;
+    margin: 0 30px 0 0;
 }
 
-.face-body .table-vertical-block .tr .l-el {
+.face-body .list-card-block .list-card_el svg {
+    margin-top: 5px;
+}
+
+.face-body .list-card-block .list-card_el span {
+    margin-left: 10px;
+}
+
+.face-body .table-vertical tr .l-el {
     display: flex;
 }
 
-.face-body .table-vertical-block .tr .l-el  .face-rating {
+.face-body .table-vertical tr .l-el  .face-rating {
     width: 70%;
     height: 10px;
     background: #E6EBEF;
     border-radius: 28px;
     margin-top: 6px;
 }
-.face-body .table-vertical-block .tr .l-el .face-rating .percent {
+.face-body .table-vertical tr .l-el .face-rating .percent {
     height: 10px;
     background: #2ED47A;
     border-radius: 28px;
 }
-.face-body .table-vertical-block .tr .l-el .rating-val {
+.face-body .table-vertical tr .l-el .rating-val {
     margin-left: 10px;
 }
 
 .face-body .face-btn-wrap {
-    padding: 0 50px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
 }

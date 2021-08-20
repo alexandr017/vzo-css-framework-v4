@@ -64,6 +64,8 @@
     background: rgba(46, 212, 122, 0.16);
     border-radius: 23px;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .btn-light-1 {
@@ -138,7 +140,7 @@
     cursor: pointer;
     padding: 0 2em;
     margin-top: 20px;
-    box-shadow: 0px 4px 10px rgba(135, 145, 159, 0.15);
+    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
 .btn-2 svg {
@@ -222,11 +224,14 @@
 }
 
 .prev-btn svg .arrow_el {
-    fill: #87919F;
+    stroke: #87919F;
+    fill: white;
 }
 
 .prev-btn svg:hover .arrow_el {
-    fill: white;
+    stroke: white;
+    fill:#2BC77E;
+
 }
 
 .prev-btn svg:active .ellipse_el {
@@ -257,6 +262,33 @@
 }
 
 .up-btn svg:active .circle_el {
+    fill:#2BC77E;
+}
+
+.down-btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.down-btn svg .circle_el {
+    fill: white;
+}
+
+.down-btn svg:hover .circle_el {
+    fill:#2ED47A;
+}
+
+.down-btn svg .arrow_el {
+    stroke: #2BC77E;
+}
+
+.down-btn svg:hover .arrow_el {
+    stroke: white;
+}
+
+.down-btn svg:active .circle_el {
     fill:#2BC77E;
 }
 

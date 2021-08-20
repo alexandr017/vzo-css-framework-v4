@@ -36,7 +36,7 @@
     position: relative;
 }
 
-.sort .sort_el a {
+.sort .sort_el span {
     display: block;
     padding: 8px;
 }
@@ -75,14 +75,9 @@
     margin-bottom: 10px;
 }
 
-.sub-nav_one-column a {
-    transition: background ease .3s;
-    color: #95A5B0 !important;
-}
-
-.sub-nav_one-column a:hover,
-.sub-nav_one-column a.active {
-    color: #2ED47A !important;
+.sub-nav_one-column span:hover,
+.sub-nav_one-column span.active {
+    color: #2ED47A;
     cursor: pointer;
 }
 
