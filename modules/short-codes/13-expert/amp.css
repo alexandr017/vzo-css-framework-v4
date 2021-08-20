@@ -1,37 +1,35 @@
-.expert-opinion-block {
-    padding: 40px 45px;
-    margin: 30px 0;
-}
-
-.expert-opinion-block .text-title {
+.expert-block .h4 {
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 30px;
-    font-size: 1.5em;
+}
+.expert-block {
+    padding: 40px 30px;
 }
 
 .expert-info {
-    display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .expert-img {
-    width: 118px;
-    height: 118px;
+    display: flex;
+    justify-content: center;
     border-radius: 18px;
 }
+
 .expert-name {
     display: block;
-    margin-top: 2em;
 }
 .expert-name a {
     font-weight: 600;
 }
 
 .button_show,
-.button_hide{
-    margin-top: 30px;
-    float: right;
+.button_hide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -39,6 +37,7 @@
     overflow: hidden;
     margin-bottom: 20px;
     position: relative;
+    max-height: 100px;
 }
 
 .less-active .action-more {display: none;}
@@ -60,5 +59,24 @@
 
 .action-less {display: none;}
 
-.less-active .action-less {display: inline-block;}
-
+.less-active .action-less {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load-more-info:checked + .data-more-less .data-more-less-inner {
+    max-height: 1000px;
+    transition: max-height 0.3s ease-in;
+}
+.load-more-info {
+    display: none;
+}
+.load-more-info:checked + .data-more-less:not(.less-active):not(.action-disabled) .data-more-less-inner:after {
+    display: none;
+}
+.load-more-info:checked + .data-more-less .button_show{
+    display: none;
+}
+.load-more-info:checked + .data-more-less .button_hide{
+    display: flex;
+}
