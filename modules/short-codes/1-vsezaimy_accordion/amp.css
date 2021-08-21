@@ -36,9 +36,12 @@
 .panel .accordion-list .accordion-col .accordion-row {
     margin-top: 10px;
 }
-.open-panel:checked + .panel {
-    max-height: 105px;
-    transition: max-height 0.3s ease-in;
+.open-panel:checked + .accordion-label +.panel {
+    max-height: fit-content;
+    /*transition: max-height 0.3s ease-in;*/
+}
+.open-panel:checked + .accordion-label .accordion .arrow {
+    transform: rotate(0);
 }
 .open-panel {
     display: none;
