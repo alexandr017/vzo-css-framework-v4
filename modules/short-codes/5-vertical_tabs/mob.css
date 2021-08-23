@@ -1,25 +1,25 @@
 .vertical-tab-container {
-    width: 1110px;
-    margin: 30px 0 30px -160px;
+    margin: 30px 0;
 }
 
 .vertical-tab-container .tab {
-    margin-top: 20px;
     display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 60px 15px 60px;
-    width: 100%;
+    align-items: flex-start;
+    padding: 15px 20px;
+    overflow: auto;
+}
+
+.vertical-tab-container .tab::-webkit-scrollbar {
+    height: 0;
 }
 
 .vertical-tab-container .tab .tab-links {
-    text-align: center;
     cursor: pointer;
-    margin: 0 25px;
+    margin-right: 25px;
     padding: 10px 10px;
     transition: 0.3s;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .vertical-tab-container .tab .tab-links.on {
@@ -29,9 +29,15 @@
 
 .vertical-tab-container .tabs-items .tab-content.on {
     display:block;
-    margin: 30px 0 30px 110px;
+    padding: 10px 20px;
 }
 
 .vertical-tab-container .tabs-items .tab-content {
     display: none;
 }
+
+.vertical-tab-container .tabs-items .tab-content .download-doc {
+    display: flex;
+    justify-content: space-between;
+}
+

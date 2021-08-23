@@ -1,6 +1,170 @@
+.displayNone {
+    display: none;
+}
+
+.jsSlideItem {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.arrows-block{
+    width: 7.5%;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+.jsSlideItem img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.jsSlideMainBlock {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.jsSlideContent {
+    display: flex;
+    width: 85%;
+    transition: all .3s linear;
+    justify-content: space-around;
+}
+.js-slide-btn-left {
+    background: #fff url(/v4/images/prev.png) no-repeat center center;
+    left: 15px;
+}
+
+.js-slide-btn-left:hover {
+    background: #fff url(/v4/images/prev-hover.png) no-repeat center center;
+}
+
+.js-slide-btn-left:active {
+    background: #fff url(/v4/images/prev-active.png) no-repeat center center;
+}
+
+
+.js-slide-btn-right {
+    background: #fff url(/v4/images/next.png) no-repeat center center;
+    right: 15px;
+}
+
+.js-slide-btn-right:hover {
+    background: #fff url(/v4/images/next-hover.png) no-repeat center center;
+}
+
+.js-slide-btn-right:active {
+    background: #fff url(/v4/images/next-active.png) no-repeat center center;
+}
+
+.js-slide-btn-left, .js-slide-btn-right {
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 40%;
+    bottom: 60px;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    z-index: 1;
+    background-size:contain;
+    border-radius: 50px;
+}
+/*.jsSlideReview {*/
+/*    overflow-y: auto;*/
+/*}*/
+.jsSlideReview .jsSlideItem, .jsSlideContent .jsSlideItem {
+    text-align: left;
+}
+.jsAnimateLeft {
+    animation: mymoveleft 0.5s;
+}
+
+.jsAnimate {
+    animation: animateBorder 2s;
+}
+
+.jsAnimateRight {
+    animation: mymoveright 0.5s;
+}
+
+@keyframes mymoveleft {
+    from {
+        right: 0;
+    }
+    to {
+        right: -25%;
+    }
+}
+
+@keyframes mymoveright {
+    from {
+        left: 0;
+    }
+    to {
+        left: -25%;
+    }
+}
+
+@keyframes animateBorder {
+    0% {
+        border: 1px solid rgba(235, 235, 235, 0.5);
+    }
+    50% {
+        border: 1px solid rgba(235, 235, 235, 1);
+    }
+    100% {
+        border: 1px solid rgba(235, 235, 235, 0);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .jsSlideContent {
+        width: 80%;
+    }
+    .arrows-block{
+        width: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .jsSlideContent {
+        width: 94%;
+    }
+    .arrows-block{
+        width: 3%;
+    }
+    .js-slide-btn-left, .js-slide-btn-right {
+        width: 30px;
+        height: 30px;
+    }
+
+    .js-slide-btn-left {
+        left: 5px;
+    }
+
+    .js-slide-btn-right {
+        right: 5px;
+    }
+    .jsSlideItem .itext {
+        max-width: unset;
+    }
+}
+
+
+
 .bank-review,
 .smi-block  {
-    width: 1080px;
+    width: 1110px;
 }
 
 .bank-review h2 {
@@ -9,30 +173,15 @@
     margin-bottom: 30px;
 }
 
-.bank_review_slider .slick-slide {
-    height: 620px;
-}
-
-.bank_review_slider,
-.smi_slider {
-    padding: 0 50px;
-}
 
 .bank_review-inner-block {
-    min-height: 360px;
-}
-
-.bank_review-inner-block:hover {
-    min-height: 380px;
-    width: 300px;
-    margin-top: 5px;
+    max-height: 360px;
 }
 
 .bank_review-inner-block,
 .smi-inner-block{
     width: 285px;
     padding: 29px 30px;
-    margin: 10px 20px;
 }
 
 .bank_review-rating {
@@ -51,66 +200,27 @@
 
 .review-content {
     margin-top: 13px;
+    height: 200px;
+    overflow-y: auto;
 }
+
+.review-content::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+    height: 21px;
+}
+
+.review-content::-webkit-scrollbar-thumb:vertical {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
+}
+
 
 .review__button_show {
     cursor: pointer;
     display: flex;
     justify-content: center;
     margin-top: 33px;
-}
-
-.review__button_show svg.arrow {
-    fill :#222735;
-}
-
-.review__button_show .circle-icon:hover {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: #FFFFFF;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
-}
-
-.review__button_show .circle-icon:active{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: #2ED47A;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
-}
-
-.review__button_show .circle-icon:active .arrow {
-    fill:white;
-}
-
-.review__button_hide {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    margin-top: 33px;
-}
-
-
-.prev_el {
-    cursor: pointer;
-    position: absolute;
-    margin-top: 160px;
-    margin-left: -90px;
-}
-
-.next_el {
-    cursor: pointer;
-    margin-top: -440px;
-    margin-right: -90px;
-    float: right;
 }
 
 .smi-block h2 {

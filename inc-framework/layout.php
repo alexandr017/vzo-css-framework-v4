@@ -41,8 +41,6 @@ if (isset($_GET['module'])) {
     modeSelect.addEventListener("change",()  => {
         location.href = "<?php echo getClearModuleUrl() ?>" + '&mode=' + modeSelect.value;
     });
-
-    const $$ = (s) => document.querySelectorAll(s);
 </script>
 </body>
 </html>

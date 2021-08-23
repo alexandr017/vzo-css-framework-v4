@@ -1,5 +1,5 @@
-var countRage = document.getElementById("count_range_input"),
-    res = document.getElementById("count_range_input_sum");
+var countRage = $$("#count_range_input")[0],
+    res = $$("#count_range_input_sum")[0];
 
 countRage.addEventListener("input", function() {
     res.innerHTML = "" + countRage.value;
@@ -37,13 +37,13 @@ document.addEventListener('input', event => {
         .width = 100 * (value - min) / (max - min) + '%';
 });
 
-const rangeInputs = document.querySelectorAll('input[type="range"]')
-const numberInput = document.querySelector('input[type="number"]')
+const rangeInputs = $$('input[type="range"]')
+const numberInput = $$('input[type="number"]')
 
 function handleInputChange(e) {
     let target = e.target
     if (e.target.type !== 'range') {
-        target = document.getElementById('range')
+        target = $$('range')[0]
     }
     const min = target.min
     const max = target.max

@@ -17,9 +17,9 @@ document.addEventListener("click", function(e) {
     }
 });
 
-document.querySelectorAll('.tab-wrap').forEach((e) => {
-    let tabTabs = e.querySelectorAll('.tab .tablinks');
-    let tabItems = e.querySelectorAll('.tabs-items .tabcontent');
+$$('.tab-wrap').forEach((e) => {
+    let tabTabs = e.querySelectorAll('.tab .tab-links');
+    let tabItems = e.querySelectorAll('.tabs-items .tab-content');
     for(let i =0;i<tabTabs.length;i++) {
         tabTabs[0].click();
         tabTabs[i].onclick = () => {

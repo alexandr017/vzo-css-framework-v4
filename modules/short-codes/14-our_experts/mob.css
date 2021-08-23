@@ -34,15 +34,34 @@
     transition: all .3s linear;
     justify-content: space-around;
 }
+
 .js-slide-btn-left {
     background: #fff url(/v4/images/prev.png) no-repeat center center;
     left: 15px;
 }
 
+.js-slide-btn-left:hover {
+    background: #fff url(/v4/images/prev-hover.png) no-repeat center center;
+}
+
+.js-slide-btn-left:active {
+    background: #fff url(/v4/images/prev-active.png) no-repeat center center;
+}
+
+
 .js-slide-btn-right {
     background: #fff url(/v4/images/next.png) no-repeat center center;
     right: 15px;
 }
+
+.js-slide-btn-right:hover {
+    background: #fff url(/v4/images/next-hover.png) no-repeat center center;
+}
+
+.js-slide-btn-right:active {
+    background: #fff url(/v4/images/next-active.png) no-repeat center center;
+}
+
 
 .js-slide-btn-left, .js-slide-btn-right {
     width: 50px;

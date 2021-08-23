@@ -7,18 +7,6 @@
     border: 7px solid #9FF9C8;
 }
 
-/*.card-wrap .stock {*/
-    /*position: absolute;*/
-    /*background: #9FF9C8;*/
-    /*font-weight: 600;*/
-    /*width: 120px;*/
-    /*height: 40px;*/
-    /*text-align: center;*/
-    /*padding: 5px;*/
-    /*border-radius: 25px 0;*/
-    /*font-size: 1.2em;*/
-/*}*/
-
 .card-wrap .card-header {
     padding: 20px 60px 20px 60px;
 }
@@ -150,7 +138,7 @@
     text-align: center;
 }
 
-.card-wrap .card-body .hidden-card-info .card-video .row-card-el:last-of-type{
+.card-wrap .card-body .hidden-card-info .card-video .row-card-el:last-of-type {
     margin-left: 67px;
 }
 
@@ -158,7 +146,6 @@
     font-size: 2.25em;
     font-weight: 600;
 }
-
 
 .hidden-card-info .tab {
     margin-top: 20px;
@@ -170,11 +157,8 @@
     width: 100%;
 }
 
-.hidden-card-info .tab .tablinks {
-    background-color: inherit;
+.hidden-card-info .tab .tab-links {
     text-align: center;
-    border: none;
-    outline: none;
     cursor: pointer;
     margin: 0 25px;
     padding: 5px 10px;
@@ -183,45 +167,46 @@
 
 }
 
-.hidden-card-info .tab .tablinks.on {
+.hidden-card-info .tab .tab-links.on {
     color: #352D39;
     border-bottom: 2px solid  #2ED47A;
 }
 
-.hidden-card-info .tabs-items .tabcontent.on{
+.hidden-card-info .tabs-items .tab-content.on{
     display:block;
 }
 
-.hidden-card-info .tabs-items .tabcontent {
+.hidden-card-info .tabs-items .tab-content {
     display: none;
 }
 
-.hidden-card-info .tabs-items .tabcontent ul {
+.hidden-card-info .tabs-items .tab-content ul {
     list-style-type: none;
 }
-.hidden-card-info .tabs-items .tabcontent .table-vertical-block {
+
+.hidden-card-info .tabs-items .tab-content .table-vertical-block {
     margin: 10px 0;
 }
 
-.hidden-card-info .tabs-items .tabcontent .table-vertical-block .tr:hover .td:first-of-type {
+.hidden-card-info .tabs-items .tab-content .table-vertical-block .tr:hover .td:first-of-type {
     background: #E6EBEF;
 }
 
-.hidden-card-info .tabs-items .tabcontent .table-vertical-block .tr:hover .td:last-of-type {
+.hidden-card-info .tabs-items .tab-content .table-vertical-block .tr:hover .td:last-of-type {
     background: #F6F8FB;
 }
 
-.hidden-card-info .tabs-items .tabcontent .table-vertical-block .tr .td:first-of-type {
+.hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .td:first-of-type {
     width: 35%;
     background: #F6F8FB;
     font-weight: 600;
 }
 
-.hidden-card-info .tabs-items .tabcontent .table-vertical-block .tr .td:last-of-type {
+.hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .td:last-of-type {
     width: 65%;
 }
 
-.hidden-card-info .tabs-items .tabcontent .table-vertical-block .tr .td {
+.hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .td {
     padding-left: 65px;
 }
 

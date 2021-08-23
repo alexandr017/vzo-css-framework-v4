@@ -1,0 +1,95 @@
+.company-menu {
+    background: url("/v4/images/company-img.png");
+    height: 260px;
+    width: 1110px;
+    padding: 45px 0 0 75px;
+}
+
+.company-header {
+    display: flex;
+}
+
+.company-header .company-title {
+    width: 70%;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+.company-tabs .tab-wrap {
+    margin-top: -100px;
+    width: 80%;
+    margin-left: 25px;
+}
+
+.company-tabs .tab {
+    margin-top: 35px;
+    display: inline-flex;
+    overflow: hidden;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.company-tabs .tab .tab-links {
+    border-radius: 25px 25px 0 0;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width: 20%;
+}
+
+.company-tabs .tab .tab-links.on {
+    background: #FFFFFF;
+    font-weight: 600;
+}
+
+.company-tabs .tabs-items .tab-content.on{
+    display:flex;
+    font-size: .87em;
+}
+
+.company-tabs .tabs-items .tab-content {
+    display: none;
+    margin-top: 30px;
+}
+
+.link_el {
+    cursor: pointer;
+}
+
+.link_el .icon-bg {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.link_el .icon-bg svg:not(.fill) {
+    stroke:black;
+}
+
+.link_el .icon-bg svg.fill {
+    fill: black;
+}
+
+
+.link_el:hover {
+    color:#2CDD88;
+}
+
+.link_el:hover .icon-bg svg:not(.fill) {
+    stroke:#2CDD88;
+}
+
+.link_el:hover .icon-bg svg.fill {
+    fill: #2CDD88;
+}
+
+.link_el {
+    text-align: center;
+    margin: 0 25px;
+}

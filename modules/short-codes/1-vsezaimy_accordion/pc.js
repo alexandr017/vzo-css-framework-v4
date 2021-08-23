@@ -1,4 +1,4 @@
-var acc = document.getElementsByClassName("accordion");
+var acc = $$("accordion");
 var i;
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
@@ -8,7 +8,7 @@ for (i = 0; i < acc.length; i++) {
             panel.style.maxHeight = null;
             panel.style.borderBottom = null;
 
-        } else {debugger
+        } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
             this.style.borderBottom = "0";
         }
