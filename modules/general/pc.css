@@ -98,3 +98,7 @@ p {margin-top: 0;}
 .border-radius {
     border-radius: 25px;
 }
+
+.clearfix{
+    clear: both;
+}
