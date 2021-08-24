@@ -1,6 +1,7 @@
 .sort {
     float: right;
-    margin-right: -55px!important;
+    margin: 15px -55px 0 0;
+
 }
 
 .sort .sort_el {
@@ -24,9 +25,10 @@
     position: relative;
 }
 
-.sort .sort_el a {
+.sort .sort_el span {
     display: block;
     padding: 8px;
+    cursor: pointer;
 }
 
 .sub-menu-container {
@@ -63,9 +65,10 @@
     margin-bottom: 10px;
 }
 
-.sub-nav_one-column a {
+.sub-nav_one-column span {
     transition: background ease .3s;
-    color: #95A5B0 !important;
+    color: #95A5B0;
+    cursor: pointer;
 }
 
 .sub-nav_one-column a:hover,
