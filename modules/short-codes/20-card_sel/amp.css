@@ -1,0 +1,26 @@
+.card-sel-block {
+    padding: 15px 0;
+    margin: 50px 0;
+}
+
+.card-sel-inner {
+    padding: 30px 25px;
+    margin-top: 20px;
+}
+
+.card-sel-content {
+    text-align: center;
+}
+
+
+.card-sel-title {
+    display: block;
+    font-size: 1.2em;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.card-sel-body ul li {
+    font-weight: 600;
+}
+

@@ -200,7 +200,7 @@ var slideShow = (function () {
                     btnsClickAndDataset(target.dataset['parent']);
                 }
             }, 400);
-
+            commandShowAndHideBtnsClick();
         }
 
         var slideRight = function (e) {
@@ -278,6 +278,7 @@ var slideShow = (function () {
                     btnsClickAndDataset(target.dataset['parent']);
                 }
             }, 400);
+            commandShowAndHideBtnsClick();
         }
         var getElement = function(elementName) {
             let showBlock = document.querySelectorAll('.commandShowBlock');
@@ -311,6 +312,7 @@ var slideShow = (function () {
                     buttonHide.style.display = 'none';
                 });
             });
+            commandShowAndHideBtnsClick();
             selector = elementName.charAt(0);
             elementName = elementName.slice(1,elementName.length);
             if(selector === '#'){
@@ -436,3 +438,51 @@ if(document.getElementsByClassName('our_command_slider').length > 0){
         ]
     })
 }
+
+function commandShowFn(e) {debugger
+    var elem = e;
+    var elemBlock = elem.closest('.command-wrap');
+    var prevELem = elemBlock.previousSibling;
+    var nextElem = elemBlock.nextSibling;
+    if(prevELem != null) {
+        prevELem.style.display = 'none';
+        elemBlock.style.width = '100%';
+    }
+    if(nextElem != null) {
+        nextElem.style.display = 'none';
+        elemBlock.style.width = '100%';
+    }
+}
+function commandHideFn(e) {
+    var elem = e;
+    var elemBlock = elem.closest('.command-wrap');
+    var prevELem = elemBlock.previousSibling;
+    var nextElem = elemBlock.nextSibling;
+    if(prevELem !=null && prevELem.style.display == 'none') {
+        prevELem.style.display = 'block';
+        elemBlock.style.width = '50%';
+    }
+    if(nextElem != null && nextElem.style.display == 'none') {
+        nextElem.style.display = 'block';
+        elemBlock.style.width = '50%';
+    }
+}
+function commandShowAndHideBtnsClick() {debugger
+    var commandBtnShowArr = document.querySelectorAll('.our_command_slider .command-wrap .command__button_show');
+    for(let i=0; i < commandBtnShowArr.length; i++) {
+        commandBtnShowArr[i].addEventListener('click',function (e) {
+            commandShowFn(e.target);
+            event.stopPropagation();
+        },false)
+    }
+    var commandBtnHideArr = document.querySelectorAll('.our_command_slider .command-wrap .command__button_hide');
+    for(let i=0; i < commandBtnHideArr.length; i++) {
+        commandBtnHideArr[i].addEventListener('click',function (e) {
+            commandHideFn(e.target);
+            event.stopPropagation();
+        },false)
+    }
+}
+document.addEventListener('DOMContentLoaded', function(){
+    commandShowAndHideBtnsClick();
+});
