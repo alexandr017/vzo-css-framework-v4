@@ -46,3 +46,7 @@
     color: #87919F;
     font-size: 0.87em;
 }
+
+.tariff-block-btn .btn {
+    margin-top: 0;
+}

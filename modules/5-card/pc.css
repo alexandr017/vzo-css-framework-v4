@@ -1,4 +1,4 @@
-.card-wrap {
+.card {
     width: 100%;
     margin: 30px 0;
 }
@@ -7,11 +7,11 @@
     border: 7px solid #9FF9C8;
 }
 
-.card-wrap .card-header {
+.card .card-header {
     padding: 20px 60px 20px 60px;
 }
 
-.card-wrap .card-header .card-first-line {
+.card .card-header .card-first-line {
     margin-top: 10px;
     margin-left: 15%;
     width: 82%;
@@ -19,24 +19,24 @@
     justify-content: space-between;
 }
 
-.card-wrap .card-header .card-first-line a {
+.card .card-header .card-first-line a {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     margin-top: 10px;
     margin-left: -10px;
 }
 
-.card-wrap .card-header .card-first-line .card-icons svg:not(:last-of-type){
+.card .card-header .card-first-line .card-icons svg:not(:last-of-type){
     margin-right: 20px;
 }
 
-.card-wrap .card-header .card-top-inner {
+.card .card-header .card-top-inner {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
 
-.card-wrap .card-header .card-top-inner .logo {
+.card .card-header .card-top-inner .logo {
     width: 80px;
     height: 80px;
     display: flex;
@@ -44,39 +44,43 @@
     margin-top: -30px;
 }
 
-.card-wrap .card-header .card-top-inner .block-row .top-inner-btn {
+.card .card-header .card-top-inner .block-row .top-inner-btn {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card-wrap .card-header .card-top-inner .block-row .card-head-intro {
+.card .card-header .card-top-inner .block-row .top-inner-btn .btn {
+    margin-top: 0;
+}
+
+.card .card-header .card-top-inner .block-row .card-head-intro {
     font-weight: 600;
 }
 
-.card-wrap .card-header .card-top-inner .block-row .card-cont {
+.card .card-header .card-top-inner .block-row .card-cont {
     color: #95A5B0;
     font-size: 0.9em;
     line-height: 1.2em;
     margin-top: 15px;
 }
 
-.card-wrap .card-header .reviews span {
+.card .card-header .reviews span {
    font-size: 1em;
     margin-left: 5px;
 }
 
-.card-wrap .card-body {
+.card .card-body {
     margin-top: -20px;
 }
 
-.card-wrap .card-body .card-bottom-line {
+.card .card-body .card-bottom-line {
     display: flex;
     justify-content:space-between;
     padding-right: 95px;
 }
 
-.card-wrap .card-body .card-body-inner .card-upd {
+.card .card-body .card-body-inner .card-upd {
     color: #95A5B0;
     font-size:  .87em;
     line-height: 1.3em;
@@ -86,7 +90,7 @@
 }
 
 
-.card-wrap .card-body .card-body-inner .card-more {
+.card .card-body .card-body-inner .card-more {
     display: block;
     color: #4FABFA;
     cursor: pointer;
@@ -95,20 +99,20 @@
     margin-bottom: 15px;
 }
 
-.card-wrap .card-body .card-body-inner .hidden-card-info {
+.card .card-body .card-body-inner .hidden-card-info {
     overflow: hidden;
     max-height: 0;
 
 }
 
-.card-wrap .card-body .card-body-inner .hidden-card-info .text-hidden-card {
+.card .card-body .card-body-inner .hidden-card-info .text-hidden-card {
     line-height: 1.75em;
     font-size: 1.1em;
     margin-top: 30px;
     padding: 0 60px 0 60px;
 }
 
-.card-wrap .card-body .hidden-card-info .card-video {
+.card .card-body .hidden-card-info .card-dark-bg {
     margin-top: 30px;
     height: 172px;
     background: #F6F8FB;
@@ -118,7 +122,7 @@
     padding: 0 0 0 65px;
 }
 
-.review-btn {
+.row-review-btn {
     width: 204px;
     height: 44px;
     border-radius: 23px;
@@ -130,19 +134,31 @@
     cursor: pointer;
 }
 
-.review-btn svg {
+.row-review-btn svg {
     margin-right: 15px;
 }
 
-.card-wrap .card-body .hidden-card-info .card-video .row-card-el {
+.card .card-body .hidden-card-info .card-row-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-body .hidden-card-info .card-row-inner .row-card-el {
+    text-align: center;
+    margin: 30px 15px;
+}
+
+.card .card-body .hidden-card-info .card-dark-bg .row-card-el {
     text-align: center;
 }
 
-.card-wrap .card-body .hidden-card-info .card-video .row-card-el:last-of-type {
+.card .card-body .hidden-card-info .card-dark-bg .row-card-el:last-of-type {
     margin-left: 67px;
 }
 
-.card-wrap .card-body .hidden-card-info .card-video .row-card-el .percent {
+.card .card-body .hidden-card-info .card-dark-bg .row-card-el .percent,
+.card .card-body .hidden-card-info .card-row-inner .row-card-el .percent {
     font-size: 2.25em;
     font-weight: 600;
 }
@@ -168,7 +184,7 @@
 }
 
 .hidden-card-info .tab .tab-links.on {
-    color: #352D39;
+    color: #2ED47A;
     border-bottom: 2px solid  #2ED47A;
 }
 
@@ -210,35 +226,35 @@
     padding-left: 65px;
 }
 
-.card-wrap .hidden-card-info .slider {
+.card .hidden-card-info .slider {
     margin-top: 50px;
     padding: 0 100px 40px 100px;
 }
 
-.card-wrap .hidden-card-info .slider .slider-block {
+.card .hidden-card-info .slider .slider-block {
     display: flex;
     justify-content: space-between;
 }
 
-.card-wrap .hidden-card-info .slider .slider-block .slider-button {
+.card .hidden-card-info .slider .slider-block .slider-button {
     width: 50px;
     height: 50px;
     cursor: pointer;
 }
 
 
-.card-wrap .hidden-card-info .slider .slider-block .slider-info {
+.card .hidden-card-info .slider .slider-block .slider-info {
     cursor:pointer;
     display: block;
     text-align: center;
 }
 
 
-.card-wrap .hidden-card-info .slider .slider-block .slider-info .border-radius svg {
+.card .hidden-card-info .slider .slider-block .slider-info .border-radius svg {
     width: 23px;
 }
 
-.card-wrap .hidden-card-info  .slider .slider-block .slider-info .text-cont {
+.card .hidden-card-info  .slider .slider-block .slider-info .text-cont {
     font-size: 0.9em;
 }
 

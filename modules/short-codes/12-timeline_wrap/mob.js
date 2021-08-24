@@ -1,4 +1,4 @@
-var slideShow = (function () {
+    var slideShow = (function () {
     return function (data) {
         var arr = [];
         var leftArrow = '<button class="js-slide-btn-left">Previous</button>';
@@ -378,11 +378,18 @@ var slideShow = (function () {
 if(document.getElementsByClassName('timeline_wrap_slider').length>0){
     slideShow({
         element:'.timeline_wrap_slider',
-        slidesToShow:4,
+        slidesToShow:1,
         slidesToScroll:1,
         circleScroll:true,
         height:'300',
         responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
             {
                 breakpoint: 768,
                 settings: {

@@ -394,7 +394,7 @@ if(document.getElementsByClassName('our_command_slider').length>0){
     })
 }
 
-var modals = document.querySelectorAll("[data-modal]");
+var modals = $$("[data-modal]");
 
 modals.forEach(function (trigger) {
     trigger.addEventListener("click", function (event) {

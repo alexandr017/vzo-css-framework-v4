@@ -143,38 +143,47 @@
 }
 
 
-/*.command-inner-block {*/
-    /*display: flex;*/
-    /*margin: 30px 0;*/
-/*}*/
+.command-inner-block {
+    margin: 30px 0;
+}
 
 .our_command_slider {
     margin: 30px 0;
 }
 
-.command-img {
-    margin: 0 5px 0 5px;
+.command-img-bg-bl {
+    margin: 0 auto;
+    position: relative;
+    height: 291px;
+    width: 251px;
+}
+.command-img-bg-bl:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 25px;
 }
 
-.command-img .command-icon {
-    position: absolute;
-    margin-top: 20px;
+.command-img-bg-bl .command-icon {
+    position: relative;
     margin-left: 190px;
+    margin-top: -220px;
+    z-index: 3;
 }
 
 .command-info {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 291px;
-    width: 251px;
-    z-index: 1;
-    margin-left: 21px;
-    margin-top: -290px;
-    position: fixed;
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    margin-top: -150px;
     border-radius: 0 0 25px 25px;
-
+    z-index:5;
 }
 
 .info-name {
@@ -190,10 +199,6 @@
     margin-top: 160px;
 }
 
-.command-img img {
-   max-width: 251px;
-    width: 100%;
-}
 
 .modal-command-team {
     opacity: 0;
@@ -232,7 +237,7 @@
     margin-top: 180px;
     border-radius: 25px 25px 0 0;
     background: #fff;
-    width: 375px !important;
+    width: 100% !important;
     height: 560px;
 }
 

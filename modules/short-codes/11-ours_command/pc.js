@@ -439,7 +439,7 @@ if(document.getElementsByClassName('our_command_slider').length > 0){
     })
 }
 
-function commandShowFn(e) {debugger
+function commandShowFn(e) {
     var elem = e;
     var elemBlock = elem.closest('.command-wrap');
     var prevELem = elemBlock.previousSibling;
@@ -467,8 +467,8 @@ function commandHideFn(e) {
         elemBlock.style.width = '50%';
     }
 }
-function commandShowAndHideBtnsClick() {debugger
-    var commandBtnShowArr = document.querySelectorAll('.our_command_slider .command-wrap .command__button_show');
+function commandShowAndHideBtnsClick() {
+    var commandBtnShowArr = $$('.our_command_slider .command-wrap .command__button_show');
     for(let i=0; i < commandBtnShowArr.length; i++) {
         commandBtnShowArr[i].addEventListener('click',function (e) {
             commandShowFn(e.target);

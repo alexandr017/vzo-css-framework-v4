@@ -36,14 +36,13 @@
 }
 
 .data-more-less-inner {
-    overflow: hidden;
     margin-bottom: 20px;
     position: relative;
 }
 
 .less-active .action-more {display: none;}
 
-.data-more-less:not(.less-active):not(.action-disabled) .data-more-less-inner:after {
+.data-more-less-body.active:after {
     content: '';
     display: block;
     position: absolute;
@@ -54,11 +53,13 @@
     background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
-    height: 50px;}
+    height: 60px;}
 
 .data-more-less.action-disabled .more-less-action {display: none;}
 
 .action-less {display: none;}
 
 .less-active .action-less {display: inline-block;}
+
+
 
