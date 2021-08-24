@@ -2,57 +2,56 @@
     width: 857px;
 }
 
-.main-range .loan {
+.main-range .range-loan {
     box-sizing: border-box;
-    padding: 28px 0 22px 0;
+    padding: 30px 0;
 }
 
-.main-range .loan hr {
+.main-range .range-loan hr {
     border: 1px solid #E7EBEE;
 }
 
-.main-range .loan .range-title {
+.main-range .range-loan .range-title {
     font-weight: 600;
     line-height: 1.25em;
     padding: 0 30px;
     margin: 0;
 }
 
-.main-range .loan .overpayment {
+.main-range .range-loan .overpayment {
     display: flex;
     justify-content: space-between;
     width: 274px;
     margin-top: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
 }
 
-
-.main-range .loan .loan-title,
-.main-range .loan .overpayment span{
+.main-range .range-loan .loan-title,
+.main-range .range-loan .overpayment span {
     font-size: 0.87em;
     line-height: 1.06em;
     margin-left: 30px;
     margin-top: 10px;
 }
 
-.main-range .loan .loan-title {
+.main-range .range-loan .loan-title {
     margin-top: 25px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
-.main-range .loan .overpayment span:not(:first-of-type) {
-    margin-left: 22px;
+.main-range .range-loan .overpayment span:not(:first-of-type) {
+    margin-left: 20px;
 }
 
 .main-range .credit-sum .range-slider .range-value {
     position: relative;
-    top: -18px;
+    top: -20px;
 }
 
 input[type=range] {
     outline: none;
     padding: 0;
-    width: 99.1%;
+    width: 99%;
     height: 4px;
     background-size: 50% 100%;
     background-color: #ebebeb;
@@ -108,47 +107,38 @@ input[type=range]::-moz-range-thumb {
     border-radius: 100%;
 }
 
-.main-range .loan .sum {
+.main-range .range-loan .sum {
     display: flex;
     justify-content: space-between;
-    margin-top: 12px ;
+    margin-top: 15px;
     padding: 0 30px;
 }
 
-.main-range .loan .sum div span {
+.main-range .range-loan .sum div span {
     margin-right: 15px;
-
 }
 
-.main-range .loan .sum div span:first-of-type {
+.main-range .range-loan .sum div span:first-of-type {
     font-size: 0.87em;
 }
 
-.main-range .loan .sum div span:last-of-type {
+.main-range .range-loan .sum div span:last-of-type {
     font-size: 0.87em;
     font-weight: 700;
 }
 
-.main-range .loan .sum div span.last {
+.main-range .range-loan .sum div span.last {
     color: #2ED47A;
 }
 
-.main-range .loan .button .btn {
-    margin-top: 33px;
-    margin-left: 30px;
+.main-range .range-loan .range-btn-wrap .btn {
+    margin: 30px 0 0 30px;
     width: 230px;
     height: 46px;
-    background: #2ED47A;
-    border-radius: 23px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
 }
 
-.main-range .loan .note p {
-    margin-top: 38px;
+.main-range .range-loan .note p {
+    margin-top: 40px;
     font-size: 0.75em;
     line-height: 1.31em;
     margin-left: 30px;
@@ -156,11 +146,11 @@ input[type=range]::-moz-range-thumb {
 }
 
 .main-range .credit-sum {
-    margin-top: 111px ;
+    margin-top: 115px ;
 }
 
 .main-range .credit-sum span {
-    margin-bottom: 16px ;
+    margin-bottom: 20px;
     font-size: 0.87em;
 }
 
@@ -211,7 +201,6 @@ input[type=range]::-moz-range-thumb {
 
 .calc {
     width: 350px;
-    margin-top: 50px;
 }
 
 input[type=number] {
@@ -221,11 +210,4 @@ input[type=number] {
     padding: 1em;
     font-size: 0.87em;
     outline: none;
-}
-
-.input-range {
-    position: absolute;
-    margin-top: -5px;
-    margin-left: -1px;
-    width: 350px !important;
 }

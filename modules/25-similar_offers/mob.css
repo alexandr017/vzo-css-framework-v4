@@ -68,18 +68,3 @@
     align-items: center;
 }
 
-.similar-offer_block-btn .btn {
-    margin-top: 30px;
-    font-family: 'Proxima Nova Rg', sans-serif;
-    width: 190px;
-    height: 44px;
-    background:  #2ED47A;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.1em;
-}
-

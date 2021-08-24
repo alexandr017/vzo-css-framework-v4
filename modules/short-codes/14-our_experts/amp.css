@@ -1,0 +1,39 @@
+.expert-img {
+    margin: 0 5px 0 5px;
+}
+
+.expert-img .expert-icon {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 190px;
+}
+
+.expert-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 223px;
+    width: 251px;
+    z-index: 1;
+    margin-top: -221px;
+    position: absolute;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 0 0 25px 25px;
+}
+
+.info-name {
+
+    font-weight: 600;
+    color: #fff;
+    margin-top: 90px;
+}
+
+.expert-img img {
+    border-radius: 25px;
+    max-width: 251px;
+    width: 100%;
+    position: relative;
+}
+.our_expert_slider .expert-wrap {
+    width: 50%;
+}

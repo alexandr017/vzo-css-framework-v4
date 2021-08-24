@@ -8,10 +8,9 @@
 .pagination .page,
 .pagination .ellipsis{
     margin:0 5px;
-    border-radius: 15px;
     width: 45px;
     height: 45px;
-    color: #2ED47A !important;
+    color: #222735!important;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -21,6 +20,8 @@
 .pagination .ellipsis:hover{
     background: #2ED47A !important;
     color: #fff!important;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(135, 145, 159, 0.15);
 }
 
 .page-arrow {
