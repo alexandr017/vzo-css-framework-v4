@@ -1,0 +1,31 @@
+.getting-offer-num {
+    font-size: 30px;
+    background: #F6F8FB;
+    border-radius: 15px;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 1em;
+}
+.getting-offer-text{
+    font-size: 16px;
+}
+.getting-offer-block {
+    display: flex;
+    text-align: center;
+}
+.getting-offer-item {
+    width: 25%;
+    padding: 0 1em;
+}
+.getting-offer-item:not(:last-child) .getting-offer-num::after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #E6EBEF;
+    width: 160px;
+    left: 3.3em;
+}
