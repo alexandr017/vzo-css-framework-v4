@@ -168,6 +168,7 @@
 
 .expert-inner-block {
     display: flex;
+    min-height: 200px;
 }
 
 .expert-img {

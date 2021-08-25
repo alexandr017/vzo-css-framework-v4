@@ -200,7 +200,7 @@ var slideShow = (function () {
                     btnsClickAndDataset(target.dataset['parent']);
                 }
             }, 400);
-            commandShowAndHideBtnsClick();
+            // commandShowAndHideBtnsClick();
         }
 
         var slideRight = function (e) {
@@ -278,41 +278,41 @@ var slideShow = (function () {
                     btnsClickAndDataset(target.dataset['parent']);
                 }
             }, 400);
-            commandShowAndHideBtnsClick();
+            // commandShowAndHideBtnsClick();
         }
         var getElement = function(elementName) {
-            let showBlock = document.querySelectorAll('.commandShowBlock');
-            showBlock.forEach(function (value, index) {
-                let buttonShow = value.querySelector('.command__button_show'),
-                    buttonHide = value.querySelector('.command__button_hide'),
-                    allBlock = value.querySelector('.command-inner-block'),
-                    hiddenText = value.querySelector('.block__hide');
-
-                buttonShow.addEventListener('click', event => {
-                    document.querySelectorAll('.command-inner-block').forEach(function (value, index) {
-                        value.querySelector('.block__hide').style.display = 'none';
-                        value.style.width = '435px';
-                        value.querySelector('.command__button_show').style.display = 'block';
-                        value.querySelector('.command__button_hide').style.display = 'none';
-                    });
-                    allBlock.style.width = '910px';
-                    allBlock.style.opacity = '1';
-                    allBlock.style.position = 'absolute';
-                    allBlock.style.zIndex = '4';
-                    allBlock.style.background = '#fff';
-                    hiddenText.style.display = 'inline';
-                    buttonHide.style.display = 'block';
-                    buttonShow.style.display = 'none';
-                });
-
-                buttonHide.addEventListener('click', event => {
-                    hiddenText.style.display = 'none';
-                    allBlock.style.width = '435px';
-                    buttonShow.style.display = 'block';
-                    buttonHide.style.display = 'none';
-                });
-            });
-            commandShowAndHideBtnsClick();
+            // let showBlock = document.querySelectorAll('.commandShowBlock');
+            // showBlock.forEach(function (value, index) {
+            //     let buttonShow = value.querySelector('.command__button_show'),
+            //         buttonHide = value.querySelector('.command__button_hide'),
+            //         allBlock = value.querySelector('.command-inner-block'),
+            //         hiddenText = value.querySelector('.block__hide');
+            //
+            //     buttonShow.addEventListener('click', event => {
+            //         document.querySelectorAll('.command-inner-block').forEach(function (value, index) {
+            //             value.querySelector('.block__hide').style.display = 'none';
+            //             value.style.width = '435px';
+            //             value.querySelector('.command__button_show').style.display = 'block';
+            //             value.querySelector('.command__button_hide').style.display = 'none';
+            //         });
+            //         allBlock.style.width = '910px';
+            //         allBlock.style.opacity = '1';
+            //         allBlock.style.position = 'absolute';
+            //         allBlock.style.zIndex = '4';
+            //         allBlock.style.background = '#fff';
+            //         hiddenText.style.display = 'inline';
+            //         buttonHide.style.display = 'block';
+            //         buttonShow.style.display = 'none';
+            //     });
+            //
+            //     buttonHide.addEventListener('click', event => {
+            //         hiddenText.style.display = 'none';
+            //         allBlock.style.width = '435px';
+            //         buttonShow.style.display = 'block';
+            //         buttonHide.style.display = 'none';
+            //     });
+            // });
+            // commandShowAndHideBtnsClick();
             selector = elementName.charAt(0);
             elementName = elementName.slice(1,elementName.length);
             if(selector === '#'){
@@ -439,50 +439,50 @@ if(document.getElementsByClassName('our_command_slider').length > 0){
     })
 }
 
-function commandShowFn(e) {
-    var elem = e;
-    var elemBlock = elem.closest('.command-wrap');
-    var prevELem = elemBlock.previousSibling;
-    var nextElem = elemBlock.nextSibling;
-    if(prevELem != null) {
-        prevELem.style.display = 'none';
-        elemBlock.style.width = '100%';
-    }
-    if(nextElem != null) {
-        nextElem.style.display = 'none';
-        elemBlock.style.width = '100%';
-    }
-}
-function commandHideFn(e) {
-    var elem = e;
-    var elemBlock = elem.closest('.command-wrap');
-    var prevELem = elemBlock.previousSibling;
-    var nextElem = elemBlock.nextSibling;
-    if(prevELem !=null && prevELem.style.display == 'none') {
-        prevELem.style.display = 'block';
-        elemBlock.style.width = '50%';
-    }
-    if(nextElem != null && nextElem.style.display == 'none') {
-        nextElem.style.display = 'block';
-        elemBlock.style.width = '50%';
-    }
-}
-function commandShowAndHideBtnsClick() {
-    var commandBtnShowArr = $$('.our_command_slider .command-wrap .command__button_show');
-    for(let i=0; i < commandBtnShowArr.length; i++) {
-        commandBtnShowArr[i].addEventListener('click',function (e) {
-            commandShowFn(e.target);
-            event.stopPropagation();
-        },false)
-    }
-    var commandBtnHideArr = document.querySelectorAll('.our_command_slider .command-wrap .command__button_hide');
-    for(let i=0; i < commandBtnHideArr.length; i++) {
-        commandBtnHideArr[i].addEventListener('click',function (e) {
-            commandHideFn(e.target);
-            event.stopPropagation();
-        },false)
-    }
-}
-document.addEventListener('DOMContentLoaded', function(){
-    commandShowAndHideBtnsClick();
-});
+// function commandShowFn(e) {
+//     var elem = e;
+//     var elemBlock = elem.closest('.command-wrap');
+//     var prevELem = elemBlock.previousSibling;
+//     var nextElem = elemBlock.nextSibling;
+//     if(prevELem != null) {
+//         prevELem.style.display = 'none';
+//         elemBlock.style.width = '100%';
+//     }
+//     if(nextElem != null) {
+//         nextElem.style.display = 'none';
+//         elemBlock.style.width = '100%';
+//     }
+// }
+// function commandHideFn(e) {
+//     var elem = e;
+//     var elemBlock = elem.closest('.command-wrap');
+//     var prevELem = elemBlock.previousSibling;
+//     var nextElem = elemBlock.nextSibling;
+//     if(prevELem !=null && prevELem.style.display == 'none') {
+//         prevELem.style.display = 'block';
+//         elemBlock.style.width = '50%';
+//     }
+//     if(nextElem != null && nextElem.style.display == 'none') {
+//         nextElem.style.display = 'block';
+//         elemBlock.style.width = '50%';
+//     }
+// }
+// function commandShowAndHideBtnsClick() {
+//     var commandBtnShowArr = $$('.our_command_slider .command-wrap .command__button_show');
+//     for(let i=0; i < commandBtnShowArr.length; i++) {
+//         commandBtnShowArr[i].addEventListener('click',function (e) {
+//             commandShowFn(e.target);
+//             event.stopPropagation();
+//         },false)
+//     }
+//     var commandBtnHideArr = document.querySelectorAll('.our_command_slider .command-wrap .command__button_hide');
+//     for(let i=0; i < commandBtnHideArr.length; i++) {
+//         commandBtnHideArr[i].addEventListener('click',function (e) {
+//             commandHideFn(e.target);
+//             event.stopPropagation();
+//         },false)
+//     }
+// }
+// document.addEventListener('DOMContentLoaded', function(){
+//     commandShowAndHideBtnsClick();
+// });

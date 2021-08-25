@@ -14,6 +14,7 @@
     <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <link rel="canonical" href="https://vsezaimyonline.ru">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <style amp-custom>
@@ -44,11 +45,6 @@
             text-align: center;
             padding: var(--space-1);
         }
-        amp-selector[role=tablist].tabs-with-flex [role=tab][selected] {
-            outline: none;
-            /* custom styling, feel free to change */
-            border-bottom: 2px solid var(--color-primary);
-        }
         amp-selector[role=tablist].tabs-with-flex [role=tabpanel] {
             display: none;
             width: 100%;
@@ -64,10 +60,11 @@
         amp-selector[role=tablist].tabs-with-selector {
             display: flex;
         }
-        amp-selector[role=tablist].tabs-with-selector [role=tab][selected] {
+        amp-selector[role=tablist].tabs-with-selector [role=tab][selected], amp-selector[role=tablist].tabs-with-flex [role=tab][selected] {
             outline: none;
             /* custom styling, feel free to change */
-            border-bottom: 2px solid var(--color-primary);
+            border-bottom: 2px solid #2ED47A;
+            color: #2ED47A;
         }
         amp-selector[role=tablist].tabs-with-selector {
             display: flex;

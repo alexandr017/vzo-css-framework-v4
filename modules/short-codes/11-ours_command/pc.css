@@ -171,6 +171,7 @@
 
 .command-inner-block {
     display: flex;
+    min-height: 200px;
 }
 
 .command-img {
