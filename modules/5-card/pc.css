@@ -14,7 +14,6 @@
 .card .card-header .card-first-line {
     margin-top: 10px;
     margin-left: 15%;
-    width: 82%;
     display: flex;
     justify-content: space-between;
 }
@@ -23,11 +22,10 @@
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     margin-top: 10px;
-    margin-left: -10px;
 }
 
 .card .card-header .card-first-line .card-icons svg:not(:last-of-type){
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .card .card-header .card-top-inner {
@@ -66,7 +64,7 @@
 }
 
 .card .card-header .reviews span {
-   font-size: 1em;
+    font-size: 1em;
     margin-left: 5px;
 }
 
@@ -199,6 +197,15 @@
 .hidden-card-info .tabs-items .tab-content ul {
     list-style-type: none;
 }
+.hidden-card-info .tabs-items .tab-content ul li {
+    margin-top: 15px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.hidden-card-info .tabs-items .tab-content ul li svg {
+    float: right;
+}
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block {
     margin: 10px 0;
@@ -288,7 +295,7 @@
 }
 
 .hidden-card-info .card-btn-wrap .card-left-btn {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .hidden-card-info .card-btn-wrap .card-right-btn {

@@ -6,7 +6,7 @@ var slideShow = (function () {
         var slidesCount;
         var k = 0;
         var f = 0;
-        var circleScroll = true;
+        var circleScroll = false;
         var dataSettings = {};
         var element = '';
         var slideItemWidth;
@@ -160,7 +160,7 @@ var slideShow = (function () {
                 element.getElementsByClassName('jsSlideContent')[0].style.width = blockCustomWidth;
             }
             element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex('+step*slideItemWidth+'%)';
-            var leftArrowBlock = (k <= 0 && circleScroll === false) ? '<div class="arrows-block"></div>' : '<div class="arrows-block">'+leftArrow+'</div>';
+            var leftArrowBlock = (k <= 0 && circleScroll === false) ? '<div class="arrows-block">'+leftArrow+'</div>' : '<div class="arrows-block">'+leftArrow+'</div>';
             for (let j = 0; j < step; j++) {
                 lastElm = arr.pop();
                 arr1 = arr.unshift(lastElm);
@@ -380,7 +380,7 @@ if(document.getElementsByClassName('bank_review_slider').length>0){
         element:'.bank_review_slider',
         slidesToShow:3,
         slidesToScroll:1,
-        circleScroll:true,
+        circleScroll:false,
         height:'400',
         responsive: [
             {
@@ -407,7 +407,7 @@ if(document.getElementsByClassName('smi_slider').length>0){
         element:'.smi_slider',
         slidesToShow:3,
         slidesToScroll:1,
-        circleScroll:true,
+        circleScroll:false,
         height:'220',
         responsive: [
             {
