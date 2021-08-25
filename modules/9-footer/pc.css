@@ -3,9 +3,58 @@
     margin: 0;
 }
 
+.f-top-line {
+    width: 1170px;
+    background: #F6F8FB;
+    height: 188px;
+    margin: 50px 0 20px 0;
+}
+
+.f-top-line-col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.f-top-line-col .f-qa-list {
+    margin-left: 65px;
+}
+
+.f-top-line-col .f-qa-list .f-1 li{
+    list-style-type: none;
+}
+
+.f-top-line-col .f-qa-list .f-1 li a{
+    color: #000 !important;
+}
+
+.f-top-line-col .loan-training {
+    width: 350px;
+    border-radius: 23px;
+    height: 44px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    margin-left: 100px;
+    font-weight: 600;
+}
+
+.f-top-line-col .loan-training svg {
+    margin:0 25px 0 -30px;
+}
+
+.f-top-line img {
+    margin-left: 60px;
+    position: absolute;
+    margin-top: -172px;
+}
+
 .f-line-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 40px;
 }
 
 .f-1 {
@@ -17,7 +66,7 @@
 .f-support-label {
     margin-top: 20px;
     margin-bottom: 15px;
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.4em;
     font-weight: 600;
     color: #4FABFA;
@@ -70,7 +119,7 @@
     color: #222735 !important;
 }
 
-.f-block  ul.f-2-menu {
+.f-block ul.f-2-menu {
     display: flex;
     justify-content: space-between ;
     font-weight: 600;
@@ -95,7 +144,7 @@
     color: #2ED47A !important;
 }
 
-.f-block  ul.f-3-menu {
+.f-block ul.f-3-menu {
     display: flex;
     flex-wrap: wrap;
     font-weight: 600;
@@ -121,20 +170,23 @@
 
 .f-block .social {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 28px;
+    margin: 30px 0;
 }
 
 .f-block .social .soc-network a,
 .f-block .social .soc-reviews a {
     margin-right: 35px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .f-block  .social .soc-reviews  {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: -5px;
 }
 
 .f-block .social .soc-reviews a:first-of-type  {
