@@ -29,10 +29,14 @@
 }
 
 .button_show,
-.button_hide{
+.button_hide {
     margin-top: 30px;
     float: right;
     cursor: pointer;
+}
+.hidden-info {
+    overflow: hidden;
+    height: 180px;
 }
 
 .data-more-less-inner {

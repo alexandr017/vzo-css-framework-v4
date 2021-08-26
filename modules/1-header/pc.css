@@ -215,8 +215,8 @@
     min-width:450px;
 }
 
-.sub-nav_one-column,
-.sub-nav_two-column {
+.header .sub-nav_one-column,
+.header .sub-nav_two-column {
     z-index: 5;
     background: #fff;
     border-radius:10px;

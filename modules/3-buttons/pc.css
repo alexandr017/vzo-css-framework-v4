@@ -8,6 +8,7 @@
     justify-content: center;
     cursor: pointer;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .btn-success {
@@ -66,6 +67,7 @@
     cursor: pointer;
     border: none;
     outline: none;
+    letter-spacing: .5px;
 }
 
 .btn-light-1 {
@@ -141,6 +143,7 @@
     padding: 0 2em;
     margin-top: 20px;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
+    letter-spacing: 1px;
 }
 
 .btn-2 svg {

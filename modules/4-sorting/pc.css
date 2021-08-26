@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .sort .sort_el .main-sort svg {
@@ -25,7 +26,8 @@
 
 .sort .sort_el span {
     display: block;
-    padding: 8px;
+    text-align: center;
+    margin: 5px 0;
 }
 
 .sub-menu-sort-container {
@@ -37,7 +39,7 @@
 }
 
 .sort .sort_el:hover .sub-menu-sort-container {
-    left: -150px;
+    left: -140px;
 }
 
 .sort .sort_el:hover svg{
@@ -47,19 +49,15 @@
 .sort .sort_el .sub-menu-sort-container .sub-nav_one-column {
     z-index: 1;
     background: #fff;
-    min-width:300px;
-}
-
-.sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col {
-    padding: 0 20px;
+    min-width: 260px;
 }
 
 .sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col:first-of-type {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-.sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col:first-of-type {
-    margin-bottom: 10px;
+.sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col:last-of-type {
+    margin-bottom: 20px;
 }
 
 .sort .sort_el .sub-menu-sort-container .sub-nav_one-column span:hover,
@@ -69,6 +67,7 @@
 }
 
 .sort hr {
+    margin: 20px 0;
     height: 1px;
     border: none;
     background-color: #E6EBEF;

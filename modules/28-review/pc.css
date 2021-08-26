@@ -72,6 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .reviews .sort .sort_el .main-sort svg {
@@ -86,7 +87,8 @@
 
 .reviews .sort .sort_el span {
     display: block;
-    padding: 8px;
+    text-align: center;
+    margin: 5px 0;
 }
 
 .reviews .sub-menu-sort-container {
@@ -98,34 +100,25 @@
 }
 
 .reviews .sort .sort_el:hover .sub-menu-sort-container {
-    left: -150px;
+    left: -140px;
 }
 
-.reviews .sort .sort_el:hover svg{
+.reviews .sort .sort_el:hover svg {
     transform: rotate(180deg);
 }
 
 .reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column {
     z-index: 1;
     background: #fff;
-    min-width:260px;
-}
-
-.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col {
-    padding: 0 40px;
+    min-width: 260px;
 }
 
 .reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col:first-of-type {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col:first-of-type {
-    margin-bottom: 10px;
-}
-
-.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column span {
-    transition: background ease .3s;
-    color: #95A5B0;
+.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col:last-of-type {
+    margin-bottom: 20px;
 }
 
 .reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column span:hover,
@@ -134,7 +127,8 @@
     cursor: pointer;
 }
 
-.reviews .sort hr {
+.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column hr {
+    margin: 20px 0;
     height: 1px;
     border: none;
     background-color: #E6EBEF;
@@ -274,7 +268,7 @@
     border-radius: 15px;
 }
 
-.reviews hr {
+.reviews hr:not(.sub-nav_one-column hr) {
     height: 1px;
     border: none;
     background-color: #E6EBEF;
