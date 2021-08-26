@@ -1,0 +1,10 @@
+.site-map-title {
+    font-weight: 700;
+}
+.content .site-map-block a {
+    display: block;
+    color: #222735;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 2em;
+}
