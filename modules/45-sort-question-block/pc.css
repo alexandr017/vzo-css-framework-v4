@@ -1,0 +1,125 @@
+.breadcrumbs {
+    font-size: .8em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:visited {
+    color: #222735 !important;
+}
+
+.breadcrumbs span:not(:last-of-type) {
+    margin: 0 10px;
+}
+
+.kb_title {
+    color: #87919F;
+    cursor: pointer;
+}
+
+.question-block .h2 {
+   font-weight: 700;
+    letter-spacing: -0.005em;
+}
+
+.question-block .user-name {
+    color: #95A5B0;
+    font-size: 0.87em;
+    cursor: pointer;
+}
+
+.question-block .experts-reply {
+    margin-top: 30px;
+    display: inline-flex;
+}
+
+.question-block .experts-reply .expert-logo .check {
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 55px;
+}
+
+.question-block .experts-reply .reply-info {
+    margin-left: 27px;
+}
+
+.question-block .experts-reply .reply-info .expert-name {
+    font-weight: 600;
+    cursor: pointer;
+    color: #222735;
+}
+
+.question-block .experts-reply .reply-info .expert-post {
+    color: #95A5B0;
+    font-size: 0.8em;
+}
+
+.question-block .experts-reply .reply-info .reply-text {
+    margin-top: 15px;
+    font-size: .9em;
+}
+
+.question-block .experts-reply .reply-info .reply-bottom-block {
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+.question-block .experts-reply .reply-info .reply-bottom-block .down-likes {
+    margin-left: 13px;
+    cursor:pointer;
+}
+
+.question-block .experts-reply .reply-info .reply-bottom-block .reply-comment {
+    font-weight: 600;
+    margin-left: 30px;
+    cursor:pointer;
+}
+
+.question-block .experts-reply .reply-info .reply-bottom-block time {
+    margin-left: 25px;
+}
+
+.question-block .experts-reply .reply-info .reply-bottom-block .up-likes span,
+.question-block .experts-reply .reply-info .reply-bottom-block .down-likes span     {
+    margin-left: 5px;
+    cursor:pointer;
+}
+
+.question-block form {
+    margin-top: 60px;
+}
+
+.question-block input,
+.question-block textarea {
+    background: #F6F8FB;
+    color: #95A5B0;
+    border-radius: 10px;
+    width: 790px;
+    margin-top: 10px;
+    padding: 15px 45px;
+    font-size: 0.9em;
+    outline: none;
+    border: none;
+}
+
+.question-block input {
+    height: 50px;
+}
+
+.question-block textarea {
+    height: 145px;
+    resize: none;
+}
+
+.question-block .btn {
+    margin-top: 20px;
+    float: right;
+}
+
+
+
+
+
+
+

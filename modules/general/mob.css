@@ -86,6 +86,11 @@ p {margin-top: 0;}
     box-shadow: 0px 6px 20px rgba(55, 56, 61, 0.1);
 }
 
+.shadow-1{
+    box-shadow: 0px 4px 10px rgba(135, 145, 159, 0.15);
+}
+
+
 .border-radius {
     border-radius: 25px;
 }

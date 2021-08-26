@@ -1,84 +1,83 @@
-.company-menu {
+.org-menu-block {
     background: url("/v4/images/company-img.png");
-    height: 260px;
+    min-height: 262px;
     width: 1110px;
     padding: 45px 0 0 75px;
+    margin: 30px 0 30px -160px;
 }
 
-.company-header {
+.org-header {
     display: flex;
 }
 
-.company-header .company-title {
+.org-header .org-title {
     width: 70%;
     font-weight: 700;
     line-height: 1.1em;
 }
 
-.company-tabs .tab-wrap {
-    margin-top: -100px;
-    width: 80%;
-    margin-left: 25px;
+.org-menu-links {
+    position: absolute;
+    margin-top: -65px;
+    margin-left: -100px;
+
 }
 
-.company-tabs .tab {
-    margin-top: 35px;
-    display: inline-flex;
-    overflow: hidden;
-    padding: 15px 0;
-    width: 100%;
-}
-
-.company-tabs .tab .tab-links {
+.org-menu-links .org-links {
     border-radius: 25px 25px 0 0;
     background-color: inherit;
     text-align: center;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    width: 20%;
+    color: #222735 !important;
 }
 
-.company-tabs .tab .tab-links.on {
+.org-menu-links .org-links.active {
     background: #FFFFFF;
     font-weight: 600;
 }
 
-.company-tabs .tabs-items .tab-content.on{
-    display:flex;
-    font-size: .87em;
+.banks-products-block {
+    width: 1110px;
+    margin: 30px 0 30px -160px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
-.company-tabs .tabs-items .tab-content {
-    display: none;
-    margin-top: 30px;
-}
 
-.link_el {
+.banks-products-block .link_el {
     cursor: pointer;
+    text-align: center;
+    margin: 0 25px;
 }
 
-.link_el .icon-bg {
+.banks-products-block .link_el .icon-bg {
+    margin: 0 auto;
     width: 80px;
     height: 80px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+
 }
 
-.link_el .icon-bg svg:not(.fill) {
+.banks-products-block .link_el .icon-text {
+    color: #222735;
+}
+
+.banks-products-block .link_el:hover .icon-text {
+    color:#2CDD88;
+}
+
+.banks-products-block .link_el .icon-bg svg:not(.fill) {
     stroke:black;
 }
 
-.link_el .icon-bg svg.fill {
+.banks-products-block .link_el .icon-bg svg.fill {
     fill: black;
-}
-
-
-.link_el:hover {
-    color:#2CDD88;
 }
 
 .link_el:hover .icon-bg svg:not(.fill) {
@@ -87,9 +86,4 @@
 
 .link_el:hover .icon-bg svg.fill {
     fill: #2CDD88;
-}
-
-.link_el {
-    text-align: center;
-    margin: 0 25px;
 }
