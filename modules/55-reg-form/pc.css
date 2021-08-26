@@ -1,0 +1,86 @@
+.reg-form-block {
+    background: url(/v4/images/reg-form-img.png) no-repeat left;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1em;
+    background-size: contain;
+}
+.reg-form-text-block {
+    background: #FFFFFF;
+    width: 70%;
+    padding: 1em 2em;
+}
+.reg-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.reg-form-inp {
+    border-radius: 10px;
+    background-color: #F6F8FB;
+    padding: 0.4em 1em;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.reg-form-item-title {
+    font-weight: 600;
+    width: 50%;
+    margin-bottom: 0.3em;
+}
+.reg-form-item-half {
+    width: 45%;
+    margin-bottom: 1em;
+}
+.reg-form-item-all {
+    width: 95%;
+    margin-bottom: 1em;
+    position: relative;
+}
+.reg-form-title {
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: 1em;
+    padding-left: 0.3em;
+}
+.show-pass{
+    position: absolute;
+    right: 5%;
+    top: 2em;
+}
+.reg-form-btn {
+    width: 94%;
+    border: none;
+    margin-bottom: 1em;
+}
+.captcha {
+    padding: 1em;
+    width: 60%;
+    border: 1px solid #222735;
+    position: relative;
+    left: -17%;
+    margin-top: 1em;
+}
+.reg-form-main-error-block {
+    background: #FFEDF3;
+    color: #FF4E59;
+    padding: 0.6em;
+    width: 100%;
+    margin-bottom: 26px;
+    display: flex;
+}
+.main-error-msg-text,.main-error-svg {
+    margin-left: 2em;
+}
+.account-exist {
+    display: block;
+    text-align: center;
+}
+.err-msg-block {
+    border: 1.5px solid #FF4E59;
+    background: #FFFFFF;
+}
+.err-msg {
+    color: #FF4E59;
+    padding-top: 0.3em;
+}
