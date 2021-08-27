@@ -1,4 +1,3 @@
-
 var addTableWrap = document.getElementsByClassName("overpayment-block")[0];
 var items = Array.from(addTableWrap.querySelectorAll("tr"));
 var loadMore = document.getElementsByClassName("loadMore")[0];
@@ -14,9 +13,6 @@ items.forEach(function (item, index) {
         item.classList.add(hiddenClass);
         loadLess.style.display = "none";
     }
-
-
-
 });
 
 loadMore.addEventListener("click", function () {
@@ -24,9 +20,7 @@ loadMore.addEventListener("click", function () {
         item,
         index
     ) {
-        if (index < 7) {
             item.classList.remove(hiddenClass);
-        }
         if (document.querySelectorAll("." + hiddenClass).length === 0) {
             loadMore.style.display = "none";
             loadLess.style.display = "flex";
