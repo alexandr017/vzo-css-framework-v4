@@ -13,7 +13,8 @@ body{
     line-height: 1.5;
     color: #222735;
     text-align: left;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: #19E38F;
 }
 
 body, input, textarea, select, .btn , .btn-1{
