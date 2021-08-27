@@ -37,6 +37,7 @@
 
 .msg-wrap.default {
     background: #F6F8FB;
+    border-radius: 15px;
 }
 .msg-wrap p{
     font-weight: 600;
@@ -55,9 +56,10 @@
     width: 100%;
     margin-top: 20px;
     padding: 15px 20px;
+    border-radius: 15px;
 }
 
-.rat-block-items .rat_block_item span:last-of-type{
+.rat-block-items .rat_block_item span:last-of-type {
     float: right;
 }
 

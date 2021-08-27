@@ -118,6 +118,7 @@
 .qa-block .tabs-items .tab-content .qa-items {
     margin-top: 55px;
     padding: 20px 30px;
+    border-radius: 15px;
 }
 
 .qa-block .tabs-items .tab-content .qa-items .qa-title {
@@ -173,7 +174,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 3px;
     background: #F6F8FB;
     color: #222735 !important;
 }

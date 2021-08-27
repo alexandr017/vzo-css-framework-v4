@@ -15,7 +15,7 @@
     margin-top: 25px;
 }
 
-input[type=range] {
+.calculator-rko .calculator-rko-block input[type=range] {
     outline: none;
     padding: 0;
     width: 99%;
@@ -33,7 +33,7 @@ input[type=range] {
     z-index: 1;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+.calculator-rko .calculator-rko-block input[type=range]::-webkit-slider-runnable-track {
     box-shadow: none;
     border: none;
     background: transparent;
@@ -41,7 +41,7 @@ input[type=range]::-webkit-slider-runnable-track {
     z-index: 1;
 }
 
-input[type=range]::-moz-range-track {
+.calculator-rko .calculator-rko-block input[type=range]::-moz-range-track {
     box-shadow: none;
     border: none;
     background: transparent;
@@ -49,13 +49,13 @@ input[type=range]::-moz-range-track {
     z-index: 1;
 }
 
-input[type=range]::-moz-focus-outer {
+.calculator-rko .calculator-rko-block input[type=range]::-moz-focus-outer {
     border: 0;
     opacity: 1;
     z-index: 1;
 }
 
-input[type=range]::-webkit-slider-thumb {
+.calculator-rko .calculator-rko-block input[type=range]::-webkit-slider-thumb {
     width: 20px;
     height: 20px;
     opacity: 1;
@@ -66,12 +66,12 @@ input[type=range]::-webkit-slider-thumb {
     z-index: 1;
 }
 
-input[type=range]::-webkit-slider-thumb:hover {
+.calculator-rko .calculator-rko-block input[type=range]::-webkit-slider-thumb:hover {
     width: 26px;
     height: 26px;
 }
 
-input[type=number] {
+.calculator-rko .calculator-rko-block input[type=number] {
     border: none;
     height: 30px;
     width: 71px;
@@ -82,7 +82,7 @@ input[type=number] {
     border-radius: 25px
 }
 
-input.range-value:before{
+.calculator-rko .calculator-rko-block input.range-value:before{
     content: "";
     position: absolute;
     height: 9px;

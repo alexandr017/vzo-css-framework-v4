@@ -397,35 +397,26 @@
     padding-left: 65px;
 }
 
-.card .hidden-card-info .slider {
+.card .hidden-card-info .card-slider-block {
     margin-top: 50px;
     padding: 0 100px 40px 100px;
-}
-
-.card .hidden-card-info .slider .slider-block {
     display: flex;
     justify-content: space-between;
 }
 
-.card .hidden-card-info .slider .slider-block .slider-button {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
 
-
-.card .hidden-card-info .slider .slider-block .slider-info {
+.card .hidden-card-info .card-slider-block .card-slider-info {
     cursor:pointer;
     display: block;
     text-align: center;
 }
 
 
-.card .hidden-card-info .slider .slider-block .slider-info .border-radius svg {
+.card .hidden-card-info .card-slider-block .card-slider-info .border-radius svg {
     width: 23px;
 }
 
-.card .hidden-card-info  .slider .slider-block .slider-info .text-cont {
+.card .hidden-card-info .card-slider-bloc .card-slider-info .text-cont {
     font-size: 0.9em;
 }
 

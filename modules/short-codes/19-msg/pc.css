@@ -1,6 +1,7 @@
 .msg-wrap {
     padding: 30px 45px;
     margin: 15px 0;
+    border-radius: 15px;
 }
 
 .msg-title {

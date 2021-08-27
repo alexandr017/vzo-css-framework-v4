@@ -1,17 +1,11 @@
 .card-face {
-    width: 1110px ;
-    margin: 30px 0;
+    width: 1110px;
+    margin: 50px 0 50px -160px;
     padding: 0 0 50px 0;
 }
 
 .card-face .face-header {
     padding: 20px 60px;
-}
-
-.card-face  hr {
-    height: 1px;
-    border: none;
-    background-color:#EBEBEB;
 }
 
 .card-face .face-header .face-first-line {
@@ -45,6 +39,10 @@
     justify-content: center;
     margin-top: -30px;
 
+}
+
+.card-face .face-header .face-top-inner .logo img {
+    max-width: fit-content;
 }
 
 .card-face .face-header .face-top-inner .block-row {
@@ -88,10 +86,19 @@
     padding:20px 60px 0 60px;
 }
 
-.face-body .credit-types a {
+.face-body .credit-types .types-tag{
+    border-radius: 3px;
     padding: 6px 25px;
     background: #F6F8FB;
-    color: #222735 !important;
+}
+
+.face-body .credit-types .types-tag span {
+    border-bottom: 1px dotted #222735;
+}
+
+.face-body .credit-types .hidden-description {
+    display:none;
+
 }
 
 .face-body .hidden-block {
@@ -111,6 +118,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 65px;
+    margin: 30px 0;
 }
 
 .face-body .list-card-block .list-card_el {
@@ -131,13 +139,46 @@
     display: flex;
 }
 
-.face-body .table-vertical tr .l-el  .face-rating {
+.face-body .table-vertical tr .l-el .face-rating {
     width: 70%;
     height: 10px;
     background: #E6EBEF;
     border-radius: 28px;
     margin-top: 6px;
 }
+.face-body .table-vertical tr .l-el .face-rating .w-1{
+    width: 10%;
+}
+.face-body .table-vertical tr .l-el .face-rating .w-2{
+    width: 20%;
+}
+
+.face-body .table-vertical tr .l-el .face-rating .w-3{
+    width: 30%;
+}
+.face-body .table-vertical tr .l-el .face-rating .w-4{
+    width: 40%;
+}
+.face-body .table-vertical tr .l-el .face-rating .w-5{
+    width: 50%;
+}
+.face-body .table-vertical tr .l-el .face-rating .w-6{
+    width: 60%;
+}
+.face-body .table-vertical tr .l-el .face-rating .w-7{
+    width: 70%;
+}
+
+.face-body .table-vertical tr .l-el .face-rating .w-8{
+    width: 80%;
+}
+.face-body .table-vertical tr .l-el .face-rating .w-9{
+    width: 90%;
+}
+.face-body .table-vertical tr .l-el .face-rating .w-10{
+    width: 100%;
+}
+
 .face-body .table-vertical tr .l-el .face-rating .percent {
     height: 10px;
     background: #2ED47A;

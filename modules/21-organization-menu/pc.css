@@ -66,6 +66,8 @@
 
 .banks-products-block .link_el .icon-text {
     color: #222735;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 .banks-products-block .link_el:hover .icon-text {

@@ -59,7 +59,6 @@
     margin:0 25px 0 -30px;
 }
 
-
 .f-line-1 {
     display: flex;
     justify-content: space-around;
@@ -161,7 +160,6 @@
     margin-top: 20px;
 }
 
-
 .f-copyright {
     display: flex;
 }
@@ -219,13 +217,7 @@
     color: #C2CFD8;
 }
 
-.f-block .f-3 .policy .copyright{
+.f-block .f-3 .policy .copyright {
     color: #C2CFD8;
     font-size: 0.8em;
-}
-
-.f-block  hr {
-    height: 1px;
-    border: none;
-    background-color:#EBEBEB;
 }

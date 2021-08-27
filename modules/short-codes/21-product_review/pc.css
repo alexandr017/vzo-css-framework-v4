@@ -44,6 +44,7 @@
 .msg-wrap {
     padding: 30px 45px;
     margin: 40px 65px;
+    border-radius: 15px;
 }
 
 .msg-wrap.default {
@@ -135,11 +136,6 @@
 
 .product_review-short-block .plus-minus {
     display: flex;
-}
-
-.product_review-short-block hr {
-
-    border: 1px solid #E6EBEF;
 }
 
 .plus-minus .accordion-container {

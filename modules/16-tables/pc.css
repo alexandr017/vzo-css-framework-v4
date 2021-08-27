@@ -38,7 +38,7 @@ table.table-horizontal {
 table.table-horizontal .border-radius-1,
 table.table-limit .border-radius-1,
 table.table-info .border-radius-1{
-    border-radius: 25px 0 0 0;
+    border-radius: 15px 0 0 0;
 }
 
 table.table-limit tr:not(:last-of-type),
@@ -53,11 +53,11 @@ table.table-horizontal tr:not(:first-of-type) {
 table.table-horizontal .border-radius-2,
 table.table-limit .border-radius-2,
 table.table-info .border-radius-2{
-    border-radius: 0 25px 0 0;
+    border-radius: 0 15px 0 0;
 }
 
 table.table-limit {
-    border-radius: 25px;
+    border-radius: 15px;
     border-collapse: collapse;
     width: 1110px;
     margin-left: -165px;
@@ -81,7 +81,7 @@ table.table-limit tr th svg:active{
 
 
 table.table-info {
-    border-radius: 25px;
+    border-radius: 15px;
     text-align: left;
     border-collapse: collapse;
 }
@@ -90,8 +90,9 @@ table.table-info tr td:first-of-type {
     width: 30%;
 }
 
-table.table-info .border-radius-3{
-    border-radius: 0 0 0 25px;
+table.table-info .border-radius-3,
+.table-info-block .border-radius-3 {
+    border-radius: 0 0 0 15px;
 }
 
 
@@ -100,6 +101,7 @@ table.table-info .border-radius-3{
 .table-info-block {
     width: 100%;
     margin: 30px 0;
+    border-radius: 15px;
 }
 
 .table-info-block .tr {
@@ -133,7 +135,7 @@ table.table-info .border-radius-3{
 .table-info-block .tr .border-radius-1,
 .table-limit-block .border-radius-1,
 .light-border  .border-radius-1{
-    border-radius: 25px 0 0 0;
+    border-radius: 15px 0 0 0;
 }
 
 .table-info-block .tr .td:last-of-type {
@@ -145,6 +147,7 @@ table.table-info .border-radius-3{
 .table-limit-block {
     width: 1110px;
     margin: 30px 0 30px -165px;
+    border-radius: 15px;
 }
 
 .table-limit-block .tr {
@@ -165,13 +168,13 @@ table.table-info .border-radius-3{
 .table-limit-block .tr .th{
     border-bottom: none;
     font-weight: 700;
-    background: #F6F7F9;
+    background: #F6F8FB;
     float: right;
 }
 
 .table-limit-block .border-radius-2,
 .light-border .border-radius-2 {
-    border-radius: 0 25px 0 0;
+    border-radius: 0 15px 0 0;
 }
 
 .table-limit-block .tr .th svg {
@@ -218,6 +221,7 @@ table.table-info .border-radius-3{
 
 .light-border {
     margin: 30px 0;
+    border-radius: 15px;
 }
 
 .light-border .tr {

@@ -269,9 +269,6 @@
 }
 
 .reviews hr:not(.sub-nav_one-column hr) {
-    height: 1px;
-    border: none;
-    background-color: #E6EBEF;
     margin: 25px 0;
 }
 
