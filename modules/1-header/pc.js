@@ -2,6 +2,7 @@ window.onscroll = function() {shadowMenu()};
 function shadowMenu() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         $$("#headerMenu")[0].className = "shadow";
+        $$("#headerMenu")[0].className = "fixed";
     } else {
         $$("#headerMenu")[0].className = " ";
     }
