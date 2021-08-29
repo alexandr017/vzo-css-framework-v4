@@ -9,7 +9,7 @@
     color: #222735 !important;
 }
 
-.breadcrumbs span:not(:last-of-type) {
+.breadcrumbs svg {
     margin: 0 10px;
 }
 
