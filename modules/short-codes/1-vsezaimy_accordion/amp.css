@@ -26,7 +26,7 @@
 }
 
 .accordion-line {
-    line-height: 2em;
+    line-height: 2rem;
 }
 
 .panel .accordion-list .accordion-col:not(:first-of-type) {

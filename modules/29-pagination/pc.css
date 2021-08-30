@@ -1,10 +1,11 @@
 .pagination {
-    font-size: .75em;
+    font-size: .75rem;
     font-weight: bold;
     display: flex;
     align-items: center;
     margin-top: 50px;
 }
+
 .pagination .page,
 .pagination .ellipsis{
     margin:0 5px;
@@ -16,12 +17,13 @@
     align-items: center;
     justify-content: center;
 }
+
 .pagination .active, .pagination .page:hover,
 .pagination .ellipsis:hover{
     background: #2ED47A !important;
     color: #fff!important;
     border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(135, 145, 159, 0.15);
+    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
 .page-arrow {

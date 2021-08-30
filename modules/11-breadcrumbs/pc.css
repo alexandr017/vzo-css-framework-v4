@@ -1,12 +1,12 @@
 .breadcrumbs {
-    font-size: .87em;
+    font-size: .87rem;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
 .breadcrumbs a,
 .breadcrumbs a:visited {
-    color: #222735 !important;
+    color: #222735;
 }
 
 .breadcrumbs svg {

@@ -25,13 +25,9 @@
 
 .main-content .content-block .content-list {
     margin-top: 140px;
-    padding: 20px 41px;
+    padding: 20px 40px;
     width: 400px;
     float: right;
-}
-
-.main-content .content-block .content-list .h2 {
-    line-height: 1.3em;
 }
 
 .main-content .content-block .content-list ul{

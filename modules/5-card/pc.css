@@ -35,30 +35,30 @@
     justify-content: space-around;
 }
 .js-slide-btn-left {
-    background: #fff url("v4/images/prev.png") no-repeat center center;
+    background: #fff url("/v4/images/prev.png") no-repeat center center;
     left: 15px;
 }
 
 .js-slide-btn-left:hover {
-    background: #fff url("v4/images/prev-hover.png") no-repeat center center;
+    background: #fff url("/v4/images/prev-hover.png") no-repeat center center;
 }
 
 .js-slide-btn-left:active {
-    background: #fff url("v4/images/prev-active.png") no-repeat center center;
+    background: #fff url("/v4/images/prev-active.png") no-repeat center center;
 }
 
 
 .js-slide-btn-right {
-    background: #fff url("v4/images/next.png") no-repeat center center;
+    background: #fff url("/v4/images/next.png") no-repeat center center;
     right: 15px;
 }
 
 .js-slide-btn-right:hover {
-    background: #fff url("v4/images/next-hover.png") no-repeat center center;
+    background: #fff url("/v4/images/next-hover.png") no-repeat center center;
 }
 
 .js-slide-btn-right:active {
-    background: #fff url("v4/images/next-active.png") no-repeat center center;
+    background: #fff url("/v4/images/next-active.png") no-repeat center center;
 }
 
 .js-slide-btn-left, .js-slide-btn-right {
@@ -244,13 +244,12 @@
 
 .card .card-body .card-body-inner .card-upd {
     color: #95A5B0;
-    font-size:  .87em;
-    line-height: 1.3em;
+    font-size:  0.87rem;
+    line-height: 1.1rem;
     padding: 10px 60px;
     float: right;
     margin-right: 30px;
 }
-
 
 .card .card-body .card-body-inner .card-more {
     display: block;
@@ -268,8 +267,8 @@
 }
 
 .card .card-body .card-body-inner .hidden-card-info .text-hidden-card {
-    line-height: 1.75em;
-    font-size: 1.1em;
+    line-height: 1.75rem;
+    font-size: 1.1rem;
     margin-top: 30px;
     padding: 0 60px 0 60px;
 }
@@ -321,7 +320,7 @@
 
 .card .card-body .hidden-card-info .card-dark-bg .row-card-el .percent,
 .card .card-body .hidden-card-info .card-row-inner .row-card-el .percent {
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: 600;
 }
 
@@ -417,9 +416,8 @@
 }
 
 .card .hidden-card-info .card-slider-bloc .card-slider-info .text-cont {
-    font-size: 0.9em;
+    font-size: 1rem;
 }
-
 
 .hidden-card-info .list-card-block {
     display: flex;

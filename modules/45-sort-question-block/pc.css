@@ -1,31 +1,25 @@
 .breadcrumbs {
-    font-size: .8em;
+    font-size: .87rem;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
 .breadcrumbs a,
 .breadcrumbs a:visited {
-    color: #222735 !important;
+    color: #222735;
 }
 
-.breadcrumbs span:not(:last-of-type) {
+.breadcrumbs svg {
     margin: 0 10px;
 }
 
 .kb_title {
     color: #87919F;
-    cursor: pointer;
-}
-
-.question-block .h2 {
-   font-weight: 700;
-    letter-spacing: -0.005em;
 }
 
 .question-block .user-name {
     color: #95A5B0;
-    font-size: 0.87em;
+    font-size: 0.87rem;
     cursor: pointer;
 }
 
@@ -52,12 +46,12 @@
 
 .question-block .experts-reply .reply-info .expert-post {
     color: #95A5B0;
-    font-size: 0.8em;
+    font-size: 0.87rem;
 }
 
 .question-block .experts-reply .reply-info .reply-text {
     margin-top: 15px;
-    font-size: .9em;
+    font-size: 1rem;
 }
 
 .question-block .experts-reply .reply-info .reply-bottom-block {
@@ -98,7 +92,7 @@
     width: 790px;
     margin-top: 10px;
     padding: 15px 45px;
-    font-size: 0.9em;
+    font-size: 1rem;
     outline: none;
     border: none;
 }

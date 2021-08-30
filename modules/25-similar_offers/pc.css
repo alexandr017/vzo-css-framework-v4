@@ -1,7 +1,6 @@
 .similar-offer .h2 {
     text-align: center;
     margin-bottom: 50px;
-    font-weight: 700;
 }
 
 .similar-offers_block{
@@ -14,11 +13,11 @@
 }
 
 .similar-offers_el:first-of-type {
-    margin-left: 62px;
+    margin-left: 60px;
 }
 
 .similar-offers_el:not(:last-of-type) {
-    margin-right: 32px;
+    margin-right: 30px;
 }
 
 .similar-offers_title {
@@ -40,8 +39,7 @@
 .similar-offers_rating {
     color: #222735;
     font-weight: 600;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin: 10px 0 0 10px;
 }
 
 .similar-offers_rating svg {
@@ -61,7 +59,7 @@
     margin-top: 5px;
     width: 40%;
     color: #828282;
-    font-size: 0.87em;
+    font-size: 0.87rem;
 }
 
 
