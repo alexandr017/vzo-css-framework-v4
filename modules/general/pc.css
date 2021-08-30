@@ -1,6 +1,12 @@
+:root {
+    font-size: 16px;
+}
+
 *, ::after, ::before {
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 1rem;
+
+
 }
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
@@ -84,7 +90,7 @@ p {margin-top: 0;}
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1140px;
     width: 100%;
     margin: auto;
     padding-left: 15px;

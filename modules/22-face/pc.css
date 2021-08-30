@@ -1,14 +1,13 @@
-.card-face {
-    width: 1110px;
-    margin: 50px 0 50px -160px;
+.face-block {
+    margin: 50px 0;
     padding: 0 0 50px 0;
 }
 
-.card-face .face-header {
+.face-block .face-header {
     padding: 20px 60px;
 }
 
-.card-face .face-header .face-first-line {
+.face-block .face-header .face-first-line {
     margin-top: 10px;
     margin-left: 15%;
     width: 82%;
@@ -16,23 +15,23 @@
     justify-content: space-between;
 }
 
-.card-face .face-header .face-first-line a {
+.face-block .face-header .face-first-line a {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     margin-top:10px;
 }
 
-.card-face .face-header .face-first-line .face-icons svg:first-of-type{
+.face-block .face-header .face-first-line .face-icons svg:first-of-type{
     margin-right: 32px;
 }
 
-.card-face .face-header .face-top-inner {
+.face-block .face-header .face-top-inner {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
 
-.card-face .face-header .face-top-inner .logo {
+.face-block .face-header .face-top-inner .logo {
     width: 80px;
     height: 80px;
     display: flex;
@@ -41,33 +40,33 @@
 
 }
 
-.card-face .face-header .face-top-inner .logo img {
+.face-block .face-header .face-top-inner .logo img {
     max-width: fit-content;
 }
 
-.card-face .face-header .face-top-inner .block-row {
+.face-block .face-header .face-top-inner .block-row {
     margin-right: 65px;
 }
 
 
-.card-face .face-header .face-top-inner .block-row .face-head-intro {
+.face-block .face-header .face-top-inner .block-row .face-head-intro {
     font-weight: 600;
 }
 
-.card-face .face-header .face-top-inner .block-row .face-cont {
+.face-block .face-header .face-top-inner .block-row .face-cont {
     color: #87919F;
     font-size:0.9em;
     line-height: 1.2em;
     margin-top: 10px;
 }
 
-.card-face .face-header .reviews span {
+.face-block .face-header .reviews span {
     font-size: 1em;
     margin-left: 5px;
 }
 
 
-.card-face .card-more {
+.face-block .card-more {
     display: block;
     float: right;
     color: #4FABFA;

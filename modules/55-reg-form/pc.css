@@ -1,10 +1,14 @@
 .reg-form-block {
-    background: url(/v4/images/reg-form-img.png) no-repeat left;
     display: flex;
     justify-content: flex-end;
     padding: 0 1em;
     background-size: contain;
 }
+
+.user-guest-form{
+    background: url(/v4/images/reg-form-img.png) no-repeat left;
+}
+
 .reg-form-text-block {
     background: #FFFFFF;
     width: 70%;
