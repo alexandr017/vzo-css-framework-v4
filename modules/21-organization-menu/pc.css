@@ -11,6 +11,8 @@
 
 .org-header .org-title {
     width: 70%;
+    font-weight: 700;
+    line-height: 1.1em;
 }
 
 .org-menu-links {
@@ -72,9 +74,14 @@
     color: #222735;
     margin-top: 10px;
     display: inline-block;
+    width: 80px;
 }
 
 .banks-products-block .bank-link-el:hover .bank-icon-text {
+    color:#2CDD88;
+}
+
+.banks-products-block .bank-link-el.active .bank-icon-text {
     color:#2CDD88;
 }
 
@@ -93,3 +100,13 @@
 .bank-link-el:hover .bank-icon-bg svg.fill {
     fill: #2CDD88;
 }
+
+
+.bank-link-el.active .bank-icon-bg svg:not(.fill) {
+    stroke:#2CDD88;
+}
+
+.bank-link-el.active .bank-icon-bg svg.fill {
+    fill: #2CDD88;
+}
+

@@ -1,3 +1,6 @@
+.getting-offer-title {
+    text-align: center;
+}
 .getting-offer-num {
     font-size: 30px;
     background: #F6F8FB;
@@ -7,24 +10,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1em;
+    margin: 20px auto;
     position: relative;
+
 }
 .getting-offer-text{
-    display: block;
+    font-size: 16px;
 }
 .getting-offer-block {
     display: flex;
     text-align: center;
+    margin: 50px 0;
 }
 .getting-offer-item {
-    width: 25%;
+    width: 33%;
     padding: 0 1em;
 }
 .getting-offer-item:not(:last-child) .getting-offer-num::after {
     content: '';
     position: absolute;
     border-bottom: 1px solid #E6EBEF;
-    width: 160px;
+    width: 230px;
     left: 3.3em;
 }

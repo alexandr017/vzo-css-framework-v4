@@ -72,6 +72,7 @@
     cursor: pointer;
     margin-right: 60px;
     margin-top: 20px;
+    line-height: 1rem;
 }
 
 .face-body .face-content {
@@ -106,10 +107,24 @@
 
 .face-body .table-vertical-block {
     margin: 10px 0;
+    width: 50%;
 }
 
 .face-body .table-vertical-block .tr .td:first-of-type {
     padding-left: 60px;
+}
+
+.face-block-tables {
+    display: flex;
+    width: 100%;
+}
+
+.face-block-tables .table-vertical tr:hover td:first-of-type {
+    background: #E6EBEF;
+}
+
+.face-block-tables .table-vertical tr:hover td:last-of-type {
+    background: #F6F8FB;
 }
 
 .face-body .list-card-block {
@@ -196,5 +211,6 @@
     width: 450px;
     height: 45px;
 }
+
 
 

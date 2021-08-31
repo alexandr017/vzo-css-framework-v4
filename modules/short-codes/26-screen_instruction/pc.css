@@ -7,3 +7,8 @@
 .application-block p {
     margin: 50px 95px;
 }
+
+.application-block img{
+    display: block;
+    margin: 20px auto;
+}
