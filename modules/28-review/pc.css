@@ -1,6 +1,5 @@
 .reviews .h2 {
     text-align: center;
-    font-weight: 700;
 }
 
 .reviews .scale-rating-block {
@@ -39,12 +38,12 @@
 }
 
 .reviews .scale-rating-block .info .info-title {
-    font-size: .9em;
+    font-size: 1rem;
     margin: 5px 0;
 }
 
 .reviews .scale-rating-block .info .reviews-count {
-    font-size: .9em;
+    font-size: 1rem;
     color:#87919f;
     position: absolute;
     margin-top: -16px;
@@ -143,7 +142,7 @@
 .reviews .block-reviews .text-review .user-logo {
     margin-top: 50px;
     display: flex;
-    font-size: 1.15em;
+    font-size: 1.2rem;
 }
 
 .reviews .block-reviews .text-review .user-logo svg {
@@ -175,18 +174,18 @@
 
 .reviews .block-reviews .text-review .plus span:first-of-type {
     color: #2ED47A;
-    font-size: 1.15em;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
 .reviews .block-reviews .text-review .minus span:first-of-type {
     color: #FF4D4A;
     font-weight: 600;
-    font-size: 1.15em;
+    font-size: 1.2rem;
 }
 
 .reviews .block-reviews .text-review .comment span:first-of-type {
-    font-size: 1.15em;
+    font-size: 1.2rem;
 }
 
 
@@ -242,7 +241,7 @@
     width: 450px;
     margin-top: 10px;
     padding: 15px 45px;
-    font-size: 0.9em;
+    font-size: 1rem;
     outline: none;
     border: none;
 }
@@ -269,9 +268,6 @@
 }
 
 .reviews hr:not(.sub-nav_one-column hr) {
-    height: 1px;
-    border: none;
-    background-color: #E6EBEF;
     margin: 25px 0;
 }
 

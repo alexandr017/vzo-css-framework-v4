@@ -3,11 +3,10 @@
     padding: 20px 30px;
 }
 
-
 .related .related-title {
     padding-bottom: 10px;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .related .related-link-wrap {

@@ -2,14 +2,13 @@
     align-items: center;
 }
 
-.h4 {
+.similar-offer .h4 {
     text-align: center;
     margin-bottom: 30px;
-    font-weight: 700;
 }
 
 .similar-offers_el {
-    padding: 30px 32px;
+    padding: 30px 35px;
 }
 
 .similar-offers_title {
@@ -44,19 +43,19 @@
     max-width: fit-content;
 }
 
-.offer-label{
+.offer-label {
     width: 65%;
-    font-size: 0.87em;
+    font-size: 0.87rem;
 }
 
 .offer-label-title {
     width: 35%;
     color: #828282;
-    font-size: 0.87em;
+    font-size: 0.87rem;
 }
 
 
-.similar-offers_el .info_el {
+.similar-offers_el .similar_info_el {
     padding-left: 20px;
     margin-top: 15px;
     display: flex;

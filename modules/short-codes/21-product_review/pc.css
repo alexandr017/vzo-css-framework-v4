@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .rat-block-header img{
@@ -32,18 +32,19 @@
 
 .rat-block-title {
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 .rat-block-content {
     padding: 0 65px;
     margin-top: 20px;
-    line-height: 1.6em;
+    line-height: 1.6rem;
 }
 
 .msg-wrap {
     padding: 30px 45px;
     margin: 40px 65px;
+    border-radius: 15px;
 }
 
 .msg-wrap.default {
@@ -70,13 +71,13 @@
 }
 
 .product_review-block .rat-block-items .title {
-    font-size: .9em;
+    font-size: .9rem;
     font-weight: 600;
     margin: 10px 0 5px 0;
 }
 
 .product_review-block .rat-block-items .text {
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 .rat-block-pros-minus {
@@ -137,18 +138,13 @@
     display: flex;
 }
 
-.product_review-short-block hr {
-
-    border: 1px solid #E6EBEF;
-}
-
 .plus-minus .accordion-container {
     width: 50%;
 }
 
 .product_review-short-block .plus-minus .accordion-container .plus-minus-title {
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 20px 0 20px 0;
 }
 
@@ -157,7 +153,7 @@
     cursor: pointer;
     transition: 0.5s;
     font-weight: 600;
-    line-height: 1.6em;
+    line-height: 1.6rem;
     margin-top: 20px;
 }
 

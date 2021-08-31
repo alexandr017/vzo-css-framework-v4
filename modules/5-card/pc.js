@@ -375,9 +375,9 @@ var slideShow = (function () {
     }
 }());
 
-if(document.getElementsByClassName('slider-block').length>0){
+if(document.getElementsByClassName('card-slider-block').length>0){
     slideShow({
-        element:'.slider-block',
+        element:'.card-slider-block',
         slidesToShow:4,
         slidesToScroll:1,
         circleScroll:false,
@@ -400,7 +400,6 @@ if(document.getElementsByClassName('slider-block').length>0){
         ]
     })
 }
-
 
 document.addEventListener("click", function(e) {
     if(e.target && e.target.classList.contains("card-more")) {

@@ -26,7 +26,7 @@
 
 .rat-block-title {
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     margin: 10px 0 ;
 }
 
@@ -37,6 +37,7 @@
 
 .msg-wrap.default {
     background: #F6F8FB;
+    border-radius: 15px;
 }
 .msg-wrap p{
     font-weight: 600;
@@ -44,7 +45,7 @@
 }
 
 .rat-block-content{
-    line-height: 1.6em;
+    line-height: 1.6rem;
 }
 
 .rat-block-items {
@@ -55,9 +56,10 @@
     width: 100%;
     margin-top: 20px;
     padding: 15px 20px;
+    border-radius: 15px;
 }
 
-.rat-block-items .rat_block_item span:last-of-type{
+.rat-block-items .rat_block_item span:last-of-type {
     float: right;
 }
 
@@ -66,7 +68,7 @@
 }
 
 .rat-block-items .text {
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 10px;
 }
 
@@ -121,7 +123,7 @@
 
 .accordion-container .plus-minus-title {
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 40px 0 10px 30px;
 }
 
@@ -130,7 +132,7 @@
     padding: 10px 30px;
     transition: 0.5s;
     font-weight: 600;
-    line-height: 1.6em;
+    line-height: 1.6rem;
     display: flex;
 }
 

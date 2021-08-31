@@ -9,6 +9,8 @@
     cursor: pointer;
     font-weight: 600;
     letter-spacing: 1px;
+    border: none;
+    outline: none;
 }
 
 .btn-success {

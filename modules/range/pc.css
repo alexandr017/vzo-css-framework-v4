@@ -7,13 +7,9 @@
     padding: 30px 0;
 }
 
-.main-range .range-loan hr {
-    border: 1px solid #E7EBEE;
-}
-
 .main-range .range-loan .range-title {
     font-weight: 600;
-    line-height: 1.25em;
+    line-height: 1.25rem;
     padding: 0 30px;
     margin: 0;
 }
@@ -28,8 +24,8 @@
 
 .main-range .range-loan .loan-title,
 .main-range .range-loan .overpayment span {
-    font-size: 0.87em;
-    line-height: 1.06em;
+    font-size: 0.87rem;
+    line-height: 1.06rem;
     margin-left: 30px;
     margin-top: 10px;
 }
@@ -119,11 +115,11 @@ input[type=range]::-moz-range-thumb {
 }
 
 .main-range .range-loan .sum div span:first-of-type {
-    font-size: 0.87em;
+    font-size: 0.87rem;
 }
 
 .main-range .range-loan .sum div span:last-of-type {
-    font-size: 0.87em;
+    font-size: 0.87rem;
     font-weight: 700;
 }
 
@@ -139,8 +135,8 @@ input[type=range]::-moz-range-thumb {
 
 .main-range .range-loan .note p {
     margin-top: 40px;
-    font-size: 0.75em;
-    line-height: 1.31em;
+    font-size: 0.75rem;
+    line-height: 1.31rem;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -151,7 +147,7 @@ input[type=range]::-moz-range-thumb {
 
 .main-range .credit-sum span {
     margin-bottom: 20px;
-    font-size: 0.87em;
+    font-size: 0.87rem;
 }
 
 .main-range  .credit-sum .range-input {
@@ -159,18 +155,18 @@ input[type=range]::-moz-range-thumb {
 }
 
 .main-range  .credit-sum .range-input .output {
-    font-size: 0.87em;
+    font-size: 0.87rem;
 }
 
 .main-range .select h4 {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 600;
     margin-top: 94px;
     margin-bottom: 20px;
 }
 
 .main-range .select span {
-    font-size: 0.87em;
+    font-size: 0.87rem;
 }
 
 .main-range .select span:last-of-type {
@@ -190,7 +186,7 @@ input[type=range]::-moz-range-thumb {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    font-size: 0.87em;
+    font-size: 0.87rem;
     margin-left: -35px;
     margin-top: 30px;
 }
@@ -207,7 +203,7 @@ input[type=number] {
     border: none;
     height: 50px;
     width: 350px;
-    padding: 1em;
-    font-size: 0.87em;
+    padding: 1rem;
+    font-size: 0.87rem;
     outline: none;
 }

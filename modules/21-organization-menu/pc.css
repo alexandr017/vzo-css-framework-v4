@@ -1,9 +1,8 @@
 .org-menu-block {
     background: url("/v4/images/company-img.png");
     min-height: 262px;
-    width: 1110px;
     padding: 45px 0 0 75px;
-    margin: 30px 0 30px -160px;
+    margin: 30px 0;
 }
 
 .org-header {
@@ -12,14 +11,12 @@
 
 .org-header .org-title {
     width: 70%;
-    font-weight: 700;
-    line-height: 1.1em;
 }
 
 .org-menu-links {
-    position: absolute;
+    position: relative;
     margin-top: -65px;
-    margin-left: -100px;
+    margin-left: 70px;
 
 }
 
@@ -39,21 +36,28 @@
 }
 
 .banks-products-block {
-    width: 1110px;
-    margin: 30px 0 30px -160px;
+    margin: 50px 0;
     display: flex;
     justify-content: space-between;
-
 }
 
 
-.banks-products-block .link_el {
+.banks-products-block .bank-link-el {
     cursor: pointer;
     text-align: center;
     margin: 0 25px;
 }
 
-.banks-products-block .link_el .icon-bg {
+.banks-products-block .bank-link-el:first-child{
+    margin-left: 0;
+}
+
+.banks-products-block .bank-link-el:last-child{
+    margin-right: 0;
+}
+
+
+.banks-products-block .bank-link-el .bank-icon-bg {
     margin: 0 auto;
     width: 80px;
     height: 80px;
@@ -64,26 +68,28 @@
 
 }
 
-.banks-products-block .link_el .icon-text {
+.banks-products-block .bank-link-el .bank-icon-text {
     color: #222735;
+    margin-top: 10px;
+    display: inline-block;
 }
 
-.banks-products-block .link_el:hover .icon-text {
+.banks-products-block .bank-link-el:hover .bank-icon-text {
     color:#2CDD88;
 }
 
-.banks-products-block .link_el .icon-bg svg:not(.fill) {
+.banks-products-block .bank-link-el .bank-icon-bg svg:not(.fill) {
     stroke:black;
 }
 
-.banks-products-block .link_el .icon-bg svg.fill {
+.banks-products-block .bank-link-el .bank-icon-bg svg.fill {
     fill: black;
 }
 
-.link_el:hover .icon-bg svg:not(.fill) {
+.bank-link-el:hover .bank-icon-bg svg:not(.fill) {
     stroke:#2CDD88;
 }
 
-.link_el:hover .icon-bg svg.fill {
+.bank-link-el:hover .bank-icon-bg svg.fill {
     fill: #2CDD88;
 }

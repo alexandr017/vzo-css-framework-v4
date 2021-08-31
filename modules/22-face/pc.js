@@ -1,5 +1,5 @@
 document.addEventListener("click", function(e) {
-    if(e.target && e.target.classList.contains("card-more")) {
+    if(e.target && e.target.classList.contains("face-more")) {
         e.target.classList.toggle("active");
         var panel = e.target.previousElementSibling;
         if (panel.style.maxHeight) {

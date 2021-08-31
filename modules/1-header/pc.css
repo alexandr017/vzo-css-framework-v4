@@ -1,17 +1,35 @@
 .header {
-    width:100%;
-    height:80px;
+    width: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 1.5em;
     font-family: 'Inter', sans-serif;
+    justify-content: space-between;
+    position: relative;
+}
+
+#headerMenu.fixed{
+    position: fixed;
+    z-index: 111;
+    width: 100%;
+    top: 0;
+    background: #fff;
+}
+
+#headerMenu.fixed .logo{
+    width: 50px;
+}
+
+#headerMenu.fixed .header-logo{
+    display: none;
 }
 
 .header .logo {
     display: flex;
     align-items: center;
     width: 180px;
+    transition: width 0.75s;
 }
 
 .header .logo img {
@@ -19,15 +37,142 @@
 }
 
 .header .logo .logo-name {
-    font-size: 2.3em;
+    font-size: 2.25em;
     font-weight: 700;
     line-height: 1em;
 }
 
 .header .logo .logo-text {
-    font-size: .75em;
+    font-size: .65em;
     margin-top: -5px;
 }
+
+.header-left-menu {
+}
+
+.header-bottom-line{position: relative}
+
+.header-bottom-line:after{
+    content: '';
+    height: 2px;
+    background: #E6EBEF;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+.hl-item-title, .hr-item-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9em;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #222735;
+    position: relative;
+}
+
+.hl-item:hover .hl-item-title:after{
+    content: '';
+    height: 2px;
+    background: #222735;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -2px;
+    z-index: 1;
+}
+
+
+.hl-item{
+    display: inline;
+}
+
+
+
+
+.hr-item-title:hover{
+    color: #2CDD88;
+}
+
+.h-sub-menu{
+    display: none;
+}
+
+.hl-item-title:hover{
+
+}
+
+.hl-item:hover  .h-sub-menu{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 20px 20px -20px rgba(135, 145, 159, 0.15);
+    left: 0;
+    justify-content: space-between;
+    z-index: 1111;
+    background: #fff;
+    margin-top: 15px;
+}
+
+.hl-item:hover  .h-sub-menu a{
+    font-size: 0.9em;
+    display: inline-block;
+    line-height: 2.5em;
+}
+
+.h-sub-menu-3-col {
+    padding: 40px 285px;
+}
+
+.h-sub-menu-4-col {
+    padding: 40px 80px;
+}
+
+.header-menu-empty-line{
+    height: 2.5em;
+}
+
+.h-sub-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.h-sub-menu a, .h-sub-menu span {
+    color: #222735;
+}
+
+header svg{
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+
+.icon-search:hover path{
+    stroke: #2CDD88;
+}
+.icon-geo:hover path:first-child{
+    fill: #2CDD88;
+}
+.icon-account:hover circle{
+    fill: #2CDD88;
+}
+.icon-more-info:hover path {
+    fill: #2CDD88;
+}
+
+
+
+/*.header-icons .header-icon svg.icon{*/
+/*    stroke: #222735;*/
+/*    fill: #222735;*/
+/*}*/
+
+
+
+/*
 
 .header .links {
     display: flex;
@@ -40,6 +185,8 @@
     color: #222735;
     margin-right: 10px;
     stroke: #222735;
+    border-bottom: 2px;
+    border-color: #E6EBEF;
 }
 
 .header .links span.main_active {
@@ -61,55 +208,6 @@
 .header .links span a.secondary-last:hover,
 .header .links span a.secondary:hover {
     color: #2ED47A !important;
-}
-
-.header .icons {
-    justify-content: space-between;
-    margin-left: 20px;
-}
-
-.header .icons .search{
-    stroke: #222735;
-    margin-left: 10px;
-}
-
-.header .icons .search:hover,
-.header .icons .search:active,
-.header .icons .search:focus {
-    stroke: #2ED47A;
-    cursor: pointer;
-}
-
-.header .icons .header-icon svg.icon{
-    stroke: #222735;
-    fill: #222735;
-}
-
-.header .icons .header-icon svg.icon:hover,
-.header .icons.header-icon svg.icon:active,
-.header .icons .header-icon svg.icon:focus{
-    stroke: #2ED47A;
-    fill:#2ED47A;
-    cursor: pointer;
-}
-
-.header .icons .header-icon:first-of-type{
-    margin-right: 20px;
-}
-
-.header .icons a {
-    margin-right: 26px;
-    cursor: pointer;
-}
-
-.header .icons a svg.count-icon {
-    position: absolute;
-    margin-left: -8px;
-    margin-top: -8px;
-}
-
-.header .icons a:last-child {
-    margin-right: 0;
 }
 
 .links,
@@ -350,7 +448,7 @@
 .modal-list__el a:hover {
     color: #2ED47A !important;
 }
-
+*/
 .search-block {
     padding: 10px 0 0 0;
     width: 717px;

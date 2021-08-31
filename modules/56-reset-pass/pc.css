@@ -5,16 +5,7 @@
 .reset-pass-text {
     padding: 0 1em;
 }
-/*.passwords-matches {*/
-/*    position: absolute;*/
-/*    right: 12%;*/
-/*    top: 2.4em;*/
-/*}*/
 .reset-block .user-guest-form-text-block,.reset-block .user-guest-form-item-all {
     width: 100%;
 }
 .reset-block .h3, .reset-block .reset-pass-text {padding: 0;}
-/*.reset-block .passwords-matches {*/
-/*    top:2em;*/
-/*    cursor: pointer;*/
-/*}*/
