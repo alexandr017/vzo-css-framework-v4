@@ -29,6 +29,8 @@ import('_framework/grid');
 import('_framework/buttons');
 import('_framework/tables');
 import('general');
+import('62-messages');
+import('63-user-guest-form');
 
 
 if (isset($_GET['module'])) {
