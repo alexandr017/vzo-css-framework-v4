@@ -1,0 +1,120 @@
+.user-guest-form-block {
+    background: url(/v4/images/reg-form-img.png) no-repeat left;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1em;
+    background-size: contain;
+    max-width: 920px;
+    margin: 0 auto;
+    min-height: 390px;
+}
+.user-guest-form-text-block {
+    background: #FFFFFF;
+    width: 70%;
+    padding: 1em 2em;
+}
+.user-guest-form-title {
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: 1em;
+    padding-left: 2%;
+}
+.captcha {
+    padding: 1em;
+    width: 60%;
+    border: 1px solid #222735;
+    position: relative;
+    left: -17.5%;
+    margin: 1em 0;
+}
+.user-guest-label {
+    font-weight: 600;
+    width: 50%;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    display: block;
+}
+.user-guest-form-inp {
+    border-radius: 10px;
+    background-color: #F6F8FB;
+    padding: 0.4em 1em;
+    outline: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+.user-guest-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.user-guest-form-item-all {
+    width: 95%;
+    position: relative;
+    margin-bottom: 0.5em;
+}
+.user-guest-form-item-half {
+    width: 45%;
+    margin-bottom: 1em;
+}
+.remember-me-btns {
+    display: inline-flex;
+    width: 1.5em;
+    cursor: pointer;
+}
+.checked-checkmark, #remember-me:checked {
+    display: none;
+}
+#remember-me:checked + .checked-checkmark {
+    display: inline-block;
+    cursor: pointer;
+}
+.remember-me-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em 0;
+    cursor: pointer;
+}
+#remember-me {
+    cursor: pointer;
+}
+.show-pass{
+    position: absolute;
+    right: 5%;
+    top: 2.4em;
+    cursor: pointer;
+    background-image: url(/v4/images/show-pass.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hide-pass {
+    position: absolute;
+    right: 5%;
+    top: 2.5em;
+    cursor: pointer;
+    width: 20px;
+    height: 15px;
+    background-image: url(/v4/images/hide-pass.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.passwords-matches {
+    position: absolute;
+    right: 12%;
+    top: 2.65em;
+    cursor: pointer;
+    background-image: url(/v4/images/password-matches.png);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+.user-guest-form-btn {
+    width: 95%;
+    border: none;
+    margin-bottom: 1em;
+}

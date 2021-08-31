@@ -1,81 +1,11 @@
 .reset-block {
-    width: 50%;
+    width: 600px;
     margin: 0 auto;
-}
-.reset-form-block {
-    padding: 0 1em 1em 1em;
-}
-.reset-form {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.reset-form-inp {
-    border-radius: 10px;
-    background-color: #F6F8FB;
-    padding: 0.4em 1em;
-    outline: none;
-    border: none;
-    width: 100%;
-}
-.reset-form-item-title {
-    font-weight: 600;
-    width: 50%;
-    margin-bottom: 0.3em;
-}
-.reset-form-item-all {
-    width: 95%;
-    position: relative;
-    margin-bottom: 0.5em;
-}
-.reset-form-title {
-    width: 100%;
-    font-weight: 700;
-    padding: 1em 0.6em;
-}
-.reset-form-btn {
-    width: 95%;
-    border: none;
-    margin-bottom: 1em;
-}
-.reset-form-main-error-block {
-    background: #FFEDF3;
-    color: #FF4E59;
-    padding: 0.6em;
-    width: 100%;
-    margin-bottom: 26px;
-    display: flex;
-}
-.main-error-msg-text,.main-error-svg, .reset-form-success-msg,.reset-form-success-svg {
-    margin-left: 2em;
-}
-.err-msg-block {
-    border: 1.5px solid #FF4E59;
-    background: #FFFFFF;
-}
-.err-msg {
-    color: #FF4E59;
-    padding-top: 0.3em;
 }
 .reset-pass-text {
     padding: 0 1em;
 }
-.reset-form-success-msg-block {
-    background: #E4FFEC;
-    color: #2CDD88;
-    padding: 0.6em;
+.reset-block .user-guest-form-text-block,.reset-block .user-guest-form-item-all {
     width: 100%;
-    margin-bottom: 26px;
-    display: flex;
 }
-.show-pass{
-    position: absolute;
-    right: 5%;
-    top: 2.2em;
-}
-.passwords-matches {
-    position: absolute;
-    right: 12%;
-    top: 2.4em;
-}
+.reset-block .h3, .reset-block .reset-pass-text {padding: 0;}
