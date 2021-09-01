@@ -3,6 +3,15 @@
     padding: 0 0 50px 0;
 }
 
+
+.face-block .face-upd {
+    float: right;
+    padding: 5px 20px;
+    border-radius: 3px;
+    background: #F6F8FB;
+    margin: 25px 30px 0 0;
+}
+
 .face-block .face-header {
     padding: 20px 60px;
 }
@@ -27,7 +36,6 @@
 
 .face-block .face-header .face-top-inner {
     display: flex;
-    justify-content: space-between;
     margin-top: 15px;
 }
 
@@ -37,15 +45,22 @@
     display: flex;
     justify-content: center;
     margin-top: -30px;
+    margin-right: 65px;
 
 }
 
 .face-block .face-header .face-top-inner .logo img {
     max-width: fit-content;
 }
+.face-block .face-header .face-top-inner .face-row-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 
-.face-block .face-header .face-top-inner .block-row {
-    margin-right: 65px;
+}
+
+.face-block .face-header .face-top-inner .block-row:not(:first-of-type){
+    white-space: nowrap;
 }
 
 
@@ -72,7 +87,6 @@
     cursor: pointer;
     margin-right: 60px;
     margin-top: 20px;
-    line-height: 1rem;
 }
 
 .face-body .face-content {
@@ -107,24 +121,10 @@
 
 .face-body .table-vertical-block {
     margin: 10px 0;
-    width: 50%;
 }
 
 .face-body .table-vertical-block .tr .td:first-of-type {
     padding-left: 60px;
-}
-
-.face-block-tables {
-    display: flex;
-    width: 100%;
-}
-
-.face-block-tables .table-vertical tr:hover td:first-of-type {
-    background: #E6EBEF;
-}
-
-.face-block-tables .table-vertical tr:hover td:last-of-type {
-    background: #F6F8FB;
 }
 
 .face-body .list-card-block {
@@ -211,6 +211,5 @@
     width: 450px;
     height: 45px;
 }
-
 
 
