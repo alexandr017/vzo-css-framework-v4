@@ -1,19 +1,16 @@
 .insert-video-block {
-    max-width: 476px;
     width: 100%;
     position: relative;
     margin: 30px 0;
     border-radius: 15px;
-}
-
-.article-video {
-    max-width: 790px;
-    margin: 30px 0;
-    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .video-img {
-    max-width: fit-content;
+    width: 100%;
+    height: 300px;
+    transition: transform 1s;
 }
 
 .play-video-el {
@@ -48,7 +45,7 @@
     border-radius: 17px;
 }
 
-.play-video-el svg:hover .circle-play {
+.play-video-el svg:hover .circle-play, .insert-video-block:hover .circle-play{
     fill: #2ED47A
 }
 
@@ -58,4 +55,9 @@
 
 .play-video-el:hover .video-img {
     opacity: 0.9;
+}
+
+
+.insert-video-block:hover .video-img{
+    transform: scale(1.1);
 }

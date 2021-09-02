@@ -31,7 +31,6 @@ loadMore.addEventListener("click", function () {
 loadLess.addEventListener("click", function () {
 
     items.forEach(function (item, index) {
-        console.log(item.innerText, index);
         if (index > 7) {
             item.classList.add(hiddenClass);
         }

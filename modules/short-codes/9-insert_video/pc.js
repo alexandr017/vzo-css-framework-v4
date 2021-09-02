@@ -1,13 +1,8 @@
-let videos = document.getElementsByClassName('insert-video-block');
-let articleVideo = document.getElementsByClassName('article-video');
+let videos = $$('.insert-video-block');
 
-for (i = 0; i < videos.length; i++) {
+for (let i = 0; i < videos.length; i++) {
     videos[i].addEventListener('click', function(){
-        let link = this.querySelector('img').getAttribute('data-video');
-        this.innerHTML = '<div class="iframe-shadow " style="line-height: 0;" ><iframe class="border-radius" width="476" height="268" src="'+ link +'" ></iframe></div>';
-    });
-    articleVideo[i].addEventListener('click', function(){
-        let link = this.querySelector('img').getAttribute('data-video');
-        this.innerHTML = '<div class="iframe-shadow " style="line-height: 0;" ><iframe class="border-radius" width="790" height="445" src="'+ link +'" ></iframe></div>';
+        let link = this.querySelector('.video-img').getAttribute('data-video');
+        this.innerHTML = '<div class="iframe-shadow " style="line-height: 0;" ><iframe class="border-radius" style="width: 100%; height: 300px"  src="'+ link +'" ></iframe></div>';
     });
 }
