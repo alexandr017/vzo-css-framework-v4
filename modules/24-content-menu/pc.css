@@ -2,10 +2,10 @@
     position: relative;
 }
 
-.content-menu-inner{
-    position: absolute;
-    right: 40px;
-    top: 0;
+.content-menu-inner {
+    position:fixed;
+    right: 27%;
+    top: 15%;
     max-width: 400px;
 }
 
@@ -14,53 +14,32 @@
     margin: 0;
 }
 
-.content-menu-btn{
+.content-menu-btn {
+    text-align: right;
+    cursor: pointer;
+    position: fixed;
+}
+
+.close-content-menu-btn {
     text-align: right;
     cursor: pointer;
 }
 
-.close-content-menu-btn{
-    text-align: right;
-    cursor: pointer;
-}
-
-.close-content-menu-btn svg:hover circle{
+.close-content-menu-btn svg:hover circle {
     fill: #FF4E59;
 }
 
-/*.content-menu-wrap .content-block .close_first-element {*/
-/*    position: absolute;*/
-/*    right: 48%;*/
-/*    margin-top: 120px;*/
-/*    cursor: pointer;*/
-/*}*/
+.content-menu-wrap .content-menu-inner .content-menu-btn:hover svg {
+    display: none;
+}
 
-/*.content-menu-wrap .content-block .content-list {*/
-/*    margin-top: 140px;*/
-/*    padding: 20px 40px;*/
-/*    width: 400px;*/
-/*    float: right;*/
-/*}*/
+.content-menu-wrap .content-menu-inner .content-menu-btn:hover {
+    content: url("/v4/images/content-icon.svg");
+    float: right;
+    margin-right: -5px;
+}
 
-
-
-/*.content-menu-wrap .content-block_second .right-btn:hover svg{*/
-/*    display: none;*/
-/*}*/
-
-/*.content-menu-wrap .content-block_second .right-btn:hover {*/
-/*    content: url("/v4/images/content-icon.svg");*/
-/*    display: block;*/
-/*}*/
-
-/*.content-menu-wrap .content-block_second .close_second-element {*/
-/*    position: absolute;*/
-/*    margin-top: 120px;*/
-/*    margin-left: 350px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-.content-menu-list{
+.content-menu-list {
     padding: 35px;
     background: #fff;
 }
@@ -74,13 +53,13 @@
     counter-reset: mycounter;
 }
 
-.content-menu li{
+.content-menu li {
     position: relative;
     margin-bottom: 10px;
     padding-left: 30px;
 }
 
-.content-menu li::before{
+.content-menu li::before {
     position: absolute;
     font-size: 0.7rem;
     width: 19px;
@@ -97,10 +76,14 @@
     left: 0;
 }
 
-.content-menu a{
+.content-menu a {
     color: #87919F;
 }
 
-.content-menu a:hover{
+.content-menu a:hover {
     color: #2ED47A;
+}
+
+.content-menu-hidden-block {
+    margin: 70px -50px 0 0;
 }

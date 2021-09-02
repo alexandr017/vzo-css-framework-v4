@@ -27,7 +27,7 @@ product_review-block,
 .rat-block-title {
     font-weight: 700;
     font-size: 1.25rem;
-    margin: 10px 0 ;
+    margin: 10px 0;
 }
 
 .msg-wrap {
@@ -38,6 +38,7 @@ product_review-block,
 .msg-wrap.default {
     background: #F6F8FB;
 }
+
 .msg-wrap p{
     font-weight: 600;
     margin-bottom: 0;

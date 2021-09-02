@@ -9,7 +9,7 @@
         после чего вы увидите подходящие предложения. Также вы сможете более подробно узнать об условиях счетов.
     </p>
     <div class="calculator-rko-block border-radius">
-        <form>
+        <form action="#">
         <div class="input-title">Количество платежей: <input type="number" id="rangenumber" step="1" min="0" max="100" value="50"   oninput="range.value=value"></div>
 
         <div class="range">
@@ -27,13 +27,9 @@
                 <span class="range-slider-point"></span>
                 <span class="range-slider-point">100</span>
             </div>
-
         </div>
-
-
         <div class="check-box">
             <div class="fst-col">
-
                 <div class="check-box-title">Дополнительные условия:</div>
 
                 <input type="checkbox" id="1" class="custom-checkbox">
@@ -53,11 +49,9 @@
 
                 <input type="checkbox" id="6" class="custom-checkbox">
                 <label for="6">Бонусы при открытии счета</label><br>
-
             </div>
 
             <div class="sec-col">
-
                 <div class="check-box-title">Требуется:</div>
                 <input type="checkbox" id="7" class="custom-checkbox">
                 <label for="7">Внесение больших сумм наличных</label><br>
@@ -70,14 +64,12 @@
 
                 <input type="checkbox" id="10" class="custom-checkbox">
                 <label for="10">Эквайринг</label><br>
-
             </div>
-
         </div>
 
         <div class="calculator-rko-btn-wrap">
             <div style="margin: 0 auto;">
-            <a href="#" class="btn-1 btn-light-2">
+            <button class="btn-1 btn-light-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
                     <g filter="url(#filter0_d)">
                         <circle cx="27" cy="23" r="17" fill="white"/>
@@ -96,9 +88,9 @@
                     </defs>
                 </svg>
                 <span>Больше</span>
-            </a>
+            </button>
 
-            <a href="#" class="btn btn-dark">Найти</a>
+                <button type="submit" class="btn btn-dark">Найти</button>
             </div>
         </div>
         </form>

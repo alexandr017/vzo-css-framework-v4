@@ -35,7 +35,7 @@
 }
 
 .question-block .experts-reply .reply-info {
-    margin-left: 27px;
+    margin-left: 25px;
 }
 
 .question-block .experts-reply .reply-info .expert-name {
@@ -60,7 +60,7 @@
 }
 
 .question-block .experts-reply .reply-info .reply-bottom-block .down-likes {
-    margin-left: 13px;
+    margin-left: 15px;
     cursor:pointer;
 }
 

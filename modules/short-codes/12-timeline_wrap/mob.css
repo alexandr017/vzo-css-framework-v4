@@ -98,9 +98,6 @@
     animation: mymoveright 0.5s;
 }
 
-
-
-
 @keyframes mymoveleft {
     from {
         right: 0;

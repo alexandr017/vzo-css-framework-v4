@@ -1,10 +1,10 @@
-const rangeInputs = $$('input[type="range"]')
-const numberInput = $$('input[type="number"]')
+const rangeInputs = document.querySelectorAll('input[type="range"]')
+const numberInput = document.querySelector('input[type="number"]')
 
 function handleInputChange(e) {
     let target = e.target
     if (e.target.type !== 'range') {
-        target = $$('#range')[0]
+        target = document.getElementById('range')
     }
     const min = target.min
     const max = target.max

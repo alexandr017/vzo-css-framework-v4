@@ -122,7 +122,7 @@
 .calculator-rko .calculator-rko-block .check-box {
     display: flex;
     justify-content: space-between;
-    margin-top: 37px;
+    margin-top: 40px;
 }
 
 .calculator-rko .calculator-rko-block .check-box .custom-checkbox{
@@ -167,5 +167,5 @@
 .calculator-rko .calculator-rko-block .calculator-rko-btn-wrap {
     display: flex;
     justify-content: space-between;
-    margin-top: 31px;
+    margin-top: 30px;
 }

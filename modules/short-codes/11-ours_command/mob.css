@@ -35,12 +35,12 @@
     justify-content: space-around;
 }
 .js-slide-btn-left {
-    background: #fff url(/v4/images/prev.png) no-repeat center center;
+    background: #fff url("/v4/images/prev.png") no-repeat center center;
     left: 15px;
 }
 
 .js-slide-btn-right {
-    background: #fff url(/v4/images/next.png) no-repeat center center;
+    background: #fff url("/v4/images/next.png") no-repeat center center;
     right: 15px;
 }
 
@@ -285,7 +285,7 @@
 }
 
 .modal-block-container .modal-info .modal-email {
-    margin-top: 32px;
+    margin-top: 35px;
 }
 
 
