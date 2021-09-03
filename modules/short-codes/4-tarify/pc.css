@@ -3,46 +3,31 @@
     margin: 30px 0 30px -160px;
     padding: 45px 30px;
     display: flex;
+    font-size: 1rem;
 }
 
-.tariff-title{
-    margin-top: -10px;
-    font-weight: 700;
-
+.tariff-title,
+.tariff-label {
+    font-weight: 600;
 }
 
-.tariff-block .first-element {
-    width: 10%;
+.tariff-block .tariff-img {
     margin-right: 20px;
 }
 
-.tariff-img {
-    margin-top: 10px;
-}
-
 .tariff-img img {
-    width: 100%;
     max-width: fit-content;
 }
 
-.tariff-block .second-element {
-    display: block;
-    width: 90%;
-    margin-top: 20px;
-}
-
-.tariff-block .second-element .second-element_info {
-    margin-top: 5px;
+.tariff-block .tariff-col-wrap {
     display: flex;
     justify-content: space-between;
-}
-
-.tariff-label {
-    padding-top: 5px;
-    font-weight: 700;
+    align-items: center;
+    width: 90%;
 }
 
 .tariff-label-title {
+    margin-top: 20px;
     color: #87919F;
     font-size: 0.87rem;
 }

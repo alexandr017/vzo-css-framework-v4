@@ -84,7 +84,7 @@
 .btn-chat-1 {
     background: #fff;
     color: #FF4D4A !important;
-    box-shadow: 0px 4px 10px rgba(135, 145, 159, 0.15);
+    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
 .btn-chat-1:hover {
@@ -100,7 +100,7 @@
 .btn-chat-2 {
     background: #fff;
     color: #2CDD88 !important;
-    box-shadow: 0px 4px 10px rgba(135, 145, 159, 0.15);
+    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
 .btn-chat-2:hover {
@@ -117,7 +117,7 @@
 .btn-whats-app {
     color: #2ED47A !important;
     background: #fff;
-    box-shadow: 0px 4px 10px rgba(135, 145, 159, 0.15);
+    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
 .btn-whats-app:hover{
@@ -133,7 +133,7 @@
 .btn-telegram {
     color: #4FABFA !important;
     background: #fff;
-    box-shadow: 0px 4px 10px rgba(135, 145, 159, 0.15);
+    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
 .btn-telegram:hover {
@@ -172,26 +172,23 @@ svg .arrow_el {
 
 svg:hover .arrow_el {
     stroke: white;
-    fill:#2BC77E;
+    fill:#2ED47A;
 }
 
 svg:active .ellipse_el {
     fill:#2BC77E;
 }
+svg:active .arrow_el {
+    fill:#2BC77E;
+}
 
-
-.up-btn {
+.up-btn svg{
     transform: rotate(90deg);
 }
 
-.down-btn {
+.down-btn svg{
     transform: rotate(-90deg);
 }
-
-.next-btn {
-    transform: rotate(180deg);
-}
-
 
 .claim-btn {
     cursor: pointer;
@@ -249,7 +246,7 @@ svg:active .ellipse_el {
 }
 
 
-.btn-wrap-circle{
+.btn-wrap-circle {
     box-shadow: 0 4px 10px 0 #87919F26;
     display: block;
     width: 34px;
@@ -264,7 +261,8 @@ svg:active .ellipse_el {
     padding: 0;
 }
 
-.btn:hover .btn-wrap-circle{
+
+.btn:hover .btn-wrap-circle {
     left: calc(100% - 39px);
 }
 

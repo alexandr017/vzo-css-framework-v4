@@ -52,7 +52,6 @@
 .face-block .face-header .face-top-inner .logo img {
     max-width: fit-content;
 }
-
 .face-block .face-header .face-top-inner .face-row-wrap {
     display: flex;
     justify-content: space-between;
@@ -62,6 +61,7 @@
 .face-block .face-header .face-top-inner .block-row:not(:first-of-type){
     white-space: nowrap;
 }
+
 
 .face-block .face-header .face-top-inner .block-row .face-head-intro {
     font-weight: 600;
@@ -79,7 +79,8 @@
     margin-left: 5px;
 }
 
-.face-block .face-more {
+.face-block .face-more,
+.face-block .face-less {
     display: block;
     float: right;
     color: #4FABFA;
@@ -94,7 +95,7 @@
 
 .face-body .face-tags {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px 60px 0 60px;
 }
 
@@ -102,15 +103,12 @@
     border-radius: 3px;
     padding: 6px 25px;
     background: #F6F8FB;
+    white-space: nowrap;
+    margin: 10px;
 }
 
 .face-body .face-tags .tag-el span {
     border-bottom: 1px dotted #222735;
-}
-
-.face-body .face-types .hidden-description {
-    display:none;
-
 }
 
 .face-body .hidden-block {
@@ -158,36 +156,36 @@
     border-radius: 28px;
     margin-top: 6px;
 }
-.face-body .table-vertical tr .l-el .face-rating .w-1 {
+.face-body .table-vertical tr .l-el .face-rating .w-1{
     width: 10%;
 }
-.face-body .table-vertical tr .l-el .face-rating .w-2 {
+.face-body .table-vertical tr .l-el .face-rating .w-2{
     width: 20%;
 }
 
-.face-body .table-vertical tr .l-el .face-rating .w-3 {
+.face-body .table-vertical tr .l-el .face-rating .w-3{
     width: 30%;
 }
-.face-body .table-vertical tr .l-el .face-rating .w-4 {
+.face-body .table-vertical tr .l-el .face-rating .w-4{
     width: 40%;
 }
-.face-body .table-vertical tr .l-el .face-rating .w-5 {
+.face-body .table-vertical tr .l-el .face-rating .w-5{
     width: 50%;
 }
-.face-body .table-vertical tr .l-el .face-rating .w-6 {
+.face-body .table-vertical tr .l-el .face-rating .w-6{
     width: 60%;
 }
-.face-body .table-vertical tr .l-el .face-rating .w-7 {
+.face-body .table-vertical tr .l-el .face-rating .w-7{
     width: 70%;
 }
 
-.face-body .table-vertical tr .l-el .face-rating .w-8 {
+.face-body .table-vertical tr .l-el .face-rating .w-8{
     width: 80%;
 }
-.face-body .table-vertical tr .l-el .face-rating .w-9 {
+.face-body .table-vertical tr .l-el .face-rating .w-9{
     width: 90%;
 }
-.face-body .table-vertical tr .l-el .face-rating .w-10 {
+.face-body .table-vertical tr .l-el .face-rating .w-10{
     width: 100%;
 }
 
@@ -211,4 +209,11 @@
     height: 45px;
 }
 
+.hiddenFaceTags {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 0;
+    width: 0;
+}
 

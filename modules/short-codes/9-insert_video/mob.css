@@ -1,26 +1,28 @@
 .insert-video-block {
-    max-width: 315px;
+  width: 100%;
     position: relative;
     margin: 30px auto;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .video-img {
     width: 100%;
-    height: auto;
-    z-index: 0;
+    height: 175px;
+    transition: transform 1s;
 }
 
 .play-video-el {
-   display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .play-video-el img {
     border-radius: 15px;
 }
 
-.play-video-el svg {
+.play-video-el .play-icon {
     position: absolute;
     margin: auto;
     cursor: pointer;
@@ -39,11 +41,10 @@
 
 .play-video-el {
     background: #000;
-    line-height: 0;
-    border-radius: 13px;
+    border-radius: 17px;
 }
 
-.play-video-el svg:hover .circle-play {
+.play-video-el svg:hover .circle-play, .insert-video-block:hover .circle-play{
     fill: #2ED47A
 }
 
@@ -53,4 +54,9 @@
 
 .play-video-el:hover .video-img {
     opacity: 0.9;
+}
+
+
+.insert-video-block:hover .video-img{
+    transform: scale(1.1);
 }

@@ -447,8 +447,9 @@
     margin: 20px 0 50px 0;
 }
 
-.hidden-card-info .card-btn-wrap .card-left-btn {
-    margin-top: 30px;
+
+.hidden-card-info .card-btn-wrap .card-left-btn .btn-circle {
+    margin-right: 20px;
 }
 
 .hidden-card-info .card-btn-wrap .card-right-btn {

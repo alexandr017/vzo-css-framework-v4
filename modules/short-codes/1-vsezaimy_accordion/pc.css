@@ -10,12 +10,8 @@
     margin-left: 20px;
 }
 
-.accordion .arrow {
-    transform: rotate(-90deg);
-}
-
 .accordion.active .arrow {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
 }
 
 .panel {

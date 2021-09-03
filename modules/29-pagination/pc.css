@@ -32,6 +32,7 @@
 .pagination-prev-btn, .pagination-next-btn {
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
     border-radius: 50%;
+    align-items: center;
 }
 
 .pagination-prev-btn:hover path, .pagination-next-btn:hover path {

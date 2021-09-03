@@ -6,11 +6,12 @@
 .vertical-tab-container .tab {
     margin-top: 20px;
     display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
+    overflow: auto;
     padding: 15px 60px 15px 60px;
-    width: 100%;
+}
+
+.vertical-tab-container .tab::-webkit-scrollbar {
+    height: 0;
 }
 
 .vertical-tab-container .tab .tab-links {
@@ -20,6 +21,7 @@
     padding: 10px 10px;
     transition: 0.3s;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .vertical-tab-container .tab .tab-links.on {

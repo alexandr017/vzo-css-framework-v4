@@ -9,32 +9,32 @@
         </div>
         <div class="calculator-rko-block border-radius shadow">
             <form action="#">
-                <div class="input-title">Количество платежей: <input type="number" id="rangenumber" step="5" min="5" max="100" value="50"   oninput="range.value=value"></div>
-                <div class="range">
-                    <div class="range-slider">
-                        <input type="range" class="range-value" step="5" min="5" max="100" value="50"  id="range" oninput="rangenumber.value=value"/>
+                <div class="input-title">Количество платежей: <input type="number" class="rko-num-input" id="rkoCalcRangeNumber" step="5" min="5" max="100" value="50"   oninput="rkoRange.value=value"></div>
+                <div class="rko-range">
+                    <div class="rko-range-slider">
+                        <input type="range" class="rko-calc-range-value" step="5" min="5" max="100" value="50"  id="rkoRange" oninput="rkoCalcRangeNumber.value=value"/>
                     </div>
-                    <div class="range-slider-points">
-                        <span class="range-slider-point range-slider-point-active">5</span>
-                        <span class="range-slider-point">10</span>
-                        <span class="range-slider-point">15</span>
-                        <span class="range-slider-point">20</span>
-                        <span class="range-slider-point">25</span>
-                        <span class="range-slider-point">30</span>
-                        <span class="range-slider-point">35</span>
-                        <span class="range-slider-point">40</span>
-                        <span class="range-slider-point">45</span>
-                        <span class="range-slider-point">50</span>
-                        <span class="range-slider-point">55</span>
-                        <span class="range-slider-point">60</span>
-                        <span class="range-slider-point">65</span>
-                        <span class="range-slider-point">70</span>
-                        <span class="range-slider-point">75</span>
-                        <span class="range-slider-point">80</span>
-                        <span class="range-slider-point">85</span>
-                        <span class="range-slider-point">90</span>
-                        <span class="range-slider-point">95</span>
-                        <span class="range-slider-point">100+</span>
+                    <div class="rko-range-slider-points">
+                        <span class="rko-range-slider-point">5</span>
+                        <span class="rko-range-slider-point">10</span>
+                        <span class="rko-range-slider-point">15</span>
+                        <span class="rko-range-slider-point">20</span>
+                        <span class="rko-range-slider-point">25</span>
+                        <span class="rko-range-slider-point">30</span>
+                        <span class="rko-range-slider-point">35</span>
+                        <span class="rko-range-slider-point">40</span>
+                        <span class="rko-range-slider-point">45</span>
+                        <span class="rko-range-slider-point">50</span>
+                        <span class="rko-range-slider-point">55</span>
+                        <span class="rko-range-slider-point">60</span>
+                        <span class="rko-range-slider-point">65</span>
+                        <span class="rko-range-slider-point">70</span>
+                        <span class="rko-range-slider-point">75</span>
+                        <span class="rko-range-slider-point">80</span>
+                        <span class="rko-range-slider-point">85</span>
+                        <span class="rko-range-slider-point">90</span>
+                        <span class="rko-range-slider-point">95</span>
+                        <span class="rko-range-slider-point">100+</span>
                     </div>
 
                 </div>
@@ -75,8 +75,45 @@
                         <label for="10">Эквайринг</label><br>
                     </div>
                 </div>
+                <div class="check-box">
+                    <div class="fst-col">
+                        <div class="check-box-title">Дополнительные условия:</div>
+                        <input type="checkbox" id="1" class="custom-checkbox">
+                        <label for="1">С бесплатным открытием</label><br>
+
+                        <input type="checkbox" id="2" class="custom-checkbox">
+                        <label for="2">С бесплатным обслуживанием</label><br>
+
+                        <input type="checkbox" id="3" class="custom-checkbox">
+                        <label for="3">Нужен интернет-банк</label><br>
+
+                        <input type="checkbox" id="4" class="custom-checkbox">
+                        <label for="4">Нужен мобильный банк</label><br>
+
+                        <input type="checkbox" id="5" class="custom-checkbox">
+                        <label for="5">Открытие в течение дня</label><br>
+
+                        <input type="checkbox" id="6" class="custom-checkbox">
+                        <label for="6">Бонусы при открытии счета</label><br>
+                    </div>
+
+                    <div class="sec-col">
+                        <div class="check-box-title">Требуется:</div>
+                        <input type="checkbox" id="7" class="custom-checkbox">
+                        <label for="7">Внесение больших сумм наличных</label><br>
+
+                        <input type="checkbox" id="8" class="custom-checkbox">
+                        <label for="8">Выдача больших сумм наличных</label><br>
+
+                        <input type="checkbox" id="9" class="custom-checkbox">
+                        <label for="9">Зарплатный проект</label><br>
+
+                        <input type="checkbox" id="10" class="custom-checkbox">
+                        <label for="10">Эквайринг</label><br>
+                    </div>
+                </div>
                 <div class="calculator-rko-btn-wrap">
-                    <button class="btn-1 btn-light-2">
+                    <button class="btn-1 btn-light-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
                             <g filter="url(#filter0_d)">
                                 <circle cx="27" cy="23" r="17" fill="white"/>
@@ -102,4 +139,4 @@
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+

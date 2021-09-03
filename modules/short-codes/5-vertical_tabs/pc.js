@@ -11,3 +11,21 @@ $$('.tab-wrap').forEach((e) => {
         }
     }
 });
+
+let tab =$$('#vertical-tab-scroll')[0];
+tab.onmousedown = () => {
+    let pageX = 0;
+    document.onmousemove = e => {
+        if (pageX !== 0) {
+            tab.scrollLeft = tab.scrollLeft + (pageX - e.pageX);
+        }
+        pageX = e.pageX;
+    };
+    tab.onmouseup = () => {
+        document.onmousemove = null;
+        tab.onmouseup = null;
+    };
+    tab.ondragstart = () => {
+        return false;
+    };
+};

@@ -9,7 +9,8 @@
     font-size: 1.1rem;
 }
 
-.related .related-link-wrap {
+.related a {
     margin: 10px auto;
+    display: block;
 }
 

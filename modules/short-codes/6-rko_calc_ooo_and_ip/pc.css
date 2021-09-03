@@ -1,6 +1,6 @@
 .calculator-rko-block {
     width: 1110px;
-    margin: 30px 0 30px -155px;
+    margin: 30px 0;
     padding: 40px 65px;
 }
 
@@ -11,11 +11,11 @@
     margin-bottom: 10px;
 }
 
-.calculator-rko .calculator-rko-block .range {
+.calculator-rko .calculator-rko-block .rko-range {
     margin-top: 25px;
 }
 
-.calculator-rko .calculator-rko-block input[type=range] {
+.calculator-rko .calculator-rko-block .rko-calc-range-value {
     outline: none;
     padding: 0;
     width: 99%;
@@ -33,7 +33,7 @@
     z-index: 1;
 }
 
-.calculator-rko .calculator-rko-block input[type=range]::-webkit-slider-runnable-track {
+.calculator-rko .calculator-rko-block .rko-calc-range-value::-webkit-slider-runnable-track {
     box-shadow: none;
     border: none;
     background: transparent;
@@ -41,7 +41,7 @@
     z-index: 1;
 }
 
-.calculator-rko .calculator-rko-block input[type=range]::-moz-range-track {
+.calculator-rko .calculator-rko-block .rko-calc-range-value::-moz-range-track {
     box-shadow: none;
     border: none;
     background: transparent;
@@ -49,13 +49,13 @@
     z-index: 1;
 }
 
-.calculator-rko .calculator-rko-block input[type=range]::-moz-focus-outer {
+.calculator-rko .calculator-rko-block .rko-calc-range-value::-moz-focus-outer {
     border: 0;
     opacity: 1;
     z-index: 1;
 }
 
-.calculator-rko .calculator-rko-block input[type=range]::-webkit-slider-thumb {
+.calculator-rko .calculator-rko-block .rko-calc-range-value::-webkit-slider-thumb {
     width: 20px;
     height: 20px;
     opacity: 1;
@@ -66,12 +66,12 @@
     z-index: 1;
 }
 
-.calculator-rko .calculator-rko-block input[type=range]::-webkit-slider-thumb:hover {
+.calculator-rko .calculator-rko-block .rko-calc-range-value::-webkit-slider-thumb:hover {
     width: 26px;
     height: 26px;
 }
 
-.calculator-rko .calculator-rko-block input[type=number] {
+.calculator-rko .calculator-rko-block .rko-num-input {
     border: none;
     height: 30px;
     width: 71px;
@@ -82,7 +82,7 @@
     border-radius: 25px
 }
 
-.calculator-rko .calculator-rko-block input.range-value:before{
+.calculator-rko .calculator-rko-block .rko-calc-range-value:before{
     content: "";
     position: absolute;
     height: 9px;
@@ -91,13 +91,13 @@
     margin-top: -9px;
 }
 
-.range-slider-points {
+.calculator-rko .rko-range-slider-points {
     display: flex;
     justify-content: space-between;
     margin-top: 0;
     padding-top: 4px;
 }
-.range-slider-point {
+.calculator-rko .rko-range-slider-point {
     font-size: 0.87rem;
     cursor: pointer;
     list-style-type: none;
@@ -106,7 +106,7 @@
     justify-content: space-around;
 }
 
-.range-slider-point:not(:first-child):after {
+.calculator-rko .rko-range-slider-point:not(:first-child):after {
     content: "";
     display: flex;
     position: absolute;
