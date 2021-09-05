@@ -10,6 +10,7 @@
 .video-img {
     width: 100%;
     height: 300px;
+    opacity: 0.9;
     transition: transform 1s;
 }
 
@@ -45,6 +46,15 @@
     border-radius: 17px;
 }
 
+.play-video-el:hover svg{
+    transition: transform 0.5s;
+}
+
+
+.play-video-el:hover svg{
+    transform: scale(1.1)
+}
+
 .play-video-el svg:hover .circle-play, .insert-video-block:hover .circle-play{
     fill: #2ED47A
 }
@@ -54,7 +64,7 @@
 }
 
 .play-video-el:hover .video-img {
-    opacity: 0.9;
+    opacity: 1;
 }
 
 

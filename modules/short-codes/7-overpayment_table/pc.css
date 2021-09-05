@@ -22,3 +22,7 @@
     height: 0;
     width: 0;
 }
+
+.overpayment-block .loadLess{
+    display: none;
+}
