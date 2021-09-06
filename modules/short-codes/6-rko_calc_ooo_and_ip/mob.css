@@ -202,3 +202,11 @@
     justify-content: center;
     text-align: center;
 }
+
+.calculator-rko-btn-wrap .btn {
+    margin-top: 20px;
+}
+
+.hidden-rko-check-box {
+    display:none;
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var slideShow = (function () {
     return function (data) {
         var arr = [];
@@ -496,8 +497,11 @@ var slideShow = (function () {
     }
 }());
 if(document.getElementsByClassName('bank_review_slider').length>0){
+=======
+if(document.getElementsByClassName('bank-review-slider').length>0){
+>>>>>>> d04367f23b89f073f6e49e8abaa49b75900e3645
     slideShow({
-        element:'.bank_review_slider',
+        element:'.bank-review-slider',
         slidesToShow:3,
         slidesToScroll:1,
         circleScroll:false,
@@ -521,9 +525,15 @@ if(document.getElementsByClassName('bank_review_slider').length>0){
         ]
     })
 }
+<<<<<<< HEAD
 if(document.getElementsByClassName('smi_slider').length>0){
+=======
+
+
+if(document.getElementsByClassName('smi-slider').length>0){
+>>>>>>> d04367f23b89f073f6e49e8abaa49b75900e3645
     slideShow({
-        element:'.smi_slider',
+        element:'.smi-slider',
         slidesToShow:3,
         slidesToScroll:1,
         circleScroll:false,

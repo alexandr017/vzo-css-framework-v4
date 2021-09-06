@@ -105,8 +105,8 @@
     font-size: .75rem;
 }
 
-.f-line-1 .f-support .btn-chat {
-    margin-top: 30px;
+.f-line-1 .f-support .btn-chat .btn{
+    margin-top: 20px;
 }
 
 .f-line-1 ul li {
@@ -262,12 +262,12 @@
     cursor: pointer;
 }
 
-.f-block .modal-block-container .modal-call-back-form {
+.f-block .modal-content .modal-block-container .modal-call-back-form {
     width: 410px;
     margin: 20px auto;
 }
 
-.f-block .modal-form__input {
+.f-block .modal-content .modal-block-container .modal-call-back-form .modal-form__input {
     background: #F6F8FB;
     color: #95A5B0;
     border-radius: 10px;
@@ -282,5 +282,6 @@
 .f-block .f-modal-btn-wrap {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 

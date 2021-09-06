@@ -31,7 +31,11 @@ import('_framework/tables');
 import('general');
 import('62-messages');
 import('63-user-guest-form');
+<<<<<<< HEAD
 import('6-sliders');
+=======
+import('_framework/slider');
+>>>>>>> d04367f23b89f073f6e49e8abaa49b75900e3645
 
 
 if (isset($_GET['module'])) {

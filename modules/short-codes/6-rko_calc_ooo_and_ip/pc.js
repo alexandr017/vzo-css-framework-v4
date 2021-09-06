@@ -1,4 +1,4 @@
-let rangeInputs = document.querySelectorAll('.rko-calc-range-value');
+let rangeInput = document.querySelectorAll('.rko-calc-range-value');
 let numberInput = document.querySelector('.rko-num-input');
 
 function handleInputChange(e) {
@@ -12,8 +12,25 @@ function handleInputChange(e) {
     target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
 }
 
-rangeInputs.forEach(input => {
+rangeInput.forEach(input => {
     input.addEventListener('input', handleInputChange)
 });
 
 numberInput.addEventListener('input', handleInputChange);
+
+let rkoBlock = document.querySelectorAll('.calculator-rko-block');
+    rkoBlock.forEach(function (value, index) {
+    let rkoButtonShow = value.querySelector('.showHiddenBlock'),
+        rkoButtonHide = value.querySelector('.hideBlock'),
+        rkoHiddenBlock = value.querySelector('.hidden-rko-check-box');
+        rkoButtonShow.addEventListener('click', event => {
+            rkoButtonHide.style.display = 'block';
+            rkoButtonShow.style.display = 'none';
+            rkoHiddenBlock.style.display = 'block';
+    });
+        rkoButtonHide.addEventListener('click', event => {
+            rkoButtonShow.style.display = 'flex';
+            rkoButtonHide.style.display = 'none';
+            rkoHiddenBlock.style.display = 'none';
+    });
+});

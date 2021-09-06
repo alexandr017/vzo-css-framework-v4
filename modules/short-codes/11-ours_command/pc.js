@@ -68,9 +68,6 @@ function commandShowAndHideBtnsClick() {
         },false)
     }
 }
-document.addEventListener('DOMContentLoaded', function(){
-    commandShowAndHideBtnsClick();
-});
 
 function showHiddenBlock() {
     let showBlock = document.querySelectorAll('.commandShowBlock');
@@ -106,6 +103,11 @@ function showHiddenBlock() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function(){
+function checkFunction() {
+    commandShowAndHideBtnsClick();
     showHiddenBlock();
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+    checkFunction();
 });

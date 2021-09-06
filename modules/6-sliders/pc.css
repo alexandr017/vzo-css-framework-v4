@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .displayNone {
     display: none;
 }
@@ -180,57 +181,52 @@
 }
 
 
+=======
+>>>>>>> d04367f23b89f073f6e49e8abaa49b75900e3645
 .bank-review h2,
 .smi-block h2 {
     text-align: center;
     margin: 30px 0;
 }
 
-.bank_review-inner-block {
+.bank-review-inner-block {
     max-height: 360px;
 }
 
-.bank_review-inner-block,
-.smi-inner-block{
+.bank-review-inner-block,
+.smi-inner-block {
     width: 285px;
-    padding: 29px 30px;
+    padding: 30px;
 }
 
-.bank_review-rating {
+.bank-review-rating {
     text-align: center;
 }
 
-.rating-company-name {
+.bank-review .rating-company-name {
     margin-bottom: 20px;
     font-weight: 600;
 }
 
-.bank_review-info .review-name {
+.bank-review-user-name {
     font-weight: 600;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
-.review-content {
-    margin-top: 13px;
-    height: 200px;
+.bank-review-content {
+    margin: 20px 0;
+    height: 165px;
     overflow-y: auto;
 }
 
-.review-content::-webkit-scrollbar {
+.bank-review-content::-webkit-scrollbar {
     width: 5px;
     background-color: #fff;
 }
 
-.review-content::-webkit-scrollbar-thumb:vertical {
+.bank-review-content::-webkit-scrollbar-thumb:vertical {
     background: rgba(135, 145, 159, 0.4);
     border-radius: 3px;
-}
-
-.review__button_show {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    margin-top: 33px;
 }
 
 .smi-inner-block .smi-content {

@@ -1,19 +1,30 @@
-<button class="claim-btn">
-    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-        <g filter="url(#filter0_d)">
-            <rect class="circle_el" x="10" y="4" width="44" height="44" rx="22" />
-        </g>
-        <path class="claim_el" d="M32 23.3939V26.9292M32 30.4646H32.0086M30.527 18.8509L23.2309 31.3485C23.0804 31.6158 23.0008 31.9188 23 32.2275C22.9992 32.5361 23.0771 32.8396 23.2261 33.1078C23.375 33.3759 23.5898 33.5994 23.8491 33.7559C24.1084 33.9125 24.4031 33.9966 24.7039 34H39.2961C39.5969 33.9966 39.8916 33.9125 40.1509 33.7559C40.4102 33.5994 40.625 33.3759 40.7739 33.1078C40.9229 32.8396 41.0008 32.5361 41 32.2275C40.9992 31.9188 40.9196 31.6158 40.7691 31.3485L33.473 18.8509C33.3194 18.5912 33.1032 18.3764 32.8452 18.2273C32.5872 18.0783 32.2961 18 32 18C31.7039 18 31.4128 18.0783 31.1548 18.2273C30.8968 18.3764 30.6806 18.5912 30.527 18.8509Z" stroke-linecap="round" stroke-linejoin="round"/>
-        <defs>
-            <filter id="filter0_d" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                <feOffset dy="6"/>
-                <feGaussianBlur stdDeviation="5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-            </filter>
-        </defs>
+<button class="claim-btn btn-circle" data-modal="modal-call-back">
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect class="circle_el" width="44" height="44" rx="22" fill="white"/>
+        <path class="claim_el" d="M22 19.3939V22.9292M22 26.4646H22.0086M20.527 14.8509L13.2309 27.3485C13.0804 27.6158 13.0008 27.9188 13 28.2275C12.9992 28.5361 13.0771 28.8396 13.2261 29.1078C13.375 29.3759 13.5898 29.5994 13.8491 29.7559C14.1084 29.9125 14.4031 29.9966 14.7039 30H29.2961C29.5969 29.9966 29.8916 29.9125 30.1509 29.7559C30.4102 29.5994 30.625 29.3759 30.7739 29.1078C30.9229 28.8396 31.0008 28.5361 31 28.2275C30.9992 27.9188 30.9196 27.6158 30.7691 27.3485L23.473 14.8509C23.3194 14.5912 23.1032 14.3764 22.8452 14.2273C22.5872 14.0783 22.2961 14 22 14C21.7039 14 21.4128 14.0783 21.1548 14.2273C20.8968 14.3764 20.6806 14.5912 20.527 14.8509Z" stroke="#222735" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
 </button>
+
+
+<div class="call-back-modal" id="modal-call-back">
+    <div class="modal-bg modal-exit"></div>
+    <div class="modal-container shadow border-radius">
+        <div class="modal-content">
+            <button class="modal-close modal-exit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                    <path d="M0.599777 1.79726C0.268758 1.46499 0.270529 0.928048 0.603732 0.597967C0.936934 0.267885 1.47539 0.269661 1.80641 0.601932L12.2284 11.0633C12.5594 11.3956 12.5576 11.9326 12.2244 12.2626C11.8912 12.5927 11.3528 12.5909 11.0218 12.2587L0.599777 1.79726Z" fill="#95A5B0"/>
+                    <path d="M11.0578 0.601915C11.3899 0.270741 11.9283 0.270741 12.2604 0.601915C12.5926 0.933089 12.5926 1.47003 12.2604 1.8012L1.80382 12.2283C1.47171 12.5595 0.933247 12.5595 0.601135 12.2283C0.269023 11.8971 0.269022 11.3602 0.601135 11.029L11.0578 0.601915Z" fill="#95A5B0"/>
+                </svg>
+            </button>
+            <div class="modal-block-container">
+                <form action="#" method="#" class="modal-call-back-form">
+                    <input class="modal-form__input" type="text" placeholder="Введите Ваше имя">
+                    <input class="modal-form__input" type="tel" placeholder="Введите Ваш номер телефона">
+                    <div class="f-modal-btn-wrap">
+                        <button type="submit"  class="btn btn-light">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
