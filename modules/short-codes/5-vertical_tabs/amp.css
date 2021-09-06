@@ -35,4 +35,16 @@
     display: flex;
     justify-content: space-between;
 }
-
+amp-selector[role=tablist].tabs-with-flex [role=tabpanel] {
+    padding: var(--space-1) 0;
+}
+amp-selector[role=tablist].tabs-with-flex [role=tab][selected] + [role=tabpanel] {
+    position: fixed;
+    top: 2.5em;
+    max-width: 790px;
+    width: 95%;
+}
+.container .content .tabs-with-flex {
+    overflow-x: auto;
+    flex-wrap: unset;
+}

@@ -9,3 +9,6 @@
     width: 100%;
 }
 .reset-block .h3, .reset-block .reset-pass-text {padding: 0;}
+.reset-pass-error {
+    display: none;
+}

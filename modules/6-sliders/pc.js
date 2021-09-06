@@ -6,7 +6,8 @@ var slideShow = (function () {
         var slidesCount;
         var k = 0;
         var f = 0;
-        var circleScroll = false;
+        var dotNum = 0;
+        var circleScroll = true;
         var dataSettings = {};
         var element = '';
         var slideItemWidth;
@@ -20,6 +21,8 @@ var slideShow = (function () {
         var itemClases = '';
         var arrows = true;
         var reviewItem = false;
+        var dots = false;
+        var dotsCount = 0;
         var elHeight = '100';
         var customArrows = '';
         var customWidth = '';
@@ -68,7 +71,10 @@ var slideShow = (function () {
                     arrows = true;
                 }
             }
-
+            if (dataSettings.dots !== undefined) {
+                setSliderData(dataSettings);
+                // dots = dataSettings.dots;
+            }
             var slideContent = '';
             for (let i = 0; i < slidesCount; i++) {
                 if(arr[i]){
@@ -102,7 +108,22 @@ var slideShow = (function () {
                 } else {
                     addContent = element.innerHTML;
                 }
+                if(dots == true) {
+                    circleScroll = false;
+                    dotsCount = arr.length/step;
+                    let dotsBlock = '';
+                    for(let i=0; i<dotsCount; i++) {
+                        if(i==0){
+                            dotsBlock += '<span class="js-slide-dots js-slide-active-dot js-slide-disable" data-dot = '+i+'></span>';
+                        } else {
+                            dotsBlock += '<span class="js-slide-dots" data-dot = '+i+'></span>';
+                        }
+                    }
+                    addContent = addContent+'<div class="js-slider-dots">'+dotsBlock+'</div>';
+                }
+
                 element.innerHTML = addContent;
+                showReviewsHiddenPart();
                 let arrowsBlocks = element.getElementsByClassName('arrows-block');
                 if(arrowsBlocks.length > 0){
                     for (let i=0; i<arrowsBlocks.length;i++){
@@ -119,11 +140,28 @@ var slideShow = (function () {
             }
             customWidth = '';
             customArrows = '';
+            if(dots == true) {
+                if(element.getElementsByClassName('js-slide-btn-right').length != 0){
+                    element.getElementsByClassName('js-slide-btn-right')[0].style.display = 'none';
+                }
+                if(element.getElementsByClassName('js-slide-btn-left').length != 0){
+                    element.getElementsByClassName('js-slide-btn-left')[0].style.display = 'none';
+                }
+            }
         }
 
         var slideLeft = function (e) {
             var target = e.target;
-            if (target.className == 'js-slide-btn-left') {
+            if (target.className == 'js-slide-btn-left' || target.className == 'js-slide-dots') {
+                if(target.className == 'js-slide-dots') {
+                    element.getElementsByClassName('js-slide-active-dot')[0].classList.remove('js-slide-disable');
+                    let dotNum1 = element.getElementsByClassName('js-slide-active-dot')[0].dataset['dot'];
+                    element.getElementsByClassName('js-slide-active-dot')[0].classList.remove('js-slide-active-dot');
+                    target.classList.add('js-slide-active-dot');
+                    target.classList.add('js-slide-disable');
+                    let dotNum2 = target.dataset['dot'];
+                    dotNum = Number(dotNum1) - Number(dotNum2);
+                }
                 element = target.closest('.jsSlideMainBlock');
                 element.getElementsByClassName('jsSlideContent')[0].style.justifyContent = 'flex-end';
             }
@@ -159,11 +197,23 @@ var slideShow = (function () {
             if(customWidth !== '') {
                 element.getElementsByClassName('jsSlideContent')[0].style.width = blockCustomWidth;
             }
-            element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex('+step*slideItemWidth+'%)';
-            var leftArrowBlock = (k <= 0 && circleScroll === false) ? '<div class="arrows-block">'+leftArrow+'</div>' : '<div class="arrows-block">'+leftArrow+'</div>';
-            for (let j = 0; j < step; j++) {
-                lastElm = arr.pop();
-                arr1 = arr.unshift(lastElm);
+            if (dots == true) {
+                element.getElementsByClassName('js-slider-dots')[0].style.display='none';
+                element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex('+dotNum*step*slideItemWidth+'%)';
+            } else {
+                element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex('+step*slideItemWidth+'%)';
+            }
+            var leftArrowBlock = (k <= 0 && circleScroll === false) ? '<div class="arrows-block"></div>' : '<div class="arrows-block">'+leftArrow+'</div>';
+            if(target.classList.contains('js-slide-dots') && dotNum != 0) {
+                for (let j = 0; j < step*dotNum; j++) {
+                    lastElm = arr.pop();
+                    arr1 = arr.unshift(lastElm);
+                }
+            } else {
+                for (let j = 0; j < step; j++) {
+                    lastElm = arr.pop();
+                    arr1 = arr.unshift(lastElm);
+                }
             }
             setTimeout(function(){
                 for (let i = 0; i < slidesCount; i++) {
@@ -183,8 +233,15 @@ var slideShow = (function () {
                         slideContentAll += '<div class="jsSlideItem '+itemClases+'" style="width:' + slideItemWidth + '%;min-width:' + slideItemWidth + '%;height: '+elHeight+'px;">' + arr[i].innerHTML + '</div>';
                     }
                 }
-                addContent = leftArrowBlock + '<div class="jsSlideContent" '+blockCustomWidth+'>'+slideContentAll+'</div>' + '<div class="arrows-block">'+rightArrow+'</div>';
+                var rightArrowBlock = '<div class="arrows-block">'+rightArrow+'</div>';
+                if(dots == true) {
+                    leftArrowBlock = rightArrowBlock = '<div class="arrows-block"></div>';
+                    let dotsBlock = element.getElementsByClassName('js-slider-dots')[0].innerHTML;
+                    slideContentAll = slideContentAll+'<div class="js-slider-dots">'+dotsBlock+'</div>';
+                }
+                addContent = leftArrowBlock + '<div class="jsSlideContent" '+blockCustomWidth+'>'+slideContentAll+'</div>' + rightArrowBlock;
                 element.innerHTML = addContent;
+                showReviewsHiddenPart();
                 let arrowsBlocks = element.getElementsByClassName('arrows-block');
                 if(arrowsBlocks.length > 0){
                     for (let i=0; i<arrowsBlocks.length;i++){
@@ -204,7 +261,16 @@ var slideShow = (function () {
 
         var slideRight = function (e) {
             var target = e.target;
-            if (target.className == 'js-slide-btn-right') {
+            if (target.className == 'js-slide-btn-right' || target.className == 'js-slide-dots') {
+                if(target.className == 'js-slide-dots') {
+                    element.getElementsByClassName('js-slide-active-dot')[0].classList.remove('js-slide-disable');
+                    let dotNum1 = element.getElementsByClassName('js-slide-active-dot')[0].dataset['dot'];
+                    element.getElementsByClassName('js-slide-active-dot')[0].classList.remove('js-slide-active-dot');
+                    target.classList.add('js-slide-active-dot');
+                    target.classList.add('js-slide-disable');
+                    let dotNum2 = target.dataset['dot'];
+                    dotNum = Number(dotNum2) - Number(dotNum1);
+                }
                 element = target.closest('.jsSlideMainBlock');
             }
             f = f + step;
@@ -218,6 +284,7 @@ var slideShow = (function () {
             if(customWidth !== '') {
                 element.getElementsByClassName('jsSlideContent')[0].style.width = blockCustomWidth;
             }
+
             for (let i = slidesCount; i < arr.length; i++) {
                 itemClases = '';
                 for (let q = 0; q < arr[i].classList.length; q++) {
@@ -237,12 +304,25 @@ var slideShow = (function () {
                 var slideItemObject = parser.parseFromString(slideContent, 'text/html');
                 element.getElementsByClassName('jsSlideContent')[0].append(slideItemObject.body.lastChild);
             }
-            for (let j = 0; j < step; j++) {
-                firstElm = arr.shift();
-                arr1 = arr.push(firstElm);
+            if(target.classList.contains('js-slide-dots') && dotNum != 0) {
+                for (let j = 0; j < step*dotNum; j++) {
+                    firstElm = arr.shift();
+                    arr1 = arr.push(firstElm);
+                }
+            } else {
+                for (let j = 0; j < step; j++) {
+                    firstElm = arr.shift();
+                    arr1 = arr.push(firstElm);
+                }
             }
+
             element.getElementsByClassName('jsSlideContent')[0].style.justifyContent = 'flex-start';
-            element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex(-'+step*slideItemWidth+'%)';
+            if (dots == true) {
+                element.getElementsByClassName('js-slider-dots')[0].style.display='none';
+                element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex(-'+dotNum*step*slideItemWidth+'%)';
+            } else {
+                element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex(-'+step*slideItemWidth+'%)';
+            }
             var rightArrowBlock = ((f >= arr.length && circleScroll === false)) ? '<div class="arrows-block"></div>' : '<div class="arrows-block">'+rightArrow+'</div>';
             setTimeout(function(){
                 for (let i = 0; i < slidesCount; i++) {
@@ -261,8 +341,16 @@ var slideShow = (function () {
                         slideContentAll += '<div class="jsSlideItem '+itemClases+'" style="width:' + slideItemWidth + '%;min-width:' + slideItemWidth + '%;height: '+elHeight+'px;">' + arr[i].innerHTML + '</div>';
                     }
                 }
-                addContent = '<div class="arrows-block">'+leftArrow+'</div>' + '<div class="jsSlideContent" '+blockCustomWidth+'>'+slideContentAll+'</div>' + '<div class="arrows-block">'+rightArrow+'</div>';
+                var rightArrowBlock = '<div class="arrows-block">'+rightArrow+'</div>';
+                var leftArrowBlock = '<div class="arrows-block">'+leftArrow+'</div>';
+                if(dots == true) {
+                    leftArrowBlock = rightArrowBlock = '<div class="arrows-block"></div>';
+                    let dotsBlock = element.getElementsByClassName('js-slider-dots')[0].innerHTML;
+                    slideContentAll = slideContentAll+'<div class="js-slider-dots">'+dotsBlock+'</div>';
+                }
+                addContent =  leftArrowBlock + '<div class="jsSlideContent" '+blockCustomWidth+'>'+slideContentAll+'</div>' + rightArrowBlock;
                 element.innerHTML = addContent;
+                showReviewsHiddenPart();
                 let arrowsBlocks = element.getElementsByClassName('arrows-block');
                 if(arrowsBlocks.length > 0){
                     for (let i=0; i<arrowsBlocks.length;i++){
@@ -320,12 +408,17 @@ var slideShow = (function () {
             } else {
                 customArrows = '';
             }
+            debugger
+            dots = dataSettings.dots;
             if (dataSettings.responsive !== undefined) {
                 let responsive = dataSettings.responsive;
                 for (let q = 0; q < responsive.length; q++) {
                     if (window.innerWidth < responsive[q].breakpoint) {
                         step = responsive[q].settings.slidesToScroll;
                         slidesCount = responsive[q].settings.slidesToShow;
+                        if(responsive[q].settings.dots != undefined) {
+                            dots = responsive[q].settings.dots;
+                        }
                         if(responsive[q].settings.height !== undefined){
                             elHeight = responsive[q].settings.height;
                         }
@@ -353,6 +446,20 @@ var slideShow = (function () {
                 element.getElementsByClassName('js-slide-btn-right')[0].onclick = slideRight;
                 element.getElementsByClassName('js-slide-btn-right')[0].dataset['parent'] = dataset;
             }
+            let dotsArr = element.getElementsByClassName('js-slide-dots');
+            for(let i=0;i<dotsArr.length;i++) {
+                if(dotsArr[i].classList.contains('js-slide-active-dot')) {
+                    var activeDotIndex = i;
+                }
+            }
+            for(let i=0;i<dotsArr.length;i++) {
+                if(i < activeDotIndex) {
+                    dotsArr[i].onclick = slideLeft;
+                } else if(i > activeDotIndex){
+                    dotsArr[i].onclick = slideRight;
+                }
+                dotsArr[i].dataset['parent'] = dataset;
+            }
         }
         var loadDefBgImg = function(element){
             var defBgItems = element.getElementsByClassName('def_bg');
@@ -363,7 +470,21 @@ var slideShow = (function () {
                 }
             }
         }
-
+        var showReviewsHiddenPart = function(){
+            var showReviewsBtns = document.getElementsByClassName('show_the_reviews');
+            if(showReviewsBtns.length != 0){
+                for(let i=0;i<showReviewsBtns.length;i++){
+                    showReviewsBtns[i].addEventListener("click", function (event) {
+                        var elem = event.target;
+                        elem.closest('.jsSlideItem').style.padding = 0;
+                        elem.nextSibling.style.display = 'block';
+                        elem.previousElementSibling.style.display = 'none';
+                        elem.style.display = 'none';
+                        event.stopPropagation();
+                    }, false);
+                }
+            }
+        }
         window.onresize = function () {
             let sldersDetails = window.sliders;
             for (let key in sldersDetails) {
@@ -374,7 +495,6 @@ var slideShow = (function () {
         init(data);
     }
 }());
-
 if(document.getElementsByClassName('bank_review_slider').length>0){
     slideShow({
         element:'.bank_review_slider',
@@ -382,6 +502,7 @@ if(document.getElementsByClassName('bank_review_slider').length>0){
         slidesToScroll:1,
         circleScroll:false,
         height:'400',
+        dots:true,
         responsive: [
             {
                 breakpoint: 1200,
@@ -400,8 +521,6 @@ if(document.getElementsByClassName('bank_review_slider').length>0){
         ]
     })
 }
-
-
 if(document.getElementsByClassName('smi_slider').length>0){
     slideShow({
         element:'.smi_slider',

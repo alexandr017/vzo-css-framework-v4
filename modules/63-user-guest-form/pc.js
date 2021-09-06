@@ -13,21 +13,31 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     let repeatPass = document.getElementById('user-guest-repeat-pass');
     let newPass = document.getElementById('user-guest-new-pass');
-    repeatPass.addEventListener('keyup',function () {
-        passMatchesFn(this,newPass);
-    });
-    newPass.addEventListener('keyup',function () {
-        passMatchesFn(repeatPass,this);
-    });
+    if(repeatPass) {
+        repeatPass.addEventListener('keyup',function () {
+            passMatchesFn(this,newPass);
+        });
+    }
+    if(newPass) {
+        newPass.addEventListener('keyup',function () {
+            passMatchesFn(repeatPass,this);
+        });
+    }
     function passMatchesFn(repeatPass,newPass) {
+        let resetPassErrMsg = document.getElementsByClassName('reset-pass-error')[0];
         let passMatchesItems = document.getElementsByClassName('passwords-matches');
-        if(repeatPass.value == newPass.value) {
+        if(repeatPass.value == newPass.value && newPass.value != '' && repeatPass.value != '') {
             for(let i=0;i<passMatchesItems.length;i++) {
                 passMatchesItems[i].style.display = 'block';
             }
+            resetPassErrMsg.style.display = 'none';
         } else {
             for(let i=0;i<passMatchesItems.length;i++) {
                 passMatchesItems[i].style.display = 'none';
+            }
+            resetPassErrMsg.style.display = 'block';
+            if(newPass.value == '' && repeatPass.value == '') {
+                resetPassErrMsg.style.display = 'none';
             }
         }
     }
