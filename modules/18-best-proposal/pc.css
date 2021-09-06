@@ -1,44 +1,25 @@
 .best-proposal {
     display: flex;
-    flex-wrap: wrap;
     margin: 30px 0;
 }
 
 .best-proposal-block {
     overflow: hidden;
-    width: 540px;
 }
 
 .best-proposal-block:first-of-type {
     margin-right: 30px;
 }
 
-.best-proposal-bg-img {
-    background-image: url("/v4/images/best-proposal-logo.png");
-    background-repeat:no-repeat;
-    width: 100%;
-    height: 190px;
-    border-radius: 25px 25px 0 0;
-    /*-moz-transition: all .7s;*/
-    /*-webkit-transition: all .7s;*/
-    /*transition: all .7s;*/
-}
-
-/*.best-proposal-block:hover .best-proposal-bg-img {*/
-/*-moz-transform: scale(1);*/
-/*-webkit-transform: scale(1);*/
-/*transform: scale(1.1);*/
-/*}*/
-
 .best-proposal-content-wrap {
-    padding: 30px 40px;
+    padding: 0 40px 20px 40px;
 }
 
 .best-proposal-btn-wrap {
-   display: flex;
+    display: flex;
     justify-content: center;
 }
 
 .best-proposal-list {
-    margin-top: 20px;
+    margin: 20px 0;
 }

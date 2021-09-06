@@ -10,11 +10,11 @@
     </p>
     <div class="calculator-rko-block border-radius">
         <form action="#">
-        <div class="input-title">Количество платежей: <input type="number" id="rangenumber" step="1" min="0" max="100" value="50"   oninput="range.value=value"></div>
+        <div class="input-title">Количество платежей: <input type="number" class="rko-num-input" id="rkoCalcRangeNumber" step="5" min="0" max="100" value="50" oninput="rkoRange.value=value"></div>
 
         <div class="range">
             <div class="range-slider">
-                <input type="range" class="range-value" step="1" min="0" max="100" value="50"  id="range" oninput="rangenumber.value=value"/>
+                <input type="range" class="rko-calc-range-value" step="5" min="0" max="100" value="50" id="rkoRange" oninput="rkoCalcRangeNumber.value=value">
             </div>
             <div class="range-slider-points" >
                 <span class="range-slider-point range-slider-point-active">0</span>
@@ -62,17 +62,52 @@
                 <label for="10">Эквайринг</label><br>
             </div>
         </div>
+        <div class="hidden-rko-check-box">
+            <div class="check-box">
+                <div class="fst-col">
+                    <div class="check-box-title">Дополнительные условия:</div>
+                    <input type="checkbox" id="curr_ctrl_1" class="custom-checkbox">
+                    <label for="curr_ctrl_1">С бесплатным открытием</label><br>
+
+                    <input type="checkbox" id="curr_ctrl_2" class="custom-checkbox">
+                    <label for="curr_ctrl_2">С бесплатным обслуживанием</label><br>
+
+                    <input type="checkbox" id="curr_ctrl_3" class="custom-checkbox">
+                    <label for="curr_ctrl_3">Нужен интернет-банк</label><br>
+                </div>
+
+                <div class="sec-col">
+                    <div class="check-box-title">Требуется:</div>
+                    <input type="checkbox" id="corp_cards_1" class="custom-checkbox">
+                    <label for="corp_cards_1">Внесение больших сумм наличных</label><br>
+
+                    <input type="checkbox" id="corp_cards_2" class="custom-checkbox">
+                    <label for="corp_cards_2">Выдача больших сумм наличных</label><br>
+
+                    <input type="checkbox" id="corp_cards_3" class="custom-checkbox">
+                    <label for="corp_cards_3">Зарплатный проект</label><br>
+
+                    <input type="checkbox" id="corp_cards_4" class="custom-checkbox">
+                    <label for="corp_cards_4">Эквайринг</label><br>
+                </div>
+            </div>
+        </div>
 
         <div class="calculator-rko-btn-wrap">
             <div style="margin: 0 auto;">
-                <button class="btn btn-light">
+                <div class="btn btn-light showHiddenBlock">
                         <span class="btn-wrap-circle shadow">
                             <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1L7 7L13 1" stroke="#2CDD88" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
                         </span> Больше
-                </button>
-
+                </div>
+                <div class="up-btn btn-circle hideBlock" style="display: none;">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="ellipse_el" width="44" height="44" rx="22" fill="white"/>
+                        <path class="arrow_el" d="M25 16L19 22L25 28" stroke="#222735" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
                 <button type="submit" class="btn btn-dark">Найти</button>
             </div>
         </div>

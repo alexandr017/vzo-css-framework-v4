@@ -31,6 +31,7 @@ import('_framework/tables');
 import('general');
 import('62-messages');
 import('63-user-guest-form');
+import('_framework/slider');
 
 
 if (isset($_GET['module'])) {

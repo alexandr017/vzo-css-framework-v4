@@ -18,9 +18,9 @@
 .calculator-rko .calculator-rko-block .rko-calc-range-value {
     outline: none;
     padding: 0;
-    width: 99%;
+    width: 99.1%;
     height: 4px;
-    background-size: 47% 100%;
+    background-size: 50% 100%;
     background-color: #ebebeb;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%,  #2ED47A), color-stop(100%, #2ED47A));
     background-image: -webkit-linear-gradient(#2ED47A, #2ED47A);
@@ -67,14 +67,14 @@
 }
 
 .calculator-rko .calculator-rko-block .rko-calc-range-value::-webkit-slider-thumb:hover {
-    width: 26px;
-    height: 26px;
+    width: 25px;
+    height: 25px;
 }
 
 .calculator-rko .calculator-rko-block .rko-num-input {
     border: none;
     height: 30px;
-    width: 71px;
+    width: 70px;
     padding: 1rem;
     font-size: 0.87rem;
     outline: none;
@@ -168,4 +168,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+}
+
+.hidden-rko-check-box {
+    display:none;
 }
