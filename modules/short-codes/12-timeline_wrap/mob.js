@@ -5,7 +5,7 @@ if(document.getElementsByClassName('timeline_wrap_slider').length>0){
         slidesToScroll:1,
         circleScroll:true,
         dots:true,
-        height:'300',
+        height:'400',
         responsive: [
             {
                 breakpoint: 1200,

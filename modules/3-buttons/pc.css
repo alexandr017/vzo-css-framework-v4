@@ -63,14 +63,14 @@
 }
 
 .btn-light-2 {
-    color: #2CDD88 !important;
+    color: #2CDD88;
     background: #E3FFED;
 }
 
 .btn-light-2:hover {
     display: flex;
     align-items: center;
-    color: #fff !important;
+    color: #fff;
     background: #2ED47A;
     border-radius: 23px;
     cursor: pointer;
@@ -83,7 +83,7 @@
 
 .btn-chat-1 {
     background: #fff;
-    color: #FF4D4A !important;
+    color: #FF4D4A;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
@@ -99,7 +99,7 @@
 
 .btn-chat-2 {
     background: #fff;
-    color: #2CDD88 !important;
+    color: #2CDD88;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
@@ -115,7 +115,7 @@
 
 
 .btn-whats-app {
-    color: #2ED47A !important;
+    color: #2ED47A;
     background: #fff;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
@@ -131,7 +131,7 @@
 }
 
 .btn-telegram {
-    color: #4FABFA !important;
+    color: #4FABFA;
     background: #fff;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
