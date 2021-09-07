@@ -63,14 +63,14 @@
 }
 
 .btn-light-2 {
-    color: #2CDD88;
+    color: #2CDD88 !important;
     background: #E3FFED;
 }
 
 .btn-light-2:hover {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #fff !important;
     background: #2ED47A;
     border-radius: 23px;
     cursor: pointer;
@@ -83,7 +83,7 @@
 
 .btn-chat-1 {
     background: #fff;
-    color: #FF4D4A;
+    color: #FF4D4A !important;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
@@ -99,7 +99,7 @@
 
 .btn-chat-2 {
     background: #fff;
-    color: #2CDD88;
+    color: #2CDD88 !important;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
@@ -115,7 +115,7 @@
 
 
 .btn-whats-app {
-    color: #2ED47A;
+    color: #2ED47A !important;
     background: #fff;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
@@ -131,7 +131,7 @@
 }
 
 .btn-telegram {
-    color: #4FABFA;
+    color: #4FABFA !important;
     background: #fff;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
@@ -182,11 +182,11 @@ svg:active .arrow_el {
     fill:#2BC77E;
 }
 
-.up-btn svg{
+.up-btn svg {
     transform: rotate(90deg);
 }
 
-.down-btn svg{
+.down-btn svg {
     transform: rotate(-90deg);
 }
 
@@ -245,7 +245,6 @@ svg:active .arrow_el {
     fill:#2BC77E;
 }
 
-
 .btn-wrap-circle {
     box-shadow: 0 4px 10px 0 #87919F26;
     display: block;
@@ -262,13 +261,12 @@ svg:active .arrow_el {
 }
 
 .btn:hover .btn-wrap-circle {
-left: calc(100% - 39px);
+    left: calc(100% - 39px);
 }
 
-
-.btn-circle{
+.btn-circle {
     box-shadow: 0 4px 10px 0 #87919F26;
-    display: block;
+    /*display: block;*/
     width: 44px;
     height: 44px;
     line-height: 44px;

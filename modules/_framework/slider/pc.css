@@ -27,7 +27,6 @@
     min-height: 100px;
     overflow: hidden;
     margin: 20px 0;
-    /*position: relative;*/
 }
 .jsSlideContent {
     display: flex;
@@ -94,27 +93,7 @@
 .jsAnimateRight {
     animation: mymoveright 0.5s;
 }
-.js-slide-dots {
-    display: inline-block;
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 0.5em;
-    background-image: url(/v4/images/dot.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.js-slider-dots {
-    position: absolute;
-    bottom:0 ;
-}
-.js-slide-active-dot {
-    background-image: url(/v4/images/active-dot.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
+
 @keyframes mymoveleft {
     from {
         right: 0;
@@ -178,56 +157,4 @@
         max-width: unset;
     }
 }
-.bank-review h2,
-.smi-block h2 {
-    text-align: center;
-    margin: 30px 0;
-}
 
-.bank-review-inner-block {
-    max-height: 360px;
-}
-
-.bank-review-inner-block,
-.smi-inner-block {
-    width: 285px;
-    padding: 30px;
-}
-
-.bank-review-rating {
-    text-align: center;
-}
-
-.bank-review .rating-company-name {
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.bank-review-user-name {
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-.bank-review-content {
-    margin: 20px 0;
-    height: 165px;
-    overflow-y: auto;
-}
-
-.bank-review-content::-webkit-scrollbar {
-    width: 5px;
-    background-color: #fff;
-}
-
-.bank-review-content::-webkit-scrollbar-thumb:vertical {
-    background: rgba(135, 145, 159, 0.4);
-    border-radius: 3px;
-}
-
-.smi-inner-block .smi-content {
-    margin: 15px 0 25px 0;
-}
-
-.smi-inner-block a {
-    font-weight: 600;
-}
