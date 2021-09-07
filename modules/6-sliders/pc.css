@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .displayNone {
     display: none;
 }
@@ -28,7 +27,7 @@
     min-height: 100px;
     overflow: hidden;
     margin: 20px 0;
-    position: relative;
+    /*position: relative;*/
 }
 .jsSlideContent {
     display: flex;
@@ -179,10 +178,6 @@
         max-width: unset;
     }
 }
-
-
-=======
->>>>>>> d04367f23b89f073f6e49e8abaa49b75900e3645
 .bank-review h2,
 .smi-block h2 {
     text-align: center;
@@ -236,4 +231,3 @@
 .smi-inner-block a {
     font-weight: 600;
 }
-
