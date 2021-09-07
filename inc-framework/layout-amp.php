@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
-    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+<!--    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>-->
 <!--    <script async custom-element="amp-inline-gallery" src="https://cdn.ampproject.org/v0/amp-inline-gallery-0.1.js"></script>-->
 <!--    <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>-->
     <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
@@ -34,56 +34,6 @@
             --space-4: 2rem;   /* 32px */
         }
 
-        /* Styles for the flex layout based tabs */
-        amp-selector[role=tablist].tabs-with-flex {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        amp-selector[role=tablist].tabs-with-flex [role=tab] {
-            flex-grow: 1;
-            /* custom styling, feel free to change */
-            text-align: center;
-            padding: var(--space-1);
-        }
-        amp-selector[role=tablist].tabs-with-flex [role=tabpanel] {
-            display: none;
-            width: 100%;
-            order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
-            /* custom styling, feel free to change */
-            padding: var(--space-4);
-        }
-        amp-selector[role=tablist].tabs-with-flex [role=tab][selected] + [role=tabpanel] {
-            display: block;
-        }
-
-        /* Styles for the selector based tabs */
-        amp-selector[role=tablist].tabs-with-selector {
-            display: flex;
-        }
-        amp-selector[role=tablist].tabs-with-selector [role=tab][selected], amp-selector[role=tablist].tabs-with-flex [role=tab][selected] {
-            outline: none;
-            /* custom styling, feel free to change */
-            border-bottom: 2px solid #2ED47A;
-            color: #2ED47A;
-        }
-        amp-selector[role=tablist].tabs-with-selector {
-            display: flex;
-        }
-        amp-selector[role=tablist].tabs-with-selector [role=tab] {
-            /* custom styling, feel free to change */
-            width: 100%;
-            text-align: center;
-            padding: var(--space-1);
-        }
-        amp-selector.tabpanels [role=tabpanel] {
-            display: none;
-            /* custom styling, feel free to change */
-            padding: var(--space-4);
-        }
-        amp-selector.tabpanels [role=tabpanel][selected] {
-            outline: none;
-            display: block;
-        }
         <?php
         include('modules/general/mob.css');
         include('modules/_framework/buttons/amp.css');

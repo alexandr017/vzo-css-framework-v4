@@ -13,7 +13,7 @@
     height: 0;
 }
 
-.tabs-with-flex .tab-links {
+.vertical-tab-container .tab .tab-links {
     cursor: pointer;
     margin-right: 25px;
     padding: 10px 10px;
@@ -22,29 +22,26 @@
     white-space: nowrap;
 }
 
-.vertical-tab-container .tabs-items .tab-content.on {
-    display:block;
-    padding: 10px 20px;
+.vertical-tab-container .tab .tab-links.on {
+    color: #2ED47A;
+    border-bottom: 2px solid  #2ED47A;
 }
 
 .vertical-tab-container .tabs-items .tab-content {
+    padding: 10px 20px;
+}
+
+
+
+.vertical-tab-container .tabs-items .tab-content{
     display: none;
 }
 
-.vertical-tab-container .tabs-items .tab-content .download-doc {
-    display: flex;
-    justify-content: space-between;
+.vertical-tab-container input{
+    display: none;
 }
-amp-selector[role=tablist].tabs-with-flex [role=tabpanel] {
-    padding: var(--space-1) 0;
+
+.vertical-tab-container input:checked + .tab-content{
+    display: block;
 }
-amp-selector[role=tablist].tabs-with-flex [role=tab][selected] + [role=tabpanel] {
-    position: fixed;
-    top: 2.5em;
-    max-width: 790px;
-    width: 95%;
-}
-.container .content .tabs-with-flex {
-    overflow-x: auto;
-    flex-wrap: unset;
-}
+
