@@ -10,14 +10,13 @@
 }
 
 .expert-info {
-   text-align: center;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .expert-img {
     display: flex;
     justify-content: center;
-    border-radius: 18px;
 }
 
 .expert-name {
@@ -27,41 +26,35 @@
     font-weight: 600;
 }
 
+.hidden-info {
+    overflow: hidden;
+    height: 160px;
+}
+
 .button_show,
 .button_hide {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    margin: 30px 0;
 }
 
 .data-more-less-inner {
-    overflow: hidden;
     margin-bottom: 20px;
     position: relative;
 }
 
-.less-active .action-more {display: none;}
-
-.data-more-less:not(.less-active):not(.action-disabled) .data-more-less-inner:after {
+.data-more-less-body.active:after {
     content: '';
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 60px;
     left: 0;
     width: 100%;
     background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
     background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
-    height: 50px;}
-
-.data-more-less.action-disabled .more-less-action {display: none;}
-
-.action-less {display: none;}
-
-.less-active .action-less {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50px;
 }
+
