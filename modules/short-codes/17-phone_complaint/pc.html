@@ -4,9 +4,7 @@
         <path class="claim_el" d="M22 19.3939V22.9292M22 26.4646H22.0086M20.527 14.8509L13.2309 27.3485C13.0804 27.6158 13.0008 27.9188 13 28.2275C12.9992 28.5361 13.0771 28.8396 13.2261 29.1078C13.375 29.3759 13.5898 29.5994 13.8491 29.7559C14.1084 29.9125 14.4031 29.9966 14.7039 30H29.2961C29.5969 29.9966 29.8916 29.9125 30.1509 29.7559C30.4102 29.5994 30.625 29.3759 30.7739 29.1078C30.9229 28.8396 31.0008 28.5361 31 28.2275C30.9992 27.9188 30.9196 27.6158 30.7691 27.3485L23.473 14.8509C23.3194 14.5912 23.1032 14.3764 22.8452 14.2273C22.5872 14.0783 22.2961 14 22 14C21.7039 14 21.4128 14.0783 21.1548 14.2273C20.8968 14.3764 20.6806 14.5912 20.527 14.8509Z" stroke="#222735" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
 </button>
-
-
-<div class="call-back-modal" id="modal-call-back">
+<div class="modal-block" id="modal-call-back">
     <div class="modal-bg modal-exit"></div>
     <div class="modal-container shadow border-radius">
         <div class="modal-content">
@@ -17,14 +15,53 @@
                 </svg>
             </button>
             <div class="modal-block-container">
-                <form action="#" method="#" class="modal-call-back-form">
-                    <input class="modal-form__input" type="text" placeholder="Введите Ваше имя">
-                    <input class="modal-form__input" type="tel" placeholder="Введите Ваш номер телефона">
-                    <div class="f-modal-btn-wrap">
-                        <button type="submit"  class="btn btn-light">Отправить</button>
+                <form action="#" method="#" class="modal-form">
+                    <input class="modal-form__input" id="ttt" type="email" placeholder="Ваш E-mail">
+                    <div class="claim-select">
+                        <select class="modal-form__input">
+                            <option value="value1">Выберите тип жалобы</option>
+                            <option value="value2">Двойные списания</option>
+                            <option value="value3">Долгая верификация</option>
+                            <option value="value4">Займы на чужие данные</option>
+                            <option value="value5">Навязчивая реклама</option>
+                            <option value="value6">Навязывание услуг</option>
+                            <option value="value7">Предварительное одорение и отказ</option>
+                            <option value="value8">Разглашение информации третьи лицам</option>
+                            <option value="value9">Другое</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Опишите подробно вашу ситуацию" class="hidden-claim-el"></textarea>
+                    <div class="modal-btn-wrap">
+                        <button type="submit" class="btn btn-light modal-exit" data-modal="modal-back">Отправить</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+<div class="modal-block" id="modal-back">
+    <div class="modal-bg modal-exit"></div>
+    <div class="modal-container shadow border-radius">
+        <div class="modal-content">
+            <div class="modal-block-container">
+                <div class="modal-confirm-success">Спасибо, ваша жалоба отправлена на рассмотрение</div>
+                <div class="modal-btn-wrap">
+                    <button class="btn btn-light modal-exit">ОК</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+function submitForm() {
+// Get the first form with the name
+// Hopefully there is only one, but there are more, select the correct index
+var frm = document.getElementsByName('contact-form')[0];
+frm.submit(); // Submit
+frm.reset();  // Reset
+return false; // Prevent page refresh
+}
+</script>
