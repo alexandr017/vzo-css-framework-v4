@@ -1,7 +1,7 @@
-let rangeInput = document.querySelectorAll('.rko-calc-range-value');
-let numberInput = document.querySelector('.rko-num-input');
+let rkoCalcValue = document.querySelectorAll('.rko-calc-range-value');
+let rkoNumInput = document.querySelector('.rko-num-input');
 
-function handleInputChange(e) {
+function rkoCalcChange(e) {
     let target = e.target;
     if (e.target.type !== 'range') {
         target = document.getElementById('rkoRange')
@@ -12,11 +12,11 @@ function handleInputChange(e) {
     target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
 }
 
-rangeInput.forEach(input => {
-    input.addEventListener('input', handleInputChange)
+rkoCalcValue.forEach(input => {
+    input.addEventListener('input', rkoCalcChange)
 });
 
-numberInput.addEventListener('input', handleInputChange);
+rkoNumInput.addEventListener('input', rkoCalcChange);
 
 let rkoBlock = document.querySelectorAll('.calculator-rko-block');
     rkoBlock.forEach(function (value, index) {

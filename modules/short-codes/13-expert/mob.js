@@ -1,5 +1,5 @@
-let hiddenBlock = document.querySelectorAll('.data-more-less-inner');
-hiddenBlock.forEach(function (value, index) {
+let expertHiddenBlock = $$('.data-more-less-inner');
+    expertHiddenBlock.forEach(function (value, index) {
     let buttonShow = value.querySelector('.button_show'),
         buttonHide = value.querySelector('.button_hide'),
         gradientBlock = value.querySelector('.data-more-less-body');

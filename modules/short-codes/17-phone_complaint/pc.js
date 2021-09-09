@@ -1,4 +1,4 @@
-let jsSelectBody = document.getElementsByClassName("claim-select");
+let jsSelectBody = $$(".claim-select");
 for (let i = 0; i < jsSelectBody.length; i++) {
     let selEl = jsSelectBody[i].getElementsByTagName("select")[0];
     let selItem = document.createElement("div");
@@ -41,8 +41,8 @@ for (let i = 0; i < jsSelectBody.length; i++) {
 
 function closeAllSelect(el) {
     let arrSel = [];
-    let jsSelectItems = document.getElementsByClassName("select-items");
-    let jsSelectedItem = document.getElementsByClassName("selected-item");
+    let jsSelectItems = $$(".select-items");
+    let jsSelectedItem = $$(".selected-item");
     for (let i = 0; i < jsSelectedItem.length; i++) {
         if (el == jsSelectedItem[i]) {
             arrSel.push(i)
@@ -58,15 +58,15 @@ function closeAllSelect(el) {
 }
 document.addEventListener("click", closeAllSelect);
 
-function claimHiddenBlock(){
-    let selectValue = document.querySelectorAll('.same-as-selected')[0],
-        hiddenBlock = document.querySelectorAll('.hidden-claim-el')[0];
+function claimHiddenTextArea(){
+    let selectValue = $$('.same-as-selected')[0],
+        hiddenBlock = $$('.hidden-claim-el')[0];
     if(selectValue.textContent === 'Другое' ){
         hiddenBlock.style.display = 'block';
     }else
         hiddenBlock.style.display = 'none';
 }
-document.addEventListener("click", claimHiddenBlock);
+document.addEventListener("click", claimHiddenTextArea);
 
 
 

@@ -1,42 +1,33 @@
-var addTableWrap = document.getElementsByClassName("overpayment-block")[0];
-var items = Array.from(addTableWrap.querySelectorAll("tr"));
-var loadMore = document.getElementsByClassName("loadMore")[0];
-var loadLess = document.getElementsByClassName("loadLess")[0];
-
-hiddenClass = "hiddenStyle";
-hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
-
-
+let addTableWrap = $$(".overpayment-block")[0];
+let items = Array.from(addTableWrap.querySelectorAll("tr"));
+let loadTableMore = $$(".loadMore")[0];
+let loadTableLess = $$(".loadLess")[0];
+hiddenTableStyle = "hiddenTableStyle";
 items.forEach(function (item, index) {
-
     if (index > 7) {
-        item.classList.add(hiddenClass);
-        loadLess.style.display = "none";
+        item.classList.add(hiddenTableStyle);
+        loadTableLess.style.display = "none";
     }
 });
-
-loadMore.addEventListener("click", function () {
-    [].forEach.call(document.querySelectorAll("." + hiddenClass), function (
-        item,
-        index
+loadTableMore.addEventListener("click", function () {
+    [].forEach.call(document.querySelectorAll("." + hiddenTableStyle), function (
+        item
     ) {
-            item.classList.remove(hiddenClass);
-        if (document.querySelectorAll("." + hiddenClass).length === 0) {
-            loadMore.style.display = "none";
-            loadLess.style.display = "flex";
+            item.classList.remove(hiddenTableStyle);
+        if (document.querySelectorAll("." + hiddenTableStyle).length === 0) {
+            loadTableMore.style.display = "none";
+            loadTableLess.style.display = "flex";
         }
     });
 });
-
-loadLess.addEventListener("click", function () {
-
+loadTableLess.addEventListener("click", function () {
     items.forEach(function (item, index) {
         if (index > 7) {
-            item.classList.add(hiddenClass);
+            item.classList.add(hiddenTableStyle);
         }
     });
-        if (document.querySelectorAll("." + hiddenClass).length !== 7) {
-            loadMore.style.display = "flex";
-            loadLess.style.display = "none";
+        if (document.querySelectorAll("." + hiddenTableStyle).length !== 7) {
+            loadTableMore.style.display = "flex";
+            loadTableLess.style.display = "none";
         }
 });

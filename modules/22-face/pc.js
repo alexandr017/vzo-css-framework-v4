@@ -1,7 +1,7 @@
-var faceTagsWrap = document.getElementsByClassName("face-tags")[0];
-var faceEl = Array.from(faceTagsWrap.querySelectorAll(".tag-el"));
-var faceLoadMore = document.getElementsByClassName("face-more")[0];
-var faceLoadLess = document.getElementsByClassName("face-less")[0];
+let faceTagsWrap = document.getElementsByClassName("face-tags")[0];
+let faceEl = Array.from(faceTagsWrap.querySelectorAll(".tag-el"));
+let faceLoadMore = document.getElementsByClassName("face-more")[0];
+let faceLoadLess = document.getElementsByClassName("face-less")[0];
 
 hiddenFaceClass = "hiddenFaceTags";
 hiddenItems = Array.from(document.querySelectorAll(".hiddenFaceTags"));

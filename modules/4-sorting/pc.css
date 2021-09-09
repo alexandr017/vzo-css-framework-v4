@@ -1,6 +1,6 @@
 .sort {
     float: right;
-    margin-right: -55px!important;
+    margin-right: -55px;
 }
 
 .sort .sort_el {
@@ -17,7 +17,6 @@
 .sort .sort_el .main-sort svg {
     margin-left: 5px;
 }
-
 
 .sort .sort_el {
     margin-right: 50px;

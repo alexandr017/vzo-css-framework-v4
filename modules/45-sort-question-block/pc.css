@@ -1,7 +1,6 @@
 .breadcrumbs {
     font-size: .87rem;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
 
 .breadcrumbs a,
@@ -30,8 +29,7 @@
 
 .question-block .experts-reply .expert-logo .check {
     position: absolute;
-    margin-top: -90px;
-    margin-left: 55px;
+    margin: -90px 0 0 55px;
 }
 
 .question-block .experts-reply .reply-info {

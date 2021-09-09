@@ -1,4 +1,4 @@
-document.querySelectorAll('.tab-wrap').forEach((e) => {
+$$('.tab-wrap').forEach((e) => {
     let tabTabs = e.querySelectorAll('.tab .tab-links');
     let tabItems = e.querySelectorAll('.tabs-items .tab-content');
     for(let i =0;i<tabTabs.length;i++) {

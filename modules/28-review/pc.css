@@ -46,8 +46,7 @@
     font-size: 1rem;
     color:#87919f;
     position: absolute;
-    margin-top: -15px;
-    margin-left: 180px;
+    margin: -15px 0 0 180px;
 }
 
 .reviews .scale-rating-block .rating-btn-wrap {
@@ -60,7 +59,7 @@
 
 .reviews .sort {
     float: right;
-    margin-right: -55px!important;
+    margin-right: -55px;
 }
 
 .reviews .sort .sort_el {
@@ -77,7 +76,6 @@
 .reviews .sort .sort_el .main-sort svg {
     margin-left: 5px;
 }
-
 
 .reviews .sort .sort_el {
     margin-right: 50px;
@@ -135,8 +133,7 @@
 
 .reviews .block-reviews {
     display:flex;
-    margin-top: 30px;
-    margin-left: 100px;
+    margin: 30px 0 0 100px;
 }
 
 .reviews .block-reviews .text-review .user-logo {
@@ -147,8 +144,7 @@
 
 .reviews .block-reviews .text-review .user-logo svg {
     position: absolute;
-    margin-top: 10px;
-    margin-left:-120px;
+    margin: 10px 0 0 -120px;
 }
 
 .reviews .block-reviews .text-review .user-logo span,
@@ -163,7 +159,6 @@
 .reviews .block-reviews .text-review .comment span:first-of-type,
 .reviews .block-reviews .text-review .replace div span:first-of-type {
     font-weight: 700;
-    margin-bottom: 0;
 }
 
 .reviews .block-reviews .text-review .plus span,
@@ -187,7 +182,6 @@
 .reviews .block-reviews .text-review .comment span:first-of-type {
     font-size: 1.2rem;
 }
-
 
 .reviews .block-reviews .text-review .minus span:last-of-type,
 .reviews .block-reviews .text-review .plus span:last-of-type,
@@ -217,8 +211,7 @@
 }
 
 .reviews .block-reviews .text-review .replace div svg {
-    margin-left: -30px;
-    margin-top: 3px;
+    margin: 3px 0 0 -30px;
 }
 
 .reviews .block-reviews .text-review .replace div .replace_el {

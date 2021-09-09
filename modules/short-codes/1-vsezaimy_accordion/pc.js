@@ -1,6 +1,5 @@
 let acc = $$(".accordion");
 for (let i = 0; i < $$(".accordion").length; i++) {
-    console.log(i);
     acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;

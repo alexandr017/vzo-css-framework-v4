@@ -56,7 +56,7 @@
 }
 
 .play-video-el svg:hover .circle-play, .insert-video-block:hover .circle-play{
-    fill: #2ED47A
+    fill: #2ED47A;
 }
 
 .play-video-el svg:hover .icon-play {

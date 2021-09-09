@@ -29,8 +29,8 @@
     height: 160px;
 }
 
-.button_show,
-.button_hide {
+.expert-block .button_show,
+.expert-block .button_hide {
     display: flex;
     justify-content: center;
     align-items: center;

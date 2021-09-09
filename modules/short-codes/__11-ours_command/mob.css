@@ -26,8 +26,7 @@
 
 .command-img-bg-bl .command-icon {
     position: relative;
-    margin-left: 190px;
-    margin-top: -220px;
+    margin: -220px 0 0 190px;
     z-index: 3;
 }
 
@@ -54,7 +53,6 @@
     margin-top: 160px;
 }
 
-
 .modal-command-team {
     opacity: 0;
     visibility: hidden;
@@ -63,7 +61,6 @@
     bottom: -9999px;
     background: rgba(55, 56, 61, 0.23);
     padding: 20% 0 0 0;
-
 }
 
 .modal-command-team.open {
@@ -77,7 +74,6 @@
     transition-delay: 0.5s;
     z-index:5;
 }
-
 
 .modal-bg {
     position: absolute;
@@ -100,7 +96,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -20px ;
+    margin-top: -20px;
 }
 
 .modal-close {

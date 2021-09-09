@@ -114,8 +114,7 @@
     height: 10px;
     width: 3px!important;
     background-color: #ebebeb;
-    margin-top: -26px;
-    margin-left: 13px;
+    margin: -26px 0 0 13px;
     z-index: 0;
 }
 
@@ -143,9 +142,7 @@
     display: inline-block;
     width: 14px;
     height: 14px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #ebebeb;
+    border: 1px solid #222735;
     border-radius: 3px;
     margin-right: 0.5rem;
     background-repeat: no-repeat;

@@ -1,4 +1,4 @@
-var countRage = $$("#count_range_input")[0],
+let countRage = $$("#count_range_input")[0],
     res = $$("#count_range_input_sum")[0];
 
 countRage.addEventListener("input", function() {
@@ -16,13 +16,13 @@ function getListContent() {
 }
 ul.append(...getListContent());
 
-let rangeInputs = $$('input[type="range"]');
-let numberInput =  $$('input[type="number"]');
+let mfoInput = $$('input[type="range"]');
+let mfoNumInput =  $$('input[type="number"]');
 
-function handleInputChange(e) {
+function mfoCalcChange(e) {
     let target = e.target;
     if (e.target.type !== 'range') {
-        target = document.getElementById('rangeType')
+        target = $$('#rangeType')[0]
     }
     let min = target.min;
     let max = target.max;
@@ -30,8 +30,8 @@ function handleInputChange(e) {
     target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%';
 }
 
-rangeInputs.forEach(input => {
-    input.addEventListener('input', handleInputChange)
+mfoInput.forEach(input => {
+    input.addEventListener('input', mfoCalcChange)
 });
 
-numberInput.addEventListener('input', handleInputChange);
+mfoNumInput.addEventListener('input', mfoCalcChange);

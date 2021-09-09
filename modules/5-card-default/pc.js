@@ -27,7 +27,7 @@ if(document.getElementsByClassName('card-slider-block').length>0){
 document.addEventListener("click", function(e) {
     if(e.target && e.target.classList.contains("card-more")) {
         e.target.classList.toggle("active");
-        var panel = e.target.nextElementSibling;
+        let panel = e.target.nextElementSibling;
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
             e.target.innerHTML = 'Подробнее <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">\n' +

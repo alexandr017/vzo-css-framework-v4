@@ -1,6 +1,6 @@
 .org-menu-block {
     background: url("/v4/images/company-img.png");
-    min-height: 262px;
+    min-height: 260px;
     padding: 45px 0 0 75px;
     margin: 30px 0;
 }
@@ -12,7 +12,7 @@
 .org-header .org-title {
     width: 70%;
     font-weight: 700;
-    line-height: 1.1em;
+    line-height: 2.8rem;
 }
 
 .org-menu-links {
@@ -58,7 +58,6 @@
     margin-right: 0;
 }
 
-
 .banks-products-block .bank-link-el .bank-icon-bg {
     margin: 0 auto;
     width: 80px;
@@ -67,7 +66,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .banks-products-block .bank-link-el .bank-icon-text {

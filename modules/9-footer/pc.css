@@ -1,6 +1,6 @@
 .f-top-line {
     background: #F6F8FB;
-    height: 188px;
+    height: 190px;
     margin: 50px 0 20px 0;
     overflow: hidden;
     display: flex;
@@ -11,10 +11,9 @@
 .f-top-line .f-top-line-col {
     background-image: url("/v4/images/f-bg-img.png");
     background-repeat:no-repeat;
-    height: 188px;
-    margin-left: 55%;
+    height: 190px;
     width: 100%;
-    margin-top: -192px;
+    margin: -195px 0 0 55%;
     -moz-transition: all .7s;
     -webkit-transition: all .7s;
     transition: all .7s;
@@ -34,7 +33,7 @@
 .f-top-line .loan-training {
     width: 350px;
     border-radius: 23px;
-    height: 44px;
+    height: 45px;
     background: #fff;
     display: flex;
     align-items: center;
@@ -49,7 +48,6 @@
     margin:0 25px 0 -30px;
 }
 
-
 .f-line-1 {
     display: flex;
     justify-content: space-around;
@@ -63,8 +61,7 @@
 }
 
 .f-support-label {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin: 20px 0 15px 0;
     font-size: 1.1rem;
     line-height: 1.4rem;
     font-weight: 600;
@@ -100,7 +97,7 @@
 }
 
 .f-1 .f-support-text {
-    margin-bottom:20px;
+    margin-bottom: 20px;
     color: #95A5B0;
     font-size: .75rem;
 }
@@ -163,7 +160,7 @@
 }
 
 .f-copyright p:first-of-type {
-    margin-right: 42px;
+    margin-right: 40px;
 }
 
 .f-block .social {

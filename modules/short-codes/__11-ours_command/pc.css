@@ -19,8 +19,7 @@
 
 .command-img .command-icon {
     position: absolute;
-    margin-top: -10px;
-    margin-left: -10px;
+    margin: -10px 0 0 -10px;
 }
 
 .command-info {
@@ -36,7 +35,7 @@
 .command-email {
     position: relative;
     top: 20px;
-    margin-right:70%;
+    margin-right: 70%;
     color: #95A5B0;
 }
 

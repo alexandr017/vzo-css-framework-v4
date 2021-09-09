@@ -70,8 +70,8 @@ function commandShowAndHideBtnsClick() {
 }
 
 function showHiddenBlock() {
-    let showBlock = document.querySelectorAll('.commandShowBlock');
-    showBlock.forEach(function (value, index) {
+    let showCommandBlock = $$('.commandShowBlock');
+    showCommandBlock.forEach(function (value, index) {
         let buttonShow = value.querySelector('.command__button_show'),
             buttonHide = value.querySelector('.command__button_hide'),
             allBlock = value.querySelector('.command-inner-block'),

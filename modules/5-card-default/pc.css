@@ -58,13 +58,13 @@
 
 .card .card-header .card-top-inner .block-row .card-cont {
     color: #95A5B0;
-    font-size: 0.9em;
-    line-height: 1.2em;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
     margin-top: 15px;
 }
 
 .card .card-header .reviews span {
-    font-size: 1em;
+    font-size: 1rem;
     margin-left: 5px;
 }
 
@@ -239,13 +239,11 @@
     justify-content: space-between;
 }
 
-
 .card .hidden-card-info .card-slider-block .card-slider-info {
     cursor:pointer;
     display: block;
     text-align: center;
 }
-
 
 .card .hidden-card-info .card-slider-block .card-slider-info .border-radius svg {
     width: 23px;
@@ -265,8 +263,8 @@
     display: flex;
     width: 30%;
     margin: 35px 30px 0 0;
-
 }
+
 .hidden-card-info .list-card-block .list-card_el svg {
     margin-top: 5px;
 }
@@ -283,7 +281,6 @@
     margin: 20px 0 50px 0;
 }
 
-
 .hidden-card-info .card-btn-wrap .card-left-btn .btn-circle {
     margin-right: 20px;
 }
@@ -291,7 +288,6 @@
 .hidden-card-info .card-btn-wrap .card-right-btn {
     display: flex;
 }
-
 
 .hidden-card-info .card-btn-wrap .btn:last-of-type {
     margin-left: 65px;

@@ -1,24 +1,22 @@
-const rangeInputs = document.querySelectorAll('input[type="range"]');
-const numberInput = document.querySelector('input[type="number"]');
+let rkoCalcValue = document.querySelectorAll('.rko-calc-range-value');
+let rkoNumInput = document.querySelector('.rko-num-input');
 
-function handleInputChange(e) {
+function rkoCalcChange(e) {
     let target = e.target;
     if (e.target.type !== 'range') {
-        target = document.getElementById('rkoRange');
+        target = document.getElementById('rkoRange')
     }
-    const min = target.min;
-    const max = target.max;
-    const val = target.value;
-
+    let min = target.min;
+    let max = target.max;
+    let val = target.value;
     target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
 }
 
-rangeInputs.forEach(input => {
-    input.addEventListener('input', handleInputChange)
+rkoCalcValue.forEach(input => {
+    input.addEventListener('input', rkoCalcChange)
 });
 
-numberInput.addEventListener('input', handleInputChange);
-
+rkoNumInput.addEventListener('input', rkoCalcChange);
 
 let rkoBlock = document.querySelectorAll('.calculator-rko-block');
 rkoBlock.forEach(function (value, index) {
