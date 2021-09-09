@@ -1,6 +1,6 @@
 .product_review-block {
     width: 920px;
-    margin: 30px 0;
+    margin: 30px 0 30px -65px;
 }
 
 .rat-block-header {
@@ -30,29 +30,7 @@
     margin-top: 25px;
 }
 
-.rat-block-title {
-    font-weight: 700;
-    font-size: 1.25rem;
-}
 
-.rat-block-content {
-    padding: 0 65px;
-    margin-top: 20px;
-    line-height: 1.6rem;
-}
-
-.msg-wrap {
-    padding: 30px 45px;
-    margin: 40px 65px;
-    border-radius: 15px;
-}
-
-.msg-wrap.default {
-    background: #F6F8FB;
-}
-.msg-wrap p{
-    margin-bottom: 0;
-}
 
 .product_review-block .rat-block-items {
     justify-content: space-between;
@@ -71,8 +49,6 @@
 }
 
 .product_review-block .rat-block-items .title {
-    font-size: .9rem;
-    font-weight: 600;
     margin: 10px 0 5px 0;
 }
 
@@ -97,8 +73,7 @@
     position: absolute;
 }
 
-.product_review-block .product_review-btn-wrap,
-.product_review-short-block .product_review-btn-wrap {
+.product_review-block .product_review-btn-wrap{
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -122,34 +97,70 @@
     padding: 8px 30px 8px 65px;
 }
 
-.product_review-short-block {
-    margin: 30px 0;
-    padding: 40px 65px;
-    width: 920px;
+
+.stars-bg{
+    width: 92px;
+    height: 16px;
+    display: inline-block;
 }
 
-.product_review-short-block .rat-block-items {
-    margin-bottom: 30px;
+
+.product_review-block .rat-block-items {
+    margin: 30px 0;
     justify-content: space-between;
     align-items: stretch;
 }
 
+.product_review-block hr {
+    margin: 0 60px;
+}
 
-.product_review-short-block .plus-minus {
+
+.product_review-block .plus-minus {
     display: flex;
+    padding: 0 60px;
 }
 
 .plus-minus .accordion-container {
     width: 50%;
 }
 
-.product_review-short-block .plus-minus .accordion-container .plus-minus-title {
-    font-weight: 700;
-    font-size: 1.2rem;
+.product_review-block .plus-minus .accordion-container .plus-minus-title {
     margin: 20px 0 20px 0;
 }
 
-.product_review-short-block .plus-minus .accordion-container .accordion {
+.product_review-lead{}
+
+.product_review-lead p {
+    padding: 0 65px;
+    margin-top: 20px;
+    line-height: 1.6rem;
+}
+
+
+.msg-wrap {
+    padding: 30px 45px;
+    margin: 40px 65px;
+    border-radius: 15px;
+}
+
+.msg-wrap.default {
+    background: #F6F8FB;
+}
+.msg-wrap p{
+    margin-bottom: 0;
+}
+
+
+/*
+
+
+
+
+
+
+
+.product_review-block .plus-minus .accordion-container .accordion {
     display: flex;
     cursor: pointer;
     transition: 0.5s;
@@ -158,28 +169,28 @@
     margin-top: 20px;
 }
 
-.product_review-short-block .plus-minus .accordion-container .accordion svg {
+.product_review-block .plus-minus .accordion-container .accordion svg {
     margin-top: 10px;
     width: fit-content;
 }
 
-.product_review-short-block .plus-minus .accordion-container .accordion span{
+.product_review-block .plus-minus .accordion-container .accordion span{
     margin-left: 15px;
 }
 
-.product_review-short-block .plus-minus .accordion-container .accordion .arrow {
+.product_review-block .plus-minus .accordion-container .accordion .arrow {
     transform: rotate(-90deg);
 }
 
-.product_review-short-block .plus-minus .accordion-container .accordion.active .arrow {
+.product_review-block .plus-minus .accordion-container .accordion.active .arrow {
     transform: rotate(0deg);
 }
 
-.product_review-short-block .plus-minus .accordion-container .active, .accordion:hover {
+.product_review-block .plus-minus .accordion-container .active, .accordion:hover {
     background-color: #fff;
 }
 
-.product_review-short-block .plus-minus .accordion-container .panel {
+.product_review-block .plus-minus .accordion-container .panel {
     padding: 0 30px;
     background-color: #fff;
     max-height: 0;
@@ -187,5 +198,5 @@
     transition: max-height 0.3s ease-out;
 }
 
-
+*/
 
