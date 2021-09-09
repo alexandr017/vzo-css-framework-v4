@@ -48,12 +48,12 @@
     flex-grow: 2;
 }
 
-.product_review-block .rat-block-items .title {
+.product_review-block .rat-block-items .rat_title {
     margin: 10px 0 5px 0;
 }
 
-.product_review-block .rat-block-items .text {
-    font-size: 0.8rem;
+.product_review-block .rat-block-items .rat_text {
+    font-size: 0.9rem;
 }
 
 .rat-block-pros-minus {
@@ -64,13 +64,9 @@
     font-weight: 600;
 }
 
-.rat-block-pros-minus ul.danger li:before {
-    content: "";
+.rat-block-pros-minus > div:last-child ul li:before {
     background: #EA674A;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    position: absolute;
+
 }
 
 .product_review-block .product_review-btn-wrap{
@@ -129,74 +125,14 @@
     margin: 20px 0 20px 0;
 }
 
-.product_review-lead{}
+.product_review-lead{
+    padding: 20px 65px 0;
+}
 
 .product_review-lead p {
-    padding: 0 65px;
-    margin-top: 20px;
     line-height: 1.6rem;
 }
 
-
-.msg-wrap {
-    padding: 30px 45px;
-    margin: 40px 65px;
-    border-radius: 15px;
+.product_review-block table{
+    border-collapse: collapse;
 }
-
-.msg-wrap.default {
-    background: #F6F8FB;
-}
-.msg-wrap p{
-    margin-bottom: 0;
-}
-
-
-/*
-
-
-
-
-
-
-
-.product_review-block .plus-minus .accordion-container .accordion {
-    display: flex;
-    cursor: pointer;
-    transition: 0.5s;
-    font-weight: 600;
-    line-height: 1.6rem;
-    margin-top: 20px;
-}
-
-.product_review-block .plus-minus .accordion-container .accordion svg {
-    margin-top: 10px;
-    width: fit-content;
-}
-
-.product_review-block .plus-minus .accordion-container .accordion span{
-    margin-left: 15px;
-}
-
-.product_review-block .plus-minus .accordion-container .accordion .arrow {
-    transform: rotate(-90deg);
-}
-
-.product_review-block .plus-minus .accordion-container .accordion.active .arrow {
-    transform: rotate(0deg);
-}
-
-.product_review-block .plus-minus .accordion-container .active, .accordion:hover {
-    background-color: #fff;
-}
-
-.product_review-block .plus-minus .accordion-container .panel {
-    padding: 0 30px;
-    background-color: #fff;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-*/
-
