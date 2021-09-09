@@ -71,7 +71,7 @@
     align-items: center;
 }
 .load-more-info:checked + .data-more-less .data-more-less-inner {
-    max-height: 1000px;
+    max-height: 2000px;
     transition: max-height 0.3s ease-in;
 }
 .load-more-info {

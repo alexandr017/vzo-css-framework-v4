@@ -3,8 +3,14 @@
 }
 .content .site-map-block a {
     display: block;
-    color: #222735;
     text-decoration: none;
     font-size: 1em;
     line-height: 2em;
+}
+.site-map-main-block {
+    column-count: 2;
+    column-gap: 2em;
+}
+.site-map-main-block .site-map-title:first-child {
+    margin-top: 0;
 }
