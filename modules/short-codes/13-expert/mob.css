@@ -17,6 +17,14 @@
     justify-content: center;
 }
 
+.expert-img img{
+    border-radius: 50%;
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 20px;
+}
+
+
 .expert-name {
     display: block;
 }
