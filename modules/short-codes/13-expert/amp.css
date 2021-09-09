@@ -3,6 +3,7 @@
     margin-bottom: 30px;
 }
 .expert-block {
+    margin: 30px 0;
     padding: 40px 30px;
 }
 
@@ -14,7 +15,13 @@
 .expert-img {
     display: flex;
     justify-content: center;
-    border-radius: 18px;
+}
+
+.expert-img amp-img{
+    border-radius: 50%;
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 20px;
 }
 
 .expert-name {
