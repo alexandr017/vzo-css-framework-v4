@@ -2,10 +2,6 @@
     margin: 35px 0;
 }
 
-.compare-block .compare-title {
-    font-weight: 600;
-}
-
 .compare-block .compare-list .compare-body .compare-logo {
     display: flex;
     align-items: center;
