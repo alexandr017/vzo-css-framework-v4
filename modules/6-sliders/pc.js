@@ -22,6 +22,7 @@ var slideShow = (function () {
         var arrows = true;
         var reviewItem = false;
         var dots = false;
+        var dotsBlock = '';
         var dotsCount = 0;
         var elHeight = '100';
         var customArrows = '';
@@ -111,7 +112,6 @@ var slideShow = (function () {
                 if(dots == true) {
                     circleScroll = false;
                     dotsCount = arr.length/step;
-                    let dotsBlock = '';
                     for(let i=0; i<dotsCount; i++) {
                         if(i==0){
                             dotsBlock += '<span class="js-slide-dots js-slide-active-dot js-slide-disable" data-dot = '+i+'></span>';
@@ -141,18 +141,15 @@ var slideShow = (function () {
             customWidth = '';
             customArrows = '';
             if(dots == true) {
-                if(element.getElementsByClassName('js-slide-btn-right').length != 0){
-                    element.getElementsByClassName('js-slide-btn-right')[0].style.display = 'none';
-                }
-                if(element.getElementsByClassName('js-slide-btn-left').length != 0){
-                    element.getElementsByClassName('js-slide-btn-left')[0].style.display = 'none';
-                }
+                element.getElementsByClassName('js-slide-btn-right')[0].style.display = 'none';
+                element.getElementsByClassName('js-slide-btn-left')[0].style.display = 'none';
             }
         }
 
         var slideLeft = function (e) {
             var target = e.target;
             if (target.className == 'js-slide-btn-left' || target.className == 'js-slide-dots') {
+                element = target.closest('.jsSlideMainBlock');
                 if(target.className == 'js-slide-dots') {
                     element.getElementsByClassName('js-slide-active-dot')[0].classList.remove('js-slide-disable');
                     let dotNum1 = element.getElementsByClassName('js-slide-active-dot')[0].dataset['dot'];
@@ -162,7 +159,6 @@ var slideShow = (function () {
                     let dotNum2 = target.dataset['dot'];
                     dotNum = Number(dotNum1) - Number(dotNum2);
                 }
-                element = target.closest('.jsSlideMainBlock');
                 element.getElementsByClassName('jsSlideContent')[0].style.justifyContent = 'flex-end';
             }
             arr1 = [];
@@ -198,7 +194,7 @@ var slideShow = (function () {
                 element.getElementsByClassName('jsSlideContent')[0].style.width = blockCustomWidth;
             }
             if (dots == true) {
-                element.getElementsByClassName('js-slider-dots')[0].style.display='none';
+                // element.getElementsByClassName('js-slider-dots')[0].style.display='none';
                 element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex('+dotNum*step*slideItemWidth+'%)';
             } else {
                 element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex('+step*slideItemWidth+'%)';
@@ -236,10 +232,9 @@ var slideShow = (function () {
                 var rightArrowBlock = '<div class="arrows-block">'+rightArrow+'</div>';
                 if(dots == true) {
                     leftArrowBlock = rightArrowBlock = '<div class="arrows-block"></div>';
-                    let dotsBlock = element.getElementsByClassName('js-slider-dots')[0].innerHTML;
-                    slideContentAll = slideContentAll+'<div class="js-slider-dots">'+dotsBlock+'</div>';
+                    dotsBlock = element.getElementsByClassName('js-slider-dots')[0].outerHTML;
                 }
-                addContent = leftArrowBlock + '<div class="jsSlideContent" '+blockCustomWidth+'>'+slideContentAll+'</div>' + rightArrowBlock;
+                addContent = leftArrowBlock + '<div class="jsSlideContent" '+blockCustomWidth+'>'+slideContentAll+'</div>' + rightArrowBlock+dotsBlock;
                 element.innerHTML = addContent;
                 showReviewsHiddenPart();
                 let arrowsBlocks = element.getElementsByClassName('arrows-block');
@@ -261,6 +256,7 @@ var slideShow = (function () {
 
         var slideRight = function (e) {
             var target = e.target;
+            element = target.closest('.jsSlideMainBlock');
             if (target.className == 'js-slide-btn-right' || target.className == 'js-slide-dots') {
                 if(target.className == 'js-slide-dots') {
                     element.getElementsByClassName('js-slide-active-dot')[0].classList.remove('js-slide-disable');
@@ -271,7 +267,6 @@ var slideShow = (function () {
                     let dotNum2 = target.dataset['dot'];
                     dotNum = Number(dotNum2) - Number(dotNum1);
                 }
-                element = target.closest('.jsSlideMainBlock');
             }
             f = f + step;
             k = k + step;
@@ -318,7 +313,7 @@ var slideShow = (function () {
 
             element.getElementsByClassName('jsSlideContent')[0].style.justifyContent = 'flex-start';
             if (dots == true) {
-                element.getElementsByClassName('js-slider-dots')[0].style.display='none';
+                // element.getElementsByClassName('js-slider-dots')[0].style.display='none';
                 element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex(-'+dotNum*step*slideItemWidth+'%)';
             } else {
                 element.getElementsByClassName('jsSlideContent')[0].style.transform = 'translatex(-'+step*slideItemWidth+'%)';
@@ -345,10 +340,9 @@ var slideShow = (function () {
                 var leftArrowBlock = '<div class="arrows-block">'+leftArrow+'</div>';
                 if(dots == true) {
                     leftArrowBlock = rightArrowBlock = '<div class="arrows-block"></div>';
-                    let dotsBlock = element.getElementsByClassName('js-slider-dots')[0].innerHTML;
-                    slideContentAll = slideContentAll+'<div class="js-slider-dots">'+dotsBlock+'</div>';
+                    dotsBlock = element.getElementsByClassName('js-slider-dots')[0].outerHTML;
                 }
-                addContent =  leftArrowBlock + '<div class="jsSlideContent" '+blockCustomWidth+'>'+slideContentAll+'</div>' + rightArrowBlock;
+                addContent =  leftArrowBlock + '<div class="jsSlideContent" '+blockCustomWidth+'>'+slideContentAll+'</div>' + rightArrowBlock+dotsBlock;
                 element.innerHTML = addContent;
                 showReviewsHiddenPart();
                 let arrowsBlocks = element.getElementsByClassName('arrows-block');
@@ -408,7 +402,7 @@ var slideShow = (function () {
             } else {
                 customArrows = '';
             }
-            debugger
+
             dots = dataSettings.dots;
             if (dataSettings.responsive !== undefined) {
                 let responsive = dataSettings.responsive;
@@ -495,56 +489,3 @@ var slideShow = (function () {
         init(data);
     }
 }());
-if(document.getElementsByClassName('bank-review-slider').length>0){
-    slideShow({
-        element:'.bank-review-slider',
-        slidesToShow:3,
-        slidesToScroll:1,
-        circleScroll:false,
-        height:'400',
-        dots:true,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    })
-}
-
-if(document.getElementsByClassName('smi-slider').length>0){
-    slideShow({
-        element:'.smi-slider',
-        slidesToShow:3,
-        slidesToScroll:1,
-        circleScroll:false,
-        height:'220',
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    })
-}
-
