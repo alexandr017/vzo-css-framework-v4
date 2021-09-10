@@ -1,13 +1,15 @@
 .best-proposal {
     display: flex;
     margin: 30px 0;
+    flex-wrap: wrap;
 }
 
 .best-proposal-block {
     overflow: hidden;
+    margin: 15px 0;
 }
 
-.best-proposal-block:first-of-type {
+.best-proposal-block:nth-child(odd){
     margin-right: 30px;
 }
 
