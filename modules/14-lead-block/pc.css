@@ -1,0 +1,34 @@
+.lead-main-container {
+    padding: 15px 30px 30px 65px;
+    background-image: url("/v4/images/lead-block-bg.png");
+    background-repeat: no-repeat;
+}
+
+.lead-main-container h1{
+    width: 70%;
+    line-height: 2.75rem;
+}
+
+.lead-main-container p {
+    width: 70%;
+}
+
+.lead-main-container .lead-icon {
+    display: block;
+    float: right;
+}
+
+.lead-btn-more,
+.lead-btn-less {
+    color: #4FABFA;
+    font-size: .87rem;
+    cursor: pointer;
+}
+
+.lead-wrap ul {
+    margin-bottom: 5px;
+}
+
+.hidden-lead-part {
+    display: none;
+}

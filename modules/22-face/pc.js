@@ -4,7 +4,6 @@ let faceLoadMore = document.getElementsByClassName("face-more")[0];
 let faceLoadLess = document.getElementsByClassName("face-less")[0];
 
 hiddenFaceClass = "hiddenFaceTags";
-hiddenItems = Array.from(document.querySelectorAll(".hiddenFaceTags"));
 faceLoadLess.style.display = "none";
 faceLoadMore.style.display = "none";
 

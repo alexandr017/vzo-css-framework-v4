@@ -4,7 +4,7 @@
 
 .reviews .scale-rating-block {
     width: 920px;
-    margin: 30px 0 30px -55px;
+    margin: 30px 0 30px 95px;
     padding: 35px 65px;
 }
 
@@ -57,170 +57,76 @@
     margin: 0 auto;
 }
 
-.reviews .sort {
-    float: right;
-    margin-right: -55px;
-}
-
-.reviews .sort .sort_el {
-    margin-left: 50px;
-}
-
-.reviews .sort .sort_el .main-sort {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.reviews .sort .sort_el .main-sort svg {
-    margin-left: 5px;
-}
-
-.reviews .sort .sort_el {
-    margin-right: 50px;
-    position: relative;
-}
-
-.reviews .sort .sort_el span {
-    display: block;
-    text-align: center;
-    margin: 5px 0;
-}
-
-.reviews .sub-menu-sort-container {
-    display: flex;
-    position: absolute;
-    left: -9999px;
-    list-style: none;
-    padding: 10px 0 0 0;
-}
-
-.reviews .sort .sort_el:hover .sub-menu-sort-container {
-    left: -140px;
-}
-
-.reviews .sort .sort_el:hover svg {
-    transform: rotate(180deg);
-}
-
-.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column {
-    z-index: 1;
-    background: #fff;
-    min-width: 260px;
-}
-
-.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col:first-of-type {
-    margin-top: 20px;
-}
-
-.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col:last-of-type {
-    margin-bottom: 20px;
-}
-
-.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column span:hover,
-.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column span.active {
-    color: #2ED47A;
-    cursor: pointer;
-}
-
-.reviews .sort .sort_el .sub-menu-sort-container .sub-nav_one-column hr {
-    margin: 20px 0;
-    height: 1px;
-    border: none;
-    background-color: #E6EBEF;
-}
-
 .reviews .block-reviews {
-    display:flex;
-    margin: 30px 0 0 100px;
+    margin: 60px 160px;
 }
 
-.reviews .block-reviews .text-review .user-logo {
-    margin-top: 50px;
+.review-inner-block {
     display: flex;
-    font-size: 1.2rem;
+    margin: 60px 0;
 }
 
-.reviews .block-reviews .text-review .user-logo svg {
-    position: absolute;
-    margin: 10px 0 0 -120px;
+.reviews .block-reviews .review-wrap .user-logo svg {
+    margin-left: -60px;
 }
 
-.reviews .block-reviews .text-review .user-logo span,
-.reviews .block-reviews .text-review .user-rating,
-.reviews .block-reviews .text-review .plus,
-.reviews .block-reviews .text-review .minus,
-.reviews .block-reviews .text-review .comment {
+.review-user-block {
+    margin-left: 30px;
+}
+
+.reviews .block-reviews .review-wrap .user-rating,
+.reviews .block-reviews .review-wrap .review-part {
     margin-top: 25px;
 }
 
-.reviews .block-reviews .text-review .user-logo span,
-.reviews .block-reviews .text-review .comment span:first-of-type,
-.reviews .block-reviews .text-review .replace div span:first-of-type {
-    font-weight: 700;
+.reviews .block-reviews .review-wrap .review-user-name,
+.reviews .block-reviews .review-wrap .review-title {
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
-.reviews .block-reviews .text-review .plus span,
-.reviews .block-reviews .text-review .minus span,
-.reviews .block-reviews .text-review .comment span{
-    display: block;
-}
-
-.reviews .block-reviews .text-review .plus span:first-of-type {
+.reviews .block-reviews .review-wrap .plus .positive-part {
     color: #2ED47A;
-    font-size: 1.2rem;
-    font-weight: 600;
 }
 
-.reviews .block-reviews .text-review .minus span:first-of-type {
+.reviews .block-reviews .review-wrap .minus .negative-part {
     color: #FF4D4A;
-    font-weight: 600;
-    font-size: 1.2rem;
 }
 
-.reviews .block-reviews .text-review .comment span:first-of-type {
-    font-size: 1.2rem;
-}
-
-.reviews .block-reviews .text-review .minus span:last-of-type,
-.reviews .block-reviews .text-review .plus span:last-of-type,
-.reviews .block-reviews .text-review .comment span:last-of-type {
+.reviews .block-reviews .review-wrap .review-part-body {
     margin-top: 5px;
 }
 
-.reviews .block-reviews .text-review .comment {
-    margin-bottom: 100px;
-}
-
-.reviews .block-reviews .text-review .comment a {
+.reviews .block-reviews .review-wrap .btn-answer {
+    margin-top: 30px;
     float: right;
+    color: #4FABFA;
 }
 
-.reviews .block-reviews .text-review .comment a:hover {
+.reviews .block-reviews .review-wrap .btn-answer:hover {
     background: #F6F8FB;
 }
 
-.reviews .block-reviews .text-review .comment .btn-2 {
-    box-shadow: none;
-}
-
-.reviews .block-reviews .text-review .replace {
+.reviews .block-reviews .review-wrap .replace {
     display: flex;
-    margin-left: 45px;
+    margin-left: 50px;
 }
 
-.reviews .block-reviews .text-review .replace div svg {
-    margin: 3px 0 0 -30px;
+.reviews .block-reviews .review-wrap .replace .replace-confirm span {
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
-.reviews .block-reviews .text-review .replace div .replace_el {
+.reviews .block-reviews .review-wrap .replace .replace-icon {
+    margin: 5px 30px 0 0;
+}
+
+.reviews .block-reviews .review-wrap .replace .replace-confirm .replace_el {
     margin-top:  5px;
 }
 
 .reviews .review-f {
-    margin: 55px 0 30px -55px;
-    width: 920px;
+    margin: 55px 135px;
 }
 
 .reviews .review-f .review-f-bl {
@@ -234,7 +140,6 @@
     width: 450px;
     margin-top: 10px;
     padding: 15px 45px;
-    font-size: 1rem;
     outline: none;
     border: none;
 }

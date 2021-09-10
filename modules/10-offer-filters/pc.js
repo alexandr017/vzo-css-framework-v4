@@ -2,7 +2,7 @@ let offerFiltersBlock = $$('.offer-filter-wrap');
     offerFiltersBlock.forEach(function (value, index) {
     let buttonShow = value.querySelector('.filters-arrow-down'),
         buttonHide = value.querySelector('.filters-arrow-up'),
-         offerFilterItem = value.querySelector('.offer-filters-item'),
+        offerFilterItem = value.querySelector('.offer-filters-item'),
         hiddenBlock = value.querySelector('.offer-filters-hidden-block');
     buttonShow.addEventListener('click', event => {
         document.querySelectorAll('.offer-filters-item').forEach(function (value, index) {
