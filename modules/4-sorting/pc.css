@@ -1,66 +1,55 @@
 .sort {
     float: right;
-    margin-right: -55px;
-}
-
-.sort .sort_el {
-    margin-left: 50px;
-}
-
-.sort .sort_el .main-sort {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.sort .sort_el .main-sort svg {
-    margin-left: 5px;
-}
-
-.sort .sort_el {
-    margin-right: 50px;
     position: relative;
-}
-
-.sort .sort_el span {
-    display: block;
-    text-align: center;
-    margin: 5px 0;
-}
-
-.sub-menu-sort-container {
-    display: flex;
-    position: absolute;
-    left: -9999px;
-    list-style: none;
-    padding: 10px 0 0 0;
-}
-
-.sort .sort_el:hover .sub-menu-sort-container {
-    left: -140px;
-}
-
-.sort .sort_el:hover svg{
-    transform: rotate(180deg);
-}
-
-.sort .sort_el .sub-menu-sort-container .sub-nav_one-column {
-    z-index: 1;
-    background: #fff;
     min-width: 260px;
 }
 
-.sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col:first-of-type {
-    margin-top: 20px;
+.sort .main-sort {
+    display: block;
+    margin: 5px 0;
+    text-align: right;
+    cursor: pointer;
 }
 
-.sort .sort_el .sub-menu-sort-container .sub-nav_one-column .p-col:last-of-type {
+.sort .main-sort svg {
+    margin-left: 5px;
+    vertical-align: 2px;
+}
+
+
+
+
+.sub-menu-sort-container {
+    position: absolute;
+    list-style: none;
+    padding: 10px 0 0 0;
+    display: none;
+}
+
+.sort:hover .sub-menu-sort-container{
+    display: block;
+}
+
+.sort:hover svg{
+    transform: rotate(180deg);
+}
+
+.sort .sub-nav_one-column {
+    background: #fff;
+    min-width: 260px;
+    padding: 1px;
+}
+
+.sort .sort-items:last-of-type {
     margin-bottom: 20px;
 }
 
-.sort .sort_el .sub-menu-sort-container .sub-nav_one-column span:hover,
-.sort .sort_el .sub-menu-sort-container .sub-nav_one-column span.active {
+.sort .sort-item {
+    display: block;
+    margin: 15px 45px;
+}
+
+.sort .sort-item:hover{
     color: #2ED47A;
     cursor: pointer;
 }
