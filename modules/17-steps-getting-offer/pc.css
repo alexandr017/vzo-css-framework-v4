@@ -11,8 +11,6 @@
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    position: relative;
-
 }
 .getting-offer-text{
     font-size: 16px;
@@ -25,11 +23,12 @@
 .getting-offer-item {
     width: 33%;
     padding: 0 1em;
+    position: relative;
 }
 .getting-offer-item:not(:last-child) .getting-offer-num::after {
     content: '';
     position: absolute;
     border-bottom: 1px solid #E6EBEF;
-    width: 230px;
-    left: 3.3em;
+    width: 60%;
+    left: 70%;
 }
