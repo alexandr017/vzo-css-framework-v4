@@ -50,13 +50,11 @@
     </style>
 </head>
 <body>
-<div class="container">
     <?php
     $mode_content = $_SERVER['DOCUMENT_ROOT'].'/modules/'.$module.'/amp.html';
     if(file_exists($mode_content)){
         include ($mode_content);
     }
     ?>
-</div>
 </body>
 </html>
