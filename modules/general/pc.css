@@ -24,7 +24,7 @@ body, input, textarea, select, .btn , .btn-1{
 }
 
 
-a, a:visited:not(a.btn,.breadcrumbs a) {
+a, a:visited:not(a.btn,.breadcrumbs a, .header a) {
     color: #4FABFA;
 }
 

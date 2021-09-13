@@ -33,14 +33,6 @@
     height: 45px;
 }
 
-.circle-play {
-   fill: white;
-}
-
-.icon-play {
-    fill: #222735;
-}
-
 .play-video-el {
     background: #000;
     border-radius: 17px;
@@ -55,18 +47,9 @@
     transform: scale(1.1)
 }
 
-.play-video-el svg:hover .circle-play, .insert-video-block:hover .circle-play{
-    fill: #2ED47A;
-}
-
-.play-video-el svg:hover .icon-play {
-    fill: white;
-}
-
 .play-video-el:hover .video-img {
     opacity: 1;
 }
-
 
 .insert-video-block:hover .video-img{
     transform: scale(1.1);

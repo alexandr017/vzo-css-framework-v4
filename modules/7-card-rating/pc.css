@@ -1,0 +1,18 @@
+.rating-container {
+    margin: 30px 0;
+    display: block;
+}
+
+.rating-company-name {
+    margin-bottom: 40px;
+}
+
+.rating-container span {
+    color: #222735;
+    font-weight: 600;
+}
+
+.rating-container a.rating-title {
+    display: block;
+}
+

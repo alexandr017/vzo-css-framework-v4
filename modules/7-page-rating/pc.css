@@ -1,0 +1,46 @@
+.rating-container {
+    margin: 30px 0;
+    text-align: center;
+}
+.rating-container .h3 {
+    margin: 30px auto;
+}
+
+.rating-container .rating-wrap svg {
+    fill:#E6EBEF;
+}
+
+.rating-container .rating-val {
+    margin-top: 20px;
+    color: #95A5B0;
+}
+
+.rating-container .rating-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating-container .rating-wrap > input{ display:none;}
+
+.rating-container .rating-wrap > label {
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.rating-container .rating-wrap > label::before{
+    content: url( "/v4/images/stars.svg");
+    position: absolute;
+    opacity: 0;
+}
+
+.rating-container .rating-wrap > label:hover:before,
+.rating-container .rating-wrap > label:hover ~ label:before {
+    opacity: 1 !important;
+}
+
+.rating-container .rating-wrap > input:checked ~ label:before{
+    opacity:1;
+}
+
