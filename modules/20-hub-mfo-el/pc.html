@@ -1,63 +1,66 @@
-<div class="hub-elements">
-    <div class="hub-services-block shadow border-radius">
-        <div class="hub-services-title">Рассчитать займ в Займер</div>
-        <div class="hub-services-label">Сумма</div>
-        <div class="hub-slider-wrap">
-            <input type="range" min="0" max="100" step="1" value="50" class="tick" >
-        </div>
-        <div class="hub-payment">
-            <span class="hub-payment-val">500</span>
-            <span class="hub-payment-val">7875</span>
-            <span class="hub-payment-val">15250</span>
-            <span class="hub-payment-val">22625</span>
-            <span class="hub-payment-val">30000</span>
-        </div>
-        <hr>
-        <div class="hub-info-block">
-            <div class="hub-info-el">
-                <span class="hub-info-label-title">Сумма:</span>
-                <span class="hub-info-label">20 100 руб</span>
+<div class="container">
+
+    <div class="hub-elements">
+        <div class="hub-services-block shadow border-radius">
+            <div class="hub-services-title">Рассчитать займ в Займер</div>
+            <div class="hub-services-label">Сумма</div>
+            <div class="hub-slider-wrap">
+                <input type="range" min="0" max="100" step="1" value="50" class="tick" >
             </div>
-            <div class="hub-info-el">
-                <span class="hub-info-label-title">Срок:</span>
-                <span class="hub-info-label">183 дн.</span>
+            <div class="hub-payment">
+                <span class="hub-payment-val">500</span>
+                <span class="hub-payment-val">7875</span>
+                <span class="hub-payment-val">15250</span>
+                <span class="hub-payment-val">22625</span>
+                <span class="hub-payment-val">30000</span>
             </div>
-            <div class="hub-info-el">
-                <span class="hub-info-label-title">Процентная ставка:</span>
-                <span class="hub-info-label">1%</span>
+            <hr>
+            <div class="hub-info-block">
+                <div class="hub-info-el">
+                    <span class="hub-info-label-title">Сумма:</span>
+                    <span class="hub-info-label">20 100 руб</span>
+                </div>
+                <div class="hub-info-el">
+                    <span class="hub-info-label-title">Срок:</span>
+                    <span class="hub-info-label">183 дн.</span>
+                </div>
+                <div class="hub-info-el">
+                    <span class="hub-info-label-title">Процентная ставка:</span>
+                    <span class="hub-info-label">1%</span>
+                </div>
+                <div class="hub-info-el">
+                    <span class="hub-info-label-title">Переплата:</span>
+                    <span class="hub-info-label active">36 783 руб</span>
+                </div>
             </div>
-            <div class="hub-info-el">
-                <span class="hub-info-label-title">Переплата:</span>
-                <span class="hub-info-label active">36 783 руб</span>
+            <div class="hub-btn-wrap">
+                <a href="#" class="btn btn-cnv">Оформить займ</a>
+            </div>
+            <p class="hub-note">
+                Вышеуказанная форма используется для имитации расчета стоимости займа с ориентировочными значениями.
+                Для уточнения информации нажмите кнопку. Минимальная сумма займа: 2 000 рублей, максимальная: 30 000 рублей.
+                Процентная ставка в год: 365% . Минимальный срок: 5 дней, максимальный: 365 дней. Предложение не является
+                офертой.
+            </p>
+        </div>
+
+        <div class="hub-calc-block">
+            <div class="hub-services-label">Сумма кредита</div>
+            <div class="hub-calc-wrap">
+                <input type="number" step="100" min="0" max="1200000" value="600000" id="rangeNumber"  oninput="rangeType.value=value">
+                <input type="range" step="100" min="0" max="1200000" value="600000" id="rangeType" oninput="rangeNumber.value=value">
             </div>
         </div>
-        <div class="hub-btn-wrap">
-            <a href="#" class="btn btn-cnv">Оформить займ</a>
+
+        <div class="hub-rko-block">
+            <div class="hub-services-title">Подбор расчетного счета</div>
+            <div class="hub-rko-container-wrap">
+                <span>Количество платежей:</span>
+                <span id="count_range_input_sum" class="hub-rko-val">50</span><br>
+                <input  type="range" min="0" max="100" value="50" step="1" id="count_range_input">
+            </div>
+            <div class="hub-rko-list"><ul id="ul"></ul></div>
         </div>
-        <p class="hub-note">
-            Вышеуказанная форма используется для имитации расчета стоимости займа с ориентировочными значениями.
-            Для уточнения информации нажмите кнопку. Минимальная сумма займа: 2 000 рублей, максимальная: 30 000 рублей.
-            Процентная ставка в год: 365% . Минимальный срок: 5 дней, максимальный: 365 дней. Предложение не является
-            офертой.
-        </p>
     </div>
 
-    <div class="hub-calc-block">
-        <div class="hub-services-label">Сумма кредита</div>
-        <div class="hub-calc-wrap">
-            <input type="number" step="100" min="0" max="1200000" value="600000" id="rangeNumber"  oninput="rangeType.value=value">
-            <input type="range" step="100" min="0" max="1200000" value="600000" id="rangeType" oninput="rangeNumber.value=value">
-        </div>
-    </div>
-
-    <div class="hub-rko-block">
-        <div class="hub-services-title">Подбор расчетного счета</div>
-        <div class="hub-rko-container-wrap">
-            <span>Количество платежей:</span>
-            <span id="count_range_input_sum" class="hub-rko-val">50</span><br>
-            <input  type="range" min="0" max="100" value="50" step="1" id="count_range_input">
-        </div>
-        <div class="hub-rko-list"><ul id="ul"></ul></div>
-    </div>
 </div>
-

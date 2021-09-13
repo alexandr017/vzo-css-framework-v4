@@ -1,0 +1,53 @@
+.comp-fixed-block {
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+.comp-fixed-img-block {
+    display: flex;
+    align-items: center;
+}
+.comp-fixed-img {
+    background-image: url("/v4/images/similar-offers.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    margin-right: 1em;
+}
+.comp-fixed-title {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.comp-fixed-prop-val {
+    font-weight: 600;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+.comp-fixed-prop-name {
+    color: #95A5B0;
+    font-size: 0.8em;
+}
+.comp-fixed-text {
+    display: inline-flex;
+}
+.comp-fixed-prop {
+    margin-right: 2em;
+    text-align: center;
+}
+.comp-fixed-svg {
+    margin-right: 1em;
+}
+.container .comp-fixed {
+    top: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    max-width: 1110px;
+    margin: 0 auto;
+    background: #fff;
+}

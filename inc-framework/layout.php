@@ -21,6 +21,7 @@
         <?php echo generateSelectOptions(); ?>
     </select>
     </p>
+</div>
 <?php
 // данные модули грузим всегда, потому что они глобальные
 import('fonts/proxima-nova');
@@ -39,7 +40,7 @@ if (isset($_GET['module'])) {
     import($_GET['module']);
 }
 ?>
-</div>
+
 <script>
     let modeSelect = document.getElementById('modeSelect');
     modeSelect.addEventListener("change",()  => {

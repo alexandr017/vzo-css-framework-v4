@@ -1,22 +1,3 @@
-.breadcrumbs {
-    font-size: .87rem;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.breadcrumbs a,
-.breadcrumbs a:visited {
-    color: #222735;
-}
-
-.breadcrumbs svg {
-    margin: 0 10px;
-}
-
-.kb_title {
-    color: #87919F;
-}
-
 .qa-block .sort-question .description {
    margin-top: 10px;
 }

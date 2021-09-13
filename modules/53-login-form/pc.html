@@ -1,47 +1,52 @@
-<div class="form-success-msg-block border-radius">
-    <svg class="form-success-svg" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 1L7.25 15L1 8.63636" stroke="#2CDD88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <div class="form-success-msg">Пароль успешно изменен. Войдите в свой личный кабинет</div>
-</div>
-<div class="form-main-error-block-red border-radius">
-    <svg class="main-error-svg" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13 8.19183V12.9057M13 17.6195H13.0115M11.036 2.13455L1.30783 18.798C1.10726 19.1543 1.00113 19.5584 1.00001 19.97C0.998886 20.3815 1.10281 20.7862 1.30143 21.1437C1.50005 21.5012 1.78646 21.7992 2.13215 22.0079C2.47784 22.2166 2.87077 22.3288 3.27184 22.3333H22.7282C23.1292 22.3288 23.5222 22.2166 23.8678 22.0079C24.2135 21.7992 24.4999 21.5012 24.6986 21.1437C24.8972 20.7862 25.0011 20.3815 25 19.97C24.9989 19.5584 24.8927 19.1543 24.6922 18.798L14.964 2.13455C14.7593 1.78821 14.471 1.50186 14.1269 1.30313C13.7829 1.1044 13.3948 1 13 1C12.6052 1 12.2171 1.1044 11.8731 1.30313C11.529 1.50186 11.2407 1.78821 11.036 2.13455Z" stroke="#FF4E59" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <div class="main-error-msg-text">Вы указали неверную почту или пароль</div>
-</div>
-<div class="shadow border-radius user-guest-form-block">
-    <div class="user-guest-form-text-block">
-        <div class="user-guest-form-title h3">Вход в личный кабинет</div>
-        <form action="" class="user-guest-form">
-            <div class="user-guest-form-item-all">
-                <label for="user-guest-email" class="user-guest-label"> Почта</label>
-                <input type="email" placeholder="ivanov@gmail.com" class="user-guest-form-inp err-msg-block-red" id="user-guest-email">
-                <div class="err-msg-red">Пожалуйста, введите адрес эл.почты полностью</div>
+<div class="container">
+
+
+    <div class="form-success-msg-block border-radius">
+        <svg class="form-success-svg" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 1L7.25 15L1 8.63636" stroke="#2CDD88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="form-success-msg">Пароль успешно изменен. Войдите в свой личный кабинет</div>
+    </div>
+    <div class="form-main-error-block-red border-radius">
+        <svg class="main-error-svg" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 8.19183V12.9057M13 17.6195H13.0115M11.036 2.13455L1.30783 18.798C1.10726 19.1543 1.00113 19.5584 1.00001 19.97C0.998886 20.3815 1.10281 20.7862 1.30143 21.1437C1.50005 21.5012 1.78646 21.7992 2.13215 22.0079C2.47784 22.2166 2.87077 22.3288 3.27184 22.3333H22.7282C23.1292 22.3288 23.5222 22.2166 23.8678 22.0079C24.2135 21.7992 24.4999 21.5012 24.6986 21.1437C24.8972 20.7862 25.0011 20.3815 25 19.97C24.9989 19.5584 24.8927 19.1543 24.6922 18.798L14.964 2.13455C14.7593 1.78821 14.471 1.50186 14.1269 1.30313C13.7829 1.1044 13.3948 1 13 1C12.6052 1 12.2171 1.1044 11.8731 1.30313C11.529 1.50186 11.2407 1.78821 11.036 2.13455Z" stroke="#FF4E59" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="main-error-msg-text">Вы указали неверную почту или пароль</div>
+    </div>
+    <div class="shadow border-radius user-guest-form-block">
+        <div class="user-guest-form-text-block">
+            <div class="user-guest-form-title h3">Вход в личный кабинет</div>
+            <form action="" class="user-guest-form">
+                <div class="user-guest-form-item-all">
+                    <label for="user-guest-email" class="user-guest-label"> Почта</label>
+                    <input type="email" placeholder="ivanov@gmail.com" class="user-guest-form-inp err-msg-block-red" id="user-guest-email">
+                    <div class="err-msg-red">Пожалуйста, введите адрес эл.почты полностью</div>
+                </div>
+                <div class="user-guest-form-item-all">
+                    <label for="user-guest-pass" class="user-guest-label"> Пароль</label>
+                    <input type="password" placeholder="ivanovpassword123" class="user-guest-form-inp" id="user-guest-pass">
+                    <span class="show-pass"></span>
+                </div>
+                <div class="captcha"><input type="checkbox" id="user-guest-captcha"> <label for="user-guest-captcha">Я не робот</label></div>
+                <div class="user-guest-form-item-all">
+                    <label for="remember-me" class="remember-me-label">
+                        <span class="remember-me-btns">
+                        <input type="checkbox" id="remember-me">
+                        <svg class="checked-checkmark" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="18" height="18" rx="5" fill="#222735"/>
+                            <path d="M13 6L7.5 11L5 8.72727" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span>
+                        <span>Запомнить меня</span>
+                    </label>
+                </div>
+                <button class="btn btn-success user-guest-form-btn" type="submit">Вход</button>
+            </form>
+            <div class="account-exist-and-log-block">
+                <a href="#" rel="nofollow" class="account-exist">Восстановить пароль</a>
+                <a href="#" rel="nofollow" class="log-link">Зарегистрироваться</a>
             </div>
-            <div class="user-guest-form-item-all">
-                <label for="user-guest-pass" class="user-guest-label"> Пароль</label>
-                <input type="password" placeholder="ivanovpassword123" class="user-guest-form-inp" id="user-guest-pass">
-                <span class="show-pass"></span>
-            </div>
-            <div class="captcha"><input type="checkbox" id="user-guest-captcha"> <label for="user-guest-captcha">Я не робот</label></div>
-            <div class="user-guest-form-item-all">
-                <label for="remember-me" class="remember-me-label">
-                    <span class="remember-me-btns">
-                    <input type="checkbox" id="remember-me">
-                    <svg class="checked-checkmark" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="18" height="18" rx="5" fill="#222735"/>
-                        <path d="M13 6L7.5 11L5 8.72727" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    </span>
-                    <span>Запомнить меня</span>
-                </label>
-            </div>
-            <button class="btn btn-success user-guest-form-btn" type="submit">Вход</button>
-        </form>
-        <div class="account-exist-and-log-block">
-            <a href="#" rel="nofollow" class="account-exist">Восстановить пароль</a>
-            <a href="#" rel="nofollow" class="log-link">Зарегистрироваться</a>
         </div>
     </div>
+
 </div>
