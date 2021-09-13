@@ -1,0 +1,42 @@
+.modal__title {
+    margin-bottom: 15px;
+}
+
+.modal-search__input {
+    border-radius: 39px!important;
+}
+
+.modal-search-block__button {
+    position: absolute;
+    margin-left: 370px;
+    cursor: pointer;
+    margin-top: -40px;
+}
+
+.modal-list-container {
+    padding: 20px 0 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.modal-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.modal-list__el {
+    margin: 5px 0;
+    width: 50%;
+}
+
+.modal-list__el a {
+    color: #222735 !important;
+}
+
+.modal-list__el a:hover {
+    color: #2ED47A !important;
+}
