@@ -1,0 +1,43 @@
+.articles-block .h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.article-inner-block .article-content {
+    margin-top: 14px;
+    margin-bottom: 25px;
+}
+.article-content {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.article-title {
+    background: #F6F8FB;
+    border-radius: 3px;
+    padding: 0.5em 1em;
+}
+.article-date {
+    color: #95A5B0;
+    font-size: 0.8em;
+    margin-top: 3em;
+}
+.articles-slider.slick-slide {
+    height: 200px;
+}
+
+.article_prev_el {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -90px;
+}
+
+.article_next_el {
+    cursor: pointer;
+    margin-top: -130px;
+    margin-right: -90px;
+    float: right;
+}
+.article-inner-block{
+    padding: 30px;
+}
