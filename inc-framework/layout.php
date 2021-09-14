@@ -32,8 +32,8 @@ import('_framework/tables');
 import('general');
 import('62-messages');
 import('63-user-guest-form');
-import('6-sliders');
-import('_framework/modal_general');
+import('6-sliders-general');
+import('12-modal-general');
 
 
 if (isset($_GET['module'])) {

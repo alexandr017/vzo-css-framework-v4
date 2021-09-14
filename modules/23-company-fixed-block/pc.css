@@ -1,5 +1,5 @@
 .comp-fixed-block {
-    display: flex;
+    display: none;
     align-items: center;
     padding: 1em 2em;
     justify-content: space-between;
@@ -10,10 +10,6 @@
     align-items: center;
 }
 .comp-fixed-img {
-    background-image: url("/v4/images/similar-offers.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
     height: 65px;
     width: 65px;
     margin-right: 1em;
@@ -50,4 +46,5 @@
     max-width: 1110px;
     margin: 0 auto;
     background: #fff;
+    display: flex;
 }
