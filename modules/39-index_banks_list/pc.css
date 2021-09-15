@@ -1,38 +1,29 @@
 .bank-item {
-    display: flex;
     padding: 1.5em 2em;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.bank-logo {
-    background-image: url("/v4/images/go-to-acc-logo.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 90px;
-    height: 90px;
-}
+
 .bank-blue-text {
     color: #4FABFA;
     display: block;
 }
 .bank-gray-text {
     color: #95A5B0;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     display: block;
 }
 .bank-name {
     min-width: 20%;
 }
 .bank-name, .bank-contact,.bank-k5m,.bank-rate {
-    display: flex;
     flex-direction: column;
-    line-height: 2em;
+    line-height: 2rem;
 }
 .bank-name .bank-blue-text, .bank-phone,.bank-k5m-val,.bank-rat-num {
     font-weight: 600;
 }
 .bank-rate-val {
-    display: flex;
     align-items: center;
 }
 .bank-rat-num {
@@ -46,6 +37,12 @@
     display: inline-block;
     padding: 0.5em 1.5em;
     background-color: #F6F8FB;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin: 0 0.5em 1em 0.5em;
+    color: #222735;
+}
+
+.bank-cat-item:hover {
+    background: #222735;
+    color: #fff;
 }
