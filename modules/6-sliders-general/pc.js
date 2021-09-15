@@ -140,9 +140,13 @@ var slideShow = (function () {
             }
             customWidth = '';
             customArrows = '';
-            if(dots == true) {
-                element.getElementsByClassName('js-slide-btn-right')[0].style.display = 'none';
-                element.getElementsByClassName('js-slide-btn-left')[0].style.display = 'none';
+            if(dots == true || arr.length < slidesCount) {
+                if(element.getElementsByClassName('js-slide-btn-right').length != 0){
+                    element.getElementsByClassName('js-slide-btn-right')[0].style.display = 'none';
+                }
+                if(element.getElementsByClassName('js-slide-btn-left').length != 0){
+                    element.getElementsByClassName('js-slide-btn-left')[0].style.display = 'none';
+                }
             }
         }
 
