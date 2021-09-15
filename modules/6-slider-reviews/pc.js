@@ -1,6 +1,6 @@
-if(document.getElementsByClassName('bank_review_slider').length>0){
+if(document.getElementsByClassName('review_slider').length>0){
     slideShow({
-        element:'.bank_review_slider',
+        element:'.review_slider',
         slidesToShow:3,
         slidesToScroll:1,
         circleScroll:false,

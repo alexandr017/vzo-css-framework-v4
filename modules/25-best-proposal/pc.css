@@ -7,6 +7,7 @@
 .best-proposal-block {
     overflow: hidden;
     margin: 15px 0;
+    max-width: calc(50% - 15px);
 }
 
 .best-proposal-block:nth-child(odd){

@@ -1,16 +1,16 @@
-.bank-review .h2 {
+.review-block .h2 {
     text-align: center;
     font-weight: 700;
     margin-bottom: 30px;
 }
-.bank_review-inner-block {
+.review-inner-block {
     max-height: 360px;
 }
-.bank_review-inner-block{
+.review-inner-block{
     padding: 30px;
 }
 
-.bank_review-rating {
+.review-rating {
     text-align: center;
 }
 
@@ -19,7 +19,7 @@
     font-weight: 600;
 }
 
-.bank_review-info .review-name {
+.review-info .review-name {
     font-weight: 600;
     margin-top: 10px;
 }
