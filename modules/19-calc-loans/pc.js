@@ -2,6 +2,7 @@ function loanCalc() {
     let loanNumInput = document.querySelectorAll('.overpayment-num-input');
     let loanRangeInput = document.querySelectorAll('.overpayment-range-input');
     for (let i = 0; i < loanNumInput.length; i++) {
+        loanRangeInput[i].style.backgroundSize = loanRangeInput[i].value * 100  / (loanRangeInput[i].max - loanRangeInput[i].min) + '% 100%';
         function loanCalcChange(e) {
             for (let j = 0; j < loanRangeInput.length; j++) {
                 let target = e.target;
@@ -22,3 +23,4 @@ function loanCalc() {
     }
 }
 document.addEventListener('DOMContentLoaded', loanCalc);
+
