@@ -116,12 +116,9 @@
     line-height: 2.5rem;
 }
 
-.h-sub-menu-3-col {
-    padding: 40px 400px;
-}
-
+.h-sub-menu-3-col,
 .h-sub-menu-4-col {
-    padding: 40px 400px;
+    padding: 40px 500px 40px 450px;
 }
 
 .header-menu-empty-line {
