@@ -1,0 +1,50 @@
+.bank-review .h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.bank_review-inner-block {
+    max-height: 360px;
+}
+.bank_review-inner-block{
+    padding: 29px 30px;
+}
+
+.bank_review-rating {
+    text-align: center;
+}
+
+.rating-company-name {
+    margin-bottom: 17px;
+    font-weight: 600;
+}
+
+.bank_review-info .review-name {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.review-content {
+    margin-top: 13px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+.review-content::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+    height: 21px;
+}
+
+.review-content::-webkit-scrollbar-thumb:vertical {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
+}
+
+
+.review__button_show {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+}
