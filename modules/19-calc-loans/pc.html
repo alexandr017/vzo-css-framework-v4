@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="loan-overpayment-calc border-radius shadow">
+        <div class="h2">Рассчитать переплату</div>
+        <div class="loan-overpayment-calc-body">
+            <div class="loan-overpayment-calc-el">
+                <div class="l-overpayment-calc-title">Сумма займа</div>
+                <input type="number" class="overpayment-num-input" id="lNumSumInput" step="1" min="0" max="100" value="50" oninput="lRangeSumInput.value=value">
+                <input type="range" class="overpayment-range-input" id="lRangeSumInput" step="1" min="0" max="100" value="50" oninput="lNumSumInput.value=value">
+            </div>
+            <div class="loan-overpayment-calc-el">
+                <div class="l-overpayment-calc-title">Срок</div>
+                <input type="number" class="overpayment-num-input" id="lPeriodNumInput" step="1" min="0" max="100" value="50" oninput="lPeriodRangeInput.value=value">
+                <input type="range" class="overpayment-range-input" step="1" min="0" max="100" value="50" id="lPeriodRangeInput" oninput="lPeriodNumInput.value=value">
+            </div>
+            <div class="loan-overpayment-calc-el">
+                <div class="l-overpayment-calc-title">Ставка в день, %</div>
+                <input type="number" class="overpayment-num-input" id="lPercentNumInput" step="1" min="0" max="100" value="50" oninput="lPercentRangeInput.value=value">
+                <input type="range" class="overpayment-range-input" step="1" min="0" max="100" value="50" id="lPercentRangeInput" oninput="lPercentNumInput.value=value">
+            </div>
+        </div>
+        <div class="loan-overpayment-calc-down-block">
+            <div class="loan-overpayment-btn-wrap">
+                <button class="btn btn-dark">Рассчитать</button>
+            </div>
+            <div class="loan-overpayment-result">
+                Переплата: <span class="l-result">0 </span><span class="l-currency">₽</span>
+            </div>
+        </div>
+    </div>
+</div>

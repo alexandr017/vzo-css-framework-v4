@@ -1,0 +1,118 @@
+.loan-overpayment-calc {
+    margin: 30px 0;
+    padding: 40px 65px;
+}
+
+.loan-overpayment-calc-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.loan-overpayment-calc-el {
+    width: 33%;
+}
+
+.loan-overpayment-calc-el .l-overpayment-calc-title {
+    font-size: .87em;
+    color: #95A5B0;
+}
+
+.loan-overpayment-calc-down-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.loan-overpayment-result {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.l-result{
+    margin-left: 20px;
+}
+
+.l-currency {
+    margin-left: 10px;
+}
+
+.l-result,
+.l-currency{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.loan-overpayment-btn-wrap .btn {
+    width: 270px;
+}
+
+.loan-overpayment-calc input[type=number] {
+    border: none;
+    border-bottom: 1px solid #E6EBEF;
+    height: 50px;
+    width: 285px;
+    padding: 15px 15px 15px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    outline: none;
+}
+
+.loan-overpayment-calc input[type=range] {
+    outline: none;
+    padding: 0;
+    width: 285px;
+    height: 4px;
+    background-size: 50% 100%;
+    background-color: #ebebeb;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%,  #2ED47A), color-stop(100%, #2ED47A));
+    background-image: -webkit-linear-gradient(#2ED47A, #2ED47A);
+    background-image: -moz-linear-gradient(#2ED47A, #2ED47A);
+    background-image: -o-linear-gradient(#2ED47A, #2ED47A);
+    background-image: linear-gradient(#2ED47A, #2ED47A);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    z-index: 1;
+}
+
+.loan-overpayment-calc input[type=range]::-webkit-slider-runnable-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+    z-index: 1;
+}
+
+.loan-overpayment-calc input[type=range]::-moz-range-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    opacity: 1;
+    z-index: 1;
+}
+
+.loan-overpayment-calc input[type=range]::-moz-focus-outer {
+    border: 0;
+    opacity: 1;
+    z-index: 1;
+}
+
+.loan-overpayment-calc input[type=range]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    border: 0;
+    background:#2ED47A;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    z-index: 1;
+}
+
+.loan-overpayment-calc input[type=range]::-webkit-slider-thumb:hover {
+    width: 26px;
+    height: 26px;
+}
+

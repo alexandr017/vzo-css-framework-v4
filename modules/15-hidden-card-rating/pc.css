@@ -1,0 +1,42 @@
+.hidden-card-rating {
+    padding: 30px 65px;
+}
+
+.hidden-card-rating .rating-more {
+    color:#4FABFA;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden-card-rating .rating-more svg {
+    margin-left: 5px;
+}
+
+.hidden-card-rating .hidden-card-rating-block {
+    background: #F6F8FB;
+    border-radius: 15px;
+    margin: 25px 0;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.hidden-card-rating .h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hidden-card-rating-list {
+    list-style-type: none;
+}
+
+.hidden-card-rating-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 50px 90px;
+}
+
+.hidden-card-rating-image {
+    margin-top: 30px;
+}
