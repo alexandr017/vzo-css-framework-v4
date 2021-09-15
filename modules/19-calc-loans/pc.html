@@ -4,18 +4,18 @@
         <div class="loan-overpayment-calc-body">
             <div class="loan-overpayment-calc-el">
                 <div class="l-overpayment-calc-title">Сумма займа</div>
-                <input type="number" class="overpayment-num-input" id="lNumSumInput" step="1" min="0" max="100" value="50" oninput="lRangeSumInput.value=value">
-                <input type="range" class="overpayment-range-input" id="lRangeSumInput" step="1" min="0" max="100" value="50" oninput="lNumSumInput.value=value">
+                <input type="number" class="overpayment-num-input" id="lNumSumInput" step="500" min="1000" max="50000" value="5000" oninput="lRangeSumInput.value=value">
+                <input type="range" class="overpayment-range-input" id="lRangeSumInput" step="500" min="1000" max="50000" value="5000" oninput="lNumSumInput.value=value">
             </div>
             <div class="loan-overpayment-calc-el">
-                <div class="l-overpayment-calc-title">Срок</div>
-                <input type="number" class="overpayment-num-input" id="lPeriodNumInput" step="1" min="0" max="100" value="50" oninput="lPeriodRangeInput.value=value">
-                <input type="range" class="overpayment-range-input" step="1" min="0" max="100" value="50" id="lPeriodRangeInput" oninput="lPeriodNumInput.value=value">
+                <div class="l-overpayment-calc-title">Срок в днях</div>
+                <input type="number" class="overpayment-num-input" id="lPeriodNumInput" step="1" min="1" max="180" value="20" oninput="lPeriodRangeInput.value=value">
+                <input type="range" class="overpayment-range-input" step="1" min="1" max="180" value="20" id="lPeriodRangeInput" oninput="lPeriodNumInput.value=value">
             </div>
             <div class="loan-overpayment-calc-el">
                 <div class="l-overpayment-calc-title">Ставка в день, %</div>
-                <input type="number" class="overpayment-num-input" id="lPercentNumInput" step="1" min="0" max="100" value="50" oninput="lPercentRangeInput.value=value">
-                <input type="range" class="overpayment-range-input" step="1" min="0" max="100" value="50" id="lPercentRangeInput" oninput="lPercentNumInput.value=value">
+                <input type="number" class="overpayment-num-input" id="lPercentNumInput" step="0.1" min="0" max="1" value="0.5" oninput="lPercentRangeInput.value=value">
+                <input type="range" class="overpayment-range-input" step="0.1" min="0" max="1" value="0.5" id="lPercentRangeInput" oninput="lPercentNumInput.value=value">
             </div>
         </div>
         <div class="loan-overpayment-calc-down-block">
