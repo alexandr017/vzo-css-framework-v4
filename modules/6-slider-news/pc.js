@@ -1,6 +1,6 @@
-if(document.getElementsByClassName('news_slider').length>0){
+if(document.getElementsByClassName('news-slider').length>0){
     slideShow({
-        element:'.news_slider',
+        element:'.news-slider',
         slidesToShow:3,
         slidesToScroll:1,
         circleScroll:false,
