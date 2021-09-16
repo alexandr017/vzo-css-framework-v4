@@ -4,28 +4,29 @@
     margin-bottom: 30px;
 }
 
-.new-inner-block .new-content {
+.news-slider .news-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+    color: #000000;
     margin-top: 15px;
     margin-bottom: 25px;
 }
-.new-content {
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-.new-title {
+.news-slider .news-label {
     background: #F6F8FB;
     border-radius: 3px;
     padding: 0.5em 1em;
 }
-.new-date {
+.news-slider .news-date {
     color: #95A5B0;
     font-size: 0.8rem;
     margin-top: 3em;
 }
-.new-inner-block{
+.news-slider .news-inner-block{
     padding: 30px;
     height: 300px;
 }
+
 .load-more-news {
     margin: 0 auto;
 }
