@@ -25,10 +25,11 @@
     cursor: pointer;
 }
 
-.lead-wrap ul {
-    margin-bottom: 5px;
+.lead-btn-less {
+    display: none;
 }
 
-.hidden-lead-part {
-    display: none;
+.lead-hidden-part {
+    overflow: hidden;
+    height: 75px;
 }

@@ -1,20 +1,16 @@
 function hiddenLeadBlock() {
     let buttonLeadShow = $$('.lead-btn-more')[0],
         buttonLeadHide = $$('.lead-btn-less')[0],
-        hiddenLeadContent = $$('.hidden-lead-part');
+        hiddenLeadContent = $$('.lead-hidden-part')[0];
     buttonLeadShow.addEventListener('click', event => {
         buttonLeadShow.style.display = 'none';
-        for (let i = 0; i < hiddenLeadContent.length; i++) {
-            hiddenLeadContent[i].style.display = 'inline';
-        }
+        buttonLeadHide.style.display = 'block';
+        hiddenLeadContent.classList.remove('lead-hidden-part');
     });
     buttonLeadHide.addEventListener('click', event => {
         buttonLeadShow.style.display = 'block';
-        for (let i = 0; i < hiddenLeadContent.length; i++) {
-            if (hiddenLeadContent[i].style.display === 'inline') {
-                hiddenLeadContent[i].style.display = 'none'
-            }
-        }
+        buttonLeadHide.style.display = 'none';
+        hiddenLeadContent.classList.add('lead-hidden-part');
     });
 }
 document.addEventListener('DOMContentLoaded', hiddenLeadBlock);
