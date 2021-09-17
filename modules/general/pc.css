@@ -55,7 +55,7 @@ p {margin-top: 0;}
     font-size: 1rem;
 }
 
-.content ul, .special-list{
+.content ul, .special-list, .lead-wrap ul{
     padding: 0;
 }
 
@@ -67,7 +67,7 @@ p {margin-top: 0;}
     margin-top: 12px;
 }
 
-.content ul li, .special-list li{
+.content ul li, .special-list li, .lead-wrap ul li{
     position: relative;
     list-style-type: none;
     padding-left: 20px;
@@ -75,7 +75,7 @@ p {margin-top: 0;}
 }
 
 
-.content ul li:before, .special-list li:before{
+.content ul li:before, .special-list li:before, .lead-wrap ul li:before{
     content: "";
     background: #2ED47A;
     width: 8px;
