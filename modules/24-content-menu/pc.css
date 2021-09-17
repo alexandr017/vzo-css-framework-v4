@@ -1,12 +1,11 @@
 .content-menu-wrap {
-    position: relative;
+    position:absolute;
+    top: 0;
+    right: 90px;
 }
 
 .content-menu-inner {
-    position:fixed;
-    right: 27%;
-    top: 15%;
-    max-width: 400px;
+    position: fixed;
 }
 
 .content-menu-wrap .h2 {
@@ -40,8 +39,10 @@
 }
 
 .content-menu-list {
+    margin-left: -350px;
     padding: 35px;
     background: #fff;
+    max-width: 400px;
 }
 
 .content-menu {
@@ -77,11 +78,11 @@
 }
 
 .content-menu a {
-    color: #87919F;
+    color: #87919F !important;
 }
 
 .content-menu a:hover {
-    color: #2ED47A;
+    color: #2ED47A !important;
 }
 
 .content-menu-hidden-block {

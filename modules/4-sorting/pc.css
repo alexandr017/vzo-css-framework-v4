@@ -21,6 +21,7 @@
     list-style: none;
     padding: 10px 0 0 0;
     display: none;
+    z-index: 1;
 }
 
 .sort:hover .sub-menu-sort-container{
@@ -44,6 +45,7 @@
 .sort .sort-item {
     display: block;
     margin: 15px 45px;
+    white-space: nowrap;
 }
 
 .sort .sort-item:hover{
