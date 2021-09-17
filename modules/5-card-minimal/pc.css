@@ -1,4 +1,4 @@
-.card-minimal .h2 {
+.card-minimal-wrap:first-of-type.card-minimal .h2 {
     text-align: center;
     margin-bottom: 50px;
 }
@@ -15,10 +15,6 @@
 .card-min-top-block {
     display: flex;
     justify-content: space-between;
-}
-
-.card-minimal-wrap:first-of-type {
-    margin-left: 30px;
 }
 
 .card-minimal-wrap:not(:last-of-type) {
