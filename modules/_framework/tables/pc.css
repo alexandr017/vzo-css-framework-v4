@@ -60,7 +60,7 @@ table.table-limit {
     border-radius: 15px;
     border-collapse: collapse;
     width: 1110px;
-    margin-left: -165px;
+    /*margin-left: -165px;*/
 }
 
 table.table-limit td {

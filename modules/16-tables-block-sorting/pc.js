@@ -96,7 +96,6 @@ var dataTableBlock = (function () {
             return;
         }
         var paintPages = function(pagesCount,pageNum,afterSearch=false,afterSort=false) {
-            console.log(afterSort);
             if(element.getElementsByClassName('dataTablesFooter').length ==0) {
                 var dataTablesFooter = '<div class="dataTablesFooter"></div>';
                 element.innerHTML += dataTablesFooter;
@@ -282,8 +281,8 @@ var dataTableBlock = (function () {
             const order = (target.dataset.order = -(target.dataset.order || -1));
             const collator = new Intl.Collator(['en', 'ru'], { numeric: true });
             const comparator = (index, order) => (a, b) => order * collator.compare(
-                a.children[index].innerHTML,
-                b.children[index].innerHTML
+                a.children[index].innerHTML.replace(/\s/g, ''),
+                b.children[index].innerHTML.replace(/\s/g, '')
             );
 
             if(element.getElementsByClassName('matchesToSearch').length != 0 && searchBlockVal != '') {

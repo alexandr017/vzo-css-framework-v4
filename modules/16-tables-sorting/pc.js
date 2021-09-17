@@ -52,7 +52,7 @@ var dataTable = (function () {
                 }
             }
             trCollections = element.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
-            tdCounts = trCollections[0].getElementsByTagName('td').length/2;
+            tdCounts = trCollections[0].getElementsByTagName('td').length;
             if(trCollections.length <= itemsCountPerPage) {
                 itemsCountPerPage = trCollections.length;
             } else {
@@ -60,10 +60,8 @@ var dataTable = (function () {
             }
             createContent(offset,itemsCountPerPage);
             addSortClick();
-            // paintPages(pagesCount,pageNum);
         }
         var createContent = function(offset,itemsCountPerPage,afterSearch=false,afterSort=false) {
-            console.log('afterSearch---'+afterSearch);
             offset = offset != 0 ? (Number(offset)-1)*itemsCountPerPage : offset;
             limit = offset != 0 ? Number(offset+itemsCountPerPage) : itemsCountPerPage;
             if(afterSearch == false) {
@@ -73,7 +71,6 @@ var dataTable = (function () {
                 trCollections = element.getElementsByTagName('tbody')[0].getElementsByClassName('matchesToSearch');
                 showedTrCollections = element.querySelectorAll('.showed-items .matchesToSearch');
             }
-            // showedTrCollections = element.getElementsByClassName('showed-items');
             if(showedTrCollections.length != 0) {
                 for(let i=showedTrCollections.length-1; showedTrCollections.length > 0; i--){
                     showedTrCollections[i].classList.add('display_none');
@@ -97,11 +94,9 @@ var dataTable = (function () {
                 pageNum = 1;
             }
             paintPages(pagesCount,pageNum,afterSearch,afterSort);
-            // addPagesClick(afterSearch);
             return;
         }
         var paintPages = function(pagesCount,pageNum,afterSearch=false,afterSort=false) {
-            console.log(afterSort);
             if(element.getElementsByClassName('dataTablesFooter').length ==0) {
                 var dataTablesFooter = '<tfoot class="dataTablesFooter"></tfoot>';
                 element.innerHTML += dataTablesFooter;
@@ -135,23 +130,14 @@ var dataTable = (function () {
                             }
                             pages += '<span class="data-table-pagination '+currentPage+'">'+i+'</span>';
                         }
-                        // pages = '<span class="data-table-pagination">1</span><div class="data-table-pagination disabledPage">...</div><span class="data-table-pagination">'+(Number(pagesCount)-3)+'</span><span class="data-table-pagination">'+(Number(pagesCount)-2)+'</span><span class="data-table-pagination">'+(Number(pagesCount)-1)+'</span><span class="data-table-pagination">'+pagesCount+'</span>';
                     }
-                    // element.getElementsByClassName('dataTablesFooter')[0].innerHTML = '<tr><td colspan="'+tdCounts+'" class="data-table-pages">'+pages+'</td></tr>';
                     break;
                 }
-                // if(i == 1){
-                //     currentPage = 'currentPage';
-                // }else {
-                //     currentPage = '';
-                // }
-                // pages += '<span class="data-table-pagination '+currentPage+'">'+i+'</span>';
             }
             element.getElementsByClassName('dataTablesFooter')[0].innerHTML = '<tr><td colspan="'+tdCounts+'" class="data-table-pages">'+pages+'</td></tr>';
             if(afterSearch == true) {
                 pageNum = 0;
             }
-            // createContent(pageNum,itemsCountPerPage,afterSearch);
             addPagesClick(afterSearch);
             return;
         }
@@ -162,14 +148,6 @@ var dataTable = (function () {
                     pagesCollection[i].addEventListener('click',
                         function() {
                             pageNum = pagesCollection[i].innerHTML;
-                            /*if(pageNum == 5) {
-                                paintPages(pagesCount,pageNum);
-                            } else {
-                                createContent(pageNum,itemsCountPerPage,afterSearch);
-                                if(element.getElementsByClassName('currentPage').length !=0){
-                                    element.getElementsByClassName('currentPage')[0].classList.remove('currentPage');
-                                }
-                            }*/
                             if(element.getElementsByClassName('currentPage').length !=0){
                                 element.getElementsByClassName('currentPage')[0].classList.remove('currentPage');
                             }
@@ -190,7 +168,6 @@ var dataTable = (function () {
             if(element.getElementsByClassName('sorted').length != 0) {
                 afterSort = true;
                 if(inpVal == '') {
-                    // trCollections = [].slice.call(tBody.getElementsByClassName('dataTableHiddenTd'));
                     pagesCount = Math.ceil(trCollections.length/itemsCountPerPage);
                     let sortedColBlock = element.getElementsByClassName('sorted')[0];
                     sortedColBlock.dataset['order'] = 0 - Number(sortedColBlock.dataset['order']);
@@ -253,7 +230,6 @@ var dataTable = (function () {
             for(let i=1; i<thCollecion.length;i++) {
                 if(!thCollecion[i].classList.contains('display_none')) {
                     thCollecion[i].innerHTML = '<span class="sortingArrowsBlock">'+thCollecion[i].innerHTML+'<span class="sortingArrows"><span class="sortUp jsSortItem">&#9650;</span><span class="sortDown jsSortItem">&#9660;</span></span></span>'
-                    // thCollecion[i].innerHTML += '<span class="sortingArrows"><span class="sortUp jsSortItem">&#9650;</span><span class="sortDown jsSortItem">&#9660;</span></span>'
                 }
             }
         }
@@ -278,32 +254,6 @@ var dataTable = (function () {
                     getSort(event);
                     event.stopPropagation();
                 }, false)
-                // sortItemUp.addEventListener('click',function (event) {
-                //     resetActiveSortItem();
-                //     if(sortItemDown.classList.contains('jsTableDisplayNone')) {
-                //         sortItemDown.classList.toggle("jsTableDisplayNone");
-                //     }
-                //     event.target.classList.toggle("jsTableDisplayNone");
-                //     event.target.parentNode.style.alignItems = 'flex-end';
-                //     sortItemDown.classList.add('activeSortItem');
-                //     event.stopPropagation();
-                //     afterSort = true;
-                //     getSort(event);
-                // }, false)
-                // sortItemDown.addEventListener('click',function (event) {
-                //     resetActiveSortItem();
-                //     if(sortItemUp.classList.contains('jsTableDisplayNone')) {
-                //         sortItemUp.classList.toggle("jsTableDisplayNone");
-                //     }
-                //     event.target.classList.toggle("jsTableDisplayNone");
-                //     event.target.parentNode.style.alignItems = 'flex-start';
-                //     sortItemUp.classList.add('activeSortItem');
-                //     event.stopPropagation();
-                //     afterSort = true;
-                //     getSort(event);
-                // }, false)
-                // sortingArrowsCollection[i].getElementsByClassName('sortUp')[0].onclick = sortItemClick
-                // sortingArrowsCollection[i].getElementsByClassName('sortDown')[0].onclick = sortItemClick
             }
         }
         var resetActiveSortItem = function() {
@@ -320,24 +270,15 @@ var dataTable = (function () {
                 }
             }
         }
-        // var sortItemClick = function(event) {
-        //     event.target.classList.toggle("jsTableDisplayNone");
-        //     if(element.getElementsByClassName('jsTableDisplayNone').length !=0) {
-        //         element.getElementsByClassName('jsTableDisplayNone')[0]
-        //     }
-        // }
         var getSort = ({ target }) => {
-            // if(target.localName != 'th'){
-            //     target = target.parentNode.parentNode;
-            // }
             var searchBlockVal = document.getElementsByClassName(elementName+'-searchInp')[0].value;
             target =  target.closest('th')
             const order = (target.dataset.order = -(target.dataset.order || -1));
             const index = [...target.parentNode.cells].indexOf(target);
             const collator = new Intl.Collator(['en', 'ru'], { numeric: true });
             const comparator = (index, order) => (a, b) => order * collator.compare(
-                a.children[index].innerHTML,
-                b.children[index].innerHTML
+                a.children[index].innerHTML.replace(/\s/g, ''),
+                b.children[index].innerHTML.replace(/\s/g, '')
             );
 
             let tBody = element.getElementsByTagName('tbody')[0];
@@ -346,30 +287,15 @@ var dataTable = (function () {
                 afterSearch = true;
                 var arrForSort = tBody.getElementsByClassName('matchesToSearch');
             } else {
-                // afterSearch = false;
                 var arrForSort = tBody.rows;
             }
             tBody.append(...[...arrForSort].sort(comparator(index, order)));
             createContent(0,itemsCountPerPage,afterSearch,true)
-            // if(order == 1) {
-            //     paintPages(pagesCount,1);
-            // } else {
-            //     paintPages(pagesCount,pagesCount);
-            // }
-            // [...tBody.rows].sort(comparator(index, order));
-            console.log(tBody.rows[0]);
 
             for(const cell of target.parentNode.cells)
                 cell.classList.toggle('sorted', cell === target);
         };
 
         init(data);
-        // addPagesClick();
     }
 }());
-dataTable({
-    element:'.total_cards_table_js',
-    itemsCountPerPage:10,
-    search:true,
-    sort:true
-})

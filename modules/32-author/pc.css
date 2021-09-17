@@ -1,0 +1,16 @@
+.author-block .author-img {
+    max-width: 50px;
+    max-height: 50px;
+}
+.author-block .author-info {
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+.author-block .author-name {
+    font-weight: 600;
+}
+.author-block {
+    align-items: center;
+    width: fit-content;
+    margin: 15px auto;
+}
