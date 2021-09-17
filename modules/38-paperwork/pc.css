@@ -1,49 +1,39 @@
-.paperwork{
-    margin: 30px 0;
-}
-.paperwork .h2{
-  text-align: center;
-}
-.paperwork-wrap {
-    display: flex;
-    margin-top: 50px;
-}
-
-.l-paperwork-el,.r-paperwork-el {
-    width: 50%;
-    padding: 30px 150px 60px;
-}
-
-.r-paperwork-el{
-    background: #F6F8FB;
-}
-
-.paperwork-title {
-    font-size: 1.1rem;
+.doc-reg-block .doc-reg-title {
+    font-size:1.2rem;
     font-weight: 600;
-}
-
-.paperwork-list{
-    list-style-type: none;
-    padding: 0;
-}
-
-.paper-svg-icon {
     display: block;
-    margin: 30px auto;
+    /*width: 70%;*/
+    /*margin: 0 auto 15px;*/
 }
-
-.paperwork-list:first-of-type {
+.doc-reg-block .doc-reg-r-block {
+    background-color: #F6F8FB;
+}
+.doc-reg-block .doc-reg-l-block, .doc-reg-block .doc-reg-r-block {
+    padding: 3rem;
+    width: 50%;
+}
+.doc-reg-block-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.doc-reg-l-block .doc-reg-img {
+    margin: 0 0 15px 105px;
+    display: block;
+}
+.doc-reg-r-block .doc-reg-img {
+    margin: 0 0 15px 75px;
+    display: block;
+}
+.doc-reg-block .docs {
+    list-style-type: none;
+    position: relative;
+    /*width: 70%;*/
+    /*margin: 0 auto;*/
+}
+.doc-reg-block .docs:first-of-type {
     counter-reset: mycounter;
 }
-
-.paperwork-list li {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 30px;
-}
-
-.paperwork-list li::before {
+.doc-reg-block .docs li::before {
     position: absolute;
     font-size: 0.7rem;
     width: 19px;
@@ -58,4 +48,22 @@
     content: counter(mycounter) "";
     vertical-align: 2px;
     left: 0;
+}
+.doc-reg-block .docs li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.doc-reg-centered-block {
+    width: fit-content;
+    margin: 0 auto;
+    max-width: 280px;
+}
+@media screen and (max-width: 992px) {
+    .doc-reg-block .docs {
+        width: 100%;
+    }
+    .doc-reg-block .doc-reg-title {
+        width: 100%;
+    }
 }
