@@ -1,0 +1,22 @@
+.user-account-dashboard {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 80px 100px;
+}
+
+.dashboard-user-name {
+    margin-bottom: 60px;
+}
+
+.user-account-dashboard-item {
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+
+.user-account-dashboard-item:hover {
+    background: #F6F8FB;
+}
+
+.user-account-dashboard-item svg {
+    vertical-align: -5px;
+}
