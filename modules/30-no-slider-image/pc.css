@@ -1,0 +1,15 @@
+.no-slider-image .h2{
+    text-align: center;
+}
+
+.no-slider-image-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.no-slider-image-block img{
+    margin: 15px 10px;
+    max-width: 255px;
+    max-height: 120px;
+}
+
