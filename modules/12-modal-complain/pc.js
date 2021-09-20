@@ -59,12 +59,14 @@ function closeAllSelect(el) {
 document.addEventListener("click", closeAllSelect);
 
 function claimHiddenTextArea(){
-    let selectValue = $$('.same-as-selected')[0],
+    let selectValue = $$('.same-as-selected'),
         hiddenBlock = $$('.hidden-claim-el')[0];
-    if(selectValue.textContent === 'Другое' ){
-        hiddenBlock.style.display = 'block';
-    }else
-        hiddenBlock.style.display = 'none';
+    for (let i = 0; i < selectValue.length; i++) {
+        if (selectValue[0].textContent === 'Другое') {
+            hiddenBlock.style.display = 'block';
+        } else
+            hiddenBlock.style.display = 'none';
+    }
 }
 document.addEventListener("click", claimHiddenTextArea);
 

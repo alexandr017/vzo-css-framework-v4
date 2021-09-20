@@ -276,3 +276,29 @@ svg:active .arrow_el {
     border-radius: 50%;
     padding: 0;
 }
+
+
+.btn-dark-outline {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.btn-dark-outline:hover {
+    background: #000;
+    color: #fff;
+}
+
+.btn-dark-outline:hover svg path{
+    stroke: #fff;
+}
+
+.btn-wrap-arrow {
+    left: 25px;
+    position: absolute;
+    transition: .2s left ease-in-out;
+    padding: 0;
+}
+
+.btn:hover .btn-wrap-arrow {
+    left: calc(100% - 25px);
+}

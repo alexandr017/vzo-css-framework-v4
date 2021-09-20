@@ -1,0 +1,28 @@
+.employee-quote-body {
+    padding: 45px 65px;
+    filter: drop-shadow(0px 6px 20px rgba(135, 145, 159, 0.15));
+}
+
+.employee-quote-body::after {
+    content:url("/v4/images/Polygon.svg");
+    position: absolute;
+    right: 50px;
+    margin-top: 35px;
+}
+
+.employee-quote-info {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 60px 0;
+}
+
+.employee-quote-info .employee-info a{
+    font-weight: 600;
+    display: block;
+}
+
+.employee-quote-info .employee-logo img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
