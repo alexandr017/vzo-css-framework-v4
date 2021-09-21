@@ -1,0 +1,74 @@
+.repayment-methods {
+    margin: 30px 0;
+}
+
+.repayment-methods-body-row {
+    border-bottom: 1px solid #E6EBEF;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.repayment-methods .repayment-methods-body-row:last-child{
+    border-bottom: 0;
+}
+
+.repayment-methods-logo-wrap {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.repayment-methods-name {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.repayment-methods-col{
+    font-weight: bold;
+}
+
+.repayment-methods-body-label {
+    color: #95A5B0;
+    display: block;
+    font-weight: normal;
+}
+
+.repayment-methods-inner-wrap{
+    justify-content: space-between;
+}
+
+.repayment-methods-more,
+.repayment-methods-less {
+    cursor: pointer;
+    color: #4FABFA;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.repayment-methods-more svg,
+.repayment-methods-less svg {
+    margin-left: 5px;
+    vertical-align: 2px;
+}
+.repayment-methods-more,#show-more-rep-methods:checked + .repayment-methods .repayment-methods-less,#show-more-rep-methods:checked + .repayment-methods .repayment-methods-body-row:nth-child(n+4) {
+    display: block;
+}
+.repayment-methods .repayment-methods-body-row:nth-child(n+4),.repayment-methods-less,#show-more-rep-methods:checked + .repayment-methods .repayment-methods-more,#show-more-rep-methods {
+    display: none;
+}
+
+.hidden-repayment-style {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 0;
+    width: 0;
+}
+.repayment-methods-logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
