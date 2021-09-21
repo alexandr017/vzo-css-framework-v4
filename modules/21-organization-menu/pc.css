@@ -38,28 +38,28 @@
     font-weight: 600;
 }
 
-.banks-products-block {
+.org-products-block {
     margin: 15px 0 45px;;
     display: flex;
     justify-content: space-between;
 }
 
 
-.banks-products-block .bank-link-el {
+.org-products-block .org-link-el {
     cursor: pointer;
     text-align: center;
     margin: 0 25px;
 }
 
-.banks-products-block .bank-link-el:first-child{
+.org-products-block .org-link-el:first-child{
     margin-left: 0;
 }
 
-.banks-products-block .bank-link-el:last-child{
+.org-products-block .org-link-el:last-child{
     margin-right: 0;
 }
 
-.banks-products-block .bank-link-el .bank-icon-bg {
+.org-products-block .org-link-el .org-icon-bg {
     margin: 0 auto;
     width: 80px;
     height: 80px;
@@ -69,43 +69,43 @@
     justify-content: center;
 }
 
-.banks-products-block .bank-link-el .bank-icon-text {
+.org-products-block .org-link-el .org-icon-text {
     color: #222735;
     margin-top: 10px;
     display: inline-block;
     width: 80px;
 }
 
-.banks-products-block .bank-link-el:hover .bank-icon-text {
+.org-products-block .org-link-el:hover .org-icon-text {
     color:#2CDD88;
 }
 
-.banks-products-block .bank-link-el.active .bank-icon-text {
+.org-products-block .org-link-el.active .org-icon-text {
     color:#2CDD88;
 }
 
-.banks-products-block .bank-link-el .bank-icon-bg svg:not(.fill) {
+.org-products-block .org-link-el .org-icon-bg svg:not(.fill) {
     stroke:black;
 }
 
-.banks-products-block .bank-link-el .bank-icon-bg svg.fill {
+.org-products-block .org-link-el .org-icon-bg svg.fill {
     fill: black;
 }
 
-.bank-link-el:hover .bank-icon-bg svg:not(.fill) {
+.org-link-el:hover .org-icon-bg svg:not(.fill) {
     stroke:#2CDD88;
 }
 
-.bank-link-el:hover .bank-icon-bg svg.fill {
+.org-link-el:hover .org-icon-bg svg.fill {
     fill: #2CDD88;
 }
 
 
-.bank-link-el.active .bank-icon-bg svg:not(.fill) {
+.org-link-el.active .org-icon-bg svg:not(.fill) {
     stroke:#2CDD88;
 }
 
-.bank-link-el.active .bank-icon-bg svg.fill {
+.org-link-el.active .org-icon-bg svg.fill {
     fill: #2CDD88;
 }
 

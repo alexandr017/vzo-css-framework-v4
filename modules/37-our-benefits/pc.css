@@ -1,11 +1,19 @@
 .our-benefits {
+    margin: 40px 0;
+}
+.our-benefits .h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.our-benefits-block {
     justify-content: space-between;
 }
 .our-benefit-item {
     padding: 2em;
     width: 23%;
 }
-.our-benefits-svg {
+.our-benefits-img {
     display: block;
     margin: 0 auto;
 }
