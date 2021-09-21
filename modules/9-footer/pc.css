@@ -33,13 +33,16 @@
     width: 55%;
     position: relative;
 }
-.f-l-text .loan-training {
+.f-l-block .f-l-text .f-l-item {
+    color: #000000;
+}
+.f-l-block .f-l-text .loan-training {
     width: 350px;
     border-radius: 23px;
     background: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     z-index: 2;
     font-weight: 600;
     position: absolute;
@@ -82,7 +85,7 @@
     list-style-type: none;
     font-family: 'Inter', sans-serif;
 }
-.f-block .f-2-menu a {
+.container .f-block .f-2-menu a {
     color: #95A5B0;
 }
 .f-block .f-2-menu li a.active, .f-block .f-2-menu li a:hover {

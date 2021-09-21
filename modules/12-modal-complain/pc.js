@@ -57,18 +57,31 @@ function closeAllSelect(el) {
     }
 }
 document.addEventListener("click", closeAllSelect);
-
-function claimHiddenTextArea(){
-    let selectValue = $$('.same-as-selected'),
+if($$('.select-items').length != 0) {
+    var selectItemsArr = $$('.select-items')[0].childNodes,
         hiddenBlock = $$('.hidden-claim-el')[0];
-    for (let i = 0; i < selectValue.length; i++) {
-        if (selectValue[0].textContent === 'Другое') {
-            hiddenBlock.style.display = 'block';
-        } else
-            hiddenBlock.style.display = 'none';
+    for (let i = 0;i<selectItemsArr.length;i++) {
+        selectItemsArr[i].addEventListener('click', function () {
+            if (selectItemsArr[i].textContent === 'Другое') {
+                hiddenBlock.style.display = 'block';
+            } else
+                hiddenBlock.style.display = 'none';
+        }, false)
     }
 }
-document.addEventListener("click", claimHiddenTextArea);
+
+$$('.selected-item')[0].addEventListener('click',function () {
+    var compainModalHeight = $$('#modal-complain')[0].getElementsByClassName('select-items')[0].offsetHeight;
+    var windowHeight = window.pageYOffset;
+    var selectItemsBlock = $$('.select-items')[0];
+    if(compainModalHeight+210 > windowHeight) {
+        selectItemsBlock.style.height = compainModalHeight-60+'px';
+        selectItemsBlock.style.overflowY = 'scroll'
+    } else {
+        selectItemsBlock.style.height = 'fit-content';
+        selectItemsBlock.style.overflowY = 'hidden'
+    }
+},false)
 
 
 
