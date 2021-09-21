@@ -8,6 +8,10 @@
     justify-content: space-between;
 }
 
+#headerMenu .container {
+    position: static;
+}
+
 #headerMenu.fixed {
     position: fixed;
     z-index: 111;
@@ -235,6 +239,7 @@ header svg {
     display:none;
     background: #fff;
     font-family: 'Proxima Nova Rg', sans-serif;
+    z-index: 5;
 }
 
 .icon-wrap-hidden-block {

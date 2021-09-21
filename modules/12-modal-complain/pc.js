@@ -61,14 +61,15 @@ if($$('.select-items').length != 0) {
     var selectItemsArr = $$('.select-items')[0].childNodes,
         hiddenBlock = $$('.hidden-claim-el')[0];
     for (let i = 0;i<selectItemsArr.length;i++) {
-        selectItemsArr[i].addEventListener('click',function () {
-            if(selectItemsArr[i].textContent === 'Другое') {
+        selectItemsArr[i].addEventListener('click', function () {
+            if (selectItemsArr[i].textContent === 'Другое') {
                 hiddenBlock.style.display = 'block';
-            }else
+            } else
                 hiddenBlock.style.display = 'none';
-        },false)
+        }, false)
     }
 }
+
 $$('.selected-item')[0].addEventListener('click',function () {
     var compainModalHeight = $$('#modal-complain')[0].getElementsByClassName('select-items')[0].offsetHeight;
     var windowHeight = window.pageYOffset;

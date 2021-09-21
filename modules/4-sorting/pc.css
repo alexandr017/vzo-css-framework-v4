@@ -1,59 +1,68 @@
 .sort {
     float: right;
-    position: relative;
-    min-width: 260px;
 }
 
-.sort .main-sort {
-    display: block;
-    margin: 5px 0;
-    text-align: right;
+.sort-select .sorted-item {
+    border-radius: 10px;
+    width: 260px;
+    margin: 10px 0;
+    padding: 15px 20px;
     cursor: pointer;
 }
 
-.sort .main-sort svg {
-    margin-left: 5px;
-    vertical-align: 2px;
-}
-
-.sub-menu-sort-container {
-    position: absolute;
-    list-style: none;
-    padding: 10px 0 0 0;
+.sort select {
     display: none;
-    z-index: 1;
 }
 
-.sort:hover .sub-menu-sort-container{
-    display: block;
+.sort .sorted-item:after {
+    position: relative;
+    content: url("/v4/images/sort-close-icon.svg");
+    float: right;
+    margin-right: 10px;
 }
 
-.sort:hover svg{
-    transform: rotate(180deg);
-}
-
-.sort .sub-nav_one-column {
+.sort .sorted-item.sort-arrow-active {
     background: #fff;
-    min-width: 260px;
-    padding: 1px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
-.sort .sort-items:last-of-type {
-    margin-bottom: 20px;
+.sort .sorted-item.sort-arrow-active:after {
+    content: url("/v4/images/sort-icon.svg");
 }
 
-.sort .sort-item {
-    display: block;
-    margin: 15px 45px;
-    white-space: nowrap;
-}
-
-.sort .sort-item:hover{
-    color: #2ED47A;
+.sort .sort-items div {
+    background: #fff;
     cursor: pointer;
+    padding: 10px 20px;
 }
 
-.sort hr {
-    margin: 20px 0;
+.sort .sort-items div{
+   border-top: 1px solid #F6F8FB;
 }
+
+.sort .sort-items div:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
+
+.sort .sort-items {
+    position: absolute;
+    background-color: #fff;
+    width: 260px;
+    margin: -20px auto 0;
+    z-index: 99;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 10px 10px rgba(135, 145, 159, 0.15);
+}
+
+.sort .sort-hide {
+    display: none;
+}
+
+.sort .sort-items div:hover,
+.same-as-selected {
+    cursor: pointer;
+    color: #2ED47A;
+}
+
 
