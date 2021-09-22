@@ -38,6 +38,12 @@ img, iframe {
 }
 p {margin-top: 0;}
 
+.content {
+    width: 100%;
+    max-width: 790px;
+    margin: auto;
+}
+
 .content ul {
     padding: 0;
 }
