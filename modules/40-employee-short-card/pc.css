@@ -36,4 +36,19 @@
     align-items: center;
     margin-top: 40px;
 }
+.employee-card-img {
+    overflow: hidden;
+    max-height: 216px;
+}
+.employee-card-img img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.employee-card-img img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 

@@ -1,7 +1,7 @@
 var ratingStars = $$('.rating-wrap')[0].getElementsByTagName('svg');
 for(let i=0; i<ratingStars.length;i++){
     ratingStars[i].addEventListener('mouseenter',function (e) {
-        var elemIndex = e.target.attributes['data-num'].nodeValue;
+        var elemIndex = e.target.attributes['data-item'].nodeValue;
         for(let i=0; i< 5;i++) {
             var fillOffset = ratingStars[i].getElementsByTagName('stop')[0].attributes['offset'].nodeValue;
             var fillColor = ratingStars[i].getElementsByTagName('stop')[0].attributes['stop-color'].nodeValue;
