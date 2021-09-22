@@ -1,3 +1,8 @@
+.employee-quote {
+    width: 1110px;
+    margin: 30px 0 30px -155px;
+}
+
 .employee-quote-body {
     padding: 45px 65px;
     filter: drop-shadow(0px 6px 20px rgba(135, 145, 159, 0.15));
