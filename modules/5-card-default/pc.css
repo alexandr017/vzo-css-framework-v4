@@ -29,8 +29,6 @@
 }
 
 .card .card-header .card-top-inner {
-    display: flex;
-    justify-content: space-between;
     margin-top: 15px;
 }
 
@@ -40,8 +38,16 @@
     display: flex;
     justify-content: center;
     margin-top: -30px;
+    margin-right: 65px;
+}
+.card .card-header .card-top-inner .logo img{
+    max-width: fit-content;
 }
 
+.card .card-header .card-top-inner .card-row-wrap {
+    justify-content: space-between;
+    width: 100%;
+}
 .card .card-header .card-top-inner .block-row .top-inner-btn {
     display: flex;
     align-items: center;
@@ -70,6 +76,7 @@
 
 .card .card-body {
     margin-top: -20px;
+    padding-bottom: 5px;
 }
 
 .card .card-body .card-bottom-line {
@@ -87,25 +94,29 @@
     margin-right: 30px;
 }
 
-.card .card-body .card-body-inner .card-more {
-    display: block;
+.card .card-body .card-body-inner .card-more ,.card .card-body .card-body-inner .card-less {
     color: #4FABFA;
     cursor: pointer;
-    margin-top: 10px;
-    margin-left: 65px;
-    margin-bottom: 15px;
+    margin: 10px 0 15px 65px;
+    align-items: center;
+}
+
+.card .card-body .card-body-inner .card-more svg,.card .card-body .card-body-inner .card-less svg {
+    margin-left: 5px;
+}
+
+.card .card-body .card-body-inner .card-less {
+    display: none;
 }
 
 .card .card-body .card-body-inner .hidden-card-info {
-    overflow: hidden;
-    max-height: 0;
-
+    display:none;
 }
 
 .card .card-body .card-body-inner .hidden-card-info .text-hidden-card {
     line-height: 1.75rem;
     font-size: 1.1rem;
-    margin-top: 30px;
+    margin: 30px 0;
     padding: 0 60px 0 60px;
 }
 

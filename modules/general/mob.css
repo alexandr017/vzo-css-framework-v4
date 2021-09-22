@@ -108,3 +108,7 @@ hr {
     border: none;
     background-color:#EBEBEB;
 }
+
+.text-center {
+    text-align: center;
+}
