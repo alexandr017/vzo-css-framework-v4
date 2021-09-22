@@ -8,7 +8,7 @@
 
 .rating-area .rating-wrap svg {
     fill:#E6EBEF;
-    margin-right: 20px;
+    padding-right: 20px;
     cursor: pointer;
 }
 .rating-area .rating-val {
