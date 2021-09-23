@@ -24,11 +24,8 @@ body, input, textarea, select, .btn , .btn-1{
 }
 
 
-a, a:visited:not(a.btn,.breadcrumbs a, .header a, .hidden-card-rating-list a) {
+a{
     color: #4FABFA;
-}
-
-a {
     text-decoration:none;
 }
 

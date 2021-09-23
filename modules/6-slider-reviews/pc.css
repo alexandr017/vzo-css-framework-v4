@@ -36,7 +36,7 @@
     height: 21px;
 }
 
-.review-content::-webkit-scrollbar-thumb:vertical {
+.review-content::-webkit-scrollbar-thumb {
     background: rgba(135, 145, 159, 0.4);
     border-radius: 3px;
 }

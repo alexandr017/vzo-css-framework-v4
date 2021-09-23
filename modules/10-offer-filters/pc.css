@@ -62,7 +62,7 @@
     background-color: #fff;
 }
 
-.offer-filters-hidden-block::-webkit-scrollbar-thumb:vertical {
+.offer-filters-hidden-block::-webkit-scrollbar-thumb {
     background: rgba(135, 145, 159, 0.4);
     border-radius: 3px;
 }
