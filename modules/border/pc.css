@@ -1,0 +1,22 @@
+.border-block {
+    width: fit-content;
+    height: 150px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    margin-right: 2em;
+    border: 1px solid;
+}
+.borders-main-block {
+    margin: 0 auto;
+}
+.border-radius {
+    border-radius: 25px;
+}
+.border-radius-1 {
+    border-radius: 15px;
+}
+.border-radius-2 {
+    border-radius: 10px;
+}
