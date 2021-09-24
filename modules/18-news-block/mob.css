@@ -1,0 +1,89 @@
+.news-main-block {
+    background-color: #F6F8FB;
+    width: 100%;
+    padding: 2em 1em;
+    height: 100%;
+}
+.news-main-block .news-main-block-title {
+    padding: 1.5em 2em;
+    background-color: #FFFFFF;
+}
+.news-main-block .news-cat-item {
+    width: calc(50% - 1em);
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 0 0.5em;
+    padding: 1.5em 0;
+    position: relative;
+}
+.news-cats-block .news-cat-name {
+    width: calc(100% - 30px);
+}
+.news-main-block .news-cats-block {
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    padding: 0.5em;
+    margin: 1em 0;
+}
+.news-main-block .news-cat-item svg {
+    margin-right: 0.5em;
+    width: 30px;
+    height: 30px;
+}
+.news-main-block .news-cat-item:not(:nth-last-child(1)):not(:nth-last-child(2)):before {
+    content: '';
+    width: calc(100% + 2.5em);
+    position: absolute;
+    left: -1.25em;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    background-color: #E6EBEF;
+}
+.news-main-block .news-cat-item:nth-child(odd):after {
+    content: '';
+    height: calc(100% + 1em);
+    position: absolute;
+    top: -0.5em;
+    right: 0;
+    width: 1px;
+    background-color: #E6EBEF;
+}
+.news-main-block .news-main-block-filters {
+    margin-bottom: 1em;
+    justify-content: space-between;
+    width: 100%;
+    background: #E6EBEF;
+    border-radius: 20px;
+    align-items: center;
+    color: #95A5B0;
+}
+.news-main-block .news-main-block-filters .news-item-bg {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height: 30px;
+    color: #000000;
+}
+.news-main-block .news-main-block-filters .news-cat-item {
+    justify-content: center;
+    padding: 0.5em 0;
+}
+.news-main-block .count-of-news-post {
+    color: #95A5B0;
+    font-size: 0.9rem;
+    width: fit-content;
+    text-align: center;
+    margin: 1em auto;
+    border-bottom: 3px solid #E6EBEF;
+    padding-bottom: 0.5em;
+    position: relative;
+}
+.news-main-block .count-of-news-post:after {
+    content: '';
+    width: 30%;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    position: absolute;
+    background-color: #000000;
+}
