@@ -35,7 +35,7 @@ function calculate() {
     var sumValue = parseFloat(sum.value);
     var daysValue = parseFloat(days.value);
     var perentValue = parseFloat(percent.value.replace(',', '.'));
-    // var category_id = category.setAttribute('data-category-id');
+    // var category_id = category.getAttribute('data-category-id');
 
     // if (category_id == 7) {
     //     var total = sumValue * daysValue * perentValue / 700;
@@ -49,7 +49,4 @@ function calculate() {
     document.getElementById('total').innerHTML = total;
 
 }
-
-
-
 
