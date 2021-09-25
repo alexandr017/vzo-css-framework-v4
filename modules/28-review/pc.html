@@ -3,57 +3,73 @@
 <h1>Отзыв</h1>
     <div class="reviews">
         <div class="h2">Все отзывы и жалобы</div>
-        <div class="scale-rating-block border-radius shadow">
-            <div class="reviews-rating-title">Жалобы</div>
+        <div class="scale-rating-block border-radius shadow flex">
+            <div class="scale-rating-block-part">
+                <div class="scale-rating-el">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="35" viewBox="0 0 37 35" fill="none">
+                        <path d="M36.3632 13.2261C36.1246 12.4865 35.4698 11.9613 34.6951 11.8913L24.1722 10.9342L20.0112 1.17785C19.7044 0.462836 19.0057 0 18.2293 0C17.453 0 16.7542 0.462836 16.4474 1.17952L12.2864 10.9342L1.76187 11.8913C0.988581 11.963 0.335458 12.4865 0.0954048 13.2261C-0.144649 13.9656 0.0770461 14.7768 0.66202 15.2881L8.61605 22.276L6.27059 32.6259C6.09897 33.3869 6.39382 34.1735 7.02413 34.63C7.36293 34.8752 7.75931 35 8.15903 35C8.50367 35 8.84553 34.9069 9.15234 34.723L18.2293 29.2885L27.3029 34.723C27.9669 35.1232 28.8039 35.0867 29.4328 34.63C30.0634 34.1721 30.358 33.3852 30.1864 32.6259L27.8409 22.276L35.7949 15.2895C36.3799 14.7768 36.6033 13.967 36.3632 13.2261Z" fill="#FFF27B"/>
+                    </svg>
+                    <span>4.7</span>
+                </div>
+                <div class="count-review text-center">На основании 1000 отзывов</div>
+                <div class="rating-btn-wrap">
+                    <a href="#review-form" class="btn btn-light">Написать отзыв</a>
+                </div>
+            </div>
+            <div class="scale-rating-block-part">
+            <div class="reviews-rating-title">Рассмотренных жалоб</div>
             <div class="info">
-                <span class="info-title">Решение жалобы</span>
+                <div class="info-title">3</div>
                 <div class="scale">
                     <div class="percent" style="width: 100%; background: #2ED47A;"></div>
                 </div>
                 <span class="reviews-count">3/3</span>
             </div>
-            <hr>
-            <div class="reviews-rating-title">Рейнинг отзывов  [rating]</div>
+
+            <div class="reviews-rating-title">Оценки клиентов</div>
             <div class="reviews-rating-wrap">
                 <div class="info">
-                    <span class="info-title">5 звезд</span>
-                    <div class="scale">
-                        <div class="percent" style="width: 80%; background: #2ED47A;"></div>
-                    </div>
+                    <input type="checkbox" id="5" name="scales" checked class="custom-checkbox">
+                    <label for="5" class="info-title">5</label>
+                    <span class="scale">
+                        <span class="percent" style="width: 80%; background: #2ED47A;"></span>
+                    </span>
                     <span class="reviews-count">8</span>
                 </div>
                 <div class="info">
-                    <span class="info-title">4 звезды</span>
+                    <input type="checkbox" id="4" name="scales" checked class="custom-checkbox">
+                    <label for="4" class="info-title">4</label>
                     <div class="scale">
                         <div class="percent" style="width: 80%;background: #2ED47A;"></div>
                     </div>
                     <span class="reviews-count">1</span>
                 </div>
                 <div class="info">
-                    <span class="info-title">3 звезды</span>
+                    <input type="checkbox" id="3" name="scales" checked class="custom-checkbox">
+                    <label for="3" class="info-title">3</label>
                     <div class="scale">
                         <div class="percent" style="width: 30%; background: #FFEE84;"></div>
                     </div>
                     <span class="reviews-count">1</span>
                 </div>
                 <div class="info">
-                    <span class="info-title">2 звезды</span>
+                    <input type="checkbox" id="2" name="scales" checked class="custom-checkbox">
+                    <label for="2" class="info-title">2</label>
                     <div class="scale">
                         <div class="percent" style="width: 20%; background:#EA674A;"></div>
                     </div>
                     <span class="reviews-count">1</span>
                 </div>
                 <div class="info">
-                    <span class="info-title">1 звезда</span>
+                    <input type="checkbox" id="1" name="scales" checked class="custom-checkbox">
+                    <label for="1" class="info-title">1</label>
                     <div class="scale">
                         <div class="percent" style="width: 20%; background:#EA674A;"></div>
                     </div>
                     <span class="reviews-count">1</span>
                 </div>
             </div>
-            <div class="rating-btn-wrap">
-                <a href="#" class="btn btn-light">Написать отзыв</a>
-            </div>
+        </div>
         </div>
         <div class="sort">
            [sort]
@@ -88,7 +104,9 @@
                                 Как избежать негативных последствий?
                             </div>
                         </div>
-                        <div class="btn btn-answer">Ответить</div>
+                        <div class="review-btn-wrap">
+                            <div class="btn btn-answer">Ответить</div>
+                        </div>
                     </div>
                 </div>
                 <hr>
@@ -133,7 +151,9 @@
                                 Как избежать негативных последствий?
                             </div>
                         </div>
-                        <div class="btn btn-answer">Ответить</div>
+                        <div class="review-btn-wrap">
+                            <div class="btn btn-answer">Ответить</div>
+                        </div>
                     </div>
                 </div>
                 <hr>
@@ -157,27 +177,32 @@
             <div class="rating">
                 [rating]
             </div>
-            <div class="review-f-bl">
-                <div class="review-form">
-                    <form action="#" method="#">
-                        <input type="text" placeholder="Имя"><br>
-                        <input type="text" placeholder="Плюсы"><br>
-                        <input type="text" placeholder="Минусы"><br>
-                        <textarea placeholder="Комментарии"></textarea><br>
-                        <div class="r-btn-wrap">
-                            <a href="#" class="btn btn-light">Отправить</a>
-                        </div>
-                    </form>
+            <div class="review-f" id="review-f">
+                <div class="h2">Оставить отзыв о компании</div>
+                <div class="rating">
+                    [rating]
                 </div>
-                <div class="info shadow">
-                    <p>
-                        Для подачи жалобы поставьте одну звезду и опишите проблему в комментариях.
-                        Официальный представитель рассмотрит ее и пришлет вам ответ. Чтобы получить уведомление об ответе
-                        комании войдите <a href="#">в личный кабинет</a>
-                    </p>
+                <div class="review-f-bl" id="review-f-bl">
+                    <div class="review-form" id="review-form">
+                        <form action="#" method="#">
+                            <input type="text" id="name" class="review-form-style" placeholder="Имя">
+                            <input type="text" id="plus" class="review-form-style" placeholder="Плюсы">
+                            <input type="text" id="minus" class="review-form-style" placeholder="Минусы">
+                            <textarea placeholder="Комментарии" id="content" class="review-form-style"></textarea>
+                            <div class="r-btn-wrap">
+                                <a href="#" class="btn btn-light">Отправить</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="info shadow">
+                        <p>
+                            Для подачи жалобы поставьте одну звезду и опишите проблему в комментариях.
+                            Официальный представитель рассмотрит ее и пришлет вам ответ. Чтобы получить уведомление об ответе
+                            комании войдите <a href="#">в личный кабинет</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
