@@ -1,22 +1,13 @@
+.site-map-main-block {
+    margin-bottom: 30px;
+}
+
 .site-map-title {
     font-weight: 700;
 }
-.content .site-map-block a {
-    display: block;
+.site-map-main-block a {
+    display: table;
     text-decoration: none;
     font-size: 1em;
     line-height: 2em;
-}
-.site-map-main-block {
-    display: flex;
-    flex-wrap: wrap;
-}
-.site-map-main-block .site-map-title:first-child {
-    margin-top: 0;
-}
-.site-map-block {
-    width: 50%;
-    padding: 0 1em;
-    display: flex;
-    flex-direction: column;
 }

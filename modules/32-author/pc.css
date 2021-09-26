@@ -1,6 +1,7 @@
 .author-block .author-img {
     max-width: 50px;
     max-height: 50px;
+    border-radius: 50%;
 }
 .author-block .author-info {
     font-size: 0.9rem;
