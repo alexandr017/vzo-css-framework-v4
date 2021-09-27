@@ -7,7 +7,7 @@ for (let i = 0; i < jsSortBody.length; i++) {
     jsSortBody[i].appendChild(sortItem);
     let sortItems = document.createElement("div");
     sortItems.setAttribute("class", "sort-items sort-hide");
-    for (let j = 1; j < sortEl.length; j++) {
+    for (let j = 0; j < sortEl.length; j++) {
         let sortItemEl = document.createElement("div");
         sortItemEl.innerHTML = sortEl.options[j].innerHTML;
         sortItemEl.addEventListener("click", function(e) {
@@ -15,6 +15,13 @@ for (let i = 0; i < jsSortBody.length; i++) {
             let prevSortItemEl = this.parentNode.previousSibling;
             for (let i = 0; i < sortItemElPar.length; i++) {
                 if (sortItemElPar.options[i].innerHTML === this.innerHTML) {
+                    if(sortItemElPar.options[i].attributes['data-sort'].nodeValue == 'down'){
+                        sortItem.classList.add('sort-down');
+                        sortItem.classList.remove('sort-up');
+                    } else if(sortItemElPar.options[i].attributes['data-sort'].nodeValue == 'up'){
+                        sortItem.classList.remove('sort-down');
+                        sortItem.classList.add('sort-up');
+                    }
                     sortItemElPar.selectedIndex = i;
                     prevSortItemEl.innerHTML = this.innerHTML;
                     let selectedSortEl = this.parentNode.getElementsByClassName("same-as-selected");

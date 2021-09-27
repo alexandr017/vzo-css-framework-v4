@@ -14,9 +14,15 @@
     display: none;
 }
 
-.sort .sorted-item:after {
+.sort .sorted-item.sort-down:after {
     position: relative;
     content: url("/v4/images/sort-close-icon.svg");
+    float: right;
+    margin-right: 10px;
+}
+.sort .sorted-item:after {
+    position: relative;
+    content: url("/v4/images/sort-icon.svg");
     float: right;
     margin-right: 10px;
 }
@@ -27,7 +33,7 @@
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
 
-.sort .sorted-item.sort-arrow-active:after {
+.sort .sorted-item.sort-up:after {
     content: url("/v4/images/sort-icon.svg");
 }
 
