@@ -52,15 +52,26 @@ autocomplete($$("#searchInput")[0], links);
 
 window.onscroll = function() {shadowMenu()};
 function shadowMenu() {
-    let searchBlock = $$('.search-block')[0];
-    scrollSearchBlock = "scroll";
+    let searchBlock = $$('.search-block')[0],
+        hSubMenu = $$('.h-sub-menu-col');
+        scrollSubMenu = "scroll-h-sub-menu-col";
+        scrollSearchBlock = "scroll-search-block";
+
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         $$("#headerMenu")[0].className = "shadow fixed";
         searchBlock.classList.add(scrollSearchBlock);
+        for (let i = 0; i <  hSubMenu.length; i++) {
+            hSubMenu[i].classList.add(scrollSubMenu);
+        }
     } else {
         $$("#headerMenu")[0].className = " ";
         searchBlock.classList.remove(scrollSearchBlock);
+        for (let i = 0; i <  hSubMenu.length; i++) {
+            hSubMenu[i].classList.remove(scrollSubMenu);
+        }
+
     }
+
 }
 
 function searchToggle(){

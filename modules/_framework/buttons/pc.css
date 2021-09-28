@@ -281,6 +281,8 @@ svg:active .arrow_el {
 .btn-dark-outline {
     border: 1px solid #000;
     color: #000;
+    background: #fff;
+
 }
 
 .btn-dark-outline:hover {
