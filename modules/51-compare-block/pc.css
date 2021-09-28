@@ -1,0 +1,50 @@
+.container .compare-block {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5em 1em;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    bottom: 1em;
+}
+.compare-block .count-of-comparing-items {
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    position: relative;
+    left: -0.5em;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    display: none;
+}
+.compare-block .compare-item {
+    width: 60px;
+    height: 60px;
+}
+.compare-block .compare-block-text {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    align-items: center;
+    margin-left: 1em;
+}
+.compare-block .go-to-compare-page {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 0.3em 4em;
+    height: fit-content;
+    margin-right: 2em;
+}
+.compare-block .compare-right-block {
+    align-items: center;
+    position: relative;
+}
+.compare-block .close-compare-block {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+}
+.compare-left-block {
+    width: 50%;
+}

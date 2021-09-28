@@ -15,12 +15,14 @@ for (let i = 0; i < jsSortBody.length; i++) {
             let prevSortItemEl = this.parentNode.previousSibling;
             for (let i = 0; i < sortItemElPar.length; i++) {
                 if (sortItemElPar.options[i].innerHTML === this.innerHTML) {
-                    if(sortItemElPar.options[i].attributes['data-sort'].nodeValue == 'down'){
-                        sortItem.classList.add('sort-down');
-                        sortItem.classList.remove('sort-up');
-                    } else if(sortItemElPar.options[i].attributes['data-sort'].nodeValue == 'up'){
-                        sortItem.classList.remove('sort-down');
-                        sortItem.classList.add('sort-up');
+                    if(sortItemElPar.options[i].attributes['data-sort']) {
+                        if(sortItemElPar.options[i].attributes['data-sort'].nodeValue == 'down'){
+                            sortItem.classList.add('sort-down');
+                            sortItem.classList.remove('sort-up');
+                        } else if(sortItemElPar.options[i].attributes['data-sort'].nodeValue == 'up'){
+                            sortItem.classList.remove('sort-down');
+                            sortItem.classList.add('sort-up');
+                        }
                     }
                     sortItemElPar.selectedIndex = i;
                     prevSortItemEl.innerHTML = this.innerHTML;
