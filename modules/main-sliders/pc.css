@@ -90,3 +90,66 @@
 .news-block .btn {
     margin: 0 auto;
 }
+
+/*слайдер статьей*/
+.articles-block .h2 {
+    margin-bottom: 30px;
+}
+.article-inner-block .article-content {
+    margin: 15px 0 25px;
+}
+.article-content {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.article-title {
+    background: #F6F8FB;
+    border-radius: 3px;
+    padding: 0.5em 1em;
+}
+.article-date {
+    color: #95A5B0;
+    font-size: 0.8rem;
+    margin-top: 3em;
+}
+.article-inner-block{
+    background: #fff;
+    padding: 30px;
+}
+
+
+/*слайдер вебинаров*/
+
+.webinar-inner-block .webinar-content {
+    margin: 15px 0 25px;
+}
+.webinar-content {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.webinar-title {
+    background: #F6F8FB;
+    border-radius: 3px;
+    padding: 0.5em 1em;
+}
+.webinar-date {
+    color: #95A5B0;
+    font-size: 0.8rem;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+}
+.webinar-date svg {
+    margin-right: 10px;
+}
+.webinar-inner-block{
+    background: #fff;
+    border-radius: 15px;
+}
+
+.webinars-block .h5 {
+    margin-bottom: 30px;
+}
+.webinar-info {
+    padding: 20px 30px 30px 30px;
+}

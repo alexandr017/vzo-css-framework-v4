@@ -20,7 +20,7 @@
     color: #000;
 }
 
-.tab .tab-links.on,.nav-links.active {
+.tab .tab-links.on,.nav-links.active,.nav-links:hover {
     color: #000;
     border-bottom: 2px solid  #2ED47A;
 }
