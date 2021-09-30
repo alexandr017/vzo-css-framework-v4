@@ -1,0 +1,33 @@
+.our-requisites-img {
+    border-radius: 15px;
+    transition: transform 1s;
+    background: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.our-requisites-img img {
+    opacity: 0.5;
+    height: 100%;
+}
+
+.our-requisites {
+    padding: 35px 55px 55px;
+}
+
+.our-requisites-block {
+    margin-top: 30px;
+}
+
+.our-requisites-info {
+    margin-left: 55px;
+}
+
+.our-requisites-info hr {
+    margin: 20px 0;
+}
+
+.requisites-info-el {
+    margin-top: 15px;
+}

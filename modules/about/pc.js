@@ -28,20 +28,21 @@ $$('.timeline_wrap').forEach((e) => {
     }
 });
 
-if(document.getElementsByClassName('our-benefits-slider').length>0){
+
+if ( document.querySelectorAll('.our-benefits-slider' ).length > 0) {
     slideShow({
-        element:'.our-benefits-slider',
-        slidesToShow:1,
-        slidesToScroll:1,
-        circleScroll:false,
-        height:'300',
+        element: '.our-benefits-slider',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        circleScroll: false,
+        height: '300',
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    height:'240'
+                    height: '240'
                 }
             },
             {
@@ -54,7 +55,6 @@ if(document.getElementsByClassName('our-benefits-slider').length>0){
         ]
     })
 }
-
 
 if(document.getElementsByClassName('our-security-slider').length>0){
     slideShow({

@@ -1,0 +1,29 @@
+
+.finance-literacy {
+    padding: 90px 0;
+}
+
+.finance-literacy .h2 {
+    margin: 10px 0 65px;
+}
+
+.finance-literacy .about-short-code-content{
+    margin: 30px 0;
+}
+
+.about-finance-literacy {
+    flex-wrap: wrap;
+}
+
+.finance-literacy-el {
+    border-radius: 15px;
+    background: #F6F8FB;
+    width: 350px;
+    margin:15px 10px;
+    padding: 25px 40px;
+}
+
+.literacy-img-block {
+    margin-top: 20px;
+    justify-content: space-between;
+}

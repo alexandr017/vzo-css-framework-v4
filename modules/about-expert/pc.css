@@ -72,12 +72,16 @@
 }
 .employee-card-img {
     overflow: hidden;
-    max-height: 216px;
+    max-height: 215px;
+}
+
+.employee-card-img svg {
+    z-index: 1;
 }
 .employee-card-img img {
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    -webkit-transition: transform 1s;
 }
 
 .employee-card-img img:hover {

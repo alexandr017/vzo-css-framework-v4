@@ -120,18 +120,6 @@
 
 /*слайдер вебинаров*/
 
-.webinar-inner-block .webinar-content {
-    margin: 15px 0 25px;
-}
-.webinar-content {
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-.webinar-title {
-    background: #F6F8FB;
-    border-radius: 3px;
-    padding: 0.5em 1em;
-}
 .webinar-date {
     color: #95A5B0;
     font-size: 0.8rem;
@@ -139,17 +127,61 @@
     display: flex;
     align-items: center;
 }
+
 .webinar-date svg {
     margin-right: 10px;
 }
-.webinar-inner-block{
+.webinar-inner{
     background: #fff;
     border-radius: 15px;
+    padding-bottom:1px;
 }
 
-.webinars-block .h5 {
-    margin-bottom: 30px;
+.webinar-img {
+    overflow: hidden;
+    display: block;
+    border-radius: 15px 15px 0 0;
 }
+
+.webinar-img img {
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    -webkit-transition: transform 1s;
+}
+
+.webinar-img img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.webinar-slider h5 {
+    margin-bottom: 30px;
+    color:#000 !important;
+}
+
 .webinar-info {
-    padding: 20px 30px 30px 30px;
+    margin: 20px 30px 30px 30px;
+    display: block;
+}
+
+/*наши преимущества*/
+
+.our-benefit-item-inner,
+.our-security-item-inner{
+    padding: 25px 65px 45px;
+    background: #fff;
+}
+
+.our-benefit-item ,
+.our-security-item{
+    width: 66%;
+}
+
+.our-benefits-img,
+.our-securities-img{
+    width:33%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
 }

@@ -79,6 +79,10 @@
     -webkit-transition: all 1s ease-out;
 }
 
+.employee-card-img svg {
+    z-index: 1;
+}
+
 .employee-card-img img:hover {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
