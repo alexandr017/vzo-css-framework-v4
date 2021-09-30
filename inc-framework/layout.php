@@ -6,18 +6,6 @@
     <title><?php if(isset($mode)) echo $mode . ' - '; ?>ВЗО UX Framework</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
-    <?php ob_start("compress_css"); ?>
-    <style>
-        body{padding: 100px 0 !important;}
-        <?php
-        //includeModule('fonts/inter');
-
-        if (isset($GLOBALS['css'])) {
-            echo $GLOBALS['css'];
-        }
-        ?>
-    </style>
-    <? ob_end_flush(); ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -46,12 +34,21 @@ import('12-modal-general');
 import('main-sliders');
 
 
-
 if (isset($_GET['module'])) {
     import($_GET['module']);
 }
 ?>
 
+
+
+<style>
+    body{padding: 100px 0 !important;}
+    <?php
+    if (isset($GLOBALS['css'])) {
+        echo $GLOBALS['css'];
+    }
+    ?>
+</style>
 
 <script>
 <?php
@@ -60,8 +57,6 @@ if (isset($GLOBALS['js'])) {
 }
 ?>
 </script>
-
-
 <script>
     let modeSelect = document.getElementById('modeSelect');
     modeSelect.addEventListener("change",()  => {
