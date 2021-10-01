@@ -1,8 +1,9 @@
 let jsSortBody = $$(".sort-select");
 for (let i = 0; i < jsSortBody.length; i++) {
     let sortEl = jsSortBody[i].getElementsByTagName("select")[0];
-    let sortItem = document.createElement("div");
-    sortItem.setAttribute("class", "sorted-item");
+    //let sortItem = document.createElement("div");
+    let sortItem = $$('.sorted-item')[0];
+    //sortItem.setAttribute("class", "sorted-item");
     sortItem.innerHTML = sortEl.options[sortEl.selectedIndex].innerHTML;
     jsSortBody[i].appendChild(sortItem);
     let sortItems = document.createElement("div");
