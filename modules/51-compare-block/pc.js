@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', function(){
     var catId = $$('.compare-block')[0].attributes['data-cat'].value;
     var favorites = localStorage.getItem('vzo_compare'+catId);
-    setCompareBlockDynamicData(favorites.length);
+    if(favorites != '') {
+        var favoritesArr = favorites.split(',');
+        setCompareBlockDynamicData(favoritesArr.length);
+    }
     $$('.close-compare-block')[0].addEventListener('click', function () {
         $$('.compare-block')[0].style.display = 'none';
     })
