@@ -1,0 +1,18 @@
+.career-block {
+    background: #fff;
+    border-radius: 15px;
+    padding-right:  90px;
+    margin-top: 45px;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.find-job-block {
+    width: 50%;
+    margin-top: 30px;
+}
+
+.find-job-block .btn-dark-outline {
+    width: 245px;
+    margin: 25px 0;
+}

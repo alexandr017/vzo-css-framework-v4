@@ -4,7 +4,7 @@ if(document.getElementsByClassName('news-slider').length>0){
         slidesToShow:3,
         slidesToScroll:1,
         circleScroll:false,
-        height:'260',
+        height:'400',
         responsive: [
             {
                 breakpoint: 1200,
@@ -23,3 +23,4 @@ if(document.getElementsByClassName('news-slider').length>0){
         ]
     })
 }
+

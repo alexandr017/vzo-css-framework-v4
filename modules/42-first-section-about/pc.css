@@ -1,0 +1,34 @@
+
+.first-section-about {
+    padding: 135px 0 80px;
+}
+
+.first-section-about .h1 {
+    margin: 0 auto 160px;
+    width: 470px;
+}
+
+.first-section-about-info-wrap {
+    justify-content: space-between;
+    padding: 45px 65px;
+    border-radius: 15px;
+    background: #fff;
+    margin: 80px 0;
+}
+
+.first-section-about-info-el-icon {
+    margin: 10px 10px 0 0;
+}
+
+.first-section-about-info-el{
+    justify-content: center;
+}
+
+.first-section-count-info {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.first-section-code-h-text {
+    margin: 160px 0 0;
+}

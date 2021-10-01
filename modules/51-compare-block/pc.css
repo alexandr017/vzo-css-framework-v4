@@ -1,11 +1,19 @@
-.container .compare-block {
+.compare-block-wrap{
+    width: calc(100% - 30px);
+    position: fixed;
+    max-width: inherit;
+    padding: 0 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 1em;
+}
+.compare-block {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 0.5em 1em;
     justify-content: space-between;
-    width: 100%;
-    left: 0;
-    position: fixed;
-    bottom: 1em;
+    max-width: inherit;
+    position: relative;
 }
 .compare-block .count-of-comparing-items {
     border-radius: 50%;

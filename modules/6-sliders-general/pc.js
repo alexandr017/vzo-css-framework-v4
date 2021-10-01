@@ -493,3 +493,4 @@ var slideShow = (function () {
         init(data);
     }
 }());
+
