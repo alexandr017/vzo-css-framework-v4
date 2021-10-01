@@ -2,73 +2,77 @@
     float: right;
 }
 
-.sort-select .sorted-item {
+.select {
+    position: relative;
+    margin-bottom: 15px;
+}
+.select .selected-item {
     border-radius: 10px;
     width: 260px;
     margin: 10px 0;
     padding: 15px 20px;
     cursor: pointer;
 }
-
-.sort select {
-    display: none;
+.select .selected-item[data-type=up]:after {
+    position: relative;
+    content: url("/v4/images/sort-icon.svg");
+    float: right;
+    margin-right: 10px;
 }
 
-.sort .sorted-item.sort-down:after {
+.select .selected-item[data-type=down]:after {
     position: relative;
     content: url("/v4/images/sort-close-icon.svg");
     float: right;
     margin-right: 10px;
 }
-.sort .sorted-item:after {
-    position: relative;
-    content: url("/v4/images/sort-icon.svg");
-    float: right;
-    margin-right: 10px;
-}
 
-.sort .sorted-item.sort-arrow-active {
-    background: #fff;
-    border-radius: 5px 5px 0 0;
+.openSelect {
+    border-bottom: none;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
+    border-radius: 10px 10px 0 0;
 }
 
-.sort .sorted-item.sort-up:after {
-    content: url("/v4/images/sort-icon.svg");
+.select .selected-item.toggleSelect:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+    transform: translateY(-50%) rotate(-135deg);
+}
+.select .selected-dropdown {
+    border-radius:0 0 10px 10px;
+    width: 260px;
+    margin-top:-10px;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
+    transition: 0.2s ease;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    background: #fff;
 }
 
-.sort .sort-items div {
+.select .selected-dropdown .option {
     background: #fff;
     cursor: pointer;
     padding: 10px 20px;
+    border-top: 1px solid #F6F8FB;
 }
-
-.sort .sort-items div{
-   border-top: 1px solid #F6F8FB;
-}
-
-.sort .sort-items div:last-of-type {
+.select .selected-dropdown .option:last-of-type{
     border-radius: 0 0 5px 5px;
 }
-
-.sort .sort-items {
-    position: absolute;
-    background-color: #fff;
-    width: 260px;
-    margin: -20px auto 0;
-    z-index: 99;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 0 10px 10px rgba(135, 145, 159, 0.15);
-}
-
-.sort .sort-hide {
-    display: none;
-}
-
-.sort .sort-items div:hover,
-.same-as-selected {
+.select .selected-dropdown .option:hover {
     cursor: pointer;
     color: #2ED47A;
 }
+.select .selected-dropdown.toggleSelect {
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
 
 
