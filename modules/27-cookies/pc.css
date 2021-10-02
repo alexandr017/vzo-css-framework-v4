@@ -1,0 +1,11 @@
+.cookies-info {
+    padding: 15px;
+    max-width: 285px;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+
+.cookies-btn-wrap {
+    margin-top: 15px;
+}
