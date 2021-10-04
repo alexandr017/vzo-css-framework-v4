@@ -1,0 +1,28 @@
+.team-quote-block {
+    background: url("/v4/images/about-team-bg-image.png") no-repeat;
+    height: 535px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 115px 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.team-quote {
+    width: 560px;
+    height: 305px;
+    padding: 25px 55px 55px;
+    background: #fff;
+}
+
+.team-quote::after{
+    content:url("/v4/images/quote-arrow-left.png");
+    position: absolute;
+    margin: -210px 0 0 -90px;
+}
+
+.team-quote-description {
+    justify-content: space-between;
+    margin-top: 70px;
+}
+

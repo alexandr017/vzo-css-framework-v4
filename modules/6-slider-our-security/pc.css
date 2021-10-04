@@ -5,3 +5,20 @@
 .our-security .h2 {
     margin: 0 0 55px;
 }
+
+.our-security-item-inner{
+    padding: 25px 65px 45px;
+    background: #fff;
+}
+
+
+.our-security-item{
+    width: 66%;
+}
+
+.our-securities-img{
+    width:33%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}

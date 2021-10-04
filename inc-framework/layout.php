@@ -31,7 +31,7 @@ import('62-messages');
 import('63-user-guest-form');
 import('6-sliders-general');
 import('12-modal-general');
-import('main-sliders');
+
 
 
 if (isset($_GET['module'])) {
