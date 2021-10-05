@@ -1,0 +1,26 @@
+header {
+
+}
+
+header .top-line {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menuButton {
+    cursor: pointer;
+}
+
+.site-name {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.site-slogan {
+    font-size: 1rem;
+    vertical-align: top;
+}
+
+#searchButton {
+    cursor: pointer;
+}
