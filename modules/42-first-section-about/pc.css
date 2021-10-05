@@ -1,6 +1,6 @@
 
 .first-section-about {
-    padding: 135px 0 80px;
+    padding-top: 50px;
 }
 
 .first-section-about .h1 {
@@ -27,8 +27,4 @@
 .first-section-count-info {
     font-weight: 700;
     font-size: 2.5rem;
-}
-
-.first-section-code-h-text {
-    margin: 160px 0 0;
 }

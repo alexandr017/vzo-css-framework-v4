@@ -1,0 +1,74 @@
+.team-inner-block {
+    min-height: 200px;
+}
+.team-img {
+    margin-right: 25px;
+    width: 175px;
+}
+.team-img img{
+    min-width: 175px;
+    border-radius: 15px 0 0 15px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info {
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.team-name {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+.team-btn-wrap {
+    margin: 0 0 65px;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-tooltip-icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.tooltip {
+    display: none;
+    background: #000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: -50px;
+    margin-left: -220px;
+    max-width: 190px;
+    position: relative;
+    min-height:50px;
+}
+
+.tooltip:after {
+
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.tooltip a{
+    color: #fff;
+    text-decoration: underline;
+    font-size: .87rem;
+
+}
+
+.team-tooltip-icon:hover .tooltip{
+    display: block;
+}
