@@ -303,3 +303,10 @@
 .hidden-card-info .card-btn-wrap .btn:last-of-type {
     margin-left: 65px;
 }
+
+.pay-icons-wrap span {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin-right: 5px;
+}
