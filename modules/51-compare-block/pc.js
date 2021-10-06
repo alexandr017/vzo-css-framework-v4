@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     var catId = $$('.compare-block')[0].attributes['data-cat'].value;
+    // var favorites = localStorage.setItem('vzo_compare'+catId,'');
     var favorites = localStorage.getItem('vzo_compare'+catId);
     if(favorites != '') {
         var favoritesArr = favorites.split(',');

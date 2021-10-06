@@ -55,5 +55,31 @@ cardHiddenBlock.forEach(function (value, index) {
     });
 });
 
+var addToCompareBtns = $$('.addToCompare');
+for(let i=0;i<addToCompareBtns.length;i++) {
+    addToCompareBtns[i].addEventListener('click',function (e) {
+        e.preventDefault();
+        var elem = e.target.closest('svg');
+        var catId = $$('.compare-block')[0].attributes['data-cat'].value;
+        favorites = localStorage.getItem('vzo_compare'+ catId);
+        if (favorites == null || favorites == '') {
+            favoritesArr = Array();
+        } else {
+            favoritesArr = favorites.split(',');
+            if(favoritesArr.length == 10){
+                alert('Нельзя добавлять более 10 карточек одного раздела в сравнение');
+                return;
+            }
+        }
+        var id = elem.attributes['data-id'].value;
+        if(favoritesArr.indexOf(id) == -1) {
+            favoritesArr.push(id);
+        }
+        localStorage.setItem('vzo_compare'+catId,favoritesArr);
+
+        setCompareBlockDynamicData(favoritesArr.length);
+        var logo = elem.closest('.card').querySelectorAll('.logo img')[0].attributes['src'].nodeValue;
+    })
+}
 
 
