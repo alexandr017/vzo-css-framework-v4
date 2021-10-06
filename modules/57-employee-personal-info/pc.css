@@ -1,0 +1,83 @@
+.personal-block-info {
+    padding: 45px 65px;
+    margin: 50px 0 80px;
+}
+
+.personal-block-top-info {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.personal-position {
+    align-items: center;
+}
+
+.personal-position img{
+    margin-left: 10px;
+}
+
+.personal-body-block {
+    margin-top: 40px;
+}
+
+.personal-body-block .personal-image {
+    width:40%;
+    margin-right: 45px;
+}
+
+.personal-body-block .personal-image img {
+    border-radius: 50%;
+    width: 200px;
+}
+.personal-body-info-el:not(:first-of-type) {
+    margin-top: 25px;
+}
+.personal-body-info-el .personal-body-info-col:first-of-type {
+    font-size: .87rem;
+    color: #95A5B0;
+    width: 20%;
+}
+
+.personal-body-info-el .personal-body-info-col:last-of-type {
+    width: 80%;
+}
+
+.personal-content-block .h2 {
+    margin-bottom: 40px;
+}
+
+.personal-achievements {
+    margin-top: 50px;
+}
+.personal-certificates-block {
+    flex-wrap: wrap;
+}
+.personal-certificates-el {
+    width: 350px;
+    height: 370px;
+    margin: 10px;
+}
+
+.personal-certificates-el img {
+    border-radius: 15px 15px 0 0;
+    opacity: 0.6;
+}
+
+.personal-certificates-info {
+    padding: 15px 30px;
+}
+.personal-certificate-image {
+    background: rgba(0, 0, 0, 1);
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.zoom-icon {
+    position: absolute;
+    margin: auto;
+    cursor: pointer;
+    z-index: 10;
+    width: 55px;
+    height: 55px;
+}

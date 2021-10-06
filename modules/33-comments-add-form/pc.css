@@ -1,6 +1,6 @@
 .form-1 {
     width: 790px;
-    margin: 15px 0;
+    margin: 15px auto;
     padding: 30px;
     background: #F6F8FB;
 }
@@ -12,21 +12,32 @@
 
 .form-1 input, .form-1 textarea {
     background: #F6F8FB;
-    color: #95A5B0;
-    border-radius: 10px;
     margin-top: 10px;
     padding: 15px 0;
     outline: none;
     border: none;
     display: block;
-    width: calc(100% - 30px);
+    resize: none;
+    width: 100%;
+    color:#000;
 }
 
 .form-1-active input, .form-1-active textarea {
     background: #fff;
+
 }
 
-.form-1 input {
+.form-1 input::-webkit-input-placeholder,
+.form-1 textarea::-webkit-input-placeholder{
+    color:#95A5B0;
+}
+
+.form-1 input::-moz-placeholder,
+.form-1 textarea::-moz-placeholder {
+    color:#95A5B0;
+}
+
+.form-1 input{
     border-bottom: 1px solid #E6EBEF;
 }
 
@@ -37,4 +48,14 @@
 .r-btn-wrap {
     margin-top: 10px;
     margin-right: 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cancel-btn {
+    font-weight: 600;
+    color: #000;
+    margin-right: 25px;
+    cursor: pointer;
+
 }

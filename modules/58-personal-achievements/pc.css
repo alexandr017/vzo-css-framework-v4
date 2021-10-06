@@ -1,0 +1,46 @@
+.personal-achievements {
+    margin-top: 50px;
+}
+
+.personal-certificates-block {
+    flex-wrap: wrap;
+}
+
+.personal-certificates-el {
+    width: 350px;
+    height: 370px;
+    margin: 10px;
+}
+
+.personal-certificates-el img {
+    border-radius: 15px 15px 0 0;
+    opacity: 0.6;
+}
+
+.personal-certificates-info {
+    padding: 15px 30px;
+}
+
+.personal-certificate-image {
+    background: rgba(0, 0, 0, 1);
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.personal-achievements-btn-wrap {
+
+}
+.zoom-icon {
+    position: absolute;
+    margin: auto;
+    cursor: pointer;
+    z-index: 10;
+    width: 55px;
+    height: 55px;
+}
+
+.personal-achievements-btn-wrap {
+    margin-top: 70px;
+    justify-content: center;
+}

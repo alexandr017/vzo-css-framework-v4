@@ -281,6 +281,7 @@ svg:active .arrow_el {
 .btn-dark-outline {
     border: 1px solid #000;
     color: #000;
+    background: #fff;
 }
 
 .btn-dark-outline:hover {
@@ -301,4 +302,24 @@ svg:active .arrow_el {
 
 .btn:hover .btn-wrap-arrow {
     left: calc(100% - 25px);
+}
+
+.btn-1 {
+    width: 70px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.btn-1-dark {
+    background: #000;
 }
