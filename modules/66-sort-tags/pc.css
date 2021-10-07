@@ -1,0 +1,20 @@
+.sort-tags {
+    margin-top: 50px;
+}
+
+.sort-tags .tag {
+    color: #222735;
+    background: #F6F8FB;
+    border-radius: 15px;
+    font-size: 0.87rem;
+    display: inline-block;
+    margin: 10px 20px 10px 0;
+    padding: 5px 20px;
+}
+
+.sort-tags .tag.active,
+.sort-tags .tag:hover{
+    background: #000000;
+    color: #fff;
+    padding: 5px 20px;
+}
