@@ -3,28 +3,31 @@ document.addEventListener('DOMContentLoaded', function(){
     var category = compareBlock.attributes['data-catId'].nodeValue;
     // let compare = localStorage.setItem('vzo_compare'+ category,'');
     let compare = localStorage.getItem('vzo_compare'+ category);
-    if(compare == null){
-        compareBlock.innerText = 'Нет предложений для сравнения';
-        return;
-    }
-    let data = {
-        '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
-        'cards': compare,
-        'id': category
-    };
-    fetch('/compare_load', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json;charset=utf-8'
-        },
-        body: JSON.stringify(data)
-    }).then((res) => {
-        return res.text().then((value) => {
-            compareBlock.innerHTML = value;
-            addCompareSliderBtns();
-        }).catch((err) => {
-            console.log(err);
-        });
+    // if(compare == null || compare == '' || compare == 'null'){
+    //     compareBlock.innerText = 'Нет предложений для сравнения';
+    //     $$('.clearCompare')[0].style.display = 'none';
+    //     return;
+    // }
+    // let data = {
+    //     '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
+    //     'cards': compare,
+    //     'id': category
+    // };
+    // fetch('/compare_load', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-Type': 'application/json;charset=utf-8'
+    //     },
+    //     body: JSON.stringify(data)
+    // }).then((res) => {
+    //     return res.text().then((value) => {
+    //         compareBlock.innerHTML = value;
+    //         addCompareSliderBtns();
+    //         $$('.clearCompare')[0].style.display = 'block';
+    //         addClickToDeleteBtns();
+    //     }).catch((err) => {
+    //         console.log(err);
+    //     });
     })
 
     function addCompareSliderBtns() {
@@ -88,6 +91,24 @@ document.addEventListener('DOMContentLoaded', function(){
                 itemsWithBorderRadius[i].children[0-indexForItem+1].style.borderRadius = 'unset';
                 itemsWithBorderRadius[i].children[0-indexForItem+2].style.borderRadius = '0 15px 15px 0';
             }
+        }
+    }
+    function addClickToDeleteBtns() {
+        var deleteFromCompareBtns = $$('.deleteFromCompare');
+        for(let i=0;i<deleteFromCompareBtns.length;i++){
+            deleteFromCompareBtns[i].addEventListener('click',function (e) {
+                var cardId = e.target.closest('svg').dataset['id'];
+                var compareBlock = $$('.card-compare-slider')[0];
+                var category = compareBlock.attributes['data-catId'].nodeValue;
+                let compare = localStorage.getItem('vzo_compare'+ category);
+                compare = compare.split(',').filter((n) => {return n != cardId});
+                if(compare.length == 0){
+                    localStorage.removeItem('vzo_compare'+ category);
+                }else{
+                    localStorage.setItem('vzo_compare'+ category,compare.join(','));
+                }
+                location.reload();
+            },false)
         }
     }
 })
