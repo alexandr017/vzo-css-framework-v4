@@ -1,8 +1,10 @@
 <div class="container">
 
 <h1>Отзыв</h1>
+    {{33-comments-add-form}}
     <div class="reviews">
-        <div class="h2">Все отзывы и жалобы</div>
+        <div class="h2 text-center">Все отзывы и жалобы</div>
+        {{70-review-scale}}
         <div class="scale-rating-block border-radius shadow flex">
             <div class="scale-rating-block-part">
                 <div class="scale-rating-el">
@@ -71,9 +73,11 @@
             </div>
         </div>
         </div>
+        {{4-sort}}
         <div class="sort">
            [sort]
         </div>
+        {{72-review-body}}
         <div class="block-reviews">
             <div class="review-wrap">
                 <div class="review-inner-block">
@@ -105,7 +109,7 @@
                             </div>
                         </div>
                         <div class="review-btn-wrap">
-                            <div class="btn btn-answer">Ответить</div>
+                            <div class="btn btn-answer btn-toggle">Ответить</div>
                         </div>
                     </div>
                 </div>
@@ -152,7 +156,7 @@
                             </div>
                         </div>
                         <div class="review-btn-wrap">
-                            <div class="btn btn-answer">Ответить</div>
+                            <div class="btn btn-answer btn-toggle">Ответить</div>
                         </div>
                     </div>
                 </div>
@@ -172,37 +176,33 @@
                 <hr>
             </div>
         </div>
-        <div class="review-f">
-            <div class="h2">Оставить отзыв о компании</div>
+        {{71-review-form}}
+        <div class="review-f" id="review-f">
+            <div class="h2 text-center">Оставить отзыв о компании</div>
             <div class="rating">
                 [rating]
             </div>
-            <div class="review-f" id="review-f">
-                <div class="h2">Оставить отзыв о компании</div>
-                <div class="rating">
-                    [rating]
+            <div class="review-f-bl" id="review-f-bl">
+                <div class="review-form" id="review-form">
+                    <form action="#" method="" id="form-1">
+                        <input type="text" id="name" class="review-form-style" placeholder="Имя">
+                        <input type="text" id="plus" class="review-form-style" placeholder="Плюсы">
+                        <input type="text" id="minus" class="review-form-style" placeholder="Минусы">
+                        <textarea placeholder="Комментарии" id="content" class="review-form-style"></textarea>
+                        <div class="r-btn-wrap">
+                            <a href="#" class="btn btn-light">Отправить</a>
+                        </div>
+                    </form>
                 </div>
-                <div class="review-f-bl" id="review-f-bl">
-                    <div class="review-form" id="review-form">
-                        <form action="#" method="">
-                            <input type="text" id="name" class="review-form-style" placeholder="Имя">
-                            <input type="text" id="plus" class="review-form-style" placeholder="Плюсы">
-                            <input type="text" id="minus" class="review-form-style" placeholder="Минусы">
-                            <textarea placeholder="Комментарии" id="content" class="review-form-style"></textarea>
-                            <div class="r-btn-wrap">
-                                <a href="#" class="btn btn-light">Отправить</a>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="info shadow">
-                        <p>
-                            Для подачи жалобы поставьте одну звезду и опишите проблему в комментариях.
-                            Официальный представитель рассмотрит ее и пришлет вам ответ. Чтобы получить уведомление об ответе
-                            комании войдите <a href="#">в личный кабинет</a>
-                        </p>
-                    </div>
+                <div class="info shadow">
+                    <p>
+                        Для подачи жалобы поставьте одну звезду и опишите проблему в комментариях.
+                        Официальный представитель рассмотрит ее и пришлет вам ответ. Чтобы получить уведомление об ответе
+                        комании войдите <a href="#">в личный кабинет</a>
+                    </p>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
