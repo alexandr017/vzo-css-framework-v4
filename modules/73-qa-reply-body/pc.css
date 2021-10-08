@@ -1,0 +1,54 @@
+.experts-reply {
+    margin: 30px 95px;
+    display: inline-flex;
+}
+
+.experts-reply .expert-logo .check {
+    position: absolute;
+    margin: -90px 0 0 55px;
+}
+
+.experts-reply .reply-info {
+    margin-left: 25px;
+}
+
+.question-block .experts-reply .reply-info .expert-name {
+    font-weight: 600;
+    cursor: pointer;
+    color: #222735;
+}
+
+.experts-reply .reply-info .expert-post {
+    color: #95A5B0;
+    font-size: 0.87rem;
+}
+
+.experts-reply .reply-info .reply-text {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.experts-reply .reply-info .reply-bottom-block {
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.experts-reply .reply-info .reply-bottom-block .down-likes {
+    margin-left: 15px;
+    cursor:pointer;
+}
+
+.experts-reply .reply-info .reply-bottom-block .reply-comment {
+    color: #6C95FF;
+    cursor:pointer;
+}
+
+.experts-reply .reply-info .reply-bottom-block time {
+    margin-left: 25px;
+}
+
+.experts-reply .reply-info .reply-bottom-block .up-likes span,
+.experts-reply .reply-info .reply-bottom-block .down-likes span     {
+    margin-left: 5px;
+    cursor:pointer;
+}
