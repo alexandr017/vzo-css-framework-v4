@@ -1,12 +1,21 @@
-.container .compare-block {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 0.5em 1em;
-    justify-content: space-between;
+.compare-block {
+    padding: 0 15px;
     width: 100%;
     left: 0;
+    right: 0;
     position: fixed;
     bottom: 1em;
-    display: none;
+    max-width: inherit;
+    margin: 0 auto;
+    z-index: 10;
+    /*display: none;*/
+}
+.compare-block-background {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: inherit;
+    padding: 0.5em 1em;
+    justify-content: space-between;
 }
 .compare-block .count-of-comparing-items {
     border-radius: 50%;
@@ -18,7 +27,7 @@
     justify-content: center;
     width: 60px;
     height: 60px;
-    display: none;
+    /*display: none;*/
 }
 .compare-block .compare-item {
     width: 60px;

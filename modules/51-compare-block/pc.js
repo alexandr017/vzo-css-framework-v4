@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var catId = $$('.compare-block')[0].attributes['data-cat'].value;
     // var favorites = localStorage.setItem('vzo_compare'+catId,'');
     var favorites = localStorage.getItem('vzo_compare'+catId);
-    if(favorites != '') {
+    if(favorites != null) {
         var favoritesArr = favorites.split(',');
         setCompareBlockDynamicData(favoritesArr.length);
     }
@@ -16,7 +16,7 @@ function setCompareBlockDynamicData(compareItemsCount) {
     }
     var endOfCompareWord = '';
     if(compareItemsCount > 1) {
-        $$('.count-of-comparing-items')[0].innerText = '+' + compareItemsCount;
+        $$('.count-of-comparing-items')[0].innerText = '+' + (compareItemsCount-1);
     }
     endOfCompareWord = (compareItemsCount == 1) ? 'ие' : (compareItemsCount <= 4 && compareItemsCount != 0) ? 'ия' : (compareItemsCount == 0 || compareItemsCount >=5 && compareItemsCount <=9) ? 'ий' : '';
     $$('.compare-block-text')[0].innerText = compareItemsCount + ' предложен'+endOfCompareWord+' к сравнению';
