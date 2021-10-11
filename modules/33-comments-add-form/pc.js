@@ -1,5 +1,5 @@
 function focusForm() {
-    $$('.form-1').forEach(form => {
+    $$('.form-1').forEach( form => {
         form.querySelectorAll('input, textarea').forEach(tag => {
             tag.addEventListener('focus', () => {
                 form.classList.add('form-1-active');

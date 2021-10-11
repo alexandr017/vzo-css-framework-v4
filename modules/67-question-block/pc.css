@@ -60,5 +60,7 @@
     align-items: center;
     background: #F6F8FB;
     color: #222735 !important;
+    white-space: nowrap;
+
 }
 

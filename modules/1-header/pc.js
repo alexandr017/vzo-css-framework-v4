@@ -38,7 +38,7 @@ function autocomplete(inp, arr) {
             if (element != x[i] && element != inp) {
                 x[i].parentNode.removeChild(x[i]);
                 searchBg.style.display = 'none';
-                searchModule.style.border = '1px solid #C2CFD8';
+                searchModule.style.boxShadow = '0px 6px 20px rgba(135, 145, 159, 0.15)';
                 searchModule.style.borderRadius = '25px';
             }
         }
