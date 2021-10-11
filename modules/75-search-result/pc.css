@@ -1,0 +1,17 @@
+.search-result {
+    margin: 30px;
+}
+
+.search-result-item {
+    padding: 15px 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.search-result-item p {
+    margin: 15px 0;
+}
+
+.search-result-section {
+    color: #BDBDBD;
+}
