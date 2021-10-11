@@ -28,6 +28,18 @@
     outline: none;
     position: relative;
 }
+
+.btn-light-border {
+    font-weight: 600;
+    border: 1px solid #E8EEF6;
+    color:#000;
+}
+
+.btn-light-2 {
+    color: #355FF1;
+    background: #F3F8FF;
+}
+
 .btn-cnv {
     color: #fff;
     background: #2CDD88;
@@ -72,28 +84,7 @@
 }
 
 
-.btn-light-1:active {
-    background: #2BC77E;
-}
 
-.btn-light-2 {
-    color: #2CDD88;
-    background: #E3FFED;
-}
-
-.btn-light-2:hover {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    background: #2ED47A;
-    border-radius: 23px;
-    cursor: pointer;
-
-}
-
-.btn-light-2:active {
-    background: #2BC77E;
-}
 
 .btn-chat-1 {
     background: #fff;

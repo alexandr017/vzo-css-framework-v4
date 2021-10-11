@@ -1,0 +1,63 @@
+<div class="container">
+
+    <div class="search-block-1">
+        <input class="input-text" type="text" placeholder="Что хотите найти?">
+    </div>
+    <div class="search-block-2 flex">
+        <input class="input-text" id="searchInput" type="text" placeholder="Что хотите найти?">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M15.2124 14.5735L11.4044 10.6129C12.3835 9.44901 12.92 7.98455 12.92 6.45999C12.92 2.89801 10.022 0 6.45999 0C2.89801 0 0 2.89801 0 6.45999C0 10.022 2.89801 12.92 6.45999 12.92C7.79721 12.92 9.07152 12.5167 10.161 11.751L13.998 15.7416C14.1583 15.9082 14.374 16 14.6052 16C14.824 16 15.0316 15.9166 15.1891 15.7649C15.5239 15.4428 15.5346 14.9085 15.2124 14.5735ZM6.45999 1.68522C9.09286 1.68522 11.2348 3.82713 11.2348 6.45999C11.2348 9.09286 9.09286 11.2348 6.45999 11.2348C3.82713 11.2348 1.68522 9.09286 1.68522 6.45999C1.68522 3.82713 3.82713 1.68522 6.45999 1.68522Z" fill="#95A5B0"/>
+        </svg>
+    </div>
+
+    <div class="switch-toggle">
+        <label class="switch-toggle-body">
+            <input type="checkbox">
+            <span class="slider-pointer slider-pointer-on"></span>
+        </label>
+    </div>
+    <div class="check-box">
+        <input type="checkbox" id="curr_ctrl_1" class="custom-checkbox">
+        <label for="curr_ctrl_1"></label>
+    </div>
+    <div class="close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <circle cx="15" cy="15" r="15" fill="#222735"/>
+            <rect width="1.93451" height="18.7535" rx="0.872229" transform="matrix(0.710426 -0.703772 0.70577 0.708441 7.5 8.86328)" fill="white"/>
+            <rect width="1.9345" height="18.7538" rx="0.872229" transform="matrix(0.708106 0.706106 -0.708106 0.706106 20.7793 7.5)" fill="white"/>
+        </svg>
+    </div>
+    <div class="calculator-input">
+        <input type="number" class="input-number" step="5" min="0" max="100"  value="15000">
+    </div>
+
+    <div class="credit-score">
+        <div class="h4">Личные данные</div>
+        <form action="" class="flex credit-score-form">
+            <div class="form-input-block">
+                <label class="form-input-title" for="user-name"> Имя</label>
+                <input type="text" placeholder="Иван" class="form-input form-input-s" id="user-name">
+            </div>
+            <div class="form-input-block">
+                <label class="form-input-title" for="user-surname"> Фамилия</label>
+                <input type="text" placeholder="Иванов" class="form-input form-input-s" id="user-surname">
+            </div>
+            <div class="form-input-block">
+                <label class="form-input-title" for="user-second-name">Отчество</label>
+                <input type="text" placeholder="Иванович" class="form-input form-input-s " id="user-second-name">
+            </div>
+            <div class="form-input-block">
+                <label class="form-input-title" for="user-birthday"> Дата рождения</label>
+                <input type="date"  class="form-input form-input-s" id="user-birthday" placeholder="дд.мм.гг">
+            </div>
+            <div class="form-input-block">
+                <label class="form-input-title" for="user-email"> Почта</label>
+                <input type="email" placeholder="ivanov@gmail.com" class="form-input form-input-l" id="user-email">
+            </div>
+        </form>
+
+        <div class="h4">Паспортные данные</div>
+    </div>
+
+</div>
+
