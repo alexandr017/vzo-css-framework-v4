@@ -14,31 +14,52 @@
     position: relative;
 }
 .btn-1 {
-    width: 70px;
-    height: 45px;
-    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     cursor: pointer;
-    font-weight: 600;
-    letter-spacing: 1px;
     border: none;
     outline: none;
     position: relative;
 }
 
 .btn-light-border {
-    font-weight: 600;
     border: 1px solid #E8EEF6;
     color:#000;
+}
+
+.btn-light-border:hover {
+    border: 1px solid #355FF1;
+    color: #355FF1;
+
+}
+
+.btn-light-border:active {
+    border: 1px solid #0731C1;
+    color: #0731C1;
+
 }
 
 .btn-light-2 {
     color: #355FF1;
     background: #F3F8FF;
 }
+
+.btn-light-2:hover {
+    color:#fff;
+    background: #355FF1;
+}
+
+.btn-light-2:active {
+    color:#fff;
+    background: #1742D8;
+}
+
+
 
 .btn-cnv {
     color: #fff;
@@ -309,5 +330,13 @@ svg:active .arrow_el {
 }
 
 .btn-1-dark {
-    background: #000;
+    background: #355FF1;
+}
+
+.btn-1-dark:hover {
+    background: #1742D8;
+}
+
+.btn-1-dark:active {
+    background: #0731C1;
 }

@@ -8,7 +8,7 @@
     width: 350px;
     height: 6px;
     background:#E8EEF6;
-    border-radius: 28px;
+    border-radius: 50px;
     display:flex;
     justify-content: space-between;
     margin: 0 20px;
@@ -16,12 +16,17 @@
 
 .scale-rating-block .scale .percent {
     height: 6px;
-    border-radius: 28px;
+    border-radius: 50px;
     margin: 0;
 }
 
 .scale-rating-block .reviews-rating-title {
     margin: 25px 0 0 50px;
+}
+
+.scale-rating-block-part .count-review {
+    color:#95A5B0;
+    font-size: .87rem;
 }
 
 .scale-rating-block-part:first-of-type {
@@ -40,8 +45,7 @@
 }
 
 .scale-rating-block .info {
-    margin: 20px 0 0 0;
-    display: flex;
+    margin-top: 10px;
     align-items: center;
 }
 
@@ -51,7 +55,7 @@
 }
 
 .scale-rating-block .info .reviews-count {
-    color:#87919f;
+    color:#95A5B0;
 }
 
 .scale-rating-block .rating-btn-wrap {
