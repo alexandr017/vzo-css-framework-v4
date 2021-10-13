@@ -41,10 +41,6 @@
     border-bottom: 1px solid #E6EBEF;
 }
 
-.r-btn-wrap a, .r-btn-wrap button {
-    float: right;
-}
-
 .r-btn-wrap {
     margin-top: 10px;
     margin-right: 15px;
@@ -53,9 +49,7 @@
 }
 
 .cancel-btn {
-    font-weight: 600;
-    color: #000;
+    color: #355FF1;
     margin-right: 25px;
     cursor: pointer;
-
 }

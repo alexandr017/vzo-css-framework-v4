@@ -1,13 +1,22 @@
 .block-reviews {
-    margin: 60px 160px;
+    margin: 60px 95px;
 }
 
-.review-inner-block {
-    display: flex;
-    margin: 60px 0;
+.review-wrap {
+    background: #fff;
+    padding: 30px;
+
 }
 
-.review-status-icon{
+.review-inner-block .user-logo{
+    width: 10%;
+}
+
+.review-user-block {
+    width: 90%;
+}
+
+.review-status-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,10 +24,6 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-}
-
-.block-reviews .review-wrap .user-logo svg {
-    margin-left: -60px;
 }
 
 .review-user-block {
@@ -37,39 +42,48 @@
 }
 
 .block-reviews .review-wrap .plus .positive-part {
-    color: #2ED47A;
+    color: #2CDD88;
 }
 
 .block-reviews .review-wrap .minus .negative-part {
-    color: #FF4D4A;
+    color: #FF4E59;
 }
 
 .block-reviews .review-wrap .review-part-body {
     margin-top: 5px;
 }
 
-.block-reviews .review-wrap .btn-answer {
-    margin: 30px 0;
-    float: right;
-    color: #4FABFA;
+.block-reviews .review-wrap .review-btn-wrap {
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.block-reviews .review-wrap .btn-answer:hover {
-    background: #F6F8FB;
+.block-reviews .review-wrap .review-btn-wrap .btn-answer {
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.review-count-comments {
+    font-weight: 600;
+    color: #355FF1;
+    margin-right: 10px;
 }
 
 .block-reviews .review-wrap .replace {
-    display: flex;
-    margin-left: 50px;
+    margin: 0 65px;
+    padding: 30px 0;
+    border-top: 1px solid #E8EEF6;
 }
-
+.block-reviews .review-wrap .replace .replace-confirm {
+    margin-left: 20px;
+}
 .block-reviews .review-wrap .replace .replace-confirm span {
     font-weight: 600;
     font-size: 1.1rem;
 }
 
 .block-reviews .review-wrap .replace .replace-icon {
-    margin: 5px 30px 0 0;
+    margin-left: -20px;
 }
 
 .block-reviews .review-wrap .replace .replace-confirm .replace_el {
@@ -118,7 +132,7 @@
     background: #FF4E59;
 }
 
-.review-status-icon  {
+.review-status-icon {
     margin-top: -70px;
     background: #fff;
 }
@@ -127,8 +141,13 @@
     height: 100px;
     padding: 15px 30px;
     overflow: hidden;
-    background: #F6F8FB;
     border-radius: 15px;
 }
+
+.reply-bottom-info .replace-date {
+    font-size: .87rem;
+    color:#95A5B0;
+}
+
 
 

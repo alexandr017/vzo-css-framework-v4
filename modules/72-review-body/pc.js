@@ -93,7 +93,7 @@ function removeFormBack() {
 
 
 
-    let successCompleteQuestion = document.querySelectorAll('.review-user-block');
+let successCompleteQuestion = document.querySelectorAll('.review-user-block');
 for (let i = 0; i < successCompleteQuestion.length; i++) {
     complainSuccessBlock  = "complainSuccessBlock";
 
