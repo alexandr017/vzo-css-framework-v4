@@ -1,0 +1,150 @@
+.block-reviews {
+    margin: 60px 95px;
+}
+
+.review-wrap {
+    background: #fff;
+    padding: 30px;
+
+}
+
+.review-inner-block .user-logo{
+    width: 10%;
+}
+
+.review-user-block {
+    width: 90%;
+}
+
+.review-status-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.review-user-block {
+    margin-left: 30px;
+}
+
+.block-reviews .review-wrap .user-rating,
+.block-reviews .review-wrap .review-part {
+    margin-top: 25px;
+}
+
+.block-reviews .review-wrap .review-title {
+    font-weight: 600;
+
+}
+
+.block-reviews .review-wrap .review-user-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.block-reviews .review-wrap .plus .positive-part {
+    color: #2CDD88;
+}
+
+.block-reviews .review-wrap .minus .negative-part {
+    color: #FF4E59;
+}
+
+.block-reviews .review-wrap .review-part-body {
+    margin-top: 5px;
+}
+
+.block-reviews .review-wrap .review-btn-wrap {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.block-reviews .review-wrap .review-btn-wrap .btn-answer {
+    margin: 30px 10px;
+    cursor: pointer;
+}
+
+.review-count-comments {
+    font-weight: 600;
+    color: #355FF1;
+    cursor:pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.review-count-comments svg {
+    margin-left: 10px;
+}
+
+.block-reviews .review-wrap .replace {
+    margin: 0 65px;
+    padding: 30px 0;
+    border-top: 1px solid #E8EEF6;
+}
+.block-reviews .review-wrap .replace .replace-confirm {
+    margin-left: 20px;
+}
+.block-reviews .review-wrap .replace .replace-confirm .replace-user-name {
+    font-weight: 600;
+}
+
+.block-reviews .review-wrap .replace .replace-icon {
+    margin-left: -20px;
+}
+
+.block-reviews .review-wrap .replace .replace-confirm .replace-el {
+    margin-top:  5px;
+}
+
+.main-reviews-wrap-btn-block {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiddenReviewsStyle {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 0;
+    width: 0;
+}
+
+.review-status-icon {
+    margin-top: -70px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.complainSuccessBlock {
+    height: 110px;
+    padding: 15px 30px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.complainSuccessBlock:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.reply-bottom-info {
+    margin-top: 10px;
+}
+
+.reply-bottom-info .reply-date {
+    font-size: .87rem;
+    color: #95A5B0;
+}
+
+.reply-bottom-info .thread-answer-btn {
+    color: #355FF1;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+
+

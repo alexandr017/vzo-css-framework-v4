@@ -65,7 +65,7 @@
     border: 1px solid #000;
     color:#000;
     font-weight: 400;
-    background: none;
+    background-color:transparent;
 }
 
 .btn-dark-border:hover,.btn-dark-border:hover svg path {
@@ -246,7 +246,7 @@ svg:active .arrow_el {
     cursor: pointer;
     outline: none;
     border: none;
-    background: none;
+    background-color:transparent;
 }
 
 .claim-btn .circle_el {
@@ -273,7 +273,7 @@ svg:active .arrow_el {
     cursor: pointer;
     outline: none;
     border: none;
-    background: none;
+    background-color:transparent;
 }
 
 .print-btn .circle_el {
