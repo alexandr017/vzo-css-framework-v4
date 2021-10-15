@@ -1,27 +1,31 @@
-if(document.getElementsByClassName('card-slider-block').length>0){
-    slideShow({
-        element:'.card-slider-block',
-        slidesToShow:4,
-        slidesToScroll:1,
-        circleScroll:false,
-        height:'50',
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1
+function cardSliderInit (elem){
+    var cardSliderBlocks = document.querySelectorAll(".card-slider-init:not(.jsSlideMainBlock)");
+    for (let i=0; i<cardSliderBlocks.length;i++) {
+        cardSliderBlocks[i].classList.add('card-slider'+elem.id);
+        slideShow({
+            element:'.card-slider'+elem.id,
+            slidesToShow:4,
+            slidesToScroll:1,
+            circleScroll:false,
+            height:'90',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    })
+            ]
+        })
+    }
 }
 
 $$('.tab-wrap').forEach((e) => {
@@ -46,6 +50,8 @@ cardHiddenBlock.forEach(function (value, index) {
     cardButtonShow.addEventListener('click', event => {
         cardButtonHide.style.display = 'flex';
         cardButtonShow.style.display = 'none';
+        event.target.parentElement.getElementsByClassName('card-slider-block')[0].classList.add('card-slider-init');
+        cardSliderInit(event.target.parentElement.closest('.card'));
         hiddenCardInfoBlock.style.display = 'block';
     });
     cardButtonHide.addEventListener('click', event => {
@@ -81,7 +87,6 @@ for(let i=0;i<addToCompareBtns.length;i++) {
         var logo = elem.closest('.card').querySelectorAll('.logo img')[0].attributes['src'].nodeValue;
     })
 }
-
 
 // печать карточки
 $$('.print-btn').forEach((el) => {

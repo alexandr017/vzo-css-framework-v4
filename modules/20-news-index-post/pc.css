@@ -13,6 +13,12 @@
 .news-post-padding {
     padding: 1.5em 2em;
 }
+.news-post-content-padding {
+    padding: 0.5em 2em;
+}
+.news-index-post-content .news-post-content-padding {
+    margin-bottom: 0;
+}
 .news-post-link svg {
     margin-right: 1em;
 }
@@ -44,4 +50,24 @@
 }
 .news-index-post-footer .right-block {
     align-items: center;
+}
+.news-index-post-block .news-post-title {    
+    position: relative;
+    margin-top: 0;
+}
+.news-index-post-content {
+    height: calc(100% - 90px);
+    position: relative;
+}
+.news-index-post-link {
+    display: block;
+    height: 100%;
+}
+.news-index-post-link:after {
+    content: '';
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
