@@ -52,6 +52,7 @@ p {margin-top: 0;}
     font-size: 1rem;
 }
 
+
 .content ul, .special-list, .lead-wrap ul{
     padding: 0;
 }
@@ -125,4 +126,8 @@ hr {
 
 .background-1 {
     background: #F6F8FB;
+}
+
+.background-2 {
+    background: #F3F8FF;
 }

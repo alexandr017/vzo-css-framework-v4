@@ -1,0 +1,170 @@
+<div class="container">
+
+<h1>Отзыв</h1>
+    {{33-comments-add-form}}
+    <div class="reviews">
+        <div class="h2 text-center">Все отзывы и жалобы</div>
+        {{70-review-scale}}
+
+            <div class="scale-rating-block border-radius shadow flex">
+                <div class="scale-rating-block-part">
+                    <div class="scale-rating-el">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="35" viewBox="0 0 37 35" fill="none">
+                            <path d="M36.3632 13.2261C36.1246 12.4865 35.4698 11.9613 34.6951 11.8913L24.1722 10.9342L20.0112 1.17785C19.7044 0.462836 19.0057 0 18.2293 0C17.453 0 16.7542 0.462836 16.4474 1.17952L12.2864 10.9342L1.76187 11.8913C0.988581 11.963 0.335458 12.4865 0.0954048 13.2261C-0.144649 13.9656 0.0770461 14.7768 0.66202 15.2881L8.61605 22.276L6.27059 32.6259C6.09897 33.3869 6.39382 34.1735 7.02413 34.63C7.36293 34.8752 7.75931 35 8.15903 35C8.50367 35 8.84553 34.9069 9.15234 34.723L18.2293 29.2885L27.3029 34.723C27.9669 35.1232 28.8039 35.0867 29.4328 34.63C30.0634 34.1721 30.358 33.3852 30.1864 32.6259L27.8409 22.276L35.7949 15.2895C36.3799 14.7768 36.6033 13.967 36.3632 13.2261Z" fill="#FFF27B"/>
+                        </svg>
+                        <span>4.7</span>
+                    </div>
+                    <div class="count-review text-center">На основании 1000 отзывов</div>
+                    <div class="rating-btn-wrap">
+                        <a href="#review-form" class="btn btn-light-2">Оставить отзыв</a>
+                        <a href="#review-form" class="btn btn-light-border">Пожаловаться</a>
+                    </div>
+                </div>
+                <div class="scale-rating-block-part">
+                    <div class="reviews-rating-title">Оценки клиентов:</div>
+                    <div class="reviews-rating-wrap">
+                        <div class="info flex">
+                            <input type="checkbox" id="5" name="scales" checked class="custom-checkbox">
+                            <label for="5" class="info-title">5</label>
+                            <span class="scale">
+                        <span class="percent" style="width: 80%; background:  #2CDD88;"></span>
+                    </span>
+                            <span class="reviews-count">8</span>
+                        </div>
+                        <div class="info flex">
+                            <input type="checkbox" id="4" name="scales" checked class="custom-checkbox">
+                            <label for="4" class="info-title">4</label>
+                            <div class="scale">
+                                <div class="percent" style="width: 80%;background:  #BEEC3C;"></div>
+                            </div>
+                            <span class="reviews-count">1</span>
+                        </div>
+                        <div class="info flex">
+                            <input type="checkbox" id="3" name="scales" checked class="custom-checkbox">
+                            <label for="3" class="info-title">3</label>
+                            <div class="scale">
+                                <div class="percent" style="width: 30%; background:  #FFDC23;"></div>
+                            </div>
+                            <span class="reviews-count">1</span>
+                        </div>
+                        <div class="info flex">
+                            <input type="checkbox" id="2" name="scales" checked class="custom-checkbox">
+                            <label for="2" class="info-title">2</label>
+                            <div class="scale">
+                                <div class="percent" style="width: 20%; background: #FF9D43;"></div>
+                            </div>
+                            <span class="reviews-count">1</span>
+                        </div>
+                        <div class="info flex">
+                            <input type="checkbox" id="1" name="scales" checked class="custom-checkbox">
+                            <label for="1" class="info-title">1</label>
+                            <div class="scale">
+                                <div class="percent" style="width: 20%; background: #FF4E59;"></div>
+                            </div>
+                            <span class="reviews-count">1</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews-rating-title">Жалобы <span class="complain-statistics">рассмотрено 3 из 5</span></div>
+                    <div class="info flex">
+                        <input type="checkbox" id="6" name="scales" checked class="custom-checkbox">
+                        <label for="6" class="info-title">1</label>
+                        <div class="scale">
+                            <div class="percent" style="width: 10%; background: #355FF1;"></div>
+                        </div>
+                        <span class="reviews-count">10</span>
+                    </div>
+                </div>
+            </div>
+
+        {{4-sort}}
+        <div class="sort">
+           [sort]
+        </div>
+        {{72-review-body}}
+        <div class="block-reviews">
+            <div class="review-wrap">
+                <div class="review-inner-block">
+                    <div class="user-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 51 50" fill="none">
+                            <circle cx="25.8027" cy="25" r="25" fill="#2ED47A"/>
+                            <path d="M26.1237 32.252C24.9337 32.252 23.9467 32.056 23.1627 31.664C22.3787 31.258 21.7207 30.705 21.1887 30.005L22.2597 28.85C22.7217 29.438 23.2607 29.893 23.8767 30.215C24.5067 30.537 25.2557 30.698 26.1237 30.698C26.5997 30.698 27.0337 30.621 27.4257 30.467C27.8317 30.313 28.1747 30.103 28.4547 29.837C28.7347 29.571 28.9517 29.256 29.1057 28.892C29.2737 28.514 29.3577 28.115 29.3577 27.695C29.3577 27.233 29.2737 26.82 29.1057 26.456C28.9517 26.078 28.7347 25.756 28.4547 25.49C28.1747 25.224 27.8387 25.021 27.4467 24.881C27.0547 24.741 26.6207 24.671 26.1447 24.671C25.5147 24.671 24.9337 24.776 24.4017 24.986C23.8837 25.196 23.3867 25.532 22.9107 25.994L21.6297 25.553V17.993H30.1977V19.547H23.3727V24.419C23.7087 24.083 24.1567 23.789 24.7167 23.537C25.2907 23.285 25.9347 23.159 26.6487 23.159C27.2367 23.159 27.7967 23.257 28.3287 23.453C28.8607 23.649 29.3297 23.936 29.7357 24.314C30.1557 24.692 30.4847 25.161 30.7227 25.721C30.9747 26.281 31.1007 26.918 31.1007 27.632C31.1007 28.346 30.9747 28.99 30.7227 29.564C30.4707 30.138 30.1207 30.628 29.6727 31.034C29.2247 31.426 28.6927 31.727 28.0767 31.937C27.4747 32.147 26.8237 32.252 26.1237 32.252Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="review-user-block">
+                        <div class="review-user-name">Виталина Слепухова</div>
+                        <div class="user-rating">[rating]</div>
+                        <div class="plus review-part">
+                            <div class="review-title positive-part">Плюсы</div>
+                            <div class="review-part-body">
+                                Я просрочила платеж по кредиту. Как избежать негативных последствий?Я просрочила платеж по кредиту.
+                                Как избежать негативных последствий?
+                            </div>
+                        </div>
+                        <div class="minus review-part">
+                            <div class="review-title negative-part">Минусы</div>
+                            <div class="review-part-body">Не нашла.</div>
+                        </div>
+                        <div class="comment review-part">
+                            <div class="review-title comment-body">Комментарий</div>
+                            <div class="review-part-body">
+                                Я просрочила платеж по кредиту. Как избежать негативных последствий?Я просрочила платеж по кредиту.
+                                Как избежать негативных последствий?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-btn-wrap-block">
+                    <div class="review-btn-wrap flex">
+                        <span class="review-count-comments">2</span>
+                        <svg class="btn-answer" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M8.55557 1.00003C9.72878 0.996967 10.8861 1.27107 11.9333 1.80002C13.1882 2.42719 14.2437 3.39135 14.9816 4.58451C15.7195 5.77766 16.1106 7.15269 16.1111 8.55557C16.1142 9.72878 15.8401 10.8861 15.3111 11.9333L17 17L11.9333 15.3111C10.8861 15.8401 9.72878 16.1142 8.55557 16.1111C7.15269 16.1106 5.77766 15.7195 4.58451 14.9816C3.39135 14.2437 2.42719 13.1882 1.80002 11.9333C1.27107 10.8861 0.996966 9.72878 1.00003 8.55557L1.00003 8.11113C1.10224 6.25837 1.88426 4.50843 3.19634 3.19634C4.50843 1.88426 6.25837 1.10224 8.11113 1.00003H8.55557Z" stroke="#355FF1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="replace-block" style="display: none">
+                    <div class="replace">
+                    <div class="replace-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M9 0C4.0372 0 0 4.0372 0 9C0 13.9628 4.0372 18 9 18C13.9628 18 18 13.9628 18 9C18 4.0372 13.9628 0 9 0Z" fill="#2ED47A"/>
+                            <path d="M13.5622 7.09247L8.68715 11.9674C8.54089 12.1136 8.34891 12.1872 8.15692 12.1872C7.96494 12.1872 7.77295 12.1136 7.62669 11.9674L5.18924 9.52992C4.8959 9.23672 4.8959 8.76266 5.18924 8.46947C5.48244 8.17613 5.95636 8.17613 6.24969 8.46947L8.15692 10.3767L12.5017 6.03201C12.7949 5.73868 13.2689 5.73868 13.5622 6.03201C13.8554 6.32521 13.8554 6.79913 13.5622 7.09247Z" fill="#FAFAFA"/>
+                        </svg>
+                    </div>
+                    <div class="replace-confirm">
+                        <span>Официальный представитель компании</span><br>
+                        <div class="replace_el">Благодарим Вас за сотрудничество!</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        {{71-review-form}}
+        {{33-comments-add-form}}
+
+        <div class="review-f" id="review-f">
+            <div class="h2 text-center">Напишите ваш отзыв</div>
+            <div class="rating">
+                [rating]
+            </div>
+            <div class="review-f-bl" id="review-f-bl">
+                <div class="review-form" id="review-form">
+                    <form action="#" method="" id="form-1" class="form-1 border-radius-2">
+                        <input type="text" id="name" class="review-form-style" placeholder="Имя">
+                        <input type="text" id="plus" class="review-form-style" placeholder="Плюсы">
+                        <input type="text" id="minus" class="review-form-style" placeholder="Минусы">
+                        <textarea placeholder="Комментарии" id="content" class="review-form-style"></textarea>
+                        <div class="r-btn-wrap flex">
+                            <button type="submit" class="btn btn-light-3">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="info shadow-1">
+                    Для подачи жалобы поставьте одну звезду и опишите проблему в комментариях. Официальный представитель
+                    рассмотрит ее и пришлет вам ответ. Чтобы получить уведомление об ответе компании войдите
+                    <a href="#">в личный кабинет</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
