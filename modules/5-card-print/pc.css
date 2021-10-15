@@ -1,0 +1,10 @@
+.card-peculiarities {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-peculiarity {
+    width: 25%;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}

@@ -83,3 +83,15 @@ for(let i=0;i<addToCompareBtns.length;i++) {
 }
 
 
+// печать карточки
+$$('.print-btn').forEach((el) => {
+    el.addEventListener('click', () => {
+        let card = el.closest('.card');
+        let cardID = card.id;
+        if (cardID != null) {
+            cardID = cardID.replace('card-', '');
+            window.open('/card-print/'+cardID, '_blank').focus();
+        }
+    });
+});
+

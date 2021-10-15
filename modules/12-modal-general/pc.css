@@ -3,7 +3,7 @@
     position: absolute;
     left: -9999px;
     top: -9999px;
-    background: rgba(34, 39, 53, 0.25);
+    background: rgba(34, 39, 53, 0.4);
     padding: 5% 0;
 
 }
@@ -16,7 +16,7 @@
     left: 0;
     visibility: visible;
     opacity: 1;
-    z-index:12;
+    z-index:1111;
 }
 
  .modal-bg {
