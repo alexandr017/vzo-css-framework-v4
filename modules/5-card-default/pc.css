@@ -248,8 +248,9 @@
 }
 
 .card .hidden-card-info .card-slider-block {
-    margin-top: 50px;
-    padding: 0 100px 40px 100px;
+    margin: 50px auto;
+    /*padding: 0 100px 40px 100px;*/
+    width: 85%;
     display: flex;
     justify-content: space-between;
 }
@@ -313,4 +314,7 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
     margin-right: 5px;
+}
+.card-slider-block .jsSlideItem img {
+    margin: 0 auto;
 }
