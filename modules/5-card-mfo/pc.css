@@ -1,0 +1,143 @@
+.offers-list .card:first-child{
+    margin-top: 0;
+}
+
+.card {
+    width: 100%;
+    margin: 30px 0;
+}
+
+
+.card .card-header, .card .hidden-card-info {
+    padding: 20px 60px 20px 60px;
+}
+
+.card .card-header .card-first-line {
+    margin-top: 10px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-header .card-first-line a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+
+.card .card-header .card-top-inner {
+    margin-top: 15px;
+}
+
+.card .card-header .card-top-inner .logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    margin-right: 65px;
+}
+.card .card-header .card-top-inner .logo img{
+    max-width: fit-content;
+}
+
+.card .card-header .card-top-inner .card-row-wrap {
+    justify-content: space-between;
+    width: 100%;
+}
+.card .card-header .card-top-inner .block-row .top-inner-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-header .card-top-inner .block-row .top-inner-btn .btn {
+    margin-top: 0;
+}
+
+.card .card-header .card-top-inner .block-row .card-head-intro {
+    font-weight: 600;
+}
+
+.card .card-header .card-top-inner .block-row .card-cont {
+    color: #95A5B0;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-top: 15px;
+}
+
+.card .card-header .reviews span {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.card .card-body {
+    margin-top: -20px;
+    padding-bottom: 5px;
+}
+
+.card .card-body .card-bottom-line {
+    display: flex;
+    justify-content:space-between;
+    padding-right: 95px;
+}
+
+
+
+.card .card-body .card-body-inner .card-more ,.card .card-body .card-body-inner .card-less {
+    color: #4FABFA;
+    cursor: pointer;
+    margin: 10px 0 15px 65px;
+    align-items: center;
+}
+
+.card .card-body .card-body-inner .card-more svg,.card .card-body .card-body-inner .card-less svg {
+    margin-left: 5px;
+}
+
+.card .card-body .card-body-inner .card-less {
+    display: none;
+}
+
+.card .card-body .card-body-inner .hidden-card-info {
+    display:none;
+}
+
+.line-scale {
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.line-scale .line-scale-title {
+    width: 45%;
+}
+
+.line-scale .line-scale-print {
+    width: 55%;
+    background: #E8EEF6;
+}
+
+.line-scale .line-scale-value {
+    width: 12%;
+    text-align: right;
+}
+
+.line-scale .card-progress {
+    background: #2ED47A;
+    height: 6px;
+    display: block;
+}
+
+.lsv-10 {width: 100%;}
+.lsv-9{width: 90%;}
+.lsv-8{width: 80%;}
+.lsv-7{width: 70%;}
+.lsv-6{width: 60%;}
+.lsv-5{width: 50%;}
+.lsv-4{width: 40%;}
+.lsv-3{width: 30%;}
+.lsv-2{width: 20%;}
+.lsv-1{width: 10%;}
+
