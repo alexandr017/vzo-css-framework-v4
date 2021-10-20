@@ -60,11 +60,8 @@
     position: relative;
     overflow: hidden;
 }
-.card-compare-head-block {
-    width: 100%;
-}
-.card-compare-btns {
-    width: 100%;
+.card-compare-head-block,.card-compare-btns,.card-compare-table {
+    width: 500%;
 }
 .card-compare-btns .btn {
     width: 220px;

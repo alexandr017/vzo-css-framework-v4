@@ -28,7 +28,28 @@ function cardSliderInit (elem){
     }
 }
 
-$$('.tab-wrap').forEach((e) => {
+function addCardsBtnsEvents() {
+    var catId = $$('.compare-block')[0].attributes['data-cat'].value;
+    var favorites = localStorage.getItem('vzo_compare'+ catId);
+    if(favorites != null) {
+        favorites = favorites.split(',');
+    }
+    $$('.card').forEach((card) => {
+        addTabsClick(card);
+        addCardsMoreBtnsClick(card);
+        addToCompareBtnsClick(card);
+        addPrintBtnsClick(card);
+        let cardIconsBlock = card.getElementsByClassName('card-icons')[0];
+        if(favorites.indexOf(card.id.substr(5)) != -1) {
+            cardIconsBlock.classList.add('addedToCompare')
+        } else {
+            if(cardIconsBlock.classList.contains('addedToCompare')) {
+                cardIconsBlock.classList.remove('addedToCompare');
+            }
+        }
+    });
+}
+function  addTabsClick(e) {
     let tabTabs = e.querySelectorAll('.tab .tab-links');
     let tabItems = e.querySelectorAll('.tabs-items .tab-content');
     for(let i =0;i<tabTabs.length;i++) {
@@ -40,10 +61,9 @@ $$('.tab-wrap').forEach((e) => {
             tabItems[i].classList.add('on');
         }
     }
-});
+}
 
-let cardHiddenBlock = $$('.card-body');
-cardHiddenBlock.forEach(function (value, index) {
+function addCardsMoreBtnsClick(value) {
     let cardButtonShow = value.querySelector('.card-more'),
         cardButtonHide = value.querySelector('.card-less'),
         hiddenCardInfoBlock = value.querySelector('.hidden-card-info');
@@ -59,15 +79,13 @@ cardHiddenBlock.forEach(function (value, index) {
         cardButtonHide.style.display = 'none';
         hiddenCardInfoBlock.style.display = 'none';
     });
-});
+}
 
-var addToCompareBtns = $$('.addToCompare');
-for(let i=0;i<addToCompareBtns.length;i++) {
-    addToCompareBtns[i].addEventListener('click',function (e) {
-        e.preventDefault();
-        var elem = e.target.closest('svg');
-        var catId = $$('.compare-block')[0].attributes['data-cat'].value;
-        favorites = localStorage.getItem('vzo_compare'+ catId);
+function addToCompareBtnsClick (e){
+    var elem = e.getElementsByClassName('addToCompare')[0];
+    var catId = $$('.compare-block')[0].attributes['data-cat'].value;
+    elem.addEventListener('click',() => {
+        var favorites = localStorage.getItem('vzo_compare'+ catId);
         if (favorites == null || favorites == '') {
             favoritesArr = Array();
         } else {
@@ -80,16 +98,18 @@ for(let i=0;i<addToCompareBtns.length;i++) {
         var id = elem.attributes['data-id'].value;
         if(favoritesArr.indexOf(id) == -1) {
             favoritesArr.push(id);
+            elem.parentElement.classList.add('addedToCompare');
         }
         localStorage.setItem('vzo_compare'+catId,favoritesArr);
 
         setCompareBlockDynamicData(favoritesArr.length);
         var logo = elem.closest('.card').querySelectorAll('.logo img')[0].attributes['src'].nodeValue;
-    })
+    },false)
 }
 
 // печать карточки
-$$('.print-btn').forEach((el) => {
+function addPrintBtnsClick(card) {
+    var el = card.getElementsByClassName('print-btn')[0];
     el.addEventListener('click', () => {
         let card = el.closest('.card');
         let cardID = card.id;
@@ -98,5 +118,5 @@ $$('.print-btn').forEach((el) => {
             window.open('/card-print/'+cardID, '_blank').focus();
         }
     });
-});
-
+}
+addCardsBtnsEvents();

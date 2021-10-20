@@ -318,3 +318,13 @@
 .card-slider-block .jsSlideItem img {
     margin: 0 auto;
 }
+.addToCompare {
+    cursor: pointer;
+}
+.addToCompare path{
+    stroke:#ebedef;
+    cursor: pointer;
+}
+.addedToCompare .addToCompare path{
+    stroke:#4ea8f7;
+}

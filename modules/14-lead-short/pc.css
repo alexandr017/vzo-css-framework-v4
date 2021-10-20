@@ -1,3 +1,32 @@
 .lead-wrap {
     background: #fff;
+    margin: 1em 0;
+    padding: 0 2em 2em 2em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.lead-text-block {
+    width: 80%;
+}
+.lead-text-block .lead-text {
+    font-size: 1.2rem;
+}
+.lead-less {
+    display: none;
+}
+.lead-wrap .lead-more, .lead-wrap .lead-less {
+    width: 100%;
+    color: #4FABFA;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 1em;
+}
+.lead-wrap .lead-more svg, .lead-wrap .lead-less svg{
+    margin-left: 5px;
+}
+.lead-hide-text {
+    display: none;
+}
+.lead-block-svg {
+    margin-top: 2em;
 }
