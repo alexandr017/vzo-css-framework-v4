@@ -1,0 +1,24 @@
+.error-block-content {
+    text-align: center;
+    min-height: 190px;
+}
+.error-block-content .h4 {
+    padding-top: 2em;
+}
+.error-block-content .btn {
+    margin: 2em auto;
+}
+.error-reported-block {
+    background-image: url("v4/images/error-reported-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #355FF1;
+}
+.error-reported-text {
+    color: #ffffff;
+}
+.error-reported-text-title {
+    font-weight: 600;
+    padding-top: 3em;
+    font-size: 1.3em;
+}

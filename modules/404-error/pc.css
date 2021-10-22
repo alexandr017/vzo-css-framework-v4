@@ -1,0 +1,23 @@
+.error-block {
+    margin: 1em auto;
+    justify-content: center;
+    align-items: center;
+}
+.error-block .h1 {
+    margin: 0 0 0 0.4em;
+}
+.error-title {
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.error-block-cat {
+    background-color: #F3F8FF;
+    padding: 0.2em 1em;
+    margin: 1em 1em 0 0;
+}
+.error-block-categories {
+    flex-wrap: wrap;
+    margin: 1em 0;
+}

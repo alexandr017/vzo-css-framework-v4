@@ -10,7 +10,7 @@ table td, table th {
 
 
 table .main-td {
-    background: #F6F8FB;
+    background: #E1EDFF;
     font-weight: bold;
 }
 
@@ -119,7 +119,7 @@ table.table-info .border-radius-3,
 
 .table-info-block .tr .td:first-of-type {
     width: 30%;
-    background: #F6F8FB;
+    background: #E1EDFF;
     font-weight: 600;
 }
 .table-vertical-block .tr:first-of-type .td,
@@ -168,7 +168,7 @@ table.table-info .border-radius-3,
 .table-limit-block .tr .th{
     border-bottom: none;
     font-weight: 700;
-    background: #F6F8FB;
+    background: #E1EDFF;
     float: right;
 }
 
@@ -206,7 +206,7 @@ table.table-info .border-radius-3,
 }
 
 .table-vertical-block .tr .th {
-    background: #F6F8FB;
+    background: #E1EDFF;
     border-bottom: none;
     font-weight: 700;
 }
@@ -235,7 +235,7 @@ table.table-info .border-radius-3,
 }
 
 .light-border .tr .th {
-    background: #F6F8FB;
+    background: #E1EDFF;
     font-weight: 700;
 }
 

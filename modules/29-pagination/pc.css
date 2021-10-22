@@ -10,7 +10,7 @@
     color: #222735!important;
 }
 
-.pagination a:hover {
+.pagination a:hover, span.pagination-inner-link:hover {
     background: #2ED47A !important;
     color: #fff!important;
 }
@@ -31,4 +31,13 @@
 
 .pagination-prev-btn:hover path, .pagination-next-btn:hover path {
     stroke: #fff;
+}
+span.pagination-inner-link {
+    cursor: pointer;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }

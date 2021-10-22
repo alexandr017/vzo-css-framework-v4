@@ -1,0 +1,9 @@
+.error-block-footer span {
+    font-weight: 600;
+}
+.error-block-footer {
+    min-height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
