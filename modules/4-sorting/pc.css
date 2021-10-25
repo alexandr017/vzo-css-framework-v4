@@ -67,7 +67,7 @@
 }
 .select .selected-dropdown .option:hover {
     cursor: pointer;
-    color: #2ED47A;
+    color: #355FF1;
 }
 .select .selected-dropdown.toggleSelect {
     visibility: visible;

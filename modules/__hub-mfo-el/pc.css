@@ -45,7 +45,7 @@
 }
 
 .hub-elements .hub-services-block .hub-info-block .hub-info-el .active {
-    color: #2ED47A;
+    color: #355FF1;
 }
 
 .hub-elements .hub-services-block .hub-btn-wrap .btn {
@@ -119,11 +119,11 @@
     height: 4px;
     background-size: 50% 100%;
     background-color: #ebebeb;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%,  #2ED47A), color-stop(100%, #2ED47A));
-    background-image: -webkit-linear-gradient(#2ED47A, #2ED47A);
-    background-image: -moz-linear-gradient(#2ED47A, #2ED47A);
-    background-image: -o-linear-gradient(#2ED47A, #2ED47A);
-    background-image: linear-gradient(#2ED47A, #2ED47A);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%,  #355FF1), color-stop(100%, #355FF1));
+    background-image: -webkit-linear-gradient(#355FF1, #355FF1);
+    background-image: -moz-linear-gradient(#355FF1, #355FF1);
+    background-image: -o-linear-gradient(#355FF1, #355FF1);
+    background-image: linear-gradient(#355FF1, #355FF1);
     background-repeat: no-repeat;
     cursor: pointer;
     -webkit-appearance: none;
@@ -151,7 +151,7 @@
     height: 20px;
     opacity: 1;
     border: 0;
-    background:#2ED47A;
+    background:#355FF1;
     border-radius: 50%;
     -webkit-appearance: none;
     z-index: 1;
@@ -161,6 +161,6 @@
     width: 20px;
     height: 20px;
     border: 0;
-    background:  #2ED47A;
+    background:  #355FF1;
     border-radius: 100%;
 }

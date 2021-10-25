@@ -167,7 +167,7 @@
 
 
 .btn-whats-app {
-    color: #2ED47A;
+    color: #355FF1;
     background: #fff;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
 }
@@ -214,7 +214,7 @@ svg .ellipse_el{
 }
 
 svg:hover .ellipse_el {
-    fill:#2ED47A;
+    fill:#355FF1;
 }
 
 svg .arrow_el {
@@ -224,7 +224,7 @@ svg .arrow_el {
 
 svg:hover .arrow_el {
     stroke: white;
-    fill:#2ED47A;
+    fill:#355FF1;
 }
 
 svg:active .ellipse_el {

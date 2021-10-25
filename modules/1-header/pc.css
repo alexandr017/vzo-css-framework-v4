@@ -406,7 +406,7 @@ header svg {
 }
 .autocomplete-items div:hover {
     background: #F6F7F9;
-    color: #2ED47A;
+    color: #355FF1;
 }
 
 .autocomplete-open {
@@ -454,7 +454,7 @@ header svg {
 
 /*.autocomplete-city-items div:hover {*/
 /*background: #F6F7F9;*/
-/*color: #2ED47A;*/
+/*color: #355FF1;*/
 /*}*/
 
 /*.autocomplete-city-open {*/
