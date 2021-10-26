@@ -47,9 +47,3 @@
     background: #222735;
     color: #fff;
 }
-.banks-page {
-    display: none;
-}
-.banks-page.active_page {
-    display: block;
-}

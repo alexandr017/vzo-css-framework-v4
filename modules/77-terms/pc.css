@@ -7,10 +7,11 @@
     width: 55px;
     position: fixed;
     z-index: 1;
-    height: calc(95% - 120px);
-    overflow-y: auto;
+    top: 150px;
+    transition: top 0.5s;
+    height: calc(100% - 150px);
+    overflow-y: hidden;
 }
-
 .terms-nav a, .terms-active-letter  {
     background: #FFF;
     border-radius: 10px;
@@ -50,4 +51,21 @@
     top: 0;
     width: 100%;
     height: 100%;
+}
+.container .moveToTheTop {
+    top: 100px;
+    transition: top 0.5s;
+    height: calc(100% - 100px);
+}
+.terms-nav:hover {
+    overflow-y: auto;
+}
+.terms-nav::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+    height: 21px;
+}
+.terms-nav::-webkit-scrollbar-thumb {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
 }

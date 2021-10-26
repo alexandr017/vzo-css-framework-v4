@@ -23,6 +23,8 @@
     position: fixed;
     left: 15px;
     z-index: 1;
+    top: 150px;
+    transition: top 0.5s;
     height: calc(95% - 120px);
 }
 .news-main-block-left-side:hover {
@@ -79,4 +81,5 @@
 .container .moveLeftSideToTheTop {
     height: calc(100% - 1em);
     top: 1em;
+    transition: top 0.5s;
 }

@@ -41,3 +41,16 @@ span.pagination-inner-link {
     justify-content: center;
     border-radius: 50%;
 }
+.pagination-dots {
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%
+}
+.page-block {
+    display: none;
+}
+.page-block.active_page {
+    display: block;
+}
