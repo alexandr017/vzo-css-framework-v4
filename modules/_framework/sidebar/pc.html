@@ -162,7 +162,10 @@
 
 <script>
     let menuBtn = document.getElementById('vzo-ux-framework-switch');
-    menuBtn.addEventListener( "click" , () => {
-        document.getElementById('vzo-ux-framework-menu').classList.toggle('vzo-ux-framework-menu-active');
-    });
+    if (menuBtn != null) {
+        menuBtn.addEventListener( "click" , () => {
+            document.getElementById('vzo-ux-framework-menu').classList.toggle('vzo-ux-framework-menu-active');
+        });
+    }
+
 </script>

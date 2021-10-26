@@ -75,7 +75,7 @@ p {margin-top: 0;}
 
 .content ul li:before, .special-list li:before, .lead-wrap ul li:before{
     content: "";
-    background: #2ED47A;
+    background: #355FF1;
     width: 8px;
     height: 8px;
     border-radius: 50%;
