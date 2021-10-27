@@ -1,6 +1,7 @@
 .news-index-post-block {
     max-width: 655px;
     margin: 1em auto;
+    background: #fff;
 }
 .news-index-post-header {
     justify-content: space-between;

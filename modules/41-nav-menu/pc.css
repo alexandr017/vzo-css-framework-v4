@@ -1,13 +1,13 @@
-.about-nav{
-    background: #F6F8FB;
+.nav-menu-center {
+    justify-content: center;
+    padding: 15px 60px 15px 60px;
 }
 
-.about-nav {
+.nav-menu {
     margin-top: 20px;
     overflow: hidden;
-    justify-content: center;
     align-items: center;
-    padding: 15px 60px 15px 60px;
+    padding: 15px 0;
     width: 100%;
 }
 

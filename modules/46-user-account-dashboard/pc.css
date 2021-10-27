@@ -1,7 +1,7 @@
 .user-account-dashboard {
-    max-width: 750px;
     margin: 20px auto;
-    padding: 80px 100px;
+    padding: 70px 170px;
+    background: #fff;
 }
 
 .dashboard-user-name {
@@ -11,6 +11,10 @@
 .user-account-dashboard-item {
     margin: 5px 0;
     padding: 5px 10px;
+}
+
+.user-account-dashboard-item a {
+    color: #000;
 }
 
 .user-account-dashboard-item:hover {
