@@ -1,34 +1,33 @@
 document.addEventListener('DOMContentLoaded', function(){
     var compareBlock = $$('.card-compare-slider')[0];
     var category = compareBlock.attributes['data-catId'].nodeValue;
-    // let compare = localStorage.setItem('vzo_compare'+ category,'');
     let compare = localStorage.getItem('vzo_compare'+ category);
-    // if(compare == null || compare == '' || compare == 'null'){
-    //     compareBlock.innerText = 'Нет предложений для сравнения';
-    //     $$('.clearCompare')[0].style.display = 'none';
-    //     return;
-    // }
-    // let data = {
-    //     '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
-    //     'cards': compare,
-    //     'id': category
-    // };
-    // fetch('/compare_load', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json;charset=utf-8'
-    //     },
-    //     body: JSON.stringify(data)
-    // }).then((res) => {
-    //     return res.text().then((value) => {
-    //         compareBlock.innerHTML = value;
-    //         addCompareSliderBtns();
-    //         $$('.clearCompare')[0].style.display = 'block';
-    //         addClickToDeleteBtns();
-    //     }).catch((err) => {
-    //         console.log(err);
-    //     });
-    })
+    if(compare == null || compare == '' || compare == 'null'){
+        compareBlock.innerText = 'Нет предложений для сравнения';
+        $$('.clearCompare')[0].style.display = 'none';
+    } else {
+        let data = {
+            '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
+            'cards': compare,
+            'id': category
+        };
+        fetch('/compare_load', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(data)
+        }).then((res) => {
+            return res.text().then((value) => {
+                compareBlock.innerHTML = value;
+                addCompareSliderBtns();
+                $$('.clearCompare')[0].style.display = 'block';
+                addClickToDeleteBtns();
+            }).catch((err) => {
+                console.log(err);
+            })
+        })
+    }
 
     function addCompareSliderBtns() {
         if($$('.card-compare-next').length != 0) {

@@ -25,5 +25,7 @@ function setCompareBlockDynamicData(compareItemsCount) {
     }
     if(compareItemsCount > 1) {
         $$('.count-of-comparing-items')[0].style.display = 'flex';
+    } else {
+        $$('.count-of-comparing-items')[0].style.display = 'none';
     }
 }

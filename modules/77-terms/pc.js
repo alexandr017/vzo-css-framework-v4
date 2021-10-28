@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    window.addEventListener('scroll', (event) => {debugger
+    window.addEventListener('scroll', (event) => {
         var termsNav = $$('.terms-nav');
         if(termsNav.length != 0) {
             termsNav = termsNav[0]
