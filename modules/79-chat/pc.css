@@ -1,0 +1,99 @@
+.chat {
+    max-width: 750px;
+    margin: auto;
+    border: 15px solid #fff;
+    background: #fff;
+    -webkit-box-shadow: 0 0 21px 0 rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 21px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, .2);
+}
+
+.chat .messages-list {
+    border: 1px solid #ddd;
+    padding: 15px;
+    overflow-y: scroll;
+    height: 350px;
+}
+
+.chat .messages-list i {
+    font-size: 0.5em;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #eee;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    font-style: normal;
+    vertical-align: text-bottom;
+}
+
+.chat .messages-list b {
+    font-weight: normal;
+    font-size: 0.75em;
+    vertical-align: bottom;
+    color: #aaa;
+    margin: 0 0 0 10px;
+}
+
+.chat .messages-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chat .messages-list ul li {
+    margin-bottom: 10px;
+    position: relative;
+    clear: both;
+    width: 100%;
+    padding: 5px;
+}
+
+.chat .messages-list ul li.pull-right {
+    text-align: right
+}
+
+.chat .messages-list ul li.no-open {
+    background: #e6dddd;
+}
+
+.chat .messages-list ul li span {
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    background: #a5ca38;
+    color: #fff;
+    overflow-wrap: anywhere;
+}
+
+.chat .messages-list ul li.pull-right span {
+    background: #00b6f7
+}
+
+.chat .messages-list ul li.pull-right b {
+    margin: 0 10px 0 0
+}
+
+.chat .chat-form {
+    margin: 15px 0 0;
+}
+
+.chat .chat-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.chat .chat-form button {
+}
+
+.chat-btn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 1%;
+}
+
+.clearfix{
+    clear: both;
+}
