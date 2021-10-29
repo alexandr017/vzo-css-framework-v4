@@ -310,8 +310,7 @@ header svg {
     width:875px;
     z-index: 9999;
     position: fixed;
-    margin: -165px 0 0 27%;
-    /*margin: -50px 0 0 27%; // для сайта*/
+    margin: -50px 0 0 27%;
 }
 
 .search-block-container {

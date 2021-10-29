@@ -4,7 +4,7 @@ if(document.getElementsByClassName('smi_slider').length>0){
         slidesToShow:3,
         slidesToScroll:1,
         circleScroll:false,
-        height:'220',
+        height:'340',
         responsive: [
             {
                 breakpoint: 1200,

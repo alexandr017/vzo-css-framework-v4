@@ -13,6 +13,11 @@
     z-index: 1;
     background-color: white;
 }
+
+.change-sliders-arrow-bg .arrows-block {
+    background-color: inherit;
+}
+
 .jsSlideItem img {
     display: block;
     /*margin: 0 auto;*/
