@@ -27,7 +27,7 @@
     justify-content: center;
     width: 60px;
     height: 60px;
-    /*display: none;*/
+    display: none;
 }
 .compare-block .compare-item {
     width: 60px;

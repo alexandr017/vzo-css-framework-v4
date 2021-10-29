@@ -8,11 +8,13 @@
 }
 
 .select .selected-item {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     width: 260px;
     margin: 0 0 10px;
     padding: 15px 20px;
     cursor: pointer;
+    background: #fff;
+
 }
 .select .selected-item[data-type=up]:after {
     position: relative;
@@ -28,7 +30,7 @@
     margin-right: 10px;
 }
 
-.openSelect {
+.select .selected-item.openSelect {
     border-bottom: none;
     box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
     border-radius: 10px 10px 0 0;
@@ -39,7 +41,7 @@
     transform: translateY(-50%) rotate(-135deg);
 }
 .select .selected-dropdown {
-    border-radius:0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
     width: 260px;
     margin-top:-10px;
     cursor: pointer;
