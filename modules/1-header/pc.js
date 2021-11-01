@@ -90,6 +90,56 @@ function searchToggle(){
     }
 }
 
+document.addEventListener('DOMContentLoaded', function(){
+    var favorites = localStorage.getItem('vzo');
+    if(favorites != null) {
+        favorites = favorites.split(',');
+        if(favorites.length != 0){
+            $$('.fav-items-count')[0].innerHTML = favorites.length;
+            $$('.fav-items-count')[0].style.display = 'flex';
+        }
+    }
+    var compareItems = localStorage.getItem('vzo_compare'+window.CATEGORY_ID);
+    var compareLink = '';
+    switch(window.CATEGORY_ID) {
+        case 1:
+            compareLink = '';
+            break;
+        case 2:
+            compareLink = '/rko';
+            break;
+        case 4:
+            compareLink = '/online-credit';
+            break;
+        case 5:
+            compareLink = '/credit-cards';
+            break;
+        case 6:
+            compareLink = '/debit-cards';
+            break;
+        default:
+            compareLink = '';
+            break;
+    }
+    compareLink += '/compare';
+    if($$('.compare-items-count').length != 0) {
+        var compareItemsCountBlock = $$('.compare-items-count')[0];
+        if(compareItems != null) {
+            compareItems = compareItems.split(',');
+            if(compareItems.length != 0) {
+                compareItemsCountBlock.innerHTML = compareItems.length;
+                compareItemsCountBlock.style.display = 'flex';
+            }
+            var zaimCompareItems = localStorage.getItem('vzo_compare1');
+            if(zaimCompareItems != null) {
+                compareLink = '/compare';
+            }
+        }
+        if(compareItemsCountBlock.parentElement.attributes['href']){
+            compareItemsCountBlock.parentElement.attributes['href'].value = compareLink;
+        }
+    }
+});
 
 //
 // function autocompleteCity(input, arr) {

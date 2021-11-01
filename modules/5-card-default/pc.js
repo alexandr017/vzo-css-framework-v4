@@ -64,24 +64,24 @@ function addToCompareBtnsClick (e){
     var elem = e.getElementsByClassName('addToCompare')[0];
     var catId = $$('.compare-block')[0].attributes['data-cat'].value;
     elem.addEventListener('click',() => {
-        var favorites = localStorage.getItem('vzo_compare'+ catId);
-        if (favorites == null || favorites == '') {
-            favoritesArr = Array();
+        var compareItems = localStorage.getItem('vzo_compare'+ catId);
+        if (compareItems == null || compareItems == '') {
+            compareItemsArr = Array();
         } else {
-            favoritesArr = favorites.split(',');
-            if(favoritesArr.length == 10){
+            compareItemsArr = compareItems.split(',');
+            if(compareItemsArr.length == 10){
                 alert('Нельзя добавлять более 10 карточек одного раздела в сравнение');
                 return;
             }
         }
         var id = elem.attributes['data-id'].value;
-        if(favoritesArr.indexOf(id) == -1) {
-            favoritesArr.push(id);
+        if(compareItemsArr.indexOf(id) == -1) {
+            compareItemsArr.push(id);
             elem.parentElement.classList.add('addedToCompare');
         }
-        localStorage.setItem('vzo_compare'+catId,favoritesArr);
+        localStorage.setItem('vzo_compare'+catId,compareItemsArr);
 
-        setCompareBlockDynamicData(favoritesArr.length);
+        setCompareBlockDynamicData(compareItemsArr.length);
         var logo = elem.closest('.card').querySelectorAll('.logo img')[0].attributes['src'].nodeValue;
     },false)
 }

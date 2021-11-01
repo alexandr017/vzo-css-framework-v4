@@ -325,6 +325,7 @@
     stroke:#ebedef;
     cursor: pointer;
 }
-.addedToCompare .addToCompare path{
+.addedToCompare .addToCompare path, .addedToFavorites .addToFavorites path{
     stroke:#4ea8f7;
+    fill: #4ea8f7;
 }
