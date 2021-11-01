@@ -28,27 +28,6 @@ function cardSliderInit (elem){
     }
 }
 
-function addCardsBtnsEvents() {
-    var catId = $$('.compare-block')[0].attributes['data-cat'].value;
-    var favorites = localStorage.getItem('vzo_compare'+ catId);
-    if(favorites != null) {
-        favorites = favorites.split(',');
-    }
-    $$('.card').forEach((card) => {
-        addTabsClick(card);
-        addCardsMoreBtnsClick(card);
-        addToCompareBtnsClick(card);
-        addPrintBtnsClick(card);
-        let cardIconsBlock = card.getElementsByClassName('card-icons')[0];
-        if(favorites.indexOf(card.id.substr(5)) != -1) {
-            cardIconsBlock.classList.add('addedToCompare')
-        } else {
-            if(cardIconsBlock.classList.contains('addedToCompare')) {
-                cardIconsBlock.classList.remove('addedToCompare');
-            }
-        }
-    });
-}
 function  addTabsClick(e) {
     let tabTabs = e.querySelectorAll('.tab .tab-links');
     let tabItems = e.querySelectorAll('.tabs-items .tab-content');
@@ -116,6 +95,68 @@ function addPrintBtnsClick(card) {
         if (cardID != null) {
             cardID = cardID.replace('card-', '');
             window.open('/card-print/'+cardID, '_blank').focus();
+        }
+    });
+}
+function addOrRemoveFromFavorites(card) {
+    card.getElementsByClassName('addToFavorites')[0].addEventListener('click', function (e) {
+        e.preventDefault();
+        var elem = e.target.closest('svg');
+        var favorites = localStorage.getItem('vzo');
+        if (favorites == null) {
+            favoritesArr = Array();
+        } else {
+            favoritesArr = favorites.split(',');
+        }
+        var id = elem.closest('.card').id.substr(5);
+        if(elem.parentElement.classList.contains('addedToFavorites')){
+            for (i = 0; i < favoritesArr.length; i++) {
+                if (parseInt(favoritesArr[i]) == parseInt(id)) {
+                    favoritesArr.splice(i, 1);
+                }
+            }
+        } else {
+            favoritesArr.push(id);
+        }
+
+        favorites = localStorage.setItem('vzo',favoritesArr);
+        console.log(localStorage.getItem('vzo',favoritesArr));
+        elem.parentElement.classList.toggle('addedToFavorites')
+    })
+}
+
+function addCardsBtnsEvents() {
+    $$('.card').forEach((card) => {
+        addTabsClick(card);
+        addCardsMoreBtnsClick(card);
+        addToCompareBtnsClick(card);
+        addPrintBtnsClick(card);
+        addOrRemoveFromFavorites(card);
+        let cardIconsBlock = card.getElementsByClassName('card-icons')[0];
+        if($$('.compare-block').length != 0) {debugger
+            var catId = $$('.compare-block')[0].attributes['data-cat'].value;
+            var comparingItems = localStorage.getItem('vzo_compare'+ catId);
+            if(comparingItems != null) {
+                comparingItems = comparingItems.split(',');
+            }
+            if(comparingItems != null && comparingItems.indexOf(card.id.substr(5)) != -1) {
+                cardIconsBlock.classList.add('addedToCompare')
+            } else {
+                if(cardIconsBlock.classList.contains('addedToCompare')) {
+                    cardIconsBlock.classList.remove('addedToCompare');
+                }
+            }
+        }
+        var favorites = localStorage.getItem('vzo');
+        if(favorites != null) {
+            favorites = favorites.split(',');
+        }
+        if(favorites != null && favorites.indexOf(card.id.substr(5)) != -1) {
+            cardIconsBlock.classList.add('addedToFavorites')
+        } else {
+            if(cardIconsBlock.classList.contains('addedToFavorites')) {
+                cardIconsBlock.classList.remove('addedToFavorites');
+            }
         }
     });
 }
