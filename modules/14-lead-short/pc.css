@@ -4,6 +4,8 @@
     padding: 0 2em 2em 2em;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 }
 .lead-text-block {
     width: 80%;
@@ -11,15 +13,27 @@
 .lead-text-block .lead-text {
     font-size: 1.2rem;
 }
-.lead-less {
-    display: none;
-}
 .lead-wrap .lead-more, .lead-wrap .lead-less {
     width: 100%;
-    color: #4FABFA;
     cursor: pointer;
     align-items: center;
     margin-top: 1em;
+    position: relative;
+}
+.lead-wrap .lead-more:after, .lead-wrap .lead-less:after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(/v4/images/blue-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    left: 90px;
+    top: 5px;
+    position: absolute;
+}
+.lead-wrap .lead-less:after {
+    transform: rotate(180deg);
 }
 .lead-wrap .lead-more svg, .lead-wrap .lead-less svg{
     margin-left: 5px;
@@ -29,10 +43,13 @@
     overflow: hidden;
 }
 .lead-block-svg {
-    margin-top: 2em;
     width: 20%;
-    max-height: 210px;
-    background-image: url("/v4/images/short-lead-icon.svg");
+    height: 230px;
+    right: 0;
+    position: absolute;
+    top: 2em;
+    background-image: url(/v4/images/short-lead-icon.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }

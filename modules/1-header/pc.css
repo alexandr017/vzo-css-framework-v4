@@ -258,23 +258,23 @@ header svg {
     border-bottom: 1px solid #E6EBEF;
 }
 
-.h-sub-menu-more-info .more-info-el a{
+.h-sub-menu-more-info .more-info-el a, .h-sub-menu-more-info .more-info-el span{
     color:#222735;
     display: flex;
     align-items: center;
 }
 
-.h-sub-menu-more-info .more-info-el a svg {
+.h-sub-menu-more-info .more-info-el a svg, .h-sub-menu-more-info .more-info-el span svg {
     margin-right: 20px;
 }
 
-.h-sub-menu-more-info .more-info-el a .count{
+.h-sub-menu-more-info .more-info-el a .count, .h-sub-menu-more-info .more-info-el span .count{
     width: 20px;
     height: 20px;
     background: #FF4E59;
     color: #fff;
     border-radius: 50%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     font-size: .65rem;
