@@ -46,7 +46,7 @@
     width: 20%;
     height: 210px;
     right: 0;
-    position: relative;
+    position: absolute;
     top: 2em;
     background-image: url(/v4/images/short-lead-icon.svg);
     background-repeat: no-repeat;
