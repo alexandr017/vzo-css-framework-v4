@@ -1,0 +1,15 @@
+.k5m-consultant-image {
+    width:30%;
+}
+.k5m-consultant-image img {
+    border-radius: 15px 0 0 15px;
+    width: 100%;
+}
+
+.k5m-consultant-el {
+    width: 70%;
+    padding: 45px 65px;
+    background: #fff;
+    font-size: 1.2rem;
+    border-radius: 0 15px 15px 0;
+}
