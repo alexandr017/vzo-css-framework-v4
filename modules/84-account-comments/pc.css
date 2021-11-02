@@ -1,0 +1,53 @@
+.account-comments {
+    margin: 30px 0;
+}
+
+.account-comment-status-tag {
+    background: #F3F8FF;
+    border-radius: 3px;
+    color: #95A5B0;
+    font-size: .87rem;
+    padding: 0 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-comment-status-tag svg{
+    margin-right: 10px;
+}
+
+.account-comments {
+    padding: 25px 30px;
+    background: #fff;
+}
+
+.account-comment-top-block {
+    justify-content: space-between;
+}
+
+.account-comment-edit-btn,.account-comment-delete-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-comment-delete-btn {
+    background: #FF4E59;
+    margin-left: 10px;
+}
+
+.account-comment-title {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.account-bottom-block .count-reviews {
+    color: #355FF1;
+    align-items: center;
+}
+.account-bottom-block .count-reviews svg {
+    margin-left: 5px;
+}

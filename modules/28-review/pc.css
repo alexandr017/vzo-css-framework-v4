@@ -146,5 +146,8 @@
     cursor: pointer;
 }
 
-
+.account-review-top-block {
+    justify-content: space-between;
+    align-items: center;
+}
 

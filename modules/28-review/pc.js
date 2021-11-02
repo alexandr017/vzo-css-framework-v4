@@ -1,41 +1,42 @@
-let moreReviewsWrap = $$(".reviews")[0];
-let reviewsItems = Array.from(moreReviewsWrap.querySelectorAll(".block-reviews"));
-let loadReviewsMore = $$(".loadMore")[0];
-let loadReviewsLess = $$(".loadLess")[0];
-hiddenReviewsStyle  = "hiddenReviewsStyle";
-reviewsItems.forEach(function (item, index) {
-    if (index >= 10) {
-        item.classList.add(hiddenReviewsStyle );
-        loadReviewsLess.style.display = "none";
-    }
-});
-loadReviewsMore.addEventListener("click", function () {
-    [].forEach.call($$("." + hiddenReviewsStyle), function (
-        item,
-        index
-    ) {
-        if (index < 10) {
-            item.classList.remove(hiddenReviewsStyle);
-        }
-        if ($$("." + hiddenReviewsStyle).length === 0) {
-            loadReviewsMore.style.display = "none";
-            loadReviewsLess.style.display = "flex";
-        }
-    });
-});
-loadReviewsLess.addEventListener("click", function () {
+function showMoreReviews() {
+    let moreReviewsWrap = $$(".reviews")[0];
+    let reviewsItems = Array.from(moreReviewsWrap.querySelectorAll("[data-sort]"));
+    let loadReviewsMore = $$(".loadMore")[0];
+    let loadReviewsLess = $$(".loadLess")[0];
+    hiddenReviewsStyle = "hiddenReviewsStyle";
     reviewsItems.forEach(function (item, index) {
         if (index >= 10) {
             item.classList.add(hiddenReviewsStyle);
+            loadReviewsLess.style.display = "none";
         }
     });
-    if (document.querySelectorAll("." + hiddenReviewsStyle).length !== 10) {
-        loadReviewsMore.style.display = "flex";
-        loadReviewsLess.style.display = "none";
-    }
-})
-
-
+    loadReviewsMore.addEventListener("click", function () {
+        [].forEach.call($$("." + hiddenReviewsStyle), function (
+            item,
+            index
+        ) {
+            if (index < 10) {
+                item.classList.remove(hiddenReviewsStyle);
+            }
+            if ($$("." + hiddenReviewsStyle).length === 0) {
+                loadReviewsMore.style.display = "none";
+                loadReviewsLess.style.display = "flex";
+            }
+        });
+    });
+    loadReviewsLess.addEventListener("click", function () {
+        reviewsItems.forEach(function (item, index) {
+            if (index >= 10) {
+                item.classList.add(hiddenReviewsStyle);
+            }
+        });
+        if (document.querySelectorAll("." + hiddenReviewsStyle).length !== 10) {
+            loadReviewsMore.style.display = "flex";
+            loadReviewsLess.style.display = "none";
+        }
+    })
+}
+document.addEventListener('DOMContentLoaded', showMoreReviews);
 
 let moveBtnBlock = $$('.review-btn-wrap-block');
 let formBlock = $$('#review-form')[0];
@@ -44,7 +45,6 @@ let plus = $$('#plus')[0];
 let minus = $$('#minus')[0];
 let mainFormBlock = $$('#review-f')[0];
 let btnFormBlock = $$('.r-btn-wrap')[0];
-
 
 for(let i=0;i<moveBtnBlock.length;i++) {
     moveBtnBlock[i].addEventListener('click',function (e) {
@@ -103,3 +103,22 @@ for (let i = 0; i < successCompleteQuestion.length; i++) {
     }
 }
 
+let sortReviewElements = $$(".block-reviews");
+let sortingReviewCheckboxes = $$(".custom-checkbox");
+sortingReviewCheckboxes.forEach(item => {
+    item.addEventListener('click', function() {
+        if (this.checked) {
+            sortReviewElements.forEach(e => {
+                if (e.getAttribute('data-sort') == this.value) {
+                    e.style.display = "block";
+                }
+            })
+        } else {
+            sortReviewElements.forEach(e => {
+                if (e.getAttribute('data-sort') == this.value) {
+                    e.style.display = "none";
+                }
+            })
+        }
+    })
+});
