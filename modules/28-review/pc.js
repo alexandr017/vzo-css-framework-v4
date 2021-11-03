@@ -1,6 +1,6 @@
 function showMoreReviews() {
     let moreReviewsWrap = $$(".reviews")[0];
-    let reviewsItems = Array.from(moreReviewsWrap.querySelectorAll("[data-sort]"));
+    let reviewsItems = Array.from(moreReviewsWrap.querySelectorAll(".block-reviews"));
     let loadReviewsMore = $$(".loadMore")[0];
     let loadReviewsLess = $$(".loadLess")[0];
     hiddenReviewsStyle = "hiddenReviewsStyle";
@@ -81,12 +81,11 @@ function moveFormBack() {
             '<button class="btn btn-light-3">Отправить</button>\n' +
             '</div>';
     }
-
 }
 
 
-let successCompleteQuestion = document.querySelectorAll('.review-wrap');
-let successLabel = document.querySelectorAll('.labelOfComplainSuccess');
+let successCompleteQuestion = $$('.review-wrap');
+let successLabel = $$('.labelOfComplainSuccess');
 for (let i = 0; i < successCompleteQuestion.length; i++) {
     complainSuccessBlock  = "complainSuccessBlock";
 
@@ -97,8 +96,6 @@ for (let i = 0; i < successCompleteQuestion.length; i++) {
 
         successLabel[j].addEventListener("click", function () {
             this.closest('.review-wrap').classList.remove(complainSuccessBlock);
-
-
         })
     }
 }
@@ -122,3 +119,21 @@ sortingReviewCheckboxes.forEach(item => {
         }
     })
 });
+
+let moveReviewBtnBlock = $$('.account-review-btn-wrap-block'),
+    formReviewBlock = $$('.form-1')[0],
+    nextPlaceOfReviewForm = $$('.replace-block'),
+    cancelReviewForm = $$('.comment-form-cancel-btn')[0];
+
+for(let i=0;i<moveReviewBtnBlock.length;i++) {
+    moveReviewBtnBlock[i].addEventListener('click',function () {
+        let moveReviewForm = this.parentNode.nextElementSibling;
+        if (moveReviewForm == null) {
+            formReviewBlock.style.display = 'block';
+            nextPlaceOfReviewForm[i].insertAdjacentElement('afterend', formReviewBlock);
+        }
+    });
+    cancelReviewForm.addEventListener('click',function () {
+        formReviewBlock.style.display = 'none';
+    });
+}
