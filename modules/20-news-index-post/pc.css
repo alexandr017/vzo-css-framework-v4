@@ -26,6 +26,7 @@
 .news-post-title {
     padding-left: 1.5em;
     padding-right: 1.5em;
+    color: #000 !important;
 }
 .news-index-post-block .news-post-img {
     width: 100%;
@@ -52,7 +53,7 @@
 .news-index-post-footer .right-block {
     align-items: center;
 }
-.news-index-post-block .news-post-title {    
+.news-index-post-block .news-post-title {
     position: relative;
     margin-top: 0;
     display: block;
@@ -75,11 +76,14 @@
 }
 
 .video-index-post {
-    margin: 30px 230px;
+    margin: 30px 0;
+    flex-wrap: wrap;
 }
 
 .video-post-block {
-    width: 310px;
+    width: 300px;
+    margin: 10px;
+    background: #fff;
 }
 
 .video-post-tag {

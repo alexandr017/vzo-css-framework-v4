@@ -9,13 +9,14 @@
 
 .pagination a {
     color: #000!important;
+    width: 100%;
 }
 
-.pagination span:hover, span.pagination-inner-link:hover {
+.pagination a:hover, a.pagination-inner-link:hover {
     border: 1px solid #000;
 }
 
-.pagination span, .pagination .pagination-current-page {
+.pagination a, .pagination .pagination-current-page {
     width: 45px;
     height: 45px;
     margin: 0 5px;

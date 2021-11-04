@@ -22,12 +22,14 @@
     justify-content: space-between;
 }
 
-.account-comment-edit-btn,.account-comment-delete-btn {
+.account-comment-edit-btn,
+.account-comment-delete-btn {
     width: 45px;
     height: 45px;
     border-radius: 50px;
     justify-content: center;
     align-items: center;
+    cursor:pointer;
 }
 
 .account-comment-delete-btn {
