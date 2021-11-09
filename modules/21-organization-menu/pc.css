@@ -51,11 +51,11 @@
     margin: 0 25px;
 }
 
-.org-products-block .org-link-el:first-child{
+.org-products-block .org-link-el:first-child {
     margin-left: 0;
 }
 
-.org-products-block .org-link-el:last-child{
+.org-products-block .org-link-el:last-child {
     margin-right: 0;
 }
 
@@ -68,7 +68,6 @@
     align-items: center;
     justify-content: center;
     background: #fff;
-
 }
 
 .org-products-block .org-link-el .org-icon-text {
@@ -78,36 +77,14 @@
     width: 80px;
 }
 
-.org-products-block .org-link-el:hover .org-icon-text {
-    color:#2CDD88;
+.org-link-el.active{
+    cursor: default;
 }
 
-.org-products-block .org-link-el.active .org-icon-text {
-    color:#2CDD88;
+.org-products-block .org-link-el:hover .org-icon-text, .org-products-block .org-link-el.active .org-icon-text {
+    color:#355FF1;
 }
 
-.org-products-block .org-link-el .org-icon-bg svg:not(.fill) {
-    stroke:black;
+.org-link-el:hover svg path, .org-link-el.active svg path{
+    stroke: #355FF1;
 }
-
-.org-products-block .org-link-el .org-icon-bg svg.fill {
-    fill: black;
-}
-
-.org-link-el:hover .org-icon-bg svg:not(.fill) {
-    stroke:#2CDD88;
-}
-
-.org-link-el:hover .org-icon-bg svg.fill {
-    fill: #2CDD88;
-}
-
-
-.org-link-el.active .org-icon-bg svg:not(.fill) {
-    stroke:#2CDD88;
-}
-
-.org-link-el.active .org-icon-bg svg.fill {
-    fill: #2CDD88;
-}
-
