@@ -14,6 +14,7 @@
 
 .review-user-block {
     width: 90%;
+    margin-left: 30px;
 }
 
 .review-status-icon {
@@ -24,10 +25,6 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-}
-
-.review-user-block {
-    margin-left: 30px;
 }
 
 .block-reviews .review-wrap .user-rating,
@@ -83,6 +80,7 @@
     margin: 0 65px;
     padding: 30px 0;
     border-top: 1px solid #E8EEF6;
+    width: 100%;
 }
 .block-reviews .review-wrap .replace .replace-confirm {
     margin-left: 20px;
@@ -149,5 +147,30 @@
 .account-review-top-block {
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
 }
 
+.account-review-top-block .review-status-icon {
+    margin-top: 0;
+}
+
+.replace-block {
+    width:100%;
+}
+
+.reply-bottom-info > .review-form .form-1 {
+    width: 560px;
+}
+
+.account-review .block-reviews .review-wrap .replace {
+    margin: 0 20px;
+}
+
+.account-review .block-reviews .review-wrap .review-part {
+    margin-top: 15px;
+}
+
+.account-review .replace-logo img{
+    width: 60px;
+    height: 60px;
+}

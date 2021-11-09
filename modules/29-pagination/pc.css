@@ -1,18 +1,19 @@
 .pagination {
-    font-weight: bold;
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    font-size: 1.1rem;
+    list-style-type: none;
 }
+
 
 .pagination a {
-    color: #222735!important;
+    color: #000!important;
+    width: 100%;
 }
 
-.pagination a:hover, span.pagination-inner-link:hover {
-    background: #355FF1 !important;
-    color: #fff!important;
+.pagination a:hover, a.pagination-inner-link:hover {
+    border: 1px solid #000;
 }
 
 .pagination a, .pagination .pagination-current-page {
@@ -25,13 +26,14 @@
 }
 
 .pagination .pagination-current-page {
-    background: #355FF1 !important;
-    color: #fff!important;
+    border: 1px solid #000;
 }
 
-.pagination-prev-btn:hover path, .pagination-next-btn:hover path {
-    stroke: #fff;
+.pagination-prev-btn, .pagination-next-btn {
+    align-items: center;
+    justify-content: center;
 }
+
 span.pagination-inner-link {
     cursor: pointer;
     display: flex;

@@ -1,19 +1,22 @@
 document.addEventListener('DOMContentLoaded', function(){
-    var catId = $$('.compare-block')[0].attributes['data-cat'].value;
-    // var favorites = localStorage.setItem('vzo_compare'+catId,'');
-    var favorites = localStorage.getItem('vzo_compare'+catId);
-    if(favorites != null) {
-        var favoritesArr = favorites.split(',');
-        setCompareBlockDynamicData(favoritesArr.length);
+    var compareItems = null;
+    for (let i = 1; i < 12; i++) {
+        var compareItemsByCat = localStorage.getItem('vzo_compare' + i);
+        if (compareItemsByCat != null) {
+            compareItems += compareItemsByCat.split(',').length;
+        }
+    }
+    if(compareItems != null) {
+        setCompareBlockDynamicData(compareItems);
     }
     $$('.close-compare-block')[0].addEventListener('click', function () {
         $$('.compare-block')[0].style.display = 'none';
     })
 });
 function setCompareBlockDynamicData(compareItemsCount) {
-    if(compareItemsCount > 9) {
-        compareItemsCount = Number(compareItemsCount.toString().slice(-1));
-    }
+    // if(compareItemsCount > 9) {
+    //     compareItemsCount = Number(compareItemsCount.toString().slice(-1));
+    // }
     var endOfCompareWord = '';
     if(compareItemsCount > 1) {
         $$('.count-of-comparing-items')[0].innerText = '+' + (compareItemsCount-1);

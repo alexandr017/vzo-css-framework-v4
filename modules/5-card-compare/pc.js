@@ -1,34 +1,51 @@
 document.addEventListener('DOMContentLoaded', function(){
-    var compareBlock = $$('.card-compare-slider')[0];
-    var category = compareBlock.attributes['data-catId'].nodeValue;
-    let compare = localStorage.getItem('vzo_compare'+ category);
-    if(compare == null || compare == '' || compare == 'null'){
-        compareBlock.innerText = 'Нет предложений для сравнения';
-        $$('.clearCompare')[0].style.display = 'none';
-    } else {
-        let data = {
-            '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
-            'cards': compare,
-            'id': category
-        };
-        fetch('/compare_load', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json;charset=utf-8'
-            },
-            body: JSON.stringify(data)
-        }).then((res) => {
-            return res.text().then((value) => {
-                compareBlock.innerHTML = value;
-                addCompareSliderBtns();
-                $$('.clearCompare')[0].style.display = 'block';
-                addClickToDeleteBtns();
-            }).catch((err) => {
-                console.log(err);
-            })
-        })
+    if($$('.compare-items-tabs').length != 0) {
+        var compareTabs = $$('.compare-items-tabs')[0].getElementsByClassName('tab-links');
+        if(compareTabs.length != 0) {
+            compareTabs[0].classList.add('on');
+            for(let i=0; i<compareTabs.length;i++) {
+                compareTabs[i].addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var elem = e.target;
+                    elem.parentElement.getElementsByClassName('on')[0].classList.remove('on');
+                    elem.classList.add('on');
+                    addCompareActiveTabData();
+                })
+            }
+        }
     }
-
+    function addCompareActiveTabData() {
+        var compareBlock = $$('.card-compare-slider')[0];
+        var category = document.querySelectorAll('.compare-items-tabs .on')[0].dataset['cat'];
+        let compare = localStorage.getItem('vzo_compare'+ category);
+        if(compare == null || compare == '' || compare == 'null'){
+            compareBlock.innerText = 'Нет предложений для сравнения';
+            $$('.clearCompare')[0].style.display = 'none';
+        } else {
+            let data = {
+                '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
+                'cards': compare,
+                'id': category
+            };
+            fetch('/compare_load', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                },
+                body: JSON.stringify(data)
+            }).then((res) => {
+                return res.text().then((value) => {
+                    compareBlock.innerHTML = value;
+                    compareBlock.dataset['catid'] = category;
+                    addCompareSliderBtns();
+                    $$('.clearCompare')[0].style.display = 'block';
+                    addClickToDeleteBtns();
+                }).catch((err) => {
+                    console.log(err);
+                })
+            })
+        }
+    }
     function addCompareSliderBtns() {
         if($$('.card-compare-next').length != 0) {
             $$('.card-compare-next')[0].addEventListener('click',function (e) {
@@ -40,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 var itemsInCompareBlock = compareBlock.querySelectorAll('.card-compare-btns .btn').length;
                 addBorderRadiusAfterNext(indexForItem,itemsInCompareBlock);
                 compareBlock.getElementsByClassName('card-compare-main-block')[0].style.transform = 'translatex(-'+transforrmPx+'px)';
-                nextBtn.attributes['data-click'].nodeValue = indexForItem +1;debugger
+                nextBtn.attributes['data-click'].nodeValue = indexForItem +1;
                 if(indexForItem != 0) {
                     prevBtn.attributes['data-click'].nodeValue = 0-indexForItem;
                 } else {
@@ -98,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function(){
             deleteFromCompareBtns[i].addEventListener('click',function (e) {
                 var cardId = e.target.closest('svg').dataset['id'];
                 var compareBlock = $$('.card-compare-slider')[0];
-                var category = compareBlock.attributes['data-catId'].nodeValue;
+                var category = compareBlock.dataset['catid'];
                 let compare = localStorage.getItem('vzo_compare'+ category);
                 compare = compare.split(',').filter((n) => {return n != cardId});
                 if(compare.length == 0){
@@ -110,5 +127,6 @@ document.addEventListener('DOMContentLoaded', function(){
             },false)
         }
     }
+    addCompareActiveTabData();
 })
 

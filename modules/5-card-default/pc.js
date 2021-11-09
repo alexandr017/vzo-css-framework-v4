@@ -60,30 +60,39 @@ function addCardsMoreBtnsClick(value) {
     });
 }
 
-function addToCompareBtnsClick (e){
+function addToCompareBtnsClick (e){debugger
     var elem = e.getElementsByClassName('addToCompare')[0];
-    var catId = $$('.compare-block')[0].attributes['data-cat'].value;
-    elem.addEventListener('click',() => {
-        var compareItems = localStorage.getItem('vzo_compare'+ catId);
-        if (compareItems == null || compareItems == '') {
-            compareItemsArr = Array();
-        } else {
-            compareItemsArr = compareItems.split(',');
-            if(compareItemsArr.length == 10){
-                alert('Нельзя добавлять более 10 карточек одного раздела в сравнение');
-                return;
+    if($$('.compare-block').length != 0) {
+        var catId = $$('.compare-block')[0].attributes['data-cat'].value;
+        elem.addEventListener('click',() => {
+            var compareItems = localStorage.getItem('vzo_compare'+ catId);
+            if (compareItems == null || compareItems == '') {
+                compareItemsArr = Array();
+            } else {
+                compareItemsArr = compareItems.split(',');
+                if(compareItemsArr.length == 10){
+                    alert('Нельзя добавлять более 10 карточек одного раздела в сравнение');
+                    return;
+                }
             }
-        }
-        var id = elem.attributes['data-id'].value;
-        if(compareItemsArr.indexOf(id) == -1) {
-            compareItemsArr.push(id);
-            elem.parentElement.classList.add('addedToCompare');
-        }
-        localStorage.setItem('vzo_compare'+catId,compareItemsArr);
-
-        setCompareBlockDynamicData(compareItemsArr.length);
-        var logo = elem.closest('.card').querySelectorAll('.logo img')[0].attributes['src'].nodeValue;
-    },false)
+            var id = elem.attributes['data-id'].value;
+            if(compareItemsArr.indexOf(id) == -1) {
+                compareItemsArr.push(id);
+                elem.parentElement.classList.add('addedToCompare');
+            }
+            localStorage.setItem('vzo_compare'+catId,compareItemsArr);
+            var compareItemsByCats = null;
+            for (let i = 1; i < 12; i++) {
+                var compareItemsByCat = localStorage.getItem('vzo_compare' + i);
+                if (compareItemsByCat != null) {
+                    compareItemsByCats += compareItemsByCat.split(',').length;
+                }
+            }
+            setCompareBlockDynamicData(compareItemsByCats);
+            $$('.compare-items-count')[0].innerText = 1 + Number($$('.compare-items-count')[0].innerText);
+            var logo = elem.closest('.card').querySelectorAll('.logo img')[0].attributes['src'].nodeValue;
+        },false)
+    }
 }
 
 // печать карточки
@@ -98,6 +107,7 @@ function addPrintBtnsClick(card) {
         }
     });
 }
+
 function addOrRemoveFromFavorites(card) {
     card.getElementsByClassName('addToFavorites')[0].addEventListener('click', function (e) {
         e.preventDefault();
@@ -119,8 +129,26 @@ function addOrRemoveFromFavorites(card) {
             favoritesArr.push(id);
         }
 
-        favorites = localStorage.setItem('vzo',favoritesArr);
-        console.log(localStorage.getItem('vzo',favoritesArr));
+        if(favoritesArr && favoritesArr == '') {
+            favorites = localStorage.removeItem('vzo');
+            if($$('.block-with-back-link').length != 0){
+                $$('.block-with-back-link')[0].style.display = 'block';
+            }
+        } else {
+            favorites = localStorage.setItem('vzo',favoritesArr);
+        }
+
+        if($$('.fav-items-count').length != 0) {
+            if(favoritesArr != null && favoritesArr.length != 0) {
+                $$('.fav-items-count')[0].innerText = favoritesArr.length;
+                $$('.fav-items-count')[0].style.display = 'flex';
+            } else {
+                $$('.fav-items-count')[0].style.display = 'none';
+            }
+        }
+        if(window.location.href.indexOf('favorites') != -1) {
+            $$('#'+card.id)[0].remove();
+        }
         elem.parentElement.classList.toggle('addedToFavorites')
     })
 }
@@ -128,12 +156,12 @@ function addOrRemoveFromFavorites(card) {
 function addCardsBtnsEvents() {
     $$('.card').forEach((card) => {
         addTabsClick(card);
+        addOrRemoveFromFavorites(card);
         addCardsMoreBtnsClick(card);
         addToCompareBtnsClick(card);
         addPrintBtnsClick(card);
-        addOrRemoveFromFavorites(card);
         let cardIconsBlock = card.getElementsByClassName('card-icons')[0];
-        if($$('.compare-block').length != 0) {debugger
+        if($$('.compare-block').length != 0) {
             var catId = $$('.compare-block')[0].attributes['data-cat'].value;
             var comparingItems = localStorage.getItem('vzo_compare'+ catId);
             if(comparingItems != null) {
@@ -160,4 +188,8 @@ function addCardsBtnsEvents() {
         }
     });
 }
-addCardsBtnsEvents();
+document.addEventListener('DOMContentLoaded', function(){
+    if($$('.card').length != 0) {
+        addCardsBtnsEvents();
+    }
+});
