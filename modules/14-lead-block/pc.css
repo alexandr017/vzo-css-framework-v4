@@ -20,7 +20,7 @@
 
 .lead-btn-more,
 .lead-btn-less {
-    color: #4FABFA;
+    color: #355FF1;
     font-size: .87rem;
     cursor: pointer;
 }
@@ -71,3 +71,5 @@
     background: #000000;
     z-index: 2;
 }
+
+

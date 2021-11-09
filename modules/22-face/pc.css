@@ -80,12 +80,19 @@
 
 .face-block .face-more,
 .face-block .face-less {
-    display: block;
-    float: right;
-    color: #4FABFA;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #355FF1;
+    font-weight: 600;
     cursor: pointer;
     margin-right: 60px;
     margin-top: 20px;
+}
+
+.face-block .face-more svg,
+.face-block .face-less svg {
+    margin-left: 5px;
 }
 
 .face-body .face-content {

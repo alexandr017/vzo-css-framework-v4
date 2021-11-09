@@ -1,7 +1,7 @@
 .lead-wrap {
     background: #fff;
     margin: 1em 0;
-    padding: 0 2em 2em 2em;
+    padding: 0 65px 35px 65px;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
@@ -19,6 +19,8 @@
     align-items: center;
     margin-top: 1em;
     position: relative;
+    color: #355FF1;
+    font-weight: 600;
 }
 .lead-wrap .lead-more:after, .lead-wrap .lead-less:after {
     content: '';

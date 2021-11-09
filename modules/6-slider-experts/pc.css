@@ -2,9 +2,9 @@
     min-height: 200px;
 }
 
-.expert-img {
+.expert-img img{
     min-width: 170px;
-    border-radius: 10px;
+    border-radius: 15px 0 0 15px;
     margin-right: 15px;
 }
 

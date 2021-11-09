@@ -3,10 +3,11 @@
     margin: 2em 0;
     justify-content: space-between;
     flex-wrap: wrap;
+    background: #fff;
 }
 
 .bank-blue-text {
-    color: #4FABFA;
+    color: #355FF1;
     display: block;
 }
 .bank-gray-text {
@@ -37,7 +38,7 @@
 .bank-cat-item {
     display: inline-block;
     padding: 0.5em 1.5em;
-    background-color: #F6F8FB;
+    background-color:  #F3F8FF;
     font-size: 0.9rem;
     margin: 0 0.5em 1em 0.5em;
     color: #222735;
@@ -46,4 +47,10 @@
 .bank-cat-item:hover {
     background: #222735;
     color: #fff;
+}
+.banks-page {
+    display: none;
+}
+.banks-page.active_page {
+    display: block;
 }

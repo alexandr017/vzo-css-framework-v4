@@ -13,7 +13,7 @@ if(document.getElementsByClassName("face-tags").length != 0) {
             item.classList.add(hiddenFaceClass);
         }
         if (index > 5) {
-            faceLoadMore.style.display = "block";
+            faceLoadMore.style.display = "flex";
         }
     });
     faceLoadMore.addEventListener("click", function () {
@@ -24,7 +24,7 @@ if(document.getElementsByClassName("face-tags").length != 0) {
             item.classList.remove(hiddenFaceClass);
             if (document.querySelectorAll("." + hiddenFaceClass).length === 0) {
                 faceLoadMore.style.display = "none";
-                faceLoadLess.style.display = "block";
+                faceLoadLess.style.display = "flex";
             }
         });
     });
@@ -35,7 +35,7 @@ if(document.getElementsByClassName("face-tags").length != 0) {
             }
         });
         if (document.querySelectorAll("." + hiddenFaceClass).length !== 5) {
-            faceLoadMore.style.display = "block";
+            faceLoadMore.style.display = "flex";
             faceLoadLess.style.display = "none";
         }
     });

@@ -64,24 +64,27 @@ if($$('.select-items').length != 0) {
         selectItemsArr[i].addEventListener('click', function () {
             if (selectItemsArr[i].textContent === 'Другое') {
                 hiddenBlock.style.display = 'block';
-            } else
+            } else {
                 hiddenBlock.style.display = 'none';
+            }
         }, false)
     }
 }
-
-$$('.selected-item')[0].addEventListener('click',function () {
-    var compainModalHeight = $$('#modal-complain')[0].getElementsByClassName('select-items')[0].offsetHeight;
-    var windowHeight = window.pageYOffset;
-    var selectItemsBlock = $$('.select-items')[0];
-    if(compainModalHeight+210 > windowHeight) {
-        selectItemsBlock.style.height = compainModalHeight-60+'px';
-        selectItemsBlock.style.overflowY = 'scroll'
-    } else {
-        selectItemsBlock.style.height = 'fit-content';
-        selectItemsBlock.style.overflowY = 'hidden'
-    }
-},false)
-
+// let selectedItemsClaim = $$('.selected-item');
+// for (let i = 0; i < selectedItemsClaim.length;i++) {
+//     selectedItemsClaim[i].addEventListener('click', function () {
+//         var compainModalHeight = $$('#modal-complain')[0].getElementsByClassName('select-items')[0].offsetHeight;
+//         var windowHeight = window.pageYOffset;
+//         var selectItemsBlock = $$('.select-items')[0];
+//         if (compainModalHeight + 210 > windowHeight) {
+//             selectItemsBlock.style.height = compainModalHeight - 60 + 'px';
+//             selectItemsBlock.style.overflowY = 'scroll'
+//         } else {
+//             selectItemsBlock.style.height = 'fit-content';
+//             selectItemsBlock.style.overflowY = 'hidden'
+//         }
+//     }, false)
+// }
+//
 
 

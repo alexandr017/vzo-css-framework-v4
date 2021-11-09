@@ -91,7 +91,7 @@
 }
 
 .hr-item-title:hover {
-    color: #2CDD88;
+    color: #355FF1;
 }
 
 .h-sub-menu {
@@ -110,7 +110,7 @@
 }
 
 .hl-item:hover .h-sub-menu a:hover {
-    color: #2CDD88!important;
+    color: #355FF1!important;
 }
 
 .hl-item:hover .h-sub-menu a {
@@ -190,17 +190,17 @@ header svg {
 }
 
 .icon-search:hover path {
-    stroke: #2CDD88;
+    stroke: #355FF1;
 }
 
 .icon-wrap-hidden-block:hover .icon-more-info path,
 .icon-wrap-hidden-block:hover .icon-geo path:first-of-type,
 .icon-wrap-hidden-block:hover .icon-account circle{
-    fill:#2CDD88;
+    fill:#355FF1;
 }
 
 .h-sub-menu-city {
-    max-width: 350px;
+    width: 350px;
     margin: 40px 0 0 -300px;
     position: absolute;
 }
@@ -229,8 +229,8 @@ header svg {
 
 .h-sub-menu-auth-user,
 .h-sub-menu-more-info{
-    max-width: 350px;
-    margin: 40px 0 0 -240px;
+    width: 350px;
+    margin: 40px 0 0 -300px;
     position: absolute;
 }
 

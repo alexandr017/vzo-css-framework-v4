@@ -99,7 +99,7 @@
 }
 
 .card .card-body .card-body-inner .card-more ,.card .card-body .card-body-inner .card-less {
-    color: #4FABFA;
+    color: #355FF1;
     cursor: pointer;
     margin: 10px 0 15px 65px;
     align-items: center;
@@ -318,7 +318,7 @@
 .card-slider-block .jsSlideItem img {
     margin: 0 auto;
 }
-.addToCompare {
+.addToCompare, .addToFavorites {
     cursor: pointer;
 }
 .addToCompare path{
