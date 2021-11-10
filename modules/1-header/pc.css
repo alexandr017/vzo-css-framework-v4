@@ -203,6 +203,7 @@ header svg {
     width: 350px;
     margin: 40px 0 0 -300px;
     position: absolute;
+    border-radius: 15px;
 }
 
 .h-sub-menu-city .sub-nav_one-column {
@@ -232,10 +233,12 @@ header svg {
     width: 350px;
     margin: 40px 0 0 -300px;
     position: absolute;
+    border-radius: 10px;
 }
 
 .h-sub-menu-auth-user .sub-nav_one-column {
     padding: 20px 25px;
+    border-radius: 10px;
 }
 
 .h-sub-menu-auth-user .sub-nav_one-column span{
@@ -251,6 +254,7 @@ header svg {
 .h-sub-menu-more-info .sub-nav_one-column {
     border-radius: 10px;
 }
+
 .h-sub-menu-more-info .more-info-el {
     padding: 20px 25px;
 }

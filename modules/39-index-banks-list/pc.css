@@ -10,9 +10,10 @@
     color: #355FF1;
     display: block;
 }
+
 .bank-gray-text {
     color: #95A5B0;
-    font-size: 0.9rem;
+    font-size: .87rem;
     display: block;
 }
 .bank-name {

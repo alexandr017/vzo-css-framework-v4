@@ -5,10 +5,11 @@
 .card {
     width: 100%;
     margin: 30px 0;
+    background: #fff;
 }
 
 .card-stock{
-    border: 7px solid #9FF9C8;
+    border: 3px solid #355FF1;
 }
 
 .card .card-header {
@@ -322,10 +323,10 @@
     cursor: pointer;
 }
 .addToCompare path{
-    stroke:#ebedef;
+    stroke:#E8EEF6;
     cursor: pointer;
 }
 .addedToCompare .addToCompare path, .addedToFavorites .addToFavorites path{
-    stroke:#4ea8f7;
-    fill: #4ea8f7;
+    stroke:#355FF1;
+    fill: #355FF1;
 }

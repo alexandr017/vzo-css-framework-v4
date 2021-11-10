@@ -117,78 +117,7 @@
 }
 
 
-
-
-.btn-chat-1 {
-    background: #fff;
-    color: #FF4D4A;
-    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
-}
-
-.btn-chat-1:hover {
-    background: #FFF4F4;
-    box-shadow: none;
-}
-
-.btn-chat-1:active {
-    background: #FFEDED;
-    box-shadow: none;
-}
-
-.btn-chat-2 {
-    background: #fff;
-    color: #2CDD88;
-    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
-}
-
-.btn-chat-2:hover {
-    background: #E3FFF0;
-    box-shadow: none;
-}
-
-.btn-chat-2:active {
-    background: #CCFFE3;
-    box-shadow: none;
-}
-
-
-.btn-whats-app {
-    color: #355FF1;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
-}
-
-.btn-whats-app:hover{
-    background: #EAFFF3;
-    box-shadow: none;
-}
-
-.btn-whats-app:active{
-    background: #D4FDE7;
-    box-shadow: none;
-}
-
-.btn-telegram {
-    color: #4FABFA;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
-}
-
-.btn-telegram:hover {
-    background: #EFF8FF;
-    box-shadow: none;
-}
-
-.btn-telegram:active {
-    background: #DEF0FF;
-    box-shadow: none;
-}
-
-.btn-chat-1 svg, .btn-chat-2 svg, .btn-whats-app svg, .btn-telegram svg{
-    margin-right: 10px;
-}
-
-.prev-btn, .up-btn, .down-btn, .next-btn{
+.prev-btn, .up-btn, .down-btn, .next-btn {
     cursor: pointer;
     outline: none;
     border: none;

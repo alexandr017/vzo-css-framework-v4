@@ -1,5 +1,5 @@
 .org-menu-block {
-    background: url("/v4/images/company-img.png");
+    background:#fff;
     min-height: 260px;
     padding: 45px 0 0 75px;
     margin: 30px 0;
@@ -24,7 +24,7 @@
 }
 
 .org-menu-links .org-links {
-    border-radius: 25px 25px 0 0;
+    border-radius: 15px 15px 0 0;
     background-color: inherit;
     text-align: center;
     cursor: pointer;
@@ -34,14 +34,12 @@
 }
 
 .org-menu-links .org-links.active {
-    background: #FFFFFF;
+    background: #F3F8FF;
     font-weight: 600;
 }
 
 .org-products-block {
-    margin: 15px 0 45px;;
-    display: flex;
-    justify-content: space-between;
+    margin: 15px 0 45px;
 }
 
 
@@ -87,4 +85,12 @@
 
 .org-link-el:hover svg path, .org-link-el.active svg path{
     stroke: #355FF1;
+}
+
+.centerOrgMenu {
+    justify-content: space-between;
+}
+
+.leftOrgMenu {
+    justify-content: start;
 }
