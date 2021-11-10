@@ -49,7 +49,9 @@ function addCardsMoreBtnsClick(value) {
     cardButtonShow.addEventListener('click', event => {
         cardButtonHide.style.display = 'flex';
         cardButtonShow.style.display = 'none';
-        event.target.parentElement.getElementsByClassName('card-slider-block')[0].classList.add('card-slider-init');
+        if(event.target.parentElement.getElementsByClassName('card-slider-block').length != 0) {
+            event.target.parentElement.getElementsByClassName('card-slider-block')[0].classList.add('card-slider-init');
+        }
         cardSliderInit(event.target.parentElement.closest('.card'));
         hiddenCardInfoBlock.style.display = 'block';
     });
