@@ -85,7 +85,7 @@ input:checked + .slider-pointer::before {
 }
 
 input:checked + .slider-pointer {
-    background: #2CDD88;
+    background: #355FF1;
 }
 
 
