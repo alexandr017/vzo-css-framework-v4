@@ -24,9 +24,10 @@ body, input, textarea, select, .btn , .btn-1{
 }
 
 
-a{
+a, .link{
     color: #355FF1;
     text-decoration:none;
+    cursor: pointer;
 }
 
 img, iframe {
