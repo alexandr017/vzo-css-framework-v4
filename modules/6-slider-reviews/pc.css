@@ -5,9 +5,10 @@
 }
 .review-inner-block {
     max-height: 360px;
-}
-.review-inner-block{
     padding: 30px;
+}
+.background-2 .review-inner-block {
+    background: #fff;
 }
 
 .review-rating {
@@ -35,7 +36,9 @@
     background-color: #fff;
     height: 21px;
 }
-
+.background-2 .review-content::-webkit-scrollbar {
+    background-color: #F3F8FF;
+}
 .review-content:hover::-webkit-scrollbar-thumb {
     background: rgba(135, 145, 159, 0.4);
     border-radius: 3px;

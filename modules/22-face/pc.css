@@ -36,6 +36,7 @@
 .face-block .face-header .face-top-inner {
     display: flex;
     margin-top: 15px;
+    padding: 0 20px;
 }
 
 .face-block .face-header .face-top-inner .logo {
@@ -110,7 +111,7 @@
     padding: 6px 25px;
     background: #F6F8FB;
     white-space: nowrap;
-    margin: 10px;
+    margin-right: 20px;
 }
 
 .face-body .face-tags .tag-el span {

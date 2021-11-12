@@ -6,7 +6,7 @@
     margin: 30px auto;
 }
 
-.rating-area .rating-wrap svg {
+.rating-area .rating-wrap:not(.no-rate-poss) svg {
     fill:#E6EBEF;
     padding-right: 20px;
     cursor: pointer;
