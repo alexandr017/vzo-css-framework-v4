@@ -1,6 +1,7 @@
 .tags-list-wrap {
     flex-flow: row-reverse;
     padding: 3px 0 10px;
+    width: 100%;
 }
 
 .more-tags-btn {
