@@ -5,9 +5,9 @@ let indexItem = 1;
 selectMenu.forEach(a => {
     a.addEventListener('click', b => {
         let nextEl = b.target.nextElementSibling;
-        nextEl.classList.add('toggleSelect');
+        nextEl.classList.toggle('toggleSelect');
         nextEl.style.zIndex = indexItem++;
-        a.classList.add('openSelect');
+        a.classList.toggle('openSelect');
     })
 });
 optionMenu.forEach(a => {
@@ -17,6 +17,14 @@ optionMenu.forEach(a => {
         parentEl.setAttribute('data-type', b.target.getAttribute('data-type'));
         parentEl.innerText = b.target.innerText;
         parentEl.classList.remove('openSelect');
-
     })
 });
+document.addEventListener('click',function (e) {
+    if(!e.target.classList.contains('openSelect')){
+        var openedSelect = document.getElementsByClassName('openSelect');
+        if(openedSelect.length != 0) {
+            openedSelect[0].classList.remove('openSelect');
+            document.querySelectorAll('.sort .toggleSelect')[0].classList.remove('toggleSelect');
+        }
+    }
+},false)
