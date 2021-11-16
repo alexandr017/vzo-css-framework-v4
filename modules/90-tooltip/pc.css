@@ -1,0 +1,45 @@
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    transition: 0.4s ease-in-out 0.3s;
+}
+
+[data-tooltip]:before {
+    content: "";
+    height: 0;
+    width: 0;
+    top: calc(100% - 8px);
+    border-style: solid;
+    border-width: 10px;
+    margin-top: 10px;
+    border-color: transparent transparent #000 transparent;
+}
+
+[data-tooltip]:after {
+    content: attr(data-tooltip);
+    background: #000;
+    padding: 10px 15px;
+    font-size: 0.87rem;
+    box-sizing: border-box;
+    top: calc(100% + 12px);
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 10px;
+    z-index: 9;
+    width: 300px;
+    text-align: center;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s ease-in-out 0.3s;
+}
