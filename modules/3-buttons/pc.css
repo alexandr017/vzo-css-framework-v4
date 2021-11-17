@@ -31,17 +31,17 @@
 }
 
 .btn-light-3 {
-    color: #000;
+    color: #000 !important;
     background: #fff;
 }
 
 .btn-light-3:hover {
-    color:#fff;
+    color:#fff !important;
     background: #355FF1;
 }
 
 .btn-light-3:active {
-    color:#fff;
+    color:#fff !important;
     background: #1742D8;
 }
 
@@ -88,19 +88,21 @@
     color: #355FF1;
     background: #F3F8FF;
 }
-.background-2 .btn-light {
-    background-color: #fff;
+
+.btn-light-2 {
+    color: #355FF1;
+    background: #fff;
 }
-.btn-light:hover {
+
+.btn-light:hover, .btn-light-2:hover{
     color:#fff;
     background: #355FF1;
 }
 
-.btn-light:active {
+.btn-light:active, .btn-light-2:active{
     color:#fff;
     background: #1742D8;
 }
-
 
 .btn-dark {
     color: #fff;

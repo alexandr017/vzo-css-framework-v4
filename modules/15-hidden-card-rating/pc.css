@@ -1,9 +1,9 @@
 .hidden-card-rating {
-    padding: 30px 65px 0;
+    padding: 30px 0;
 }
 
 .hidden-card-rating .rating-more {
-    color:#4FABFA;
+    color: #355FF1;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .hidden-card-rating .hidden-card-rating-block {
-    background: #F6F8FB;
+    background: #fff;
     border-radius: 15px;
     margin: 25px 0;
     overflow: hidden;
@@ -30,6 +30,14 @@
 
 .hidden-card-rating-list {
     list-style-type: none;
+}
+
+.hidden-card-rating-list .special-list li a{
+    color: #000;
+}
+
+.hidden-card-rating-list .special-list li a:hover{
+    color: #355FF1;
 }
 
 .hidden-card-rating-body {
