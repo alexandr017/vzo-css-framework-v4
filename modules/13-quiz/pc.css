@@ -4,6 +4,12 @@
 .quiz-block {
     align-items: flex-end;
     justify-content: space-between;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 1.5em;
+    width: 100%;
+    margin-bottom: 1em;
 }
 .quiz-block .btn-light {
     margin-bottom: 0.5em;

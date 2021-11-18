@@ -13,7 +13,7 @@
     z-index: 1;
     background-color: white;
 }
-.background-2 .arrows-block {
+.background-2 .jsSlideMainBlock:not(.card-slider-block) .arrows-block {
     background-color: #F3F8FF;
 }
 
