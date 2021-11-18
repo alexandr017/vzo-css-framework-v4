@@ -1,16 +1,24 @@
 .expert-inner-block {
     min-height: 200px;
+    background: #fff;
 }
 
-.expert-img img{
-    min-width: 170px;
-    border-radius: 15px 0 0 15px;
+.expert-img{
+    width: 170px;
     margin-right: 15px;
 }
 
+.expert-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
 .expert-info {
-    margin: 15px 15px 15px 0;
-    font-size: 1rem;
+    padding: 15px 15px 15px 0;
+    font-size: .87rem;
+    width:260px;
 }
 
 .expert-name {

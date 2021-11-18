@@ -37,7 +37,7 @@
     height: 21px;
 }
 .background-2 .review-content::-webkit-scrollbar {
-    background-color: #F3F8FF;
+    background-color: #fff;
 }
 .review-content:hover::-webkit-scrollbar-thumb {
     background: rgba(135, 145, 159, 0.4);
