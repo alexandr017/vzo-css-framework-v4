@@ -1,0 +1,73 @@
+.top-slider-block {
+    padding: 30px 0 50px;
+    position: relative;
+}
+.top-slider {
+    height:315px;
+}
+
+.top-slider-item {
+    background: linear-gradient(112.57deg, #D2E4FF 35.32%, #DEEBFF 88.15%);
+    border-radius: 20px;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.top-slider-item .top-slider-wrap-block {
+    height: 100%;
+}
+
+.top-slider-inner-part {
+    padding: 20px 95px 55px;
+}
+.top-slider-inner-part .btn-light-2 {
+    margin-top: 40px;
+}
+
+.top-slider-item .top-slider-wrap-block .top-slider-inner-img-el {
+    background-image:url("/v4/images/main-slider-bg.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+.top-slider .btn-circle{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin: 15px 15px 0 15px;
+}
+
+.top-slider .next-btn{
+    right: 15px;
+}
+
+.dots-wrap-block {
+    margin-top: -50px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+}
+
+.dot-el {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.activeDot {
+    height: 10px;
+    width: 26px;
+    border-radius: 5px;
+
+}
+
+.top-slider-item.active-slide {
+    opacity: 1;
+    z-index: 1;
+    display: block;
+}

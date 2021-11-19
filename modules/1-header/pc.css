@@ -228,10 +228,6 @@ header svg {
 .h-sub-menu-more-info{
     margin: 50px 0 0 -330px;
 }
-.h-sub-menu-auth-user .sub-nav_one-column {
-    padding: 20px 25px;
-    border-radius: 10px;
-}
 
 .h-sub-menu-auth-user .sub-nav_one-column span{
     display: block;
@@ -243,15 +239,18 @@ header svg {
     color: #222735;
 }
 
-.h-sub-menu-more-info .sub-nav_one-column {
+.h-sub-menu-more-info .sub-nav_one-column,
+.h-sub-menu-auth-user .sub-nav_one-column{
     border-radius: 10px;
 }
 
-.h-sub-menu-more-info .more-info-el {
-    padding: 20px 25px;
+.h-sub-menu-more-info .more-info-el,
+.h-sub-menu-auth-user .menu-auth-user-el{
+    padding: 20px 30px;
 }
 
-.h-sub-menu-more-info .more-info-el:not(:last-of-type){
+.h-sub-menu-more-info .more-info-el:not(:last-of-type),
+.h-sub-menu-auth-user .menu-auth-user-el:not(:last-of-type){
     border-bottom: 1px solid #E6EBEF;
 }
 
@@ -298,10 +297,10 @@ header svg {
 
 .search-block {
     padding: 10px 0 0 0;
-    width: 835px;
+    width:875px;
     position: absolute;
     margin-top: -90px;
-    margin-left: 30%;
+    margin-left: 28%;
     z-index: 999;
 }
 
@@ -309,7 +308,7 @@ header svg {
     width:875px;
     z-index: 9999;
     position: fixed;
-    margin: -35px 0 0 27%;
+    margin: -30px 0 0 27%;
 }
 
 .search-block-container {

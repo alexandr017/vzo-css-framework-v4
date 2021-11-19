@@ -4,23 +4,30 @@ let scrollPageDown = "scroll-page-down";
 let scrollVal = 0;
 
 window.addEventListener("scroll", () => {
+    let searchBlock = $$('.search-block')[0];
+    scrollSearchBlock = "scroll-search-block";
+
     let currentScroll = window.pageYOffset;
     if (currentScroll <= 0) {
         fullPage.classList.remove(scrollPageUp);
+        searchBlock.classList.remove(scrollSearchBlock);
         return;
     }
     if (currentScroll > scrollVal && !fullPage.classList.contains(scrollPageDown)) {
         fullPage.classList.remove(scrollPageUp);
         fullPage.classList.add(scrollPageDown);
+        searchBlock.classList.remove(scrollSearchBlock);
     } else if (currentScroll < scrollVal && fullPage.classList.contains(scrollPageDown)) {
         fullPage.classList.remove(scrollPageDown);
         fullPage.classList.add(scrollPageUp);
+        searchBlock.classList.add(scrollSearchBlock);
     }
     scrollVal = currentScroll;
 });
 
 function searchToggle(){
     let searchBlock = $$('.search-block')[0];
+
     let closeBtn = $$('.search-close-btn')[0];
     let iconSearch = $$('.icon-search')[0];
     if(searchBlock.style.display != 'none') {
@@ -60,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
 });
+
 
 
 
