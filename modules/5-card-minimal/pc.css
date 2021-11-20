@@ -23,6 +23,9 @@
 .card-minimal-wrap{
     margin-top: 30px;
 }
+.card-minimal-wrap:not(:last-of-type) {
+    margin-right: 30px;
+}
 
 .card-min-col:first-of-type {
     width: 65%;
@@ -66,110 +69,4 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-}
-
-@media (max-width: 1140px) {
-    .card-minimal-wrap {
-        width: 340px;
-
-    }
-}
-
-@media (max-width: 1110px) {
-    .card-minimal-wrap {
-        width: 330px;
-
-    }
-}
-
-@media (max-width: 1080px) {
-    .card-minimal-wrap {
-        width: 320px;
-
-    }
-}
-
-@media (max-width: 1050px) {
-    .card-minimal-wrap {
-        width: 310px;
-
-    }
-}
-
-@media (max-width: 1020px) {
-    .card-minimal-wrap {
-        width: 300px;
-
-    }
-}
-
-@media (min-width: 990px) {
-    .card-minimal-wrap:not(:nth-child(3n+3)) {
-        margin-right: 30px;
-    }
-}
-
-@media (max-width: 990px) {
-
-    .card-minimal-block {
-        justify-content: space-around;
-    }
-    .card-minimal-wrap {
-        width: 400px;
-    }
-}
-
-
-@media (max-width: 870px) {
-
-    .card-minimal-wrap {
-        width: 380px;
-    }
-}
-
-
-@media (max-width: 830px) {
-    .card-minimal-wrap {
-        width: 360px;
-    }
-}
-
-@media (max-width: 790px) {
-    .card-minimal-wrap {
-        width: 350px;
-    }
-}
-
-@media (max-width: 770px) {
-    .card-minimal-block {
-        justify-content: space-between;
-    }
-}
-
-@media (max-width: 750px) {
-    .card-minimal-wrap {
-        width: 340px;
-    }
-}
-
-@media (max-width: 730px) {
-    .card-minimal-wrap {
-        width: 330px;
-    }
-}
-
-@media (max-width: 710px) {
-    .card-minimal-wrap {
-        width: 310px;
-    }
-}
-
-@media (max-width: 670px) {
-
-    .card-minimal-block {
-        justify-content: center;
-    }
-    .card-minimal-wrap {
-        width: 350px;
-    }
 }

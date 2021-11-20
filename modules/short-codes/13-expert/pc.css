@@ -13,7 +13,7 @@
 .expert-opinion-block-header {
     justify-content: space-between;
 }
-.expert-opinion-block .expert-img {
+.expert-opinion-block img {
     max-width: 55px;
     max-height: 55px;
     border-radius: 50%;
@@ -24,16 +24,22 @@
 }
 .expert-name a {
     font-weight: 600;
+    font-size: 1rem;
 }
 
+.expert-work-place{
+    font-size: .87rem;
+    color: #95A5B0;
+}
 .expert-opinion-block .button_show,
 .expert-opinion-block .button_hide {
     margin-top: 30px;
     cursor: pointer;
-    color: #4FABFA;
+    color: #355FF1;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: .87rem;
 }
 
 .hidden-info {
@@ -46,7 +52,7 @@
     position: relative;
 }
 .expert-opinion-block .data-more-less-svg{
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 
