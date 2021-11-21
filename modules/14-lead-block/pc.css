@@ -1,7 +1,8 @@
 .lead-main-container {
     padding: 15px 30px 30px 65px;
-    background-image: url("/v4/images/lead-block-bg.png");
-    background-repeat: no-repeat;
+    /*background-image: url("/v4/images/lead-block-bg.png");*/
+    /*background-repeat: no-repeat;*/
+    background: linear-gradient(112.57deg, #D2E4FF 35.32%, #DEEBFF 88.15%);
 }
 
 .lead-main-container h1{

@@ -7,9 +7,25 @@
     margin: 30px 0;
     background: #fff;
 }
+.card-info-tag{
+    background: #CEE1FF;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 15px 15px 0 0;
+    width:100%;
+    font-size: .87rem;
+    color: #5F82FC;
+}
+.card-stock-tag{
+    color: #FF9458;
+    background: #FFFBDD;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-right: 30px;
+}
 
-.card-stock{
-    border: 3px solid #355FF1;
+.card-icons{
+    align-items: center;
 }
 
 .card .card-header {
@@ -104,6 +120,7 @@
     cursor: pointer;
     margin: 10px 0 15px 65px;
     align-items: center;
+    font-weight: 600;
 }
 
 .card .card-body .card-body-inner .card-more svg,.card .card-body .card-body-inner .card-less svg {
@@ -128,7 +145,7 @@
 .card .card-body .hidden-card-info .card-dark-bg {
     margin-top: 30px;
     height: 172px;
-    background: #F6F8FB;
+    background: #E1EDFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -149,6 +166,11 @@
 
 .row-review-btn svg {
     margin-right: 15px;
+}
+
+.p-experience img {
+    position: absolute;
+    right: calc(100% - 120px);
 }
 
 .card .card-body .hidden-card-info .card-row-inner {
@@ -328,5 +350,4 @@
 }
 .addedToCompare .addToCompare path, .addedToFavorites .addToFavorites path{
     stroke:#355FF1;
-    fill: #355FF1;
 }

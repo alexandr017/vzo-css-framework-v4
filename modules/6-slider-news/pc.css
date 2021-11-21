@@ -1,4 +1,6 @@
-
+.news-slider.jsSlideMainBlock {
+    margin-bottom: 0;
+}
 .news-block {
     padding: 80px 0;
 }
