@@ -4,12 +4,13 @@
 }
 
 .card-minimal-block {
-    display: flex;
+    display: block;
 }
 
 .card-minimal-wrap {
     width: 400px;
     padding: 30px;
+    background: #fff;
 }
 
 .card-min-top-block {
