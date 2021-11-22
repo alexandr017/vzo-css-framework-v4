@@ -84,6 +84,13 @@ p {margin-top: 0;}
     top: 8px;
 }
 
+.content iframe {
+    position: relative;
+    min-height: 300px;
+    border: 0;
+    border-radius: 15px;
+}
+
 .shadow{
     box-shadow: 0 6px 20px rgba(55, 56, 61, 0.1);
 }

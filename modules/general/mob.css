@@ -82,12 +82,11 @@ p {margin-top: 0;}
     margin-top: 12px;
 }
 
-.container{
-    max-width: 820px;
-    width: 100%;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+.content iframe {
+    position: relative;
+    min-height: 300px;
+    border: 0;
+    border-radius: 15px;
 }
 
 .shadow{
