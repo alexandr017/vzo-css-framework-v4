@@ -4,7 +4,7 @@ if(document.getElementsByClassName('review_slider').length>0){
         slidesToShow:3,
         slidesToScroll:1,
         circleScroll:false,
-        height:'400',
+        // height:'400',
         responsive: [
             {
                 breakpoint: 1200,

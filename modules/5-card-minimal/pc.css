@@ -12,17 +12,17 @@
     width: 350px;
     padding: 30px;
     background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
 }
-
 
 .card-min-top-block {
     display: flex;
     justify-content: space-between;
 }
 
-.card-minimal-wrap{
-    margin-top: 30px;
-}
 .card-minimal-wrap:not(:last-of-type) {
     margin-right: 30px;
 }
@@ -62,6 +62,7 @@
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .card-minimal_block-btn {

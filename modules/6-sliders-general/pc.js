@@ -33,6 +33,13 @@ var slideShow = (function () {
                 element = getElement(dataSettings.element);
                 if(!dataSettings.arr && element) {
                     arr = [].slice.call(element.children);
+                    if(!dataSettings.height) {
+                        for (let i = 0; i < arr.length; i++) {
+                            if (arr[i].offsetHeight > elHeight) {
+                                elHeight = arr[i].offsetHeight;
+                            }
+                        }
+                    }
                     dataSettings.arr = arr;
                 }
                 if(window.sliders) {
@@ -85,6 +92,9 @@ var slideShow = (function () {
                     }
                     if(elementName == 'reviews'){
                         reviewItem = true;
+                        if(elHeight > 400) {
+                            elHeight = 400;
+                        }
                     }else {
                         reviewItem = false;
                     }
