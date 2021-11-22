@@ -23,7 +23,6 @@ body, input, textarea, select, .btn , .btn-1{
     font-family: 'Proxima Nova Rg', sans-serif;
 }
 
-
 a, .link{
     color: #355FF1;
     text-decoration:none;
@@ -85,13 +84,11 @@ p {margin-top: 0;}
     top: 8px;
 }
 
-.container{
-    max-width: 1140px;
-    width: 100%;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+.content iframe {
     position: relative;
+    min-height: 300px;
+    border: 0;
+    border-radius: 15px;
 }
 
 .shadow{

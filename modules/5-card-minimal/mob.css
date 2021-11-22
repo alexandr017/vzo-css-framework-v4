@@ -4,12 +4,14 @@
 }
 
 .card-minimal-block {
-    display: flex;
+    display: block;
 }
 
 .card-minimal-wrap {
     width: 400px;
     padding: 30px;
+    background: #fff;
+    margin: 0 auto 15px;
 }
 
 .card-min-top-block {
@@ -34,6 +36,7 @@
 .card-min-col img {
     width: 100%;
     max-width: fit-content;
+    max-height: 65px;
 }
 
 .card-min-label-title {
@@ -56,4 +59,26 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+}
+
+
+@media (max-width: 1200px) {
+    .card-minimal-wrap {
+        width: calc(50% - 15px);
+    }
+    .card-minimal-wrap:not(:nth-child(3n+3)){
+        margin-right: 0;
+    }
+    .card-minimal-wrap:nth-child(odd){
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-minimal-wrap {
+        width: 100%;
+    }
+    .card-minimal-wrap:nth-child(odd){
+        margin-right: 0;
+    }
 }
