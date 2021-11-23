@@ -158,3 +158,17 @@ hr {
 .p-5 {
     padding: 80px 0;
 }
+
+
+figure {
+    margin: 0 0 10px;
+}
+
+
+figure figcaption {
+    font-size: 0.95rem;
+    color: #848484;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
