@@ -22,14 +22,10 @@
     display: flex;
     justify-content: space-between;
 }
-.card-minimal-wrap:not(:nth-child(3n+3)){
+
+.card-minimal-wrap:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-
-.card-minimal-wrap{
-    margin-top: 30px;
-}
->>>>>>> e7ee771fab5033e83bfdbf5450068d47c6062611
 
 .card-min-col:first-of-type {
     width: 65%;
@@ -73,8 +69,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin: 30px auto 0;
 }
+
 
 @media (max-width: 1200px) {
     .card-minimal-wrap {
