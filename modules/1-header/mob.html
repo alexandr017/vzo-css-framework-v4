@@ -1,15 +1,106 @@
 <div class="container">
     <header>
+        <div class="header-search-form-wrap background-2">
+            <form action="#" method="POST" class="header-search-form">
+                <svg id="searchButtonHideForm" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 14L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 1L1 14" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                <input id="searchInputBySiteJs" type="text" name="s" placeholder="Введите запрос, например Тинькофф" value="" autocomplete="off">
+                <button id="searchButton" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <ul id="search-hint"></ul>
+        </div>
         <div class="top-line flex">
-            <svg id="menuButton" width="30" height="14" viewBox="0 0 30 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M28 2H2" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M28 12H2" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <div class="site-name">ВЗО / <span class="site-slogan"> эксперт по займам</span></div>
-            <svg id="searchButton" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="searchButtonShowForm" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.1978 16.1324C14.5229 16.0835 17.1788 13.3483 17.1299 10.0232C17.081 6.69805 14.3458 4.04217 11.0207 4.0911C7.69554 4.14002 5.03966 6.87523 5.08859 10.2003C5.13752 13.5255 7.87272 16.1813 11.1978 16.1324Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M19.9997 19.0075L15.3359 14.3438" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
+            <div class="site-name">ВЗО</div>
+            <div id="menuButton" class="menu-button">
+                <div class="menu-button-inner">
+                    <span class="menu-button-line-1"></span>
+                    <span class="menu-button-line-2"></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu-inner">
+            <div class="header-item-menu background-2 border-radius-3">
+                <span class="header-item-menu-title">Займы</span>
+                <div class="header-sub-menu">
+                    <a href="#">Без звонков</a>
+                    <a href="#">Без карты</a>
+                    <a href="#">Без отказа</a>
+                    <a href="#">Без процентов</a>
+                    <a href="#">Долгосрочные</a>
+                    <a href="#">Займ на карту</a>
+                    <a href="#">На Киви-кошелек</a>
+                    <a href="#">Новые</a>
+                    <a href="#">С 18 лет</a>
+                    <a href="#">С плохой кредитной историей</a>
+                    <a href="#">Со 100% одобрением</a>
+                </div>
+            </div>
+            <div class="header-item-menu background-2 border-radius-3">
+                <span class="header-item-menu-title">Кредиты</span>
+                <div class="header-sub-menu">
+                    <a href="#">Пункт 1</a>
+                </div>
+            </div>
+            <div class="header-item-menu background-2 border-radius-3">
+                <span class="header-item-menu-title">Кредитные карты</span>
+                <div class="header-sub-menu">
+                    <a href="#">Пункт 1</a>
+                </div>
+            </div>
+            <div class="header-item-menu background-2 border-radius-3">
+                <span class="header-item-menu-title">Прочее</span>
+                <div class="header-sub-menu">
+                    <a href="#">Пункт 1</a>
+                </div>
+            </div>
+            <div class="header-item-menu background-2 border-radius-3">
+                <span class="header-item-menu-title">Журнал</span>
+                <div class="header-sub-menu">
+                    <a href="#">Пункт 1</a>
+                </div>
+            </div>
+            <div class="flex menu-three-line">
+                <a href="#" class="header-item-menu background-2 border-radius-3">МФО</a>
+                <a href="#" class="header-item-menu background-2 border-radius-3">Банки</a>
+                <a href="#" class="header-item-menu background-2 border-radius-3">О нас</a>
+            </div>
+            <div class="flex menu-two-line">
+                <a href="#" class="header-item-menu background-2 border-radius-3">
+                    <svg width="36" height="34" viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.9559 13.1599L34.9563 13.161C35.0656 13.493 34.9665 13.8585 34.6919 14.0953L34.6911 14.096L26.8371 20.883L26.3812 21.2769L26.5164 21.8641L28.8323 31.9177C28.8323 31.9178 28.8324 31.918 28.8324 31.9182C28.9104 32.2585 28.7785 32.6147 28.4816 32.8268L28.4815 32.8268C28.1825 33.0405 27.784 33.0571 27.4697 32.8707L27.4674 32.8694L18.5078 27.5902L18.0002 27.2911L17.4926 27.5901L8.52977 32.8693L8.52933 32.8696C8.38052 32.9573 8.2184 33 8.05646 33C7.86752 33 7.67927 32.9423 7.51585 32.8259C7.22088 32.6157 7.08803 32.2604 7.16634 31.9178C7.16639 31.9176 7.16643 31.9174 7.16648 31.9172L9.48221 21.8641L9.61745 21.277L9.16164 20.883L1.30761 14.0947L1.30571 14.0931C1.0338 13.8593 0.934203 13.4938 1.04385 13.1615C1.15401 12.8276 1.45684 12.5818 1.82977 12.5475C1.83 12.5475 1.83023 12.5475 1.83045 12.5475L12.2211 11.6178L12.813 11.5648L13.0494 11.0196L17.1576 1.54483C17.1577 1.5446 17.1578 1.54438 17.1579 1.54415C17.3004 1.21745 17.6273 1 18.0001 1C18.3733 1 18.7003 1.21777 18.8427 1.5431C18.8428 1.5434 18.8429 1.54369 18.843 1.54399L22.9509 11.0195L23.1873 11.5648L23.7792 11.6178L34.1698 12.5476L34.1704 12.5477C34.5435 12.5808 34.8468 12.8274 34.9559 13.1599Z" stroke="#C4CFD8" stroke-width="2"/>
+                    </svg>
+                    <span class="two-menu-title">Сравнение</span>
+                    <span class="two-menu-count-label">4</span>
+                </a>
+                <a href="#" class="header-item-menu background-2 border-radius-3">
+                    <svg width="29" height="33" viewBox="0 0 29 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.3287 31.064V12.8987" stroke="#C4CFD8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.6661 31.0646V2" stroke="#C4CFD8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 31.0652V20.166" stroke="#C4CFD8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="two-menu-title">Избранное</span>
+                    <span class="two-menu-count-label">12</span>
+                </a>
+            </div>
+            <a href="#" class="header-item-menu background-2 border-radius-3">Личный кабинет</a>
+            <div class="header-item-menu background-2 border-radius-3">
+                <a href="#">Новосибирск</a>
+                <svg id="geoMobIcon" width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.2896 7.14402C13.2896 12.1819 8.25169 16.5001 6.81229 16.5001C5.3729 16.5001 0.335022 12.1819 0.335022 7.14402C0.335022 5.42614 1.01745 3.77862 2.23217 2.5639C3.4469 1.34917 5.09442 0.666748 6.81229 0.666748C8.53017 0.666748 10.1777 1.34917 11.3924 2.5639C12.6071 3.77862 13.2896 5.42614 13.2896 7.14402Z" fill="black"/>
+                    <path d="M6.77883 9.36822C8.07967 9.36822 9.13421 8.31368 9.13421 7.01284C9.13421 5.71201 8.07967 4.65747 6.77883 4.65747C5.478 4.65747 4.42346 5.71201 4.42346 7.01284C4.42346 8.31368 5.478 9.36822 6.77883 9.36822Z" fill="#F6F8FB"/>
+                </svg>
+
+            </div>
+
+
         </div>
     </header>
+
 </div>

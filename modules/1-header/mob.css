@@ -2,6 +2,35 @@ header {
 
 }
 
+.header-search-form-wrap {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -50px;
+    left: 0;
+    z-index: 1;
+    transition: top 0.5s linear;
+}
+
+.header-search-form-wrap.show-form{
+    display: block;
+    top: 0;
+}
+
+.header-search-form-wrap form {
+    background: #FFF;
+    height: 32px;
+    padding: 3px 0;
+}
+
+.header-search-form-wrap form input[type="text"] {
+    outline: none;
+    border: none;
+}
+
+
+
 header .top-line {
     justify-content: space-between;
     align-items: center;
@@ -16,11 +45,154 @@ header .top-line {
     line-height: 2rem;
 }
 
-.site-slogan {
-    font-size: 1rem;
-    vertical-align: top;
+#searchButtonShowForm, #searchButtonHideForm{
+    cursor: pointer;
 }
 
-#searchButton {
+.header-menu-inner {
+    display: none;
+    margin-top: 15px;
+}
+
+.header-menu-inner.active-menu {
+    display: block;
+}
+
+
+.header-item-menu {
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.header-item-menu-title, a.header-item-menu {
+    display: block;
+    font-weight: bold;
     cursor: pointer;
+    position: relative;
+    color: #000;
+
+}
+
+.header-item-menu-title:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 17px;
+    height: 8px;
+    background: url(/v4/images/arrow-down.svg) no-repeat;
+    background-size: cover;
+}
+
+.header-item-menu-title.active-menu-title:after {
+    transform: rotate(180deg);
+}
+
+.menu-three-line, .menu-two-line {
+    justify-content: space-between;
+}
+
+.menu-three-line .header-item-menu {
+    width: calc(100% - 30px);
+}
+
+.menu-three-line .header-item-menu:nth-child(2n){
+    margin: 0 15px 15px;
+}
+
+
+.menu-three-line .header-item-menu, .menu-two-line .header-item-menu {
+    color: #000;
+    text-align: center;
+}
+
+.menu-two-line .header-item-menu{
+    padding: 25px;
+    position: relative;
+}
+
+.menu-two-line .header-item-menu {
+    width: calc(100% - 30px);
+}
+
+.menu-two-line .header-item-menu:nth-child(odd) {
+    margin: 0 15px 15px 0;
+}
+
+.menu-two-line .two-menu-title {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.menu-two-line .two-menu-count-label {
+    position: absolute;
+    display: block;
+    background: #FF4E59;
+    color: #FFF;
+    font-size: 1.2rem;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+}
+
+.header-sub-menu {
+    display: none;
+}
+
+.header-sub-menu.active-sub-menu {
+    display: block;
+    margin-top: 5px;
+}
+
+.header-sub-menu a {
+    display: block;
+    padding: 5px 0;
+}
+
+#geoMobIcon {
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    cursor: pointer;
+}
+
+/* button animation open */
+.menu-button.is-hover {
+    box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, #dfdfdf 32%, #f0f0f0 88%);
+}
+.menu-button.is-mousedown {
+    border-top: 1px solid #dfdfdf;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.6);
+}
+.menu-button-inner {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.menu-button-inner .menu-button-line-1, .menu-button-inner .menu-button-line-2{
+    display: block;
+    width: 20px;
+    /*height: 0.0625rem;*/
+    height: 0.095rem;
+    background: #000;
+    position: absolute;
+    border-radius: 4px;
+    transition: transform 0.2s, opacity 0.2s, width 0.2s;
+}
+
+.menu-button-inner .menu-button-line-2 {
+    top: 1rem;
+}
+.menu-button.is-active .menu-button-inner .menu-button-line-1 {
+    transform: rotate(45deg) translate3d(0.375rem, 0.375rem, 0);
+}
+
+.menu-button.is-active .menu-button-inner .menu-button-line-2 {
+    transform: rotate(-45deg) translate3d(0.34375rem, -0.34375rem, 0);
 }
