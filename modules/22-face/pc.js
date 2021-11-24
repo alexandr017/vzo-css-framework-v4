@@ -34,10 +34,9 @@ if(document.getElementsByClassName("face-tags").length != 0) {
                 item.classList.add(hiddenFaceClass);
             }
         });
-        if (document.querySelectorAll("." + hiddenFaceClass).length <= 5) {
+        if (document.querySelectorAll("." + hiddenFaceClass).length !== 5) {
             faceLoadMore.style.display = "flex";
             faceLoadLess.style.display = "none";
         }
     });
 }
-

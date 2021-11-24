@@ -98,6 +98,10 @@
     margin-left: 5px;
 }
 
+.face-tags-block {
+    justify-content: space-between;
+}
+
 .face-body .face-content {
     padding: 5px 60px;
 }
