@@ -23,6 +23,7 @@
     line-height: 45px;
     text-align: center;
     border-radius: 50%;
+    display: inline-block;
 }
 
 .pagination .pagination-current-page {
