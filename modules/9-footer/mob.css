@@ -1,0 +1,86 @@
+.f-block {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.f-block .f-top-line {
+    align-items: center;
+    border-top: 1px solid #E8EEF6;
+    border-bottom: 1px solid #E8EEF6;
+    width: 100%;
+    padding: 15px 15px 10px;
+    margin-bottom:25px;
+}
+
+.f-block .social .soc-network{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.f-block .f-chats-block {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.f-block .f-chats-el {
+    margin: 0 10px;
+}
+
+.f-block .f-support-phone {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.f-block .f-support-label {
+    font-size: .75rem;
+}
+
+
+.f-block .soc-reviews {
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
+.f-block ul.f-2-menu {
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    font-weight: 600;
+    padding: 0 40px;
+    width: 100%;
+    font-size: .75rem;
+}
+
+.f-block .f-2-menu li {
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+}
+
+.f-block .f-2-menu a {
+    color: #95A5B0;
+}
+
+.f-block .f-2-menu li a.active, .f-block .f-2-menu li a:hover {
+    color: #355FF1;
+}
+
+.f-block .f-3 {
+    margin-top: 30px;
+    width: 100%;
+    border-top: 1px solid #E8EEF6;
+    border-bottom: 1px solid #E8EEF6;
+    padding: 20px 0;
+}
+
+.f-block .f-3 .policy a {
+    display: block;
+    font-size: 0.75rem;
+    color: #ADBAC4;
+}
+.f-block .copyright {
+    color: #ADBAC4;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}

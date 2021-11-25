@@ -2,112 +2,106 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.f-l-block {
-    width: 75%;
-    line-height: 2.62rem;
-    overflow: hidden;
-    background-color: #F3F8FF;
-}
-.f-l-bg {
-    background-image: url("/v4/images/f-bg-img.png");
-    background-repeat:no-repeat;
-    background-position: 60%;
-    background-size: cover;
-    -moz-transition: all .7s;
-    -webkit-transition: all .7s;
-    transition: all .7s;
-    height: 196px;
-    width: 80%;
-}
-.f-l-bg:hover {
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1.1);
-}
-.f-l-block .f-l-item {
-    display: block;
-    font-size: 0.87rem;
-}
-.f-l-block .f-l-text {
-    padding: 25px 40px;
-    position: relative;
-}
-.f-l-title {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-}
 
-.f-l-desc {
-    margin-top: -20px;
-}
-.f-l-btn-wrap {
-    margin-top: 20px;
-}
-.f-r-block {
-    line-height: 2.62rem;
-
-}
-.f-r-block .h6 {
-    margin-top: 0;
-}
-.f-r-block .call-back {
-    background: #fff;
-    box-shadow: 0px 4px 10px rgba(135, 145, 159, 0.15);
-    border-radius: 21px;
+.f-top-line {
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E8EEF6;
+    border-bottom: 1px solid #E8EEF6;
     width: 100%;
-    margin: 1em 0;
+    padding: 15px 0 10px;
+    margin-bottom:45px;
+}
+
+.f-top-line .f-l-chats {
     display: flex;
-    justify-content: space-evenly;
-    font-weight: 400;
+    align-items: center;
+
+}
+
+.f-top-line .f-l-chats-el {
+    margin: 0 10px;
+}
+
+.f-top-line .f-l-chats-el:first-of-type {
+    margin-left: 0;
+}
+
+.f-top-line .f-l-chats:last-of-type {
+    color:#95A5B0;
+}
+
+.f-block .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.f-block .social .soc-network a {
+    margin-left: 35px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .f-support-phone {
-    text-decoration: underline;
-}
-.f-r-block .call-back:hover {
-    background-color:  #355FF1;
-    color: #fff;
-}
-.f-r-block .call-back:hover svg path {
-    fill: #fff;
+    font-weight: 600;
+    font-size: 1.25rem;
 }
 
-.f-r-block .call-back:active {
-    background-color: #1742D8;
-    color: #fff;
+.f-support-label {
+    color: #95A5B0;
 }
 
-.f-r-block .f-support {
-    height: 100%;
+.f-support-r .call-back {
+    border: 1px solid #87919F;
+    color:#95A5B0;
+    margin-left: 35px;
+    font-weight: 400;
+    border-radius: 10px;
 }
-.f-r-block .f-r-chats {
-    justify-content: space-between;
-    height: 45px;
-    margin-top: 25px;
+
+.f-support-r .call-back:hover {
+    border: 1px solid #355FF1;
+    color: #355FF1;
 }
+
+.f-support-r .call-back:active {
+    border: 1px solid #0731C1;
+    color: #0731C1;
+}
+
+.soc-reviews {
+    margin-top: 10px;
+}
+
+.soc-reviews .flamp {
+    margin-left: 35px;
+}
+
 .f-block ul.f-2-menu {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     font-weight: 600;
     padding: 0;
-    margin-top: 30px;
+    margin: 40px 0;
     width: 100%;
 }
+
 .f-2-menu li {
     list-style-type: none;
     font-family: 'Inter', sans-serif;
 }
+
 .container .f-block .f-2-menu a {
     color: #95A5B0;
 }
+
 .f-block .f-2-menu li a.active, .f-block .f-2-menu li a:hover {
     color: #355FF1;
 }
-.f-block-hr {
-    width: 100%;
-    margin-top: 1em;
-}
+
 .f-copyright {
     justify-content: space-between;
 }
@@ -115,33 +109,8 @@
 .f-copyright p {
     color: #ADBAC4;
     font-size: 0.65rem;
-    line-height: 1.5rem;
+    line-height: 1rem;
     width: 48%;
-}
-.f-block .social {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px 0;
-    width: 100%;
-}
-
-.f-block .social .soc-network a,
-.f-block .social .soc-reviews a {
-    margin-right: 35px;
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.f-block  .social .soc-reviews  {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.f-block .social .soc-reviews a:first-of-type  {
-    margin-top: -10px;
 }
 .f-block .f-3 {
     margin-top: 30px;

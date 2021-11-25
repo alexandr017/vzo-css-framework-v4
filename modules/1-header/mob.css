@@ -1,5 +1,5 @@
 header {
-
+padding: 15px 0;
 }
 
 .header-search-form-wrap {
@@ -20,15 +20,21 @@ header {
 
 .header-search-form-wrap form {
     background: #FFF;
-    height: 32px;
-    padding: 3px 0;
+    padding: 15px;
+    height: 55px;
+
 }
 
 .header-search-form-wrap form input[type="text"] {
     outline: none;
     border: none;
+    width: calc(100% - 50px);
+    margin-left: 10px;
 }
 
+.header-search-form {
+    align-items: center;
+}
 
 
 header .top-line {
