@@ -290,7 +290,9 @@ table.table-info .border-radius-3,
 .data-table-pagination:not(.disabledPage) {
     cursor: pointer;
 }
-
+.data-table-pagination.disabledPage {
+    pointer-events: none;
+}
 .data-table-pagination.currentPage {
     border: 1px solid #000;
     pointer-events: none;
@@ -336,6 +338,7 @@ table.table-info .border-radius-3,
 .searchBlock .searchReset {
     right: 2em;
     cursor: pointer;
+    display: none;
 }
 .dataTableHiddenTd, .jsTableBlock .sortingArrows .jsTableDisplayNone,.display_none {
     display: none;

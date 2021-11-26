@@ -169,6 +169,12 @@ var dataTable = (function () {
         }
         var searchFn = function (inpVal) {
             inpVal = inpVal.toLowerCase().replace(/\s/g, '');
+            var searchResetBtn = element.previousElementSibling.getElementsByClassName('searchReset')[0];
+            if(inpVal != '') {
+                searchResetBtn.style.display = 'block';
+            } else {
+                searchResetBtn.style.display = 'none';
+            }
             let tBody = element.getElementsByTagName('tbody')[0];
             trCollections = [].slice.call(tBody.getElementsByTagName('tr'));
 
@@ -288,10 +294,19 @@ var dataTable = (function () {
             const order = (target.dataset.order = -(target.dataset.order || -1));
             const index = [...target.parentNode.cells].indexOf(target);
             const collator = new Intl.Collator(['en', 'ru'], { numeric: true });
-            const comparator = (index, order) => (a, b) => order * collator.compare(
-                a.children[index].innerHTML.replace(/\s/g, ''),
-                b.children[index].innerHTML.replace(/\s/g, '')
-            );
+            const comparator = (index, order) => function(a, b) {
+                a = a.children[index].innerHTML;
+                b = b.children[index].innerHTML;
+                if(a == ' ' || a == '' || a == null) {
+                    a = '0';
+                }else if(b == ' ' || b == '' || b == null) {
+                    b = '0';
+                }
+                return order * collator.compare(
+                    parseFloat(a.replace(/\s/g, '')).toFixed(5),
+                    parseFloat(b.replace(/\s/g, '')).toFixed(5)
+                )
+            };
 
             let tBody = element.getElementsByTagName('tbody')[0];
 
@@ -301,6 +316,7 @@ var dataTable = (function () {
             } else {
                 var arrForSort = tBody.rows;
             }
+
             tBody.append(...[...arrForSort].sort(comparator(index, order)));
             createContent(0,itemsCountPerPage,afterSearch,true)
 
