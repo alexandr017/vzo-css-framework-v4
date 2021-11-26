@@ -1,0 +1,58 @@
+.nearest-webinar {
+    background: #fff;
+    padding: 1em;
+}
+
+.nearest-webinar-top-block {
+    justify-content: space-between;
+}
+
+.nearest-webinar-tag {
+    background: #F3F8FF;
+    border-radius: 5px;
+    color: #95A5B0;
+    padding: 5px 20px;
+}
+
+.nearest-webinar-date {
+    align-items: center;
+    color: #95A5B0;
+    font-size: .87rem;
+}
+
+.nearest-webinar .btn {
+    margin-top: 25px;
+}
+
+
+.webinar-block {
+    background: #fff;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.webinar-date {
+    align-items: center;
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+    padding: 3px 9px;
+    margin-top: 16px;
+    margin-left: 16px;
+    font-size: .75rem;
+}
+
+.webinar-date svg, .nearest-webinar-date svg {
+    margin-right: 10px;
+}
+
+.webinar-block img {
+    width: 100%;
+}
+
+.webinar-title {
+    padding: 17px;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
