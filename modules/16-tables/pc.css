@@ -5,8 +5,13 @@ table {
     max-width: 100%;
 }
 
+table tr td:last-of-type {
+    display:flex;
+    align-items:center;
+}
+
 table td, table th {
-    padding: 14px 0 14px 30px;
+    padding: 14px 0 14px 65px;
 }
 
 
@@ -14,9 +19,9 @@ table .main-td {
     background: #E1EDFF;
     font-weight: bold;
 }
-
 table.table-vertical {
     border-collapse: collapse;
+    cursor: pointer;
 
 }
 
@@ -242,6 +247,9 @@ table.table-info .border-radius-3,
 
 
 /*js dataTables*/
+.jsTableBlock .main-td:not(:first-of-type) {
+    width: 200px;
+}
 .jsTableBlock .js-table {
     table-layout: fixed;
     min-width: 760px;
@@ -250,81 +258,90 @@ table.table-info .border-radius-3,
     margin: 6em 0 2em 0;
     position: relative;
 }
+.jsTableBlock .total_cards_table_js {
+    margin: 0;
+}
 .jsTbScroll {
     overflow-x: auto;
 }
 .sortingArrowsBlock {
     display: inline-flex;
-    width: 100%;
     cursor: pointer;
-    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+.sortingArrows {
+    display: flex;
+    flex-wrap: wrap;
+    width: 12px;
+    height: 30px;
+    align-items: center;
+    margin-left: 10px;
 }
 .data-table-pagination {
+    width: 45px;
+    height: 45px;
     display: inline-block;
-    color: #333;
-    min-width: 1.5em;
-    padding: 0.5em 1em;
-    margin-left: 2px;
+    margin: 0 5px;
+    line-height: 45px;
     text-align: center;
-    text-decoration: none;
-    border-radius: 2px;
+    border-radius: 50%;
 }
 .data-table-pagination:not(.disabledPage) {
     cursor: pointer;
 }
-
+.data-table-pagination.disabledPage {
+    pointer-events: none;
+}
 .data-table-pagination.currentPage {
-    background-color: white;
-    background: linear-gradient(to bottom, #fff 0%, #dcdcdc 100%);
-    border: 1px solid #979797;
+    border: 1px solid #000;
+    pointer-events: none;
 }
 .data-table-pagination:not(.currentPage):not(.disabledPage):hover {
-    color: white;
-    /*border: 1px solid #111;*/
-    min-width: 1.5em;
-    padding: 0.5em 1em;
-    background-color: #585858;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111));
-    background: -webkit-linear-gradient(top, #585858 0%, #111 100%);
-    background: -moz-linear-gradient(top, #585858 0%, #111 100%);
-    background: -ms-linear-gradient(top, #585858 0%, #111 100%);
-    background: -o-linear-gradient(top, #585858 0%, #111 100%);
-    background: linear-gradient(to bottom, #585858 0%, #111 100%);
+    border:1px solid #000;
 }
 .jsTableBlock .dataTablesFooter .data-table-pages {
     text-align: center;
     background-color: white;
-    border-top: 1px solid;
+    padding-right: 4em;
 }
 .searchInp {
-    margin: 0 0 0.5em 0.5em;
-    height: 2.5em;
-    width: 50%;
+    margin: 0 0 0.5em 0;
+    height: 45px;
+    padding: 0 2em;
+    width: 100%;
+    background-color: #F3F8FF;
+    border: none;
+}
+.searchInp::placeholder {
+    color: #95A5B0;
+}
+.searchInp:focus {
+    outline: none;
 }
 .searchBlock {
     display: flex;
     float: right;
-    width: 50%;
+    width: 100%;
     justify-content: flex-end;
     position: absolute;
     right: 0;
     top: -4em;
 }
-.dataTableHiddenTd, .jsTableBlock .sortingArrows .jsTableDisplayNone,.display_none {
+.searchBlock svg {
+    position: absolute;
+    top: 1em;
+}
+.searchBlock .searchMagnifier {
+    right: 4em;
+}
+.searchBlock .searchReset {
+    right: 2em;
+    cursor: pointer;
     display: none;
 }
-.sortingArrows {
-    display: flex;
-    width: 0.7em;
-    flex-wrap: wrap;
-    float: right;
-    line-height: 0.7em;
-    cursor: pointer;
-    height: 1.5em;
-    margin-left: 5px;
-}
-.sortingArrows .sortUp, .sortingArrows .sortDown {
-    display: block;
+.dataTableHiddenTd, .jsTableBlock .sortingArrows .jsTableDisplayNone,.display_none {
+    display: none;
 }
 .activeSortItem {
     color: #007bff;

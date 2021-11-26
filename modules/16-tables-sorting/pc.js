@@ -19,6 +19,10 @@ var dataTable = (function () {
         var sort = false;
         var afterSearch = false;
         var afterSort = false;
+        var arrowUp = '<svg class="sortUp jsSortItem" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.65448 0.000332832C5.85717 0.000332832 6.05982 0.0750768 6.21435 0.224251L11.0771 4.9208C11.3864 5.21956 11.3864 5.70395 11.0771 6.00258C10.7679 6.30122 10.2664 6.30122 9.95709 6.00258L5.65448 1.84682L1.35185 6.00244C1.04252 6.30108 0.541137 6.30108 0.231955 6.00244C-0.0775286 5.7038 -0.0775286 5.21941 0.231955 4.92066L5.09461 0.224105C5.24921 0.0749072 5.45187 0.000332832 5.65448 0.000332832Z" fill="black"/></svg>';
+        var arrowDown = '<svg class="sortDown jsSortItem" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.6546 6.22623C5.45192 6.22623 5.24926 6.15149 5.09473 6.00231L0.232 1.30576C-0.0773333 1.007 -0.0773333 0.522617 0.232 0.223978C0.541208 -0.0746595 1.04264 -0.0746595 1.352 0.223978L5.6546 4.37975L9.95723 0.224124C10.2666 -0.0745143 10.7679 -0.0745143 11.0771 0.224124C11.3866 0.522762 11.3866 1.00715 11.0771 1.30591L6.21447 6.00246C6.05987 6.15166 5.85721 6.22623 5.6546 6.22623Z" fill="black"/></svg>';
+        // var searchMagnifier = '<svg class="searchMagnifier" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.4233 14.5735L12.479 10.6129C13.4932 9.44901 14.0488 7.98455 14.0488 6.45999C14.0488 2.89801 11.0471 0 7.35769 0C3.66826 0 0.666565 2.89801 0.666565 6.45999C0.666565 10.022 3.66826 12.92 7.35769 12.92C8.74275 12.92 10.0627 12.5167 11.1911 11.751L15.1654 15.7416C15.3315 15.9082 15.5549 16 15.7943 16C16.021 16 16.2359 15.9166 16.3991 15.7649C16.7459 15.4428 16.757 14.9085 16.4233 14.5735ZM7.35769 1.68522C10.0848 1.68522 12.3033 3.82713 12.3033 6.45999C12.3033 9.09286 10.0848 11.2348 7.35769 11.2348C4.63062 11.2348 2.41208 9.09286 2.41208 6.45999C2.41208 3.82713 4.63062 1.68522 7.35769 1.68522Z" fill="#95A5B0"/></svg>';
+        var searchReset = '<svg class="searchReset" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.245372 1.79726C-0.081359 1.46499 -0.0796109 0.928048 0.249275 0.597967C0.578161 0.267885 1.10964 0.269661 1.43637 0.601932L11.7233 11.0633C12.0501 11.3956 12.0483 11.9326 11.7194 12.2626C11.3906 12.5927 10.8591 12.5909 10.5323 12.2587L0.245372 1.79726Z" fill="#95A5B0"/><path d="M10.5679 0.601915C10.8957 0.270741 11.4272 0.270741 11.755 0.601915C12.0828 0.933089 12.0828 1.47003 11.755 1.8012L1.43382 12.2283C1.10601 12.5595 0.574522 12.5595 0.246712 12.2283C-0.0810978 11.8971 -0.0810983 11.3602 0.246712 11.029L10.5679 0.601915Z" fill="#95A5B0"/></svg>';
         var init = function (data) {
             if(data && data.itemsCountPerPage){
                 itemsCountPerPage = data.itemsCountPerPage;
@@ -134,7 +138,11 @@ var dataTable = (function () {
                     break;
                 }
             }
-            element.getElementsByClassName('dataTablesFooter')[0].innerHTML = '<tr><td colspan="'+tdCounts+'" class="data-table-pages">'+pages+'</td></tr>';
+            var footerTdCount =  '';
+            for(let i=1;i<tdCounts;i++) {
+                footerTdCount += '<td style="display: none;"></td>';
+            }
+            element.getElementsByClassName('dataTablesFooter')[0].innerHTML = '<tr><td colspan="'+tdCounts+'" class="data-table-pages">'+pages+'</td>'+footerTdCount+'</tr>';
             if(afterSearch == true) {
                 pageNum = 0;
             }
@@ -161,6 +169,12 @@ var dataTable = (function () {
         }
         var searchFn = function (inpVal) {
             inpVal = inpVal.toLowerCase().replace(/\s/g, '');
+            var searchResetBtn = element.previousElementSibling.getElementsByClassName('searchReset')[0];
+            if(inpVal != '') {
+                searchResetBtn.style.display = 'block';
+            } else {
+                searchResetBtn.style.display = 'none';
+            }
             let tBody = element.getElementsByTagName('tbody')[0];
             trCollections = [].slice.call(tBody.getElementsByTagName('tr'));
 
@@ -219,9 +233,13 @@ var dataTable = (function () {
         }
         var createSearchBlock = function(element) {
             var searchBlock = document.createElement('div');
-            searchBlock.innerHTML = 'Поиск : <input type="text" class="searchInp '+elementName+'-searchInp">';
+            searchBlock.innerHTML = '<input type="text" class="border-radius searchInp '+elementName+'-searchInp" placeholder="Поиск по условиям банка">'+searchReset;
             searchBlock.className = 'searchBlock';
             element.parentNode.insertBefore(searchBlock,element);
+            element.parentNode.getElementsByClassName('searchReset')[0].addEventListener('click',function (e) {
+                e.target.closest('svg').parentElement.getElementsByClassName('searchInp')[0].value = '';
+                searchFn('');
+            },false)
         }
         var addSortArrows = function () {
             var tHead = element.getElementsByTagName('thead')[0];
@@ -229,7 +247,7 @@ var dataTable = (function () {
             var thCollecion = theadTr.getElementsByTagName('th');
             for(let i=1; i<thCollecion.length;i++) {
                 if(!thCollecion[i].classList.contains('display_none')) {
-                    thCollecion[i].innerHTML = '<span class="sortingArrowsBlock">'+thCollecion[i].innerHTML+'<span class="sortingArrows"><span class="sortUp jsSortItem">&#9650;</span><span class="sortDown jsSortItem">&#9660;</span></span></span>'
+                    thCollecion[i].innerHTML = '<span class="sortingArrowsBlock">'+thCollecion[i].innerHTML+'<span class="sortingArrows">'+arrowUp+arrowDown+'</span></span>'
                 }
             }
         }
@@ -276,10 +294,19 @@ var dataTable = (function () {
             const order = (target.dataset.order = -(target.dataset.order || -1));
             const index = [...target.parentNode.cells].indexOf(target);
             const collator = new Intl.Collator(['en', 'ru'], { numeric: true });
-            const comparator = (index, order) => (a, b) => order * collator.compare(
-                a.children[index].innerHTML.replace(/\s/g, ''),
-                b.children[index].innerHTML.replace(/\s/g, '')
-            );
+            const comparator = (index, order) => function(a, b) {
+                a = a.children[index].innerHTML;
+                b = b.children[index].innerHTML;
+                if(a == ' ' || a == '' || a == null) {
+                    a = '0';
+                }else if(b == ' ' || b == '' || b == null) {
+                    b = '0';
+                }
+                return order * collator.compare(
+                    parseFloat(a.replace(/\s/g, '')).toFixed(5),
+                    parseFloat(b.replace(/\s/g, '')).toFixed(5)
+                )
+            };
 
             let tBody = element.getElementsByTagName('tbody')[0];
 
@@ -289,6 +316,7 @@ var dataTable = (function () {
             } else {
                 var arrForSort = tBody.rows;
             }
+
             tBody.append(...[...arrForSort].sort(comparator(index, order)));
             createContent(0,itemsCountPerPage,afterSearch,true)
 
