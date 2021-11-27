@@ -4,6 +4,12 @@
     position: relative;
     padding-bottom: 1em;
 }
+
+.timeline-item-title {
+    min-height: 15px;
+    display: inline-block;
+}
+
 .timeline-item-title:before {
     content: '';
     position: absolute;
