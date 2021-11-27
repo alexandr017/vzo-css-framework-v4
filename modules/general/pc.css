@@ -175,3 +175,7 @@ figure figcaption {
     margin-bottom: 15px;
     font-style: italic;
 }
+
+.text-bold {
+    font-weight: bold;
+}
