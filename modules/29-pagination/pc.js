@@ -63,3 +63,7 @@ function paintPages(pagesCount,pageNum) {
 document.addEventListener('DOMContentLoaded', function(){
     addPagesClick();
 });
+
+document.addEventListener('click', function(){
+    addPagesClick();
+});

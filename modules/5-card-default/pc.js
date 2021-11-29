@@ -62,7 +62,7 @@ function addCardsMoreBtnsClick(value) {
     });
 }
 
-function addToCompareBtnsClick (e){debugger
+function addToCompareBtnsClick (e){
     var elem = e.getElementsByClassName('addToCompare')[0];
     if($$('.compare-block').length != 0) {
         var catId = $$('.compare-block')[0].attributes['data-cat'].value;
@@ -195,3 +195,5 @@ document.addEventListener('DOMContentLoaded', function(){
         addCardsBtnsEvents();
     }
 });
+
+

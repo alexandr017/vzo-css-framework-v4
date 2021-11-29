@@ -23,13 +23,13 @@
 }
 
 .vertical-tab-container .tab .tab-links.on {
-    color: #355FF1;
+    color: #000;
     border-bottom: 2px solid  #355FF1;
 }
 
 .vertical-tab-container .tabs-items .tab-content.on {
     display:block;
-    padding: 10px 20px;
+    padding: 10px 0;
 }
 
 .vertical-tab-container .tabs-items .tab-content {

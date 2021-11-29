@@ -1,0 +1,29 @@
+.personal-data .h1 {
+    margin-bottom: 0;
+}
+.personal-data-email {
+    color: #95A5B0;
+}
+
+.personal-data-input {
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.personal-data .btn-wrap{
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.personal-data .btn-wrap .btn {
+    width: 100%;
+}
+.delete-personal-acc {
+    font-size: 0.87rem;
+    color: #FF4E59;
+}

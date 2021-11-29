@@ -1,0 +1,10 @@
+.block-with-back-link {
+    margin: 30px auto;
+    padding: 50px 25px;
+    text-align: center;
+    background: #fff;
+}
+
+.block-with-back-link p {
+    font-size: 1.1rem;
+}

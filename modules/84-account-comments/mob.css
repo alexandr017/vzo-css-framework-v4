@@ -1,0 +1,87 @@
+.account-comments {
+    margin: 30px 0;
+    padding: 25px 30px;
+    background: #fff;
+}
+
+.account-comment-status-tag {
+    background: #F3F8FF;
+    border-radius: 3px;
+    color: #95A5B0;
+    font-size: .87rem;
+    padding: 0 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-comment-status-tag svg{
+    margin-right: 10px;
+}
+
+.account-comment-top-block {
+    justify-content: space-between;
+}
+
+
+.account-comment-title {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.account-bottom-block .count-reviews {
+    color: #355FF1;
+    align-items: center;
+}
+.account-bottom-block .count-reviews svg {
+    margin-left: 5px;
+}
+
+.account-comments .replace {
+    padding: 30px 0;
+    border-top: 1px solid #E8EEF6;
+    width: 100%;
+}
+
+.account-comments .replace .replace-confirm {
+    margin-left: 20px;
+}
+
+.account-comments .replace .replace-confirm .replace-user-name {
+    font-weight: 600;
+}
+
+.account-comments .replace .replace-icon {
+    margin-left: -25px;
+    margin-top: -5px;
+}
+
+.account-comments .replace .replace-confirm .replace-el {
+    margin-top:  5px;
+}
+
+.account-comments .reply-bottom-info {
+    margin-top: 10px;
+}
+
+.account-comments .reply-bottom-info .reply-date {
+    font-size: .87rem;
+    color: #95A5B0;
+}
+
+.account-comments .reply-bottom-info .thread-answer-btn {
+    color: #355FF1;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.account-comments .review-count-comments { color: #355FF1;}
+
+.account-comments .replace-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.account-comments .form-1 {
+    width: 100%;
+}

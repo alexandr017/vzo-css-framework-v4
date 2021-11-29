@@ -1,0 +1,30 @@
+.user-account-dashboard-block {
+    margin-top: 26px;
+    padding: 16px;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.user-account-dashboard-block .h4 {
+    margin: 0;
+}
+
+.user-account-dashboard-block .user-account-dashboard-el {
+    color: #000;
+    font-size: .87rem;
+    flex-shrink: 0;
+}
+
+.user-account-dashboard-block .user-account-dashboard-el:first-of-type {
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #C4CFD8;
+    background: #F3F8FF;
+    flex-shrink: 0;
+
+}
