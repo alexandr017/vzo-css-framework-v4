@@ -1,0 +1,19 @@
+.settings-btn a{
+    background: #F3F8FF;
+    color: #ADBAC4;
+    width: 190px;
+    padding: 10px 0;
+}
+
+.settings-btn a.active {
+    background: #DCE4EC;
+    color: #000;
+}
+
+.settings-btn a:first-of-type {
+    border-radius: 15px 0 0 15px;
+}
+
+.settings-btn a:last-of-type {
+    border-radius: 0 15px 15px 0;
+}

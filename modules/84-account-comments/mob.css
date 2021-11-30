@@ -85,3 +85,11 @@
 .account-comments .form-1 {
     width: 100%;
 }
+
+.account-comment-settings-btn {
+    align-items: center;
+}
+
+.account-comment-edit-btn {
+    margin-right: 25px;
+}

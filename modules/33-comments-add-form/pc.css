@@ -1,8 +1,9 @@
 .form-1 {
-    width: 790px;
+    width: 100%;
     margin: 15px auto;
-    padding: 30px;
+    padding: 0 25px;
     background: #F6F8FB;
+    box-sizing: border-box;
 }
 
 .form-1-active {
@@ -13,7 +14,7 @@
 .form-1 input, .form-1 textarea {
     background: #F6F8FB;
     margin-top: 10px;
-    padding: 15px 0;
+    padding: 10px 0;
     outline: none;
     border: none;
     display: block;
@@ -42,7 +43,7 @@
 }
 
 .r-btn-wrap {
-    margin-top: 10px;
+    padding: 10px 0;
     justify-content: flex-end;
     align-items: center;
 }

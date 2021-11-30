@@ -1,0 +1,31 @@
+.nav-menu-center {
+    justify-content: center;
+    padding: 15px 60px 15px 60px;
+}
+
+.nav-menu {
+    margin-top: 20px;
+    overflow: auto;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.nav-menu::-webkit-scrollbar {
+    height: 0;
+}
+
+
+.nav-links {
+    cursor: pointer;
+    margin: 0 25px;
+    padding: 5px 10px;
+    transition: 0.3s;
+    font-weight: 600;
+    color: #000;
+}
+
+.nav-links.active,.nav-links:hover {
+    color: #000;
+    border-bottom: 2px solid  #355FF1;
+}
