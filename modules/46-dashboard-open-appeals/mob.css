@@ -1,0 +1,76 @@
+.appeals-index-block {
+    background: #fff;
+}
+
+.appeals-index-top-block {
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.appeals-index-top a {
+    align-items: center;
+}
+
+.appeals-index-top a svg {
+    margin-right: 10px;
+}
+
+.appeals-index-body {
+    padding: 30px;
+    border-bottom: 1px solid #E8EEF6;
+}
+
+.appeals-index-body .h4{
+    margin: 0;
+}
+
+.appeals-index-content {
+    margin-top: 15px;
+}
+
+.appeals-chat-block {
+    padding: 30px;
+    border-bottom:1px solid #E8EEF6;
+
+}
+
+.appeals-chat-el {
+    align-items: flex-end;
+    margin: 30px 0;
+}
+
+.appeals-logo-el {
+    width: 62px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    background: #F3F8FF;
+    border-radius: 50px;
+    margin: 0 25px;
+    font-weight: 600;
+    color: #95A5B0;
+    font-size: 1.75rem;
+    flex-shrink: 0;
+}
+
+.appeals-chat-body {
+    background: #F3F8FF;
+    padding: 15px 25px;
+}
+
+.appeals-chat-name {
+    font-weight: 600;
+}
+
+.appeals-chat-time {
+    color: #95A5B0;
+    font-size: .75rem;
+}
+
+.appeals-form {
+    padding: 30px;
+}
+
+.appeal-dashboard-top-line-el {
+    padding: 16px;
+}

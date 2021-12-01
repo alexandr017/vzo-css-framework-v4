@@ -1,0 +1,46 @@
+.dashboard-personal-data-form {
+    flex-wrap: wrap;
+    width: 850px;
+}
+
+.dashboard-personal-data-form .btn {
+    width: 505px;
+    margin-top: 60px;
+}
+
+.dashboard-personal-data-form .personal-data-form-part {
+    margin-top: 20px;
+}
+
+.dashboard-personal-data-form .personal-data-form-part label {
+    font-weight: 600;
+    display: block;
+}
+
+.dashboard-personal-data-form .personal-data-form-part input {
+    padding: 10px 20px;
+    height: 44px;
+    outline: none;
+    border: none;
+    background: #F3F8FF;
+}
+
+.personal-data-form-input {
+    width:240px;
+}
+
+.personal-data-form-email {
+    width: 505px;
+}
+
+.dashboard-personal-data-form .personal-data-form-part:not(:nth-child(3n)){
+    margin-right: 25px;
+}
+
+.delete-personal-acc button {
+    margin-top: 45px;
+    border: none;
+    outline-color: none;
+    background: #fff;
+    color:#FF4E59;
+}

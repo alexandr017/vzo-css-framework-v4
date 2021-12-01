@@ -1,0 +1,31 @@
+<div class="container">
+    <form action="" class="dashboard-personal-data-form flex">
+        <div class="personal-data-form-part">
+            <label for="name">Имя</label>
+            <input type="text" id="name" class="border-radius-2 personal-data-form-input" placeholder="Имя">
+        </div>
+        <div class="personal-data-form-part">
+            <label for="second-name">Фамилия</label>
+            <input type="text" id="second-name" class="border-radius-2 personal-data-form-input" placeholder="Фамилия">
+        </div>
+        <div class="personal-data-form-part">
+            <label for="last-name">Отчество</label>
+            <input type="text" id="last-name" class="border-radius-2 personal-data-form-input" placeholder="Отчество">
+        </div>
+        <div class="personal-data-form-part">
+            <label for="date-of-birth">Дата рождения</label>
+            <input type="date" id="date-of-birth" class="border-radius-2 personal-data-form-input">
+        </div>
+        <div class="personal-data-form-part">
+            <label for="email">Почта</label>
+            <input type="email" id="email" class="border-radius-2 personal-data-form-email" placeholder="Почта">
+        </div>
+
+        <button class="btn btn-light">Сохранить</button>
+    </form>
+
+    <form action="" class="delete-personal-acc" method="post">
+        <input type="hidden" name="_token" id="key" value="{{ csrf_token() }}">
+        <button onclick="return confirm('Вы действительно хотите удалить свой аккаунт?')">Удалить аккаунт</button>
+    </form>
+</div>

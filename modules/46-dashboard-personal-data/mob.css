@@ -23,7 +23,13 @@
 .personal-data .btn-wrap .btn {
     width: 100%;
 }
+
 .delete-personal-acc {
     font-size: 0.87rem;
     color: #FF4E59;
+}
+
+.personal-data-form-part label {
+    font-weight: 600;
+    display: block;
 }
