@@ -1,0 +1,84 @@
+.block-reviews {
+    margin: 16px 0;
+    font-size: .87rem;
+}
+
+.review-wrap {
+    background: #fff;
+    padding: 16px;
+}
+
+.review-inner-block .user-logo{
+    width: 10%;
+}
+
+.review-user-top-line {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-user-tag {
+    justify-content: center;
+    align-items: center;
+    padding: 3px 14px;
+    background: #F3F8FF;
+    color:#95A5B0;
+    font-size: .87rem;
+}
+
+.review-user-tag svg {
+    margin-right: 10px;
+}
+
+.review-status-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.block-reviews .review-wrap .review-part {
+    margin-top: 15px;
+}
+
+.block-reviews .review-wrap .review-title {
+    font-weight: 600;
+}
+
+.block-reviews .review-wrap .review-user-name {
+    font-weight: 600;
+}
+
+.block-reviews .review-wrap .plus .positive-part {
+    color: #2CDD88;
+}
+
+.block-reviews .review-wrap .minus .negative-part {
+    color: #FF4E59;
+}
+
+.block-reviews .review-wrap .review-part-body {
+    margin-top: 5px;
+}
+
+.block-reviews .review-wrap .review-btn-wrap {
+    align-items: center;
+
+}
+
+.review-count-comments {
+    font-weight: 600;
+    color: #95A5B0;
+    cursor:pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.review-count-comments svg {
+    margin-right: 5px;
+}
+
