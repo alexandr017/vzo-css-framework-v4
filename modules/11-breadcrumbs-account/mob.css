@@ -1,0 +1,9 @@
+.breadcrumb-account {
+    padding: 15px;
+    display: inline-block;
+}
+
+.breadcrumb-account .breadcrumb-label {
+    vertical-align: 1px;
+    margin-left: 10px;
+}
