@@ -24,9 +24,16 @@
     width: 100%;
 }
 
-.delete-personal-acc {
-    font-size: 0.87rem;
-    color: #FF4E59;
+.delete-personal-acc{
+    justify-content: center;
+}
+
+.delete-personal-acc button {
+    margin: 15px 0 30px;
+    border: none;
+    outline: none;
+    background: inherit;
+    color:#FF4E59;
 }
 
 .personal-data-form-part label {

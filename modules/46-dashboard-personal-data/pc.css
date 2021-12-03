@@ -37,10 +37,15 @@
     margin-right: 25px;
 }
 
+.delete-personal-acc{
+    justify-content: center;
+
+}
+
 .delete-personal-acc button {
-    margin-top: 45px;
+    margin: 45px 0;
     border: none;
-    outline-color: none;
-    background: #fff;
+    outline: none;
+    background: inherit;
     color:#FF4E59;
 }

@@ -8,38 +8,26 @@
 }
 
 .offer-filters-item {
-    border-radius: 15px;
-    padding: 30px 15px 30px 25px;
     position: relative;
     background: #fff;
+    border: 1px solid #E8EEF6;
 }
 
-.offer-filters-icon {
-    display: block;
-    margin: 0 auto;
-}
 
-.offer-filters-img {
-    display: block;
-    margin: 0 auto;
-    width: 30px;
-    height: 30px;
-}
 
 .offer-filters-title {
-    font-weight: 600;
+   justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
 }
 
-.offer-filters-title{
-    text-align: center;
-    margin: 10px 0;
-}
 
 .offer-filters-hidden-block {
     display: none;
     overflow-y: auto;
     height: 150px;
     white-space: nowrap;
+    padding: 10px 15px;
 }
 
 .offer-filters-hidden-block ul {
@@ -54,7 +42,6 @@
 
 .filters-arrow-down,
 .filters-arrow-up {
-    margin: 15px auto;
     cursor: pointer;
 }
 
@@ -72,3 +59,19 @@
     border-radius: 3px;
 }
 
+
+.offer-filters-hidden-block.active {
+    display: block;
+    border-top: 1px solid #95A5B0;
+}
+
+.offer-filters-item.active{
+    width: 255px;
+    z-index: 1;
+    position: absolute;
+    border: 1px solid #95A5B0;
+}
+
+.filters-arrow-down.active {
+    transform: rotate(180deg);
+}
