@@ -9,3 +9,15 @@
 .error-block-footer span {
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .error-block-footer {
+        display: block;
+        text-align: center;
+    }
+
+    .error-block-footer span {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
