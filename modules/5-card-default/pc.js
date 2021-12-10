@@ -111,50 +111,51 @@ function addPrintBtnsClick(card) {
 }
 
 function addOrRemoveFromFavorites(card) {
-    card.getElementsByClassName('addToFavorites')[0].addEventListener('click', function (e) {
-        e.preventDefault();
-        var elem = e.target.closest('svg');
-        var favorites = localStorage.getItem('vzo');
-        if (favorites == null) {
-            favoritesArr = Array();
-        } else {
-            favoritesArr = favorites.split(',');
-        }
-        var id = elem.closest('.card').id.substr(5);
-        if(elem.parentElement.classList.contains('addedToFavorites')){
-            for (i = 0; i < favoritesArr.length; i++) {
-                if (parseInt(favoritesArr[i]) == parseInt(id)) {
-                    favoritesArr.splice(i, 1);
+    if(card.getElementsByClassName('addToFavorites').length != 0) {
+        card.getElementsByClassName('addToFavorites')[0].addEventListener('click', function (e) {
+            e.preventDefault();
+            var elem = e.target.closest('svg');
+            var favorites = localStorage.getItem('vzo');
+            if (favorites == null) {
+                favoritesArr = Array();
+            } else {
+                favoritesArr = favorites.split(',');
+            }
+            var id = elem.closest('.card').id.substr(5);
+            if(elem.parentElement.classList.contains('addedToFavorites')){
+                for (i = 0; i < favoritesArr.length; i++) {
+                    if (parseInt(favoritesArr[i]) == parseInt(id)) {
+                        favoritesArr.splice(i, 1);
+                    }
+                }
+            } else {
+                favoritesArr.push(id);
+            }
+
+            if(favoritesArr && favoritesArr == '') {
+                favorites = localStorage.removeItem('vzo');
+                if($$('.block-with-back-link').length != 0){
+                    $$('.block-with-back-link')[0].style.display = 'block';
+                }
+            } else {
+                favorites = localStorage.setItem('vzo',favoritesArr);
+            }
+
+            if($$('.fav-items-count').length != 0) {
+                if(favoritesArr != null && favoritesArr.length != 0) {
+                    $$('.fav-items-count')[0].innerText = favoritesArr.length;
+                    $$('.fav-items-count')[0].style.display = 'flex';
+                } else {
+                    $$('.fav-items-count')[0].style.display = 'none';
                 }
             }
-        } else {
-            favoritesArr.push(id);
-        }
-
-        if(favoritesArr && favoritesArr == '') {
-            favorites = localStorage.removeItem('vzo');
-            if($$('.block-with-back-link').length != 0){
-                $$('.block-with-back-link')[0].style.display = 'block';
+            if(window.location.href.indexOf('favorites') != -1) {
+                $$('#'+card.id)[0].remove();
             }
-        } else {
-            favorites = localStorage.setItem('vzo',favoritesArr);
-        }
-
-        if($$('.fav-items-count').length != 0) {
-            if(favoritesArr != null && favoritesArr.length != 0) {
-                $$('.fav-items-count')[0].innerText = favoritesArr.length;
-                $$('.fav-items-count')[0].style.display = 'flex';
-            } else {
-                $$('.fav-items-count')[0].style.display = 'none';
-            }
-        }
-        if(window.location.href.indexOf('favorites') != -1) {
-            $$('#'+card.id)[0].remove();
-        }
-        elem.parentElement.classList.toggle('addedToFavorites')
-    })
+            elem.parentElement.classList.toggle('addedToFavorites')
+        })
+    }
 }
-
 function addCardsBtnsEvents() {
     $$('.card').forEach((card) => {
         addTabsClick(card);

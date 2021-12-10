@@ -24,11 +24,18 @@
 .accordion-line {
     line-height: 2rem;
 }
-
+.col-4-accordion-line{
+    width: 25%;
+    float: right;
+}
 .panel .accordion-list .accordion-col:not(:first-of-type) {
     margin-left: 60px;
 }
 
 .panel .accordion-list .accordion-col .accordion-row {
     margin-top: 10px;
+}
+.accordion-title-for-insurance {
+    margin: 10px 0;
+    display: inherit;
 }

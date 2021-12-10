@@ -10,12 +10,12 @@
 
 .paperwork-el {
     width: 50%;
-    padding: 30px 150px 60px;
+    padding: 60px 150px;
 }
 
 .paperwork-el:last-of-type{
-    background: #F6F8FB;
     border-radius: 0 25px 25px 0;
+    border-left: 1px solid #E8EEF6;
 }
 
 .paperwork-title {
@@ -58,4 +58,7 @@
     content: counter(mycounter) "";
     vertical-align: 2px;
     left: 0;
+}
+.background-2 .paperwork-wrap {
+    background-color: #ffffff;
 }
