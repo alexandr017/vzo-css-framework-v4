@@ -1,0 +1,16 @@
+.tags-block-cat {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tags-block-cat .tag-cat-el {
+    background: #F3F8FF;
+    border-radius: 15px;
+    padding: 6px 25px;
+    font-size: .87rem;
+    margin: 20px 25px 0 0;
+}
+
+.tags-block-cat .tag-cat-el a {
+    color: #000;
+}

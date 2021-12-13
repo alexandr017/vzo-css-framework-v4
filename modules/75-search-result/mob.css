@@ -1,0 +1,36 @@
+.search-result {
+    margin: 30px;
+}
+
+.search-result-item {
+    padding: 15px 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #BDBDBD;
+    /*display:none;*/
+}
+
+.search-result-item a {
+    color: #000;
+}
+
+.search-result-item p {
+    margin: 15px 0;
+}
+
+.search-result-section {
+    color: #BDBDBD;
+}
+
+.count-search-result {
+    font-size: 1.1rem;
+    color: #95A5B0;
+}
+
+.search-empty-result-text {
+    margin-top: 25px;
+    align-items: center;
+}
+
+.search-empty-result-text svg {
+    margin-right: 15px;
+}
