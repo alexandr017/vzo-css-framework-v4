@@ -1,0 +1,138 @@
+<div class="container">
+
+    <header>
+        <div class="header-search-form-wrap background-2">
+            <form action="/search" method="POST" class="header-search-form flex">
+                <svg id="searchButtonHideForm" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 14L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 1L1 14" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="hidden" name="_token" id="key" value="{{ csrf_token() }}">
+                <input id="searchInputBySiteJs" type="text" name="s" placeholder="Что хотите найти?" autocomplete="off">
+                <div>
+                    <button class="search-block__button" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                            <path d="M6.77773 12.5555C9.96868 12.5555 12.5555 9.96868 12.5555 6.77773C12.5555 3.58678 9.96868 1 6.77773 1C3.58678 1 1 3.58678 1 6.77773C1 9.96868 3.58678 12.5555 6.77773 12.5555Z" stroke="#95A5B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 14.4549L10.8584 11.3132" stroke="#95A5B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            <ul id="search-hint"></ul>
+        </div>
+        <div class="top-line flex">
+            <svg id="searchButtonShowForm" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.1978 16.1324C14.5229 16.0835 17.1788 13.3483 17.1299 10.0232C17.081 6.69805 14.3458 4.04217 11.0207 4.0911C7.69554 4.14002 5.03966 6.87523 5.08859 10.2003C5.13752 13.5255 7.87272 16.1813 11.1978 16.1324Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.9997 19.0075L15.3359 14.3438" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="site-name">ВЗО</div>
+            <label id="menuButton" class="menu-button" for="headerMenuCheckbox">
+            <span class="menu-button-inner">
+                <span class="menu-button-line-1"></span>
+                <span class="menu-button-line-2"></span>
+            </span>
+            </label>
+        </div>
+        <input type="checkbox" name="headerMenuCheckbox" id="headerMenuCheckbox">
+        <div class="header-menu-inner">
+            <input type="checkbox" name="subMenuCheckbox1" id="subMenuCheckbox1" class="subMenuCheckbox">
+            <div class="header-item-menu background-2 border-radius-3">
+                <label for="subMenuCheckbox1" class="header-item-menu-title">Займы</label>
+                <div class="header-sub-menu">
+                    <a href="/mfo">Все МФО</a>
+                    <a href="/bez-otkaza">Без отказа</a>
+                    <a href="/card">Займ на карту</a>
+                    <a href="/dolgosrochnye">Долгосрочные</a>
+                    <a href="/bez-zvonkov">Без звонков</a>
+                    <a href="/bez-karty">Без карты</a>
+                    <a href="/zajm-18">С 18 лет</a>
+                    <a href="/novye-zajmy">Новые</a>
+                    <a href="/besplatnyj-zajm">Без процентов</a>
+                    <a href="/qiwi">На Киви-кошелек</a>
+                    <a href="/100-procentov">Со 100% одобрением</a>
+                    <a href="/history">С плохой кредитной историей</a>
+                </div>
+            </div>
+            <input type="checkbox" name="subMenuCheckbox2" id="subMenuCheckbox2" class="subMenuCheckbox">
+            <div class="header-item-menu background-2 border-radius-3">
+                <label for="subMenuCheckbox2" class="header-item-menu-title">Кредиты</label>
+                <div class="header-sub-menu">
+                    <a href="/online-credit/100-procentnoe-odobrenie">Со 100% одобрением</a>
+                    <a href="/online-credit/3-goda">Сроком от 3 лет</a>
+                    <a href="/credit-cards/18-let">С 18 лет</a>
+                    <a href="/online-credit/bez-posesheniya-banka">Без посещения банка</a>
+                    <a href="/online-credit/differencirovannye-platezhi">С диф. платежами</a>
+                    <a href="/online-credit/bez-otkaza">Без отказа</a>
+                    <a href="/online-credit/momentalnoe-reshenie">С моментальным решением</a>
+                    <a href="/online-credit/bez-podtverzhdeniya-dohoda">Без подтверждения дохода</a>
+                </div>
+            </div>
+            <input type="checkbox" name="subMenuCheckbox3" id="subMenuCheckbox3" class="subMenuCheckbox">
+            <div class="header-item-menu background-2 border-radius-3">
+                <label for="subMenuCheckbox3" class="header-item-menu-title">Кредитные карты</label>
+                <div class="header-sub-menu">
+                    <a href="/credit-cards/dlya-bezrabotnyh">Безработным</a>
+                    <a href="/credit-cards/pasport">По паспорту</a>
+                    <a href="/credit-cards/bez-otkaza">Без отказа</a>
+                    <a href="/credit-cards/bez-proverok">Без проверок</a>
+                    <a href="/credit-cards/18-let">С 18 лет</a>
+                    <a href="/credit-cards/kuryerom">С доставкой курьером</a>
+                </div>
+            </div>
+            <input type="checkbox" name="subMenuCheckbox4" id="subMenuCheckbox4" class="subMenuCheckbox">
+            <div class="header-item-menu background-2 border-radius-3">
+                <label for="subMenuCheckbox4" class="header-item-menu-title">Прочее</label>
+                <div class="header-sub-menu">
+                    <a href="/autocredit">Автокредиты</a>
+                    <a href="/insurance">Страхование</a>
+                    <a href="/rko">Расчетные счета</a>
+                    <a href="/zalogi">Займы под залог</a>
+                    <a href="/mortgage">Ипотеки</a>
+                    <a href="/deposits">Вклады</a>
+                </div>
+            </div>
+            <input type="checkbox" name="subMenuCheckbox5" id="subMenuCheckbox5" class="subMenuCheckbox">
+            <div class="header-item-menu background-2 border-radius-3">
+                <label for="subMenuCheckbox5" class="header-item-menu-title">Журнал</label>
+                <div class="header-sub-menu">
+                    <a href="/news">Новости</a>
+                    <a href="/articles">Статьи</a>
+                    <a href="/terms">Кредитный словарь</a>
+                    <a href="/ratings">Рейтинги</a>
+                    <a href="/reviews">Обзоры</a>
+                    <a href="/news/webinars">Вебинары</a>
+                    <a href="/news/actions">Акции и промокоды</a>
+                    <a href="/qa">Вопросы и ответы</a>
+                </div>
+            </div>
+            <div class="flex menu-three-line">
+                <a href="/mfo" class="header-item-menu background-2 border-radius-3">МФО</a>
+                <a href="/banks" class="header-item-menu background-2 border-radius-3">Банки</a>
+                <a href="/about" class="header-item-menu background-2 border-radius-3">О нас</a>
+            </div>
+            <div class="flex menu-two-line">
+                <a href="/compare" class="header-item-menu background-2 border-radius-3">
+                    <svg width="36" height="34" viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.9559 13.1599L34.9563 13.161C35.0656 13.493 34.9665 13.8585 34.6919 14.0953L34.6911 14.096L26.8371 20.883L26.3812 21.2769L26.5164 21.8641L28.8323 31.9177C28.8323 31.9178 28.8324 31.918 28.8324 31.9182C28.9104 32.2585 28.7785 32.6147 28.4816 32.8268L28.4815 32.8268C28.1825 33.0405 27.784 33.0571 27.4697 32.8707L27.4674 32.8694L18.5078 27.5902L18.0002 27.2911L17.4926 27.5901L8.52977 32.8693L8.52933 32.8696C8.38052 32.9573 8.2184 33 8.05646 33C7.86752 33 7.67927 32.9423 7.51585 32.8259C7.22088 32.6157 7.08803 32.2604 7.16634 31.9178C7.16639 31.9176 7.16643 31.9174 7.16648 31.9172L9.48221 21.8641L9.61745 21.277L9.16164 20.883L1.30761 14.0947L1.30571 14.0931C1.0338 13.8593 0.934203 13.4938 1.04385 13.1615C1.15401 12.8276 1.45684 12.5818 1.82977 12.5475C1.83 12.5475 1.83023 12.5475 1.83045 12.5475L12.2211 11.6178L12.813 11.5648L13.0494 11.0196L17.1576 1.54483C17.1577 1.5446 17.1578 1.54438 17.1579 1.54415C17.3004 1.21745 17.6273 1 18.0001 1C18.3733 1 18.7003 1.21777 18.8427 1.5431C18.8428 1.5434 18.8429 1.54369 18.843 1.54399L22.9509 11.0195L23.1873 11.5648L23.7792 11.6178L34.1698 12.5476L34.1704 12.5477C34.5435 12.5808 34.8468 12.8274 34.9559 13.1599Z" stroke="#C4CFD8" stroke-width="2"/>
+                    </svg>
+                    <span class="two-menu-title">Сравнение</span>
+                </a>
+                <a href="#" class="header-item-menu background-2 border-radius-3">
+                    <svg width="29" height="33" viewBox="0 0 29 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.3287 31.064V12.8987" stroke="#C4CFD8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.6661 31.0646V2" stroke="#C4CFD8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 31.0652V20.166" stroke="#C4CFD8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="two-menu-title">Избранное</span>
+                </a>
+            </div>
+            <a href="/account" class="header-item-menu background-2 border-radius-3">Личный кабинет</a>
+            <a href="/logout" class="header-item-menu background-2 border-radius-3">Выход</a>
+
+        </div>
+    </header>
+
+
+
+
+</div>
