@@ -31,17 +31,17 @@
 }
 
 .btn-light-3 {
-    color: #000 !important;
+    color: #000;
     background: #fff;
 }
 
 .btn-light-3:hover {
-    color:#fff !important;
+    color:#fff;
     background: #355FF1;
 }
 
 .btn-light-3:active {
-    color:#fff !important;
+    color:#fff;
     background: #1742D8;
 }
 

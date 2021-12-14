@@ -1,3 +1,37 @@
+// document.addEventListener('DOMContentLoaded', function(){
+//     $$('.search-block-1')[0].getElementsByClassName('input-text')[0].addEventListener('keyup',function (e) {
+//         searchItems(e.target.value);
+//     })
+// });
+// function searchItems(searchHint){
+//     var search_hint = searchHint;
+//     if(search_hint.length >= 3 && search_hint.indexOf('банк') == -1){
+//         document.querySelectorAll('.search-item .search-title').forEach(function (item) {
+//             if(item.innerText.toLowerCase().indexOf(searchHint.toLowerCase()) == -1) {
+//                 item.closest('.search-item').classList.add('hide_by_search_hint');
+//                 $$('.pagination')[0].style.display = 'none';
+//             }else{
+//                 item.closest('.search-item').classList.remove('hide_by_search_hint');
+//                 $$('.pagination')[0].style.display = 'none';
+//                 $$('.page-block').forEach(function (hideItem) {
+//                     hideItem.style.display = 'block';
+//                 });
+//             }
+//         })
+//     } else {
+//         document.querySelectorAll('.page-block:not(.active_page)').forEach(function (item) {
+//             item.style.display = 'none'
+//         });
+//         $$('.hide_by_search_hint').forEach(function (hideItem) {
+//             hideItem.classList.remove('hide_by_search_hint');
+//         });
+//         if($$('.pagination').length != 0){
+//             $$('.pagination')[0].style.display = 'flex';
+//         }
+//     }
+// }
+
+
 let offerListBody = document.querySelector(".offers-list");
 let paginationBlock = document.querySelector(".pagination");
 let searchItemEl = Array.from(document.querySelectorAll(".search-item"));
@@ -66,10 +100,10 @@ function paginateBlock(totalItems, currentPage = 1, pageSize = 10, maxPages = 6)
 function createPaginationBlock(searchItemEl) {
     offerListBody.innerHTML = "";
     paginationBlock.innerHTML = "";
-   let { totalItems, currentPage, pageSize, totalPages, startPage, endPage, startIndex, endIndex, pagesEl } = paginateBlock(searchItemEl.length, currPage, 10, 6);
+    let { totalItems, currentPage, pageSize, totalPages, startPage, endPage, startIndex, endIndex, pagesEl } = paginateBlock(searchItemEl.length, currPage, 10, 6);
 
     let paginateEl = pagesEl.map(el => {
-        return `<a href="#" class="pagination-inner-link page ${currentPage === el && 'pagination-current-page'}" page="${el}">${el}</a>`
+        return `<a class="pagination-inner-link page ${currentPage === el && 'pagination-current-page'}" page="${el}">${el}</a>`
     }).join("");
     paginationBlock.innerHTML = paginateEl;
     let start = (currentPage - 1) * pageSize, end = currentPage * pageSize;
@@ -82,14 +116,6 @@ document.addEventListener('click', function (e) {
     let pagEl = e.target;
     if (pagEl.classList.contains("page")) {
         currPage = parseInt(pagEl.getAttribute("page"));
-        createPaginationBlock(sortedItems)
-    }
-    if (pagEl.classList.contains("next")) {
-        currPage += 1;
-        createPaginationBlock(sortedItems)
-    }
-    if (pagEl.classList.contains("prev")) {
-        currPage -= 1;
         createPaginationBlock(sortedItems)
     }
 });

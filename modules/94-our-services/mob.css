@@ -1,0 +1,38 @@
+.services-block {
+    justify-content: space-between;
+}
+
+.services-block img{
+    border-radius: 10px 10px 0 0;
+}
+
+.services-item {
+    width: 350px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.services-info-block {
+    padding: 20px 16px;
+}
+
+.services-title {
+    display: flex;
+    align-items: center;
+    margin: 0px auto 0;
+}
+
+.services-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0;
+}
+
+.services-btn .btn {
+    width: 100%;
+    font-weight: 400;
+}

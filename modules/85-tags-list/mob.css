@@ -1,0 +1,23 @@
+.more-tags-btn {
+    margin-top: 10px;
+    min-width: 85px;
+}
+
+.tags-list {
+    max-height: 40px;
+    overflow: auto;
+}
+
+.tags-list::-webkit-scrollbar {
+    height: 0;
+}
+
+.tags-list a {
+    color: #000;
+    padding: 5px 13px;
+    background-color: #FFF;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 7px;
+    white-space: nowrap;
+}
