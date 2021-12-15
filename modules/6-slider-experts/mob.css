@@ -1,43 +1,94 @@
-.our_expert_slider {
-    margin: 30px 0;
+.our-expert-slider {
+    overflow: auto;
 }
 
-.expert-img-bg-bl {
-    margin: 0 auto;
-    position: relative;
-    height: 289px;
-    width: 251px;
+.our-expert-slider::-webkit-scrollbar{
+    height: 0;
 }
 
-.expert-img-bg-bl:after {
-    content: '';
+.expert-check-icon {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    border-radius: 25px;
+    margin-left: 50px;
+    margin-top: -140px;
 }
 
-.expert-info {
+.expert-inner-block {
     position: relative;
-    display: flex;
-    border-radius: 0 0 25px 25px;
-    margin-top: -70px;
-    z-index: 3;
+    padding: 16px;
+    background: #fff;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 252px;
+    flex-shrink: 0;
+    margin-right: 16px;
+    font-size: .87rem;
+    min-height: 260px;
 }
 
-.info-name {
-    margin: 0 auto;
-    font-weight: 600;
-    color: #fff;
+.expert-inner-block img{
+    width: 88px;
+    height: 88px;
+    border-radius: 50px;
 }
 
-.expert-img-bg-bl img {
-    border-radius: 25px;
-    max-width: 251px;
-    width: 100%;
+.expert-name {
+    font-weight: bold;
+    margin:10px 0;
+    white-space: nowrap;
 }
+
+.expert-position {
+    text-align: center;
+    display: -webkit-box;
+    max-width: 240px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+/*.our_expert_slider {*/
+/*margin: 30px 0;*/
+/*}*/
+
+/*.expert-img-bg-bl {*/
+/*margin: 0 auto;*/
+/*position: relative;*/
+/*height: 289px;*/
+/*width: 251px;*/
+/*}*/
+
+/*.expert-img-bg-bl:after {*/
+/*content: '';*/
+/*position: absolute;*/
+/*top: 0;*/
+/*left: 0;*/
+/*bottom: 0;*/
+/*right: 0;*/
+/*z-index: 2;*/
+/*background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);*/
+/*border-radius: 25px;*/
+/*}*/
+
+/*.expert-info {*/
+/*position: relative;*/
+/*display: flex;*/
+/*border-radius: 0 0 25px 25px;*/
+/*margin-top: -70px;*/
+/*z-index: 3;*/
+/*}*/
+
+/*.info-name {*/
+/*margin: 0 auto;*/
+/*font-weight: 600;*/
+/*color: #fff;*/
+/*}*/
+
+/*.expert-img-bg-bl img {*/
+/*border-radius: 25px;*/
+/*max-width: 251px;*/
+/*width: 100%;*/
+/*}*/
 

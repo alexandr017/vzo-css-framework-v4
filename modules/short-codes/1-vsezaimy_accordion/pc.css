@@ -1,14 +1,21 @@
+.accordion-item {
+    border: 1px solid #E8EEF6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 32px 0 22px;
+    margin-bottom: 16px;
+}
+
 .accordion {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     cursor: pointer;
     padding: 15px 15px 15px 0;
     transition: 0.5s;
     font-weight: 600;
 }
 
-.accordion .accordion-title {
-    margin-left: 20px;
-}
 
 .accordion.active .arrow {
     transform: rotate(90deg);

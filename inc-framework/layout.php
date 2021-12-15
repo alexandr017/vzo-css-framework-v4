@@ -12,7 +12,7 @@
     <script>const $$ = (s) => document.querySelectorAll(s);</script>
 </head>
 <body>
-<?php import('_framework/sidebar'); ?>
+<?php //import('_framework/sidebar'); ?>
 <div class="container">
     <p><?php if(isset($mode)) echo 'mode = ' ?>
     <select name="modeSelect" id="modeSelect">

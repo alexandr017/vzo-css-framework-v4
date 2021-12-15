@@ -1,0 +1,73 @@
+.we-compare {
+    padding: 30px 0;
+}
+
+.we-compare-item {
+    background: #F3F8FF;
+    margin-top: 16px;
+    padding: 16px;
+    width: 100%;
+    border: 1px solid #E8EEF6;
+}
+
+.we-compare-item-top-el {
+    align-items: center;
+}
+
+.we-compare-item-title{
+    font-weight: 600;
+    font-size: .87rem;
+    margin-left: 20px;
+
+}
+
+.we-compare-item-text {
+    margin-top: 10px;
+    color:#7B878E;
+    font-size: .87rem;
+}
+
+
+.we-compare-insert-video-block {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.video-img {
+    width: 100%;
+    height: 184px;
+    opacity: 0.9;
+}
+
+.play-video-el {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-video-el img {
+    border-radius: 15px;
+}
+
+.play-video-el .play-icon {
+    position: absolute;
+    margin: auto;
+    cursor: pointer;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+}
+
+.play-video-el {
+    background: #000;
+    border-radius: 17px;
+}
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+.review-block .h2 {
+    margin-bottom: 30px;
+}
+
+.review-slider{
+    overflow: auto;
+}
+
+.review-slider::-webkit-scrollbar {
+    height: 0;
+}
+
+.review-inner-block {
+    padding: 30px;
+    flex-shrink: 0;
+    width:252px;
+    margin-right: 16px;
+    background: #fff;
+}
+
+.rating-company-name {
+    margin-bottom: 17px;
+    font-weight: 600;
+}
+
+.review-info .review-name {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.review-content {
+    margin-top: 13px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+.review-content::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+    height: 21px;
+}
+.background-2 .review-content::-webkit-scrollbar {
+    background-color: #fff;
+}
+.review-content:hover::-webkit-scrollbar-thumb {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
+}
+
+.review__button_show {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+}
