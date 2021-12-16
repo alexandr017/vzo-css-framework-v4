@@ -8,25 +8,6 @@
     margin-bottom: 1em;
     padding-top: 0.3em;
 }
-.bank-face-logo {
-    width: 54px;
-    float: left;
-    margin-right: 1em;
-}
-.bank-face-content {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    background-color: #ffffff;
-    padding: 15px;
-}
-.bank-face-content .face-block-val {
-    margin-bottom: 0;
-}
-.bank-face-text {
-    color: #95A5B0;
-    font-size: 0.8rem;
-    margin-top: 1em;
-}
 .bank-face-body {
     box-shadow: 0px 4px 10px rgba(135, 145, 159, 0.15);
     border-radius: 5px;
