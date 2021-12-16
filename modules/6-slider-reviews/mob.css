@@ -1,13 +1,9 @@
-.review-block .h2 {
-    margin-bottom: 30px;
-}
-
 .review-slider{
-    overflow: auto;
+    display: flex;
+    overflow: hidden;
 }
-
-.review-slider::-webkit-scrollbar {
-    height: 0;
+.review-slider:hover{
+    overflow-x: scroll;
 }
 
 .review-inner-block {

@@ -1,0 +1,30 @@
+.lead-with-img-content {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 15px;
+}
+.lead-with-img-content .face-block-val {
+    margin-bottom: 0;
+}
+.lead-block-user {
+    color: #95A5B0;
+    font-size: 0.8rem;
+}
+.lead-block-username {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+    padding-top: 0.3em;
+}
+.lead-with-img-logo {
+    border-radius: 50%;
+    width: 36px;
+    float: left;
+    margin-right: 1em;
+}
+.lead-with-img-text {
+    color: #95A5B0;
+    font-size: 0.8rem;
+    margin-top: 1em;
+}
