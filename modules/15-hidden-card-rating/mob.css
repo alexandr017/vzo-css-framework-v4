@@ -1,13 +1,16 @@
-.sort {
-    margin: 20px 0;
+.hidden-card-rating-list .special-list{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
-.select {
+.hidden-card-rating {
+    margin: 20px 0;
     position: relative;
     font-size: .87rem;
 }
 
-.select .selected-item {
+.hidden-card-rating  .rating-more {
     border-radius: 5px;
     width: 100%;
     margin: 0 0 10px;
@@ -17,13 +20,8 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 
 }
-.select .selected-item[data-type=up]:after{
-    content: url(/v4/images/sort-icon.svg);
-}
-.select .selected-item[data-type=down]:after {
-    content: url(/v4/images/sort-close-icon.svg);
-}
-.select .selected-item:after {
+
+.hidden-card-rating  .rating-more:after {
     height: 100%;
     position: absolute;
     top: 0;
@@ -31,17 +29,28 @@
     padding: 15px;
     border-left: 1px solid #E8EEF6;
 }
-.select .selected-item.openSelect {
+.hidden-card-rating .rating-more.openHiddenRating {
     border-bottom: none;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
     border-radius: 5px 5px 0 0;
 }
 
-.select .selected-item.toggleSelect:after {
+.hidden-card-rating .rating-more[data-arrow=down]:after{
+    content: url(/v4/images/hidden-rating-arrow-down.svg);
+}
+
+.hidden-card-rating .rating-more.openHiddenRating[data-arrow=down]:after {
+    transform: rotate(180deg);
+    border-right: 1px solid #E8EEF6;
+    border-left: none;
+
+}
+
+.hidden-card-rating .rating-more.toggleRating:after {
     -webkit-transform: translateY(-50%) rotate(-135deg);
     transform: translateY(-50%) rotate(-135deg);
 }
-.select .selected-dropdown {
+
+.hidden-card-rating .hidden-card-rating-block {
     border-radius: 0 0 5px 5px;
     width: 100%;
     cursor: pointer;
@@ -56,23 +65,26 @@
     -webkit-transform-origin: top center;
     transform-origin: top center;
     background: #fff;
+    border-top: 1px solid #E8EEF6;
 }
 
-.select .selected-dropdown .option {
+.hidden-card-rating .hidden-card-rating-block .h3{
+    text-align: center;
+    padding: 0 16px;
+}
+
+.hidden-card-rating .hidden-card-rating-block li {
     background: #fff;
     cursor: pointer;
     padding: 10px 20px;
     border-top: 1px solid #E8EEF6;
+    width: 100%;
 }
-.select .selected-dropdown .option:last-of-type{
-    border-radius: 0 0 5px 5px;
-}
-.select .selected-dropdown .option:hover {
-    cursor: pointer;
-    color: #355FF1;
-}
-.select .selected-dropdown.toggleSelect {
+
+.hidden-card-rating .hidden-card-rating-block.toggleRating {
     visibility: visible;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
+    z-index: 1;
 }
+

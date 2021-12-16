@@ -1,0 +1,59 @@
+.trustpilot-review-block .h2 {
+    margin-bottom: 30px;
+}
+
+.trustpilot-review-inner-block {
+    max-height: 360px;
+}
+
+.background-2 .trustpilot-review-inner-block {
+    background: #fff;
+}
+
+.trustpilot-review-top-line {
+    border-bottom: 1px solid #E8EEF6;
+    padding: 18px 30px;
+    align-items: center;
+}
+
+.trustpilot-reviewer-logo{
+    width:62px;
+    height: 62px;
+    border-radius: 50px;
+    background: #F3F8FF;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: #C4CFD8;
+    font-weight: 600;
+    margin-right: 13px;
+}
+
+.trustpilot-reviewer-info {
+    font-weight: 600;
+}
+
+.trustpilot-review-info {
+    padding: 15px 30px;
+}
+
+.trustpilot-review-content {
+    margin-top: 13px;
+}
+
+.trustpilot-review-title {
+    font-weight: 600;
+}
+
+.trustpilot-review-text {
+    display: -webkit-box;
+    max-width: 240px;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.read-more-link {
+    margin-top: 15px;
+}
+
