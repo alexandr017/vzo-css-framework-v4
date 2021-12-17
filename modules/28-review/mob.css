@@ -1,23 +1,33 @@
-.block-reviews {
-    margin: 16px 0;
-    font-size: .87rem;
-}
-
-.review-wrap {
-    background: #fff;
-    padding: 16px;
-}
-
-.review-inner-block .user-logo{
-    width: 10%;
-}
-
-.review-user-top-line {
+.rating-val {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-right: 1em;
 }
-
+.review-username {
+    display: block;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.review {
+    margin: 15px 0 15px -15px;
+    padding: 15px;
+    width: calc(100% + 30px);
+}
+.review-status {
+    padding: 3px 14px;
+    background: #F3F8FF;
+    border-radius: 5px;
+    height: 24px;
+}
 .review-user-tag {
+    height: 24px;
     justify-content: center;
     align-items: center;
     padding: 3px 14px;
@@ -25,60 +35,22 @@
     color:#95A5B0;
     font-size: .87rem;
 }
-
-.review-user-tag svg {
-    margin-right: 10px;
+.review-header {
+    justify-content: space-between;
 }
-
-.review-status-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    float: right;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+.review-user-tag.resolved {
+    background-position: 5px 8px;
+    padding-left: 20px;
+    background-image: url("/v4/images/resolved.svg");
+    background-repeat: no-repeat;
 }
-
-.block-reviews .review-wrap .review-part {
+.plus .positive-part, .minus .negative-part,.comment-body {
+    font-weight: 600;
+}
+.review-part {
     margin-top: 15px;
 }
-
-.block-reviews .review-wrap .review-title {
-    font-weight: 600;
-}
-
-.block-reviews .review-wrap .review-user-name {
-    font-weight: 600;
-}
-
-.block-reviews .review-wrap .plus .positive-part {
-    color: #2CDD88;
-}
-
-.block-reviews .review-wrap .minus .negative-part {
-    color: #FF4E59;
-}
-
-.block-reviews .review-wrap .review-part-body {
-    margin-top: 5px;
-}
-
-.block-reviews .review-wrap .review-btn-wrap {
-    align-items: center;
-
-}
-
-.review-count-comments {
-    font-weight: 600;
+.comments-count {
     color: #95A5B0;
-    cursor:pointer;
-    display: inline-flex;
-    align-items: center;
     margin-top: 15px;
 }
-
-.review-count-comments svg {
-    margin-right: 5px;
-}
-
