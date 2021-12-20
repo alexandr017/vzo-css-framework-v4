@@ -248,3 +248,60 @@
     width: 100%;
 }
 
+
+.card-hidden-block .tabs-items .tab-content .l-el {
+    display: flex;
+    align-items: center;
+}
+
+.card-hidden-block .tabs-items .tab-content .l-el .card-rating {
+    width: 85%;
+    height: 4px;
+    background: #E8EEF6;
+    border-radius: 28px;
+    margin-top: 6px;
+}
+
+.card-hidden-block .l-el .card-rating .w-1 {
+    width: 10%;
+}
+.card-hidden-block .l-el .card-rating .w-2 {
+    width: 20%;
+}
+
+.card-hidden-block .l-el .card-rating .w-3 {
+    width: 30%;
+}
+.card-hidden-block .l-el .card-rating .w-4 {
+    width: 40%;
+}
+.card-hidden-block .l-el .card-rating .w-5 {
+    width: 50%;
+}
+.card-hidden-block .l-el .card-rating .w-6 {
+    width: 60%;
+}
+
+.card-hidden-block .l-el .card-rating .w-7 {
+    width: 70%;
+}
+
+.card-hidden-block .l-el .card-rating .w-8 {
+    width: 80%;
+}
+.card-hidden-block .l-el .card-rating .w-9 {
+    width: 90%;
+}
+.card-hidden-block .l-el .card-rating .w-10 {
+    width: 100%;
+}
+
+.card-hidden-block .l-el .card-rating .percent {
+    height: 4px;
+    background: #355FF1;
+    border-radius: 28px;
+}
+.card-hidden-block .l-el .rating-val {
+    margin-left: 10px;
+    color: #95A5B0;
+}

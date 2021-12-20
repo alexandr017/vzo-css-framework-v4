@@ -54,6 +54,11 @@
 
 .trustpilot-review-title {
     font-weight: 600;
+    max-width: 240px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .trustpilot-review-text {

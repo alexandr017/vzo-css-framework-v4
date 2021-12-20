@@ -1,0 +1,70 @@
+.off-list-dot-el {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #95A5B0;
+    border-radius: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.offListActiveDot {
+    background: #95A5B0;
+
+}
+
+.offer-filters {
+    position: relative;
+    background: #fff;
+}
+
+.offer-filters-title {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.offer-filters-hidden-top-line {
+    align-items: center;
+}
+
+.offer-filters-hidden-top-line svg {
+    margin-right: 5px;
+}
+
+.offer-filters-hidden-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: none;
+    overflow: hidden;
+
+}
+
+.offer-filters-title-clicked {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.offer-hidden-list {
+    display: none;
+}
+
+.offer-filters-slider-list {
+    width: 100%;
+}
+
+.part-of-item-block {
+    flex-shrink: 0;
+    margin: 0 10px;
+    width: 80%;
+}
+
+.offer-slider-dots {
+    margin-top: 15px;
+}
+
+.offer-list-item-elem {
+    color: #000;
+}

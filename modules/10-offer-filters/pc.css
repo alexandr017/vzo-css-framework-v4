@@ -13,12 +13,11 @@
     border: 1px solid #E8EEF6;
 }
 
-
-
 .offer-filters-title {
-   justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
 
