@@ -11,16 +11,18 @@
 .actions-el {
     background-color: #fff;
     width: 255px;
+    position: relative;
 }
 
 .actions-el img{
     border-radius: 15px 15px 0 0;
 }
 
-.action-title, .action-posted-date {
+.action-title{
     margin: 10px 16px;
     font-size: .87rem;
     line-height: 21px;
+    display: block;
 }
 
 .action-title {
@@ -31,8 +33,13 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    color: #000;
 }
 
 .action-posted-date {
     color: #95A5B0;
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    font-size: .87rem;
 }

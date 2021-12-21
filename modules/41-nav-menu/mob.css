@@ -1,14 +1,8 @@
-.nav-menu-center {
-    justify-content: center;
-    padding: 15px 60px 15px 60px;
-}
-
 .nav-menu {
-    margin-top: 20px;
     overflow: auto;
-    align-items: center;
-    padding: 15px 0;
+    padding: 5px 0;
     width: 100%;
+    white-space: nowrap;
 }
 
 .nav-menu::-webkit-scrollbar {
@@ -18,7 +12,6 @@
 
 .nav-links {
     cursor: pointer;
-    margin: 0 25px;
     padding: 5px 10px;
     transition: 0.3s;
     font-weight: 600;
@@ -26,6 +19,5 @@
 }
 
 .nav-links.active,.nav-links:hover {
-    color: #000;
-    border-bottom: 2px solid  #355FF1;
+    color:  #355FF1;
 }

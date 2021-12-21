@@ -1,0 +1,33 @@
+
+.first-section-about .h1 {
+    text-align: center;
+}
+
+.first-section-about-info-wrap {
+    padding: 20px 0;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.first-section-about-info{
+    padding: 10px 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-section-about-info-el {
+
+}
+
+.first-section-about-info:not(:last-child){
+    border-bottom: 1px solid #E8EEF6;
+}
+.first-section-count-info {
+    font-weight: 600;
+    font-size: 2.12rem;
+}
+
+.first-section-description-info {
+    color: #95A5B0;
+}

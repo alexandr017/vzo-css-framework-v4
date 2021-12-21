@@ -207,7 +207,7 @@
     margin-top: 20px;
     display: flex;
     overflow: hidden;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     padding: 15px 60px 15px 60px;
     width: 100%;
@@ -220,15 +220,17 @@
     padding: 5px 10px;
     transition: 0.3s;
     font-weight: 600;
+    color: #95A5B0;
 
 }
 
 .hidden-card-info .tab .tab-links.on {
     color: #355FF1;
-    border-bottom: 2px solid  #355FF1;
 }
 
 .hidden-card-info .tabs-items .tab-content.on{
+    border-top: 1px solid #E8EEF6;
+    border-bottom: 1px solid #E8EEF6;
     display:block;
 }
 

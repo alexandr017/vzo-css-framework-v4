@@ -180,3 +180,8 @@ figure figcaption {
 .text-bold {
     font-weight: bold;
 }
+
+.border-t-b {
+    border-top:  1px solid #E8EEF6;
+    border-bottom: 1px solid #E8EEF6;
+}
