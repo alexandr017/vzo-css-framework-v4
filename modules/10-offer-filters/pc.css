@@ -28,15 +28,24 @@
     white-space: nowrap;
     padding: 10px 15px;
 }
+.offer-filters-hidden-block::-webkit-scrollbar{
+    height: 0;
+}
 
 .offer-filters-hidden-block ul {
     list-style-type: none;
     padding: 0;
-    font-size: .81rem;
 }
 
 .offer-filters-hidden-block ul li {
     margin-top: 5px;
+}
+.offer-filters-hidden-block ul li a{
+    color: #000;
+}
+
+.offer-filters-hidden-block ul li a:hover{
+    color: #355FF1;
 }
 
 .filters-arrow-down,
@@ -59,18 +68,18 @@
 }
 
 
-.offer-filters-hidden-block.active {
+.offer-filters-hidden-block.active-offer-filter {
     display: block;
     border-top: 1px solid #95A5B0;
 }
 
-.offer-filters-item.active{
+.offer-filters-item.active-offer-filter {
     width: 255px;
     z-index: 1;
     position: absolute;
     border: 1px solid #95A5B0;
 }
 
-.filters-arrow-down.active {
+.filters-arrow-down.active-offer-filter {
     transform: rotate(180deg);
 }

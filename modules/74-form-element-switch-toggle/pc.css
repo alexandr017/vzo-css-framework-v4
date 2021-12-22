@@ -1,14 +1,19 @@
+.switch-toggle-block {
+    margin: 15px 0;
+    position: absolute;
+    right: 15px;
+    align-items: center;
+}
+
+.switch-toggle-title {
+    font-size: .87rem;
+    margin-right: 17px;
+}
+
 .switch-toggle {
-    margin: 20px 0;
+    align-items: center;
     padding: 1px;
 }
-
-
-.switch-toggle.switch-toggle-float-right {
-    float: right;
-    margin-left: 15px;
-}
-
 
 .switch-toggle-body {
     position: relative;
@@ -30,7 +35,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #E6EBEF;
+    background: #E1EDFF;
     border-radius: 13px;
     -webkit-transition: 0.8s;
     transition: 0.4s;

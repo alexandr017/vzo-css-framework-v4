@@ -7,22 +7,22 @@ offerFiltersBlock.forEach(function (value, index) {
         hiddenBlock = value.querySelector('.offer-filters-hidden-block');
 
     openBlock.addEventListener('click', event => {
-        if(offerFilterItem.classList.contains('active')){
+        if(offerFilterItem.classList.contains('active-offer-filter')){
             buttonShow.style.display = 'block';
             buttonHide.style.display = 'none';
-            hiddenBlock.classList.remove('active');
-            offerFilterItem.classList.remove('active');
+            hiddenBlock.classList.remove('active-offer-filter');
+            offerFilterItem.classList.remove('active-offer-filter');
         }else {
             document.querySelectorAll('.offer-filters-item').forEach(function (value, index) {
-                value.classList.remove('active');
-                value.querySelector('.offer-filters-hidden-block').classList.remove('active');
+                value.classList.remove('active-offer-filter');
+                value.querySelector('.offer-filters-hidden-block').classList.remove('active-offer-filter');
                 value.querySelector('.filters-arrow-down').style.display = 'block';
                 value.querySelector('.filters-arrow-up').style.display = 'none';
             });
             buttonHide.style.display = 'block';
             buttonShow.style.display = 'none';
-            hiddenBlock.classList.add('active');
-            offerFilterItem.classList.add('active');
+            hiddenBlock.classList.add('active-offer-filter');
+            offerFilterItem.classList.add('active-offer-filter');
         }
     });
 });

@@ -1,56 +1,89 @@
-let sliderEl = $$(".top-slider-item");
-let nextButtonSlide = $$(".next-btn")[0];
-let prevButtonSlide =$$(".prev-btn")[0];
-let dotsBlock = $$(".dots-wrap-block")[0];
-let dotEl = document.getElementsByClassName("dot-el");
-let currentElSlide = 0;
-createDotsEl();
+function topSlider(){
+    let topSliderBlock = document.querySelector(".top-slider");
+    let topSliderItem = document.querySelectorAll(".top-slider-item");
+    let topSliderPrevBtn = document.querySelector(".prev-btn");
+    let topSliderNextBtn = document.querySelector(".next-btn");
+    let dotsWrapBlock = document.querySelector(".dots-wrap-block");
+    let topSlideIndex = 1;
 
-function createDotsEl() {
-    for (let i=0; i<sliderEl.length; i++) {
-        let newDotEl = document.createElement("span");
-        newDotEl.className = "dot-el";
-        dotsBlock.appendChild(newDotEl);
+    for (let i = 0; i < topSliderItem.length; i++) {
+        let dotEl = document.createElement("div");
+        dotEl.classList.add("dot-el");
+        dotEl.id = "slider-item" + (i + 1);
+        dotsWrapBlock.appendChild(dotEl);
     }
-    document.querySelectorAll('.dot-el')[0].classList.add('activeDot');
+    let activeDotEl = document.querySelectorAll(".dot-el");
+    activeDotEl[0].classList.add("activeDot");
 
-}
+    let firstEl = topSliderItem[0].cloneNode(true);
+    firstEl.id = "firstEl";
+    topSliderBlock.appendChild(firstEl);
 
-prevButtonSlide.addEventListener( 'click',function() {
-    if (currentElSlide == 0) {
-        currentElSlide = sliderEl.length - 1;
-    } else {
-        currentElSlide--;
-    }
-    document.querySelector('.top-slider-item.active-slide').classList.remove('active-slide');
-    sliderEl[currentElSlide].classList.add('active-slide');
-    document.querySelector('.dot-el.activeDot').classList.remove('activeDot');
-    dotEl[currentElSlide].classList.add('activeDot');
-});
+    let lastEl = topSliderItem[topSliderItem.length - 1].cloneNode(true);
+    lastEl.id = "lastEl";
+    topSliderBlock.prepend(lastEl);
 
-nextButtonSlide.addEventListener( 'click',function() {
-    if (currentElSlide == sliderEl.length - 1) {
-        currentElSlide = 0;
-    } else {
-        currentElSlide++;
-    }
-    document.querySelector('.top-slider-item.active-slide').classList.remove('active-slide');
-    sliderEl[currentElSlide].classList.add('active-slide');
+    topSliderItem = document.querySelectorAll(".top-slider-item");
 
-    document.querySelector('.dot-el.activeDot').classList.remove('activeDot');
-    dotEl[currentElSlide].classList.add('activeDot');
-});
+    let topSliderItemWidth = topSliderItem[0].clientWidth;
+    topSliderBlock.style.transform = `translateX(${-topSlideIndex * topSliderItemWidth}px)`;
 
-for (let i = 0; i < dotEl.length; i++) {
-    (function(index){
-        dotEl[i].addEventListener('click', function() {
-            if (index !== currentElSlide) {
-                document.querySelector('.dot-el.activeDot').classList.remove('activeDot');
-                this.classList.add('activeDot');
-                document.querySelector('.top-slider-item.active-slide').classList.remove('active-slide');
-                sliderEl[index].classList.add('active-slide');
-                currentElSlide = index;
-            }
+    topSliderNextBtn.addEventListener("click", () => {
+        if (topSlideIndex >= topSliderItem.length - 1) return null;
+        topSliderBlock.style.transition = "all 0.3s ease-in-out";
+        topSlideIndex++;
+        topSliderBlock.style.transform = `translateX(${-topSlideIndex * topSliderItemWidth}px)`;
+        dotsBlock(topSlideIndex, activeDotEl);
+    });
+
+    topSliderPrevBtn.addEventListener("click", () => {
+        if (topSlideIndex <= 0) return null;
+        topSliderBlock.style.transition = "all 0.3s ease-in-out";
+        topSlideIndex--;
+        topSliderBlock.style.transform = `translateX(${-topSlideIndex * topSliderItemWidth}px)`;
+        dotsBlock(topSlideIndex, activeDotEl);
+    });
+
+    topSliderBlock.addEventListener("transitionend", () => {
+        if (topSliderItem[topSlideIndex].id === "lastEl") {
+            topSliderBlock.style.transition = "none";
+            topSlideIndex = topSliderItem.length - 2;
+            topSliderBlock.style.transform = `translateX(${-topSlideIndex * topSliderItemWidth}px)`;
+        }
+
+        if (topSliderItem[topSlideIndex].id === "firstEl") {
+            topSliderBlock.style.transition = "none";
+            topSlideIndex = topSliderItem.length - topSlideIndex;
+            topSliderBlock.style.transform = `translateX(${-topSlideIndex * topSliderItemWidth}px)`;
+        }
+    });
+
+    activeDotEl.forEach((el, i) => {
+        el.addEventListener("click", () => {
+            topSlideIndex = i + 1;
+            topSliderBlock.style.transition = "all 0.3s ease-in-out";
+            topSliderBlock.style.transform = `translateX(${-topSlideIndex * topSliderItemWidth}px)`;
+            dotsBlock(topSlideIndex, activeDotEl);
         });
-    })(i);
-}
+    });
+
+    window.onresize = () => {
+        topSliderItemWidth = topSliderItem[0].offsetWidth;
+        topSliderBlock.style.transform = `translateX(${-topSlideIndex * topSliderItemWidth}px)`;
+    };
+};
+
+window.addEventListener('DOMContentLoaded', topSlider);
+
+let dotsBlock = (topSlideIndex, activeDotEl) => {
+    for (let i = 0; i < activeDotEl.length; i++) {
+        if (topSlideIndex > activeDotEl.length) topSlideIndex = 1;
+        if (topSlideIndex < 1) topSlideIndex = activeDotEl.length;
+
+        if (activeDotEl[i].id === "slider-item" + topSlideIndex) {
+            activeDotEl[i].classList.add("activeDot");
+        } else {
+            activeDotEl[i].classList.remove("activeDot");
+        }
+    }
+};

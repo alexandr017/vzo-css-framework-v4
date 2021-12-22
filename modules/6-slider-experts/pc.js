@@ -4,7 +4,7 @@ if(document.getElementsByClassName('our_expert_slider').length>0){
         slidesToShow:2,
         slidesToScroll:1,
         circleScroll:true,
-        height:'290',
+        height:'210',
         responsive: [
             {
                 breakpoint: 1200,
