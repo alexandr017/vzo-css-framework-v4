@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', function(){
+    $$('.clear-compare')[0].addEventListener('click',function () {
+        for (let i = 1; i < 12; i++) {
+            localStorage.removeItem("vzo_compare"+ i);
+            location.reload();
+        }
+    })
+
+})
+
+
+document.addEventListener('DOMContentLoaded', function(){
     var compareItems = null;
     for (let i = 1; i < 12; i++) {
         var compareItemsByCat = localStorage.getItem('vzo_compare' + i);
@@ -13,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
         $$('.compare-block')[0].style.display = 'none';
     })
 });
+
 function setCompareBlockDynamicData(compareItemsCount) {
     // if(compareItemsCount > 9) {
     //     compareItemsCount = Number(compareItemsCount.toString().slice(-1));

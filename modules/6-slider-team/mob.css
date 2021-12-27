@@ -1,0 +1,31 @@
+.our-team-slider {
+    margin: 30px 0;
+}
+.team-inner-block {
+    min-height: 200px;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    width: 252px;
+    background: #fff;
+    padding: 25px;
+    margin-right: 16px;
+}
+
+.team-inner-block img{
+    width: 88px;
+    height: 88px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.team-name {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: .87rem;
+}
+
+.team-position {
+    font-size: .87rem;
+}
+

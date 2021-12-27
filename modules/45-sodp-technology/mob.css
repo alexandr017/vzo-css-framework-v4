@@ -1,0 +1,13 @@
+.step-sodp{
+    padding:24px;
+    margin: 20px 0;
+    background: #F3F8FF;
+    border: 1px solid #E8EEF6;
+}
+.step-sodp .h3 {
+    margin-top: 0;
+}
+.step-sodp-content {
+    font-size: .87rem;
+    color: #7B878E;
+}

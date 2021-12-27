@@ -1,0 +1,66 @@
+.finance-literacy {
+    padding-bottom: 30px;
+}
+
+.finance-literacy-el {
+    background: #F3F8FF;
+    width: 100%;
+    margin: 15px 0;
+    padding: 16px;
+    border: 1px solid #E8EEF6;
+}
+
+.finance-literacy-el .h4 {
+    margin: 0;
+}
+
+.literacy-img-block {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.literacy-btn-wrap .btn{
+    background: #fff;
+    color: #000;
+    height: 32px;
+    width: 188px;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.finance-literacy-el:last-child {
+    color: #fff;
+}
+
+.podcast {
+    position: relative;
+}
+
+.podcast:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.8;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.finance-literacy-el .literacy-type {
+    margin-bottom: 5px;
+}
+
+.finance-literacy-el .literacy-title {
+    margin-bottom: 30px;
+}
+
+.podcast .literacy-type, .podcast .literacy-title {
+    z-index: 1;
+    position: relative;
+
+}

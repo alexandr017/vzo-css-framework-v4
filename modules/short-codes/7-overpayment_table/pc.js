@@ -31,3 +31,4 @@ loadTableLess.addEventListener("click", function () {
             loadTableLess.style.display = "none";
         }
 });
+
