@@ -1,0 +1,25 @@
+.our-security-slider {
+    overflow: auto;
+    padding: 10px 0 15px;
+}
+
+.our-security-slider::-webkit-scrollbar {
+    height: 0;
+}
+
+.our-security-item-wrap {
+    flex-shrink: 0;
+    width: 252px;
+    margin-right: 16px;
+    background: #fff;
+    padding: 18px 24px;
+}
+
+.our-security-item-wrap .h5{
+    margin-top: 0;
+}
+
+.our-securities-text {
+    color: #7B878E;
+    font-size: .87rem;
+}
