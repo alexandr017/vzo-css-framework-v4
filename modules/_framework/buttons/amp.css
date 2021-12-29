@@ -1,5 +1,5 @@
 .btn {
-    width: 205px;
+    width: 100%;
     height: 45px;
     border-radius: 23px;
     display: flex;
@@ -8,38 +8,103 @@
     text-align: center;
     cursor: pointer;
     font-weight: 600;
-    letter-spacing: 1px;
     border: none;
     outline: none;
     position: relative;
 }
 
+
+.btn-light-border {
+    border: 1px solid #E8EEF6;
+    color:#000;
+    font-weight: 400;
+}
+
+.btn-light-border:hover {
+    border: 1px solid #355FF1;
+    color: #355FF1;
+}
+
+.btn-light-border:active {
+    border: 1px solid #0731C1;
+    color: #0731C1;
+}
+
+.btn-light-3 {
+    color: #000;
+    background: #fff;
+}
+
+.btn-light-3:hover {
+    color:#fff;
+    background: #355FF1;
+}
+
+.btn-light-3:active {
+    color:#fff;
+    background: #1742D8;
+}
+
+.btn-dark-border {
+    border: 1px solid #000;
+    color:#000;
+    font-weight: 400;
+    background-color:transparent;
+}
+
+.btn-dark-border:hover,.btn-dark-border:hover svg path {
+    border: 1px solid #355FF1;
+    color: #355FF1;
+    stroke: #355FF1;
+}
+
+.btn-dark-border:active,.btn-dark-border:active svg path  {
+    border: 1px solid #0731C1;
+    color: #0731C1;
+    stroke: #0731C1;
+}
+
+.btn-dark-border svg {
+    right: 20px;
+    position: absolute;
+    padding: 0;
+}
+
+
 .btn-cnv {
     color: #fff;
-    background: #2CDD88;
+    background: #355FF1;
 }
 
 .btn-cnv:hover {
-    background: #2CD283;
+    background: #1742D8;
 }
 
 .btn-cnv:active {
-    background: #2BC77E;
+    background: #0731C1;
 }
 
 .btn-light {
-    color: #2CDD88;
-    background: #E3FFED;
+    color: #355FF1;
+    background: #F3F8FF;
+}
+.btn-light-2 span{
+    margin-left: 5px;
 }
 
-.btn-light:hover {
-    color: #fff;
-    background: #2CDD88;
+.btn-light-2 {
+    color: #355FF1;
+    background: #fff;
 }
 
-.btn-light:active {
-    color: #fff;
-    background: #2BC77E;
+.btn-light:hover, .btn-light-2:hover{
+    color:#fff;
+    background: #355FF1;
+}
+
+.btn-light:active, .btn-light-2:active{
+    color:#fff;
+    background: #1742D8;
 }
 
 .btn-dark {
@@ -58,99 +123,7 @@
 }
 
 
-.btn-light-1:active {
-    background: #2BC77E;
-}
-
-.btn-light-2 {
-    color: #2CDD88 !important;
-    background: #E3FFED;
-}
-
-.btn-light-2:hover {
-    display: flex;
-    align-items: center;
-    color: #fff !important;
-    background: #355FF1;
-    border-radius: 23px;
-    cursor: pointer;
-
-}
-
-.btn-light-2:active {
-    background: #2BC77E;
-}
-
-.btn-chat-1 {
-    background: #fff;
-    color: #FF4D4A !important;
-    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
-}
-
-.btn-chat-1:hover {
-    background: #FFF4F4;
-    box-shadow: none;
-}
-
-.btn-chat-1:active {
-    background: #FFEDED;
-    box-shadow: none;
-}
-
-.btn-chat-2 {
-    background: #fff;
-    color: #2CDD88 !important;
-    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
-}
-
-.btn-chat-2:hover {
-    background: #E3FFF0;
-    box-shadow: none;
-}
-
-.btn-chat-2:active {
-    background: #CCFFE3;
-    box-shadow: none;
-}
-
-
-.btn-whats-app {
-    color: #355FF1 !important;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
-}
-
-.btn-whats-app:hover{
-    background: #EAFFF3;
-    box-shadow: none;
-}
-
-.btn-whats-app:active{
-    background: #D4FDE7;
-    box-shadow: none;
-}
-
-.btn-telegram {
-    color: #4FABFA !important;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
-}
-
-.btn-telegram:hover {
-    background: #EFF8FF;
-    box-shadow: none;
-}
-
-.btn-telegram:active {
-    background: #DEF0FF;
-    box-shadow: none;
-}
-
-.btn-chat-1 svg, .btn-chat-2 svg, .btn-whats-app svg, .btn-telegram svg{
-    margin-right: 10px;
-}
-
-.prev-btn, .up-btn, .down-btn, .next-btn{
+.prev-btn, .up-btn, .down-btn, .next-btn {
     cursor: pointer;
     outline: none;
     border: none;
@@ -176,10 +149,10 @@ svg:hover .arrow_el {
 }
 
 svg:active .ellipse_el {
-    fill:#2BC77E;
+    fill:#1742D8;
 }
 svg:active .arrow_el {
-    fill:#2BC77E;
+    fill:#1742D8;
 }
 
 .up-btn svg{
@@ -194,7 +167,7 @@ svg:active .arrow_el {
     cursor: pointer;
     outline: none;
     border: none;
-    background: none;
+    background-color:transparent;
 }
 
 .claim-btn .circle_el {
@@ -221,7 +194,7 @@ svg:active .arrow_el {
     cursor: pointer;
     outline: none;
     border: none;
-    background: none;
+    background-color:transparent;
 }
 
 .print-btn .circle_el {
@@ -229,7 +202,7 @@ svg:active .arrow_el {
 }
 
 .print-btn:hover .circle_el {
-    fill:#2CDD88;
+    fill: #355FF1;
 }
 
 .print-btn .print_el {
@@ -237,16 +210,16 @@ svg:active .arrow_el {
 }
 
 .print-btn:hover .print_el {
-    fill: #2add88;
+    fill:  #355FF1;
     stroke: #fff;
 }
 
 .print-btn:active .circle_el, .print-btn:active .print_el  {
-    fill:#2BC77E;
+    fill:#1742D8;
 }
 
 
-.btn-wrap-circle {
+.btn-wrap-circle{
     box-shadow: 0 4px 10px 0 #87919F26;
     display: block;
     width: 34px;
@@ -261,18 +234,66 @@ svg:active .arrow_el {
     padding: 0;
 }
 
-
-.btn:hover .btn-wrap-circle {
+.btn:hover .btn-wrap-circle{
     left: calc(100% - 39px);
 }
 
-.btn-circle {
+.btn-circle{
     box-shadow: 0 4px 10px 0 #87919F26;
-    /*display: block;*/
+    display: block;
     width: 44px;
     height: 44px;
     line-height: 44px;
     text-align: center;
     border-radius: 50%;
     padding: 0;
+}
+
+
+.btn-dark-outline {
+    border: 1px solid #000;
+    color: #000;
+    background: #fff;
+}
+
+.btn-dark-outline:hover {
+    background: #000;
+    color: #fff;
+}
+
+.btn-dark-outline:hover svg path{
+    stroke: #fff;
+}
+
+.btn-wrap-arrow {
+    left: 25px;
+    position: absolute;
+    transition: .2s left ease-in-out;
+    padding: 0;
+}
+
+.btn:hover .btn-wrap-arrow {
+    left: calc(100% - 25px);
+}
+
+.btn-1-dark {
+    background: #355FF1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn-1-dark:hover {
+    background: #1742D8;
+}
+
+.btn-1-dark:active {
+    background: #0731C1;
 }

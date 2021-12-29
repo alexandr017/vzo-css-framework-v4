@@ -182,23 +182,27 @@
     font-size: .87rem;
 }
 
+/*.tab-wrap {*/
+    /*position: relative;*/
+/*}*/
+
 .card-hidden-block .tab::-webkit-scrollbar {
     height: 0;
 }
 
-.card-hidden-block .tab .tab-links {
-    text-align: center;
-    cursor: pointer;
-    margin: 0 10px;
-    padding: 5px 10px;
-    transition: 0.3s;
-    font-weight: 600;
-    white-space: nowrap;
-    color: #95A5B0;
+/*.card-hidden-block .tab .tab-links a{*/
+    /*text-align: center;*/
+    /*cursor: pointer;*/
+    /*margin: 0 10px;*/
+    /*padding: 5px 10px;*/
+    /*transition: 0.3s;*/
+    /*font-weight: 600;*/
+    /*white-space: nowrap;*/
+    /*color: #95A5B0;*/
 
-}
+/*}*/
 
-.card-hidden-block .tab .tab-links.on {
+.card-hidden-block .tab .tab-links a.on {
     color: #355FF1;
 }
 
@@ -306,3 +310,34 @@
     margin-left: 10px;
     color: #95A5B0;
 }
+
+.card-more {
+    display: inline-flex;
+}
+.card-body input {display: none;}
+
+.card-check:checked ~ .card-hidden-block{
+    display: block;
+}
+
+.card-check:checked ~ label.card-show-block .card-more{
+    transform: rotate(180deg);
+}
+
+
+.card-check:checked ~ .card-upd{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    width: 100%;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.card-icons {
+    float: right;
+}
+

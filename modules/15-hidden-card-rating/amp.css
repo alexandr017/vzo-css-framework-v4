@@ -1,0 +1,94 @@
+.hidden-card-rating-list .special-list{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.hidden-card-rating {
+    margin: 20px 0;
+    position: relative;
+    font-size: .87rem;
+}
+
+.hidden-card-rating .rating-more {
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+
+}
+
+.hidden-card-rating .rating-more:after {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 21px;
+    border-left: 1px solid #E8EEF6;
+}
+
+.amp-hidden-card-rating {
+    display: none;
+}
+
+.amp-hidden-card-rating:checked ~ .label-for-amp-hidden-card-rating .rating-more{
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.hidden-card-rating .rating-more[data-arrow=down]:after{
+    content: url(/v4/images/hidden-rating-arrow-down.svg);
+}
+
+.amp-hidden-card-rating:checked ~ .label-for-amp-hidden-card-rating .rating-more[data-arrow=down]:after {
+    transform: rotate(180deg);
+    border-right: 1px solid #E8EEF6;
+    border-left: none;
+
+}
+
+.hidden-card-rating .hidden-card-rating-block {
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    background: #fff;
+    border-top: 1px solid #E8EEF6;
+}
+
+.hidden-card-rating .hidden-card-rating-block .h3{
+    text-align: center;
+    padding: 0 16px;
+}
+
+.hidden-card-rating .hidden-card-rating-block li {
+    background: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-top: 1px solid #E8EEF6;
+    width: 100%;
+}
+
+.hidden-card-rating .hidden-card-rating-block li a {
+    color: #000;
+}
+
+.amp-hidden-card-rating:checked ~ .hidden-card-rating-block{
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    z-index: 1;
+}
+
