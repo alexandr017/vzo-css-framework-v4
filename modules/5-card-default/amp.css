@@ -170,62 +170,61 @@
     width: 50%;
 }
 
-.card-hidden-block .tab {
+.card-hidden-block .tab-wrap {
     margin-top: 20px;
-    display: flex;
     align-items: center;
     padding: 15px 0;
     width: 100%;
-    overflow: scroll;
     border-top: 1px solid #E8EEF6;
     border-bottom: 1px solid #E8EEF6;
     font-size: .87rem;
 }
 
-/*.tab-wrap {*/
-    /*position: relative;*/
-/*}*/
+.card-hidden-block .tab-links {
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 0;
+    transition: 0.3s;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #95A5B0;
 
-.card-hidden-block .tab::-webkit-scrollbar {
-    height: 0;
 }
 
-/*.card-hidden-block .tab .tab-links a{*/
-    /*text-align: center;*/
-    /*cursor: pointer;*/
-    /*margin: 0 10px;*/
-    /*padding: 5px 10px;*/
-    /*transition: 0.3s;*/
-    /*font-weight: 600;*/
-    /*white-space: nowrap;*/
-    /*color: #95A5B0;*/
-
-/*}*/
-
-.card-hidden-block .tab .tab-links a.on {
+.card-radio:checked + label .tab-links {
     color: #355FF1;
 }
 
-.card-hidden-block .tabs-items .tab-content.on {
-    display:block;
-    border-bottom: 1px solid #E8EEF6;
-    padding: 5px 15px;
-}
-
-.card-hidden-block .tabs-items .tab-content {
+.card-hidden-block .tab-content {
     display: none;
 }
 
-.card-hidden-block .tabs-items .tab-content ul {
+.card-radio:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.card-radio:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+.card-radio:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
+.card-radio:nth-of-type(4):checked ~ .tab-content:nth-of-type(4) {
+    display: block;
+    border-top: 1px solid #E8EEF6;
+    margin: 15px 0;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.card-hidden-block .tab-content ul {
     list-style-type: none;
 }
-.card-hidden-block .tabs-items .tab-content ul li {
+.card-hidden-block .tab-content ul li {
     margin-top: 15px;
     cursor: pointer;
 }
 
-.card-hidden-block .tabs-items .tab-content ul li svg {
+.card-hidden-block .tab-content ul li svg {
     float: right;
+}
+
+.card-hidden-block .tab-content p {
+    margin-top: 15px;
 }
 
 .card-upd {
@@ -340,4 +339,3 @@
 .card-icons {
     float: right;
 }
-

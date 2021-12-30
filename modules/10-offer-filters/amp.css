@@ -1,0 +1,33 @@
+.off-list-dot-el {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #95A5B0;
+    border-radius: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.offListActiveDot {
+    background: #95A5B0;
+
+}
+
+.offer-filters {
+    position: relative;
+    background: #fff;
+}
+
+.offer-filters-title {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.offer-filters-hidden-top-line {
+    align-items: center;
+}
+
+.offer-filters-hidden-top-line svg {
+    margin-right: 5px;
+}
