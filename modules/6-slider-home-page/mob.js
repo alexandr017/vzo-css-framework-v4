@@ -13,6 +13,9 @@ function createDotsEl() {
 
 }
 
+
+
+
 let topSliderBlock = document.querySelector('.top-slider-block'),
     topSlider = topSliderBlock.querySelector('.top-slider'),
     topSliderDotsArr = Array.from(dotsBlock.querySelectorAll('.dot-el')),
@@ -168,6 +171,6 @@ let topSliderBlock = document.querySelector('.top-slider-block'),
 topSlider.style.transform = 'translate3d(0px, 0px, 0px)';
 
 topSlider.addEventListener('transitionend', () => allowSwipe = true);
-topSliderBlock.addEventListener('touchstart', swipeStart);
+topSliderBlock.addEventListener('scroll', swipeStart);
 topSliderBlock.addEventListener('mousedown', swipeStart);
 

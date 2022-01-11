@@ -1,0 +1,52 @@
+<div class="container">
+    <div data-modal="modal-complain">click for open</div>
+</div>
+
+<div class="modal-block" id="modal-complain">
+    <div class="modal-bg modal-exit"></div>
+    <div class="modal-container shadow border-radius">
+        <div class="modal-content">
+            <button class="modal-close modal-exit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                    <path d="M0.599777 1.79726C0.268758 1.46499 0.270529 0.928048 0.603732 0.597967C0.936934 0.267885 1.47539 0.269661 1.80641 0.601932L12.2284 11.0633C12.5594 11.3956 12.5576 11.9326 12.2244 12.2626C11.8912 12.5927 11.3528 12.5909 11.0218 12.2587L0.599777 1.79726Z" fill="#95A5B0"/>
+                    <path d="M11.0578 0.601915C11.3899 0.270741 11.9283 0.270741 12.2604 0.601915C12.5926 0.933089 12.5926 1.47003 12.2604 1.8012L1.80382 12.2283C1.47171 12.5595 0.933247 12.5595 0.601135 12.2283C0.269023 11.8971 0.269022 11.3602 0.601135 11.029L11.0578 0.601915Z" fill="#95A5B0"/>
+                </svg>
+            </button>
+            <div class="modal-block-container">
+                <form action="#" method="#" class="modal-form">
+                    <input class="modal-form__input" id="ttt" type="email" placeholder="Ваш E-mail">
+                    <div class="claim-select">
+                        <select class="modal-form__input">
+                            <option value="value1">Выберите тип жалобы</option>
+                            <option value="value2">Двойные списания</option>
+                            <option value="value3">Долгая верификация</option>
+                            <option value="value4">Займы на чужие данные</option>
+                            <option value="value5">Навязчивая реклама</option>
+                            <option value="value6">Навязывание услуг</option>
+                            <option value="value7">Предварительное одорение и отказ</option>
+                            <option value="value8">Разглашение информации третьи лицам</option>
+                            <option value="value9">Другое</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Опишите подробно вашу ситуацию" class="hidden-claim-el"></textarea>
+                    <div class="modal-btn-wrap">
+                        <button type="submit" class="btn btn-light modal-exit" data-modal="modal-back">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-block" id="modal-back">
+    <div class="modal-bg modal-exit"></div>
+    <div class="modal-container shadow border-radius">
+        <div class="modal-content">
+            <div class="modal-block-container">
+                <div class="modal-confirm-success">Спасибо, ваша жалоба отправлена на рассмотрение</div>
+                <div class="modal-btn-wrap">
+                    <button class="btn btn-light modal-exit">ОК</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

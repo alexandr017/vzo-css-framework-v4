@@ -1,0 +1,98 @@
+.modal-block {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    background: rgba(34, 39, 53, 0.4);
+    padding: 5% 0;
+
+}
+
+.modal-block.open {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    z-index:1111;
+}
+
+.modal-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.modal-container {
+    background: #fff;
+    position: relative;
+    width: 540px;
+    margin: 0 auto;
+}
+
+.modal-content {
+    padding: 30px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content .modal-block-container .modal-form {
+    width: 410px;
+    margin: 20px auto;
+}
+
+.modal-content .modal-block-container .modal-form__input {
+    height: 45px;
+    margin: 10px 0;
+}
+
+.modal-content .modal-block-container textarea {
+    height: 135px;
+    resize: none;
+    margin-top: 20px;
+}
+
+.modal-content .modal-block-container .modal-form__input,
+.modal-content .modal-block-container textarea{
+    background: #F6F8FB;
+    border-radius: 10px;
+    width: 410px;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+}
+
+
+.modal-content .modal-block-container textarea {
+    height: 135px;
+    resize: none;
+    margin-top: 20px;
+}
+
+.modal-content .modal-block-container .modal-form__input::-webkit-input-placeholder,
+.modal-content .modal-block-container textarea::-webkit-input-placeholder{
+    color: #95A5B0;
+}
+
+.modal-content .modal-block-container textarea:focus,
+.modal-content .modal-block-container input:focus {
+    background: #fff;
+    border: 1px solid #222735;
+}
+
+.modal-btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
