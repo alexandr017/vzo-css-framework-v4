@@ -1,0 +1,30 @@
+.review-f {
+    margin: 55px 0;
+}
+.review-form .form-1 {
+    color: #95A5B0;
+    padding: 15px 0 20px;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+}
+.review-form .form-1 input,.review-form .form-1 textarea {
+    background-color: #ffffff;
+}
+.review-f .rating {
+    margin: 25px 0;
+}
+
+.review-f .info {
+    width: 350px;
+    padding: 55px 60px;
+    margin: 15px 0 15px 45px;
+    border-radius: 15px;
+}
+
+.review-f .r-btn-wrap {
+    justify-content: center;
+    align-items: center;
+}
+.review-f .r-btn-wrap .btn {
+    width: 100%;
+}

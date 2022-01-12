@@ -1,0 +1,81 @@
+.default-select {
+    display: flex;
+    justify-content: flex-end;
+}
+.default-select .select-block {
+    position: relative;
+}
+
+.default-select .select-block .def-selected-item {
+    border-radius: 5px;
+    width: 280px;
+    margin: 0 0 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    background: #fff;
+}
+.default-select .def-selected-item:after{
+    content: url(/v4/images/arrow-down.svg);
+}
+.default-select .select-block .selectOpen:after {
+    transform: rotate(180deg);
+    border-right: 1px solid #E8EEF6;
+    border-left: none;
+}
+.default-select .select-block .def-selected-item:after {
+    height: 55px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 22px;
+    border-left: 1px solid #E8EEF6;
+}
+.default-select .select-block .def-selected-item.selectOpen {
+    border-bottom: none;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 5px 5px 0 0;
+}
+
+.default-select .select-block .def-selected-item.selectToggle:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+    transform: translateY(-50%) rotate(-135deg);
+}
+.default-select .select-block .def-selected-dropdown {
+    border-radius: 0 0 5px 5px;
+    width: 280px;
+    margin-top:-10px;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    background: #fff;
+}
+
+.default-select .select-block .def-selected-dropdown .def-sel-option {
+    background: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-top: 1px solid #E8EEF6;
+}
+.default-select .select-block .def-selected-dropdown .def-sel-option:last-of-type{
+    border-radius: 0 0 5px 5px;
+}
+.default-select .select-block .def-selected-dropdown .def-sel-option:hover {
+    cursor: pointer;
+    color: #355FF1;
+}
+.default-select .select-block .def-selected-dropdown.selectToggle {
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+
+
