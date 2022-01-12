@@ -181,24 +181,47 @@ header .top-line {
     width: 20px;
     height: 20px;
 }
-.menu-button-inner .menu-button-line-1, .menu-button-inner .menu-button-line-2{
+.menu-button-inner .menu-button-line-1, .menu-button-inner .menu-button-line-2 {
     display: block;
-    width: 20px;
-    /*height: 0.0625rem;*/
-    height: 0.095rem;
+    width: 21px;
+    height: 2px;
     background: #000;
     position: absolute;
     border-radius: 4px;
     transition: transform 0.2s, opacity 0.2s, width 0.2s;
 }
 
+.menu-button.is-active .menu-button-inner::before,
+.menu-button.is-active .menu-button-inner::after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    border-radius: 4px;
+    transition: transform 0.2s, opacity 0.2s, width 0.2s;
+}
+
+.menu-button-inner .menu-button-line-1 {
+    top: 5px;
+}
+
 .menu-button-inner .menu-button-line-2 {
-    top: 1rem;
+    top: 12px;
 }
 .menu-button.is-active .menu-button-inner .menu-button-line-1 {
-    transform: rotate(45deg) translate3d(0.375rem, 0.375rem, 0);
+    display: none;
 }
 
 .menu-button.is-active .menu-button-inner .menu-button-line-2 {
-    transform: rotate(-45deg) translate3d(0.34375rem, -0.34375rem, 0);
+    display: none;
+}
+
+.menu-button.is-active .menu-button-inner::before {
+    top: 8px;
+    transform: rotate(45deg);
+}
+.menu-button.is-active .menu-button-inner::after {
+    top: 8px;
+    transform: rotate(-45deg);
 }

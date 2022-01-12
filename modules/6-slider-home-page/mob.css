@@ -3,6 +3,15 @@
     display: flex;
 }
 
+.top-slider {
+    overflow-y: auto;
+
+}
+
+.top-slider::-webkit-scrollbar{
+    height: 0;
+}
+
 .top-slider-item {
     background-image:url("/v4/images/main-slider-mob-bg.png");
     background-position: right -30%;

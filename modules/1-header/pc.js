@@ -25,17 +25,29 @@ window.addEventListener("scroll", () => {
     scrollVal = currentScroll;
 });
 
+let searchClickBg = $$('.search-bg')[0];
+searchClickBg.addEventListener('click',function (e) {
+    if(!e.target.classList.contains('open-search-block')){
+        let openedSearchBlock = document.getElementsByClassName('search-block');
+        let iconSearch = $$('.icon-search')[0];
+        if(openedSearchBlock.length != 0) {
+            openedSearchBlock[0].classList.remove('open-search-block');
+            iconSearch.style.display = 'inline-block';
+        }
+    }
+})
+
 function searchToggle(){
     let searchBlock = $$('.search-block')[0];
-
+    let searchBg = $$('.search-bg')[0];
     let closeBtn = $$('.search-close-btn')[0];
     let iconSearch = $$('.icon-search')[0];
-    if(searchBlock.style.display != 'none') {
-        searchBlock.style.display = 'none';
+    if(searchBlock.classList.contains('open-search-block')) {
+        searchBlock.classList.remove('open-search-block');
         closeBtn.style.display = 'none';
         iconSearch.style.display = 'inline-block';
     } else {
-        searchBlock.style.display = 'block';
+        searchBlock.classList.add('open-search-block');
         closeBtn.style.display = 'block';
         iconSearch.style.display = 'none';
     }
@@ -67,9 +79,4 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
 });
-
-
-
-
-
 
