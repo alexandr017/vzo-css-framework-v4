@@ -1,0 +1,341 @@
+.offers-list .card:first-child{
+    margin-top: 0;
+}
+
+.card {
+    width: 100%;
+    margin: 30px 0;
+    background: #fff;
+}
+
+.card-info-tag{
+    background: #E1EDFF;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 0;
+    width:100%;
+    font-size: .87rem;
+}
+.card-stock-tag{
+    display: inline-block;
+    background: #F3F8FF;
+    padding: 5px 15px;
+    margin: 16px;
+}
+
+
+.card-header {
+    border-bottom: 1px solid #E8EEF6;
+    padding: 20px 16px;
+    font-size: .87rem;
+}
+
+.card-header .logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    max-width: fit-content;
+}
+
+.card-top-inner {
+    margin-left: 16px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-row-wrap {
+    padding: 16px;
+}
+
+.block-row {
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.card-cont {
+    color: #95A5B0;
+    font-size: .87rem;
+}
+
+.card-head-intro {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: .87rem;
+}
+.card-top-btn-wrap {
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.card-top-btn-wrap .btn {
+    width:100%;
+}
+
+.card .card-body .card-body-inner {
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.card-toggle-button {
+    width:32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DCE4EC;
+}
+
+.addToCompare {
+    margin-right: 22px;
+}
+
+.card-slider-block .jsSlideItem img {
+    margin: 0 auto;
+}
+.addToCompare, .addToFavorites {
+    cursor: pointer;
+}
+.addToCompare path{
+    stroke:#E8EEF6;
+    cursor: pointer;
+}
+.addedToCompare .addToCompare path, .addedToFavorites .addToFavorites path{
+    stroke:#355FF1;
+}
+
+.list-card-block {
+    padding:15px;
+}
+
+.list-card_el svg {
+    margin-top: 5px;
+}
+
+.list-card_el span {
+    margin-left: 15px;
+}
+
+.card-btn-wrap {
+    padding: 0 15px;
+}
+
+.card-btn-wrap .btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.card-btn-wrap .claim-btn {
+    align-items: center;
+    justify-content: center;
+    color: #95A5B0;
+    margin-top: 20px;
+}
+
+.card-btn-wrap .claim-btn svg {
+    margin-right: 5px;
+}
+
+.card-row-inner {
+    padding: 15px;
+}
+
+.card-row-inner .row-card-el {
+    border: 1px solid #E8EEF6;
+    justify-content: center;
+    width: 50%;
+    padding: 10px 0;
+}
+
+.card-row-inner .row-card-el:first-of-type{
+    margin-right: 16px;
+}
+
+.card-row-inner .row-card-el .percent {
+    font-size: 1.62rem;
+    font-weight: 600;
+}
+
+.p-experience, .v-review {
+    border: 1px solid #E8EEF6;
+    margin: 15px;
+    align-items: center;
+    height: 56px;
+    padding: 0 13px;
+    justify-content: space-between;
+}
+
+.p-experience-part, .v-review-part {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.card-hidden-block .tab-wrap {
+    margin-top: 20px;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+    border-top: 1px solid #E8EEF6;
+    border-bottom: 1px solid #E8EEF6;
+    font-size: .87rem;
+}
+
+.card-hidden-block .tab-links {
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 0;
+    transition: 0.3s;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #95A5B0;
+
+}
+
+.card-radio:checked + label .tab-links {
+    color: #355FF1;
+}
+
+.card-hidden-block .tab-content {
+    display: none;
+}
+
+.card-radio:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.card-radio:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+.card-radio:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
+.card-radio:nth-of-type(4):checked ~ .tab-content:nth-of-type(4) {
+    display: block;
+    border-top: 1px solid #E8EEF6;
+    margin: 15px 0;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.card-hidden-block .tab-content ul {
+    list-style-type: none;
+}
+.card-hidden-block .tab-content ul li {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.card-hidden-block .tab-content ul li svg {
+    float: right;
+}
+
+.card-hidden-block .tab-content p {
+    margin-top: 15px;
+}
+
+.card-upd {
+    color: #95A5B0;
+    font-size:  0.87rem;
+    display: none;
+}
+
+.card-hidden-block {
+    display: none;
+}
+
+.card-less {
+    display: none;
+}
+
+.pay-icons-wrap span {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin-right: 5px;
+}
+
+.top-inner-btn .btn-cnv{
+    width: 100%;
+}
+
+
+.card-hidden-block .tabs-items .tab-content .l-el {
+    display: flex;
+    align-items: center;
+}
+
+.card-hidden-block .tabs-items .tab-content .l-el .card-rating {
+    width: 85%;
+    height: 4px;
+    background: #E8EEF6;
+    border-radius: 28px;
+    margin-top: 6px;
+}
+
+.card-hidden-block .l-el .card-rating .w-1 {
+    width: 10%;
+}
+.card-hidden-block .l-el .card-rating .w-2 {
+    width: 20%;
+}
+
+.card-hidden-block .l-el .card-rating .w-3 {
+    width: 30%;
+}
+.card-hidden-block .l-el .card-rating .w-4 {
+    width: 40%;
+}
+.card-hidden-block .l-el .card-rating .w-5 {
+    width: 50%;
+}
+.card-hidden-block .l-el .card-rating .w-6 {
+    width: 60%;
+}
+
+.card-hidden-block .l-el .card-rating .w-7 {
+    width: 70%;
+}
+
+.card-hidden-block .l-el .card-rating .w-8 {
+    width: 80%;
+}
+.card-hidden-block .l-el .card-rating .w-9 {
+    width: 90%;
+}
+.card-hidden-block .l-el .card-rating .w-10 {
+    width: 100%;
+}
+
+.card-hidden-block .l-el .card-rating .percent {
+    height: 4px;
+    background: #355FF1;
+    border-radius: 28px;
+}
+.card-hidden-block .l-el .rating-val {
+    margin-left: 10px;
+    color: #95A5B0;
+}
+
+.card-more {
+    display: inline-flex;
+}
+.card-body input {display: none;}
+
+.card-check:checked ~ .card-hidden-block{
+    display: block;
+}
+
+.card-check:checked ~ label.card-show-block .card-more{
+    transform: rotate(180deg);
+}
+
+
+.card-check:checked ~ .card-upd{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    width: 100%;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.card-icons {
+    float: right;
+}

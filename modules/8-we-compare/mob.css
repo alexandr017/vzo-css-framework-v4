@@ -31,7 +31,6 @@
 .we-compare-insert-video-block {
     width: 100%;
     margin: 30px 0;
-    border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -49,7 +48,7 @@
 }
 
 .play-video-el img {
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .play-video-el .play-icon {

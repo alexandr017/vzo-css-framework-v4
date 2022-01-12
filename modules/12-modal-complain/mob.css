@@ -1,0 +1,75 @@
+.claim-select .selected-item {
+    background: #F6F8FB;
+    border-radius: 10px;
+    width: 410px;
+    margin: 10px 0;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+}
+
+.modal-confirm-success {
+    text-align: center;
+}
+
+.hidden-claim-el {
+    display: none;
+}
+
+.claim-select select {
+    display: none;
+}
+
+.claim-select .selected-item:after {
+    position: relative;
+    content: url("/v4/images/select-arow.svg");
+    float: right;
+    margin-right: 10px;
+}
+
+.claim-select .selected-item.select-arrow-active {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
+}
+
+.claim-select .selected-item.select-arrow-active:after {
+    transform: rotate(-180deg);
+}
+
+.claim-select .select-items div {
+    background: #fff;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+.claim-select .select-items:before {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #F6F8FB;
+    width: 370px;
+    top: 10px;
+    left: 20px;
+}
+
+.claim-select .select-items {
+    position: absolute;
+    background-color: #fff;
+    width: 410px;
+    margin: -20px auto 0;
+    z-index: 99;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 10px rgba(135, 145, 159, 0.15);
+}
+
+.claim-select .select-hide {
+    display: none;
+}
+
+.claim-select .select-items div:hover,
+.same-as-selected {
+    background: #F6F8FB;
+    color: #355FF1;
+}
+

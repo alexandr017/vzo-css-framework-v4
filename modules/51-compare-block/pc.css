@@ -58,3 +58,9 @@
 .compare-left-block {
     width: 50%;
 }
+
+.clear-compare {
+    cursor: pointer;
+    color: #fff;
+    margin-right: 22px;
+}

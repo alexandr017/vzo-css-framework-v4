@@ -1,0 +1,31 @@
+.smi-slider {
+    overflow: auto;
+}
+
+.smi-slider::-webkit-scrollbar {
+    height: 0;
+}
+
+.smi-inner-block {
+    background: #fff;
+    margin-right: 16px;
+    width: 252px;
+    flex-shrink: 0;
+    font-size: .87rem;
+}
+
+.smi-inner-block .smi-content {
+    margin: 15px;
+}
+
+.smi-slider-btn-wrap {
+    padding: 8px;
+    border-top: 1px solid #E8EEF6;
+    justify-content: center;
+}
+
+.smi-inner-block img {
+    width: 77px;
+    height: 31px;
+    margin: 15px;
+}

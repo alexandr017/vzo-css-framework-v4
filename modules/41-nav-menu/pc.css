@@ -21,6 +21,11 @@
 }
 
 .nav-links.active,.nav-links:hover {
-    color: #000;
-    border-bottom: 2px solid  #355FF1;
+    color: #355FF1;
+}
+
+.nav-menu-settings-button {
+    margin-top: 20px;
+    padding: 15px 0;
+    align-items: center;
 }

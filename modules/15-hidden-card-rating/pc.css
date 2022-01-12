@@ -15,12 +15,21 @@
     margin-left: 5px;
 }
 
+.hidden-card-rating .rating-more.active svg {
+    transform: rotate(-180deg);
+}
+
+
 .hidden-card-rating .hidden-card-rating-block {
     background: #fff;
     border-radius: 15px;
     margin: 25px 0;
-    overflow: hidden;
-    max-height: 0;
+    display: none;
+    padding-top: 1px;
+}
+
+.hidden-card-rating .rating-more.active ~ .hidden-card-rating-block {
+    display: block;
 }
 
 .hidden-card-rating .h2{

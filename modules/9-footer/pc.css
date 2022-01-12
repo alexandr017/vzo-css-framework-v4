@@ -13,6 +13,12 @@
     margin-bottom:45px;
 }
 
+.f-block .cont-bl {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 .f-top-line .f-l-chats {
     display: flex;
     align-items: center;
@@ -94,7 +100,8 @@
     font-family: 'Inter', sans-serif;
 }
 
-.container .f-block .f-2-menu a {
+
+.f-block .f-2-menu a {
     color: #95A5B0;
 }
 

@@ -1,6 +1,7 @@
 .gray-label {
     color: #95A5B0;
-    margin: 12px 15px 12px 15px;
+    margin-top: 30px;
+    float: right;
 }
 
 .quiz .btn-light {
@@ -17,7 +18,6 @@
     margin: 0.5em 0;
     width: 80%;
 }
-
 
 .quiz-num-value:focus {
     outline: none;

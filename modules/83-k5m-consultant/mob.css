@@ -1,0 +1,15 @@
+.k5m-consultant-block {
+    background: #F3F8FF;
+    border: 1px solid #E8EEF6;
+    padding: 24px 16px;
+}
+
+.k5m-consultant-image img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+.k5m-consultant-el {
+
+}
