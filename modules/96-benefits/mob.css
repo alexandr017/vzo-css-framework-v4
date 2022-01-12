@@ -2,11 +2,12 @@
     overflow-y: auto;
     flex-wrap: inherit;
     padding: 30px 0;
+    margin-right: -15px;
 }
 
 .benefit-item {
-    width: 350px;
-    min-width: 350px;
+    width: 252px;
+    min-width: 252px;
     background: #fff;
     text-align: center;
     margin-right: 15px;

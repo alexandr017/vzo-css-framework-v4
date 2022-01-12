@@ -35,3 +35,15 @@
 	font-weight: bold;
 	font-style: normal;
 }
+
+@font-face {
+	font-display: swap;
+	font-family: 'Proxima Nova Rg';
+	src: url('/modules/fonts/proxima-nova/ProximaNova-Bold.eot');
+	src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+	url('/modules/fonts/proxima-nova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+	url('/modules/fonts/proxima-nova/ProximaNova-Semibold.woff') format('woff'),
+	url('/modules/fonts/proxima-nova/ProximaNova-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
