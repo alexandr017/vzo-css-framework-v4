@@ -6,7 +6,7 @@ selectedItem.forEach(a => {
     a.addEventListener('click', b => {
         let nextEl = b.target.nextElementSibling;
         nextEl.classList.toggle('selectToggle');
-        nextEl.style.zIndex = indexItem++;
+        nextEl.style.zIndex = indexItemForSelect++;
         a.classList.toggle('selectOpen');
     },false)
 });
