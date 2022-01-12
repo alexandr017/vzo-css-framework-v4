@@ -1,0 +1,62 @@
+.benefits {
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    background: #fff;
+    padding: 25px;
+    text-align: center;
+    width: 30%;
+    margin: 1% 0;
+}
+
+.benefit-item:nth-child(3n + 2) {
+    margin: 1% 2%;
+}
+
+.benefit-item b {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+}
+
+.benefit-item p {
+    color: #7B878E;
+    font-size: 0.875rem;
+}
+
+@media screen and (max-width: 992px) {
+    .benefit-item {
+        width: 48%;
+        margin: 1% 0;
+    }
+
+    .benefit-item:nth-child(3n + 2) {
+        margin: 1% 0;
+    }
+
+    .benefit-item:nth-child(even) {
+        margin: 1% 0 1% 2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .buruku{
+        overflow-y: auto;
+        flex-wrap: inherit;
+    }
+
+    .benefit-item {
+        width: 350px;
+        min-width: 350px;
+        margin: 30px 30px 30px 0;
+    }
+
+    .benefit-item:nth-child(3n + 2) {
+        margin: 30px 30px 30px 0;
+    }
+
+    .benefit-item:nth-child(even) {
+        margin: 30px 30px 30px 0;
+    }
+}
