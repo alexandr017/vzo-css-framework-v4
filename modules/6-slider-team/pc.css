@@ -1,5 +1,5 @@
 .team-inner-block {
-    min-height: 200px;
+    min-height: 175px;
 }
 .team-img {
     margin-right: 25px;
@@ -8,8 +8,6 @@
 .team-img img{
     min-width: 175px;
     border-radius: 15px 0 0 15px;
-    height: 100%;
-    object-fit: cover;
 }
 
 .team-info {
@@ -18,7 +16,7 @@
 }
 
 .team-name {
-    font-weight: bold;
+    font-weight: 600;
     display: block;
     margin-bottom: 5px;
     width: 100px;
@@ -38,19 +36,19 @@
     cursor: pointer;
 }
 
-.tooltip {
+.team-inner-block .tooltip {
     display: none;
     background: #000;
     border-radius: 5px;
     padding: 10px 15px;
-    margin-top: -50px;
+    margin-top: -55px;
     margin-left: -220px;
     max-width: 190px;
     position: relative;
     min-height:50px;
 }
 
-.tooltip:after {
+.team-inner-block .tooltip:after {
 
     content: "";
     position: absolute;
@@ -62,7 +60,7 @@
     transform: translateY(-50%) rotate(45deg);
 }
 
-.tooltip a{
+.team-inner-block .tooltip a{
     color: #fff;
     text-decoration: underline;
     font-size: .87rem;
