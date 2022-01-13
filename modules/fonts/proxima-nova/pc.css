@@ -36,6 +36,18 @@
 	font-style: normal;
 }
 
+/*@font-face {*/
+/*	font-display: swap;*/
+/*	font-family: 'Proxima Nova Rg';*/
+/*	src: url('/modules/fonts/proxima-nova/ProximaNova-Light.eot');*/
+/*	src: local('Proxima Nova 400'), local('ProximaNova-400'),*/
+/*	url('/modules/fonts/proxima-nova/ProximaNova-Light?#iefix') format('embedded-opentype'),*/
+/*	url('/modules/fonts/proxima-nova/ProximaNova-Light.woff') format('woff'),*/
+/*	url('/modules/fonts/proxima-nova/ProximaNova-Light.ttf') format('truetype');*/
+/*	font-weight: 400;*/
+/*	font-style: normal;*/
+/*}*/
+
 @font-face {
 	font-display: swap;
 	font-family: 'Proxima Nova Rg';
