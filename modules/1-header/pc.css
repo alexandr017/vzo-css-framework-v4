@@ -31,7 +31,7 @@
 }
 
 .header .logo .logo-name {
-    font-size: 1.87rem;
+    font-size: 1.875rem;
     font-weight: 700;
     line-height: 1em;
     font-family: 'Inter', sans-serif;
@@ -40,7 +40,7 @@
 }
 
 .header .logo .logo-text {
-    font-size: .65rem;
+    font-size: .625rem;
     display: block;
     margin-top: -5px;
     color: #000 !important;
@@ -48,7 +48,7 @@
 
 .hl-item-title, .hr-item-title {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     padding: 15px 5px;
     margin: 0 5px;
     cursor: pointer;
@@ -115,7 +115,7 @@
 }
 
 .hl-item:hover .h-sub-menu a {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     display: inline-block;
     line-height: 2.5rem;
 }
@@ -277,7 +277,7 @@ header svg {
     display: none;
     align-items: center;
     justify-content: center;
-    font-size: .65rem;
+    font-size: .625rem;
     margin-left: 15px;
 }
 
@@ -336,15 +336,19 @@ header svg {
     border: none;
     background: #F3F8FF;
     outline:none;
-    font-size:0.87rem;
+    font-size:0.875rem;
     padding: 0 25px;
 }
 
 .search-block.hints {
+    background: #fff;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
     border-radius: 22px;
 }
 
+.search-block.hints form{
+    margin-bottom:0;
+}
 .search-block.hints .search-block__input{
     border-radius: 22px 22px 0 0;
     background: #fff;
@@ -374,7 +378,6 @@ header svg {
     max-height: 180px;
     overflow: auto;
     padding: 0;
-    border-radius: 0 0 22px 22px;
 }
 
 .search-block ul::-webkit-scrollbar {
@@ -425,3 +428,24 @@ header svg {
     margin-top: 0;
 }
 
+.show-favorites-cards:after{
+    content: '';
+    width: 11px;
+    height: 11px;
+    background-color: #FF4E59;
+    margin-top:13px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .search-block {
+        width: 700px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .search-block {
+        width: 460px;
+    }
+}
