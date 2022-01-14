@@ -8,7 +8,8 @@
     max-width: inherit;
     margin: 0 auto;
     z-index: 10;
-    /*display: none;*/
+    display: none;
+    font-size: .875rem;
 }
 .compare-block-background {
     background-color: rgba(0, 0, 0, 0.8);
@@ -28,6 +29,7 @@
     width: 60px;
     height: 60px;
     display: none;
+    font-size: .875rem;
 }
 .compare-block .compare-item {
     width: 60px;
@@ -35,7 +37,6 @@
 }
 .compare-block .compare-block-text {
     color: #FFFFFF;
-    font-size: 1.1rem;
     align-items: center;
     margin-left: 1em;
 }
