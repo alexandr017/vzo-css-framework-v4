@@ -83,3 +83,34 @@
 .filters-arrow-down.active-offer-filter {
     transform: rotate(180deg);
 }
+
+@media screen and (max-width: 1200px){
+    .offer-filters {
+        justify-content: space-between;
+
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .offer-filter-wrap {
+        width: calc( 50% - 25px);
+    }
+
+    .offer-filters-item.active-offer-filter {
+        width: calc( 50% - 15px);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .offer-filter-wrap {
+        width: 100%;
+    }
+
+    .offer-filters-item.active-offer-filter {
+        width: 100%;
+    }
+}
+

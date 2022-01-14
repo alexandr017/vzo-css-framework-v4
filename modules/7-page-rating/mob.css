@@ -1,14 +1,14 @@
 .rating-area {
-    margin: 30px 0;
+    padding: 18px 0 25px;
     text-align: center;
 }
 .rating-area .h3 {
-    margin: 10px auto;
+    margin: 0 auto 13px;
 }
 
 .rating-area .rating-wrap:not(.no-rate-poss) svg {
-    fill:#E6EBEF;
-    padding-right: 20px;
+    fill: #DCE4EC;
+    padding-right: 5px;
     cursor: pointer;
 }
 .rating-area .rating-val {

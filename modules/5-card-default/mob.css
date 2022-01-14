@@ -13,7 +13,6 @@
     border-radius: 5px 5px 0 0;
     padding: 10px 0;
     width:100%;
-    font-size: .875rem;
 }
 .card-stock-tag{
     display: inline-block;
@@ -22,11 +21,9 @@
     margin: 16px;
 }
 
-
 .card-header {
     border-bottom: 1px solid #E8EEF6;
     padding: 20px 16px;
-    font-size: .875rem;
 }
 
 .card-header .logo img{
@@ -55,13 +52,11 @@
 
 .card-cont {
     color: #95A5B0;
-    font-size: .875rem;
 }
 
 .card-head-intro {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: .875rem;
 }
 .card-top-btn-wrap {
     justify-content: center;
@@ -73,8 +68,10 @@
 }
 
 .card .card-body .card-body-inner {
+    align-items: center;
     justify-content: space-between;
     padding: 16px;
+    margin-top: 10px;
 }
 
 .card-toggle-button {
@@ -191,15 +188,19 @@
 }
 
 .card-hidden-block .tab .tab-links {
+    font-family: 'Inter', sans-serif;
     text-align: center;
     cursor: pointer;
-    margin: 0 10px;
-    padding: 5px 10px;
+    margin-right: 20px;
+    padding: 5px 0;
     transition: 0.3s;
     font-weight: 600;
     white-space: nowrap;
     color: #95A5B0;
+}
 
+.card-hidden-block .tab .tab-links:first-child {
+    margin-left: 16px;
 }
 
 .card-hidden-block .tab .tab-links.on {
@@ -231,7 +232,6 @@
 
 .card-upd {
     color: #95A5B0;
-    font-size:  0.875rem;
     display: none;
 }
 
@@ -304,7 +304,7 @@
 
 .card-hidden-block .l-el .card-rating .percent {
     height: 4px;
-    background: #355FF1;
+    background: #ADBAC4;
     border-radius: 28px;
 }
 .card-hidden-block .l-el .rating-val {

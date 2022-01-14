@@ -42,21 +42,21 @@ for (let i = 0; i < jsSelectBody.length; i++) {
 function closeAllSelect(el) {
     let arrSel = [];
     let jsSelectItems = $$(".select-items");
-    let jsSelectedItem = $$(".selected-item");
+    let jsSelectedItem = $$(".selected-item")[0];
     for (let i = 0; i < jsSelectedItem.length; i++) {
         if (el == jsSelectedItem[i]) {
             arrSel.push(i)
         } else {
             jsSelectedItem[i].classList.remove("select-arrow-active");
+            if (arrSel.indexOf(i)) {
+                jsSelectItems[i].classList.add("select-hide");
+            }
         }
     }
-    for (let i = 0; i < jsSelectItems.length; i++) {
-        if (arrSel.indexOf(i)) {
-            jsSelectItems[i].classList.add("select-hide");
-        }
-    }
+
 }
 document.addEventListener("click", closeAllSelect);
+
 if($$('.select-items').length != 0) {
     var selectItemsArr = $$('.select-items')[0].childNodes,
         hiddenBlock = $$('.hidden-claim-el')[0];
@@ -64,27 +64,24 @@ if($$('.select-items').length != 0) {
         selectItemsArr[i].addEventListener('click', function () {
             if (selectItemsArr[i].textContent === 'Другое') {
                 hiddenBlock.style.display = 'block';
-            } else {
+            } else
                 hiddenBlock.style.display = 'none';
-            }
         }, false)
     }
 }
-// let selectedItemsClaim = $$('.selected-item');
-// for (let i = 0; i < selectedItemsClaim.length;i++) {
-//     selectedItemsClaim[i].addEventListener('click', function () {
-//         var compainModalHeight = $$('#modal-complain')[0].getElementsByClassName('select-items')[0].offsetHeight;
-//         var windowHeight = window.pageYOffset;
-//         var selectItemsBlock = $$('.select-items')[0];
-//         if (compainModalHeight + 210 > windowHeight) {
-//             selectItemsBlock.style.height = compainModalHeight - 60 + 'px';
-//             selectItemsBlock.style.overflowY = 'scroll'
-//         } else {
-//             selectItemsBlock.style.height = 'fit-content';
-//             selectItemsBlock.style.overflowY = 'hidden'
-//         }
-//     }, false)
-// }
-//
 
+// $$('.selected-item')[0].addEventListener('click',function () {
+//     var compainModalHeight = $$('#modal-complain')[0].getElementsByClassName('select-items')[0].offsetHeight;
+//     var windowHeight = window.pageYOffset;
+//     var selectItemsBlock = $$('.select-items')[0];
+//     if(compainModalHeight+210 > windowHeight) {
+//         selectItemsBlock.style.height = compainModalHeight-60+'px';
+//         selectItemsBlock.style.overflowY = 'scroll'
+//     } else {
+//         selectItemsBlock.style.height = 'fit-content';
+//         selectItemsBlock.style.overflowY = 'hidden'
+//     }
+// },false)
+//
+//
 

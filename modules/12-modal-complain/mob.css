@@ -1,16 +1,18 @@
-.claim-select .selected-item {
-    background: #F6F8FB;
-    border-radius: 10px;
-    width: 410px;
-    margin: 10px 0;
-    padding: 15px 20px;
-    outline: none;
-    border: none;
+.claim-select {
+    position: relative;
 }
 
-.modal-confirm-success {
-    text-align: center;
+.claim-select .modal-selected-item {
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 7px 16px;
+    outline: none;
+    border: 1px solid #DCE4EC;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: "";
 }
+
 
 .hidden-claim-el {
     display: none;
@@ -20,21 +22,21 @@
     display: none;
 }
 
-.claim-select .selected-item:after {
+.claim-select .modal-selected-item:after {
     position: relative;
-    content: url("/v4/images/select-arow.svg");
+    content: url("/v4/images/select-arow-mob.svg");
     float: right;
     margin-right: 10px;
 }
 
-.claim-select .selected-item.select-arrow-active {
+.claim-select .modal-selected-item.select-arrow-active {
     background: #fff;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
+    border-radius: 5px 5px 0 0;
+    color: #000;
 }
 
-.claim-select .selected-item.select-arrow-active:after {
-    transform: rotate(-180deg);
+.claim-select .modal-selected-item.select-arrow-active:after {
+    display: none;
 }
 
 .claim-select .select-items div {
@@ -47,20 +49,21 @@
 .claim-select .select-items:before {
     content: '';
     position: absolute;
-    border-top: 1px solid #F6F8FB;
-    width: 370px;
+    border-top: 1px solid #DCE4EC;
+    width: 100%;
     top: 10px;
-    left: 20px;
+    left: 0;
 }
 
 .claim-select .select-items {
     position: absolute;
     background-color: #fff;
-    width: 410px;
     margin: -20px auto 0;
     z-index: 99;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 10px 10px rgba(135, 145, 159, 0.15);
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #DCE4EC;
+    border-top: none;
+    width: 100%;
 }
 
 .claim-select .select-hide {
@@ -72,4 +75,11 @@
     background: #F6F8FB;
     color: #355FF1;
 }
+
+.email-confirm {
+    display: none;
+    margin: 10px 0;
+    color: #EF3124;
+}
+
 

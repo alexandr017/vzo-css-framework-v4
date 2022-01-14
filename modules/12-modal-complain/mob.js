@@ -2,7 +2,7 @@ let jsSelectBody = $$(".claim-select");
 for (let i = 0; i < jsSelectBody.length; i++) {
     let selEl = jsSelectBody[i].getElementsByTagName("select")[0];
     let selItem = document.createElement("div");
-    selItem.setAttribute("class", "selected-item");
+    selItem.setAttribute("class", "modal-selected-item");
     selItem.innerHTML = selEl.options[selEl.selectedIndex].innerHTML;
     jsSelectBody[i].appendChild(selItem);
     let selItems = document.createElement("div");
@@ -42,35 +42,43 @@ for (let i = 0; i < jsSelectBody.length; i++) {
 function closeAllSelect(el) {
     let arrSel = [];
     let jsSelectItems = $$(".select-items");
-    let jsSelectedItem = $$(".selected-item");
-    for (let i = 0; i < jsSelectedItem.length; i++) {
-        if (el == jsSelectedItem[i]) {
+    let jsSelectedItemEl = $$(".modal-selected-item");
+    for (let i = 0; i < jsSelectedItemEl.length; i++) {
+        if(jsSelectedItemEl[i].textContent === 'Выберите тип жалобы'){
+            jsSelectedItemEl[0].style.color = '#95A5B0';
+        }else{
+            jsSelectedItemEl[0].style.color = '#000';
+        }
+        if (el == jsSelectedItemEl[i]) {
             arrSel.push(i)
         } else {
-            jsSelectedItem[i].classList.remove("select-arrow-active");
+            jsSelectedItemEl[i].classList.remove("select-arrow-active");
+            if (arrSel.indexOf(i)) {
+                jsSelectItems[i].classList.add("select-hide");
+            }
         }
     }
-    for (let i = 0; i < jsSelectItems.length; i++) {
-        if (arrSel.indexOf(i)) {
-            jsSelectItems[i].classList.add("select-hide");
-        }
-    }
+
 }
 document.addEventListener("click", closeAllSelect);
+
 if($$('.select-items').length != 0) {
     var selectItemsArr = $$('.select-items')[0].childNodes,
+
         hiddenBlock = $$('.hidden-claim-el')[0];
     for (let i = 0;i<selectItemsArr.length;i++) {
         selectItemsArr[i].addEventListener('click', function () {
             if (selectItemsArr[i].textContent === 'Другое') {
                 hiddenBlock.style.display = 'block';
-            } else
+            } else {
                 hiddenBlock.style.display = 'none';
+            }
+
         }, false)
     }
 }
 
-// $$('.selected-item')[0].addEventListener('click',function () {
+// $$('.modal-selected-item')[0].addEventListener('click',function () {
 //     var compainModalHeight = $$('#modal-complain')[0].getElementsByClassName('select-items')[0].offsetHeight;
 //     var windowHeight = window.pageYOffset;
 //     var selectItemsBlock = $$('.select-items')[0];

@@ -22,7 +22,7 @@
 
 .claim-select .selected-item:after {
     position: relative;
-    content: url("/v4/images/select-arow.svg");
+    content: url("/v4/images/select-arow-mob.svg");
     float: right;
     margin-right: 10px;
 }

@@ -14,17 +14,19 @@
     align-items: center;
 }
 
-.we-compare-item-title{
-    font-weight: 600;
-    font-size: .87rem;
-    margin-left: 20px;
+.we-compare-description {
+    font-size: 1rem;
+}
 
+.we-compare-item-title {
+    font-weight: 600;
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 .we-compare-item-text {
     margin-top: 10px;
     color:#7B878E;
-    font-size: .87rem;
 }
 
 

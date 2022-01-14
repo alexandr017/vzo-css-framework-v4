@@ -9,6 +9,10 @@
     height: 164px;
 }
 
+.services-intro {
+    font-size: 1rem;
+}
+
 .services-item {
     width: 100%;
     min-height: 414px;

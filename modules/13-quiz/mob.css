@@ -1,3 +1,9 @@
+.quiz {
+    background: #fff;
+    padding: 20px 16px;
+    margin: 20px 0;
+}
+
 .gray-label {
     color: #95A5B0;
     margin-top: 30px;
@@ -14,7 +20,7 @@
     color: #C4CFD8;
     font-weight: 600;
     border-bottom: 1px solid #DCE4EC;
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     margin: 0.5em 0;
     width: 80%;
 }

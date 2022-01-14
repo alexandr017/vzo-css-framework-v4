@@ -5,48 +5,46 @@
 
 .card-minimal-block {
     display: flex;
-    overflow-x: hidden;
+    overflow-y: auto;
 }
-.card-minimal-block:hover {
-    overflow-x: scroll;
+
+.card-minimal-block::-webkit-scrollbar {
+    height: 0;
 }
 
 .card-minimal-wrap {
-    width: 400px;
+    width: 252px;
+    height: 256px;
+    position: relative;
     min-width: 260px;
-    padding: 30px;
+    padding: 16px;
     background: #fff;
     margin: 0 15px 15px 0;
 }
 
-.card-min-top-block {
-    display: flex;
-    justify-content: space-between;
+.card-min-col {
+    align-items: center;
 }
 
 .card-min-col:first-of-type {
     width: 65%;
 }
 
-.card-min-col a {
-    font-size: 0.87rem;
-}
-
 .card-min-rating {
     color: #222735;
     font-weight: 600;
-    margin: 10px 0 0 0;
+    margin-left: 16px;
 }
 
 .card-min-col img {
-    width: 100%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     max-width: fit-content;
-    max-height: 65px;
 }
 
 .card-min-label-title {
-    color: #828282;
-    font-size: 0.87rem;
+    color: #95A5B0;
 }
 
 .card-min-label {
@@ -54,14 +52,17 @@
 }
 
 .card-minimal-wrap .card-min-info-el {
-    margin-top: 15px;
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
 }
 
-.card-minimal_block-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+.card-minimal-wrap .card-min-info-el:first-child {
+    margin-top: 10px;
+}
+
+.card-minimal-block .btn{
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 32px);
 }
