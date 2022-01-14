@@ -1,20 +1,46 @@
 .block-reviews {
-    margin: 60px 95px;
+    margin: 60px 0;
 }
 
 .review-wrap {
     background: #fff;
     padding: 30px;
-
 }
 
-.review-inner-block .user-logo{
-    width: 10%;
+.mark-review-5 {
+    background: #2CDD88;
+}
+
+.mark-review-4 {
+    background: #BEEC3C;
+}
+
+.mark-review-3 {
+    background: #FFDC23;
+}
+
+.mark-review-2 {
+    background: #FF9D43;
+}
+
+.mark-review-1 {
+    background: #FF4E59;
+}
+
+.review-inner-block .user-marks{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff;
 }
 
 .review-user-block {
     width: 90%;
-    margin-left: 30px;
+    margin: 5px 0 0 30px;
 }
 
 .review-status-icon {
@@ -27,7 +53,9 @@
     border-radius: 50%;
 }
 
-.block-reviews .review-wrap .user-rating,
+.block-reviews .review-wrap .user-rating{
+    margin-top: 5px;
+}
 .block-reviews .review-wrap .review-part {
     margin-top: 25px;
 }
@@ -56,11 +84,13 @@
 
 .block-reviews .review-wrap .review-btn-wrap {
     align-items: center;
-    justify-content: flex-end;
+    margin: 10px 0;
 }
-
+.block-reviews .review-wrap .review-btn-wrap .review-count-comments {
+    margin-right: 5px;
+    color: #95A5B0;
+}
 .block-reviews .review-wrap .review-btn-wrap .btn-answer {
-    margin: 30px 10px;
     cursor: pointer;
 }
 
@@ -103,19 +133,11 @@
     justify-content: center;
     align-items: center;
 }
-
-.hiddenReviewsStyle {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 0;
-    width: 0;
-}
-
 .review-status-icon {
     margin-top: -70px;
     background: #fff;
     cursor: pointer;
+    position: relative;
 }
 
 .complainSuccessBlock {
