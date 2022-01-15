@@ -27,12 +27,13 @@
     margin-right: 30px;
 }
 
+
 .card-min-col:first-of-type {
     width: 65%;
 }
 
-.card-min-col a {
-    font-size: 0.87rem;
+.card-min-col:last-of-type a{
+    flex-shrink: 0;
 }
 
 .card-min-rating {

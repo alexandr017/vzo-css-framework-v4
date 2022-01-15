@@ -192,3 +192,6 @@ figure figcaption {
 .text-bold {
     font-weight: bold;
 }
+.hiddenStyle {
+    display: none;
+}

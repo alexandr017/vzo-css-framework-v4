@@ -2,6 +2,7 @@
     flex-flow: row-reverse;
     padding: 3px 0 10px;
     width: 100%;
+    font-size: .875rem;
 }
 
 .more-tags-btn {
@@ -17,7 +18,7 @@
     vertical-align: 2px;
 }
 
-.more-tags-btn svg.rotate {
+svg.rotate {
     transform: rotate(180deg);
 }
 

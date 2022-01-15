@@ -75,3 +75,10 @@ input:checked + label .slider-pointer-on {
 input:checked + label .slider-pointer-on::before {
     background-color: #fff;
 }
+
+@media screen and (max-width: 992px) {
+    .switch-toggle-block {
+        margin-top: -40px;
+    }
+
+}

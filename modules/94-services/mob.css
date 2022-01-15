@@ -1,9 +1,20 @@
+.services-block {
+    justify-content: space-between;
+}
+
 .services-block img{
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 164px;
+}
+
+.services-intro {
+    font-size: 1rem;
 }
 
 .services-item {
-    width: 350px;
+    width: 100%;
     min-height: 414px;
     background: #fff;
     margin-top: 30px;
@@ -16,18 +27,14 @@
 
 }
 
-
 .services-btn {
-    width: 90%;
-    margin: 0 auto;
+    width:100%;
     position: absolute;
     bottom: 20px;
-
 }
 
-
-
 .services-btn .btn {
-    width: 100%;
+    width:calc( 100% - 32px);
+    margin-right: 16px;
     font-weight: 400;
 }
