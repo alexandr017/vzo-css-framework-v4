@@ -30,6 +30,7 @@
 .personal-body-block .personal-image img {
     border-radius: 50%;
     width: 200px;
+    min-width: 200px;
 }
 .personal-body-info-el:not(:first-of-type) {
     margin-top: 25px;
