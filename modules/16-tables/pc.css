@@ -279,13 +279,14 @@ table.table-info .border-radius-3,
     margin-left: 10px;
 }
 .data-table-pagination {
-    width: 45px;
-    height: 45px;
+    width: 28px;
+    height: 28px;
     display: inline-block;
     margin: 0 5px;
-    line-height: 45px;
+    line-height: 28px;
     text-align: center;
     border-radius: 50%;
+    color: #767F85;
 }
 .data-table-pagination:not(.disabledPage) {
     cursor: pointer;
@@ -294,24 +295,36 @@ table.table-info .border-radius-3,
     pointer-events: none;
 }
 .data-table-pagination.currentPage {
-    border: 1px solid #000;
+    border: 1px solid #767F85;
     pointer-events: none;
 }
 .data-table-pagination:not(.currentPage):not(.disabledPage):hover {
-    border:1px solid #000;
+    border:1px solid #767F85;
+}
+
+.jsTableBlock {
+    padding-top: 4em;
+    background: #E1EDFF;
+    border: 1px solid #DCE4EC;
 }
 .jsTableBlock .dataTablesFooter .data-table-pages {
     text-align: center;
     background-color: white;
     padding-right: 4em;
+    border-radius: 0 0 15px 15px;
+}
+
+.jsTableBlock tbody {
+    background: #fff;
 }
 .searchInp {
-    margin: 0 0 0.5em 0;
+    margin: 0 2em 2em 2em;
     height: 45px;
-    padding: 0 2em;
+    padding: 0 2em 1px;
     width: 100%;
-    background-color: #F3F8FF;
+    background-color: #FFF !important;
     border: none;
+
 }
 .searchInp::placeholder {
     color: #95A5B0;
@@ -326,7 +339,7 @@ table.table-info .border-radius-3,
     justify-content: flex-end;
     position: absolute;
     right: 0;
-    top: -4em;
+    margin-top: -3em;
 }
 .searchBlock svg {
     position: absolute;

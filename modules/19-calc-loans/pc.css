@@ -1,6 +1,8 @@
 .loan-overpayment-calc {
     margin: 30px 0;
-    padding: 40px 65px;
+    padding: 0 65px 32px 65px;
+    background: #fff;
+    border: 1px solid #DCE4EC;
 }
 
 .loan-overpayment-calc-body {
@@ -10,7 +12,8 @@
 }
 
 .loan-overpayment-calc-el {
-    width: 33%;
+    width: 285px;
+    margin: 0.5em 1em;
 }
 
 .loan-overpayment-calc-el .l-overpayment-calc-title {
@@ -20,13 +23,12 @@
 
 .loan-overpayment-calc-down-block {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     margin-top: 70px;
 }
 
 .loan-overpayment-result {
-    margin-left: 80px;
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -49,14 +51,15 @@
     width: 270px;
 }
 
-.loan-overpayment-calc input[type=number] {
+.loan-overpayment-calc input[type=text] {
     border: none;
-    border-bottom: 1px solid #E6EBEF;
-    height: 50px;
-    width: 285px;
-    padding: 15px 15px 15px 0;
+    border-bottom: 1px solid #DCE4EC;
     font-size: 1.5rem;
-    font-weight: 700;
+    width: 100%;
+    margin: 0.5em 0;
+}
+
+.loan-overpayment-calc input[type=text]:focus {
     outline: none;
 }
 
@@ -65,6 +68,7 @@
     padding: 0;
     width: 285px;
     height: 4px;
+    border-radius: 14px;
     background-color: #ebebeb;
     background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%,  #355FF1), color-stop(100%, #355FF1));
     background-image: -webkit-linear-gradient(#355FF1, #355FF1);
@@ -113,5 +117,19 @@
 .loan-overpayment-calc input[type=range]::-webkit-slider-thumb:hover {
     width: 26px;
     height: 26px;
+}
+
+.inputCalcSumValue, .inputCalcDaysValue, .inputCalcPercentValue {
+    border: none;
+    color: #C4CFD8;
+    border-bottom: 1px solid #DCE4EC;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0.5em 0;
+    line-height: 1.938rem;
+}
+
+.inputCalcSum, .inputCalcDays, .inputCalcPercent{
+    display: none;
 }
 

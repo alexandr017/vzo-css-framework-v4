@@ -17,7 +17,6 @@
 }
 .quiz-num-value {
     border: none;
-    color: #C4CFD8;
     border-bottom: 1px solid #DCE4EC;
     font-size: 1.5rem;
     width: 100%;
@@ -84,4 +83,18 @@
 .quiz-part-block input[type=range]::-webkit-slider-thumb:hover {
     width: 20px;
     height: 20px;
+}
+
+.inputQuizNum, .inputQuizDays {
+    display:none;
+
+}
+
+.inputQuizNumValue, .inputQuizDaysValue{
+    border: none;
+    color: #C4CFD8;
+    border-bottom: 1px solid #DCE4EC;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0.5em 0;
 }

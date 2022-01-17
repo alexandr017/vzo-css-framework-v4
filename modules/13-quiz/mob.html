@@ -2,16 +2,18 @@
     <div class="quiz border-radius-2">
         <div class="quiz-block">
             <div class="quiz-part-block">
-                <input type="text" value="15000" class="quiz-num-value " min="2000" max="200000" step="500">
+                <input type="text" value="15000" class="quiz-num-value inputQuizNum" min="2000" max="200000" step="500">
+                <div class="inputQuizNumValue"></div>
                 <span class="gray-label">Сумма</span>
-                <input type="range" class="quiz-range-value" min="2000" max="200000" step="500" value="15000">
+                <input type="range" class="quiz-range-value inputQuizRangeSum" min="2000" max="200000" step="500" value="15000">
             </div>
         </div>
         <div class="quiz-block">
             <div class="quiz-part-block">
-                <input type="text" value="100" class="quiz-num-value quiz-num-value-date" min="10" max="1095" step="1" pattern="[0-9]">
+                <input type="text" value="100" class="quiz-num-value inputQuizDays" min="10" max="1095" step="1" pattern="[0-9]">
+                <div class="inputQuizDaysValue"></div>
                 <span class="gray-label">Срок</span>
-                <input type="range" class="quiz-range-value quiz-range-value-date" min="10" max="1095" step="1" value="100" pattern="[0-9]">
+                <input type="range" class="quiz-range-value inputQuizRangeDays" min="10" max="1095" step="1" value="100" pattern="[0-9]">
             </div>
         </div>
         <button class="btn btn-light search-by-quiz-btn">Найти</button>

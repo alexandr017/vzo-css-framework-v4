@@ -17,12 +17,13 @@
 
 .quiz-num-value {
     border: none;
-    color: #C4CFD8;
+    /*color: #C4CFD8;*/
     font-weight: 600;
     border-bottom: 1px solid #DCE4EC;
     font-size: 1.375rem;
     margin: 0.5em 0;
     width: 80%;
+    position: absolute;
 }
 
 .quiz-num-value:focus {
@@ -33,6 +34,7 @@
     padding: 0.5em 0;
     width: 100%;
     align-items: flex-end;
+    /*position: relative;*/
 }
 
 .quiz-block input[type=range] {
@@ -89,4 +91,19 @@
 .quiz-block input[type=range]::-webkit-slider-thumb:hover {
     width: 20px;
     height: 20px;
+}
+
+.inputQuizNum, .inputQuizDays {
+    display:none;
+
+}
+
+.inputQuizNumValue, .inputQuizDaysValue{
+    position: absolute;
+    color: #C4CFD8;
+    font-weight: 600;
+    border-bottom: 1px solid #DCE4EC;
+    font-size: 1.375rem;
+    width: 80%;
+    margin: 0.5em 0;
 }
