@@ -84,3 +84,27 @@
     width: 55px;
     height: 55px;
 }
+
+
+@media screen and (max-width: 992px) {
+    .personal-block-info {
+        text-align: center;
+    }
+
+    .personal-block-top-info, .personal-body-block, .personal-body-info-el, .personal-body-info-col {
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 100% !important;
+    }
+
+    .personal-body-block .personal-image {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .personal-position {
+        text-align: center;
+        display: block;
+    }
+}

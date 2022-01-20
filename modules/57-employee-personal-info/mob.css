@@ -1,0 +1,29 @@
+.personal-block-info {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.personal-image img {
+    border-radius: 50%;
+}
+
+.personal-body-block {
+    background: #fff;
+    padding: 15px;
+}
+
+.personal-body-info-col {
+    display: inline-block;
+    font-size: 0.9375rem;
+}
+
+.personal-body-info-col-title {
+    color: #95A5B0;
+    font-size: 0.9375rem;
+    margin-top: 10px;
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
