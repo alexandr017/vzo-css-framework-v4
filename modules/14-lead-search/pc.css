@@ -1,0 +1,18 @@
+.lead-wrap {
+    background: #D2E4FF;
+    margin-bottom: 30px;
+    padding: 0 65px 35px 65px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+.lead-text-block {
+    width: 80%;
+}
+.lead-text-block .lead-text {
+    font-size: 1.2rem;
+}
+.lead-wrap .search-block-1  {
+    width: 100%;
+}

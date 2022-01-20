@@ -11,7 +11,7 @@ if($$('.rating-wrap').length !=0) {
                     ratingStars[i].setAttribute('fillColor', fillColor);
                     ratingStars[i].getElementsByTagName('stop')[0].attributes['offset'].nodeValue = '100%';
                     if(i<elemIndex) {
-                        ratingStars[i].getElementsByTagName('stop')[0].attributes['stop-color'].nodeValue = '#FFF697';
+                        ratingStars[i].getElementsByTagName('stop')[0].attributes['stop-color'].nodeValue = '#FFDC23';
                     } else {
                         ratingStars[i].getElementsByTagName('stop')[0].attributes['stop-color'].nodeValue = '#E6EBEF';
                     }
