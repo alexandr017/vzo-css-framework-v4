@@ -220,14 +220,16 @@
 
 .card-hidden-block .tabs-items .tab-content ul {
     list-style-type: none;
+    padding-left: 0;
 }
 .card-hidden-block .tabs-items .tab-content ul li {
     margin-top: 15px;
     cursor: pointer;
+
 }
 
 .card-hidden-block .tabs-items .tab-content ul li svg {
-    float: right;
+    margin-right: 9px;
 }
 
 .card-upd {
