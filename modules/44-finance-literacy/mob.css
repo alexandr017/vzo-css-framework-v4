@@ -10,10 +10,6 @@
     border: 1px solid #E8EEF6;
 }
 
-.finance-literacy-el .h4 {
-    margin: 0;
-}
-
 .literacy-img-block {
     margin-top: 20px;
     justify-content: space-between;
@@ -34,6 +30,9 @@
 
 .podcast {
     position: relative;
+    background: url(/v4/images/about-podcast-img-mob.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: 40px;
 }
 
 .podcast:after {
@@ -53,6 +52,7 @@
 
 .finance-literacy-el .literacy-type {
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .finance-literacy-el .literacy-title {
@@ -63,4 +63,16 @@
     z-index: 1;
     position: relative;
 
+}
+
+@media screen and (min-width: 768px) {
+    .podcast {
+        background-position-y: -50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .podcast {
+        background-position-y: -125px;
+    }
 }
