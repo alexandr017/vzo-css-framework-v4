@@ -8,16 +8,20 @@
 .loan-overpayment-calc-body {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .loan-overpayment-calc-el {
     width: 285px;
-    margin: 0.5em 1em;
+    margin: 10px 0;
 }
 
+.loan-overpayment-calc-el:not(:nth-child(3n+3)) {
+    margin-right: 61px;
+}
+
+
 .loan-overpayment-calc-el .l-overpayment-calc-title {
-    font-size: .87em;
     color: #95A5B0;
 }
 
@@ -25,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 28px;
 }
 
 .loan-overpayment-result {
@@ -34,17 +38,17 @@
     font-weight: 600;
 }
 .l-result{
-    margin-left: 20px;
+    margin-left: 11px;
+    font-weight: 600;
 }
 
 .l-currency {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .l-result,
 .l-currency{
-    font-size: 2.25rem;
-    font-weight: 700;
+    font-size: 1.625rem;
 }
 
 .loan-overpayment-btn-wrap .btn {
@@ -56,7 +60,7 @@
     border-bottom: 1px solid #DCE4EC;
     font-size: 1.5rem;
     width: 100%;
-    margin: 0.5em 0;
+    margin: 18px 0;
 }
 
 .loan-overpayment-calc input[type=text]:focus {
@@ -125,7 +129,7 @@
     border-bottom: 1px solid #DCE4EC;
     font-size: 1.5rem;
     width: 100%;
-    margin: 0.5em 0;
+    margin: 18px 0;
     line-height: 1.938rem;
 }
 

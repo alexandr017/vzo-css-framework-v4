@@ -1,7 +1,6 @@
 table {
     table-layout:fixed;
     width:100%;
-    margin: 30px 0;
 }
 
 table td, table th {
@@ -46,9 +45,9 @@ table.table-info tr:not(:last-of-type) td:last-of-type {
     border-bottom:  1px solid #F3F5F7;
 }
 
-table.table-horizontal tr:not(:first-of-type) {
-    border-top: 1px solid #F3F5F7;
-}
+/*table.table-horizontal tr:not(:first-of-type) {*/
+    /*border-top: 1px solid #F3F5F7;*/
+/*}*/
 
 table.table-horizontal .border-radius-2,
 table.table-limit .border-radius-2,

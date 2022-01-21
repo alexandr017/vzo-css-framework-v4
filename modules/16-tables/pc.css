@@ -6,7 +6,7 @@ table {
 }
 
 table tr td:last-of-type {
-    display:flex;
+    /*display:flex;*/
     align-items:center;
 }
 

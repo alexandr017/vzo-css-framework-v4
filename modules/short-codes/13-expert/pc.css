@@ -1,34 +1,37 @@
 .expert-opinion-block {
-    padding: 40px 45px;
+    padding: 30px 0 18px;
     margin: 30px 0;
+    background: #F4F7FB;
+    border: 1px solid #E8EEF6;
 }
 
-.expert-opinion-block .text-title {
-    margin-bottom: 30px;
+.expert-opinion-block .h4 {
+    margin: 0;
+
 }
 
 .expert-info {
-    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 27px;
 }
-.expert-opinion-block-header {
-    justify-content: space-between;
-}
+
 .expert-opinion-block img {
-    max-width: 55px;
-    max-height: 55px;
+    max-width: 36px;
+    max-height: 36px;
     border-radius: 50%;
     margin-left: 15px;
 }
+
 .expert-name {
-    text-align: right;
+    margin-left: 20px;
 }
+
 .expert-name a {
     font-weight: 600;
     font-size: 1rem;
 }
 
 .expert-work-place{
-    font-size: .87rem;
     color: #95A5B0;
 }
 .expert-opinion-block .button_show,
@@ -39,7 +42,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: .87rem;
 }
 
 .hidden-info {
@@ -47,12 +49,22 @@
     height: 170px;
 }
 
+.data-more-less-body, .expert-opinion-block .h4, .expert-info {
+    padding: 0 34px;
+}
+
 .data-more-less-inner {
-    margin-bottom: 20px;
+    margin-top: 14px;
     position: relative;
 }
+
 .expert-opinion-block .data-more-less-svg{
     margin-left: 5px;
+}
+
+.button_show, .button_hide{
+    padding-top: 18px;
+    border-top: 1px solid #E8EEF6;
 }
 
 
