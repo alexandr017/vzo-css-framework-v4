@@ -1,10 +1,18 @@
-
 .finance-literacy {
     padding-bottom: 30px;
 }
 
 .finance-literacy .h2 {
     margin: 10px 0 65px;
+}
+
+.literacy-type {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.literacy-title {
+    margin-bottom: 40px;
 }
 
 .finance-literacy .about-short-code-content{
@@ -19,11 +27,41 @@
     border-radius: 15px;
     background: #F6F8FB;
     width: 350px;
-    margin:15px 10px;
-    padding: 25px 40px;
+    margin:15px 10px 5px;
+    padding: 25px 40px 15px;
+    border: 1px solid #355FF10D;
+}
+
+.finance-literacy-podcasts-el {
+    width: 720px;
+    background: #F6F8FB url('/v4/images/about-podcast-img.png') right no-repeat;
 }
 
 .literacy-img-block {
     margin-top: 20px;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+    .about-finance-literacy {
+        justify-content: center;
+    }
+    .finance-literacy-podcasts-el {
+        order: 10;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .finance-literacy-el {
+        width: 320px;
+    }
+    .finance-literacy-podcasts-el {
+        width: 660px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .finance-literacy-el {
+        width: 100%;
+    }
 }
