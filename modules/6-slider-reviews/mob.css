@@ -1,15 +1,19 @@
-.review-slider{
-    display: flex;
-    overflow: hidden;
+.reviews .h2{
+    margin-bottom: 30px;
 }
-.review-slider:hover{
-    overflow-x: scroll;
+
+.review-slider{
+    overflow: auto;
+}
+
+.review-slider::-webkit-scrollbar {
+    height: 0;
 }
 
 .review-inner-block {
     padding: 30px;
     flex-shrink: 0;
-    width:252px;
+    width: 252px;
     margin-right: 16px;
     background: #fff;
 }
@@ -48,4 +52,7 @@
     display: flex;
     justify-content: center;
     margin-top: 33px;
+}
+.rating-company-name a, .review-name {
+    font-size: 0.9375rem;
 }

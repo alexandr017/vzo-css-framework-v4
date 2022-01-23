@@ -1,11 +1,9 @@
 .rating-area {
     padding: 18px 0 25px;
     text-align: center;
+    border-top: 1px solid #E8EEF6;
+    border-bottom: 1px solid #E8EEF6;
 }
-.rating-area .h3 {
-    margin: 0 auto 13px;
-}
-
 .rating-area .rating-wrap:not(.no-rate-poss) svg {
     fill: #DCE4EC;
     padding-right: 5px;
@@ -18,4 +16,7 @@
 
 .rating-area .rating-wrap {
     justify-content: center;
+}
+.rating-area .h5 {
+    font-size: 0.875rem;
 }
