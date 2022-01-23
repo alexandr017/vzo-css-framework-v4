@@ -17,7 +17,14 @@ function searchItems(searchHint){
         })
 
         var pagesCount = Math.ceil(offersListItemsArrAfterSearch.length/10);
-        page(1,offersListItemsArrAfterSearch);
+        if(offersListItemsArrAfterSearch.length != 0) {
+            page(1,offersListItemsArrAfterSearch);
+            $$('.pagination')[0].style.display = 'flex';
+        } else {
+            $$('.offers-list')[0].innerHTML = "<p>По Вашему запросу не найдено совпадений</p>";
+            $$('.pagination')[0].style.display = 'none';
+            return;
+        }
     }
 }
 
