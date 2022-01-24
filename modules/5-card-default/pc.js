@@ -1,13 +1,13 @@
-function cardSliderInit (elem){
+
     var cardSliderBlocks = document.querySelectorAll(".card-slider-init:not(.jsSlideMainBlock)");
     for (let i=0; i<cardSliderBlocks.length;i++) {
-        cardSliderBlocks[i].classList.add('card-slider'+elem.id);
+        cardSliderBlocks[i].classList.add('card-slider');
         slideShow({
-            element:'.card-slider'+elem.id,
+            element:'.card-slider',
             slidesToShow:4,
             slidesToScroll:1,
-            circleScroll:false,
-            height:'90',
+            circleScroll:true,
+            height:'120',
             responsive: [
                 {
                     breakpoint: 1200,

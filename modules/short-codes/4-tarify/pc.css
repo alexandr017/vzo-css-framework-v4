@@ -12,10 +12,13 @@
 }
 
 .tariff-block .tariff-img {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .tariff-img img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
     max-width: fit-content;
 }
 
@@ -26,8 +29,12 @@
     width: 90%;
 }
 
+.tariff-label {
+    margin-top: 11px;
+}
+
 .tariff-label-title {
-    margin-top: 20px;
+    margin-top: 5px;
     color: #87919F;
     font-size: 0.87rem;
 }

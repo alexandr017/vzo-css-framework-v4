@@ -1,39 +1,41 @@
 .vertical-tab-container {
-    width: 1110px;
-    margin: 30px 0 30px -160px;
-}
-
-.vertical-tab-container .tab {
-    margin-top: 20px;
     display: flex;
-    overflow: auto;
-    padding: 15px 60px 15px 60px;
 }
 
-.vertical-tab-container .tab::-webkit-scrollbar {
+.vertical-tab-wrap {
+    display: flex;
+    border: 1px solid #DCE4EC;
+    min-width: 790px;
+}
+
+.vertical-tab-container .vertical-tab {
+    border-right: 1px solid #DCE4EC;
+}
+
+.vertical-tab-container .vertical-tab::-webkit-scrollbar {
     height: 0;
 }
 
-.vertical-tab-container .tab .tab-links {
-    text-align: center;
+.vertical-tab-container .vertical-tab .vertical-tab-links {
+    padding: 15px 30px;
     cursor: pointer;
-    margin: 0 25px;
-    padding: 10px 10px;
-    transition: 0.3s;
     font-weight: 600;
     white-space: nowrap;
 }
 
-.vertical-tab-container .tab .tab-links.on {
+.vertical-tab-container .vertical-tab .vertical-tab-links:first-of-type {
+    border-radius: 10px 0 0 0;
+}
+.vertical-tab-container .vertical-tab .vertical-tab-links.on {
     color: #355FF1;
-    border-bottom: 2px solid  #355FF1;
+    background: #F4F7FB;
 }
 
-.vertical-tab-container .tabs-items .tab-content.on {
+.vertical-tab-container .vertical-tabs-items .vertical-tab-content.on {
     display:block;
-    margin: 30px 0 30px 110px;
+    padding: 15px 23px;
 }
 
-.vertical-tab-container .tabs-items .tab-content {
+.vertical-tab-container .vertical-tabs-items .vertical-tab-content {
     display: none;
 }

@@ -1,6 +1,6 @@
-$$('.tab-wrap').forEach((e) => {
-    let tabTabs = e.querySelectorAll('.tab .tab-links');
-    let tabItems = e.querySelectorAll('.tabs-items .tab-content');
+$$('.vertical-tab-wrap').forEach((e) => {
+    let tabTabs = e.querySelectorAll('.vertical-tab .vertical-tab-links');
+    let tabItems = e.querySelectorAll('.vertical-tabs-items .vertical-tab-content');
     for(let i =0;i<tabTabs.length;i++) {
         tabTabs[0].click();
         tabTabs[i].onclick = () => {
@@ -12,20 +12,20 @@ $$('.tab-wrap').forEach((e) => {
     }
 });
 
-let tab =$$('#vertical-tab-scroll')[0];
-tab.onmousedown = () => {
-    let pageX = 0;
-    document.onmousemove = e => {
-        if (pageX !== 0) {
-            tab.scrollLeft = tab.scrollLeft + (pageX - e.pageX);
-        }
-        pageX = e.pageX;
-    };
-    tab.onmouseup = () => {
-        document.onmousemove = null;
-        tab.onmouseup = null;
-    };
-    tab.ondragstart = () => {
-        return false;
-    };
-};
+// let tab =$$('#vertical-tab-scroll')[0];
+// tab.onmousedown = () => {
+//     let pageX = 0;
+//     document.onmousemove = e => {
+//         if (pageX !== 0) {
+//             tab.scrollLeft = tab.scrollLeft + (pageX - e.pageX);
+//         }
+//         pageX = e.pageX;
+//     };
+//     tab.onmouseup = () => {
+//         document.onmousemove = null;
+//         tab.onmouseup = null;
+//     };
+//     tab.ondragstart = () => {
+//         return false;
+//     };
+// };
