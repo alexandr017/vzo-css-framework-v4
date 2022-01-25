@@ -19,6 +19,14 @@
 
 }
 
+.f-l-block {
+    align-items: center;
+}
+
+.f-l-block .f-l-chats-des {
+    color:#95A5B0;
+}
+
 .f-top-line .f-l-chats {
     display: flex;
     align-items: center;
@@ -33,9 +41,9 @@
     margin-left: 0;
 }
 
-.f-top-line .f-l-chats:last-of-type {
-    color:#95A5B0;
-}
+/*.f-top-line .f-l-chats:last-of-type {*/
+/*color:#95A5B0;*/
+/*}*/
 
 .f-block .social {
     display: flex;
@@ -139,4 +147,60 @@
     font-size: 0.8rem;
     width: 40%;
     text-align: right;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .f-block .cont-bl, .f-l-block, .f-support, .f-copyright, .f-block .f-3 .policy, .f-block .f-3 .policy a{
+        display: block;
+    }
+
+    .f-top-line .f-l-chats, .f-top-line .f-r-block .social {
+        justify-content: center;
+    }
+
+    .f-l-block, .f-support-l, .soc-reviews, .f-copyright p, .f-block .f-3 .policy a, .f-block .f-3 .policy .copyright {
+        text-align: center;
+    }
+
+    .f-block .cont-bl .f-l-block .f-l-chats-des{
+        margin: 10px auto;
+    }
+
+    .f-support-r {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .f-support-r .call-back {
+        margin-left: 0;
+    }
+
+    .f-block ul.f-2-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 20px;
+    }
+    .f-block ul.f-2-menu li {
+        margin: 10px;
+    }
+
+    .f-copyright p {
+        width: 100%;
+    }
+
+    .f-block .f-3 .policy .copyright {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .f-block .social .soc-network a {
+        margin-left: 20px;
+
+    }
 }

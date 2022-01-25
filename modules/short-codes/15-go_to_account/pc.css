@@ -2,10 +2,15 @@
     margin: 30px 0;
     padding: 30px;
     background: #fff;
+    border: 1px solid #DCE4EC;
+
 }
 
 .go-to-acc .go-to-acc_body img {
     max-width: fit-content;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
 }
 
 .go-to-acc_body {
@@ -19,4 +24,8 @@
 .go-to-acc .go-to-acc-btn-wrap {
     display: flex;
     justify-content: center;
+}
+
+.go-to-acc .go-to-acc-btn-wrap .btn {
+    margin: 0 15px;
 }

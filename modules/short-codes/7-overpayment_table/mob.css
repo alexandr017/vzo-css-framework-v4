@@ -1,0 +1,52 @@
+.overpayment-block {
+    margin: 30px -15px;
+    border-top: 1px solid #DCE4EC;
+    border-bottom: 1px solid #DCE4EC;
+}
+
+.overpayment-block .overpayment-button-wrap {
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #DCE4EC;
+
+}
+
+.overpayment-block .overpayment-button-wrap .loadTableMoreRow,
+.overpayment-block .overpayment-button-wrap .hideTableLessRow {
+    align-items: center;
+}
+.overpayment-block .overpayment-button-wrap .loadTableMoreRow svg,
+.overpayment-block .overpayment-button-wrap .hideTableLessRow svg{
+    margin-left: 5px;
+}
+
+.overpayment-block .table-horizontal thead tr td.main-td{
+    padding: 10px 20px;
+    border-bottom: 1px solid #DCE4EC;
+    font-weight: 600;
+}
+.overpayment-block .table-horizontal tr td {
+    width: 50%;
+}
+
+.overpayment-block .table-horizontal tbody tr td, .overpayment-block .table-horizontal thead tr td.main-td {
+    text-align: center;
+}
+.overpayment-block .table-horizontal tbody tr td:first-of-type,
+.overpayment-block .table-horizontal thead tr td.main-td:first-of-type{
+    border-right:1px solid #DCE4EC;
+}
+
+.hiddenTableStyle {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 0;
+    width: 0;
+}
+
+.overpayment-block .hideTableLessRow{
+    display: none;
+}

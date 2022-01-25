@@ -19,6 +19,7 @@
     margin: 15px 0 15px -15px;
     padding: 15px;
     width: calc(100% + 30px);
+    background: #fff;
 }
 .review-status {
     padding: 3px 14px;
@@ -53,4 +54,29 @@
 .comments-count {
     color: #95A5B0;
     margin-top: 15px;
+}
+.mark-review-5 {
+    background: #2CDD88;
+}
+
+.mark-review-4 {
+    background: #BEEC3C;
+}
+
+.mark-review-3 {
+    background: #FFDC23;
+}
+
+.mark-review-2 {
+    background: #FF9D43;
+}
+
+.mark-review-1 {
+    background: #FF4E59;
+}
+.hideReview {
+    display: none;
+}
+.reviews .loadMore, .reviews .loadLess {
+    margin: 0 auto;
 }

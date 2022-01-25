@@ -1,6 +1,8 @@
 .go-to-acc {
-    padding: 30px 25px;
+    padding: 25px 16px;
     margin: 30px 0;
+    border: 1px solid #DCE4EC;
+    background: #fff;
 }
 
 .go-to-acc .go-to-acc_body .go-to-acc_img {
@@ -9,13 +11,16 @@
     align-items: center;
 }
 
-.go-to-acc .go-to-acc_body p {
-    margin-top: 15px;
-    text-align: center;
+.go-to-acc .go-to-acc_body .go-to-acc_img img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
 }
 
-.go-to-acc .go-to-acc-btn-wrap {
-    display: flex;
-    justify-content: center;
+.go-to-acc .go-to-acc_body p {
+    margin-top: 15px;
+}
 
+.go-to-acc .go-to-acc-btn-wrap .btn {
+    margin-bottom: 10px;
 }
