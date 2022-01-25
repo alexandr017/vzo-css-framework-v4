@@ -1,59 +1,83 @@
-.timeline_wrap {
-    padding-bottom: 80px;
-}
-
-.timeline_wrap .about-short-code-content {
-    margin: 30px 0 55px;
-}
-
-.timeline-tab {
-    margin-top: 20px;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-
-.timeline-tab .time-line-tab-link {
-    cursor: pointer;
+.timeline-img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50px;
+    background: #F3F8FF;
     align-items: center;
     justify-content: center;
-    margin:15px;
-    background: #F6F8FB;
-    color:#000;
-    white-space: nowrap;
-    border-radius: 25px;
-    width: 155px;
-    height: 35px;
+    margin: 0 auto 20px;
+    flex-shrink: 0;
 }
 
-.timeline-tab .time-line-tab-link.active-tab{
-    background: #000;
-    color:#fff;
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    height: 130px;
 }
 
-.timeline-tabs-item .timeline-tab-content {
-    display: none;
+.timeline-item:not(:last-child) .timeline-img:after{
+    content: '';
+    border-left: 2px dashed #DCE4EC;
+    height: 62px;
+    width: 2px;
+    position: absolute;
+    top:50%;
+    margin-top: 5px;
 }
 
-.timeline-tabs-item .timeline-tab-content.active-tab {
-    display: block;
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
-.timeline-img {
-    width: 50%;
+.timeline-item:nth-child(odd) .timeline-item-period{
+    text-align: right;
 }
 
-.timeline-img img {
-    border-radius: 25px 0 0 25px;
-    height: 100%;
-    width: 100%;
+.timeline-item:nth-child(even) .timeline-item-action{
+    text-align: right;
 }
 
-.timeline-description {
-    width: 50%;
-    font-size: 1.1rem;
-    padding: 70px 65px;
+.timeline-item-period {
+    width: calc(50% - 58px);
 }
 
-.timeline-description ul li {
-    margin-top: 20px;
+.timeline-item-action {
+    width: calc(50% - 58px);
+    color:#7B878E;
+    margin-top: 15px;
+}
+
+.timeline-item-icon {
+    width: 116px;
+}
+
+.timeline-item-period.h3 {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-item:nth-child(even), .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-item-period, .timeline-item:nth-child(even) .timeline-item-action{
+        text-align: left;
+    }
+
+    .timeline-item-period {
+        width: 100%;
+        padding-left: 150px;
+        margin-top: -65px !important;
+    }
+
+    .timeline-item-action {
+        width: 100%;
+        padding-left: 150px;
+    }
+
+    .timeline-item-icon {
+        order: -1;
+    }
+
 }
