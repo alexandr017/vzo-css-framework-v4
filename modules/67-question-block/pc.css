@@ -1,6 +1,6 @@
-
 .qa-items {
-    margin: 30px 95px;
+    background: #fff;
+    margin: 25px 0;
     padding: 20px 30px;
     border-radius: 15px;
 }
@@ -16,7 +16,7 @@
 
 .qa-items .qa-items-bottom-block {
     margin-top: 15px;
-    font-size: 0.87rem;
+    font-size: 0.875rem;
     justify-content: space-between;
 }
 
@@ -27,10 +27,6 @@
     float: right;
 }
 .qa-items .qa-items-bottom-block .read-more {
-    color:#4FABFA;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -39,18 +35,18 @@
 }
 
 .qa-items .qa-items-bottom-block .question-count {
-    color: #95A5B0;
+    color: #888;
     display: flex;
     align-items: center;
-    margin: 0 60px;
+    margin-left: 35px;
 }
 
 .qa-items .qa-items-bottom-block .question-count svg {
-    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .qa-items .qa-items-bottom-block .question-time {
-    color: #95A5B0;
+    color:#888;
 }
 
 .qa-items .tags-bl .tags-link {
@@ -58,8 +54,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F6F8FB;
-    color: #222735 !important;
+    background: #F7F7F7;
+    color: #000 !important;
     white-space: nowrap;
 
 }

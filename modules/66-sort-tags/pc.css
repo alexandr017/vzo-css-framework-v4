@@ -1,10 +1,10 @@
 .sort-tags {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .sort-tags .tag {
     color: #222735;
-    background: #F6F8FB;
+    background: #fff;
     border-radius: 15px;
     font-size: 0.87rem;
     display: inline-block;

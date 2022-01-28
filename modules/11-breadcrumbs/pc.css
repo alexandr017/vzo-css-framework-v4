@@ -7,16 +7,9 @@
 
 .breadcrumbs a,
 .breadcrumbs a:visited {
-    color: #222735;
+    color: #000;
 }
 
 .breadcrumbs svg {
     margin: 0 10px;
 }
-
-.kb_title {
-    color: #87919F;
-}
-
-
-
