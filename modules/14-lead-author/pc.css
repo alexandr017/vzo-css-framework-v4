@@ -1,12 +1,11 @@
 .employee-quote {
-    width: 1110px;
-    margin: 30px 0 30px -155px;
-    color: #888888;
-    font-size: 1rem;
     padding: 24px;
+    margin-bottom: 16px;
+    background: #fff;
 }
 
 .employee-quote p {
+    color: #888;
     margin: 16px 0 0 0;
 }
 

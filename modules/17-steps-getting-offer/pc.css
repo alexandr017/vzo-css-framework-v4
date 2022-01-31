@@ -4,8 +4,8 @@
 }
 
 .getting-offer-num {
-    font-size: 1.8rem;
-    background: #F6F8FB;
+    font-size: 1.875rem;
+    background: #F7F7F7;
     border-radius: 15px;
     height: 65px;
     width: 65px;
@@ -30,7 +30,7 @@
 .getting-offer-item:not(:last-child) .getting-offer-num::after {
     content: '';
     position: absolute;
-    border-bottom: 1px solid #E6EBEF;
+    border-bottom: 1px solid  #E5E5E5;
     width: 60%;
     left: 70%;
 }

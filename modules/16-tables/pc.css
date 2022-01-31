@@ -1,7 +1,7 @@
 table {
     table-layout:fixed;
     width:100%;
-    margin: 30px 0;
+    /*margin: 30px 0;*/
     max-width: 100%;
 }
 
@@ -16,7 +16,7 @@ table td, table th {
 
 
 table .main-td {
-    background: #E1EDFF;
+    background: #E5E5E5;
     font-weight: bold;
 }
 table.table-vertical {
@@ -212,7 +212,7 @@ table.table-info .border-radius-3,
 }
 
 .table-vertical-block .tr .th {
-    background: #E1EDFF;
+    background: #E5E5E5;
     border-bottom: none;
     font-weight: 700;
 }
@@ -241,7 +241,7 @@ table.table-info .border-radius-3,
 }
 
 .light-border .tr .th {
-    background: #E1EDFF;
+    background: #E5E5E5;
     font-weight: 700;
 }
 
@@ -304,8 +304,8 @@ table.table-info .border-radius-3,
 
 .jsTableBlock {
     padding-top: 4em;
-    background: #E1EDFF;
-    border: 1px solid #DCE4EC;
+    background: #E5E5E5;
+    border: 1px solid #E5E5E5;
 }
 .jsTableBlock .dataTablesFooter .data-table-pages {
     text-align: center;
@@ -327,7 +327,7 @@ table.table-info .border-radius-3,
 
 }
 .searchInp::placeholder {
-    color: #95A5B0;
+    color: #888;
 }
 .searchInp:focus {
     outline: none;
