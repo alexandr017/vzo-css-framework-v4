@@ -126,6 +126,10 @@ hr {
     text-align: center;
 }
 
+.background {
+    background: #F7F7F7;
+}
+
 
 .background-1 {
     background: #F6F8FB;
@@ -196,4 +200,8 @@ figure figcaption {
 .border-t-b {
     border-top:  1px solid #E8EEF6;
     border-bottom: 1px solid #E8EEF6;
+}
+
+.dark-grey {
+    color: #888;
 }

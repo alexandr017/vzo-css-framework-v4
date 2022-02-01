@@ -1,0 +1,59 @@
+.experts-reply {
+    margin: 30px 0;
+    padding: 16px;
+    background: #fff;
+}
+
+.experts-reply .expert-top-block .check {
+    position: absolute;
+    margin: -60px 0 0 35px;
+}
+
+.experts-reply .expert-top-block img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.expert-top-block {
+    align-items: center;
+}
+
+.expert-name-block {
+    margin-left: 5px;
+}
+
+.experts-reply .expert-name {
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+}
+
+.experts-reply .expert-post {
+    font-size: 0.875rem;
+}
+
+.experts-reply .reply-info .reply-text {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.experts-reply .reply-info .reply-bottom-block {
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.experts-reply .reply-info .reply-bottom-block .reply-comment,
+.experts-reply .reply-info .reply-bottom-block .up-likes{
+    cursor:pointer;
+}
+
+
+.experts-reply time {
+    float: right;
+}
+
+.experts-reply .reply-info .reply-bottom-block .up-likes svg {
+    margin-right: 5px;
+}
