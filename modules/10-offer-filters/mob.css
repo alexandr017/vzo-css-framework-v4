@@ -16,6 +16,7 @@
 .offer-filters {
     position: relative;
     background: #fff;
+    margin-right: -15px;
 }
 
 .offer-filters-title {
@@ -24,6 +25,9 @@
     margin-top: 10px;
 }
 
+.offer-filters-title svg {
+    margin-right: 15px;
+}
 .offer-filters-hidden-top-line {
     align-items: center;
 }
@@ -57,7 +61,6 @@
 
 .part-of-item-block {
     flex-shrink: 0;
-    margin: 0 10px;
     width: 80%;
 }
 

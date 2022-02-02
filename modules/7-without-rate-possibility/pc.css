@@ -1,0 +1,28 @@
+.without-rate-possibility-area {
+    padding: 20px 0;
+    border-top: 1px solid #E5E5E5;
+}
+
+.without-rate-possibility-area .without-rate-possibility-area-title{
+    font-weight: 600;
+    font-size: .875rem;
+}
+
+.without-rate-possibility-area .without-rate-possibility:not(.no-rate-poss) svg {
+    fill: #E5E5E5;
+    margin: 0 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.without-rate-possibility-area .without-rate-possibility-val {
+    margin-left: 13px;
+    font-size: .75rem;
+}
+
+.without-rate-possibility-area .without-rate-possibility-wrap {
+    margin-top: 10px;
+}
+
+.link-review {
+    font-size: .875rem;
+}

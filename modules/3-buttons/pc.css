@@ -1,6 +1,18 @@
+.btn-shadow {
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    margin: 30px 0;
+    background: #fff;
+}
+
+.btn-shadow svg {
+    margin-left: 5px;
+}
+
 .btn {
     width: 205px;
-    height: 45px;
+    height: 40px;
     border-radius: 23px;
     display: flex;
     align-items: center;
@@ -85,8 +97,9 @@
 }
 
 .btn-light {
+    font-weight: 400;
     color: #355FF1;
-    background: #F3F8FF;
+    background: #F7F7F7;
 }
 .btn-light-2 span{
     margin-left: 5px;
@@ -174,8 +187,8 @@ svg:active .arrow_el {
     fill: white;
 }
 
-.claim-btn:hover .circle_el {
-    fill:#FF4E59;
+.claim-btn:hover{
+    background:#FF4E59 !important;
 }
 
 .claim-btn .claim_el {
@@ -186,8 +199,8 @@ svg:active .arrow_el {
     stroke: white;
 }
 
-.claim-btn:active .circle_el {
-    fill:#EF3B46;
+.claim-btn:active{
+    background:#EF3B46 !important;
 }
 
 .print-btn {
@@ -201,8 +214,8 @@ svg:active .arrow_el {
     fill: white;
 }
 
-.print-btn:hover .circle_el {
-    fill: #355FF1;
+.print-btn:hover{
+    background: #355FF1;
 }
 
 .print-btn .print_el {
@@ -214,8 +227,10 @@ svg:active .arrow_el {
     stroke: #fff;
 }
 
-.print-btn:active .circle_el, .print-btn:active .print_el  {
+.print-btn:active, .print-btn:active .print_el  {
+    background:#1742D8;
     fill:#1742D8;
+
 }
 
 
@@ -241,9 +256,9 @@ svg:active .arrow_el {
 .btn-circle{
     box-shadow: 0 4px 10px 0 #87919F26;
     display: block;
-    width: 44px;
-    height: 44px;
-    line-height: 44px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     border-radius: 50%;
     padding: 0;

@@ -4,18 +4,11 @@
     transition: 0.5s;
     align-items: center;
     font-weight: 600;
+    justify-content: space-between;
 }
 
 .accordion .accordion-title {
     margin-left: 20px;
-}
-
-.accordion .arrow {
-    transform: rotate(-90deg);
-}
-
-.accordion.active .arrow {
-    transform: rotate(0deg);
 }
 
 .panel {
@@ -41,7 +34,7 @@
     /*transition: max-height 0.3s ease-in;*/
 }
 .open-panel:checked + .accordion-label .accordion .arrow {
-    transform: rotate(0);
+    transform: rotate(-180deg);
 }
 .open-panel {
     display: none;

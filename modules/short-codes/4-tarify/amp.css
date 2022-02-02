@@ -21,21 +21,20 @@
 }
 
 .tariff-label {
-    width: 70%;
     font-weight: 600;
 }
 
 .tariff-label-title {
     margin-top: 5px;
-    width: 30%;
     color: #87919F;
-    font-size: 0.87rem;
 }
 
 .tariff-block .info_el {
     margin-top: 15px;
     padding-left: 20px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .tariff-block-btn {
