@@ -4,6 +4,7 @@
     padding: 16px 23px;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1em;
 }
 
 .face-top-block-el:last-of-type {
