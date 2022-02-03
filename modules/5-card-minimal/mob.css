@@ -34,8 +34,12 @@
     color: #222735;
     font-weight: 600;
     margin-left: 16px;
+    align-items: center;
+    justify-content: space-between;
 }
-
+.card-min-rating svg {
+    margin-right: 0.5em;
+}
 .card-min-col img {
     border-radius: 50%;
     width: 40px;
@@ -65,4 +69,12 @@
     position: absolute;
     bottom: 20px;
     width: calc(100% - 32px);
+}
+.card-min-logo {
+    max-width: 40px;
+    max-height: 40px;
+    overflow: hidden;
+}
+.card-min-top-block .card-name {
+    display: block;
 }

@@ -1,5 +1,5 @@
 .our-security {
-    padding: 75px 0 100px;
+    padding: 15px 0 100px;
 }
 
 .our-security .h2 {
@@ -9,16 +9,4 @@
 .our-security-item-inner{
     padding: 25px 65px 45px;
     background: #fff;
-}
-
-
-.our-security-item{
-    width: 66%;
-}
-
-.our-securities-img{
-    width:33%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
 }

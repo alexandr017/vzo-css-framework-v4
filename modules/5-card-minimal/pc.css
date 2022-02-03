@@ -5,11 +5,20 @@
 
 .card-minimal-block {
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
+}
+.card-minimal-block::-webkit-scrollbar {
+    height: 5px;
+}
+
+.card-minimal-block::-webkit-scrollbar-thumb {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
 }
 
 .card-minimal-wrap {
     width: 350px;
+    min-width: 350px;
     padding: 30px;
     background: #fff;
     display: flex;
@@ -72,33 +81,35 @@
     align-items: center;
     margin: 30px auto 0;
 }
-
-
-@media (max-width: 1200px) {
-    .card-minimal-wrap {
-        width: calc(50% - 15px);
-    }
-    .card-minimal-wrap:not(:nth-child(3n+3)){
-        margin-right: 0;
-    }
-    .card-minimal-wrap:nth-child(odd){
-        margin-right: 30px;
-    }
+.card-min-col .card-name {
+    display: block;
 }
 
-@media (max-width: 768px) {
-    .card-minimal-wrap {
-        width: 100%;
-    }
-    .card-minimal-wrap:nth-child(odd){
-        margin-right: 0;
-    }
-}
+/*@media (max-width: 1200px) {*/
+/*    .card-minimal-wrap {*/
+/*        width: calc(50% - 15px);*/
+/*    }*/
+/*    .card-minimal-wrap:not(:nth-child(3n+3)){*/
+/*        margin-right: 0;*/
+/*    }*/
+/*    .card-minimal-wrap:nth-child(odd){*/
+/*        margin-right: 30px;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 540px) {
-    .card-minimal-wrap{
-        margin-top: 15px;
-    }
-}
+/*@media (max-width: 768px) {*/
+/*    .card-minimal-wrap {*/
+/*        width: 100%;*/
+/*    }*/
+/*    .card-minimal-wrap:nth-child(odd){*/
+/*        margin-right: 0;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 540px) {*/
+/*    .card-minimal-wrap{*/
+/*        margin-top: 15px;*/
+/*    }*/
+/*}*/
 
 

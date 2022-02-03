@@ -43,13 +43,15 @@ function closeAllSelect(el) {
     let arrSel = [];
     let jsSelectItems = $$(".select-items");
     let jsSelectedItem = $$(".selected-item")[0];
-    for (let i = 0; i < jsSelectedItem.length; i++) {
-        if (el == jsSelectedItem[i]) {
-            arrSel.push(i)
-        } else {
-            jsSelectedItem[i].classList.remove("select-arrow-active");
-            if (arrSel.indexOf(i)) {
-                jsSelectItems[i].classList.add("select-hide");
+    if(jsSelectedItem != undefined && jsSelectedItem.length != 0) {
+        for (let i = 0; i < jsSelectedItem.length; i++) {
+            if (el == jsSelectedItem[i]) {
+                arrSel.push(i)
+            } else {
+                jsSelectedItem[i].classList.remove("select-arrow-active");
+                if (arrSel.indexOf(i)) {
+                    jsSelectItems[i].classList.add("select-hide");
+                }
             }
         }
     }

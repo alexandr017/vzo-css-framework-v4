@@ -1,12 +1,9 @@
 .lead-wrap {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
-}
-.lead-text-block {
-    width: 80%;
 }
 .lead-text-block .lead-text {
     font-size: 1.2rem;
