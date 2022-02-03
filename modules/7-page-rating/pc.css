@@ -1,19 +1,23 @@
 .rating-area {
-    margin: 30px 0;
+    padding: 20px 0;
     text-align: center;
+    border-top: 1px solid #E8EEF6;
+    border-bottom: 1px solid #E8EEF6;
 }
-.rating-area .h3 {
-    margin: 30px auto;
+
+.rating-area .h5{
+    margin-top: 0;
 }
 
 .rating-area .rating-wrap:not(.no-rate-poss) svg {
     fill:#E6EBEF;
-    padding-right: 20px;
+    margin: 0 5px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 .rating-area .rating-val {
-    margin-top: 20px;
-    color: #95A5B0;
+    margin-top: 7px;
+    font-size: .75rem;
 }
 
 .rating-area .rating-wrap {

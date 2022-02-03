@@ -1,7 +1,9 @@
 .reviews .h2{
     margin-bottom: 30px;
 }
-
+.review-block {
+    padding-bottom: 2em;
+}
 .review-slider{
     overflow: auto;
 }

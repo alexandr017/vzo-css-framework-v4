@@ -1,16 +1,10 @@
-.org-menu-block {
-    background:#fff;
-    min-height: 260px;
-    padding: 45px 0;
-}
-
 .org-header {
     justify-content: space-between;
+    padding: 1em 0;
 }
 
 .org-header .org-title {
     margin: 0;
-    width: 70%;
 }
 
 .org-header .org-logo img{
@@ -23,7 +17,6 @@
     position: relative;
     padding: 21px 0 24px;
     border-top: 1px solid #DCE4EC;
-    border-bottom: 1px solid #DCE4EC;
 }
 
 .org-menu-links .org-links {
@@ -40,18 +33,25 @@
 }
 
 .org-products-block {
-    margin: 15px 0 45px;
+    margin: 15px 0;
+    flex-wrap: wrap;
 }
 
 
 .org-products-block .org-link-el {
+    height: 90px;
+    padding: 1em;
+    background-color: #fff;
     cursor: pointer;
-    text-align: center;
-    margin: 0 25px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    width: 23.5%;
+    min-width: 220px;
 }
 
-.org-products-block .org-link-el:first-child {
-    margin-left: 0;
+.org-products-block .org-link-el:nth-child(4n) {
+    margin-right: 0;
 }
 
 .org-products-block .org-link-el:last-child {
@@ -59,14 +59,14 @@
 }
 
 .org-products-block .org-link-el .org-icon-bg {
-    margin: 0 auto;
-    width: 80px;
-    height: 80px;
-    border-radius: 15px;
+    margin-right: 1em;
+    width: 55px;
+    height: 55px;
+    background-color: #F4F7FB;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
 }
 
 .org-products-block .org-link-el .org-icon-text {
@@ -87,11 +87,29 @@
 .org-link-el:hover svg path, .org-link-el.active svg path{
     stroke: #355FF1;
 }
-
-.centerOrgMenu {
+.org-menu-row {
+    width: 100%;
+    flex-wrap: wrap;
+}
+.org-menu-row.spaceBetween {
     justify-content: space-between;
 }
-
-.leftOrgMenu {
-    justify-content: start;
+@media only screen and (min-width: 920px) and (max-width: 1023px) {
+    .org-products-block .org-link-el {
+        width: 32%;
+    }
+    .org-products-block .org-link-el:nth-child(3n) {
+        margin-right: 0;
+    }
+    .org-products-block .org-link-el:nth-child(4n) {
+        margin-right: 2%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 919px) {
+    .org-products-block .org-link-el {
+        width: 49%;
+    }
+    .org-products-block .org-link-el:nth-child(2n) {
+        margin-right: 0;
+    }
 }

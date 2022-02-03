@@ -1,8 +1,8 @@
 .expert-opinion-block {
     padding: 30px 0 18px;
     margin: 30px 0;
-    background: #F4F7FB;
-    border: 1px solid #E8EEF6;
+    background: #F7F7F7;
+    border: 1px solid #E5E5E5;
 }
 
 .expert-opinion-block .h4 {
@@ -32,7 +32,7 @@
 }
 
 .expert-work-place{
-    color: #95A5B0;
+    color: #888;
 }
 .expert-opinion-block .button_show,
 .expert-opinion-block .button_hide {
@@ -64,7 +64,7 @@
 
 .button_show, .button_hide{
     padding-top: 18px;
-    border-top: 1px solid #E8EEF6;
+    border-top: 1px solid #E5E5E5;
 }
 
 

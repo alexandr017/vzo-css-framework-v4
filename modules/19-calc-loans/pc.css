@@ -2,7 +2,7 @@
     margin: 30px 0;
     padding: 0 65px 32px 65px;
     background: #fff;
-    border: 1px solid #DCE4EC;
+    border: 1px solid #E5E5E5;
 }
 
 .loan-overpayment-calc-body {
@@ -22,7 +22,7 @@
 
 
 .loan-overpayment-calc-el .l-overpayment-calc-title {
-    color: #95A5B0;
+    color: #888;
 }
 
 .loan-overpayment-calc-down-block {
@@ -57,7 +57,7 @@
 
 .loan-overpayment-calc input[type=text] {
     border: none;
-    border-bottom: 1px solid #DCE4EC;
+    border-bottom: 1px solid #E5E5E5;
     font-size: 1.5rem;
     width: 100%;
     margin: 18px 0;
@@ -73,7 +73,7 @@
     width: 285px;
     height: 4px;
     border-radius: 14px;
-    background-color: #ebebeb;
+    background-color: #E5E5E5;
     background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%,  #355FF1), color-stop(100%, #355FF1));
     background-image: -webkit-linear-gradient(#355FF1, #355FF1);
     background-image: -moz-linear-gradient(#355FF1, #355FF1);
@@ -125,8 +125,8 @@
 
 .inputCalcSumValue, .inputCalcDaysValue, .inputCalcPercentValue {
     border: none;
-    color: #C4CFD8;
-    border-bottom: 1px solid #DCE4EC;
+    color: #888;
+    border-bottom: 1px solid #E5E5E5;
     font-size: 1.5rem;
     width: 100%;
     margin: 18px 0;
