@@ -13,8 +13,8 @@
     z-index: 1;
     background-color: white;
 }
-.background-2 .jsSlideMainBlock:not(.card-slider-block) .arrows-block {
-    background-color: #F3F8FF;
+.background .jsSlideMainBlock:not(.card-slider-block) .arrows-block {
+    background-color: #F7F7F7;
 }
 .change-sliders-arrow-bg .arrows-block {
     background-color: inherit;
@@ -36,6 +36,7 @@
     margin: 20px 0;
     /*position: relative;*/
 }
+
 .jsSlideContent {
     display: flex;
     width: 85%;
@@ -44,7 +45,9 @@
 }
 .js-slide-btn-left {
     background:url("/v4/images/prev.svg") no-repeat center center;
-    left: 15px;
+    background-position-y : -8px;
+    left: 0;
+
 }
 
 .js-slide-btn-left:hover {
@@ -58,7 +61,9 @@
 
 .js-slide-btn-right {
     background: url("/v4/images/next.svg") no-repeat center center;
-    right: 15px;
+    background-position-y : -8px;
+    right: 0;
+
 }
 
 .js-slide-btn-right:hover {
@@ -70,8 +75,8 @@
 }
 
 .js-slide-btn-left, .js-slide-btn-right {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     font-size: 0;
     line-height: 0;
     position: absolute;

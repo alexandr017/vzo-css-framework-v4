@@ -1,8 +1,9 @@
-.without-rate-possibility-area {
+.without-rate-possibility-area .container {
     padding: 20px 0;
-    border-top: 1px solid #E5E5E5;
 }
-
+.without-rate-possibility-area hr {
+    margin: 0;
+}
 .without-rate-possibility-area .without-rate-possibility-area-title{
     font-weight: 600;
     font-size: .875rem;
@@ -20,7 +21,7 @@
 }
 
 .without-rate-possibility-area .without-rate-possibility-wrap {
-    margin-top: 10px;
+    margin: 10px 0 5px 0;
 }
 
 .link-review {

@@ -4,6 +4,7 @@
     padding: 16px 23px;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1em;
 }
 
 .face-top-block-el:last-of-type {
@@ -16,11 +17,6 @@
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
-    overflow-y: auto;
-}
-
-.face-slider-block::-webkit-scrollbar {
-    height: 0;
 }
 
 .face-slider-block .face-slider-info {
@@ -31,10 +27,8 @@
     margin: 0 8px;
     background: #fff;
     border-radius: 5px;
-    max-width: 136px;
-    flex-shrink: 0;
-    padding: 14px 8px;
-    max-height: 120px;
+    max-width: 168px;
+
 }
 
 .face-slider-block .face-slider-info .text-cont {
@@ -60,14 +54,9 @@
     margin-top: 21px;
 }
 
-.face-cont {
-    color: #95A5B0;
-}
-
 .face-head-intro {
     font-weight: 600;
 }
-
 
 .face-block .jsSlideItem img{
     margin: 0 auto;

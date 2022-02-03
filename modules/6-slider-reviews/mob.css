@@ -21,17 +21,16 @@
 }
 
 .rating-company-name {
-    margin-bottom: 17px;
     font-weight: 600;
 }
 
 .review-info .review-name {
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 0.8em;
+    display: block;
 }
 
 .review-content {
-    margin-top: 13px;
     height: 200px;
     overflow-y: auto;
 }
@@ -56,5 +55,8 @@
     margin-top: 33px;
 }
 .rating-company-name a, .review-name {
+    font-size: 0.9375rem;
+}
+.review-info {
     font-size: 0.9375rem;
 }
