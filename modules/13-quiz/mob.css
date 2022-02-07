@@ -18,7 +18,7 @@
     border: none;
     /*color: #C4CFD8;*/
     font-weight: 600;
-    border-bottom: 1px solid #DCE4EC;
+    border-bottom: 1px solid #E5E5E5;
     font-size: 1.375rem;
     margin: 0.5em 0;
     width: 60%;
@@ -42,7 +42,7 @@
     width: 100%;
     height: 4px;
     border-radius: 14px;
-    background-color: #E8EEF6;
+    background-color: #E5E5E5;
     background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%,  #355FF1), color-stop(100%, #355FF1));
     background-image: -webkit-linear-gradient(#355FF1, #355FF1);
     background-image: -moz-linear-gradient(#355FF1, #355FF1);
@@ -99,9 +99,9 @@
 
 .inputQuizNumValue, .inputQuizDaysValue{
     position: absolute;
-    color: #C4CFD8;
+    color: #888;
     font-weight: 600;
-    border-bottom: 1px solid #DCE4EC;
+    border-bottom: 1px solid #E5E5E5;
     font-size: 1.375rem;
     width: 60%;
     margin: 0.5em 0;

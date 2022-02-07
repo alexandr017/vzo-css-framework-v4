@@ -9,20 +9,19 @@
 }
 
 .card-info-tag{
-    background: #E1EDFF;
+    background: #E5E5E5;
     border-radius: 5px 5px 0 0;
     padding: 10px 0;
     width:100%;
 }
 .card-stock-tag{
     display: inline-block;
-    background: #F3F8FF;
     padding: 5px 15px;
     margin: 16px;
 }
 
 .card-header {
-    border-bottom: 1px solid #E8EEF6;
+    border-bottom: 1px solid #E5E5E5;
     padding: 20px 16px;
 }
 
@@ -51,7 +50,7 @@
 }
 
 .card-cont {
-    color: #95A5B0;
+    color: #888;
 }
 
 .card-head-intro {
@@ -79,7 +78,7 @@
     height: 32px;
     align-items: center;
     justify-content: center;
-    border: 1px solid #DCE4EC;
+    border: 1px solid #E5E5E5;
 }
 
 .addToCompare {
@@ -93,7 +92,7 @@
     cursor: pointer;
 }
 .addToCompare path{
-    stroke:#E8EEF6;
+    stroke: #E5E5E5;
     cursor: pointer;
 }
 .addedToCompare .addToCompare path, .addedToFavorites .addToFavorites path{
@@ -124,7 +123,7 @@
 .card-btn-wrap .claim-btn {
     align-items: center;
     justify-content: center;
-    color: #95A5B0;
+    color: #888888;
     margin-top: 20px;
 }
 
@@ -137,7 +136,7 @@
 }
 
 .card-row-inner .row-card-el {
-    border: 1px solid #E8EEF6;
+    border: 1px solid #E5E5E5;
     justify-content: center;
     width: 50%;
     padding: 10px 0;
@@ -153,7 +152,7 @@
 }
 
 .p-experience, .v-review {
-    border: 1px solid #E8EEF6;
+    border: 1px solid #E5E5E5;
     margin: 15px;
     align-items: center;
     height: 56px;
@@ -177,8 +176,8 @@
     padding: 15px 0;
     width: 100%;
     overflow: scroll;
-    border-top: 1px solid #E8EEF6;
-    border-bottom: 1px solid #E8EEF6;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
     font-size: .875rem;
 
 }
@@ -196,7 +195,7 @@
     transition: 0.3s;
     font-weight: 600;
     white-space: nowrap;
-    color: #95A5B0;
+    color: #888888;
 }
 
 .card-hidden-block .tab .tab-links:first-child {
@@ -209,7 +208,7 @@
 
 .card-hidden-block .tabs-items .tab-content.on {
     display:block;
-    border-bottom: 1px solid #E8EEF6;
+    border-bottom: 1px solid #E5E5E5;
     padding: 5px 15px;
     margin-right: 15px;
 }
@@ -233,7 +232,7 @@
 }
 
 .card-upd {
-    color: #95A5B0;
+    color: #888888;
     display: none;
 }
 
@@ -265,7 +264,7 @@
 .card-hidden-block .tabs-items .tab-content .l-el .card-rating {
     width: 85%;
     height: 4px;
-    background: #E8EEF6;
+    background: #E5E5E5;
     border-radius: 28px;
     margin-top: 6px;
 }
@@ -306,10 +305,10 @@
 
 .card-hidden-block .l-el .card-rating .percent {
     height: 4px;
-    background: #ADBAC4;
+    background: #888888;
     border-radius: 28px;
 }
 .card-hidden-block .l-el .rating-val {
     margin-left: 10px;
-    color: #95A5B0;
+    color: #888888;
 }

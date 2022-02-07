@@ -5,8 +5,8 @@
 
 .f-block .f-top-line {
     align-items: center;
-    border-top: 1px solid #E8EEF6;
-    border-bottom: 1px solid #E8EEF6;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
     width: 100%;
     padding: 15px 15px 10px;
     margin-bottom:25px;
@@ -59,7 +59,7 @@
 }
 
 .f-block .f-2-menu a {
-    color: #95A5B0;
+    color: #888888;
 }
 
 .f-block .f-2-menu li a.active, .f-block .f-2-menu li a:hover {
@@ -69,18 +69,18 @@
 .f-block .f-3 {
     margin-top: 30px;
     width: 100%;
-    border-top: 1px solid #E8EEF6;
-    border-bottom: 1px solid #E8EEF6;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
     padding: 20px 0;
 }
 
 .f-block .f-3 .policy a {
     display: block;
     font-size: 0.75rem;
-    color: #ADBAC4;
+    color: #888888;
 }
 .f-block .copyright {
-    color: #ADBAC4;
+    color: #888888;
     font-size: 0.8rem;
     margin-top: 15px;
 }

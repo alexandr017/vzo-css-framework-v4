@@ -1,5 +1,6 @@
 .trustpilot-review-slider {
     overflow: auto;
+    margin-right: -15px;
 }
 
 .trustpilot-review-slider::-webkit-scrollbar  {
@@ -16,10 +17,8 @@
     margin-right: 16px;
     width: 252px;
     position: relative;
-}
-
-.background-2 .trustpilot-review-inner-block {
     background: #fff;
+
 }
 
 .trustpilot-review-top-line {
@@ -32,11 +31,11 @@
     width:62px;
     height: 62px;
     border-radius: 50px;
-    background: #F3F8FF;
+    background: #F7F7F7;
     align-items: center;
     justify-content: center;
     font-size: 1.75rem;
-    color: #C4CFD8;
+    color: #E5E5E5;
     font-weight: 600;
     margin-right: 13px;
 }
@@ -69,8 +68,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
-
 
 .read-more-link {
     left: 0;

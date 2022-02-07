@@ -17,6 +17,11 @@
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
+    overflow-y: auto;
+}
+
+.face-slider-block::-webkit-scrollbar {
+    height: 0;
 }
 
 .face-slider-block .face-slider-info {
@@ -27,9 +32,12 @@
     margin: 0 8px;
     background: #fff;
     border-radius: 5px;
-    max-width: 168px;
-
+    max-width: 136px;
+    flex-shrink: 0;
+    padding: 14px 8px;
+    max-height: 120px;
 }
+
 
 .face-slider-block .face-slider-info .text-cont {
     line-height: 1.066rem;
