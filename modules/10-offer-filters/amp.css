@@ -1,33 +1,45 @@
-.off-list-dot-el {
-    width: 10px;
-    height: 10px;
-    border: 1px solid #95A5B0;
-    border-radius: 50px;
-    margin: 0 5px;
-    cursor: pointer;
+.offer-filters-block {
+    border: 1px solid #E8EEF6;
     box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 32px 0 22px;
+    margin-bottom: 16px;
 }
 
-.offListActiveDot {
-    background: #95A5B0;
-
+.open-offer-filters-block{
+    display: none;
 }
 
-.offer-filters {
-    position: relative;
-    background: #fff;
-}
-
-.offer-filters-title {
+.offer-filters-label-el {
+    cursor: pointer;
+    padding: 15px 15px 15px 0;
+    transition: 0.5s;
     align-items: center;
+    font-weight: 600;
     justify-content: space-between;
-    margin-top: 10px;
 }
 
-.offer-filters-hidden-top-line {
-    align-items: center;
+.offer-filters-label-el .arrow {
+    transform: rotate(-90deg);
 }
 
-.offer-filters-hidden-top-line svg {
-    margin-right: 5px;
+
+.offer-hidden-list {
+    padding: 0 20px 0 20px;
+    display: none;
+    overflow: hidden;
 }
+
+.accordion-line {
+    line-height: 2rem;
+}
+
+.open-offer-filters-block:checked ~ .offer-hidden-list {
+    display: block;
+}
+.open-offer-filters-block:checked ~ .offer-filters-label .offer-filters-label-el .arrow {
+    transform: rotate(0);
+}
+
+
+
