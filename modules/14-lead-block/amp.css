@@ -1,0 +1,17 @@
+.lead-block {
+    margin:20px 0;
+}
+
+.lead-main-container {
+    padding: 1px 16px 20px;
+    background: linear-gradient(112.57deg, #D2E4FF 35.32%, #DEEBFF 88.15%);
+}
+
+.lead-main-container h1{
+    width: 70%;
+    line-height: 2.75rem;
+}
+
+.lead-main-container p {
+    width: 70%;
+}

@@ -1,0 +1,31 @@
+.employee-quote {
+    padding: 24px;
+    margin-bottom: 16px;
+    background: #fff;
+}
+
+.employee-quote p {
+    color: #888;
+    margin: 16px 0 0 0;
+}
+
+.employee-quote-info {
+    display: flex;
+    align-items: center;
+}
+
+.employee-quote-info .employee-info {
+    margin-left: 12px;
+}
+
+.employee-quote-info .employee-info a{
+    font-weight: 600;
+    display: block;
+}
+
+.employee-quote-info .employee-logo img {
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+}
