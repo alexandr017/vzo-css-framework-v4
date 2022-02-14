@@ -1,0 +1,104 @@
+.scale-rating-block {
+    padding: 15px;
+    background: #fff;
+}
+
+.scale-rating-block .scale {
+    width: calc(100% - 90px);
+    height: 6px;
+    background:#E8EEF6;
+    border-radius: 50px;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.scale-rating-block .scale .percent {
+    height: 6px;
+    border-radius: 50px;
+    margin: 0;
+}
+
+.scale-rating-block .reviews-rating-title {
+    margin-top: 15px;
+}
+
+.scale-rating-block .count-review {
+    color:#95A5B0;
+    font-size: .875rem;
+    text-align: right;
+}
+.scale-rating-el span {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 0.5em;
+    display: block;
+}
+.scale-rating-block .info {
+    margin-top: 10px;
+    align-items: center;
+}
+
+.scale-rating-block .info .info-title {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.scale-rating-block .info .reviews-count {
+    color:#95A5B0;
+    width: 40px;
+}
+.scale-rating-block .btn {
+    margin: 10px auto;
+    width: 100%;
+    font-weight: normal;
+}
+
+
+.scale-rating-block .custom-checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.scale-rating-block .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font-size: 0.87rem;
+    line-height: 1.5rem;
+    width: 50px;
+}
+
+.scale-rating-block .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #222735;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.scale-rating-block .custom-checkbox:checked+label::before {
+    border-color: #222735;;
+    background-color: #222735;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.scale-rating-block-header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.scale-rating-el {
+    align-items: center;
+}
+.scale-rating-block hr {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+}

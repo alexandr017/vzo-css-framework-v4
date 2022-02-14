@@ -1,0 +1,185 @@
+:root {
+    font-size: 16px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    font-size: 1em;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #222735;
+    text-align: left;
+    background-color: #fff;
+}
+
+body, input, textarea, select, .btn , .btn-1{
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+a, .link{
+    color: #355FF1;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+img, iframe {
+    max-width: 100%;
+    height: auto;
+}
+p {margin-top: 0;}
+
+.content {
+    width: 100%;
+    max-width: 790px;
+    margin: auto;
+}
+
+.content ul {
+    padding: 0;
+}
+
+.content table {
+    font-size: 1rem;
+}
+
+.content .table-bl {
+    font-size: 1rem;
+}
+
+
+.content ul li{
+    position: relative;
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+
+.content ul li:before{
+    content: "";
+    background: #355FF1;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.content ol {
+    padding-left: 20px;
+}
+
+.content ol li {
+    margin-top: 12px;
+}
+
+.content iframe {
+    position: relative;
+    min-height: 300px;
+    border: 0;
+    border-radius: 15px;
+}
+
+
+.shadow{
+    box-shadow: 0 6px 20px rgba(55, 56, 61, 0.1);
+}
+
+.shadow-1{
+    box-shadow: 0 4px 10px rgba(135, 145, 159, 0.15);
+}
+
+
+.border-radius {
+    border-radius: 25px;
+}
+.border-radius-1 {
+    border-radius: 15px;
+}
+.border-radius-2 {
+    border-radius: 10px;
+}
+
+.border-radius-3 {
+    border-radius: 5px;
+}
+.clearfix{
+    clear: both;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color:#EBEBEB;
+}
+
+.text-center {
+    text-align: center;
+}
+.background {
+    background: #F7F7F7;
+}
+
+.background-1 {
+    background: #F6F8FB;
+}
+
+.background-2 {
+    background: #F3F8FF;
+}
+
+.p-0 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.p-1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p-2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.p-3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.p-4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.p-5 {
+    padding: 80px 0;
+}
+
+
+figure {
+    margin: 0 0 10px;
+}
+
+
+figure figcaption {
+    font-size: 0.95rem;
+    color: #848484;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.text-bold {
+    font-weight: bold;
+}
