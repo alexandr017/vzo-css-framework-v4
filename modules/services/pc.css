@@ -1,0 +1,49 @@
+.service-block-description {
+    justify-content: space-between;
+    padding: 1em;
+    position: relative;
+    margin: 1.5em 0;
+}
+.service-block-description-img {
+    max-width: 460px;
+}
+.service-block-description-text {
+    padding: 0 2em;
+    width: 60%;
+}
+.service-block-description .btn {
+    position: absolute;
+    bottom: 2.5em;
+}
+.service-benefits-item {
+    width: 32%;
+    padding: 1em;
+    background-color: #F7F7F7;
+    margin-bottom:1em;
+    text-align: left;
+    height: 200px;
+}
+.service-benefits-items {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.f-size-18 {
+    font-size: 1.125rem;
+}
+.answer-to-questions-items {
+    justify-content: space-between;
+}
+.answer-questions-item {
+    width: 32%;
+    border: 1px solid #E5E5E5;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.answer-questions-item .btn {
+    margin: 2em 0;
+}
+.answer-questions-item .h3 {
+    font-size: 1.5rem;
+}
