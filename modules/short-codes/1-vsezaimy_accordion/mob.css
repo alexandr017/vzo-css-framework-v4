@@ -1,0 +1,47 @@
+.accordion-item {
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+.accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 15px 0;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+
+.accordion.active .arrow {
+    transform: rotate(-180deg);
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-line {
+    line-height: 2rem;
+}
+.col-4-accordion-line{
+    width: 25%;
+    float: right;
+}
+.panel .accordion-list .accordion-col:not(:first-of-type) {
+    margin-left: 60px;
+}
+
+.panel .accordion-list .accordion-col .accordion-row {
+    margin-top: 10px;
+}
+.accordion-title-for-insurance {
+    margin: 10px 0;
+    display: inherit;
+}

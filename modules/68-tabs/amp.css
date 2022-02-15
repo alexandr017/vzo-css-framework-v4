@@ -1,0 +1,76 @@
+:root {
+    --color-primary: #005AF0;
+    --space-1: .5rem;  /* 8px */
+    --space-4: 2rem;   /* 32px */
+}
+
+/* Styles for the flex layout based tabs */
+amp-selector[role=tablist].tabs-with-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+amp-selector[role=tablist].tabs-with-flex [role=tab] {
+    flex-grow: 1;
+    /* custom styling, feel free to change */
+    text-align: center;
+    padding: var(--space-1);
+}
+amp-selector[role=tablist].tabs-with-flex [role=tab][selected] {
+    outline: none;
+    /* custom styling, feel free to change */
+    border-bottom: 2px solid var(--color-primary);
+}
+amp-selector[role=tablist].tabs-with-flex [role=tabpanel] {
+    display: none;
+    width: 100%;
+    order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+    /* custom styling, feel free to change */
+    padding: var(--space-4);
+}
+amp-selector[role=tablist].tabs-with-flex [role=tab][selected] + [role=tabpanel] {
+    display: block;
+}
+
+/* Styles for the selector based tabs */
+amp-selector[role=tablist].tabs-with-selector {
+    overflow-x: auto;
+    width: 100%;
+}
+amp-selector[role=tablist].tabs-with-selector [role=tab][selected] {
+    outline: none;
+    /* custom styling, feel free to change */
+    color: #355FF1;
+}
+amp-selector[role=tablist].tabs-with-selector {
+    display: flex;
+}
+amp-selector[role=tablist].tabs-with-selector [role=tab] {
+    /* custom styling, feel free to change */
+    text-align: center;
+    padding: var(--space-1);
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 5px 0;
+    transition: 0.3s;
+    font-weight: 600;
+    color: #000;
+    white-space: nowrap;
+}
+amp-selector.tabpanels [role=tabpanel] {
+    display: none;
+    /* custom styling, feel free to change */
+    padding: 1em 0;
+}
+amp-selector.tabpanels [role=tabpanel][selected] {
+    outline: none;
+    display: block;
+}
+.tabs-with-selector.tab::-webkit-scrollbar {
+    background-color: #fff;
+    height: 5px;
+}
+.tabs-with-selector.tab::-webkit-scrollbar-thumb {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
+}

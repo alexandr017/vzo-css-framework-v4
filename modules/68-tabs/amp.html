@@ -1,0 +1,11 @@
+<amp-selector class="tabs-with-selector tab" role="tablist" on="select:myTabPanels.toggle(index=event.targetOption, value=true)" keyboard-select-mode="focus">
+    <div id="sample3-tab1" role="tab" aria-controls="sample3-tabpanel1" option="0" selected>Tab one</div>
+    <div id="sample3-tab2" role="tab" aria-controls="sample3-tabpanel2" option="1">Tab two</div>
+    <div id="sample3-tab3" role="tab" aria-controls="sample3-tabpanel3" option="2">Tab three</div>
+</amp-selector>
+
+<amp-selector id="myTabPanels" class="tabpanels">
+    <div id="sample3-tabpanel1" role="tabpanel" aria-labelledby="sample3-tab1" option selected>Tab one content... </div>
+    <div id="sample3-tabpanel2" role="tabpanel" aria-labelledby="sample3-tab2" option>Tab two content... </div>
+    <div id="sample3-tabpanel3" role="tabpanel" aria-labelledby="sample3-tab3" option>Tab three content... </div>
+</amp-selector>

@@ -4,7 +4,6 @@
 
 .select {
     position: relative;
-    font-size: .87rem;
 }
 
 .select .selected-item {
@@ -29,7 +28,7 @@
     top: 0;
     right: 0;
     padding: 15px;
-    border-left: 1px solid #E8EEF6;
+    border-left: 1px solid #E5E5E5;
 }
 .select .selected-item.openSelect {
     border-bottom: none;
@@ -62,7 +61,7 @@
     background: #fff;
     cursor: pointer;
     padding: 10px 20px;
-    border-top: 1px solid #E8EEF6;
+    border-top: 1px solid #E5E5E5;
 }
 .select .selected-dropdown .option:last-of-type{
     border-radius: 0 0 5px 5px;

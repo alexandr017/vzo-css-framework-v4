@@ -4,8 +4,7 @@
 }
 
 .getting-offer-num {
-    font-size: 1.875rem;
-    background: #F4F7FB;
+    background: #F7F7F7;
     border-radius: 50%;
     height: 52px;
     width: 52px;
@@ -14,7 +13,7 @@
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    color:#ADBAC4;
+    color: #888888;
     font-weight: 700;
     position: relative;
 }
@@ -24,13 +23,11 @@
 .getting-offer-cont {
     margin-left: 16px;
 }
-.getting-offer-item {
-    position: relative;
-}
+
 .getting-offer-item:not(:last-child) .getting-offer-num::after {
     content: '';
     position: absolute;
-    background:#DCE4EC;
+    background: #E5E5E5;
     width: 2px;
     height: 40px;
     left: 25px;
@@ -39,4 +36,8 @@
 
 .getting-offer-item:not(:first-child) {
     margin-top: 18px;
+}
+
+.getting-offer-item:last-child{
+    margin-left: 25px;
 }

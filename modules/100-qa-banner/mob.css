@@ -1,0 +1,20 @@
+.qa-banner-block {
+    background: url("/v4/images/qa-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.qa-banner-block:after{
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+
+.qa-banner-block .container {
+    z-index: 1;
+}

@@ -1,6 +1,6 @@
 .rating-area-main-block {
-    border-top: 1px solid #E8EEF6;
-    border-bottom: 1px solid #E8EEF6;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
 }
 .rating-area {
     padding: 18px 0 25px;
@@ -13,12 +13,8 @@
 }
 .rating-area .rating-val {
     margin-top: 10px;
-    color: #95A5B0;
 }
 
 .rating-area .rating-wrap {
     justify-content: center;
-}
-.rating-area .h5 {
-    font-size: 0.875rem;
 }

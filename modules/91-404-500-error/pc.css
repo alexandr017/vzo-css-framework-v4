@@ -10,7 +10,7 @@
     max-width: 420px;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
 }
 .error-block-cat {
     background-color: #F3F8FF;
@@ -20,4 +20,8 @@
 .error-block-categories {
     flex-wrap: wrap;
     margin: 1em 0;
+}
+
+.error-block-content {
+    border: 1px solid #E5E5E5;
 }
