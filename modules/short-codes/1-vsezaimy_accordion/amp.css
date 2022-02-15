@@ -5,6 +5,9 @@
     align-items: center;
     font-weight: 600;
     justify-content: space-between;
+    border: 1px solid #E8EEF6;
+    margin-bottom: 16px;
+    border-radius: 5px;
 }
 
 .accordion .accordion-title {
