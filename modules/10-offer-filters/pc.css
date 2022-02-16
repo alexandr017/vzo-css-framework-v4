@@ -5,6 +5,7 @@
 .offer-filter-wrap {
     width: 255px;
     margin: 14px 0;
+    min-height: 46px;
 }
 
 .offer-filter-wrap:not(:nth-child(4n+4)){
