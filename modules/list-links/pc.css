@@ -1,0 +1,16 @@
+.list-links {
+    padding: 30px 35px;
+    background: #fff;
+}
+
+.list-links .h3, .list-links ul {
+    margin: 0;
+}
+
+.list-links ul li {
+    padding: 0;
+}
+
+.list-links ul li:before {
+    display: none;
+}
