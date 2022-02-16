@@ -17,8 +17,13 @@
     color: #000;
 }
 
-.user-account-dashboard-item:hover {
-    background: #F6F8FB;
+.user-account-dashboard-item:hover a{
+    color: #355FF1;
+
+}
+
+.user-account-dashboard-item:hover a svg path {
+    stroke: #355FF1;
 }
 
 .user-account-dashboard-item svg {

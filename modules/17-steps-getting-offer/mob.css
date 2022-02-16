@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px auto;
+    margin: 20px 0;
     color: #888888;
     font-weight: 700;
     position: relative;
@@ -39,5 +39,5 @@
 }
 
 /*.getting-offer-item:last-child{*/
-    /*margin-left: 25px;*/
+/*margin-left: 25px;*/
 /*}*/

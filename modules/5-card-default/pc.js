@@ -1,13 +1,13 @@
-
+function cardSliderInit (elem){
     var cardSliderBlocks = document.querySelectorAll(".card-slider-init:not(.jsSlideMainBlock)");
     for (let i=0; i<cardSliderBlocks.length;i++) {
-        cardSliderBlocks[i].classList.add('card-slider');
+        cardSliderBlocks[i].classList.add('card-slider'+elem.id);
         slideShow({
-            element:'.card-slider',
+            element:'.card-slider'+elem.id,
             slidesToShow:4,
             slidesToScroll:1,
-            circleScroll:true,
-            height:'120',
+            circleScroll:false,
+            height:'104',
             responsive: [
                 {
                     breakpoint: 1200,
@@ -136,6 +136,8 @@ function addOrRemoveFromFavorites(card) {
                 favorites = localStorage.removeItem('vzo');
                 if($$('.block-with-back-link').length != 0){
                     $$('.block-with-back-link')[0].style.display = 'block';
+                    $$('.lead')[0].style.display = 'block';
+                    $$('#favorites-clear')[0].style.display = 'none';
                 }
             } else {
                 favorites = localStorage.setItem('vzo',favoritesArr);
@@ -145,8 +147,10 @@ function addOrRemoveFromFavorites(card) {
                 if(favoritesArr != null && favoritesArr.length != 0) {
                     $$('.fav-items-count')[0].innerText = favoritesArr.length;
                     $$('.fav-items-count')[0].style.display = 'flex';
+                    $$('.icon-for-show-notice')[0].classList.add('show-favorites-cards');
                 } else {
                     $$('.fav-items-count')[0].style.display = 'none';
+                    $$('.icon-for-show-notice')[0].classList.remove('show-favorites-cards');
                 }
             }
             if(window.location.href.indexOf('favorites') != -1) {
@@ -156,6 +160,7 @@ function addOrRemoveFromFavorites(card) {
         })
     }
 }
+
 function addCardsBtnsEvents() {
     $$('.card').forEach((card) => {
         addTabsClick(card);
@@ -196,5 +201,6 @@ document.addEventListener('DOMContentLoaded', function(){
         addCardsBtnsEvents();
     }
 });
+
 
 

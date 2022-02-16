@@ -13,11 +13,14 @@
 
 .nav-links {
     cursor: pointer;
-    margin: 0 25px;
-    padding: 5px 10px;
+    padding: 5px 10px 5px 0;
     transition: 0.3s;
     font-weight: 600;
     color: #000;
+}
+
+.nav-links:not(:last-child){
+    margin: 0 25px 0 0;
 }
 
 .nav-links.active,.nav-links:hover {

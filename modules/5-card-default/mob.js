@@ -154,29 +154,31 @@ function addCardsBtnsEvents() {
         addCardsMoreBtnsClick(card);
         addToCompareBtnsClick(card);
         let cardIconsBlock = card.getElementsByClassName('card-icons')[0];
-        if($$('.compare-block').length != 0) {
-            var catId = $$('.compare-block')[0].attributes['data-cat'].value;
-            var comparingItems = localStorage.getItem('vzo_compare'+ catId);
-            if(comparingItems != null) {
-                comparingItems = comparingItems.split(',');
-            }
-            if(comparingItems != null && comparingItems.indexOf(card.id.substr(5)) != -1) {
-                cardIconsBlock.classList.add('addedToCompare')
-            } else {
-                if(cardIconsBlock.classList.contains('addedToCompare')) {
-                    cardIconsBlock.classList.remove('addedToCompare');
+        if(cardIconsBlock != undefined) {
+            if ($$('.compare-block').length != 0) {
+                var catId = $$('.compare-block')[0].attributes['data-cat'].value;
+                var comparingItems = localStorage.getItem('vzo_compare' + catId);
+                if (comparingItems != null) {
+                    comparingItems = comparingItems.split(',');
+                }
+                if (comparingItems != null && comparingItems.indexOf(card.id.substr(5)) != -1) {
+                    cardIconsBlock.classList.add('addedToCompare')
+                } else {
+                    if (cardIconsBlock.classList.contains('addedToCompare')) {
+                        cardIconsBlock.classList.remove('addedToCompare');
+                    }
                 }
             }
-        }
-        var favorites = localStorage.getItem('vzo');
-        if(favorites != null) {
-            favorites = favorites.split(',');
-        }
-        if(favorites != null && favorites.indexOf(card.id.substr(5)) != -1) {
-            cardIconsBlock.classList.add('addedToFavorites')
-        } else {
-            if(cardIconsBlock.classList.contains('addedToFavorites')) {
-                cardIconsBlock.classList.remove('addedToFavorites');
+            var favorites = localStorage.getItem('vzo');
+            if (favorites != null) {
+                favorites = favorites.split(',');
+            }
+            if (favorites != null && favorites.indexOf(card.id.substr(5)) != -1) {
+                cardIconsBlock.classList.add('addedToFavorites')
+            } else {
+                if (cardIconsBlock.classList.contains('addedToFavorites')) {
+                    cardIconsBlock.classList.remove('addedToFavorites');
+                }
             }
         }
     });
