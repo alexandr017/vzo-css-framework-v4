@@ -82,6 +82,10 @@
     font-weight: 600;
 }
 
+.card-head-intro svg {
+    vertical-align: -2px;
+}
+
 .card .card-header .card-top-inner .block-row .card-cont {
     font-size: 0.875rem;
     line-height: 1.2rem;
@@ -416,7 +420,7 @@
     stroke: #E5E5E5;
     cursor: pointer;
 }
-.addedToCompare .addToCompare path, .addedToFavorites .addToFavorites path{
+.addedToCompare .addToCompare path, .addedToFavorites .addToFavorites path, .card-icons svg:hover path{
     stroke:#355FF1;
 }
 
