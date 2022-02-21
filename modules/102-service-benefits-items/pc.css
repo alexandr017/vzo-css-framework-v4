@@ -1,0 +1,13 @@
+service-benefits-item {
+    width: 32%;
+    padding: 1em;
+    background-color: #F7F7F7;
+    margin-bottom:1em;
+    text-align: left;
+    height: 200px;
+    border: 1px solid #E5E5E5;
+}
+.service-benefits-items {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

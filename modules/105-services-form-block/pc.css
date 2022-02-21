@@ -1,0 +1,41 @@
+.services-form-block {
+    padding: 32px 30px;
+    background: #fff;
+    font-size: 1rem;
+}
+
+.services-form-block form {
+    box-sizing: border-box;
+}
+
+.services-input {
+    padding: 6px 19px;
+    outline: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.728rem;
+}
+
+.services-form-block input {
+    display: block;
+}
+
+.services-form-block input:not(:first-of-type){
+    margin-top: 16px;
+}
+
+.services-bottom-block{
+    align-items: center;
+    margin-top: 27px;
+}
+
+.services-confirm{
+    max-width: 507px;
+}
+
+.services-confirm a{
+    color: #888;
+    text-decoration: underline;
+}

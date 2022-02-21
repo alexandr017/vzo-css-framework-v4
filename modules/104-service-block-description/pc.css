@@ -1,0 +1,18 @@
+.service-block-description {
+    justify-content: space-between;
+    padding: 1em;
+    position: relative;
+    margin: 1.5em 0;
+    background: #fff;
+}
+.service-block-description-img {
+    max-width: 460px;
+}
+.service-block-description-text {
+    padding: 0 2em;
+    width: 60%;
+}
+.service-block-description .btn {
+    position: absolute;
+    bottom: 2.5em;
+}
