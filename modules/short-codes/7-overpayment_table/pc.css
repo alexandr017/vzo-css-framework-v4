@@ -10,24 +10,13 @@
     justify-content: center;
 }
 
-.overpayment-block .overpayment-button-wrap .loadMore,
-.overpayment-block .overpayment-button-wrap .loadLess {
+.overpayment-block .overpayment-button-wrap .loadTableMoreRow,
+.overpayment-block .overpayment-button-wrap .hideTableLessRow {
     align-items: center;
 }
-.overpayment-block .overpayment-button-wrap .loadMore svg,
-.overpayment-block .overpayment-button-wrap .loadLess svg{
+.overpayment-block .overpayment-button-wrap .loadTableMoreRow svg,
+.overpayment-block .overpayment-button-wrap .hideTableLessRow svg{
     margin-left: 5px;
-}
-
-
-.overpayment-block .table-horizontal tbody tr td,
-.overpayment-block .table-horizontal thead tr td{
-    border-bottom: 1px solid #DCE4EC;
-}
-
-.overpayment-block .table-horizontal tbody tr td:first-of-type,
-.overpayment-block .table-horizontal thead tr td:first-of-type{
-    border-right:1px solid #DCE4EC;
 }
 
 .hiddenTableStyle {
@@ -38,6 +27,6 @@
     width: 0;
 }
 
-.overpayment-block .loadLess{
+.overpayment-block .hideTableLessRow{
     display: none;
 }

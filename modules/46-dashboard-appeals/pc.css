@@ -11,13 +11,12 @@
 .appeal-dashboard-top-line-el {
     justify-content: space-between;
     align-items: center;
-    color:#95A5B0;
-    font-size: .87rem;
+    color:#888;
 }
 
 .appeal-tag {
-    background: #F3F8FF;
-    border-radius: 5px;
+    background: #F7F7F7;
+    border-radius: 3px;
     padding: 3px 14px;
 }
 
