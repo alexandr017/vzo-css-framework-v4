@@ -1,0 +1,21 @@
+.answer-to-questions-items {
+    justify-content: space-between;
+}
+.answer-questions-item {
+    width: 32%;
+    border: 1px solid #E5E5E5;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.answer-questions-item .btn {
+    margin: 2em 0;
+}
+.answer-questions-item .h3 {
+    font-size: 1.5rem;
+}
+
+.answer-phone-number {
+    font-size: 1.5rem;
+}

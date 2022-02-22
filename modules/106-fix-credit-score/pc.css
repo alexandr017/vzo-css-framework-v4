@@ -1,0 +1,19 @@
+.fix-credit-score {
+    border: 1px solid #E5E5E5;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.fix-credit-left-block {
+    padding: 30px 49px;
+    max-width: 545px;
+}
+
+.fix-credit-left-block h2 {
+    margin-top: 0;
+}
+
+.fix-credit-score-btn-wrap {
+    margin-top: 30px;
+    justify-content: space-between;
+}
