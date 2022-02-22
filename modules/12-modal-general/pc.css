@@ -3,7 +3,7 @@
     position: absolute;
     left: -9999px;
     top: -9999px;
-    background: rgba(34, 39, 53, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     padding: 5% 0;
 
 }
@@ -65,12 +65,12 @@
 
  .modal-content .modal-block-container .modal-form__input,
  .modal-content .modal-block-container textarea{
-    background: #F6F8FB;
     border-radius: 10px;
     width: 410px;
     padding: 15px 20px;
     outline: none;
     border: none;
+    background: #F7F7F7;
 }
 
 
@@ -82,7 +82,7 @@
 
 .modal-content .modal-block-container .modal-form__input::-webkit-input-placeholder,
 .modal-content .modal-block-container textarea::-webkit-input-placeholder{
-    color: #95A5B0;
+    color: #888;
 }
 
 .modal-content .modal-block-container textarea:focus,

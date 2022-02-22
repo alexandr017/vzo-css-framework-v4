@@ -1,0 +1,339 @@
+table {
+    table-layout:fixed;
+    width:100%;
+    margin: 30px 0;
+    max-width: 100%;
+    border-spacing: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+table tr td:last-of-type {
+    align-items:center;
+}
+
+table td:not(.table-horizontal td, .table-border-part td), table th:not(.table-horizontal th, .table-border-part th ){
+    padding: 14px 0 14px 65px;
+}
+
+table.table-info, table.table-limit, table.table-border-part{
+    border: 1px solid #E5E5E5;
+    border-radius: 15px;
+}
+
+
+table.table-info tr td:first-of-type {
+    width: 30%;
+}
+
+
+table.table-limit td {
+    text-align: center;
+}
+
+table.table-limit .main-td {
+    background: #E5E5E5;
+}
+
+table.table-limit td:first-child {
+    text-align: left;
+}
+
+table.table-limit td th svg{
+    margin-left: 10px;
+}
+
+table.table-limit tr th svg:active{
+    transform: rotate(180deg);
+}
+
+
+table.table-limit tr:not(:last-of-type) td,
+table.table-info tr:not(:last-of-type) td,
+table.table-horizontal tr td,
+table.table-horizontal tr th{
+    border-bottom:  1px solid #E5E5E5;
+}
+
+table.table-vertical tr td:first-of-type{
+    width: 30%;
+    color: #888;
+}
+
+.table-horizontal td, .table-horizontal th, table.table-border-part td, table.table-border-part th{
+    padding: 14px 0;
+    text-align: center;
+}
+.table-horizontal tbody tr td:first-of-type,
+.table-horizontal thead tr td:first-of-type,
+table.table-border-part tbody tr td:first-of-type,
+table.table-border-part thead tr th:first-of-type{
+    border-right: 1px solid #E5E5E5;
+}
+
+table.table-border-part thead tr th {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+table .main-td {
+    font-weight: bold;
+}
+
+
+/*div table*/
+
+.table-info-block {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 15px;
+}
+
+.table-info-block .tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-info-block .tr .td {
+    padding: 14px 30px;
+}
+
+.table-info-block .tr .td svg {
+    margin-left: 10px;
+}
+
+.table-info-block .tr .td:first-of-type {
+    width: 30%;
+    background: #E1EDFF;
+    font-weight: 600;
+}
+.table-vertical-block .tr:first-of-type .td,
+.table-info-block .tr:first-of-type .td {
+    padding-top: 25px;
+}
+
+.table-vertical-block .tr:last-of-type .td,
+.table-info-block .tr:last-of-type .td{
+    padding-bottom: 25px;
+}
+
+.table-info-block .tr .border-radius-1,
+.table-limit-block .border-radius-1,
+.light-border  .border-radius-1{
+    border-radius: 15px 0 0 0;
+}
+
+.table-info-block .tr .td:last-of-type {
+    width: 70%;
+}
+
+/*table 2*/
+
+.table-limit-block {
+    width: 1110px;
+    margin: 30px 0 30px 0;
+    border-radius: 15px;
+}
+
+.table-limit-block .tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-limit-block .tr .td:first-of-type {
+    width:35%;
+}
+
+.table-limit-block .tr:not(:last-of-type):not(:first-of-type),
+.light-border .tr:not(:last-of-type):not(:first-of-type),
+.table-info-block .tr:not(:last-of-type) .td:last-of-type {
+    border-bottom:  1px solid #F3F5F7;
+}
+
+.table-limit-block .tr .th{
+    border-bottom: none;
+    font-weight: 700;
+    background: #E1EDFF;
+    float: right;
+}
+
+.table-limit-block .border-radius-2,
+.light-border .border-radius-2 {
+    border-radius: 0 15px 0 0;
+}
+
+.table-limit-block .tr .th svg {
+    margin-left: 5px;
+    cursor: pointer;
+    width: 8px;
+    height: 6px;
+}
+
+.table-limit-block .tr .th svg:active {
+    transform: rotate(180deg);
+}
+
+.table-limit-block .tr .td {
+    padding: 1em 2em;
+    width: 25%;
+}
+
+/*table 3*/
+
+.table-vertical-block {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.table-vertical-block .tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-vertical-block .tr .th {
+    background: #E5E5E5;
+    border-bottom: none;
+    font-weight: 700;
+}
+
+.table-vertical-block .tr .td {
+    padding: 10px 0 10px 30px;
+    width: 23%;
+}
+
+/*table 4*/
+
+.light-border {
+    margin: 30px 0;
+    border-radius: 15px;
+}
+
+.light-border .tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.light-border .tr .td {
+    padding: 1.2em;
+    width: 50%;
+    text-align: center;
+}
+
+.light-border .tr .th {
+    background: #E5E5E5;
+    font-weight: 700;
+}
+
+
+/*js dataTables*/
+.jsTableBlock .main-td:not(:first-of-type) {
+    width: 200px;
+}
+.jsTableBlock .js-table {
+    table-layout: fixed;
+    min-width: 760px;
+}
+.jsTableBlock {
+    margin: 6em 0 2em 0;
+    position: relative;
+}
+.jsTableBlock .total_cards_table_js {
+    margin: 0;
+}
+.jsTbScroll {
+    overflow-x: auto;
+}
+.sortingArrowsBlock {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    padding-right: 20px;
+}
+.sortingArrows {
+    display: flex;
+    flex-wrap: wrap;
+    width: 12px;
+    height: 30px;
+    align-items: center;
+    margin-left: 10px;
+}
+.data-table-pagination {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    color: #767F85;
+}
+.data-table-pagination:not(.disabledPage) {
+    cursor: pointer;
+}
+.data-table-pagination.disabledPage {
+    pointer-events: none;
+}
+.data-table-pagination.currentPage {
+    border: 1px solid #767F85;
+    pointer-events: none;
+}
+.data-table-pagination:not(.currentPage):not(.disabledPage):hover {
+    border:1px solid #767F85;
+}
+
+.jsTableBlock {
+    padding-top: 4em;
+    background: #E5E5E5;
+    border: 1px solid #E5E5E5;
+}
+.jsTableBlock .dataTablesFooter .data-table-pages {
+    text-align: center;
+    background-color: white;
+    padding-right: 4em;
+    border-radius: 0 0 15px 15px;
+}
+
+.jsTableBlock tbody {
+    background: #fff;
+}
+.searchInp {
+    margin: 0 2em 2em 2em;
+    height: 45px;
+    padding: 0 2em 1px;
+    width: 100%;
+    background-color: #FFF !important;
+    border: none;
+
+}
+.searchInp::placeholder {
+    color: #888;
+}
+.searchInp:focus {
+    outline: none;
+}
+.searchBlock {
+    display: flex;
+    float: right;
+    width: 100%;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    margin-top: -3em;
+}
+.searchBlock svg {
+    position: absolute;
+    top: 1em;
+}
+.searchBlock .searchMagnifier {
+    right: 4em;
+}
+.searchBlock .searchReset {
+    right: 2em;
+    cursor: pointer;
+    display: none;
+}
+.dataTableHiddenTd, .jsTableBlock .sortingArrows .jsTableDisplayNone,.display_none {
+    display: none;
+}
+.activeSortItem {
+    color: #007bff;
+}

@@ -1,0 +1,13 @@
+.services-description {
+    margin-top: 45px;
+}
+
+.service-block-description {
+    padding: 1em;
+    margin: 1em 0;
+    background: #fff;
+}
+
+.service-block-description img {
+    width: 100%;
+}
