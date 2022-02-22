@@ -99,6 +99,9 @@ function paintPages(pagesCount,pageNum) {
     }
     $$('.pagination')[0].innerHTML = pagesInner;
     addPagesClick();
+    if (typeof loadCardHiddenPart === "function") {
+        loadCardHiddenPart();
+    }
     return;
 }
 document.addEventListener('DOMContentLoaded', function(){
