@@ -1,0 +1,132 @@
+.offers-list .card:first-child{
+    margin-top: 0;
+}
+
+.card {
+    width: 100%;
+    margin: 30px 0;
+    background: #fff;
+}
+
+.card-info-tag{
+    background: #E5E5E5;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 0;
+    width:100%;
+}
+
+.card-header {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 20px 16px;
+}
+
+.card-header .logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    max-width: fit-content;
+}
+
+.card-top-inner {
+    margin-left: 16px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-row-wrap {
+    padding: 16px;
+}
+
+.block-row {
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.card-cont {
+    color: #888;
+}
+
+.card-head-intro {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+.card-top-btn-wrap {
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.card-top-btn-wrap .btn {
+    width:100%;
+}
+
+.card .card-body {
+    margin-top: -20px;
+    padding: 16px;
+}
+
+.card .card-body .card-bottom-line {
+    display: flex;
+    justify-content:space-between;
+    padding-right: 95px;
+}
+.block-row {
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.card-cont {
+    color: #888;
+}
+
+.card-head-intro {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+.card-toggle-button {
+    width:32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E5E5E5;
+}
+.card .hidden-card-info {
+    display:none;
+}
+.line-scale {
+    margin: 1em 0;
+}
+.line-scale .line-scale-title {
+    font-size: 0.9375rem;
+}
+
+.line-scale .line-scale-print {
+    background: #E8EEF6;
+}
+
+.line-scale .line-scale-value {
+    width: 12%;
+    text-align: right;
+}
+
+.line-scale .card-progress {
+    background: #888888;
+    height: 6px;
+    display: block;
+}
+.card-review-rating-block {
+    align-items: center;
+}
+.card-review-rating-block a {
+    margin-left: 1em;
+}
+.card-review-rating-block svg {
+    margin-right: 0.5em;
+}
+.card-hidden-part-open:checked + label + .hidden-card-info {
+    display: block;
+}
+.card-hidden-part-open:checked + label,.card-hidden-part-open {
+    display: none;
+}
