@@ -3,6 +3,7 @@ var itemsArrAfterSearch = false;
 if($$('.offers-list').length != 0) {
     const offersListItems = $$('.offers-list')[0].children;
     offersListItemsArr = [...offersListItems];
+    window.itemsArr = [...offersListItems];
 }
 function addPagesClick() {
     if($$('.pagination-inner-link').length != 0) {

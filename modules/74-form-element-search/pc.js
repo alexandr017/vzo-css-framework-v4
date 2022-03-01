@@ -18,6 +18,7 @@ function searchItems(searchHint){
 
         var pagesCount = Math.ceil(offersListItemsArrAfterSearch.length/10);
         if(offersListItemsArrAfterSearch.length != 0) {
+            window.itemsArr = offersListItemsArrAfterSearch;
             page(1,offersListItemsArrAfterSearch);
             $$('.pagination')[0].style.display = 'flex';
         } else {
