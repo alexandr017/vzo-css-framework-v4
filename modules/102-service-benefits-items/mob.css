@@ -1,0 +1,11 @@
+.service-benefits-item {
+    padding: 1em;
+    background-color: #F7F7F7;
+    margin-bottom:1em;
+    text-align: left;
+    border: 1px solid #E5E5E5;
+}
+
+.service-benefits-item h5 {
+    margin-top: 0;
+}

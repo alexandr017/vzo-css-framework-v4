@@ -1,0 +1,36 @@
+.modal-services-call-back .modal-container .modal-form{
+    width:100%;
+    box-sizing: border-box;
+}
+
+.modal-services-call-back .modal__description {
+    margin: 20px auto;
+    font-size: 1.125rem;
+}
+
+.modal-services-call-back .modal-container .modal-form input {
+    margin-top: 16px;
+}
+
+.modal-services-call-back .modal-container .modal-form textarea{
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+}
+
+.modal-services-call-back .modal-container .modal-form textarea {
+    height: 135px;
+    resize: none;
+    margin-top: 16px;
+}
+
+.modal-services-call-back .modal-container .modal-form .btn {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.modal-services-call-back .modal-container .modal-form .services-confirm {
+    font-size: .75rem;
+}

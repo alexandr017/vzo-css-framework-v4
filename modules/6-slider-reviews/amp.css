@@ -1,38 +1,58 @@
-.our-expert-slider {
-    margin: 30px 0 30px 0;
+.reviews .h2{
+    margin-bottom: 30px;
+}
+.review-block {
+    padding-bottom: 2em;
+}
+.review-slider{
     overflow-y: auto;
 }
 
-.expert-check-icon {
-    position: absolute;
-    margin-left: 50px;
-    margin-top: -140px;
-}
 
-.expert-inner-block {
-    position: relative;
-    padding: 24px;
-    background: #fff;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 252px;
+.review-inner-block {
+    padding: 30px;
     flex-shrink: 0;
-    margin-right: 16px;
+    /*width: 252px;*/
+    /*margin-right: 16px;*/
+    background: #fff;
 }
 
-.expert-name {
-    font-weight: bold;
-    margin:10px 0;
-    white-space: nowrap;
+.rating-company-name {
+    font-weight: 600;
 }
 
-.expert-position {
-    text-align: center;
-    display: -webkit-box;
-    max-width: 240px;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+.review-info .review-name {
+    font-weight: 600;
+    display: block;
 }
 
+.review-content {
+    height: 200px;
+    overflow-y: auto;
+}
+
+.review-content::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+    height: 21px;
+}
+.background-2 .review-content::-webkit-scrollbar {
+    background-color: #fff;
+}
+.review-content:hover::-webkit-scrollbar-thumb {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
+}
+
+.review__button_show {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+}
+.rating-company-name a, .review-name {
+    font-size: 0.9375rem;
+}
+.review-info {
+    font-size: 0.9375rem;
+}

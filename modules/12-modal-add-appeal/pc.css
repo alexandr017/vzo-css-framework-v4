@@ -1,0 +1,13 @@
+.appeal_theme {
+    width: 100%;
+    margin-top: 2em;
+    padding: 6px 19px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.728rem;
+}
+.modal-content .modal-block-container textarea.appeal_message {
+    width: 100%;
+}

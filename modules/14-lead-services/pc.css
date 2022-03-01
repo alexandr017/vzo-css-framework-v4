@@ -1,0 +1,21 @@
+.services-lead-block {
+    margin-bottom: 100px;
+}
+
+.services-lead-block .services-title-block .services-title {
+    width:800px;
+}
+
+.services-lead-block .services-title-block .services-desc {
+    width:400px;
+    margin-top: 36px;
+}
+
+.services-lead-block .services-title-block .btn {
+    margin-top:38px;
+}
+
+.services-lead {
+    display: flex;
+    align-items: flex-end;
+}

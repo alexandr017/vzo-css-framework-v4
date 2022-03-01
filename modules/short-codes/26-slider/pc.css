@@ -1,0 +1,9 @@
+.slider-short-code img {
+    display: block;
+    margin: auto;
+    max-height: 590px;
+    width: auto;
+}
+.slider-short-code .jsSlideContent .jsSlideItem {
+    text-align: center;
+}

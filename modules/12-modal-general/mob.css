@@ -33,6 +33,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    float: right;
 }
 
 .modal-content .modal-block-container .modal-form {
@@ -57,7 +58,7 @@
     box-sizing: border-box;
     padding: 15px 20px;
     outline: none;
-    border: 1px solid #DCE4EC;
+    border: 1px solid #E5E5E5;
 }
 
 
@@ -70,13 +71,13 @@
 
 .modal-content .modal-block-container .modal-form__input::-webkit-input-placeholder,
 .modal-content .modal-block-container textarea::-webkit-input-placeholder{
-    color: #95A5B0;
+    color: #888;
 }
 
 .modal-content .modal-block-container textarea:focus,
 .modal-content .modal-block-container input:focus {
     background: #fff;
-    border: 1px solid #222735;
+    border: 1px solid #000;
 }
 
 .modal-btn-wrap {

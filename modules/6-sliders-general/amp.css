@@ -1,0 +1,41 @@
+.amp-carousel-slide amp-img {
+    max-width: 320px;
+    margin: 0 auto;
+}
+.amp-carousel-button-prev, .amp-carousel-button-next {
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 40%;
+    bottom: 60px;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    z-index: 1;
+    border-radius: 50px;
+}
+.amp-carousel-button-prev {
+    background: url(/v4/images/prev.svg) no-repeat center center;
+    background-position-y: -8px;
+    left: 0;
+}
+.amp-carousel-button-next {
+    background: url(/v4/images/next.svg) no-repeat center center;
+    background-position-y: -8px;
+    right: 0;
+}
+.amp-carousel-button-next:hover {
+    background: url(/v4/images/next-hover.svg) no-repeat center center;
+    border: none;
+}
+.amp-carousel-button-prev:hover {
+    background: url(/v4/images/prev-hover.svg) no-repeat center center;
+    border: none;
+}
+.i-amphtml-carousel-slide-item>* {
+    max-width: 320px;
+}
