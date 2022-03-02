@@ -16,9 +16,32 @@
 .top-slider-item {
     height: 100%;
     width: 100%;
-    background: linear-gradient(112.57deg, #D2E4FF 35.32%, #DEEBFF 88.15%);
     border-radius: 20px;
     flex-shrink: 0;
+}
+
+.slide1{background: linear-gradient(128.74deg, #ABEBFF 27.74%, #1DBDE2 78%);}
+.slide2{background: linear-gradient(128.74deg, #FFD98F 27.74%, #E6AA50 78%);}
+.slide3{background: linear-gradient(128.74deg, #B4EDFF 27.74%, #52BFD7 78%);}
+.slide4{background: linear-gradient(128.74deg, #CCD7FF 27.74%, #95A5F7 78%);}
+.slide5{background: linear-gradient(128.74deg, #D2DD6F 27.74%, #95B139 78%);}
+.slide6{background: linear-gradient(128.74deg, #FFB488 27.74%, #E0783D 78%);}
+.slide7{background: linear-gradient(128.74deg, #FFDA7B 27.74%, #F5B73F 78%);}
+.slide8{background: linear-gradient(128.74deg, #B4EDFF 27.74%, #52BFD7 78%);}
+
+.slide1 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/1.png');width: 44%;margin-right: 0;}
+.slide2 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/2.png');width: 90%;margin-right: 25px;}
+.slide3 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/3.png');width: 70%;margin-right: 30px;}
+.slide4 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/4.png');width: 80%;margin-right: -1px;}
+.slide5 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/5.png');width: 40%;margin-right: 75px;}
+.slide6 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/6.png');width: 42%;margin-right: 65px;}
+.slide7 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/7.png');width: 46%;margin-right: 45px;}
+.slide8 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/8.png');width: 33%;margin-right: 25px;}
+
+.top-slider-item .top-slider-wrap-block .top-slider-inner-img-el {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .top-slider-item .top-slider-wrap-block {
@@ -39,12 +62,7 @@
     margin-top: 40px;
 }
 
-.top-slider-item .top-slider-wrap-block .top-slider-inner-img-el {
-    background-image:url("/v4/images/main-slider-bg.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    width: 50%;
-}
+
 
 
 .dots-wrap-block {
