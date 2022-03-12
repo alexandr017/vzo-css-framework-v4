@@ -9,7 +9,7 @@ selectMenu.forEach(a => {
         a.classList.toggle('openSelect');
     })
 });
-if($$('.sort')[0].classList.contains('with-pagination')) {
+if($$('.sort').length = 0 && $$('.sort')[0].classList.contains('with-pagination')) {
     var options = $$('.sort')[0].getElementsByClassName('option');
     for(let i =0;i<options.length;i++) {
         options[i].addEventListener('click',function (e) {
@@ -27,12 +27,14 @@ if($$('.sort')[0].classList.contains('with-pagination')) {
         target =  target.closest('.option');
         const order = (target.dataset.type == 'up') ? -1 : 1;
         var arrForSort = [];
-        var elementsBlock = target.closest('.sort').nextElementSibling;
+        var elementsBlock = $$('.offers-list')[0];
         if(window.itemsArr) {
             arrForSort = window.itemsArr;
         } else {
-            arrForSort = elementsBlock.children;
+            arrForSort = [].slice.call(elementsBlock.children);
         }
+        console.log(arrForSort);
+
         const collator = new Intl.Collator(['en', 'ru'], { numeric: true });
         const comparator = (order) => (a, b) => {
             var firstItem  = (a.querySelector("[data-"+target.dataset.field+"]") != null) ? a.querySelector("[data-"+target.dataset.field+"]").innerHTML : '0';
@@ -46,10 +48,13 @@ if($$('.sort')[0].classList.contains('with-pagination')) {
         var sortedArr = [];
         sortedArr.push(...[...arrForSort].sort(comparator(order)));
         offersListItemsArr = [...sortedArr];
+        console.log(sortedArr);
         if($$('.pagination').length != 0) {
             page(1,sortedArr);
         } else {
-            elementsBlock.append(sortedArr);
+            sortedArr.forEach((elem)=>{
+                elementsBlock.append(elem);
+            });
         }
     };
 } else {

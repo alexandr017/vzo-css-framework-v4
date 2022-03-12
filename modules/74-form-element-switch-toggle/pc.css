@@ -3,6 +3,7 @@
     position: absolute;
     right: 15px;
     align-items: center;
+    width: 205px;
 }
 
 .switch-toggle-title {

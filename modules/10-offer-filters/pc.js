@@ -27,3 +27,11 @@ offerFiltersBlock.forEach(function (value, index) {
     });
 });
 
+document.addEventListener('click',function (e){
+    if(e.target.closest('.active-offer-filter') == null && $$('.active-offer-filter').length != 0) {
+        var activeOffersBlock = $$('.active-offer-filter');
+        for(let i=0;i<activeOffersBlock.length;i++){
+            activeOffersBlock[i].classList.remove('active-offer-filter');
+        }
+    }
+},false)

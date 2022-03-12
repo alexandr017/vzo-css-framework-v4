@@ -70,7 +70,7 @@ function paintPages(pagesCount,pageNum) {
                 break;
             }
         } else {
-            if(Number(pageNum)+1 < pagesCount){
+            if(Number(pageNum)+1 < pagesCount && Number(pageNum)+2 != pagesCount){
                 pages = '<span class="pagination-inner-link flex">1</span><span disabled="disable" class="pagination-dots flex">...</span><span class="pagination-inner-link flex">'+(Number(pageNum)-1)+'</span><span class="pagination-current-page">'+pageNum+'</span><span class="pagination-inner-link flex">'+(Number(pageNum)+1)+'</span><span disabled="disable" class="pagination-dots flex">...</span><span class="pagination-inner-link flex">'+pagesCount+'</span>';
             } else {
                 pages = '<span class="pagination-inner-link flex">1</span><span disabled="disable" class="pagination-dots flex">...</span>';
