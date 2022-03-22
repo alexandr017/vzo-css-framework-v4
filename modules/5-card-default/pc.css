@@ -222,12 +222,11 @@
     padding: 5px 0;
     transition: 0.3s;
     font-weight: 600;
-    color: #95A5B0;
-    font-size: .875rem;
+    color: #888888;
 }
 
 .hidden-card-info .tab .tab-links.on {
-    color: #355FF1;
+    color: #000000;
     border-bottom: none;
 
 }
@@ -236,8 +235,6 @@
     display:block;
     border-top: 1px solid #E5E5E5;
     border-bottom: 1px solid #E5E5E5;
-    font-size: 0.875rem;
-
 }
 
 .hidden-card-info .tabs-items .tab-content {
@@ -347,6 +344,8 @@
     text-align: center;
     border: 1px solid #E5E5E5;
     margin: 0 8px;
+    height: 100%;
+    padding: 10px;
 }
 
 .card .hidden-card-info .card-slider-block .card-slider-info .card-tooltip{
@@ -409,6 +408,7 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
     margin-right: 5px;
+    position: relative;
 }
 .card-slider-block .jsSlideItem img {
     margin: 0 auto;
@@ -425,8 +425,9 @@
 }
 
 .card-slider-block .jsSlideItem {
-    width: 22% !important;
-    min-width: 22% !important;
+    /*width: 22% !important;*/
+    /*min-width: 22% !important;*/
+    padding: 0;
 }
 
 .card-slider-block .js-slide-btn-left, .card-slider-block .js-slide-btn-right {

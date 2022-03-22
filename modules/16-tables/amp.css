@@ -1,0 +1,28 @@
+table.table-limit {
+    width:100%;
+    border-collapse: collapse;
+    border-top: 1px solid #DCE4EC;
+}
+
+table.table-limit tr.showed-items td, table.table-limit thead th{
+    border-bottom: 1px solid #DCE4EC;
+}
+/*table.table-limit tr.showed-items td:not(:last-of-type), table.table-limit thead th:not(:last-of-type){*/
+/*border-right: 1px solid #DCE4EC;*/
+/*}*/
+
+table.table-horizontal {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.table-limit tr th {
+    padding: 16px 16px 0 0;
+}
+
+table.table-limit tr td {
+    padding: 8px 0;
+}
+.jsTbScroll {
+    overflow-x: auto;
+}

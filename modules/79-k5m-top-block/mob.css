@@ -3,4 +3,19 @@
     background-size: cover;
     padding: 55px 16px;
     color: #fff;
+    position: relative;
+}
+.k5m-top-block:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+}
+.k5m-top-block .k5m-top-block-text {
+    position: relative;
+    z-index: 3;
 }

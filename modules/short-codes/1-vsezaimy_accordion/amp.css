@@ -8,6 +8,7 @@
     border: 1px solid #E8EEF6;
     margin-bottom: 16px;
     border-radius: 5px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .accordion .accordion-title {
