@@ -80,3 +80,9 @@
 .reviews .loadMore, .reviews .loadLess {
     margin: 0 auto;
 }
+
+.star-span {
+    display: inline-block;
+    width: 91px;
+    height: 14px;
+}

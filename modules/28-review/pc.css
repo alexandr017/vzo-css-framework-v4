@@ -196,3 +196,9 @@
     width: 60px;
     height: 60px;
 }
+
+.star-span {
+    display: inline-block;
+    width: 91px;
+    height: 14px;
+}

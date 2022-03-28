@@ -36,6 +36,3 @@
     background: url(/v4/images/prev-hover.svg) no-repeat center center;
     border: none;
 }
-.i-amphtml-carousel-slide-item>* {
-    max-width: 320px;
-}
