@@ -9,9 +9,11 @@ document.addEventListener('DOMContentLoaded', function(){
     if(compareItems != null) {
         setCompareBlockDynamicData(compareItems);
     }
-    $$('.close-compare-block')[0].addEventListener('click', function () {
-        $$('.compare-block')[0].style.display = 'none';
-    })
+    if($$('.close-compare-block').length != 0) {
+        $$('.close-compare-block')[0].addEventListener('click', function () {
+            $$('.compare-block')[0].style.display = 'none';
+        })
+    }
 });
 
 function setCompareBlockDynamicData(compareItemsCount) {

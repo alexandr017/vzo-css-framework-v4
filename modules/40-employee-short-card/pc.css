@@ -38,6 +38,9 @@
     align-items: center;
     margin-top: 40px;
 }
+.employee-short-card-btn-wrap .btn {
+    width: 100%;
+}
 .employee-card-img {
     overflow: hidden;
     max-height: 215px;
@@ -46,14 +49,21 @@
 .employee-card-img svg {
     z-index: 1;
 }
-.employee-card-img img {
+.employee-card-img .image-with-scale {
     -moz-transition: transform 1s;
     -o-transition: transform 1s;
     -webkit-transition: transform 1s;
 }
 
-.employee-card-img img:hover {
+.employee-card-img .image-with-scale:hover {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
+}
+.employee-card-img .circle-img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 2em auto;
 }

@@ -97,7 +97,7 @@ var rangInputs = document.querySelectorAll('.quiz-block input[type=range]');
 for(let i=0;i<rangInputs.length;i++) {
     rangInputs[i].addEventListener('input',function (e) {
         let valOfRangeInp = e.target.value;
-        let closestTextInpBlock = e.target.previousElementSibling;
+        let closestTextInpBlock = e.target.previousElementSibling.previousElementSibling;
         if(closestTextInpBlock.length != 0){
             closestTextInpBlock.innerHTML = valOfRangeInp;
         }
