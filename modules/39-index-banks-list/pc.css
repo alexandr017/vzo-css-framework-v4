@@ -2,6 +2,7 @@
     padding: 1.5em 2em;
     margin: 2em 0;
     justify-content: space-between;
+    align-items: end;
     flex-wrap: wrap;
     background: #fff;
     height: 227px;
@@ -24,7 +25,7 @@
     flex-direction: column;
     line-height: 2rem;
 }
-.bank-name .bank-blue-text, .bank-phone,.bank-k5m-val,.bank-rat-num {
+.bank-name .bank-blue-text, .bank-phone,.bank-k5m-val,.bank-rat-num,.bank-license-val {
     font-weight: 600;
 }
 .bank-rate-val {
@@ -40,7 +41,7 @@
 .bank-cat-item {
     display: inline-block;
     padding: 0.5em 1.5em;
-    background-color:  #F3F8FF;
+    background-color:  #F7F7F7;
     font-size: 0.9rem;
     margin: 0 0.5em 1em 0.5em;
     color: #222735;

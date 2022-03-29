@@ -19,12 +19,12 @@
     padding: 5px 20px 5px 0;
     transition: 0.3s;
     font-weight: 600;
-    color: #000;
+    color: #888888;
     white-space: nowrap;
 }
 
 .tab .tab-links.on{
-    color: #355FF1;
+    color: #000;
 }
 
 .tabs-items .tab-content.on{

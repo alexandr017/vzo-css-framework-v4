@@ -10,12 +10,13 @@
 .news-index-post-block .news-post-link {
     font-weight: 600;
     align-items: center;
+    font-size: 0.875rem;
 }
-.news-post-padding {
-    padding: 1.5em 2em;
+.news-post-padding, .news-post-content-padding {
+    padding: 1.3125rem 2rem;
 }
-.news-post-content-padding {
-    padding: 0.5em 2em;
+.news-index-post-footer {
+    padding: 0 2rem 1.3125rem 2rem;
 }
 .news-index-post-content .news-post-content-padding {
     margin-bottom: 0;
@@ -33,6 +34,7 @@
 }
 .news-index-post-block .new-index-post-date, .news-index-post-block .news-post-rating {
     font-size: 0.9rem;
+    margin-right: 27px;
 }
 .news-index-post-footer {
     color: #95A5B0;
@@ -49,6 +51,9 @@
     justify-content: space-between;
     margin: 0 1em;
     align-items: center;
+}
+.news-index-post-footer .right-block svg {
+    margin-right: 7px;
 }
 .news-index-post-footer .right-block {
     align-items: center;
@@ -106,6 +111,7 @@
 
 .video-post-content-block {
     padding: 15px 20px;
+    color: #fff;
 }
 
 .video-post-block img {

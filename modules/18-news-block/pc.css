@@ -1,18 +1,25 @@
 .news-main-block-left-side .news-cat-item {
     width: 235px;
-    font-weight: 600;
     align-items: center;
     padding: 1em 1.5em;
     margin-bottom: 0.5em;
-    height: 45px;
+    height: 35px;
     color: #888888;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.news-cat-rubrics {
+    padding: 1em 1.5em;
+    font-size: 0.875rem;
+    font-weight: 600;
 }
 .news-item-bg {
     background-color: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    width:45px;
-    height: 45px;
+    width:35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,19 +44,22 @@
 
 
 .news-main-block-left-side {
-    position: fixed;
-    left: 15px;
+    position: sticky;
+    /*margin-left: -200px;*/
     z-index: 1;
-    top: 150px;
+    margin: 130px 0 0 -100px;
     transition: top 0.5s;
-    height: calc(95% - 120px);
+    height:490px;
+    background-color: inherit;
+    width: 280px;
+    /*height: calc(95% - 120px);*/
 }
-.news-main-block-left-side:hover {
-    overflow-y: auto;
-}
+/*.news-main-block-left-side:hover {*/
+/*    overflow-y: auto;*/
+/*}*/
 .news-main-block-right-side {
     width: 655px;
-    margin: auto;
+    margin: 135px auto;
 }
 .news-main-block-content {
     justify-content: space-between;
@@ -57,6 +67,9 @@
 .news-main-block-title {
     padding: 1.5em 2em;
     background-color: #FFFFFF;
+}
+.news-main-block-title p, .news-main-block-title .text-block {
+    font-size: 1.125rem;
 }
 .news-main-block-title .h1 {
     margin-top: 0;
@@ -80,11 +93,10 @@
     position: absolute;
     background-color: #000000;
 }
-.post-menu-icon {
-    width: 36px;
-    height: 36px;
-    background: #ccc;
-    margin-right: 10px;
+.news-item-bg .post-menu-icon {
+    width: 25px;
+    height: 25px;
+    background-size: cover!important;
 }
 .news-main-block-left-side::-webkit-scrollbar {
     width: 5px;
@@ -99,4 +111,25 @@
     height: calc(100% - 1em);
     top: 1em;
     transition: top 0.5s;
+}
+.scroll-page-up .breadcrumbs {
+    position: fixed;
+    top: 60px;
+    background-color: #fff;
+    z-index: 2;
+    width: 100%;
+}
+.scroll-page-up #headerMenu {
+    box-shadow: none;
+}
+.sidebar-more-cats,.sidebar-hide-cats {
+    background-image: url(/v4/images/arrow-down.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 6px;
+    margin: 0 23px 0 12px;
+}
+.sidebar-hide-cats {
+    transform: rotate(180deg);
 }

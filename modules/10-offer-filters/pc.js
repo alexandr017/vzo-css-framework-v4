@@ -31,6 +31,10 @@ document.addEventListener('click',function (e){
     if(e.target.closest('.active-offer-filter') == null && $$('.active-offer-filter').length != 0) {
         var activeOffersBlock = $$('.active-offer-filter');
         for(let i=0;i<activeOffersBlock.length;i++){
+            if(activeOffersBlock[i].getElementsByClassName('filters-arrow-up').length != 0) {
+                activeOffersBlock[i].getElementsByClassName('filters-arrow-up')[0].style.display = 'none';
+                activeOffersBlock[i].getElementsByClassName('filters-arrow-down')[0].style.display = 'block';
+            }
             activeOffersBlock[i].classList.remove('active-offer-filter');
         }
     }

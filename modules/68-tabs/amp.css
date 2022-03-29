@@ -39,7 +39,7 @@ amp-selector[role=tablist].tabs-with-selector {
 amp-selector[role=tablist].tabs-with-selector [role=tab][selected] {
     outline: none;
     /* custom styling, feel free to change */
-    color: #355FF1;
+    color: #000;
 }
 amp-selector[role=tablist].tabs-with-selector {
     display: flex;
@@ -54,7 +54,7 @@ amp-selector[role=tablist].tabs-with-selector [role=tab] {
     padding: 5px 0;
     transition: 0.3s;
     font-weight: 600;
-    color: #000;
+    color: #888888;
     white-space: nowrap;
 }
 amp-selector.tabpanels [role=tabpanel] {

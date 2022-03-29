@@ -23,13 +23,13 @@
     margin: 0 5px;
     line-height: 28px;
     justify-content: center;
-    border-radius: 50%;
     display: inline-flex;
 }
 
 .pagination .pagination-current-page {
-    border: 1px solid #767F85;
+    border-radius: 5px;
     pointer-events: none;
+    background-color: #E5E5E5;
 }
 
 .pagination-prev-btn, .pagination-next-btn {

@@ -1,13 +1,17 @@
 .lead-wrap {
-    margin-bottom: 30px;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
+    margin-bottom:20px;
 }
 .lead-text-block .lead-text {
     font-size: 1.2rem;
 }
-.lead-wrap .search-block-1  {
+.lead-wrap .search-block-1 {
+    margin-top: 24px;
     width: 100%;
+}
+.lead-wrap .lead-text p {
+    margin-bottom: 0;
 }

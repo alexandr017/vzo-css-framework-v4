@@ -1,7 +1,6 @@
 .news-main-block {
     background-color: #F6F8FB;
     width: 100%;
-    padding: 2em 0;
     height: 100%;
 }
 
@@ -21,7 +20,9 @@
     margin: 0 1em;
     background-color: #FFFFFF;
 }
-
+.news-main-block-title p {
+    font-size: 1rem;
+}
 .news-cats-block {
     position: relative;
     margin:30px 16px;
@@ -29,7 +30,7 @@
 
 .news-cats-block .news-cat-item, .news-cat-active {
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.9375rem;
     position: relative;
     background-color: #fff;
 }
@@ -61,7 +62,7 @@
 }
 
 .news-cats-menu .news-cat-item svg {
-   margin-right: 25px;
+    margin-right: 25px;
 }
 
 
@@ -79,7 +80,7 @@
 .news-main-block .news-main-block-filters {
     margin-bottom: 1em;
     padding: 0.5em 1em;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     background: #E6EBEF;
     align-items: center;
@@ -95,7 +96,8 @@
     justify-content: center;
     align-items: center;
     padding: 0.5em 1.5em;
-    font-size: .87rem;
+    font-size: .9375rem;
+    margin-left: 1em;
 }
 
 .news-main-block .news-main-block-filters .news-cat-item svg {
@@ -141,4 +143,14 @@
     border-radius: 16px;
     padding: 7px 22px;
     font-size: .87rem;
+}
+
+.news-lead-main-block .news-main-block-title{
+    background: #fff;
+    padding: 15px;
+    margin: 20px 15px;
+}
+
+.news-lead-main-block .news-main-block-title .h1 {
+    margin-top: 0;
 }

@@ -31,7 +31,7 @@
     overflow-y: auto;
     height: 150px;
     white-space: nowrap;
-    padding: 10px 15px;
+    padding: 0 15px 10px 15px;
 }
 .offer-filters-hidden-block::-webkit-scrollbar{
     height: 0;

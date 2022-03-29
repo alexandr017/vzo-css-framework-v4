@@ -2,21 +2,14 @@
     max-width: 655px;
     margin: 1em auto;
     background: #fff;
+    padding: 16px;
 }
+
 .news-index-post-header {
     justify-content: space-between;
     align-items: center;
 }
-.news-index-post-block .news-post-link {
-    font-weight: 600;
-    align-items: center;
-}
-.news-post-padding {
-    padding: 1.5em 2em;
-}
-.news-post-content-padding {
-    padding: 0.5em 2em;
-}
+
 .news-index-post-content .news-post-content-padding {
     margin-bottom: 0;
 }
@@ -24,28 +17,29 @@
     margin-right: 1em;
 }
 .news-post-title {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
     color: #000 !important;
 }
 .news-index-post-block .news-post-img {
     width: 100%;
 }
-.news-index-post-block .new-index-post-date, .news-index-post-block .news-post-rating {
-    font-size: 0.9rem;
-}
+
 .news-index-post-footer {
-    color: #95A5B0;
+    color: #888;
     align-items: center;
     justify-content: space-between;
 }
+
 .news-index-post-footer .left-block {
     align-items: center;
     min-width: 45px;
-    justify-content: space-between;
+
+}
+
+.news-index-post-footer .left-block svg {
+    margin-right: 5px;
 }
 .news-index-post-footer .right-block .news-post-rating {
-    margin: 0 1em;
+    margin: 0 3px 0 17px;
     align-items: center;
 }
 .news-index-post-footer .right-block {
@@ -53,7 +47,7 @@
 }
 .news-index-post-block .news-post-title {
     position: relative;
-    margin-top: 0;
+    margin: 10px 0;
     display: block;
 }
 .news-index-post-content {
@@ -61,9 +55,8 @@
 }
 
 .news-index-post-tag {
-    padding: 5px 15px;
+    padding: 3px 14px;
     border-radius: 5px;
-    background: #F3F8FF;
 }
 .news-index-post-link {
     display: block;
