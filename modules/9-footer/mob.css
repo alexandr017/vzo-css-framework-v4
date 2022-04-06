@@ -17,6 +17,11 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    cursor: pointer;
+}
+
+.f-chats-el a{
+    font-size: 0;
 }
 
 .f-block .f-chats-block {

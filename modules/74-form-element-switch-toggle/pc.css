@@ -42,7 +42,7 @@
     transition: 0.4s;
     display: flex;
     align-items: center;
-
+    font-size: 0;
 }
 
 .slider-pointer::before {

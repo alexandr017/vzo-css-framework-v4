@@ -75,7 +75,7 @@
 }
 
 .f-block .f-3 .policy a {
-    display: block;
+    margin: 0 15px;
     font-size: 0.75rem;
     color: #ADBAC4;
 }
