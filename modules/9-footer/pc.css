@@ -6,8 +6,8 @@
 .f-top-line {
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #E8EEF6;
-    border-bottom: 1px solid #E8EEF6;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
     width: 100%;
     padding: 15px 0 10px;
     margin-bottom:45px;
@@ -24,7 +24,7 @@
 }
 
 .f-l-block .f-l-chats-des {
-    color:#95A5B0;
+    color:#888;
 }
 
 .f-top-line .f-l-chats {
@@ -35,15 +35,12 @@
 
 .f-top-line .f-l-chats-el {
     margin: 0 10px;
+    font-size: 0;
 }
 
 .f-top-line .f-l-chats-el:first-of-type {
     margin-left: 0;
 }
-
-/*.f-top-line .f-l-chats:last-of-type {*/
-/*color:#95A5B0;*/
-/*}*/
 
 .f-block .social {
     display: flex;
@@ -52,11 +49,12 @@
     width: 100%;
 }
 
-.f-block .social .soc-network a {
+.footer-social-link {
     margin-left: 35px;
     display: inline-flex;
     text-align: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .f-support-phone {
@@ -65,12 +63,12 @@
 }
 
 .f-support-label {
-    color: #95A5B0;
+    color: #888;
 }
 
 .f-support-r .call-back {
-    border: 1px solid #87919F;
-    color:#95A5B0;
+    border: 1px solid #E5E5E5;
+    color:#888;
     margin-left: 35px;
     font-weight: 400;
     border-radius: 10px;
@@ -110,7 +108,7 @@
 
 
 .f-block .f-2-menu a {
-    color: #95A5B0;
+    color: #888;
 }
 
 .f-block .f-2-menu li a.active, .f-block .f-2-menu li a:hover {
@@ -140,10 +138,10 @@
     justify-content: space-between;
     font-size: 0.81rem;
     font-weight: 600;
-    color: #ADBAC4;
+    color: #888;
 }
 .f-block .f-3 .policy .copyright {
-    color: #ADBAC4;
+    color: #888;
     font-size: 0.8rem;
     width: 40%;
     text-align: right;
@@ -199,7 +197,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .f-block .social .soc-network a {
+    .footer-social-link {
         margin-left: 20px;
 
     }

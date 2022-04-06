@@ -32,6 +32,12 @@
     max-width: fit-content;
 }
 
+.card-header .logo img.img-card{
+    width: 125px;
+    height: 60px;
+    border-radius: 0;
+}
+
 .card-top-inner {
     margin-left: 16px;
 }

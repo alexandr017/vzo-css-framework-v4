@@ -1,4 +1,5 @@
-
+let elemsForSort = [];
+let elemsForSortByAnswer = [];
 let selectMenu = document.querySelectorAll('.selected-item');
 let indexItem = 1;
 selectMenu.forEach(a => {
@@ -59,8 +60,8 @@ if($$('.sort').length = 0 && $$('.sort')[0].classList.contains('with-pagination'
     };
 } else {
     let optionMenu = document.querySelectorAll('.option');
-    let elemsForSort = [];
-    let elemsForSortByAnswer = [];
+    // let elemsForSort = [];
+    // let elemsForSortByAnswer = [];
     if(elemsForSort.length == 0){
         if(document.querySelectorAll('[data-sort]').length != 0) {
             document.querySelectorAll('[data-sort]').forEach(item => {

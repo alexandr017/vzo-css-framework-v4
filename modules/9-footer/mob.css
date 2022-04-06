@@ -17,6 +17,11 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    cursor: pointer;
+}
+
+.f-chats-el a{
+    font-size: 0;
 }
 
 .f-block .f-chats-block {
@@ -49,13 +54,15 @@
     font-weight: 600;
     padding: 0 40px;
     width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
     font-size: .75rem;
 }
 
 .f-block .f-2-menu li {
     list-style-type: none;
-    font-family: 'Inter', sans-serif;
     margin-top: 20px;
+    padding: 0 10px;
 }
 
 .f-block .f-2-menu a {
@@ -75,7 +82,7 @@
 }
 
 .f-block .f-3 .policy a {
-    display: block;
+    margin: 0 15px;
     font-size: 0.75rem;
     color: #888888;
 }
