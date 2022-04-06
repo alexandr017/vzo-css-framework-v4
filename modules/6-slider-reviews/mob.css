@@ -13,9 +13,10 @@
 }
 
 .review-inner-block {
-    padding: 30px;
+    padding: 30px 15px;
     flex-shrink: 0;
-    width: 252px;
+    width: 260px;
+    height: 100%;
     margin-right: 16px;
     background: #fff;
 }
@@ -26,8 +27,8 @@
 
 .review-info .review-name {
     font-weight: 600;
-    margin-top: 0.8em;
     display: block;
+    margin: 15px 0 9px 0;
 }
 
 .review-content {

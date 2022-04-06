@@ -33,6 +33,9 @@
     white-space: nowrap;
     padding: 0 15px 10px 15px;
 }
+.offer-filters-hidden-block h5 {
+    margin: 0.5em 0 0 0;
+}
 .offer-filters-hidden-block::-webkit-scrollbar{
     height: 0;
 }

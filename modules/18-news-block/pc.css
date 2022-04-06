@@ -44,15 +44,14 @@
 
 
 .news-main-block-left-side {
-    position: sticky;
-    /*margin-left: -200px;*/
+    position: fixed;
     z-index: 1;
     margin: 130px 0 0 -100px;
     transition: top 0.5s;
-    height:490px;
+    height:calc(100vh - 130px);
+    padding-bottom: 1em;
     background-color: inherit;
     width: 280px;
-    /*height: calc(95% - 120px);*/
 }
 /*.news-main-block-left-side:hover {*/
 /*    overflow-y: auto;*/

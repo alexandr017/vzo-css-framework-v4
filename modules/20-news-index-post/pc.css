@@ -6,6 +6,7 @@
 .news-index-post-header {
     justify-content: space-between;
     align-items: center;
+    color: #636363;
 }
 .news-index-post-block .news-post-link {
     font-weight: 600;
@@ -13,13 +14,14 @@
     font-size: 0.875rem;
 }
 .news-post-padding, .news-post-content-padding {
-    padding: 1.3125rem 2rem;
+    padding: 0.9375rem 2rem 1.3125rem 2rem;
 }
 .news-index-post-footer {
     padding: 0 2rem 1.3125rem 2rem;
 }
 .news-index-post-content .news-post-content-padding {
     margin-bottom: 0;
+    padding-top: 0.9375rem;
 }
 .news-post-link svg {
     margin-right: 1em;

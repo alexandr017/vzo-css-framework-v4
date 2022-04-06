@@ -17,7 +17,7 @@
     position: relative;
     background: #fff;
     margin-right: -15px;
-    padding-bottom: 13px;
+    padding: 15px 0 25px 0;
 }
 
 .offer-filters-title {
@@ -38,13 +38,11 @@
 }
 
 .offer-filters-hidden-block {
-    position: absolute;
     width: 100%;
-    /*height: 100%;*/
     background: #fff;
     display: none;
     overflow: hidden;
-
+    margin: 20px 0;
 }
 
 .offer-filters-title-clicked {

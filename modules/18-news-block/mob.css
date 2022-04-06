@@ -12,9 +12,9 @@
     display:inline-flex;
 }
 
-.main-block-tag svg {
-    margin-right: 10px;
-}
+/*.main-block-tag svg {*/
+/*    margin-right: 10px;*/
+/*}*/
 .news-main-block .news-main-block-title {
     padding: 1.5em 2em;
     margin: 0 1em;
@@ -25,7 +25,7 @@
 }
 .news-cats-block {
     position: relative;
-    margin:30px 16px;
+    margin: 16px;
 }
 
 .news-cats-block .news-cat-item, .news-cat-active {
@@ -34,7 +34,9 @@
     position: relative;
     background-color: #fff;
 }
-
+.news-main-block-filters .news-cat-item:last-child {
+    margin-right: 5px;
+}
 .news-cats-menu .news-cat-item {
     padding: 1.62em;
     color: #000;
@@ -46,7 +48,7 @@
 
 .news-cat-active {
     border-radius: 10px;
-    padding: 1em;
+    padding: 1em 1.62em;
     color:#355FF1;
 }
 
@@ -54,16 +56,16 @@
     content: '';
     position: absolute;
     right: 33px;
-    top: 34px;
+    top: 33px;
     width: 17px;
     height: 8px;
     background: url(/v4/images/arrow-down.svg) no-repeat;
     background-size: cover;
 }
 
-.news-cats-menu .news-cat-item svg {
-    margin-right: 25px;
-}
+/*.news-cats-menu .news-cat-item svg {*/
+/*    margin-right: 25px;*/
+/*}*/
 
 
 .news-main-block .news-cat-item:not(:nth-last-child(1)){
@@ -71,16 +73,20 @@
 }
 
 .news-cat-active .active-icon {
-    background: #F3F8FF;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
-    padding: 10px;
     margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #F7F7F7;
+
 }
 
 .news-main-block .news-main-block-filters {
     margin-bottom: 1em;
     padding: 0.5em 1em;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     background: #E6EBEF;
     align-items: center;
@@ -97,12 +103,12 @@
     align-items: center;
     padding: 0.5em 1.5em;
     font-size: .9375rem;
-    margin-left: 1em;
+    /*margin-left: 1em;*/
 }
 
-.news-main-block .news-main-block-filters .news-cat-item svg {
-    margin-right: 5px;
-}
+/*.news-main-block .news-main-block-filters .news-cat-item svg {*/
+/*    margin-right: 5px;*/
+/*}*/
 
 .news-cat-active.openCatBlock {
     border-bottom:1px solid #E6EBEF;
@@ -152,5 +158,13 @@
 }
 
 .news-lead-main-block .news-main-block-title .h1 {
-    margin-top: 0;
+    margin: 0 0 9px 0;
+}
+.post-menu-icon {
+    width: 20px;
+    height: 20px;
+    background-size: cover!important;
+}
+.news-cats-menu .post-menu-icon {
+    margin-right: 10px;
 }

@@ -1,8 +1,16 @@
+.bank-item-top-right-block >* {
+    margin-right: 10%;
+}
+.bank-item-top-right-block {
+    align-items: end;
+    min-width: 60%;
+    justify-content: space-between;
+}
 .bank-item {
     padding: 1.5em 2em;
     margin: 2em 0;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     flex-wrap: wrap;
     background: #fff;
     height: 227px;
