@@ -23,3 +23,7 @@
 .rating-area .rating-wrap {
     justify-content: center;
 }
+
+.result-rating-vote {
+    margin-top: 10px;
+}

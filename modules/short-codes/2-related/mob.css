@@ -1,6 +1,7 @@
 .related {
     margin: 30px 0;
-    padding: 20px 30px;
+    padding: 5px 15px;
+    border: 1px solid #E5E5E5;
 }
 
 .related .related-title {
@@ -12,3 +13,10 @@
     display: block;
 }
 
+.related ul li{
+    padding-left: 0;
+}
+
+.related ul li:before {
+    content: none
+}
