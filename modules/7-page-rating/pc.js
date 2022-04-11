@@ -47,7 +47,9 @@ for(let i=0; i < ratingStars.length; i++) {
                 body: JSON.stringify(data)
             }).then((res) => {
                 return res.text().then((value) => {
-                    $$('.rating-area')[0].innerHTML = value;
+                    $$('.rating-area .rating-wrap')[0].remove();
+                    $$('.rating-area .rating-val')[0].remove();
+                    $$('.rating-area')[0].innerHTML += '<div class="result-rating-vote">' + value + '</div>';
                 }).catch((err) => {
                     console.log(err);
                 });
