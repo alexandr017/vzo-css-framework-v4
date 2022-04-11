@@ -18,11 +18,10 @@
 
 
 .accordion.active .arrow {
-    transform: rotate(90deg);
+    transform: rotate(-180deg);
 }
 
 .panel {
-    padding: 0 20px 0 40px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;

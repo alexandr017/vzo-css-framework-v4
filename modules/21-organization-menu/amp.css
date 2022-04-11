@@ -124,7 +124,7 @@
 
 .insurance-org-products .org-products-block {
     overflow-y: auto;
-    flex-wrap: nowrap !important;
+    flex-wrap: nowrap;
 }
 
 .insurance-org-products .org-products-block::-webkit-scrollbar {
