@@ -272,7 +272,7 @@
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .td {
-    padding: 10px 34px;
+    padding: 5px 34px;
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .l-el {
@@ -366,7 +366,7 @@
 .hidden-card-info .list-card-block {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 65px;
+    padding: 0 34px;
 }
 
 .hidden-card-info .list-card-block .list-card_el {
@@ -384,7 +384,7 @@
 }
 
 .hidden-card-info .card-btn-wrap {
-    padding: 0 80px;
+    padding: 0 34px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -400,7 +400,7 @@
 }
 
 .hidden-card-info .card-btn-wrap .btn:last-of-type {
-    margin-left: 65px;
+    margin-left: 24px;
 }
 
 .pay-icons-wrap span {

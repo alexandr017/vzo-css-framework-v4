@@ -19,6 +19,7 @@
 
 .rating-company-name {
     font-weight: 600;
+    font-size: 1rem;
 }
 
 .review-info .review-name {
@@ -50,7 +51,7 @@
     justify-content: center;
     margin-top: 33px;
 }
-.rating-company-name a, .review-name {
+.review-name {
     font-size: 0.9375rem;
 }
 .review-info {

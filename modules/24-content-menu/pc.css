@@ -30,3 +30,9 @@
     counter-increment: mycounter;
     color: #355FF1;
 }
+.content-and-content-menu {
+    flex-wrap: wrap;
+}
+.content-and-content-menu .content-menu-block {
+    order: -1;
+}

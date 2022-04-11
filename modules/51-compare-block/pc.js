@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
         for (let i = 1; i < 12; i++) {
             localStorage.removeItem("vzo_compare"+ i);
             location.reload();
+            $$('.compare-block')[0].style.display = 'none';
         }
     })
 
@@ -34,8 +35,10 @@ function setCompareBlockDynamicData(compareItemsCount) {
         $$('.count-of-comparing-items')[0].innerText = '+' + (compareItemsCount-1);
     }
     endOfCompareWord = (compareItemsCount == 1) ? 'ие' : (compareItemsCount <= 4 && compareItemsCount != 0) ? 'ия' : (compareItemsCount == 0 || compareItemsCount >=5 && compareItemsCount <=9) ? 'ий' : '';
-    $$('.compare-block-text')[0].innerText = compareItemsCount + ' предложен'+endOfCompareWord+' к сравнению';
-    if(compareItemsCount > 0) {
+    if($$('.compare-block-text').length != 0) {
+        $$('.compare-block-text')[0].innerText = compareItemsCount + ' предложен'+endOfCompareWord+' к сравнению';
+    }
+    if(compareItemsCount > 0 && $$('.compare-block').length != 0) {
         $$('.compare-block')[0].style.display = 'flex';
     }
     if(compareItemsCount > 1) {
