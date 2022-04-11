@@ -1,3 +1,7 @@
+.org-menu-block {
+    margin-bottom: 50px;
+}
+
 .org-header {
     justify-content: space-between;
     padding: 1em 0;
