@@ -10,7 +10,6 @@
 }
 .without-rate-possibility-area .without-rate-possibility-area-title{
     font-weight: 600;
-    font-size: .875rem;
 }
 
 .without-rate-possibility-area .without-rate-possibility:not(.no-rate-poss) svg {
@@ -21,7 +20,6 @@
 }
 .without-rate-possibility-area .without-rate-possibility-val {
     margin-left: 13px;
-    font-size: .75rem;
 }
 
 .without-rate-possibility-area .without-rate-possibility-wrap {
@@ -30,5 +28,9 @@
 }
 
 .link-review {
-    font-size: .875rem;
+    font-size: .935rem;
+}
+
+.without-rate-possibility-wrap svg {
+    margin: 3px 1px;
 }
