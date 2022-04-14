@@ -214,8 +214,12 @@ svg:active .arrow_el {
     fill: white;
 }
 
-.print-btn:hover,.claim-btn:hover{
+.print-btn:hover{
     background: #355FF1;
+}
+
+.claim-btn:hover:hover path {
+    fill: #355FF1;
 }
 
 .print-btn .print_el {

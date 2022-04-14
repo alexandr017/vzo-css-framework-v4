@@ -1,0 +1,26 @@
+.secured-loans {
+    flex-flow: wrap;
+    margin-bottom: 15px;
+}
+
+.secured-loans-item {
+    width: 100%;
+}
+
+@media screen and (min-width: 560px) {
+    .secured-loans-item {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .secured-loans-item {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .secured-loans-item {
+        width: 25%;
+    }
+}

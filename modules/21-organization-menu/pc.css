@@ -1,3 +1,7 @@
+.org-menu-block {
+    margin-bottom: 50px;
+}
+
 .org-header {
     justify-content: space-between;
     padding: 1em 0;
@@ -10,6 +14,8 @@
 .org-header .org-logo img{
     width: 82px;
     height: 82px;
+    min-width: 82px;
+    min-height: 82px;
     border-radius: 50%;
 }
 
@@ -94,6 +100,12 @@
 .org-menu-row.spaceBetween {
     justify-content: space-between;
 }
+
+.menu-review-value {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
 @media only screen and (min-width: 920px) and (max-width: 1023px) {
     .org-products-block .org-link-el {
         width: 32%;
