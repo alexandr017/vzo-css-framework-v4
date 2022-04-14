@@ -5,3 +5,11 @@
 .translation-post h4{
     margin-bottom: 10px;
 }
+.translations-sorting{
+    margin-left: 0.5em;
+    cursor: pointer;
+    border-bottom: 1px dotted
+}
+.content .translation-title {
+    margin-bottom: 32px;
+}

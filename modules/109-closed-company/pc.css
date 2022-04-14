@@ -1,0 +1,10 @@
+.closed-comp-block {
+    background: #fff;
+    font-weight: 600;
+    padding: 16px 23px;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.closed-comp-block svg {
+    margin-right: 1em;
+}
