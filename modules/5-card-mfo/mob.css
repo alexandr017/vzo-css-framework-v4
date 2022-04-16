@@ -106,16 +106,20 @@
 }
 
 .line-scale .line-scale-print {
-    background: #E8EEF6;
+    background: #E5E5E5;
+    width: 81%;
+    margin-right: 5%;
+    display: inline-block;
 }
 
 .line-scale .line-scale-value {
     width: 12%;
     text-align: right;
+    display: inline-block;
 }
 
 .line-scale .card-progress {
-    background: #888888;
+    background: #636363;
     height: 6px;
     display: block;
 }

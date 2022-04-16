@@ -45,7 +45,7 @@
 }
 
 .card-cont {
-    color: #888;
+    color: #636363;
 }
 
 .card-head-intro {
@@ -102,16 +102,20 @@
 }
 
 .line-scale .line-scale-print {
-    background: #E8EEF6;
+    background: #E5E5E5;
+    width: 81%;
+    margin-right: 5%;
+    display: inline-block;
 }
 
 .line-scale .line-scale-value {
     width: 12%;
     text-align: right;
+    display: inline-block;
 }
 
 .line-scale .card-progress {
-    background: #888888;
+    background: #636363;
     height: 6px;
     display: block;
 }
@@ -130,3 +134,14 @@
 .card-hidden-part-open:checked + label,.card-hidden-part-open {
     display: none;
 }
+
+.lsv-10 {width: 100%;}
+.lsv-9{width: 90%;}
+.lsv-8{width: 80%;}
+.lsv-7{width: 70%;}
+.lsv-6{width: 60%;}
+.lsv-5{width: 50%;}
+.lsv-4{width: 40%;}
+.lsv-3{width: 30%;}
+.lsv-2{width: 20%;}
+.lsv-1{width: 10%;}

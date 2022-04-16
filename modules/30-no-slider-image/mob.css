@@ -19,7 +19,7 @@
     height: 64px;
     margin-bottom: 25px;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 15px;
     flex-shrink: 0;
 }
 
@@ -30,3 +30,6 @@
     margin-right: 12px;
 }
 
+.partner-name {
+    vertical-align: 18px;
+}

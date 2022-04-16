@@ -1,3 +1,25 @@
+var firstCol = $$('.first-col');
+var secondCol = $$('.second-col');
+
+for(let i = 0; i<firstCol.length; i++){
+    firstCol[i].addEventListener('mouseenter', function(){
+        firstCol[i].style.background = "#D3E4FD";
+        secondCol[i].style.background = "#F3F8FF";
+    });
+    secondCol[i].addEventListener('mouseenter', function(){
+        firstCol[i].style.background = "#D3E4FD";
+        secondCol[i].style.background = "#F3F8FF";
+    });
+    firstCol[i].addEventListener('mouseout', function(){
+        firstCol[i].style.background = "#E1EDFF";
+        secondCol[i].style.background = "#fff";
+    });
+    secondCol[i].addEventListener('mouseout', function(){
+        firstCol[i].style.background = "#E1EDFF";
+        secondCol[i].style.background = "#fff";
+    });
+}
+
 // скрытие таблицы
 let addTableWrap = (selector) => {
     selector = document.querySelectorAll('.content table');

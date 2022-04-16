@@ -214,5 +214,13 @@ figure figcaption {
 }
 
 .dark-grey {
-    color: #888;
+    color: #636363;
+}
+
+.table-scroll {
+    overflow: auto;
+}
+
+.content .table-scroll table {
+    table-layout: inherit;
 }

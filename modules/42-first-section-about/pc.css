@@ -24,9 +24,9 @@
 }
 
 .first-section-count-info {
-    font-weight: 600;
     font-size: 2.125rem;
-    font-family: Inter;
+    line-height: 2.125rem;
+    font-family: 'Inter', sans-serif;
 }
 
 .first-section-description-info {

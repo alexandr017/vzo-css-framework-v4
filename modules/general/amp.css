@@ -187,3 +187,11 @@ figure figcaption {
 .text-bold {
     font-weight: bold;
 }
+
+.table-scroll {
+    overflow: auto;
+}
+
+.content .table-scroll table {
+    table-layout: inherit;
+}

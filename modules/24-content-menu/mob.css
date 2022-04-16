@@ -1,21 +1,23 @@
 .content-menu-block {
-    padding: 22px 12px;
-    margin-bottom: 20px;
+    padding: 15px 0 0;
+    margin-bottom: 15px;
+}
+.content-menu-block .h4,.content-menu-block .h5{
+    margin: 0 0 0 15px;
 }
 
-.content-menu-block .h5{
-    margin: 0 0 0 12px;
-}
-
-.content-menu{
+ol.content-menu{
     list-style-type: none;
-    padding-left: 0 !important;
+    padding-left: 0;
+    margin: 5px 0 0;
+    padding-bottom: 10px;
 }
 
-.content-menu li {
-    margin-top: 0 !important;
+ol.content-menu li {
+    font-size: .9375rem;
+    margin-top: 0;
     position: relative;
-    padding: 9px 12px;
+    padding: 5px 15px;
 }
 
 .content-menu li:hover {

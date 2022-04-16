@@ -17,6 +17,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #000;
+    border-radius: 17px;
+    margin-bottom: 15px;
 }
 
 .play-video-el img {
@@ -30,11 +33,6 @@
     z-index: 10;
     width: 45px;
     height: 45px;
-}
-
-.play-video-el {
-    background: #000;
-    border-radius: 17px;
 }
 
 .play-video-el:hover svg{

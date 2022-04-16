@@ -337,3 +337,27 @@ table .main-td {
 .activeSortItem {
     color: #007bff;
 }
+
+/* скрытие таблиц */
+.table-toggle-btn{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.table-toggle-btn:after{
+    content: '';
+    margin-left: 5px;
+    width: 10px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: 2px;
+    background: url(/v4/images/arrow-down.svg);
+}
+
+.table-toggle-btn.up:after {
+    transform: rotate(180deg);
+}
