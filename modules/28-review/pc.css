@@ -1,5 +1,5 @@
 .block-reviews {
-    margin: 60px 0;
+    margin: 20px 0;
 }
 
 .review-wrap {
@@ -129,9 +129,6 @@
 
 .main-reviews-wrap-btn-block {
     margin: 30px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .review-status-icon {
     margin-top: -70px;
@@ -195,10 +192,4 @@
 .account-review .replace-logo img{
     width: 60px;
     height: 60px;
-}
-
-.star-span {
-    display: inline-block;
-    width: 91px;
-    height: 14px;
 }

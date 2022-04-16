@@ -70,3 +70,8 @@
 .team-tooltip-icon:hover .tooltip{
     display: block;
 }
+
+.our_team_slider .jsSlideContent .teamShowBlock {
+    max-width: 445px;
+    min-width: 445px!important;
+}

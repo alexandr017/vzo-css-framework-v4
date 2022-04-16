@@ -1,10 +1,11 @@
 .our-benefits {
+    margin: 40px 0;
     padding-top: 1em;
 }
 
 .our-benefits .h2 {
     text-align: center;
-    margin: 0 0 27px 0;
+    margin-bottom: 30px;
 }
 
 .our-benefits-block {

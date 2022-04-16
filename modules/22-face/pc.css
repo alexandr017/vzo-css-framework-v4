@@ -14,7 +14,7 @@
 
 .face-slider-block {
     margin: 1px auto;
-    padding: 50px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -42,7 +42,7 @@
 }
 
 .face-slider-block .arrows-block {
-    height: 200px;
+    height: 120px!important;
 }
 
 .face-block-info {

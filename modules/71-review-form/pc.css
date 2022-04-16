@@ -9,6 +9,7 @@
     background: #ffffff;
     width: 100%;
     padding: 0;
+    margin-top: 21px;
 }
 .review-form .form-1 input,#review-form{
     width: 100%;
@@ -27,4 +28,27 @@
 }
 .review-form .form-1 input,.review-form .form-1 textarea {
     background-color: #ffffff;
+    padding: 8px 0;
+    border-bottom: 1px solid #E6EBEF;
+}
+.review-f .h3 {
+    font-size: 1.625rem;
+}
+.review-f .info {
+    max-width: 790px;
+}
+.review-f .rating-wrap {
+    margin-top: 56px;
+}
+.review-f .rating-wrap svg {
+    width: 30px;
+    height: 30px;
+}
+.block-reviews .review-wrap #review-form {
+    background-color: #F6F8FB;
+    border-radius: 10px;
+    padding: 0 1em;
+}
+.block-reviews .review-form .form-1 input,.block-reviews .review-form .form-1 textarea,.block-reviews .review-form .form-1 .r-btn-wrap {
+    background-color: #F6F8FB;
 }
