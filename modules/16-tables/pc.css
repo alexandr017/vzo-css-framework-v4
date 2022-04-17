@@ -361,3 +361,15 @@ table .main-td {
 .table-toggle-btn.up:after {
     transform: rotate(180deg);
 }
+
+.table-scroll {
+    overflow: auto;
+}
+
+.table-scroll table {
+    table-layout: inherit;
+}
+
+table tr.hide {
+    display: none;
+}
