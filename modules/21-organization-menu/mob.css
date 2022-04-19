@@ -17,6 +17,12 @@
     border-radius: 50%;
 }
 
+.org-header .org-logo img.rectangle-logo{
+    width: 125px;
+    height: 60px;
+    border-radius: 0;
+}
+
 .org-menu-links {
     position: relative;
     padding: 17px 0 20px;

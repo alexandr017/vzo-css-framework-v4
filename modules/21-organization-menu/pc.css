@@ -8,7 +8,7 @@
 }
 
 .org-header .org-title {
-    margin: 0;
+    margin: 0 90px 0 0;
 }
 
 .org-header .org-logo img{
@@ -17,6 +17,14 @@
     min-width: 82px;
     min-height: 82px;
     border-radius: 50%;
+}
+
+.org-header .org-logo img.rectangle-logo{
+    width: 125px;
+    height: 60px;
+    min-width: 125px;
+    min-height: 60px;
+    border-radius: 0;
 }
 
 .org-menu-links {
