@@ -4,7 +4,9 @@ function focusForm() {
         form.querySelectorAll('input, textarea').forEach(tag => {
             tag.addEventListener('focus', () => {
                 form.classList.add('form-1-active');
-                cancelBtn.style.display='block';
+                if(cancelBtn){
+                    cancelBtn.style.display='block';
+                }
             });
         });
         form.querySelectorAll('input, textarea').forEach(tag => {

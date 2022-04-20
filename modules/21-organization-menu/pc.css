@@ -5,12 +5,16 @@
 .org-header {
     justify-content: space-between;
     padding: 1em 0;
+    position: relative;
 }
 
 .org-header .org-title {
     margin: 0;
 }
-
+.org-header .org-logo {
+    position: absolute;
+    right: 0;
+}
 .org-header .org-logo img{
     width: 82px;
     height: 82px;
@@ -31,11 +35,11 @@
     border-radius: 15px 15px 0 0;
     cursor: pointer;
     margin-right: 40px;
-    color: #000;
+    color: #636363;
 }
 
 .org-menu-links .org-links.active {
-    color: #355FF1;
+    color: #000;
 }
 
 .org-products-block {
@@ -105,7 +109,9 @@
     font-weight: bold;
     margin-right: 15px;
 }
-
+.org-rating .org-menu-review-page-link {
+    color: #636363;
+}
 @media only screen and (min-width: 920px) and (max-width: 1023px) {
     .org-products-block .org-link-el {
         width: 32%;

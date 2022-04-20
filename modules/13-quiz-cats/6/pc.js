@@ -26,41 +26,91 @@ function quizInpChange(e) {
 }
 
 document.addEventListener('DOMContentLoaded', setQuizRangeValues);
-let inputQuizNumValue = document.querySelectorAll('.inputQuizNumValue')[0];
-let inputQuizNum = document.querySelectorAll('.inputQuizNum')[0];
-let inputQuizRangeSum = document.querySelectorAll('.inputQuizRangeSum')[0];
-let inputQuizDays = document.querySelectorAll('.inputQuizDays')[0];
-let inputQuizDaysValue = document.querySelectorAll('.inputQuizDaysValue')[0];
-let inputQuizRangeDays = document.querySelectorAll('.inputQuizRangeDays')[0];
-
+let inputQuizNumValue = document.querySelectorAll('.inputQuizNumValue');
+if(inputQuizNumValue.length != 0 ) {
+    inputQuizNumValue = inputQuizNumValue[0];
+    inputQuizNumValue.addEventListener('click',function(){
+        hideValBlock(inputQuizNumValue, inputQuizNum);
+    });
+}
+let inputQuizNum = document.querySelectorAll('.inputQuizNum');
+if(inputQuizNum.length != 0) {
+    inputQuizNum = inputQuizNum[0];
+    inputQuizNum.addEventListener('input',function(){
+        addSpaces(inputQuizNum, inputQuizNumValue);
+        setTimeout(showInpBlock, 1000, inputQuizNum, inputQuizNumValue);
+    });
+}
+let inputQuizRangeSum = document.querySelectorAll('.inputQuizRangeSum');
+if(inputQuizRangeSum.length != 0) {
+    inputQuizRangeSum = inputQuizRangeSum[0];
+    inputQuizRangeSum.addEventListener('change',function(){
+        addSpaces(inputQuizNum, inputQuizNumValue);
+        setTimeout(showInpBlock, 500, inputQuizNum, inputQuizNumValue);
+    });
+}
+let inputQuizDays = document.querySelectorAll('.inputQuizDays');
+if(inputQuizDays.length != 0) {
+    inputQuizDays = inputQuizDays[0];
+    inputQuizDays.addEventListener('input',function(){
+        addSpaces(inputQuizDays, inputQuizDaysValue);
+        setTimeout(showInpBlock, 1000, inputQuizDays, inputQuizDaysValue);
+    });
+}
+let inputQuizDaysValue = document.querySelectorAll('.inputQuizDaysValue');
+if(inputQuizDaysValue.length != 0) {
+    inputQuizDaysValue = inputQuizDaysValue[0];
+    inputQuizDaysValue.addEventListener('click',function(){
+        hideValBlock(inputQuizDaysValue, inputQuizDays);
+    });
+}
+let inputQuizRangeDays = document.querySelectorAll('.inputQuizRangeDays');
+if(inputQuizRangeDays.length != 0) {
+    inputQuizRangeDays = inputQuizRangeDays[0];
+    inputQuizRangeDays.addEventListener('change',function(){
+        addSpaces(inputQuizDays, inputQuizDaysValue);
+        setTimeout(showInpBlock, 500, inputQuizDays, inputQuizDaysValue);
+    });
+}
 
 addSpaces(inputQuizNum, inputQuizNumValue);
 addSpaces(inputQuizDays, inputQuizDaysValue);
+if($$('.search-by-quiz-btn').length != 0) {
+    $$('.search-by-quiz-btn')[0].addEventListener('click', () => {
+        console.log('click');
 
-inputQuizNumValue.addEventListener('click',function(){
-    hideValBlock(inputQuizNumValue, inputQuizNum);
-});
+        window.NUMBER_PAGE = 1;
 
-inputQuizDaysValue.addEventListener('click',function(){
-    hideValBlock(inputQuizDaysValue, inputQuizDays);
-});
+        var params = {};
+        params['field'] = window.SORT_FIELD;
+        params['page'] = window.NUMBER_PAGE;
+        params['listing_id'] = window.LISTING_ID;
+        params['category_id'] = window.CATEGORY_ID;
+        params['count_on_page'] = window.COUNT_ON_PAGE;
+        params['options'] = {};
+        params['sort_type'] = window.SORT_TYPE;
+        params['section_type'] = window.SECTION_TYPE;
+        if($$('#debitCardLimit').length != 0) {
+            params['slf_maintenance'] = $$('#debitCardLimit')[0].value;
+        }
+        if($$('#debitCardNonePercPeiod').length != 0) {
+            params['slf_opened'] = $$('#debitCardNonePercPeiod')[0].value;
+        }
 
-inputQuizNum.addEventListener('input',function(){
-    addSpaces(inputQuizNum, inputQuizNumValue);
-    setTimeout(showInpBlock, 1000, inputQuizNum, inputQuizNumValue);
-});
 
-inputQuizRangeSum.addEventListener('change',function(){
-    addSpaces(inputQuizNum, inputQuizNumValue);
-    setTimeout(showInpBlock, 500, inputQuizNum, inputQuizNumValue);
-});
-
-inputQuizDays.addEventListener('input',function(){
-    addSpaces(inputQuizDays, inputQuizDaysValue);
-    setTimeout(showInpBlock, 1000, inputQuizDays, inputQuizDaysValue);
-});
-
-inputQuizRangeDays.addEventListener('change',function(){
-    addSpaces(inputQuizDays, inputQuizDaysValue);
-    setTimeout(showInpBlock, 500, inputQuizDays, inputQuizDaysValue);
-});
+        fetch('/actions/load_cards_for_listings?' + new URLSearchParams(params), {
+            method: 'GET',
+        }).then((res) => {
+            return res.json().then((data) => {
+                let countOffers = wordDeclension(data['count'], [' предложение ', ' предложения ', ' предложений ']);
+                let [day, month, year] = getCurrentDate();
+                $$('.quiz-count-cards')[0].innerHTML = 'Подобрано ' + data['count'] + ' ' + countOffers + ' на ' +  day + '.' + month + '.' + year;
+                $$('.offers-list')[0].innerHTML = data['code'];
+                updateCardsLoadButton(data['count']);
+                addCardsBtnsEvents();
+            }).catch((err) => {
+                console.log(err);
+            })
+        });
+    });
+}

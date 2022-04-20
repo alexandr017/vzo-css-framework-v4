@@ -4,6 +4,7 @@
     padding: 0 25px;
     background: #F6F8FB;
     box-sizing: border-box;
+    font-size: 1rem;
 }
 
 .form-1-active {
@@ -13,14 +14,13 @@
 
 .form-1 input, .form-1 textarea {
     background: #F6F8FB;
-    margin-top: 10px;
     padding: 10px 0;
     outline: none;
     border: none;
     display: block;
     resize: none;
     width: 100%;
-    color:#000;
+    color:#636363;
 }
 
 .form-1-active input, .form-1-active textarea {
@@ -30,12 +30,12 @@
 
 .form-1 input::-webkit-input-placeholder,
 .form-1 textarea::-webkit-input-placeholder{
-    color:#95A5B0;
+    color:#636363;
 }
 
 .form-1 input::-moz-placeholder,
 .form-1 textarea::-moz-placeholder {
-    color:#95A5B0;
+    color:#636363;
 }
 
 .form-1 input{
@@ -43,7 +43,7 @@
 }
 
 .r-btn-wrap {
-    padding: 10px 0;
+    padding: 5px 0 10px 0;
     justify-content: flex-end;
     align-items: center;
 }
@@ -52,4 +52,12 @@
     color: #355FF1;
     margin-right: 25px;
     cursor: pointer;
+}
+
+.chat-form {
+    display: none;
+}
+.review-form .form-1 textarea {
+    height: 40px;
+    border-bottom: none!important;
 }

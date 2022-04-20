@@ -1,3 +1,11 @@
+.quiz-count-cards {
+    white-space: nowrap;
+    margin: 20px 0;
+}
+.quiz-count-cards.h5 {
+    margin: 0;
+}
+
 .quiz {
     background: #fff;
     padding: 20px 16px;
@@ -93,12 +101,12 @@
     height: 20px;
 }
 
-.inputQuizNum, .inputQuizDays {
+.inputQuizNum, .inputQuizDays,.inputQuizTerm {
     display:none;
 
 }
 
-.inputQuizNumValue, .inputQuizDaysValue{
+.inputQuizNumValue, .inputQuizDaysValue,.inputQuizTermValue{
     position: absolute;
     color: #888;
     font-weight: 600;
