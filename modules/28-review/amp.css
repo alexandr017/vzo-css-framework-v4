@@ -32,9 +32,9 @@
     justify-content: center;
     align-items: center;
     padding: 3px 14px;
-    background: #F3F8FF;
-    color:#95A5B0;
-    font-size: .87rem;
+    background: #F7F7F7;
+    color:#888;
+    font-size: .875rem;
 }
 .review-header {
     justify-content: space-between;
@@ -51,10 +51,7 @@
 .review-part {
     margin-top: 15px;
 }
-.comments-count {
-    color: #95A5B0;
-    margin-top: 15px;
-}
+
 .mark-review-5 {
     background: #2CDD88;
 }
@@ -74,11 +71,14 @@
 .mark-review-1 {
     background: #FF4E59;
 }
-.hideReview {
-    display: none;
+
+.replace-confirm {
+    margin-left: 60px;
 }
-.reviews .loadMore, .reviews .loadLess {
-    margin: 0 auto;
+
+.replace-user-name {
+    margin-top: 20px;
+    font-weight: 600;
 }
 
 .star-span {

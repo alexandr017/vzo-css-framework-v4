@@ -63,54 +63,61 @@ let inputCalcPercentValue = document.querySelectorAll('.inputCalcPercentValue')[
 let inputCalcPercent = document.querySelectorAll('.inputCalcPercent')[0];
 let inputRangePercentCalc = document.querySelectorAll('.inputRangePercentCalc')[0];
 
-inputCalcSumValue.addEventListener('click',function(){
-    inputCalcSumValue.style.display="none";
-    inputCalcSum.style.display = "block";
-    inputCalcSum.focus();
-});
+if(inputCalcSumValue){
+    inputCalcSumValue.addEventListener('click',function(){
+        hideValBlock(inputCalcSumValue, inputCalcSum);
+    });
+}
 
-inputCalcDaysValue.addEventListener('click',function(){
-    inputCalcDaysValue.style.display="none";
-    inputCalcDays.style.display = "block";
-    inputCalcDays.focus();
-});
+if(inputCalcDaysValue){
+    inputCalcDaysValue.addEventListener('click',function(){
+        hideValBlock(inputCalcDaysValue, inputCalcDays);
+    });
+}
 
-inputCalcPercentValue.addEventListener('click',function(){
-    inputCalcPercentValue.style.display="none";
-    inputCalcPercent.style.display = "block";
-    inputCalcPercent.focus();
-});
+if(inputCalcPercentValue){
+    inputCalcPercentValue.addEventListener('click',function(){
+        hideValBlock(inputCalcPercentValue, inputCalcPercent);
+    });
+}
 
-addSpaces(inputCalcSum, inputCalcSumValue);
-addSpaces(inputCalcDays, inputCalcDaysValue);
-addSpaces(inputCalcPercent, inputCalcPercentValue);
-
-inputCalcSum.addEventListener('input',function(){
+if(inputCalcSum) {
     addSpaces(inputCalcSum, inputCalcSumValue);
-    setTimeout(addStyleSpaces, 1000, inputCalcSum, inputCalcSumValue);
-});
-
-inputRangeSumCalc.addEventListener('change',function(){
-    addSpaces(inputCalcSum, inputCalcSumValue);
-    setTimeout(addStyleSpaces, 500, inputCalcSum, inputCalcSumValue);
-});
-
-inputCalcDays.addEventListener('input',function(){
+    inputCalcSum.addEventListener('input',function(){
+        addSpaces(inputCalcSum, inputCalcSumValue);
+        setTimeout(showInpBlock, 1000, inputCalcSum, inputCalcSumValue);
+    });
+}
+if(inputCalcDays) {
     addSpaces(inputCalcDays, inputCalcDaysValue);
-    setTimeout(addStyleSpaces, 1000, inputCalcDays, inputCalcDaysValue);
-});
-
-inputRangeDaysCalc.addEventListener('change',function(){
-    addSpaces(inputCalcDays, inputCalcDaysValue);
-    setTimeout(addStyleSpaces, 500, inputCalcDays, inputCalcDaysValue);
-});
-
-inputCalcPercent.addEventListener('input',function(){
+    inputCalcDays.addEventListener('input',function(){
+        addSpaces(inputCalcDays, inputCalcDaysValue);
+        setTimeout(showInpBlock, 1000, inputCalcDays, inputCalcDaysValue);
+    });
+}
+if(inputCalcPercent) {
     addSpaces(inputCalcPercent, inputCalcPercentValue);
-    setTimeout(addStyleSpaces, 1000, inputCalcPercent, inputCalcPercentValue);
-});
+    inputCalcPercent.addEventListener('input',function(){
+        addSpaces(inputCalcPercent, inputCalcPercentValue);
+        setTimeout(showInpBlock, 1000, inputCalcPercent, inputCalcPercentValue);
+    });
+}
+if(inputRangeSumCalc){
+    inputRangeSumCalc.addEventListener('change', function () {
+        addSpaces(inputCalcSum, inputCalcSumValue);
+        setTimeout(showInpBlock, 500, inputCalcSum, inputCalcSumValue);
+    });
+}
+if(inputRangeDaysCalc){
+    inputRangeDaysCalc.addEventListener('change',function(){
+        addSpaces(inputCalcDays, inputCalcDaysValue);
+        setTimeout(showInpBlock, 500, inputCalcDays, inputCalcDaysValue);
+    });
+}
 
-inputRangePercentCalc.addEventListener('change',function(){
-    addSpaces(inputCalcPercent, inputCalcPercentValue);
-    setTimeout(addStyleSpaces, 1000, inputCalcPercent, inputCalcPercentValue);
-});
+if(inputRangePercentCalc){
+    inputRangePercentCalc.addEventListener('change',function(){
+        addSpaces(inputCalcPercent, inputCalcPercentValue);
+        setTimeout(showInpBlock, 1000, inputCalcPercent, inputCalcPercentValue);
+    });
+}

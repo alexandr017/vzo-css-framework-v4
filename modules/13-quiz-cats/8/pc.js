@@ -29,20 +29,20 @@ document.addEventListener('DOMContentLoaded', setQuizRangeValues);
 let inputQuizNumValue = document.querySelectorAll('.inputQuizNumValue')[0];
 let inputQuizNum = document.querySelectorAll('.inputQuizNum')[0];
 let inputQuizRangeSum = document.querySelectorAll('.inputQuizRangeSum')[0];
-let inputQuizDays = document.querySelectorAll('.inputQuizDays')[0];
-let inputQuizDaysValue = document.querySelectorAll('.inputQuizDaysValue')[0];
-let inputQuizRangeDays = document.querySelectorAll('.inputQuizRangeDays')[0];
+let inputQuizTerm = document.querySelectorAll('.inputQuizTerm')[0];
+let inputQuizTermValue = document.querySelectorAll('.inputQuizTermValue')[0];
+let inputQuizRangeTerm = document.querySelectorAll('.inputQuizRangeTerm')[0];
 
 
 addSpaces(inputQuizNum, inputQuizNumValue);
-addSpaces(inputQuizDays, inputQuizDaysValue);
+addSpaces(inputQuizTerm, inputQuizTermValue);
 
 inputQuizNumValue.addEventListener('click',function(){
     hideValBlock(inputQuizNumValue, inputQuizNum);
 });
 
-inputQuizDaysValue.addEventListener('click',function(){
-    hideValBlock(inputQuizDaysValue, inputQuizDays);
+inputQuizTermValue.addEventListener('click',function(){
+    hideValBlock(inputQuizTermValue, inputQuizTerm);
 });
 
 inputQuizNum.addEventListener('input',function(){
@@ -55,12 +55,51 @@ inputQuizRangeSum.addEventListener('change',function(){
     setTimeout(showInpBlock, 500, inputQuizNum, inputQuizNumValue);
 });
 
-inputQuizDays.addEventListener('input',function(){
-    addSpaces(inputQuizDays, inputQuizDaysValue);
-    setTimeout(showInpBlock, 1000, inputQuizDays, inputQuizDaysValue);
+inputQuizTerm.addEventListener('input',function(){
+    addSpaces(inputQuizTerm, inputQuizTermValue);
+    setTimeout(showInpBlock, 1000, inputQuizTerm, inputQuizTermValue);
 });
 
-inputQuizRangeDays.addEventListener('change',function(){
-    addSpaces(inputQuizDays, inputQuizDaysValue);
-    setTimeout(showInpBlock, 500, inputQuizDays, inputQuizDaysValue);
+inputQuizRangeTerm.addEventListener('change',function(){
+    addSpaces(inputQuizTerm, inputQuizTermValue);
+    setTimeout(showInpBlock, 500, inputQuizTerm, inputQuizTermValue);
 });
+if($$('.search-by-quiz-btn').length != 0) {
+    $$('.search-by-quiz-btn')[0].addEventListener('click', () => {
+        console.log('click');
+
+        window.NUMBER_PAGE = 1;
+
+        var params = {};
+        params['field'] = window.SORT_FIELD;
+        params['page'] = window.NUMBER_PAGE;
+        params['listing_id'] = window.LISTING_ID;
+        params['category_id'] = window.CATEGORY_ID;
+        params['count_on_page'] = window.COUNT_ON_PAGE;
+        params['options'] = {};
+        params['sort_type'] = window.SORT_TYPE;
+        params['section_type'] = window.SECTION_TYPE;
+        if($$('#autocreditSum').length != 0) {
+            params['slf_summ'] = $$('#autocreditSum')[0].value;
+        }
+        if($$('#autocreditTerm').length != 0) {
+            params['slf_time'] = $$('#autocreditTerm')[0].value;
+        }
+
+
+        fetch('/actions/load_cards_for_listings?' + new URLSearchParams(params), {
+            method: 'GET',
+        }).then((res) => {
+            return res.json().then((data) => {
+                let countOffers = wordDeclension(data['count'], [' предложение ', ' предложения ', ' предложений ']);
+                let [day, month, year] = getCurrentDate();
+                $$('.quiz-count-cards')[0].innerHTML = 'Подобрано ' + data['count'] + ' ' + countOffers + ' на ' +  day + '.' + month + '.' + year;
+                $$('.offers-list')[0].innerHTML = data['code'];
+                updateCardsLoadButton(data['count']);
+                addCardsBtnsEvents();
+            }).catch((err) => {
+                console.log(err);
+            })
+        });
+    });
+}

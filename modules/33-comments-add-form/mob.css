@@ -1,8 +1,7 @@
 .form-1 {
     width: 100%;
     margin: 15px auto;
-    padding: 0 25px;
-    background: #F6F8FB;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -10,9 +9,12 @@
     background: #fff;
     border: 1px solid #000000;
 }
+.review-form .form-1-active {
+    border: none;
+}
 
 .form-1 input, .form-1 textarea {
-    background: #F6F8FB;
+    font-size: 1rem;
     margin-top: 10px;
     padding: 10px 0;
     outline: none;

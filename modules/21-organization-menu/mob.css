@@ -44,12 +44,12 @@
     border-radius: 15px 15px 0 0;
     cursor: pointer;
     margin-right: 40px;
-    color: #000;
+    color: #636363;
     white-space: nowrap;
 }
 
 .org-menu-links .org-links.active {
-    color: #355FF1;
+    color: #000;
 }
 
 .org-products-block {
@@ -147,4 +147,7 @@
 }
 .org-menu-rating-num {
     font-weight: 600;
+}
+.org-rating .org-menu-review-page-link {
+    color: #636363;
 }

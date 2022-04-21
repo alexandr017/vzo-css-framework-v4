@@ -181,6 +181,7 @@ svg:active .arrow_el {
     outline: none;
     border: none;
     background-color:transparent;
+    position: relative;
 }
 
 .claim-btn .circle_el {

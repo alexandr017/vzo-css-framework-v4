@@ -193,3 +193,6 @@
     width: 60px;
     height: 60px;
 }
+.reviews .reviewsBlock {
+    flex-direction: column;
+}
