@@ -215,7 +215,7 @@
 .card-hidden-block .tabs-items .tab-content.on {
     display:block;
     border-bottom: 1px solid #E5E5E5;
-    padding: 5px 15px;
+    padding: 5px 15px 15px;
     margin-right: 15px;
 }
 
