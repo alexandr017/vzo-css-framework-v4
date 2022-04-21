@@ -78,7 +78,7 @@
     height: 40px;
     /*background-color: #F7F7F7;*/
     /*border-radius: 50%;*/
-    display: fphp -S Localhost:8181lex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -97,6 +97,11 @@
 
 .org-link-el:hover svg path, .org-link-el.active svg path{
     stroke: #355FF1;
+}
+
+.org-link-el svg path{
+    fill: none;
+    stroke: #636363;
 }
 
 .org-menu-row {

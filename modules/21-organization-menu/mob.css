@@ -105,6 +105,11 @@
     stroke: #355FF1;
 }
 
+.org-link-el svg path{
+    fill: none;
+    stroke: #636363;
+}
+
 .org-menu-row {
     width: 100%;
     flex-wrap: wrap;

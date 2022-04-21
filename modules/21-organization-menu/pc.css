@@ -85,7 +85,6 @@
 
 .org-products-block .org-link-el .org-icon-text {
     color: #222735;
-    margin-top: 10px;
     display: inline-block;
     width: 80px;
 }
@@ -100,6 +99,13 @@
 
 .org-link-el:hover svg path, .org-link-el.active svg path{
     stroke: #355FF1;
+}
+.org-link-el svg path{
+    fill: none;
+    stroke: #636363;
+}
+.org-link-el svg {
+    width: 30px;
 }
 .org-menu-row {
     width: 100%;

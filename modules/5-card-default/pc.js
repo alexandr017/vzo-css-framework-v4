@@ -99,15 +99,28 @@ function addToCompareBtnsClick (e){
 
 // печать карточки
 function addPrintBtnsClick(card) {
-    var el = card.getElementsByClassName('print-btn')[0];
-    el.addEventListener('click', () => {
-        let card = el.closest('.card');
-        let cardID = card.id;
-        if (cardID != null) {
-            cardID = cardID.replace('card-', '');
-            window.open('/card-print/'+cardID, '_blank').focus();
-        }
-    });
+    if(card.getElementsByClassName('print-btn-default').length != 0) {
+        var el = card.getElementsByClassName('print-btn')[0];
+        el.addEventListener('click', () => {
+            let card = el.closest('.card');
+            let cardID = card.id;
+            if (cardID != null) {
+                cardID = cardID.replace('card-', '');
+                window.open('/card-print/'+cardID, '_blank').focus();
+            }
+        });
+    }
+    if(card.getElementsByClassName('print-btn-insurance').length != 0) {
+        var el = card.getElementsByClassName('print-btn')[0];
+        el.addEventListener('click', () => {
+            let card = el.closest('.card');
+            let cardID = card.id;
+            if (cardID != null) {
+                cardID = cardID.replace('card-', '');
+                window.open('/card-insurance-print/'+cardID, '_blank').focus();
+            }
+        });
+    }
 }
 
 function addOrRemoveFromFavorites(card) {
