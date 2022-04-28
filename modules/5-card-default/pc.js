@@ -7,12 +7,19 @@ function cardSliderInit (elem){
             slidesToShow:4,
             slidesToScroll:1,
             circleScroll:false,
-            height:'104',
+            height:'117',
             responsive: [
                 {
                     breakpoint: 1200,
                     settings: {
-                        slidesToShow: 4,
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
                         slidesToScroll: 1
                     }
                 },

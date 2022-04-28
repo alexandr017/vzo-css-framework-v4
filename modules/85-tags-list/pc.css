@@ -1,31 +1,15 @@
 .tags-list-wrap {
     flex-flow: row-reverse;
-    padding: 3px 20px 10px;
+    padding: 1px 20px 10px;
     width: 100%;
     font-size: .875rem;
     background-color: #FFF;
     margin-bottom: 1em;
 }
 
-.more-tags-btn {
-    margin-top: 10px;
-    min-width: 85px;
-}
-
-.more-tags-btn + .tags-list.showed-tags-list {
-    max-height: inherit;
-}
-
-/*.more-tags-btn svg {*/
-/*vertical-align: 2px;*/
-/*}*/
-
-/*svg.rotate {*/
-/*transform: rotate(180deg);*/
-/*}*/
-
 .tags-list-wrap .tags-list {
-    margin: 0;
+    margin: 15px -5px;
+    flex-wrap: wrap;
 }
 
 .tags-list a:not(.more-tags-btn) {
@@ -33,26 +17,29 @@
     padding: 5px 13px;
     background-color: #F7F7F7;
     border-radius: 20px;
-    margin-right: 20px;
+    display: inline-block;
+    margin: 10px;
 }
 
-.tags-list-wrap-slider .js-slide-btn-left, .tags-list-wrap-slider .js-slide-btn-right {
-    top: -5px;
-    background-color: #FFF;
+.tags-list a:not(.more-tags-btn):hover {
+    background: #EDECEC;
 }
-.background .container .tags-list-wrap .tags-list-wrap-slider .arrows-block {
-    background-color: #FFF;
-    top: 5px;
+
+.tags-list a:not(.more-tags-btn):active {
+    background: #E5E5E5;
 }
+
 .tags-list-wrap .h4 {
     font-size: 1.125rem;
 }
-/*.tags-list-wrap-slider .jsSlideItem {*/
-/*padding: 0.5em;*/
-/*background-color: #F7F7F7;*/
-/*margin: 0 0.5em 0 0;*/
-/*color: #222735;*/
-/*border-radius: 20px;*/
-/*line-height: 15px;*/
-/*text-align: center;*/
-/*}*/
+
+.more-tags-btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: -25px;
+    line-height: 19px;
+    text-align: center;
+    color: #636363;
+    float: right;
+}
