@@ -188,20 +188,8 @@ svg:active .arrow_el {
     fill: white;
 }
 
-.claim-btn:hover{
-    background:#FF4E59 !important;
-}
-
 .claim-btn .claim_el {
     stroke: #222735;
-}
-
-.claim-btn:hover .claim_el {
-    stroke: white;
-}
-
-.claim-btn:active{
-    background:#EF3B46 !important;
 }
 
 .print-btn {
@@ -215,29 +203,14 @@ svg:active .arrow_el {
     fill: white;
 }
 
-.print-btn:hover{
-    background: #355FF1;
+
+.print-btn:hover .print_el, .claim-btn:hover .claim_el {
+    stroke: #355FF1;
 }
 
-.claim-btn:hover:hover path {
-    fill: #355FF1;
+.print-btn svg, .claim-btn svg {
+    vertical-align: -3px;
 }
-
-.print-btn .print_el {
-    stroke: #222735;
-}
-
-.print-btn:hover .print_el {
-    fill:  #355FF1;
-    stroke: #fff;
-}
-
-.print-btn:active, .print-btn:active .print_el  {
-    background:#1742D8;
-    fill:#1742D8;
-
-}
-
 
 .btn-wrap-circle{
     box-shadow: 0 4px 10px 0 #87919F26;

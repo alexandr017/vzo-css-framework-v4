@@ -1,3 +1,8 @@
+.best-proposal-block {
+    min-height: 380px;
+    position: relative;
+}
+
 .best-proposal-block .card-mini-radio {
     display: none;
 }
@@ -6,39 +11,58 @@
     align-items: center;
     padding: 15px 0;
     width: 100%;
-    border-top: 1px solid #E8EEF6;
+    overflow-x: scroll;
 }
+
+.best-proposal-block .tab-wrap::-webkit-scrollbar {
+    width: 0;
+}
+
 .best-proposal-block .tab-links {
-    text-align: center;
+    font-family: 'Inter', sans-serif;
     cursor: pointer;
-    margin: 0 10px;
+    margin-right: 20px;
     padding: 5px 0;
     transition: 0.3s;
     font-weight: 600;
+    color: #888888;
     white-space: nowrap;
-    color: #888;
-
 }
 
 .card-mini-radio:checked + label .tab-links {
-    color: #355FF1;
+    color: #000;
 }
 
 .best-proposal-block .tab-content {
     display: none;
 }
 
-.best-proposal-block .card-mini-radio:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
-.best-proposal-block .card-mini-radio:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
-.best-proposal-block .card-mini-radio:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
-.best-proposal-block .card-mini-radio:nth-of-type(4):checked ~ .tab-content:nth-of-type(4),
-.best-proposal-block .card-mini-radio:nth-of-type(5):checked ~ .tab-content:nth-of-type(5),
-.best-proposal-block .card-mini-radio:nth-of-type(6):checked ~ .tab-content:nth-of-type(6),
-.best-proposal-block .card-mini-radio:nth-of-type(7):checked ~ .tab-content:nth-of-type(7),
-.best-proposal-block .card-mini-radio:nth-of-type(8):checked ~ .tab-content:nth-of-type(8){
+.best-proposal-block .card-mini-radio:nth-of-type(1):checked ~ .tabs-items .tab-content:nth-of-type(1),
+.best-proposal-block .card-mini-radio:nth-of-type(2):checked ~ .tabs-items .tab-content:nth-of-type(2),
+.best-proposal-block .card-mini-radio:nth-of-type(3):checked ~ .tabs-items .tab-content:nth-of-type(3),
+.best-proposal-block .card-mini-radio:nth-of-type(4):checked ~ .tabs-items .tab-content:nth-of-type(4),
+.best-proposal-block .card-mini-radio:nth-of-type(5):checked ~ .tabs-items .tab-content:nth-of-type(5),
+.best-proposal-block .card-mini-radio:nth-of-type(6):checked ~ .tabs-items .tab-content:nth-of-type(6),
+.best-proposal-block .card-mini-radio:nth-of-type(7):checked ~ .tabs-items .tab-content:nth-of-type(7),
+.best-proposal-block .card-mini-radio:nth-of-type(8):checked ~ .tabs-items .tab-content:nth-of-type(8){
     display: block;
-    border-top: 1px solid #E8EEF6;
     margin: 15px 0;
-    padding: 0 15px;
     width: 100%;
+}
+
+.best-proposal-block .tabs-items {
+    position: absolute;
+    width: calc(100% + 15px);;
+    height: 300px;
+    top: 50px;
+    left: 0;
+    z-index: 111;
+}
+
+.best-proposal-block .tabs-content::-webkit-scrollbar {
+    width: 0;
+}
+
+.best-proposal-block .tabs-items .card-minimal {
+    padding-top: 0;
 }

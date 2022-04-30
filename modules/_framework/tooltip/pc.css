@@ -1,0 +1,30 @@
+[data-title] {
+    position: relative;
+}
+[data-title]:hover:before {
+    content: attr(data-title);
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 12px;
+    top: calc(50% - 18px);
+    left: calc(100% + 19px);
+    max-width: 200px;
+    width: fit-content;
+    position: absolute;
+    color: #fff;
+    font-size: 0.815rem;
+    line-height: 0.815rem;
+}
+
+[data-title]:hover:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(/v4/images/tooltip-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: calc(50% - 8px);
+    right: -19px;
+}
