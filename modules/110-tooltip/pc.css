@@ -14,6 +14,7 @@
     color: #fff;
     font-size: 0.815rem;
     line-height: 0.815rem;
+    z-index: 11;
 }
 
 [data-title]:hover:after{
@@ -27,4 +28,5 @@
     background-repeat: no-repeat;
     top: calc(50% - 8px);
     right: -19px;
+    z-index: 11;
 }
