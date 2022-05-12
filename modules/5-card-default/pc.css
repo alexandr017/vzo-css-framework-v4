@@ -49,7 +49,7 @@
 }
 
 .card .card-header .card-top-inner {
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .card .card-header .card-top-inner .logo {
@@ -57,7 +57,7 @@
     height: 90px;
     display: flex;
     justify-content: center;
-    margin-top: -30px;
+    margin-top: -40px;
     margin-right: 65px;
 }
 .card .card-header .card-top-inner .logo img{
@@ -89,7 +89,7 @@
 .card .card-header .card-top-inner .block-row .card-cont {
     font-size: 0.875rem;
     line-height: 1.2rem;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .card .card-header .reviews span {
@@ -110,10 +110,10 @@
 
 .card .card-body .card-body-inner .card-upd {
     font-size:  0.875rem;
-    line-height: 1.125rem;
-    padding: 10px 60px;
+    /*line-height: 1.125rem;*/
+    /*padding: 10px 60px;*/
     float: right;
-    margin-right: 30px;
+    margin-right: 90px;
 }
 
 .card .card-body .card-body-inner .card-more ,.card .card-body .card-body-inner .card-less {
@@ -222,12 +222,11 @@
     padding: 5px 0;
     transition: 0.3s;
     font-weight: 600;
-    color: #95A5B0;
-    font-size: .875rem;
+    color: #636363;
 }
 
 .hidden-card-info .tab .tab-links.on {
-    color: #355FF1;
+    color: #000000;
     border-bottom: none;
 
 }
@@ -236,8 +235,6 @@
     display:block;
     border-top: 1px solid #E5E5E5;
     border-bottom: 1px solid #E5E5E5;
-    font-size: 0.875rem;
-
 }
 
 .hidden-card-info .tabs-items .tab-content {
@@ -267,7 +264,7 @@
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .td:first-of-type {
     width: 35%;
-    color: #888;
+    color: #636363;
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .td:last-of-type {
@@ -275,7 +272,7 @@
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .td {
-    padding: 10px 34px;
+    padding: 5px 34px;
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .l-el {
@@ -326,7 +323,7 @@
 
 .hidden-card-info .table-vertical-block .tr .l-el .card-rating .percent {
     height: 6px;
-    background: #888;
+    background: #636363;
     border-radius: 28px;
 }
 .hidden-card-info .table-vertical-block .tr .l-el .rating-val {
@@ -347,6 +344,8 @@
     text-align: center;
     border: 1px solid #E5E5E5;
     margin: 0 8px;
+    height: 100%;
+    padding: 10px;
 }
 
 .card .hidden-card-info .card-slider-block .card-slider-info .card-tooltip{
@@ -367,7 +366,7 @@
 .hidden-card-info .list-card-block {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 65px;
+    padding: 0 34px;
 }
 
 .hidden-card-info .list-card-block .list-card_el {
@@ -379,13 +378,16 @@
 .hidden-card-info .list-card-block .list-card_el svg {
     margin-top: 5px;
 }
+.hidden-card-info .list-card-block .list-card_el svg path:first-of-type {
+    fill: #355FF1;
+}
 
 .hidden-card-info .list-card-block .list-card_el span {
     margin-left: 10px;
 }
 
 .hidden-card-info .card-btn-wrap {
-    padding: 0 80px;
+    padding: 0 34px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -401,7 +403,7 @@
 }
 
 .hidden-card-info .card-btn-wrap .btn:last-of-type {
-    margin-left: 65px;
+    margin-left: 24px;
 }
 
 .pay-icons-wrap span {
@@ -409,6 +411,7 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
     margin-right: 5px;
+    position: relative;
 }
 .card-slider-block .jsSlideItem img {
     margin: 0 auto;
@@ -425,8 +428,9 @@
 }
 
 .card-slider-block .jsSlideItem {
-    width: 22% !important;
-    min-width: 22% !important;
+    /*width: 22% !important;*/
+    /*min-width: 22% !important;*/
+    padding: 0;
 }
 
 .card-slider-block .js-slide-btn-left, .card-slider-block .js-slide-btn-right {

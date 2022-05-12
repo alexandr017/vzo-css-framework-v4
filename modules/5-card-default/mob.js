@@ -92,7 +92,7 @@ function addToCompareBtnsClick (e){
                     compareItemsByCats += compareItemsByCat.split(',').length;
                 }
             }
-            setCompareBlockDynamicData(compareItemsByCats);
+            setCompareBlockDynamicData(compareItemsByCats,true);
             // $$('.compare-items-count')[0].innerText = 1 + Number($$('.compare-items-count')[0].innerText);
             // var logo = elem.closest('.card').querySelectorAll('.logo img')[0].attributes['src'].nodeValue;
         },false)

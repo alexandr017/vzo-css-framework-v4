@@ -47,7 +47,6 @@ p {margin-top: 0;}
     font-size: 1.125rem;
 }
 
-
 .content ul {
     padding: 0;
 }
@@ -209,4 +208,7 @@ figure figcaption {
 
 .dark-grey {
     color: #636363;
+}
+.hiddenStyle {
+    display: none;
 }

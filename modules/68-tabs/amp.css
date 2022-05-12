@@ -68,6 +68,10 @@ amp-selector.tabpanels [role=tabpanel][selected] {
 }
 .tabs-with-selector.tab::-webkit-scrollbar {
     background-color: #fff;
+    height: 0px;
+    /*display: none;*/
+}
+.tabs-with-selector:hover::-webkit-scrollbar {
     height: 5px;
 }
 .tabs-with-selector.tab::-webkit-scrollbar-thumb {

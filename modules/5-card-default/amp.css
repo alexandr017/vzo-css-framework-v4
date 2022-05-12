@@ -103,12 +103,21 @@
 .card-row-inner .row-card-el {
     border: 1px solid #E5E5E5;
     justify-content: center;
-    width: 50%;
+    /*width: 50%;*/
     padding: 10px 0;
 }
 
-.card-row-inner .row-card-el:first-of-type{
+/* one item */
+.card-row-inner .row-card-el:first-child:nth-last-child(1) {
+    width: 100%;
+}
+/* two items */
+.card-row-inner .row-card-el:first-child:nth-last-child(2) {
+    width: 50%;
     margin-right: 16px;
+}
+.card-row-inner .row-card-el:first-child:nth-last-child(2) ~ .row-card-el {
+    width: 50%;
 }
 
 .card-row-inner .row-card-el .percent {
@@ -139,6 +148,7 @@
     border-top: 1px solid #E5E5E5;
     border-bottom: 1px solid #E5E5E5;
     font-size: .87rem;
+    overflow-x: auto;
 }
 
 .card-hidden-block .tab-links {
@@ -149,7 +159,7 @@
     transition: 0.3s;
     font-weight: 600;
     white-space: nowrap;
-    color: #888;
+    color: #636363;
 
 }
 
@@ -193,7 +203,7 @@
 }
 
 .card-upd {
-    color: #888;
+    color: #636363;
     display: none;
     margin-left: 16px;
 }
@@ -267,12 +277,12 @@
 
 .card-hidden-block .l-el .card-rating .percent {
     height: 4px;
-    background: #888;
+    background: #636363;
     border-radius: 28px;
 }
 .card-hidden-block .l-el .rating-val {
     margin-left: 10px;
-    color: #888;
+    color: #636363;
 }
 
 .card-more {

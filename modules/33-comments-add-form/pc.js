@@ -5,7 +5,7 @@ function focusForm() {
             tag.addEventListener('focus', () => {
                 form.classList.add('form-1-active');
                 if(cancelBtn){
-                    cancelBtn.style.display='block';
+                    // cancelBtn.style.display='block';
                 }
             });
         });
@@ -17,5 +17,34 @@ function focusForm() {
         });
     });
 }
+
+function clearForm() {
+    $$('.cancel-btn')[0].style.display='none';;
+
+    $$('.form-1').forEach(form => {
+        form.querySelectorAll('input, textarea').forEach(tag => {
+            tag.value = "";
+        });
+    });
+}
+
+$$('.form-1').forEach(form => {
+    let cancelBtn = $$('.cancel-btn');
+    let status = [];
+
+    form.querySelectorAll('input, textarea').forEach((tag, index) => {
+        tag.addEventListener('keyup', e => {
+            status[index] = e.target.value == "";
+            if(cancelBtn.length != 0) {
+                cancelBtn = cancelBtn[0];
+                if (status.every(Boolean)) {
+                    cancelBtn.style.display='none';
+                } else {
+                    cancelBtn.style.display='block';
+                }
+            }
+        });
+    });
+});
 
 document.addEventListener('DOMContentLoaded', focusForm);

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 });
 
-function setCompareBlockDynamicData(compareItemsCount) {
+function setCompareBlockDynamicData(compareItemsCount,newAdded = false) {
     // if(compareItemsCount > 9) {
     //     compareItemsCount = Number(compareItemsCount.toString().slice(-1));
     // }
@@ -38,7 +38,7 @@ function setCompareBlockDynamicData(compareItemsCount) {
     if($$('.compare-block-text').length != 0) {
         $$('.compare-block-text')[0].innerText = compareItemsCount + ' предложен'+endOfCompareWord+' к сравнению';
     }
-    if(compareItemsCount > 0 && $$('.compare-block').length != 0) {
+    if(compareItemsCount > 0 && $$('.compare-block').length != 0 && newAdded == true) {
         $$('.compare-block')[0].style.display = 'flex';
     }
     if(compareItemsCount > 1) {

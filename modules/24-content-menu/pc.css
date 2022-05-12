@@ -31,3 +31,7 @@
     counter-increment: mycounter;
     color: #355FF1;
 }
+.banks-info-page-content .loading_lazy {
+    display: block;
+    margin: 0 auto;
+}

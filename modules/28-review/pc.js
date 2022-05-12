@@ -1,168 +1,53 @@
-// function loadMoreReviews() {
-//     let moreReviewsWrap = $$(".reviews")[0];
-//     let reviewsItems = Array.from(moreReviewsWrap.querySelectorAll(".block-reviews"));
-//     let loadReviewsMore = $$(".loadMore")[0];
-//     let loadReviewsLess = $$(".loadLess")[0];
-//     hiddenStyle = "hiddenStyle";
-//     reviewsItems.forEach(function (item, index) {
-//         if (index >= 10) {
-//             item.classList.add(hiddenStyle);
-//             if(loadReviewsLess){loadReviewsLess.style.display = "none"};
-//             if(loadReviewsMore){loadReviewsMore.style.display = "flex"};
-//         }
-//     });
-//     if(loadReviewsMore){
-//         loadReviewsMore.addEventListener("click", function (e) {
-//             let countShowedItems = 0;
-//             var selectorName = $$("." + hiddenStyle);
-//             [].forEach.call(selectorName, function (
-//                 item,
-//                 index
-//             ) {
-//                 if(e.target.dataset['select'] && e.target.dataset['select'] != 0) {
-//                     if(item.dataset['select'] == e.target.dataset['select']){
-//                         if(countShowedItems<10) {
-//                             item.classList.remove(hiddenStyle);
-//                             countShowedItems++;
-//                         }
-//                         selectorName = document.querySelectorAll('.hiddenStyle[data-select="'+e.target.dataset['select']+'"]');
-//                     }
-//                 }else {
-//                     if (index < 10) {
-//                         item.classList.remove(hiddenStyle);
-//                     }
-//                 }
-//                 if (selectorName.length === 0) {
-//                     loadReviewsMore.style.display = "none";
-//                     loadReviewsLess.style.display = "flex";
-//                 }
-//             });
-//         });
-//     }
-//     if(loadReviewsLess){
-//         loadReviewsLess.addEventListener("click", function (e) {
-//             var selectorName = document.querySelectorAll("." + hiddenStyle);
-//             if(e.target.dataset['select'] && e.target.dataset['select'] != 0) {
-//                 selectorName = document.querySelectorAll('[data-select="'+e.target.dataset['select']+'"]');
-//                 reviewsItems = selectorName;
-//             }
-//             reviewsItems.forEach(function (item, index) {
-//                 if (index >= 10) {
-//                     item.classList.add(hiddenStyle);
-//                 }
-//             });
-//             if (selectorName.length !== 10) {
-//                 loadReviewsMore.style.display = "flex";
-//                 loadReviewsLess.style.display = "none";
-//             }
-//         })
-//     }
-// }
-let reviewsItems = $$('.block-reviews');
-let shownReviewsCount = 0;
-let sortingType = $$('.sort .selected-item');
 let loadReviewsMoreBtn = $$(".loadMoreReview");
 let loadReviewsLessBtn = $$(".loadLessReview");
 
-const loadMoreReviews = (elements,pagination) => {debugger
-    console.log(elements);
-    pagination = shownReviewsCount;
-    let filteredElements = [];
-    for(i=0;i<elements.length;i++){
-        if(elements[i].dataset.filtered == 1){
-            filteredElements.push(elements[i]);
+function loadMoreItems() {debugger
+    let filteredItems= document.querySelectorAll('.hiddenStyle[data-filtered="1"]');
+    if(filteredItems.length == 0) {
+        filteredItems = document.querySelectorAll('[data-filtered="1"]')
+    }
+    let allItems= document.querySelectorAll('.reviewsBlock .block-reviews.hiddenStyle');
+    if(allItems.length == 0) {
+        allItems = $$('.reviewsBlock .block-reviews');
+        for(let i =10; i<allItems.length;i++){
+            allItems[i].classList.add('hiddenStyle');
+        }
+        let fileteredItemsArr = document.querySelectorAll('.hiddenStyle[data-filtered="1"]');
+        if(fileteredItemsArr.length != 0) {
+            if(fileteredItemsArr.length > 0) {
+                $$('.loadMoreReview')[0].style.display = 'flex';
+            } else {
+                $$('.loadMoreReview')[0].style.display = 'none';
+            }
+        } else {
+            $$('.loadMoreReview')[0].style.display = 'none';
+        }
+        return;
+    }
+    let arrForLoadMore = (filteredItems.length != 0) ? filteredItems : allItems;
+    let countOfShowedEl = 0;
+    for(let i =0; i<arrForLoadMore.length;i++){
+        if(countOfShowedEl<10 && arrForLoadMore[i].dataset.filtered == 1) {
+            arrForLoadMore[i].classList.remove('hiddenStyle');
+            countOfShowedEl++;
+        } else {
+            arrForLoadMore[i].classList.add('hiddenStyle');
         }
     }
-    console.log(filteredElements);
-    // const pushElements = (elements,order) => {
-    //     for(i=0;i<elements.length;i++){
-    //         if(elements[i].dataset.filtered == 1 && elements[i].style.order == order){
-    //             filteredElements.push(elements[i]);
-    //         }
-    //     }
-    //     console.log(filteredElements)
-    //     order--
-    // }
-    // pushElements(elements,'5')
-
-    let reviewsArrForLoadMore = [];
-    if(filteredElements.length ==0) {
-        // let a = 5;
-        // reviewsArrForLoadMore = reviewsItems;
-        for(let a=5;a!=0;a--) {
-            for(i=0;i<elements.length;i++){
-                if(elements[i].dataset.sort == a){
-                    reviewsArrForLoadMore.push(elements[i])
-                }
-            }
+    let fileteredItemsArr = document.querySelectorAll('.hiddenStyle[data-filtered="1"]');
+    if(fileteredItemsArr.length != 0) {
+        if(fileteredItemsArr.length >0) {
+            $$('.loadMoreReview')[0].style.display = 'flex';
+        } else {
+            $$('.loadMoreReview')[0].style.display = 'none';
         }
     } else {
-        reviewsArrForLoadMore = filteredElements;
+        $$('.loadMoreReview')[0].style.display = 'none';
     }
-    debugger
-    console.log(reviewsArrForLoadMore);
-    if(pagination<reviewsArrForLoadMore.length){
-        if(loadReviewsMoreBtn.length != 0) {
-            loadReviewsMoreBtn[0].style.display = 'flex';
-        }
-        if(loadReviewsLessBtn.length != 0) {
-            loadReviewsLessBtn[0].style.display = 'none';
-        }
-        for(let j=0;j<reviewsArrForLoadMore.length;j++){
-            if(sortingType[0].dataset.type == 'up'){debugger
-                if(j<pagination){
-                    reviewsArrForLoadMore[j].classList.remove('hiddenStyle');
-
-                } else {
-                    reviewsArrForLoadMore[j].classList.add('hiddenStyle')
-                };
-                // if(j<pagination && reviewsArrForLoadMore[j].style.order>=reviewsArrForLoadMore[j+1].style.order && reviewsArrForLoadMore[j+1]){
-                //     reviewsArrForLoadMore[j].classList.remove('hiddenStyle');
-                // } else {
-                //     reviewsArrForLoadMore[j].classList.add('hiddenStyle')
-                // };
-            }
-
-            if(sortingType[0].dataset.type == 'down'){
-                // console.log(reviewsArrForLoadMore[0])
-
-                reviewsArrForLoadMore.reverse();
-                // console.log(reviewsArrForLoadMore[0])
-                if(j<pagination){
-                    reviewsArrForLoadMore[j].classList.remove('hiddenStyle');
-                } else {
-                    reviewsArrForLoadMore[j].classList.add('hiddenStyle')
-                };
-                // if(j<pagination && reviewsArrForLoadMore[j].style.order>=reviewsArrForLoadMore[j+1].style.order && reviewsArrForLoadMore[j+1]){
-                //     reviewsArrForLoadMore[j].classList.remove('hiddenStyle');
-                // } else {
-                //     reviewsArrForLoadMore[j].classList.add('hiddenStyle')
-                // };
-            }
-            if(sortingType[0].dataset.type == 'withAnswer'){
-                if(j<pagination && reviewsArrForLoadMore[j].dataset.answer == 1){
-                    reviewsArrForLoadMore[j].classList.remove('hiddenStyle');
-                } else {
-                    reviewsArrForLoadMore[j].classList.add('hiddenStyle');
-                }
-            }
-        }
-    }
-    else {
-        if(loadReviewsMoreBtn.length != 0) {
-            loadReviewsMoreBtn[0].style.display = 'none';
-        }
-        if(loadReviewsLessBtn.length != 0) {
-            loadReviewsLessBtn[0].style.display = 'flex';
-        }
-    }
-
-    shownReviewsCount+=10;
 }
-
 if(loadReviewsMoreBtn.length != 0) {
     loadReviewsMoreBtn[0].addEventListener('click',function () {
-        // loadMoreReviews(reviewsItems,shownReviewsCount);
+        loadMoreItems();
     },false)
 }
 
@@ -235,82 +120,85 @@ for (let i = 0; i < successCompleteQuestion.length; i++) {
     }
 }
 //сортировка отзывов по чекбоксам
-// let reviewsBlockWrap = $$(".reviews")[0];
-// let total = Array.from(reviewsBlockWrap.querySelectorAll('.block-reviews[style="display: block;"]'));
-// let sortingReviewCheckboxes = $$(".custom-checkbox");
-// let sortReviewElements = $$('.block-reviews');
-// let loadReviewsMore2 = $$(".loadMore")[0];
-// let loadReviewsLess2 = $$(".loadLess")[0];
-// sortingReviewCheckboxes.forEach(item => {
-//     item.addEventListener('click', function() {
-//         sortReviewElements.forEach(e => {
-//             if (this.checked) {
-//                 if (e.getAttribute('data-sort') == this.value) {
-//                     e.style.display = "block";
-//                 }
-//             }
-//             else {
-//                 sortReviewElements.forEach(e => {
-//                     if (e.getAttribute('data-sort') == this.value) {
-//                         e.style.display = "none";
-//                     }
-//                 })
-//             }
-//
-//         })
-//
-//     })
-// });
 
 let sortingReviewCheckboxes = $$(".custom-checkbox");
-let sortReviewElements = $$('.block-reviews');
+let sortReviewElements = $$('.reviewsBlock .block-reviews');
 let selCat = 0;
 if($$('.def-selected-item').length != 0) {
     selCat = $$('.def-selected-item')[0].dataset.val;
 }
 
-const filterByCheckbox = (checkboxes,elements,selectedCategory) => {
+sortingReviewCheckboxes.forEach(item => {
+    item.addEventListener('click', function() {
+        reviewsSortFilter();
+    })
+});
+function reviewsSortFilter() {
     let checkedCheckboxesArr = [] // gets all chacked checkboxes
+    let checkboxes = $$('.custom-checkbox');
     for(i=0;i<checkboxes.length;i++){
         if(checkboxes[i].checked){
             checkedCheckboxesArr.push(checkboxes[i].value)
         }
     }
-    // let selCat = $$('.def-selected-item')[0].dataset.val;
-    let filteredItemsArr = [];
-    for(j=0;j<elements.length;j++){
-        elements[j].dataset.filtered = 0;
-        for(k=0;k<checkedCheckboxesArr.length;k++){
-            if(elements[j].dataset.sort == checkedCheckboxesArr[k]){
-                elements[j].dataset.filtered = 1;
-                filteredItemsArr.push(elements[j]);
+    let selectedCat = ($$('.def-selected-item').length != 0) ? $$('.def-selected-item')[0].dataset.val : null;
+    let sortType = ($$('.sort .selected-item').length != 0) ? $$('.sort .selected-item')[0].dataset.type : null;
+    let elements = $$('.reviewsBlock .block-reviews');
+    let strOfSortedFilteredItems = '';
+    let strOfFives = '';
+    let strOfFours = '';
+    let strOfThrees = '';
+    let strOfTwos = '';
+    let strOfOnes = '';
+    let maxSort = 5;
+    for(let i=0;i<elements.length;i++) {
+        if(checkedCheckboxesArr.length != 0 && checkedCheckboxesArr.indexOf(elements[i].dataset.sort) != -1 && (selectedCat == null || selectedCat == elements[i].dataset.select || selectedCat ==0)){
+            elements[i].dataset.filtered = 1;
+            elements[i].classList.remove('hiddenStyle');
+        }else {
+            elements[i].dataset.filtered = 0;
+            elements[i].classList.add('hiddenStyle');
+        }
+        switch(elements[i].dataset.sort) {
+            case '5':
+                strOfFives += elements[i].outerHTML;
+                break;
+            case '4':
+                strOfFours += elements[i].outerHTML;
+                break;
+            case '3':
+                strOfThrees += elements[i].outerHTML;
+                break;
+            case '2':
+                strOfTwos += elements[i].outerHTML;
+                break;
+            default:
+                strOfOnes += elements[i].outerHTML;
+        }
+        if(sortType != null) {
+            if(sortType == 'withAnswer') {
+                if(elements[i].dataset.answer ==1 && checkedCheckboxesArr.length != 0 && checkedCheckboxesArr.indexOf(elements[i].dataset.sort) != -1 && (selectedCat == null || selectedCat == elements[i].dataset.select || selectedCat ==0)){
+                    elements[i].dataset.filtered = 1;
+                    elements[i].classList.remove('hiddenStyle');
+                    strOfSortedFilteredItems = elements[i].outerHTML + strOfSortedFilteredItems;
+                } else {
+                    elements[i].dataset.filtered = 0;
+                    elements[i].classList.add('hiddenStyle');
+                    strOfSortedFilteredItems += elements[i].outerHTML;
+                }
+            } else {
+                if(sortType == 'up'){
+                    strOfSortedFilteredItems = strOfFives + strOfFours + strOfThrees + strOfTwos + strOfOnes;
+                } else{
+                    strOfSortedFilteredItems = strOfOnes + strOfTwos + strOfThrees + strOfFours + strOfFives ;
+                }
             }
         }
-        if((elements[j].dataset.filtered == 1 && elements[j].dataset.select == selCat) || (elements[j].dataset.filtered == 1 && selCat ==0)){
-            elements[j].classList.remove('hiddenStyle')
-        } else{
-            elements[j].classList.add('hiddenStyle')
-            // elements[j].dataset.filtered = 0;
-        }
     }
-    debugger
-    shownReviewsCount = 10;
-    let filteredItemsArrSorted = [];
-    for(let a=5;a!=0;a--) {
-        for(i=0;i<filteredItemsArr.length;i++){
-            if(filteredItemsArr[i].dataset.sort == a){
-                filteredItemsArrSorted.push(reviewsItems[i])
-            }
-        }
-    }
-    // loadMoreReviews(filteredItemsArrSorted,shownReviewsCount);
+    $$('.reviewsBlock')[0].innerHTML = strOfSortedFilteredItems;
+    loadMoreItems();
 }
-sortingReviewCheckboxes.forEach(item => {
-    item.addEventListener('click', function() {
-        filterByCheckbox(sortingReviewCheckboxes,sortReviewElements,selCat);
-    })
-});
-
+reviewsSortFilter();
 //открыть форму комментариев для трейта
 
 let moveReviewBtnBlock = $$('.account-review-btn-wrap-block'),
@@ -341,6 +229,6 @@ window.addEventListener('change', function(){
         hideButtonBlock.style.display = "none";
     } else {
         hideSortBlock.style.display = "flex";
-        hideButtonBlock.style.display = "flex";
+        hideButtonBlock.style.display = "block";
     }
 })

@@ -3,7 +3,7 @@
     left: 0;
     position: fixed;
     top: 65px;
-    max-width: inherit;
+    /*max-width: inherit;*/
     margin: 0 auto;
     z-index: 10;
     display: none;

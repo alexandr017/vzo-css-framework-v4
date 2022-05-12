@@ -79,6 +79,9 @@
 }
 .reviews .loadMore, .reviews .loadLess {
     margin: 0 auto;
+    width: calc(100% + 30px);
+    left: -15px;
+    position: relative;
 }
 
 .star-span {
