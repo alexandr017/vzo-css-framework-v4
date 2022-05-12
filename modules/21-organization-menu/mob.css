@@ -88,6 +88,10 @@
     align-items: center;
     justify-content: center;
 }
+.org-products-block .org-link-el .org-icon-bg svg{
+    width: 24px;
+    height: 24px;
+}
 
 .org-products-block .org-link-el .org-icon-text {
     color: #000;
@@ -103,6 +107,11 @@
 
 .org-link-el:hover svg path, .org-link-el.active svg path{
     stroke: #355FF1;
+}
+
+.org-link-el svg path{
+    fill: none;
+    stroke: #636363;
 }
 
 .org-menu-row {
@@ -140,6 +149,14 @@
 .insurance-org-products .org-products-block .org-link-el {
     flex-shrink: 0;
 }
+.insurance-org-products {
+    padding-top: 0.2em;
+}
+
+.insurance-org-products .org-link-el:first-child {
+    margin-left: 15px;
+}
+
 .org-menu-rating-num {
     font-weight: 600;
 }
