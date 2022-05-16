@@ -50,10 +50,10 @@
 .bank-categories {
     width: 100%;
     margin-top: 0.5em;
-    overflow-x: hidden;
-}
-.bank-categories:hover {
     overflow-x: scroll;
+}
+.bank-categories::-webkit-scrollbar {
+    display: none;
 }
 .bank-cat-item {
     display: inline-block;
