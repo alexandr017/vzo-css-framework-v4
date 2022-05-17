@@ -18,17 +18,17 @@
     top: calc(100% - 8px);
     border-style: solid;
     border-width: 10px;
-    margin-top: 10px;
-    border-color: transparent transparent #000 transparent;
+    margin-top: 5px;
+    border-color: transparent transparent rgba(0,0,0,0.8) transparent;
 }
 
 [data-tooltip]:after {
     content: attr(data-tooltip);
-    background: #000;
+    background: rgba(0,0,0,0.8);
     padding: 10px 15px;
     font-size: 0.87rem;
     box-sizing: border-box;
-    top: calc(100% + 12px);
+    top: calc(100% + 7px);
     margin-top: 10px;
     color: #fff;
     border-radius: 10px;

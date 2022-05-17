@@ -60,4 +60,6 @@
 
 .face-block .jsSlideItem img{
     margin: 0 auto;
+    max-width: 30px;
+    max-height: 30px;
 }
