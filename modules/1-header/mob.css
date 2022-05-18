@@ -1,5 +1,5 @@
 header {
-padding: 15px 0;
+    padding: 15px 0;
 }
 
 .header-search-form-wrap {
@@ -16,13 +16,30 @@ padding: 15px 0;
 .header-search-form-wrap.show-form{
     display: block;
     top: 0;
+    z-index: 4;
+}
+.search-bg {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    z-index:3;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-search-form-wrap.show-form ~ .search-bg {
+    display: block;
 }
 
 .header-search-form-wrap form {
     background: #FFF;
     padding: 15px;
     height: 55px;
-
+    margin-bottom: 0;
 }
 
 .header-search-form-wrap form input[type="text"] {
@@ -224,4 +241,66 @@ header .top-line {
 .menu-button.is-active .menu-button-inner::after {
     top: 8px;
     transform: rotate(-45deg);
+}
+
+.search-block__button {
+    background: inherit;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+#search-hint {
+    margin-top: 0;
+    max-height: 180px;
+    overflow: auto;
+    padding: 0;
+    z-index: 9999;
+    background: #fff;
+}
+
+
+ul#search-hint::-webkit-scrollbar {
+    width:0;
+}
+
+ul#search-hint li {
+    list-style-type: none;
+    cursor: pointer;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 5px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+ul#search-hint li:hover {
+    background: #F3F8FF;
+    color: #355FF1;
+}
+
+ul#search-hint li:hover svg {
+    stroke: #355FF1;
+}
+
+
+ul#search-hint li svg {
+    flex-shrink: 0;
+    margin-right: 26px;
+}
+
+.header-active {
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    z-index: 1050;
+    pointer-events: auto;
+    overflow-y: auto;
+    background: white;
+}
+.fixed-body {
+    position: fixed;
+    left: 0;
+    right: 0;
 }

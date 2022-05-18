@@ -6,7 +6,7 @@
 
 .experts-reply .expert-top-block .check {
     position: absolute;
-    margin: -60px 0 0 35px;
+    margin: -30px 0 0 35px;
 }
 
 .experts-reply .expert-top-block img {
@@ -20,7 +20,7 @@
 }
 
 .expert-name-block {
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .experts-reply .expert-name {
@@ -56,4 +56,8 @@
 
 .experts-reply .reply-info .reply-bottom-block .up-likes svg {
     margin-right: 5px;
+}
+
+.change-vote-color {
+    filter: invert(38%) sepia(95%) saturate(850%) hue-rotate(169deg) brightness(86%) contrast(94%);
 }

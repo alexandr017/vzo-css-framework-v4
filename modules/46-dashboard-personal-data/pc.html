@@ -21,11 +21,12 @@
             <input type="email" id="email" class="border-radius-2 personal-data-form-email" placeholder="Почта">
         </div>
 
-        <button class="btn btn-light">Сохранить</button>
+        <button type="submit" class="btn btn-light">Сохранить</button>
+        <button type="button" class="delete-personal-acc-btn" onclick="return confirm('Вы действительно хотите удалить свой аккаунт?')">Удалить аккаунт</button>
     </form>
 
-    <form action="" class="delete-personal-acc" method="post">
-        <input type="hidden" name="_token" id="key" value="{{ csrf_token() }}">
-        <button onclick="return confirm('Вы действительно хотите удалить свой аккаунт?')">Удалить аккаунт</button>
-    </form>
+<!--    <form action="" class="delete-personal-acc" method="post">-->
+<!--        <input type="hidden" name="_token" id="key" value="{{ csrf_token() }}">-->
+<!--        <button onclick="return confirm('Вы действительно хотите удалить свой аккаунт?')">Удалить аккаунт</button>-->
+<!--    </form>-->
 </div>

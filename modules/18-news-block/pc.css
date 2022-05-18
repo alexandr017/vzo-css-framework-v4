@@ -2,16 +2,16 @@
     width: 235px;
     align-items: center;
     padding: 1em 1.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     height: 35px;
     color: #888888;
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
 }
 .news-cat-rubrics {
     padding: 1em 1.5em;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 .news-item-bg {

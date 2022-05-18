@@ -16,11 +16,15 @@ table td:not(.table-horizontal td, .table-border-part td), table th:not(.table-h
     padding: 14px 0 14px 65px;
 }
 
-table.table-info, table.table-limit, table.table-border-part{
+table.table-limit {
     border: 1px solid #E5E5E5;
     border-radius: 15px;
 }
 
+table.table-info, table.table-border-part {
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+}
 
 table.table-info tr td:first-of-type {
     width: 30%;
@@ -372,4 +376,8 @@ table .main-td {
 
 table tr.hide {
     display: none;
+}
+
+table.cell-padding td, table.cell-padding th{
+    padding: 15px;
 }

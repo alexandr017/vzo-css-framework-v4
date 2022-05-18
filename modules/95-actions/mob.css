@@ -56,3 +56,22 @@
     bottom: 10px;
     left: 16px;
 }
+
+.actions-block .tags-list {
+    position: absolute;
+}
+
+.actions-block .tags-list:first-child {
+    margin-top: 15px;
+}
+
+.actions-block .tag {
+    background-color: white;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 10px;
+    padding: 0 12px;
+    font-size: .875rem;
+    color: #000;
+}

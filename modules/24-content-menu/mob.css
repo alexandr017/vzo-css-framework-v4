@@ -33,3 +33,20 @@ ol.content-menu li {
     counter-increment: mycounter;
     color: #355FF1;
 }
+
+.decimal-none li:before {
+    content: none;
+}
+
+.show-more-btn {
+    font-weight: 400;
+    border-radius: 0;
+    border-top: 1px solid #E5E5E5;
+    padding-top: 10px;
+    height: 45px;
+    margin-top: 10px;
+}
+
+.show-more-btn svg {
+    margin-left: 5px;
+}

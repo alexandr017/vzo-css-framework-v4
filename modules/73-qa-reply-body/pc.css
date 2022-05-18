@@ -1,5 +1,5 @@
 .experts-reply {
-    margin: 30px 160px;
+    margin: 30px 0;
 }
 
 .experts-reply .expert-top-block .check {
@@ -25,6 +25,8 @@
     font-weight: 600;
     cursor: pointer;
     color: #000;
+    margin: 0 20px;
+    font-size: 1.125rem;
 }
 
 .experts-reply .expert-post {
@@ -56,4 +58,27 @@
 
 .experts-reply .reply-info .reply-bottom-block .up-likes svg {
     margin-right: 5px;
+}
+
+.reply-top-block {
+    align-items: center;
+}
+
+.reply-img {
+    width: 48px;
+    height: 48px;
+    color: #E5E5E5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+
+.reply-top-block .reply-time {
+    font-size: 1rem;
+}
+
+.change-vote-color {
+    filter: invert(38%) sepia(95%) saturate(850%) hue-rotate(169deg) brightness(86%) contrast(94%);
 }

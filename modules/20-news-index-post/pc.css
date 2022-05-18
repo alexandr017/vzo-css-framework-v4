@@ -136,3 +136,14 @@
     justify-content: space-between;
     color: #95A5B0;
 }
+
+.action-status {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 3px 15px;
+}
+
+.action-status svg {
+    margin-right: 9px;
+}

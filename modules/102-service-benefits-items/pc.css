@@ -1,6 +1,6 @@
-service-benefits-item {
+.service-benefits-item {
     width: 32%;
-    padding: 1em;
+    padding: 6px 26px 33px;
     background-color: #F7F7F7;
     margin-bottom:1em;
     text-align: left;
@@ -10,4 +10,8 @@ service-benefits-item {
 .service-benefits-items {
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 55px;
+}
+.service-benefits-item h5 {
+    margin-bottom: 10px;
 }

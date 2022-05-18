@@ -3,6 +3,7 @@
     padding: 5px 0;
     width: 100%;
     white-space: nowrap;
+    scroll-behavior: smooth;
 }
 
 .nav-menu::-webkit-scrollbar {
@@ -15,9 +16,9 @@
     padding: 5px 10px;
     transition: 0.3s;
     font-weight: 600;
-    color: #000;
+    color: #636363;
 }
 
-.nav-links.active,.nav-links:hover {
-    color:  #355FF1;
+.nav-links.active {
+    color: #000000;
 }
