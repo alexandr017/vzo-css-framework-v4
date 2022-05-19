@@ -145,8 +145,8 @@
     height: 2.5rem;
 }
 
-.h-sub-title {
-    font-size: 1rem;
+.hl-item:hover .h-sub-menu .h-sub-title {
+    font-size: 1.125rem;
     font-weight: 600;
 }
 
@@ -287,6 +287,11 @@ header svg {
     font-family: 'Proxima Nova Rg', sans-serif;
     z-index: 5;
     visibility: hidden;
+}
+
+.active-sub-menu {
+    font-size: 1rem;
+    line-height: 2.5rem;
 }
 
 .icon-wrap-hidden-block {

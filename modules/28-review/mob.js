@@ -146,8 +146,10 @@ function reviewsSortFilter() {
             }
         }
     }
-    $$('.reviewsBlock')[0].innerHTML = strOfSortedFilteredItems;
-    loadMoreItems();
+    if ($$('.reviewsBlock')[0] != undefined) {
+        $$('.reviewsBlock')[0].innerHTML = strOfSortedFilteredItems;
+        loadMoreItems();
+    }
 }
 function loadMoreItems() {
     let filteredItems= document.querySelectorAll('.hiddenStyle[data-filtered="1"]');

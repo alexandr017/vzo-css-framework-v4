@@ -18,8 +18,8 @@ document.querySelectorAll('#review-form form')[0].addEventListener('submit',func
         return false;
     }
     var company = $$('#reviewCompany')[0].value;
-    if($$('#review-form').parentElement && $$('#review-form').parentElement.parentElement.classList.contains('review')){
-        var parent = $$('#review-form')[0].parentElement.parentElement.dataset['id'];
+    if($$('#review-form')[0].closest('[data-id]')) {
+        var parent = $$('#review-form')[0].closest('[data-id]').dataset['id'];
     }
     var pros = $$('#plus')[0].value;
     var minuses = $$('#minus')[0].value;
@@ -60,7 +60,7 @@ document.querySelectorAll('#review-form form')[0].addEventListener('submit',func
         },
         body: JSON.stringify(review_data)
     }).then((res) => {
-        return res.text().then((value) => {debugger
+        return res.text().then((value) => {
             $$('#review-form')[0].innerHTML += ('<p>'+value+'</p>');
             $$('#form-1')[0].style.display = 'none';
         }).catch((err) => {

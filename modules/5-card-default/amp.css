@@ -2,6 +2,10 @@
     margin-top: 0;
 }
 
+.offers-list-mt {
+    margin-top: 16px;
+}
+
 .card {
     width: 100%;
     margin: 30px 0;
@@ -103,21 +107,12 @@
 .card-row-inner .row-card-el {
     border: 1px solid #E5E5E5;
     justify-content: center;
-    /*width: 50%;*/
+    width: 50%;
     padding: 10px 0;
 }
 
-/* one item */
-.card-row-inner .row-card-el:first-child:nth-last-child(1) {
-    width: 100%;
-}
-/* two items */
-.card-row-inner .row-card-el:first-child:nth-last-child(2) {
-    width: 50%;
+.card-row-inner .row-card-el:first-of-type{
     margin-right: 16px;
-}
-.card-row-inner .row-card-el:first-child:nth-last-child(2) ~ .row-card-el {
-    width: 50%;
 }
 
 .card-row-inner .row-card-el .percent {
@@ -148,7 +143,6 @@
     border-top: 1px solid #E5E5E5;
     border-bottom: 1px solid #E5E5E5;
     font-size: .87rem;
-    overflow-x: auto;
 }
 
 .card-hidden-block .tab-links {
@@ -159,7 +153,7 @@
     transition: 0.3s;
     font-weight: 600;
     white-space: nowrap;
-    color: #636363;
+    color: #888;
 
 }
 
@@ -203,7 +197,7 @@
 }
 
 .card-upd {
-    color: #636363;
+    color: #888;
     display: none;
     margin-left: 16px;
 }
@@ -277,12 +271,12 @@
 
 .card-hidden-block .l-el .card-rating .percent {
     height: 4px;
-    background: #636363;
+    background: #888;
     border-radius: 28px;
 }
 .card-hidden-block .l-el .rating-val {
     margin-left: 10px;
-    color: #636363;
+    color: #888;
 }
 
 .card-more {

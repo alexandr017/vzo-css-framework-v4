@@ -1,3 +1,6 @@
+.appeal-btn-wrap{
+    justify-content: center;
+}
 
 .appeal-dashboard-block {
     padding: 1em;
@@ -9,7 +12,6 @@
 }
 
 .appeal-dashboard-el {
-    padding: 1em;
     margin: 20px 0;
     background: #fff;
 }
@@ -27,6 +29,25 @@
     padding: 3px 14px;
 }
 
-.appeal-dashboard-top-line-el .wrap-btn{
-    padding: 15px 0;
+.appeal-dashboard-el .appeals-btn-wrap{
+    border-top: 1px solid #E5E5E5;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.appeal-dashboard-content {
+    padding: 16px 16px 0;
+}
+
+.text-overflow-hidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
 }

@@ -31,7 +31,7 @@
 .contacts-block-form {
     padding: 3em;
     background-color: #ffffff;
-    margin-top: 1em;
+    margin-top: 2em;
     justify-content: space-between;
 }
 .contact-block-form-left-side .h3 {
@@ -58,8 +58,14 @@
     background-color: #ffffff;
     justify-content: space-between;
     padding: 1em 3em;
-    margin: 1em 0;
+    margin: 2em 0 2.5em;
 }
+
+.contacts-block-bottom-img {
+    padding: 1em 3em 0;
+}
+
+
 .contacts-block-text-img-block img {
     max-width: 340px;
 }
@@ -90,6 +96,15 @@
 .contacts-block .w-30 {
     width: 32%;
 }
+
+.add_appeal {
+    margin-top: 35px;
+}
+
+.contacts-item-social a {
+    margin-right: 14px;
+}
+
 @media only screen and (max-width: 1023px) {
     .contacts-block-item {
         width: 100%;
