@@ -31,3 +31,11 @@ $$('.create_appeal')[0].addEventListener('click', () => {
     });
     return false;
 });
+
+document.querySelectorAll('.modal-exit').forEach(function (exit) {
+    exit.addEventListener('click', function (event) {
+        event.preventDefault();
+        var modal = exit.closest('.modal-block');
+        modal.classList.remove('open');
+    });
+});

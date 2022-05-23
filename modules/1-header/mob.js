@@ -1,5 +1,9 @@
 $$('#menuButton')[0].addEventListener('click', () => {
-    $$('.header-menu-inner')[0].classList.toggle('active-menu');
+    let headerMenuInner = $$('.header-menu-inner')[0];
+    headerMenuInner.classList.toggle('active-menu');
+
+    headerMenuInner.closest('.container').classList.toggle('header-active');
+    document.body.classList.toggle('fixed-body')
 });
 
 $$('.header-item-menu-title').forEach((el) => {
@@ -35,5 +39,10 @@ $$('#searchButtonShowForm')[0].addEventListener('click', () => {
 $$('#searchButtonHideForm')[0].addEventListener('click', () => {
     let form = $$('.header-search-form-wrap')[0];
     form.classList.remove('show-form');
-    $$('.header-menu-inner')[0].classList.remove('active-menu');
+
+    let headerMenuInner = $$('.header-menu-inner')[0];
+    headerMenuInner.classList.remove('active-menu');
+    headerMenuInner.closest('.container').classList.remove('header-active');
+    document.body.classList.remove('fixed-body')
+    $$('#menuButton')[0].classList.remove('is-active');
 });

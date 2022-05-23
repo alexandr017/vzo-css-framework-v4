@@ -56,9 +56,9 @@
     content: '';
     position: absolute;
     right: 33px;
-    top: 33px;
-    width: 17px;
-    height: 8px;
+    top: 32px;
+    width: 12px;
+    height: 6px;
     background: url(/v4/images/arrow-down.svg) no-repeat;
     background-size: cover;
 }

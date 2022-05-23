@@ -4,7 +4,8 @@
     background-color: #ffffff;
 }
 .contacts-item-name {
-    margin-left: 0.5em;
+    margin-left: 1em;
+    text-align: left;
 }
 .contacts-item-name .dark-grey {
     font-size: 0.9375rem;
@@ -13,14 +14,14 @@
     display: block;
 }
 .contacts-block-item-text {
-    padding: 1em;
+    padding: 1.5em 1em 1em;
 }
 .contacts-block .h4 {
     margin-top: 0;
     font-size: 1.125rem;
 }
 .contacts-item-logo {
-    padding: 0 1em 1em 1em;
+    padding: 0 1em 1.5em 1em;
     align-items: center;
     display: flex;
 }
@@ -30,7 +31,7 @@
     border-radius: 50%;
 }
 .contacts-block-form {
-    padding: 1em;
+    padding: 1.5em 1em 1em;
     background-color: #ffffff;
 }
 .contacts-block-form p{
@@ -55,6 +56,7 @@
 }
 .contacts-block-form .contact-form-text {
     font-size: 0.75rem;
+    margin-top: 16px;
 }
 .contacts-block-text-img-block {
     background-color: #ffffff;
@@ -66,8 +68,26 @@
     background-color: #ffffff;
 }
 .contacts-block .item-padding {
-    padding: 1em 3em;
+    padding: 1.5em 1em;
 }
 .contact-block-mob-item-margin {
     margin: 1em 0;
+}
+.contact-block-mob-item-height {
+    min-height: 140px;
+}
+.contact-block-form-right-side button {
+    margin-top: 10px;
+}
+.contacts-block-text .btn {
+    margin-top: 22px;
+}
+.contacts-block-text-img-block {
+    padding: 2em 0 1em;
+}
+.contacts-block-text-img-block img {
+    max-height: 96px;
+}
+.contacts-item-social a {
+    margin-right: 12px;
 }

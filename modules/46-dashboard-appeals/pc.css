@@ -3,7 +3,6 @@
 }
 
 .appeal-dashboard-el {
-    padding: 1em;
     margin: 20px 0;
     background: #fff;
 }
@@ -12,6 +11,8 @@
     justify-content: space-between;
     align-items: center;
     color:#888;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .appeal-tag {
@@ -20,7 +21,29 @@
     padding: 3px 14px;
 }
 
-.appeal-dashboard-el .wrap-btn{
-    display: block;
-    text-align: center;
+.appeal-dashboard-el .appeals-btn-wrap {
+    border-top: 1px solid #E5E5E5;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.appeal-dashboard-content {
+    padding: 24px 30px 0 30px;
+}
+
+.appeal-dashboard-content .h5 {
+    margin-bottom: 10px;
+}
+
+.text-overflow-hidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
 }

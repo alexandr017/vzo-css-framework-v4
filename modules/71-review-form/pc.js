@@ -3,6 +3,7 @@ document.querySelectorAll('#review-form form')[0].addEventListener('submit',func
     var name = $$('#name')[0].value;
     var id = $$('#reviewUserId')[0].value;
     var rating = $$('.rating-wrap')[0].dataset['rate'];
+    
     if(window.answer == false || window.answer == undefined){
         if(rating == 0){alert('Вы не указали рейтинг'); return false;}
     }
@@ -18,8 +19,9 @@ document.querySelectorAll('#review-form form')[0].addEventListener('submit',func
         return false;
     }
     var company = $$('#reviewCompany')[0].value;
-    if($$('#review-form').parentElement && $$('#review-form').parentElement.parentElement.classList.contains('review')){
-        var parent = $$('#review-form')[0].parentElement.parentElement.dataset['id'];
+
+    if($$('#review-form')[0].closest('[data-id]')) {
+        var parent = $$('#review-form')[0].closest('[data-id]').dataset['id'];
     }
     var pros = $$('#plus')[0].value;
     var minuses = $$('#minus')[0].value;

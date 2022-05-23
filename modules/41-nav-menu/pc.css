@@ -16,7 +16,7 @@
     padding: 5px 10px 5px 0;
     transition: 0.3s;
     font-weight: 600;
-    color: #000;
+    color: #636363;
 }
 
 .nav-links:not(:last-child){
@@ -24,7 +24,7 @@
 }
 
 .nav-links.active,.nav-links:hover {
-    color: #355FF1;
+    color: #000000;
 }
 
 .nav-menu-settings-button {

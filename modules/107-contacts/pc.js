@@ -29,9 +29,17 @@ if($$('#callMeForm_').length != 0) {
                 result = '<p>'+result+'</p>';
                 var parser = new DOMParser();
                 var resultObject = parser.parseFromString(result, 'text/html');
-                // var modalContent = $$('#callMeForm_')[0].closest('.modal-block-container');
-                // modalContent.innerHTML = '';
-                $$('#callMeForm_')[0].innerHTML = resultObject.body.lastChild.innerHTML;
+
+                var modalBack = document.getElementById('modal-back');
+
+                var resultHtml = resultObject.body.lastChild.innerHTML;
+
+                if (modalBack != null) {
+                    modalBack.getElementsByClassName('modal-confirm-success')[0].innerHTML = resultHtml;
+                    modalBack.classList.toggle('open');
+                }
+
+                $$('#callMeForm_')[0].reset();
             }
             return false;
         })()

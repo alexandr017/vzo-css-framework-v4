@@ -1,11 +1,11 @@
 .dashboard-personal-data-form {
     flex-wrap: wrap;
-    width: 850px;
+    margin-bottom: 35px;
 }
 
 .dashboard-personal-data-form .btn {
-    width: 505px;
-    margin-top: 60px;
+    width: 350px;
+    margin-top: 32px;
 }
 
 .dashboard-personal-data-form .personal-data-form-part {
@@ -15,6 +15,7 @@
 .dashboard-personal-data-form .personal-data-form-part label {
     font-weight: 600;
     display: block;
+    margin-bottom: 8px;
 }
 
 .dashboard-personal-data-form .personal-data-form-part input {
@@ -26,26 +27,39 @@
 }
 
 .personal-data-form-input {
-    width:240px;
+    width:350px;
 }
 
 .personal-data-form-email {
-    width: 505px;
+    width: 730px;
 }
 
-.dashboard-personal-data-form .personal-data-form-part:not(:nth-child(3n)){
+.dashboard-personal-data-form .personal-data-form-part:not(:nth-child(3)):not(:nth-child(5)){
     margin-right: 25px;
 }
 
-.delete-personal-acc{
-    justify-content: center;
-
-}
-
-.delete-personal-acc button {
-    margin: 45px 0;
+.delete-personal-acc-btn {
+    margin-top: 32px;
+    margin-left: 38px;
+    padding: 5px;
     border: none;
     outline: none;
     background: inherit;
     color:#FF4E59;
+}
+
+@media(max-width: 1200px) {
+    .dashboard-personal-data-form .personal-data-form-part:not(:nth-child(4)):not(:nth-child(5)){
+        margin-right: 25px;
+    }
+}
+
+@media(max-width: 992px) {
+    .personal-data-form-part input,
+    .dashboard-personal-data-form .btn,
+    .delete-personal-acc-btn
+    {
+        width: 500px;
+        margin-left: 0;
+    }
 }

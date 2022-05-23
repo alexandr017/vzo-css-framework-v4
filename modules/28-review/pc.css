@@ -70,14 +70,6 @@
     font-size: 1.2rem;
 }
 
-.block-reviews .review-wrap .plus .positive-part {
-    color: #2CDD88;
-}
-
-.block-reviews .review-wrap .minus .negative-part {
-    color: #FF4E59;
-}
-
 .block-reviews .review-wrap .review-part-body {
     margin-top: 5px;
 }
@@ -159,14 +151,28 @@
 
 .reply-bottom-info .thread-answer-btn {
     color: #355FF1;
-    margin: 0 25px;
+    /*margin: 0 25px;*/
     cursor: pointer;
 }
 
 .account-review-top-block {
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 32px;
+}
+
+.account-review .review-wrap {
+    padding-top: 16px;
+    position: relative;
+}
+
+.account-review .review-wrap::before {
+    content: '';
+    border-bottom: 1px solid #E5E5E5;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 62px;
 }
 
 .account-review-top-block .review-status-icon {
@@ -192,6 +198,30 @@
 .account-review .replace-logo img{
     width: 60px;
     height: 60px;
+}
+
+.account-review .user-marks {
+    width: 40px;
+    height: 40px;
+}
+
+.account-review .review-inner-block {
+    align-items: center;
+}
+
+.review-status-label {
+    padding: 4px 21px;
+    background: #F7F7F7;
+    border-radius: 5px;
+    color: #888888;
+    display:inline-block;
+    float: right;
+}
+
+.star-span {
+    display: inline-block;
+    width: 91px;
+    height: 14px;
 }
 .reviews .reviewsBlock {
     flex-direction: column;

@@ -290,3 +290,13 @@ svg:active .arrow_el {
 .btn-1-dark:active {
     background: #0731C1;
 }
+
+#toTop {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    cursor: pointer;
+}

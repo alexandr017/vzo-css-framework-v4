@@ -53,7 +53,7 @@
 }
 .comments-count {
     color: #95A5B0;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 .mark-review-5 {
     background: #2CDD88;
@@ -79,13 +79,23 @@
 }
 .reviews .loadMore, .reviews .loadLess {
     margin: 0 auto;
-    width: calc(100% + 30px);
-    left: -15px;
-    position: relative;
 }
 
 .star-span {
     display: inline-block;
     width: 91px;
     height: 14px;
+}
+
+.account-review .user-rating {
+    margin-left: auto;
+}
+
+.review-count-comments {
+    display: flex;
+    align-items: center;
+}
+
+.review-count-comments svg {
+    margin-right: 4px;
 }

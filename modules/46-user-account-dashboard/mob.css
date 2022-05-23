@@ -4,13 +4,15 @@
 }
 
 .user-account-dashboard-block {
-    margin-top: 26px;
+    margin-top: 15px;
     padding: 16px;
     background: #fff;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
+}
 
+.user-account-dashboard-block:last-of-type {
+    margin-bottom: 30px;
 }
 
 .user-account-dashboard-block .h4 {
@@ -18,12 +20,14 @@
 }
 
 .user-account-dashboard-block .user-account-dashboard-el {
+    margin-right: auto;
     color: #000;
     font-size: .87rem;
 
 }
 
 .user-account-dashboard-block .user-account-dashboard-el:first-of-type {
+    margin-right: 16px;
     border-radius: 50px;
     width: 40px;
     height: 40px;
@@ -48,10 +52,8 @@
     background: #fff;
     font-size: .87rem;
     display: block;
-   width:100%;
+    width:100%;
 }
-
-
 
 .user-account-dashboard-item .dashboard-item-el:first-of-type {
     width: 40px;
@@ -67,10 +69,6 @@
     color: #000;
 }
 
-.user-account-dashboard-item:hover {
-    background: #F6F8FB;
-}
-
 .user-account-dashboard-item svg {
     vertical-align: -5px;
 }
@@ -84,34 +82,6 @@
 
 .block-with-back-link p,.block-with-back-link a {
     font-size: .87rem;
-}
-
-.appeal-dashboard-block {
-    padding: 1em;
-    background: #fff;
-}
-
-.appeal-dashboard-block .form-1 {
-    width:100%;
-}
-
-.appeal-dashboard-el {
-    padding: 1em;
-    margin: 20px 0;
-    background: #fff;
-}
-
-.appeal-dashboard-top-line-el {
-    justify-content: space-between;
-    align-items: center;
-    color:#95A5B0;
-    font-size: .87rem;
-}
-
-.appeal-tag {
-    background: #F3F8FF;
-    border-radius: 5px;
-    padding: 3px 14px;
 }
 
 .appeal-dashboard-top-line-el .wrap-btn{

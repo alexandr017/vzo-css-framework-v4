@@ -20,7 +20,11 @@ function searchItems(searchHint){
         if(offersListItemsArrAfterSearch.length != 0) {
             window.itemsArr = offersListItemsArrAfterSearch;
             page(1,offersListItemsArrAfterSearch);
-            $$('.pagination')[0].style.display = 'flex';
+            if (pagesCount == 1) {
+                $$('.pagination')[0].style.display = 'none';
+            } else {
+                $$('.pagination')[0].style.display = 'flex';
+            }
         } else {
             $$('.offers-list')[0].innerHTML = "<p>По Вашему запросу не найдено совпадений</p>";
             $$('.pagination')[0].style.display = 'none';
