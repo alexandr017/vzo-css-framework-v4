@@ -1,28 +1,114 @@
+.listing-h2 {
+    margin: 16px;
+}
+
+.jsTableBlock .main-td {
+    white-space: nowrap;
+    text-align: left;
+    padding: 10px 16px;
+    border-collapse: collapse
+}
+
+.jsTableBlock thead {
+    margin-top: 16px;
+}
+
+.jsTableBlock td {
+    /*min-width: 284px;*/
+    padding: 10px 16px;
+}
+.jsTableBlock thead .main-td:first-of-type {
+    min-width: 200px;
+}
+.jsTableBlock .js-table {
+    table-layout: fixed;
+    min-width: 760px;
+}
+
+.jsTableBlock {
+    margin: 25px 0;
+    position: relative;
+}
+
+.jsTbScroll {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+.jsTableBlock .dataTablesFooter {
+    display: none;
+}
+.jsTbScroll::-webkit-scrollbar {
+    height: 0;
+}
+
+.jsTableBlock {
+    background: #F7F7F7;
+    border-top: 1px solid #DCE4EC;
+    border-bottom: 1px solid #DCE4EC;
+}
+
+.jsTableScroll table{
+    margin-top: 72px;
+}
+
 table.table-limit {
-    width:100%;
     border-collapse: collapse;
     border-top: 1px solid #DCE4EC;
 }
 
-table.table-limit tr.showed-items td, table.table-limit thead th{
-    border-bottom: 1px solid #DCE4EC;
+table.table-limit tr td, table.table-limit thead th{
+    border-bottom: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
 }
-/*table.table-limit tr.showed-items td:not(:last-of-type), table.table-limit thead th:not(:last-of-type){*/
-/*border-right: 1px solid #DCE4EC;*/
-/*}*/
 
 table.table-horizontal {
     border-collapse: collapse;
     width: 100%;
 }
 
-table.table-limit tr th {
-    padding: 16px 16px 0 0;
+table.table-border-part {
+    table-layout:fixed;
+    width:100%;
+    margin: 30px 0;
+    max-width: 100%;
+    border-spacing: 0;
+    border: 0;
+    overflow: hidden;
 }
 
-table.table-limit tr td {
-    padding: 8px 0;
+table.table-border-part{
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
 }
-.jsTbScroll {
-    overflow-x: auto;
+
+
+table.table-border-part td, table.table-border-part th{
+    padding: 14px 16px;
+    text-align: center;
+}
+
+table.table-border-part tbody tr td:first-of-type,
+table.table-border-part thead tr th:first-of-type{
+    border-right: 1px solid #E5E5E5;
+}
+
+table.table-border-part thead tr th {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+table .main-td {
+    font-weight: bold;
+}
+
+.table-scroll {
+    overflow: auto;
+}
+
+.table-scroll table {
+    table-layout: inherit;
+}
+.total_cards_table_text {
+    font-size: 16px;
+    padding: 0 16px;
 }

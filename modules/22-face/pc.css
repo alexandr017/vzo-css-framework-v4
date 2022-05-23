@@ -27,8 +27,9 @@
     margin: 0 8px;
     background: #fff;
     border-radius: 5px;
-    max-width: 168px;
-
+    /*max-width: 168px;*/
+    padding: 10px;
+    height: 100%;
 }
 
 .face-slider-block .face-slider-info .text-cont {
@@ -60,4 +61,9 @@
 
 .face-block .jsSlideItem img{
     margin: 0 auto;
+    max-width: 30px;
+    max-height: 30px;
+}
+.face-block .jsSlideItem {
+    padding: 0;
 }

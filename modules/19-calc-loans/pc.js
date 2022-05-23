@@ -121,3 +121,13 @@ if(inputRangePercentCalc){
         setTimeout(showInpBlock, 1000, inputCalcPercent, inputCalcPercentValue);
     });
 }
+var rangInputs = document.querySelectorAll('.loan-overpayment-calc input[type=range]');
+for(let i=0;i<rangInputs.length;i++) {
+    rangInputs[i].addEventListener('input',function (e) {
+        let valOfRangeInp = e.target.value;
+        let closestTextInpBlock = e.target.previousElementSibling.previousElementSibling;
+        if(closestTextInpBlock.length != 0){
+            closestTextInpBlock.innerHTML = valOfRangeInp;
+        }
+    })
+}

@@ -25,18 +25,20 @@
 .expert-cont-bl {
     margin-left: 16px;
     font-size: .9375rem;
+    line-height: 18px;
 }
 .expert-work-place {
-    color: #95A5B0;
+    color: #636363;
 }
 
 .expert-cont-bl a {
     font-weight: 600;
+    word-spacing: 15rem;
 }
 
 .hidden-info {
     overflow: hidden;
-    height: 165px;
+    height: 160px;
 }
 .data-more-less-body {
     padding: 0 16px;
@@ -51,6 +53,7 @@
     align-items: center;
     padding-top: 0.5em;
     border-top: 1px solid #E5E5E5;
+    font-size: 0.9375rem;
 }
 
 .expert-block .button_show svg,
@@ -59,7 +62,6 @@
 }
 
 .data-more-less-inner {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
 }
-

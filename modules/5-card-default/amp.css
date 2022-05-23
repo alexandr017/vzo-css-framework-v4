@@ -9,7 +9,7 @@
 }
 
 .card-info-tag{
-    background: #F7F7F7;
+    background: #E5E5E5;
     border-radius: 5px 5px 0 0;
     padding: 10px 0;
     width:100%;
@@ -41,7 +41,7 @@
 
 .block-row {
     justify-content: space-between;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 
 .card-cont {
@@ -147,7 +147,7 @@
     width: 100%;
     border-top: 1px solid #E5E5E5;
     border-bottom: 1px solid #E5E5E5;
-    font-size: .87rem;
+    font-size: .875rem;
     overflow-x: auto;
 }
 
@@ -160,11 +160,11 @@
     font-weight: 600;
     white-space: nowrap;
     color: #636363;
-
+    font-family: 'Inter', sans-serif;
 }
 
 .card-radio:checked + label .tab-links {
-    color: #355FF1;
+    color: #000000;
 }
 
 .card-hidden-block .tab-content {
@@ -188,6 +188,7 @@
 
 .card-hidden-block .tab-content ul {
     list-style-type: none;
+    padding-left: 0;
 }
 .card-hidden-block .tab-content ul li {
     margin-top: 15px;
@@ -215,12 +216,11 @@
 .card-less {
     display: none;
 }
-
 .pay-icons-wrap span {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 5px;
+    margin-right: 10px;
+}
+.pay-icons-wrap {
+    position: relative;
 }
 
 .top-inner-btn .btn-cnv{
@@ -283,8 +283,11 @@
 .card-hidden-block .l-el .rating-val {
     margin-left: 10px;
     color: #636363;
+    font-family: 'Proxima Nova Rg';
 }
-
+.card-review-rating-block .rate-num {
+    font-weight: 600;
+}
 .card-more {
     display: inline-flex;
 }
@@ -306,6 +309,44 @@
 
 .card-body {
     width: 100%;
-    padding: 16px;
+    padding: 16px 0;
     justify-content: space-between;
+}
+.card-show-block {
+    display: inline-block;
+    padding: 0 16px;
+}
+.card .card-hidden-block .card-slider-block {
+    margin: 1px auto;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+
+.card .card-hidden-block .card-slider-block .card-slider-info {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    border: 1px solid #E5E5E5;
+    margin: 0 8px;
+    /*height: 100%;*/
+    min-width: 140px;
+    padding: 10px;
+}
+
+.card .card-hidden-block .card-slider-block .card-slider-info .card-tooltip{
+    position: relative;
+}
+
+
+.card .card-hidden-block .card-slider-block .card-slider-info .text-cont {
+    line-height: 1.066rem;
+    margin-top: 7px;
+    font-size: .875rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }

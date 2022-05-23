@@ -1,5 +1,5 @@
 .tab{
-    margin-top: 20px;
+    margin-top: 25px;
     width: 100%;
 }
 
@@ -43,4 +43,11 @@
     .tab::-webkit-scrollbar {
         height: 0;
     }
+}
+
+.services .tab{
+    margin-top: 0;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
 }

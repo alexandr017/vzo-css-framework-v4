@@ -26,7 +26,11 @@
     border-radius: 15px;
     display: inline-block;
 }
-
+.tags-list a:not(.more-tags-btn):hover {
+    border: 1px solid #E5E5E5;
+    color: #355FF1;
+    padding: 6px 15px;
+}
 .more-tags-btn {
     font-style: normal;
     font-weight: 400;

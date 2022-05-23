@@ -1,5 +1,5 @@
 .sort {
-    margin: 20px 0;
+    margin-top: 7px;
 }
 
 .select {
@@ -10,7 +10,7 @@
     border-radius: 5px;
     width: 100%;
     margin: 0 0 10px;
-    padding: 15px 20px;
+    padding: 9px 20px;
     cursor: pointer;
     background: #fff;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
@@ -27,7 +27,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 15px;
+    padding: 9px 14px;
     border-left: 1px solid #E5E5E5;
 }
 .select .selected-item.openSelect {
@@ -74,4 +74,7 @@
     visibility: visible;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
+}
+.select-shadow {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }

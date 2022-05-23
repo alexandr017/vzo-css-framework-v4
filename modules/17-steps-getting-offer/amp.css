@@ -16,15 +16,15 @@
     color: #888888;
     font-weight: 700;
     position: relative;
+    font-size: 1.375rem;
 }
-
+.getting-offer-text{
+    font-size: 16px;
+}
 .getting-offer-cont {
     margin-left: 16px;
 }
 
-.getting-offer-item {
-    justify-content: center;
-}
 .getting-offer-item:not(:last-child) .getting-offer-num::after {
     content: '';
     position: absolute;
@@ -35,10 +35,10 @@
     margin-top: 110px;
 }
 
-.getting-offer-item:last-child{
-    margin-left: 25px;
-}
-
 .getting-offer-item:not(:first-child) {
     margin-top: 18px;
 }
+
+/*.getting-offer-item:last-child{*/
+/*margin-left: 25px;*/
+/*}*/

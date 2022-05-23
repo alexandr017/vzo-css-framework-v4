@@ -1,7 +1,7 @@
 table {
     table-layout:fixed;
     width:100%;
-    margin: 30px 0;
+    /*margin: 30px 0;*/
     max-width: 100%;
     border-spacing: 0;
     border: 0;
@@ -13,14 +13,18 @@ table tr td:last-of-type {
 }
 
 table td:not(.table-horizontal td, .table-border-part td), table th:not(.table-horizontal th, .table-border-part th ){
-    padding: 14px 0 14px 65px;
+    padding: 14px 0 14px 50px;
 }
 
-table.table-info, table.table-limit, table.table-border-part{
+table.table-limit {
     border: 1px solid #E5E5E5;
     border-radius: 15px;
 }
 
+table.table-info, table.table-border-part {
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+}
 
 table.table-info tr td:first-of-type {
     width: 30%;
@@ -263,8 +267,8 @@ table .main-td {
     margin: 0 5px;
     line-height: 28px;
     text-align: center;
-    border-radius: 50%;
-    color: #767F85;
+    border-radius: 5px;
+    color: #636363;
 }
 .data-table-pagination:not(.disabledPage) {
     cursor: pointer;
@@ -273,15 +277,11 @@ table .main-td {
     pointer-events: none;
 }
 .data-table-pagination.currentPage {
-    border: 1px solid #767F85;
     pointer-events: none;
+    background-color: #E5E5E5;
 }
-.data-table-pagination:not(.currentPage):not(.disabledPage):hover {
-    border:1px solid #767F85;
-}
-
 .jsTableBlock {
-    padding-top: 4em;
+    padding-top: 1.5em;
     background: #E5E5E5;
     border: 1px solid #E5E5E5;
 }
@@ -312,22 +312,23 @@ table .main-td {
 }
 .searchBlock {
     display: flex;
-    float: right;
+    /*float: right;*/
     width: 100%;
+    height: 55px;
     justify-content: flex-end;
-    position: absolute;
-    right: 0;
-    margin-top: -3em;
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*margin-top: -3em;*/
 }
 .searchBlock svg {
     position: absolute;
-    top: 1em;
+    top: 2.5em;
 }
 .searchBlock .searchMagnifier {
     right: 4em;
 }
 .searchBlock .searchReset {
-    right: 2em;
+    right: 3.5em;
     cursor: pointer;
     display: none;
 }
@@ -372,4 +373,8 @@ table .main-td {
 
 table tr.hide {
     display: none;
+}
+
+table.cell-padding td, table.cell-padding th{
+    padding: 15px;
 }

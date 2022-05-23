@@ -46,8 +46,76 @@ function calculate() {
 
     total = total.toFixed(2);
     total = total.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
-    total = total.toString().replace('.', ',');
+    total = total.toString().slice(0, -3);
     document.getElementById('total').innerHTML = total;
 
 }
 
+
+let inputCalcSumValue = document.querySelectorAll('.inputCalcSumValue')[0];
+let inputCalcSum = document.querySelectorAll('.inputCalcSum')[0];
+let inputRangeSumCalc = document.querySelectorAll('.inputRangeSumCalc')[0];
+
+let inputCalcDaysValue = document.querySelectorAll('.inputCalcDaysValue')[0];
+let inputCalcDays = document.querySelectorAll('.inputCalcDays')[0];
+let inputRangeDaysCalc = document.querySelectorAll('.inputRangeDaysCalc')[0];
+
+let inputCalcPercentValue = document.querySelectorAll('.inputCalcPercentValue')[0];
+let inputCalcPercent = document.querySelectorAll('.inputCalcPercent')[0];
+let inputRangePercentCalc = document.querySelectorAll('.inputRangePercentCalc')[0];
+
+inputCalcSumValue.addEventListener('click',function(){
+    hideValBlock(inputCalcSumValue, inputCalcSum);
+});
+
+inputCalcDaysValue.addEventListener('click',function(){
+    hideValBlock(inputCalcDaysValue, inputCalcDays);
+});
+
+inputCalcPercentValue.addEventListener('click',function(){
+    hideValBlock(inputCalcPercentValue, inputCalcPercent);
+});
+
+addSpaces(inputCalcSum, " ₽", inputCalcSumValue);
+addSpaces(inputCalcDays, " дней", inputCalcDaysValue);
+addSpaces(inputCalcPercent, " %" ,inputCalcPercentValue);
+
+inputCalcSum.addEventListener('input',function(){
+    addSpaces(inputCalcSum, " ₽", inputCalcSumValue);
+    setTimeout(showInpBlock, 1000, inputCalcSum, inputCalcSumValue);
+});
+
+inputRangeSumCalc.addEventListener('change',function(){
+    addSpaces(inputCalcSum, " ₽", inputCalcSumValue);
+    setTimeout(showInpBlock, 500, inputCalcSum, inputCalcSumValue);
+});
+
+inputCalcDays.addEventListener('input',function(){
+    addSpaces(inputCalcDays, " дней", inputCalcDaysValue);
+    setTimeout(showInpBlock, 1000, inputCalcDays, inputCalcDaysValue);
+});
+
+inputRangeDaysCalc.addEventListener('change',function(){
+    addSpaces(inputCalcDays, " дней", inputCalcDaysValue);
+    setTimeout(showInpBlock, 500, inputCalcDays, inputCalcDaysValue);
+});
+
+inputCalcPercent.addEventListener('input',function(){
+    addSpaces(inputCalcPercent, " %" ,inputCalcPercentValue);
+    setTimeout(showInpBlock, 1000, inputCalcPercent, inputCalcPercentValue);
+});
+
+inputRangePercentCalc.addEventListener('change',function(){
+    addSpaces(inputCalcPercent, " %", inputCalcPercentValue);
+    setTimeout(showInpBlock, 1000, inputCalcPercent, inputCalcPercentValue);
+});
+var rangInputs = document.querySelectorAll('.loan-overpayment-calc input[type=range]');
+for(let i=0;i<rangInputs.length;i++) {
+    rangInputs[i].addEventListener('input',function (e) {
+        let valOfRangeInp = e.target.value;
+        let closestTextInpBlock = e.target.previousElementSibling.previousElementSibling;
+        if(closestTextInpBlock.length != 0){
+            closestTextInpBlock.innerHTML = valOfRangeInp;
+        }
+    })
+}

@@ -1,12 +1,25 @@
 .lead-block {
     margin:20px 0;
+    position: relative;
 }
 
 .lead-main-container {
-    padding: 1px 16px 20px;
+    padding: 1px 16px 40px;
     background: linear-gradient(112.57deg, #D2E4FF 35.32%, #DEEBFF 88.15%);
 }
-
-.lead-main-container h1{
-    line-height: 2.75rem;
+.lead-block .lead-main-container .checked-by-expert {
+    width: 230px;
+    padding: 4px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    color: #636363;
+    margin: auto;
+}
+.checked-by-expert svg {
+    margin-right: 5px;
 }

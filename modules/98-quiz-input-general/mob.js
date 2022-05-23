@@ -3,7 +3,7 @@ function addSpaces(el, valInp, inpBl){
         let spEl = "";
         spEl =+ el.value;
         spEl = spEl.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
-        inpBl.innerHTML = spEl;
+        inpBl.innerHTML = spEl + valInp;
         return inpBl;
     }
 }

@@ -40,11 +40,15 @@
 .card-min-rating svg {
     margin-right: 0.5em;
 }
-.card-min-col img {
+.card-min-col img:not(.card-min-rectangle-logo) {
     border-radius: 50%;
     width: 40px;
     height: 40px;
     max-width: fit-content;
+}
+.card-min-col .card-min-rectangle-logo {
+    width: 70px;
+    height: 44px;
 }
 
 .card-min-label-title {
@@ -72,8 +76,8 @@
     width: calc(100% - 32px);
 }
 .card-min-logo {
-    max-width: 40px;
-    max-height: 40px;
+    /*max-width: 40px;*/
+    /*max-height: 40px;*/
     overflow: hidden;
 }
 .card-min-top-block .card-name {

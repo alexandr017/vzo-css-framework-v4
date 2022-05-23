@@ -179,12 +179,14 @@
         height: 30px;
     }
 
-    .js-slide-btn-left {
+    .jsSlideMainBlock .js-slide-btn-left {
         left: 5px;
+        background-position-y: -12px;
     }
 
-    .js-slide-btn-right {
+    .jsSlideMainBlock .js-slide-btn-right {
         right: 5px;
+        background-position-y: -12px;
     }
     .jsSlideItem .itext {
         max-width: unset;

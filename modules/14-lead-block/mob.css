@@ -2,10 +2,7 @@
     padding: 1px 16px 0;
     background: linear-gradient(112.57deg, #D2E4FF 35.32%, #DEEBFF 88.15%);
     /*min-height: 436px;*/
-}
-
-.lead-main-container h1{
-    line-height: 2.75rem;
+    position: relative;
 }
 
 .lead-btn-more,
@@ -21,6 +18,7 @@
 .lead-hidden-part {
     overflow: hidden;
     height: 70px;
+    font-size: 16px;
 }
 .question-search-block {
     padding: 10px 0;
@@ -65,4 +63,20 @@
     background-image: url("/v4/images/lead-mob-pic.png");
     background-position: bottom;
     background-repeat: no-repeat;
+}
+.lead-block .lead-main-container .checked-by-expert {
+    width: 230px;
+    padding: 4px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 25px;
+    color: #636363;
+    margin: auto;
+}
+.checked-by-expert svg {
+    margin-right: 5px;
 }

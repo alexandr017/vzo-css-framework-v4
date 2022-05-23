@@ -10,7 +10,7 @@
     padding: 1.5em 2em;
     margin: 2em 0;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     flex-wrap: wrap;
     background: #fff;
     height: 227px;
@@ -28,6 +28,10 @@
 }
 .bank-name {
     min-width: 20%;
+    max-width: 200px;
+}
+.bank-name .search-title {
+    line-height: 20px;
 }
 .bank-name, .bank-contact,.bank-k5m,.bank-rate {
     flex-direction: column;

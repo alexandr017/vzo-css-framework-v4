@@ -52,7 +52,7 @@
 
 .block-row {
     justify-content: space-between;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 
 .card-cont {
@@ -63,7 +63,10 @@
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+}
+.pay-icons-wrap {
+    position: relative;
 }
 .card-top-btn-wrap {
     justify-content: center;
@@ -89,11 +92,45 @@
 }
 
 .addToCompare {
-    margin-right: 22px;
+    margin-right: 10px;
 }
 
 .card-slider-block .jsSlideItem img {
     margin: 0 auto;
+}
+.card .card-hidden-block .card-slider-block {
+    margin: 1px auto;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+
+.card .card-hidden-block .card-slider-block .card-slider-info {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    border: 1px solid #E5E5E5;
+    margin: 0 8px;
+    /*height: 100%;*/
+    min-width: 140px;
+    padding: 10px;
+}
+
+.card .card-hidden-block .card-slider-block .card-slider-info .card-tooltip{
+    position: relative;
+}
+
+
+.card .card-hidden-block .card-slider-block .card-slider-info .text-cont {
+    line-height: 1.066rem;
+    margin-top: 7px;
+    font-size: .875rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 .addToCompare, .addToFavorites {
     cursor: pointer;
@@ -182,7 +219,7 @@
     width: 50%;
 }
 /*.card-hidden-block .tab-wrap {*/
-    /*margin-right: -15px;*/
+/*margin-right: -15px;*/
 /*}*/
 
 .card-hidden-block .tab {
@@ -219,14 +256,14 @@
 }
 
 .card-hidden-block .tab .tab-links.on {
-    color: #355FF1;
+    color: #000000;
 }
 
 .card-hidden-block .tabs-items .tab-content.on {
     display:block;
     border-bottom: 1px solid #E5E5E5;
-    padding: 5px 15px 15px;
-    margin-right: 15px;
+    padding: 15px 0;
+    margin: 0 15px;
 }
 
 .card-hidden-block .tabs-items .tab-content {
@@ -261,10 +298,7 @@
 }
 
 .pay-icons-wrap span {
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .top-inner-btn .btn-cnv{
@@ -327,4 +361,8 @@
 .card-hidden-block .rating-val {
     margin-left: 10px;
     color: #636363;
+    font-family: 'Proxima Nova Rg';
+}
+.card-review-rating-block .rate-num {
+    font-weight: 600;
 }

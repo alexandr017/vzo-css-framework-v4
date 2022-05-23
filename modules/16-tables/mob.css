@@ -1,64 +1,3 @@
-table.table-border-part {
-    table-layout:fixed;
-    width:100%;
-    margin: 30px 0;
-    max-width: 100%;
-    border-spacing: 0;
-    border: 0;
-    overflow: hidden;
-}
-
-table td:not(.table-border-part td), table th:not(.table-border-part th ){
-    padding: 14px 0 14px 65px;
-}
-
-table.table-border-part{
-    border-top: 1px solid #E5E5E5;
-    border-bottom: 1px solid #E5E5E5;
-}
-
-
-table.table-border-part td, table.table-border-part th{
-    padding: 14px 0;
-    text-align: center;
-}
-
-table.table-border-part tbody tr td:first-of-type,
-table.table-border-part thead tr th:first-of-type{
-    border-right: 1px solid #E5E5E5;
-}
-
-table.table-border-part thead tr th {
-    border-bottom: 1px solid #E5E5E5;
-}
-
-table .main-td {
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-table.table-limit {
-    border-collapse: collapse;
-    border-top: 1px solid #DCE4EC;
-}
-
-table.table-limit tr.showed-items td, table.table-limit thead th{
-    border-bottom: 1px solid #DCE4EC;
-    border-right: 1px solid #DCE4EC;
-}
-
-table.table-horizontal {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-
-
 .listing-h2 {
     margin: 16px;
 }
@@ -75,8 +14,11 @@ table.table-horizontal {
 }
 
 .jsTableBlock td {
-    min-width: 284px;
+    /*min-width: 284px;*/
     padding: 10px 16px;
+}
+.jsTableBlock thead .main-td:first-of-type {
+    min-width: 200px;
 }
 .jsTableBlock .js-table {
     table-layout: fixed;
@@ -89,9 +31,14 @@ table.table-horizontal {
 }
 
 .jsTbScroll {
+    display: block;
+    width: 100%;
     overflow-x: auto;
+    padding-bottom: 50px;
 }
-
+.jsTableBlock .dataTablesFooter {
+    position: absolute;
+}
 .jsTbScroll::-webkit-scrollbar {
     height: 0;
 }
@@ -111,8 +58,8 @@ table.table-horizontal {
     margin: 0 5px;
     line-height: 28px;
     text-align: center;
-    border-radius: 50%;
-    color: #767F85;
+    border-radius: 5px;
+    color: #636363;
 }
 
 .data-table-pagination:not(.disabledPage) {
@@ -124,15 +71,12 @@ table.table-horizontal {
 }
 
 .data-table-pagination.currentPage {
-    border: 1px solid #767F85;
     pointer-events: none;
-}
-.data-table-pagination:not(.currentPage):not(.disabledPage):hover {
-    border:1px solid #767F85;
+    background-color: #E5E5E5;
 }
 
 .jsTableBlock {
-    background: #F4F7FB;
+    background: #F7F7F7;
     border-top: 1px solid #DCE4EC;
     border-bottom: 1px solid #DCE4EC;
 }
@@ -141,7 +85,6 @@ table.table-horizontal {
     margin-top: 72px;
 }
 .jsTableBlock .dataTablesFooter .data-table-pages {
-    padding-right: 4em;
     border-radius: 0 0 15px 15px;
 }
 
@@ -150,9 +93,9 @@ table.table-horizontal {
     height: 45px;
     padding: 0 2em 1px;
     width: 100%;
-    background-color: #FFF !important;
+    background-color: #FFF;
     border: none;
-
+    border-radius: 5px;
 }
 .searchInp::placeholder {
     color: #95A5B0;
@@ -168,7 +111,7 @@ table.table-horizontal {
 }
 .searchBlock svg {
     position: absolute;
-    top: 1em;
+    top: 2.2em;
 }
 .searchBlock .searchMagnifier {
     right: 4em;
@@ -183,6 +126,55 @@ table.table-horizontal {
 }
 .activeSortItem {
     color: #007bff;
+}
+
+table.table-limit {
+    border-collapse: collapse;
+    border-top: 1px solid #DCE4EC;
+}
+
+table.table-limit tr.showed-items td, table.table-limit thead th,table.table-limit tr.matchesToSearch td{
+    border-bottom: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+}
+
+table.table-horizontal {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.table-border-part {
+    table-layout:fixed;
+    width:100%;
+    margin: 30px 0;
+    max-width: 100%;
+    border-spacing: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+table.table-border-part{
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+
+table.table-border-part td, table.table-border-part th{
+    padding: 14px 16px;
+    text-align: center;
+}
+
+table.table-border-part tbody tr td:first-of-type,
+table.table-border-part thead tr th:first-of-type{
+    border-right: 1px solid #E5E5E5;
+}
+
+table.table-border-part thead tr th {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+table .main-td {
+    font-weight: bold;
 }
 
 /* скрытие таблиц */
@@ -219,4 +211,8 @@ table.table-horizontal {
 
 table tr.hide {
     display: none;
+}
+.total_cards_table_text {
+    font-size: 16px;
+    padding: 0 16px;
 }

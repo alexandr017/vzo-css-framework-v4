@@ -124,6 +124,7 @@ var dataTable = (function () {
                         }else {
                             pages += '<span class="data-table-pagination">'+i+'</span>';
                         }
+
                     }
                 } else {
                     currentPage = 'currentPage';
@@ -238,12 +239,13 @@ var dataTable = (function () {
         }
         var createSearchBlock = function(element) {
             var searchBlock = document.createElement('div');
+            var placeholderText = '';
             if(window.CATEGORY_ID == 1) {
                 placeholderText = 'Поиск по условиям и названию МФО';
             } else {
                 placeholderText = 'Поиск';
             }
-            searchBlock.innerHTML = '<input type="text" class="border-radius searchInp '+elementName+'-searchInp" placeholder="'+placeholderText+'">'+searchReset;
+            searchBlock.innerHTML = '<input type="text" class="searchInp '+elementName+'-searchInp" placeholder="'+placeholderText+'">'+searchReset;
             searchBlock.className = 'searchBlock';
             element.parentNode.insertBefore(searchBlock,element);
             element.parentNode.getElementsByClassName('searchReset')[0].addEventListener('click',function (e) {

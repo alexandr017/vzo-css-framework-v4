@@ -3,6 +3,7 @@
     margin: 30px 0;
     background: #F7F7F7;
     border: 1px solid #E5E5E5;
+    font-size: 1rem;
 }
 
 .expert-opinion-block .h4 {
@@ -24,6 +25,7 @@
 
 .expert-name {
     margin-left: 20px;
+    line-height: 18px;
 }
 
 .expert-name a {
@@ -46,7 +48,7 @@
 
 .hidden-info {
     overflow: hidden;
-    height: 170px;
+    height: 165px;
 }
 
 .data-more-less-body, .expert-opinion-block .h4, .expert-info {
