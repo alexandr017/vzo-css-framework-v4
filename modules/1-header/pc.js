@@ -3,27 +3,27 @@ let scrollPageUp = "scroll-page-up";
 let scrollPageDown = "scroll-page-down";
 let scrollVal = 0;
 
-window.addEventListener("scroll", () => {
-    let searchBlock = $$('.search-block')[0];
-    scrollSearchBlock = "scroll-search-block";
-
-    let currentScroll = window.pageYOffset;
-    if (currentScroll <= 0) {
-        fullPage.classList.remove(scrollPageUp);
-        searchBlock.classList.remove(scrollSearchBlock);
-        return;
-    }
-    if (currentScroll > scrollVal && !fullPage.classList.contains(scrollPageDown)) {
-        fullPage.classList.remove(scrollPageUp);
-        fullPage.classList.add(scrollPageDown);
-        searchBlock.classList.remove(scrollSearchBlock);
-    } else if (currentScroll < scrollVal && fullPage.classList.contains(scrollPageDown)) {
-        fullPage.classList.remove(scrollPageDown);
-        fullPage.classList.add(scrollPageUp);
-        searchBlock.classList.add(scrollSearchBlock);
-    }
-    scrollVal = currentScroll;
-});
+// window.addEventListener("scroll", () => {
+//     let searchBlock = $$('.search-block')[0];
+//     scrollSearchBlock = "scroll-search-block";
+//
+//     let currentScroll = window.pageYOffset;
+//     if (currentScroll <= 0) {debugger
+//         fullPage.classList.remove(scrollPageUp);
+//         searchBlock.classList.remove(scrollSearchBlock);
+//         return;
+//     }
+//     if (currentScroll > scrollVal && !fullPage.classList.contains(scrollPageDown)) {debugger
+//         fullPage.classList.remove(scrollPageUp);
+//         fullPage.classList.add(scrollPageDown);
+//         searchBlock.classList.remove(scrollSearchBlock);
+//     } else if (currentScroll < scrollVal && fullPage.classList.contains(scrollPageDown)) {debugger
+//         fullPage.classList.remove(scrollPageDown);
+//         fullPage.classList.add(scrollPageUp);
+//         searchBlock.classList.add(scrollSearchBlock);
+//     }
+//     scrollVal = currentScroll;
+// });
 
 let searchClickBg = $$('.search-bg')[0];
 searchClickBg.addEventListener('click',function (e) {
@@ -54,11 +54,15 @@ function searchToggle(){
 }
 document.addEventListener('DOMContentLoaded', function(){
     var favorites = localStorage.getItem('vzo');
+
+
     if(favorites != null) {
+
         favorites = favorites.split(',');
         if(favorites.length != 0){
             $$('.fav-items-count')[0].innerHTML = favorites.length;
             $$('.fav-items-count')[0].style.display = 'flex';
+            $$('.icon-for-show-notice')[0].classList.add('show-favorites-cards');
         }
     }
     // var compareItems = localStorage.getItem('vzo_compare'+window.CATEGORY_ID);
@@ -74,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if(compareItems != null) {
             compareItemsCountBlock.innerHTML = compareItems;
             compareItemsCountBlock.style.display = 'flex';
+            $$('.icon-for-show-notice')[0].classList.add('show-favorites-cards');
         } else {
             compareItemsCountBlock.style.display = 'none';
         }

@@ -25,6 +25,7 @@ document.addEventListener('scroll', function(e){
         }
     }
 });
+
 function setCompareBlockDynamicData(compareItemsCount,newAdded = false) {
     var endOfCompareWord = '';
     endOfCompareWord = (compareItemsCount == 1) ? 'ие' : (compareItemsCount <= 4 && compareItemsCount != 0) ? 'ия' : (compareItemsCount == 0 || compareItemsCount >=5 && compareItemsCount <=9) ? 'ий' : '';
@@ -33,5 +34,7 @@ function setCompareBlockDynamicData(compareItemsCount,newAdded = false) {
     }
     if(compareItemsCount > 0 && $$('.compare-block').length != 0 && newAdded == true) {
         $$('.compare-block')[0].style.display = 'flex';
+    } else {
+        $$('.compare-block')[0].style.display = 'none';
     }
 }

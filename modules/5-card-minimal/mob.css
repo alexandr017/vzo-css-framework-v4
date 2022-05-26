@@ -83,3 +83,6 @@
 .card-min-top-block .card-name {
     display: block;
 }
+.card-min-top-block {
+    min-height: 95px;
+}

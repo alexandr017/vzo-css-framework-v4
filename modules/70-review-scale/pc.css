@@ -89,6 +89,8 @@
 .scale-rating-block .rating-btn-wrap .btn {
     width: 48%;
     font-weight: normal;
+    display: inline-block;
+    line-height: 2.5rem;
 }
 
 .scale-rating-block .custom-checkbox{

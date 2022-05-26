@@ -38,6 +38,9 @@
 }
 .jsTableBlock .dataTablesFooter {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 .jsTbScroll::-webkit-scrollbar {
     height: 0;

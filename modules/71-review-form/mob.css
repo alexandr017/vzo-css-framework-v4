@@ -28,3 +28,6 @@
 .review-f .r-btn-wrap .btn {
     width: 100%;
 }
+.review-f .rating-wrap svg {
+    margin-right: 5px;
+}

@@ -1,0 +1,99 @@
+.card-compare {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.card-compare .btn {
+    width: 100%;
+}
+.card-compare:not(:first-of-type) {
+    margin-left: 65px;
+    width: 100%;
+}
+.card-compare-btns .btn:not(:first-of-type) {
+    margin-left: 65px;
+}
+.card-compare-table-value:not(:first-of-type),.card-compare-table-title:not(:first-of-type) {
+    margin-left: 65px;
+}
+/*.card-compare-slider-value:after {*/
+/*content: '';*/
+/*background-color: #F6F8FB;*/
+/*padding: 1em 0.5em;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*width: 65px;*/
+/*left: 220px;*/
+/*z-index: 11;*/
+/*display: block;*/
+/*height: 100%;*/
+/*}*/
+.compare-table-gray-bg .card-compare-table-value:first-of-type {
+    border-radius: 15px 0 0 15px;
+}
+.compare-table-gray-bg .card-compare-table-value:nth-of-type(3){
+    border-radius: 0 15px 15px 0;
+}
+.card-compare-table-value {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1em 0.5em;
+    background-color: #F6F8FB;
+    position: relative;
+}
+.card-compare-table-title {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.5em;
+}
+.card-compare-block .card-compare-table {
+    margin: 1em 0;
+}
+.card-compare-block {
+    width: 790px;
+    flex-wrap: wrap;
+    margin: 1em auto;
+    position: relative;
+    overflow: hidden;
+}
+.card-compare-head-block,.card-compare-btns,.card-compare-table {
+    width: 100%;
+}
+.card-compare-btns .btn {
+    width: 100%;
+}
+.card-compare-main-block {
+    transition: 0.5s ease-in-out;
+}
+.card-compare-slider{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+.card-compare-next {
+    top: 50%;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+}
+.card-compare-prev {
+    top: 50%;
+    left: 0;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+.deleteFromCompare {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.clearCompare {
+    margin-left: 15em;
+    color: #4FABFA;
+    cursor: pointer;
+}

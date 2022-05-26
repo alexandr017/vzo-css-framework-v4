@@ -214,3 +214,6 @@ figure figcaption {
 amp-iframe {
     min-height: 400px;
 }
+.i-amphtml-blurry-placeholder, .i-amphtml-fill-content {
+    margin: 0 auto;
+}

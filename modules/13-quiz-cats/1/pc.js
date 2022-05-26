@@ -69,38 +69,47 @@ if($$('.search-by-quiz-btn').length != 0) {
     $$('.search-by-quiz-btn')[0].addEventListener('click', () => {
         console.log('click');
 
-        window.NUMBER_PAGE = 1;
+    window.NUMBER_PAGE = 1;
 
-        var params = {};
-        params['field'] = window.SORT_FIELD;
-        params['page'] = window.NUMBER_PAGE;
-        params['listing_id'] = window.LISTING_ID;
-        params['category_id'] = window.CATEGORY_ID;
-        params['count_on_page'] = window.COUNT_ON_PAGE;
-        params['options'] = {};
-        params['sort_type'] = window.SORT_TYPE;
-        params['section_type'] = window.SECTION_TYPE;
-        if($$('.inputQuizNum').length != 0) {
-            params['slf_summ'] = $$('.inputQuizNum')[0].value;
-        }
-        if($$('.inputQuizDays').length != 0) {
-            params['slf_time'] = $$('.inputQuizDays')[0].value;
-        }
+    var params = {};
+    params['field'] = window.SORT_FIELD;
+    params['page'] = window.NUMBER_PAGE;
+    params['listing_id'] = window.LISTING_ID;
+    params['category_id'] = window.CATEGORY_ID;
+    params['count_on_page'] = window.COUNT_ON_PAGE;
+    params['options'] = {};
+    params['sort_type'] = window.SORT_TYPE;
+    params['section_type'] = window.SECTION_TYPE;
+    if($$('.inputQuizNum').length != 0) {
+        params['slf_summ'] = $$('.inputQuizNum')[0].value;
+    }
+    if($$('.inputQuizDays').length != 0) {
+        params['slf_time'] = $$('.inputQuizDays')[0].value;
+    }
 
 
-        fetch('/actions/load_cards_for_listings?' + new URLSearchParams(params), {
-            method: 'GET',
-        }).then((res) => {
-            return res.json().then((data) => {
-                let countOffers = wordDeclension(data['count'], [' предложение ', ' предложения ', ' предложений ']);
-                let [day, month, year] = getCurrentDate();
-                $$('.quiz-count-cards')[0].innerHTML = 'Подобрано ' + data['count'] + ' ' + countOffers + ' на ' +  day + '.' + month + '.' + year;
-                $$('.offers-list')[0].innerHTML = data['code'];
-                updateCardsLoadButton(data['count']);
-                addCardsBtnsEvents();
-            }).catch((err) => {
-                console.log(err);
-            })
-        });
-    });
+    fetch('/actions/load_cards_for_listings?' + new URLSearchParams(params), {
+        method: 'GET',
+    }).then((res) => {
+        return res.json().then((data) => {
+            let countOffers = wordDeclension(data['count'], [' предложение ', ' предложения ', ' предложений ']);
+    let [day, month, year] = getCurrentDate();
+    $$('.quiz-count-cards')[0].innerHTML = 'Подобрано ' + data['count'] + ' ' + countOffers + ' на ' +  day + '.' + month + '.' + year;
+    $$('.offers-list')[0].innerHTML = data['code'];
+    updateCardsLoadButton(data['count']);
+    addCardsBtnsEvents();
+}).catch((err) => {
+        console.log(err);
+})
+});
+});
+}
+if($$('.total_cards_table_js').length != 0) {
+    let totalTableLastTr = $$('.total_cards_table_js')[0].querySelectorAll('[data-sum]')[0];
+    let sum_max = totalTableLastTr.dataset.sum;
+    let term_max = totalTableLastTr.dataset.term;
+    if(inputQuizNum.attributes['max']){inputQuizNum.attributes['max'].value = sum_max} else inputQuizNum.setAttribute('max',sum_max);
+    if(inputQuizDays.attributes['max']){inputQuizDays.attributes['max'].value = term_max} else inputQuizDays.setAttribute('max',term_max);
+    if(inputQuizRangeSum.attributes['max']){inputQuizRangeSum.attributes['max'].value = sum_max} else inputQuizRangeSum.setAttribute('max',sum_max);
+    if(inputQuizRangeDays.attributes['max']){inputQuizRangeDays.attributes['max'].value = term_max} else inputQuizRangeDays.setAttribute('max',term_max);
 }

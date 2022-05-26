@@ -28,7 +28,7 @@
 }
 .review-form .form-1 input,.review-form .form-1 textarea {
     background-color: #ffffff;
-    padding: 8px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #E6EBEF;
 }
 .review-f .h3 {
@@ -43,6 +43,7 @@
 .review-f .rating-wrap svg {
     width: 30px;
     height: 30px;
+    margin-right: 7px;
 }
 .block-reviews .review-wrap #review-form {
     background-color: #F6F8FB;

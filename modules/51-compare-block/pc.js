@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function(){
     for (let i = 1; i < 12; i++) {
         var compareItemsByCat = localStorage.getItem('vzo_compare' + i);
         if (compareItemsByCat != null) {
-            compareItems += compareItemsByCat.split(',').length;
+            var compareItemsCatArr = compareItemsByCat.split(',');
+            compareItems += compareItemsCatArr.length;
         }
     }
     if(compareItems != null) {
@@ -45,5 +46,11 @@ function setCompareBlockDynamicData(compareItemsCount,newAdded = false) {
         $$('.count-of-comparing-items')[0].style.display = 'flex';
     } else {
         $$('.count-of-comparing-items')[0].style.display = 'none';
+    }
+    if($$('.addedToCompare').length != 0) {
+        var firsComparedItem = $$('.addedToCompare')[0].closest('.card').querySelectorAll('.logo a img')[0].src;
+        if($$('.compare-block').length != 0) {
+            $$('.compare-block .compare-item img')[0].src = firsComparedItem;
+        }
     }
 }

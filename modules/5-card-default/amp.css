@@ -2,6 +2,10 @@
     margin-top: 0;
 }
 
+.offers-list-mt {
+    margin-top: 16px;
+}
+
 .card {
     width: 100%;
     margin: 30px 0;
@@ -163,22 +167,39 @@
     font-family: 'Inter', sans-serif;
 }
 
-.card-radio:checked + label .tab-links {
+.card-radio:nth-of-type(1):checked ~ .tab-content-labels-block label:nth-of-type(1) .tab-links,
+.card-radio:nth-of-type(2):checked ~ .tab-content-labels-block label:nth-of-type(2) .tab-links,
+.card-radio:nth-of-type(3):checked ~ .tab-content-labels-block label:nth-of-type(3) .tab-links,
+.card-radio:nth-of-type(4):checked ~ .tab-content-labels-block label:nth-of-type(4) .tab-links,
+.card-radio:nth-of-type(5):checked ~ .tab-content-labels-block label:nth-of-type(5) .tab-links,
+.card-radio:nth-of-type(6):checked ~ .tab-content-labels-block label:nth-of-type(6) .tab-links,
+.card-radio:nth-of-type(7):checked ~ .tab-content-labels-block label:nth-of-type(7) .tab-links,
+.card-radio:nth-of-type(8):checked ~ .tab-content-labels-block label:nth-of-type(8) .tab-links {
     color: #000000;
 }
-
+.tab-content-labels-block {
+    display: flex;
+    width: 96%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.card-hidden-block .tab-content-labels-block::-webkit-scrollbar {
+    height: 0;
+}
 .card-hidden-block .tab-content {
     display: none;
 }
 
-.card-radio:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
-.card-radio:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
-.card-radio:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
-.card-radio:nth-of-type(4):checked ~ .tab-content:nth-of-type(4),
-.card-radio:nth-of-type(5):checked ~ .tab-content:nth-of-type(5),
-.card-radio:nth-of-type(6):checked ~ .tab-content:nth-of-type(6),
-.card-radio:nth-of-type(7):checked ~ .tab-content:nth-of-type(7),
-.card-radio:nth-of-type(8):checked ~ .tab-content:nth-of-type(8){
+.card-radio:nth-of-type(1):checked ~ .tab-content-block .tab-content:nth-of-type(1),
+.card-radio:nth-of-type(2):checked ~ .tab-content-block .tab-content:nth-of-type(2),
+.card-radio:nth-of-type(3):checked ~ .tab-content-block .tab-content:nth-of-type(3),
+.card-radio:nth-of-type(4):checked ~ .tab-content-block .tab-content:nth-of-type(4),
+.card-radio:nth-of-type(5):checked ~ .tab-content-block .tab-content:nth-of-type(5),
+.card-radio:nth-of-type(6):checked ~ .tab-content-block .tab-content:nth-of-type(6),
+.card-radio:nth-of-type(7):checked ~ .tab-content-block .tab-content:nth-of-type(7),
+.card-radio:nth-of-type(8):checked ~ .tab-content-block .tab-content:nth-of-type(8){
     display: block;
     border-top: 1px solid #E5E5E5;
     margin: 15px 0;
@@ -321,10 +342,12 @@
     padding: 10px 0;
     width: 100%;
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     justify-content: space-between;
 }
-
+.card .card-hidden-block .card-slider-block:hover{
+    overflow-x: auto;
+}
 .card .card-hidden-block .card-slider-block .card-slider-info {
     cursor: pointer;
     display: block;

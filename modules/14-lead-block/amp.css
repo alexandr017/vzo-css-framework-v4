@@ -4,7 +4,7 @@
 }
 
 .lead-main-container {
-    padding: 1px 16px 40px;
+    padding: 1px 16px 60px;
     background: linear-gradient(112.57deg, #D2E4FF 35.32%, #DEEBFF 88.15%);
 }
 .lead-block .lead-main-container .checked-by-expert {
@@ -16,10 +16,13 @@
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 10px;
+    bottom: 20px;
     color: #636363;
     margin: auto;
 }
 .checked-by-expert svg {
     margin-right: 5px;
+}
+.lead-block ul {
+    padding-left: 16px;
 }
