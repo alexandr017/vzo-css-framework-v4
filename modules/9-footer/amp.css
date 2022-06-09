@@ -45,21 +45,26 @@
 
 .f-block ul.f-2-menu {
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     font-weight: 600;
-    padding: 0 40px;
+    padding: 0;
     width: 100%;
-    font-size: .75rem;
+    max-width: 390px;
+    margin: 0 auto;
+    /*font-size: .75rem;*/
 }
 
 .f-block .f-2-menu li {
     list-style-type: none;
-    font-family: 'Inter', sans-serif;
     margin-top: 20px;
+    padding: 0 10px;
 }
 
-.f-block .f-2-menu a {
-    color: #95A5B0;
+
+.f-block .f-3 .policy a {
+    margin: 0 15px;
+    font-size: 0.75rem;
+    color: #888888;
 }
 
 .f-block .f-2-menu li a.active, .f-block .f-2-menu li a:hover {
@@ -74,13 +79,12 @@
     padding: 20px 0;
 }
 
-.f-block .f-3 .policy a {
-    margin: 0 15px;
-    font-size: 0.75rem;
-    color: #ADBAC4;
-}
 .f-block .copyright {
-    color: #ADBAC4;
+    color: #888888;
     font-size: 0.8rem;
     margin-top: 15px;
+}
+
+.f-block .f-2-menu a {
+    color: #888888;
 }

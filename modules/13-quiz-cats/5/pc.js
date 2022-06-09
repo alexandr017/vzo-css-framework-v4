@@ -64,42 +64,26 @@ inputQuizRangeDays.addEventListener('change',function(){
     addSpaces(inputQuizDays, inputQuizDaysValue);
     setTimeout(showInpBlock, 500, inputQuizDays, inputQuizDaysValue);
 });
-if($$('.search-by-quiz-btn').length != 0) {
-    $$('.search-by-quiz-btn')[0].addEventListener('click', () => {
-        console.log('click');
-
-        window.NUMBER_PAGE = 1;
-
-        var params = {};
-        params['field'] = window.SORT_FIELD;
-        params['page'] = window.NUMBER_PAGE;
-        params['listing_id'] = window.LISTING_ID;
-        params['category_id'] = window.CATEGORY_ID;
-        params['count_on_page'] = window.COUNT_ON_PAGE;
-        params['options'] = {};
-        params['sort_type'] = window.SORT_TYPE;
-        params['section_type'] = window.SECTION_TYPE;
-        if($$('.inputQuizNum').length != 0) {
-            params['slf_limit_max'] = $$('.inputQuizNum')[0].value;
-        }
-        if($$('.inputQuizDays').length != 0) {
-            params['slf_none_percent_period'] = $$('.inputQuizDays')[0].value;
-        }
-
-
-        fetch('/actions/load_cards_for_listings?' + new URLSearchParams(params), {
-            method: 'GET',
-        }).then((res) => {
-            return res.json().then((data) => {
-                let countOffers = wordDeclension(data['count'], [' предложение ', ' предложения ', ' предложений ']);
-                let [day, month, year] = getCurrentDate();
-                $$('.quiz-count-cards')[0].innerHTML = 'Подобрано ' + data['count'] + ' ' + countOffers + ' на ' +  day + '.' + month + '.' + year;
-                $$('.offers-list')[0].innerHTML = data['code'];
-                updateCardsLoadButton(data['count']);
-                addCardsBtnsEvents();
-            }).catch((err) => {
-                console.log(err);
-            })
-        });
-    });
+function addQuizInputsParams(params) {
+    if($$('.inputQuizNum').length != 0) {
+        params['slf_limit_max'] = $$('.inputQuizNum')[0].value;
+    }
+    if($$('.inputQuizDays').length != 0) {
+        params['slf_none_percent_period'] = $$('.inputQuizDays')[0].value;
+    }
+}
+if($$('.total_cards_table_js').length != 0) {
+    let totalTableLastTr = $$('.total_cards_table_js')[0].querySelectorAll('tbody')[0].lastElementChild;
+    let sum_max = totalTableLastTr.dataset.summax;
+    let term_max = totalTableLastTr.dataset.termmax;
+    let sum_min = totalTableLastTr.dataset.summin;
+    let term_min = totalTableLastTr.dataset.termmin;
+    if(inputQuizNum.attributes['max']){inputQuizNum.attributes['max'].value = sum_max} else inputQuizNum.setAttribute('max',sum_max);
+    if(inputQuizDays.attributes['max']){inputQuizDays.attributes['max'].value = term_max} else inputQuizDays.setAttribute('max',term_max);
+    if(inputQuizRangeSum.attributes['max']){inputQuizRangeSum.attributes['max'].value = sum_max} else inputQuizRangeSum.setAttribute('max',sum_max);
+    if(inputQuizRangeDays.attributes['max']){inputQuizRangeDays.attributes['max'].value = term_max} else inputQuizRangeDays.setAttribute('max',term_max);
+    if(inputQuizNum.attributes['min']){inputQuizNum.attributes['min'].value = sum_min} else inputQuizNum.setAttribute('min',sum_min);
+    if(inputQuizDays.attributes['min']){inputQuizDays.attributes['min'].value = term_min} else inputQuizDays.setAttribute('min',term_min);
+    if(inputQuizRangeSum.attributes['min']){inputQuizRangeSum.attributes['min'].value = sum_min} else inputQuizRangeSum.setAttribute('min',sum_min);
+    if(inputQuizRangeDays.attributes['min']){inputQuizRangeDays.attributes['min'].value = term_min} else inputQuizRangeDays.setAttribute('min',term_min);
 }

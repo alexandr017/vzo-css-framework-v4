@@ -230,7 +230,7 @@ table .main-td {
 
 /*js dataTables*/
 .jsTableBlock .main-td:not(:first-of-type) {
-    width: 200px;
+    width: 270px;
 }
 .jsTableBlock .js-table {
     table-layout: fixed;
@@ -377,4 +377,8 @@ table tr.hide {
 
 table.cell-padding td, table.cell-padding th{
     padding: 15px;
+}
+
+.post-content table td:first-child {
+    padding-left: 0;
 }

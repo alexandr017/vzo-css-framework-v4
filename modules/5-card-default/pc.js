@@ -104,7 +104,7 @@ function addToCompareBtnsClick (e){
         var compareItemsByCats = null;
         for (let i = 1; i < 12; i++) {
             var compareItemsByCat = localStorage.getItem('vzo_compare' + i);
-            if (compareItemsByCat != null) {
+            if (compareItemsByCat != null && compareItemsByCat != '') {
                 compareItemsByCats += compareItemsByCat.split(',').length;
             }
         }

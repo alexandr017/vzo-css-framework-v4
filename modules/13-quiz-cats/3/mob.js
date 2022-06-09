@@ -75,42 +75,11 @@ inputQuizRangeTerm.addEventListener("change",function(){
     addSpaces(inputQuizTerm, " дней",  inputQuizTermValue);
     setTimeout(showInpBlock, 500, inputQuizTerm, inputQuizTermValue);
 });
-if($$('.search-by-quiz-btn').length != 0) {
-    $$('.search-by-quiz-btn')[0].addEventListener('click', () => {
-        console.log('click');
-
-        window.NUMBER_PAGE = 1;
-
-        var params = {};
-        params['field'] = window.SORT_FIELD;
-        params['page'] = window.NUMBER_PAGE;
-        params['listing_id'] = window.LISTING_ID;
-        params['category_id'] = window.CATEGORY_ID;
-        params['count_on_page'] = window.COUNT_ON_PAGE;
-        params['options'] = {};
-        params['sort_type'] = window.SORT_TYPE;
-        params['section_type'] = window.SECTION_TYPE;
-        if($$('.inputQuizNum').length != 0) {
-            params['slf_summ'] = $$('.inputQuizNum')[0].value;
-        }
-        if($$('.inputQuizTerm').length != 0) {
-            params['slf_time'] = $$('.inputQuizTerm')[0].value;
-        }
-
-
-        fetch('/actions/load_cards_for_listings?' + new URLSearchParams(params), {
-            method: 'GET',
-        }).then((res) => {
-            return res.json().then((data) => {
-                let countOffers = wordDeclension(data['count'], [' предложение ', ' предложения ', ' предложений ']);
-                let [day, month, year] = getCurrentDate();
-                $$('.quiz-count-cards')[0].innerHTML = 'Подобрано ' + data['count'] + ' ' + countOffers + ' на ' +  day + '.' + month + '.' + year;
-                $$('.offers-list')[0].innerHTML = data['code'];
-                updateCardsLoadButton(data['count']);
-                addCardsBtnsEvents();
-            }).catch((err) => {
-                console.log(err);
-            })
-        });
-    });
+function addQuizInputsParams(params) {
+    if($$('.inputQuizNum').length != 0) {
+        params['slf_summ'] = $$('.inputQuizNum')[0].value;
+    }
+    if($$('.inputQuizTerm').length != 0) {
+        params['slf_time'] = $$('.inputQuizTerm')[0].value;
+    }
 }

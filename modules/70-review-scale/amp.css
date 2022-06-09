@@ -70,3 +70,7 @@
     display: block;
     margin-top: 10px;
 }
+.scale-rating-block .info .info-title {
+    font-size: 1rem;
+    margin: 5px 0;
+}

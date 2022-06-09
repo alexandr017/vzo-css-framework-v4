@@ -28,6 +28,7 @@
     padding: 17px 0 20px;
     display: flex;
     overflow-y: auto;
+    border-top: 1px solid #DCE4EC;
 }
 
 .org-menu-links::-webkit-scrollbar {
@@ -162,4 +163,7 @@
 }
 .org-rating .org-menu-review-page-link {
     color: #636363;
+}
+.org-rating a.org-menu-review-page-link:hover {
+    color: #355FF1;
 }

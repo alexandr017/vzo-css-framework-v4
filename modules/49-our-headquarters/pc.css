@@ -59,11 +59,12 @@
 .about-headquarters-img-el {
     margin: 15px 10px;
     border-radius: 15px;
+    height: 290px;
 }
 
-.our-headquarters-block {
-    padding: 75px 0;
-}
+/*.our-headquarters-block {*/
+/*padding: 75px 0;*/
+/*}*/
 
 .our-headquarters-block .h2{
     margin-bottom: 35px;
