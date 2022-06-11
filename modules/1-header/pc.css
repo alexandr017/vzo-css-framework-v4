@@ -36,14 +36,7 @@
     line-height: 1em;
     font-family: 'Inter', sans-serif;
     display: block;
-    color: #000 !important;
-}
-
-.header .logo .logo-text {
-    font-size: .625rem;
-    display: block;
-    margin-top: -5px;
-    color: #000 !important;
+    max-width: 64px;
 }
 
 .hl-item-title, .hr-item-title {

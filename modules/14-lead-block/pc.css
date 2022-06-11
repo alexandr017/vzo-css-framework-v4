@@ -17,6 +17,9 @@
 .lead-main-container .lead-icon {
     display: block;
     float: right;
+    position: relative;
+    cursor: pointer;
+    z-index: 111;
 }
 
 .lead-btn-more,
