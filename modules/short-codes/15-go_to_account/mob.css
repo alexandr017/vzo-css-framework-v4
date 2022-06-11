@@ -1,7 +1,7 @@
 .go-to-acc {
     padding: 25px 16px;
     margin: 30px 0;
-    border: 1px solid #DCE4EC;
+    border: 1px solid #E5E5E5;
     background: #fff;
 }
 
@@ -11,7 +11,7 @@
     align-items: center;
 }
 
-.go-to-acc .go-to-acc_body .go-to-acc_img img {
+.go-to-acc .go-to-acc_body .go-to-acc_img .go-to-acc-svg {
     width: 44px;
     height: 44px;
     border-radius: 50%;

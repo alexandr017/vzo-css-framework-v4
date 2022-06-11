@@ -7,13 +7,15 @@
 .our-communities .soc-community-links {
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 20px auto;
+    width: 80%;
 }
 
 .our-communities .soc-community-links a {
     display: flex;
+    width: 25%;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    margin: 15px;
+    margin: 15px 0;
 }

@@ -52,11 +52,11 @@
     flex-wrap: wrap;
     justify-content:space-evenly;
     font-weight: 600;
-    padding: 0 40px;
+    padding: 0;
     width: 100%;
-    max-width: 340px;
+    max-width: 390px;
     margin: 0 auto;
-    font-size: .75rem;
+    /*font-size: .75rem;*/
 }
 
 .f-block .f-2-menu li {

@@ -1,7 +1,7 @@
 .benefits{
     overflow-y: auto;
     flex-wrap: inherit;
-    padding: 30px 0;
+    padding: 10px 0;
     margin-right: -15px;
 }
 
@@ -17,7 +17,7 @@
 .benefit-item b {
     display: block;
     margin: 10px 0;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
 }
 
 .benefit-item p{

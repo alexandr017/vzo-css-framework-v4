@@ -18,6 +18,8 @@
 .lead-hidden-part {
     overflow: hidden;
     height: 70px;
+}
+.lead-wrap {
     font-size: 16px;
 }
 .question-search-block {

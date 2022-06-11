@@ -32,7 +32,8 @@
     color: #fff;
     border-radius: 10px;
     z-index: 9;
-    width: 300px;
+    max-width: 300px;
+    width: max-content;
     text-align: center;
 }
 

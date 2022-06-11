@@ -9,7 +9,7 @@
 }
 
 .org-header .org-title {
-    margin: 0 90px 0 0;
+    margin: 8px 90px 0 0;
 }
 .org-header .org-logo {
     position: absolute;
@@ -133,6 +133,9 @@
 }
 .org-rating .org-menu-review-page-link {
     color: #636363;
+}
+.org-rating a.org-menu-review-page-link:hover {
+    color: #355FF1;
 }
 @media only screen and (min-width: 920px) and (max-width: 1023px) {
     .org-products-block .org-link-el {

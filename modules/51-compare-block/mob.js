@@ -32,9 +32,11 @@ function setCompareBlockDynamicData(compareItemsCount,newAdded = false) {
     if($$('.compare-block-text').length != 0) {
         $$('.compare-block-text')[0].innerText = '+'+compareItemsCount + ' предложен'+endOfCompareWord+' к сравнению';
     }
-    if(compareItemsCount > 0 && $$('.compare-block').length != 0 && newAdded == true) {
-        $$('.compare-block')[0].style.display = 'flex';
-    } else {
-        $$('.compare-block')[0].style.display = 'none';
+    if($$('.compare-block').length != 0){
+        if(compareItemsCount > 0 && newAdded == true) {
+            $$('.compare-block')[0].style.display = 'flex';
+        } else {
+            $$('.compare-block')[0].style.display = 'none';
+        }
     }
 }

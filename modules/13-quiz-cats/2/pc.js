@@ -75,42 +75,26 @@ if(inputQuizRangeDays.length != 0) {
 
 addSpaces(inputQuizNum, inputQuizNumValue);
 addSpaces(inputQuizDays, inputQuizDaysValue);
-if($$('.search-by-quiz-btn').length != 0) {
-    $$('.search-by-quiz-btn')[0].addEventListener('click', () => {
-        console.log('click');
-
-        window.NUMBER_PAGE = 1;
-
-        var params = {};
-        params['field'] = window.SORT_FIELD;
-        params['page'] = window.NUMBER_PAGE;
-        params['listing_id'] = window.LISTING_ID;
-        params['category_id'] = window.CATEGORY_ID;
-        params['count_on_page'] = window.COUNT_ON_PAGE;
-        params['options'] = {};
-        params['sort_type'] = window.SORT_TYPE;
-        params['section_type'] = window.SECTION_TYPE;
-        if($$('#rkoLimit').length != 0) {
-            params['slf_maintenance'] = $$('#rkoLimit')[0].value;
-        }
-        if($$('#rkoNonePercPeiod').length != 0) {
-            params['slf_opened'] = $$('#rkoNonePercPeiod')[0].value;
-        }
-
-
-        fetch('/actions/load_cards_for_listings?' + new URLSearchParams(params), {
-            method: 'GET',
-        }).then((res) => {
-            return res.json().then((data) => {
-                let countOffers = wordDeclension(data['count'], [' предложение ', ' предложения ', ' предложений ']);
-                let [day, month, year] = getCurrentDate();
-                $$('.quiz-count-cards')[0].innerHTML = 'Подобрано ' + data['count'] + ' ' + countOffers + ' на ' +  day + '.' + month + '.' + year;
-                $$('.offers-list')[0].innerHTML = data['code'];
-                updateCardsLoadButton(data['count']);
-                addCardsBtnsEvents();
-            }).catch((err) => {
-                console.log(err);
-            })
-        });
-    });
+function addQuizInputsParams(params) {
+    if($$('#rkoLimit').length != 0) {
+        params['slf_maintenance'] = $$('#rkoLimit')[0].value;
+    }
+    if($$('#rkoNonePercPeiod').length != 0) {
+        params['slf_opened'] = $$('#rkoNonePercPeiod')[0].value;
+    }
+}
+if($$('.total_cards_table_js').length != 0) {
+    let totalTableLastTr = $$('.total_cards_table_js')[0].querySelectorAll('tbody')[0].lastElementChild;
+    let maintenance_max = totalTableLastTr.dataset.maintenancemax;
+    let opened_max = totalTableLastTr.dataset.openedmax;
+    let maintenance_min = totalTableLastTr.dataset.maintenancemin;
+    let opened_min = totalTableLastTr.dataset.openedmin;
+    if(inputQuizNum.attributes['max']){inputQuizNum.attributes['max'].value = maintenance_max} else inputQuizNum.setAttribute('max',maintenance_max);
+    if(inputQuizDays.attributes['max']){inputQuizDays.attributes['max'].value = opened_max} else inputQuizDays.setAttribute('max',opened_max);
+    if(inputQuizRangeSum.attributes['max']){inputQuizRangeSum.attributes['max'].value = maintenance_max} else inputQuizRangeSum.setAttribute('max',maintenance_max);
+    if(inputQuizRangeDays.attributes['max']){inputQuizRangeDays.attributes['max'].value = opened_max} else inputQuizRangeDays.setAttribute('max',opened_max);
+    if(inputQuizNum.attributes['min']){inputQuizNum.attributes['min'].value = maintenance_min} else inputQuizNum.setAttribute('min',maintenance_min);
+    if(inputQuizDays.attributes['min']){inputQuizDays.attributes['min'].value = opened_min} else inputQuizDays.setAttribute('min',opened_min);
+    if(inputQuizRangeSum.attributes['min']){inputQuizRangeSum.attributes['min'].value = maintenance_min} else inputQuizRangeSum.setAttribute('min',maintenance_min);
+    if(inputQuizRangeDays.attributes['min']){inputQuizRangeDays.attributes['min'].value = opened_min} else inputQuizRangeDays.setAttribute('min',opened_min);
 }

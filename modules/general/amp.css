@@ -214,3 +214,7 @@ figure figcaption {
 amp-iframe {
     min-height: 400px;
 }
+
+.play-video-el amp-iframe {
+    min-height: 300px;
+}

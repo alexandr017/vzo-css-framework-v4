@@ -131,3 +131,18 @@ for(let i=0;i<rangInputs.length;i++) {
         }
     })
 }
+if($$('.total_cards_table_js').length != 0) {
+    let totalTableLastTr = $$('.total_cards_table_js')[0].querySelectorAll('tbody')[0].lastElementChild;
+    let sum_max = totalTableLastTr.dataset.summax;
+    let term_max = totalTableLastTr.dataset.termmax;
+    let sum_min = totalTableLastTr.dataset.summin;
+    let term_min = totalTableLastTr.dataset.termmin;
+    if(inputCalcSum.attributes['max']){inputCalcSum.attributes['max'].value = sum_max} else inputCalcSum.setAttribute('max',sum_max);
+    if(inputCalcDays.attributes['max']){inputCalcDays.attributes['max'].value = term_max} else inputCalcDays.setAttribute('max',term_max);
+    if(inputRangeSumCalc.attributes['max']){inputRangeSumCalc.attributes['max'].value = sum_max} else inputRangeSumCalc.setAttribute('max',sum_max);
+    if(inputRangeDaysCalc.attributes['max']){inputRangeDaysCalc.attributes['max'].value = term_max} else inputRangeDaysCalc.setAttribute('max',term_max);
+    if(inputCalcSum.attributes['min']){inputCalcSum.attributes['min'].value = sum_min} else inputCalcSum.setAttribute('min',sum_min);
+    if(inputCalcDays.attributes['min']){inputCalcDays.attributes['min'].value = term_min} else inputCalcDays.setAttribute('min',term_min);
+    if(inputRangeSumCalc.attributes['min']){inputRangeSumCalc.attributes['min'].value = sum_min} else inputRangeSumCalc.setAttribute('min',sum_min);
+    if(inputRangeDaysCalc.attributes['min']){inputRangeDaysCalc.attributes['min'].value = term_min} else inputRangeDaysCalc.setAttribute('min',term_min);
+}
