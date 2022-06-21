@@ -45,7 +45,7 @@ let inputQuizTermValue = document.querySelectorAll('.inputQuizTermValue')[0];
 let inputQuizRangeTerm = document.querySelectorAll('.inputQuizRangeTerm')[0];
 
 addSpaces(inputQuizNum, " ₽",  inputQuizNumValue);
-addSpaces(inputQuizTerm, " дней",  inputQuizTermValue);
+addSpaces(inputQuizTerm, " лет",  inputQuizTermValue);
 
 inputQuizNumValue.addEventListener('click',function(){
     hideValBlock(inputQuizNumValue, inputQuizNum);
@@ -75,7 +75,7 @@ inputQuizRangeTerm.addEventListener("change",function(){
     addSpaces(inputQuizTerm, " дней",  inputQuizTermValue);
     setTimeout(showInpBlock, 500, inputQuizTerm, inputQuizTermValue);
 });
-function addQuizInputsParams(params)() {
+function addQuizInputsParams(params) {
     if($$('#mortgageSum').length != 0) {
         params['slf_summ'] = $$('#mortgageSum')[0].value;
     }

@@ -35,6 +35,8 @@
     margin-right: 20px;
     padding: 20px;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
 }
 
 .team-inner-block .tooltip {
