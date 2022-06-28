@@ -15,21 +15,12 @@
     margin-left: 5px;
 }
 
-.hidden-card-rating .rating-more.active svg {
-    transform: rotate(-180deg);
-}
-
-
 .hidden-card-rating .hidden-card-rating-block {
     background: #fff;
     border-radius: 15px;
     margin: 25px 0;
     display: none;
     padding-top: 1px;
-}
-
-.hidden-card-rating .rating-more.active ~ .hidden-card-rating-block {
-    display: block;
 }
 
 .hidden-card-rating .h2{
@@ -57,4 +48,16 @@
 
 .hidden-card-rating-image {
     margin-top: 30px;
+}
+
+#hidden-card-rating-input {
+    display: none;
+}
+
+#hidden-card-rating-input:checked + label + .hidden-card-rating-block{
+    display: block;
+}
+
+#hidden-card-rating-input:checked + .rating-more svg {
+    transform: rotate(-180deg);
 }

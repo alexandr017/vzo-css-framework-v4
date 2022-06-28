@@ -52,6 +52,8 @@ p {margin-top: 0;}
 
 .content table {
     font-size: 1rem;
+    overflow-x: auto;
+    display: block;
 }
 
 .content .table-bl {

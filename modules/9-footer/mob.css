@@ -38,11 +38,6 @@
     font-size: 1.25rem;
 }
 
-.f-block .f-support-label {
-    font-size: .75rem;
-}
-
-
 .f-block .soc-reviews {
     margin-top: 15px;
     justify-content: space-around;
@@ -81,9 +76,8 @@
     padding: 20px 0;
 }
 
-.f-block .f-3 .policy a {
-    margin: 0 15px;
-    font-size: 0.75rem;
+.f-block .f-3 .policy a, .f-block .f-3 .policy span {
+    margin: 0 10px;
     color: #888888;
 }
 .f-block .copyright {

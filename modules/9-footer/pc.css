@@ -134,7 +134,7 @@
     display: flex;
     justify-content: space-between;
 }
-.f-block .f-3 .policy a {
+.f-block .f-3 .policy a, .f-block .f-3 .policy span {
     display: flex;
     justify-content: space-between;
     font-size: 0.81rem;
