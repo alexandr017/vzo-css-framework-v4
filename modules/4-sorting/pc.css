@@ -78,5 +78,7 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
-
-
+.sort-margin {
+    margin-top: 72px;
+    margin-bottom: 38px;
+}

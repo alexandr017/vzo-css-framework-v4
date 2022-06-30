@@ -96,3 +96,15 @@ function newsPage(){
         }
     }
 }
+
+if (document.getElementById('show-more-tags') != null) {
+    document.getElementById('show-more-tags').addEventListener("click", function () {
+        var tagsBlock = $$('.sort-tags')[0];
+
+        tagsBlock.querySelectorAll('.tag').forEach((element) => {
+            element.style.display = '';
+        });
+
+        this.style.display = 'none';
+    });
+}

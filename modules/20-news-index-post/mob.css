@@ -51,6 +51,7 @@
     align-items: center;
 }
 .news-index-post-block .news-post-title {
+    font-size: 1.2rem;
     position: relative;
     padding: 0 16px;
     margin: 0 0 10px;

@@ -62,7 +62,7 @@
 .face-block .jsSlideItem img{
     margin: 0 auto;
     max-width: 30px;
-    max-height: 30px;
+    height: 30px;
 }
 .face-block .jsSlideItem {
     padding: 0;

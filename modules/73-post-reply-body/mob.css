@@ -1,0 +1,76 @@
+.posts-reply {
+    margin-top: 25px;
+    padding: 16px;
+    background: #fff;
+}
+
+.posts-reply .post-top-block .check {
+    position: absolute;
+    margin: -30px 0 0 35px;
+}
+
+.posts-reply .post-top-block img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.post-top-block {
+    align-items: center;
+}
+
+.post-name-block, .reply-time {
+    margin-left: 8px;
+}
+
+.posts-reply .post-name {
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+    align-items: center;
+}
+
+.posts-reply .post-post {
+    font-size: 0.875rem;
+}
+
+.reply-info {
+    padding: 0 16px;
+}
+
+.posts-reply .reply-info .reply-text {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.posts-reply .reply-info .reply-bottom-block {
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.posts-reply .reply-info .reply-bottom-block .reply-comment,
+.posts-reply .reply-info .reply-bottom-block .up-likes{
+    cursor:pointer;
+}
+
+
+.posts-reply time {
+    float: right;
+}
+
+.posts-reply .reply-info .reply-bottom-block .up-likes svg {
+    margin-right: 5px;
+}
+
+.change-vote-color {
+    filter: invert(38%) sepia(95%) saturate(850%) hue-rotate(169deg) brightness(86%) contrast(94%);
+}
+
+.reply-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}

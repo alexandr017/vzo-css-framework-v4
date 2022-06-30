@@ -12,3 +12,11 @@
 .reset-pass-error {
     display: none;
 }
+.reset-block-mb {
+    margin-bottom: 90px;
+}
+
+.user-form-title {
+    margin-top: 16px;
+    margin-bottom: 0;
+}

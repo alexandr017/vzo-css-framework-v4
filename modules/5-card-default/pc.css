@@ -38,7 +38,9 @@
     justify-content: space-between;
 }
 
-.card .card-header .card-first-line a, .card .card-header .card-first-line span.no-link {
+.card .card-header .card-first-line a,
+.card .card-header .card-first-line div,
+.card .card-header .card-first-line span.no-link {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     margin-top: 10px;
@@ -280,6 +282,7 @@
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .l-el {
     display: flex;
+    align-items: center;
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .l-el .card-rating {
@@ -287,7 +290,6 @@
     height: 6px;
     background: #E5E5E5;
     border-radius: 28px;
-    margin-top: 6px;
 }
 
 .hidden-card-info .table-vertical-block .tr .l-el .card-rating .w-1 {

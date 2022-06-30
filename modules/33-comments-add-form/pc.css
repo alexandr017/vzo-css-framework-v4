@@ -58,7 +58,7 @@
 .chat-form {
     display: none;
 }
-.review-form .form-1 textarea {
-    height: 40px;
+.review-form .form-1 textarea:last-of-type {
+    height: 50px;
     border-bottom: none!important;
 }

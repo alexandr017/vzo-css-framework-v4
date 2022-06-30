@@ -104,7 +104,7 @@
 
 .f-2-menu li {
     list-style-type: none;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Proxima Nova Rg', sans-serif;
 }
 
 
@@ -148,6 +148,10 @@
     text-align: right;
 }
 
+.r-rated {
+    font-size: 1.1rem;
+    line-height: 24px;
+}.hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .l-el
 
 @media screen and (max-width: 1200px) {
     .f-block .cont-bl, .f-l-block, .f-support, .f-copyright, .f-block .f-3 .policy, .f-block .f-3 .policy a{

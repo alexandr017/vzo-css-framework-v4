@@ -1,0 +1,40 @@
+.form-main-error-block-red {
+    background: #FFEDF3;
+    color: #FF4E59;
+    padding: 0.6em;
+    width: 100%;
+    margin: 20px auto 1.5em auto;
+    display: flex;
+    align-items: center;
+}
+.main-error-msg-text,.main-error-svg,.form-success-svg,.form-success-msg {
+    margin-left: 0.8em;
+    align-items: center;
+    display: flex;
+}
+.err-msg-block-red {
+    border: 1.5px solid #FF4E59;
+    background: #FFFFFF;
+}
+.err-msg-red {
+    color: #FF4E59;
+    padding-top: 0.3em;
+}
+.form-success-msg-block {
+    background: #E1EDFF;
+    color: #355FF1;
+    padding: 0.6em;
+    width: 100%;
+    margin: 20px auto 1.5em auto;
+    display: flex;
+    align-items: center;
+}
+.form-main-error-block-orange {
+    background: #FFFBDD;
+    color: #FF9458;
+    padding: 0.6em;
+    width: 100%;
+    margin: 20px auto 1.5em auto;
+    display: flex;
+    align-items: center;
+}

@@ -92,3 +92,10 @@ if($$('.rating-wrap').length !=0) {
         })
     }
 }
+
+$$('.content-area').forEach(item => {
+    item.addEventListener("input", function () {
+        this.style.height = "50px";
+        this.style.height = (this.scrollHeight + 1)+"px";
+    })
+});
