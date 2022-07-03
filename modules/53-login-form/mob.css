@@ -1,0 +1,9 @@
+.account-exist-and-log-block {
+    margin-top: 12px;
+}
+
+.account-exist-and-log-block a {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}

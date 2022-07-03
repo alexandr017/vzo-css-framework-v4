@@ -152,7 +152,7 @@ header .top-line {
 
 .menu-two-line .two-menu-count-label {
     position: absolute;
-    display: block;
+    display: none;
     background: #FF4E59;
     color: #FFF;
     font-size: 1.2rem;

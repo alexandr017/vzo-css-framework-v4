@@ -18,14 +18,14 @@
 }
 
 .expert-name-block {
-    margin-left: 5px;
+    margin-left: 12px;
 }
 
 .experts-reply .expert-name {
     font-weight: 600;
     cursor: pointer;
     color: #000;
-    margin: 0 20px;
+    margin-right: 20px;
     font-size: 1.125rem;
 }
 

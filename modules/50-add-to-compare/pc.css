@@ -1,11 +1,9 @@
 .add-to-compare {
-    padding: 30px 20px;
+    padding: 47px 80px;
     cursor: pointer;
-    max-width: 220px;
+    max-width: 350px;
+    height: 184px;
     margin: 30px 0;
-    color: #4FABFA;
-}
-
-.add-to-compare-label {
-    margin-top: 15px;
+    color: #636363;
+    border: 1px solid #E5E5E5;
 }

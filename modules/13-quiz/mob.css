@@ -6,6 +6,10 @@
     margin: 26px 0 20px 0;
 }
 
+.sort-margin .quiz-count-cards.h5 {
+    margin: 16px 0 16px 0;
+}
+
 .quiz {
     background: #fff;
     padding: 10px 16px;

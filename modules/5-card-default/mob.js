@@ -141,7 +141,7 @@ function addOrRemoveFromFavorites(card) {
             if($$('.fav-items-count').length != 0) {
                 if(favoritesArr != null && favoritesArr.length != 0) {
                     $$('.fav-items-count')[0].innerText = favoritesArr.length;
-                    $$('.fav-items-count')[0].style.display = 'flex';
+                    $$('.fav-items-count')[0].style.display = 'block';
                 } else {
                     $$('.fav-items-count')[0].style.display = 'none';
                 }

@@ -1,6 +1,11 @@
 if($$('#callMeForm_').length != 0) {
     $$('#callMeForm_')[0].getElementsByClassName('btn')[0].addEventListener('click',function (e) {
         e.preventDefault();
+
+        if (!$$('#c_checkbox')[0].checked) {
+            return false;
+        }
+
         var token = document.getElementsByName('csrf-token')[0].attributes[1].nodeValue;
         var name = $$('#c_name')[0].value;
         var phone = $$('#c_hone')[0].value;
@@ -30,10 +35,9 @@ if($$('#callMeForm_').length != 0) {
                 var parser = new DOMParser();
                 var resultObject = parser.parseFromString(result, 'text/html');
 
-                var modalBack = document.getElementById('modal-back');
-
                 var resultHtml = resultObject.body.lastChild.innerHTML;
 
+                var modalBack = document.getElementById('modal-back');
                 if (modalBack != null) {
                     modalBack.getElementsByClassName('modal-confirm-success')[0].innerHTML = resultHtml;
                     modalBack.classList.toggle('open');
