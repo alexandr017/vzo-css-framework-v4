@@ -8,9 +8,12 @@ $$('#company_add')[0].addEventListener('submit', function(e){
         '_token': $$('[name="csrf-token"]')[0].getAttribute('content'),
         'name': $$('#name')[0].value,
         'email': $$('#email')[0].value,
-        'comment': $$('#comment')[0].value,
-        'captcha': $$('#g-recaptcha-response')[0].value
+        'comment': $$('#comment')[0].value
     };
+
+    if ($$('#g-recaptcha-response').length > 0) {
+        data.captcha = $$('#g-recaptcha-response')[0].value;
+    }
 
     fetch('/forms/company_add', {
         method: 'POST',

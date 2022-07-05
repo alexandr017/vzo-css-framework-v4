@@ -21,3 +21,9 @@ let wordDeclension = (val, el) => {
     }
     return el[2];
 }
+
+if ($$(".g-recaptcha").length > 0) {
+    let scriptEl = document.createElement("script");
+    scriptEl.src = 'https://www.google.com/recaptcha/api.js';
+    document.head.appendChild(scriptEl);
+}

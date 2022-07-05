@@ -10,9 +10,12 @@ $$('#form_advertising')[0].addEventListener('submit', function(e){
         'email': $$('#email')[0].value,
         'phone': $$('#phone')[0].value,
         'company':$$('#company')[0].value,
-        'question': $$('#question')[0].value,
-        'captcha': $$('#g-recaptcha-response')[0].value
+        'question': $$('#question')[0].value
     };
+
+    if ($$('#g-recaptcha-response').length > 0) {
+        data.captcha = $$('#g-recaptcha-response')[0].value;
+    }
 
     fetch('/forms/advertising', {
         method: 'POST',

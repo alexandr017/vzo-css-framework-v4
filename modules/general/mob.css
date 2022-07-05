@@ -209,6 +209,11 @@ figure figcaption {
 .dark-grey {
     color: #636363;
 }
+
 .hiddenStyle {
     display: none;
+}
+
+.g-recaptcha {
+    overflow: hidden;
 }

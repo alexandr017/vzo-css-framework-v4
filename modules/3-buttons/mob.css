@@ -294,13 +294,13 @@ svg:active .arrow_el {
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     cursor: pointer;
     border: none;
     outline: none;
+    display: inline-grid;
 }
 
 .btn-1-dark:hover {

@@ -216,3 +216,7 @@ figure figcaption {
 .dark-grey {
     color: #636363;
 }
+
+.g-recaptcha {
+    overflow: hidden;
+}
