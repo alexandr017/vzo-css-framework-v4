@@ -3,7 +3,7 @@
 }
 
 .services-lead-block .services-title-block .services-title {
-    width:800px;
+    width:600px;
 }
 
 .services-lead-block .services-title-block .services-desc {
@@ -18,4 +18,5 @@
 .services-lead {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
 }

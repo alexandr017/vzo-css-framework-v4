@@ -50,7 +50,7 @@
     margin: 15px 0;
     padding: 16px;
     background: #fff;
-    font-size: .87rem;
+    font-size: .933rem;
     display: block;
     width:100%;
 }
@@ -67,6 +67,7 @@
 }
 .user-account-dashboard-item a {
     color: #000;
+    align-items: center;
 }
 
 .user-account-dashboard-item svg {
@@ -81,7 +82,7 @@
 }
 
 .block-with-back-link p,.block-with-back-link a {
-    font-size: .87rem;
+    font-size: 1.067rem;
 }
 
 .appeal-dashboard-top-line-el .wrap-btn{

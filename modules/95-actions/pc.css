@@ -25,6 +25,7 @@
 .actions-el img{
     width: 100%;
     height: 176px;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
@@ -53,11 +54,11 @@
     font-size: .875rem;
 }
 
-.actions-block .tags-list {
+.actions-block .actions-tags-list {
     position: absolute;
 }
 
-.actions-block .tags-list:first-child {
+.actions-block .actions-tags-list:first-child {
     margin-top: 15px;
 }
 

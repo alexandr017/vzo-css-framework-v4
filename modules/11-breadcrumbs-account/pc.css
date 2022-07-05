@@ -1,0 +1,11 @@
+.breadcrumb-account {
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.breadcrumb-account svg {
+    margin-right: 10px;
+    margin-bottom: 1px;
+}

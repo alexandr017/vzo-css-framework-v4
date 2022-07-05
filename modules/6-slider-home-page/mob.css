@@ -64,6 +64,7 @@
     height: 240px;
     user-select: none;
     margin-right: -15px;
+    margin-bottom: 20px;
 }
 
 .top-slider-wrap {
@@ -87,6 +88,7 @@
     position: absolute;
     bottom: 16px;
     left: 16px;
+    z-index: 1;
 }
 
 
@@ -109,17 +111,16 @@
 .slide7{background: linear-gradient(128.74deg, #FFDA7B 27.74%, #F5B73F 78%);}
 .slide8{background: linear-gradient(128.74deg, #B4EDFF 27.74%, #52BFD7 78%);}
 
-.slide1 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/1.png');width: 100%}
-.slide2 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/2.png');width: 100%}
-.slide3 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/3.png');width: 100%}
-.slide4 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/4.png');width: 100%}
-.slide5 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/5.png');width: 100%}
-.slide6 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/6.png');width: 100%}
-.slide7 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/7.png');width: 100%}
-.slide8 .top-slider-inner-img-el{background-image:url('/v4/images/sliders/home/8.png');width: 100%}
+.slide1 .top-slider-inner-img-el{background:url('/v4/images/sliders/home/1.png') 100px 100%;width: 100%}
+.slide2 .top-slider-inner-img-el{background:url('/v4/images/sliders/home/2.png') 80px 100%;width: 100%}
+.slide3 .top-slider-inner-img-el{background:url('/v4/images/sliders/home/3.png') 50px 100%;width: 100%}
+.slide4 .top-slider-inner-img-el{background:url('/v4/images/sliders/home/4.png') 20px 100%;width: 100%}
+.slide5 .top-slider-inner-img-el{background:url('/v4/images/sliders/home/5.png') 100px 100%;width: 100%}
+.slide6 .top-slider-inner-img-el{background:url('/v4/images/sliders/home/6.png') 105px 100%;width: 100%}
+.slide7 .top-slider-inner-img-el{background:url('/v4/images/sliders/home/7.png') 70px 100%;width: 100%}
+.slide8 .top-slider-inner-img-el{background:url('/v4/images/sliders/home/8.png') 130px 100%;width: 100%}
 
 .top-slider-item .top-slider-wrap-block .top-slider-inner-img-el {
-    background-position: 140px 100%;
     background-repeat: no-repeat;
     background-size: auto 60%;
     height: 100%;

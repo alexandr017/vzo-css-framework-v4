@@ -88,6 +88,13 @@ if($$('.rating-wrap').length !=0) {
     }
 }
 
+$$('.content-area').forEach(item => {
+    item.addEventListener("input", function () {
+        this.style.height = "48px";
+        this.style.height = (this.scrollHeight)+"px";
+    })
+});
+
 // $(document).on('submit','#AddReview',function(e){
 //     e.preventDefault();
 //     var name = $('#reviewUserName').val();

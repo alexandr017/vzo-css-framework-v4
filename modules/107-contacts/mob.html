@@ -65,7 +65,16 @@
                 <input name="name" type="text" class="background border-radius-3 w-100" placeholder="Имя*" id="c_name">
                 <input name="phone" type="text" class="background border-radius-3 w-50" placeholder="Телефон*" id="c_hone">
                 <button type="submit" class="btn btn-light w-50">Заказать</button>
-                <p class="contact-form-text w-50 dark-grey">Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования сервиса</p>
+                <div class="flex pt-1">
+                    <input type="checkbox" id="c_checkbox" class="agreement-checkbox">
+                    <label for="c_checkbox">
+                        <svg class="checked-checkmark" width="14" height="14" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="18" height="18" rx="5" fill="#222735"></rect>
+                            <path d="M13 6L7.5 11L5 8.72727" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </label>
+                    <p class="contact-form-text dark-grey">Я соглашаюсь на <u>обработку персональных данных</u> и с <u>правилами пользования сервиса</u>. После обработки все предоставленные вами данные будут удалены</p>
+                </div>
             </form>
         </div>
     </div>

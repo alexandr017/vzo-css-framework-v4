@@ -35,7 +35,7 @@
 }
 
 .dashboard-personal-data-form .personal-data-form-part:not(:nth-child(3)):not(:nth-child(5)){
-    margin-right: 25px;
+    margin-right: 30px;
 }
 
 .delete-personal-acc-btn {
@@ -50,7 +50,7 @@
 
 @media(max-width: 1200px) {
     .dashboard-personal-data-form .personal-data-form-part:not(:nth-child(4)):not(:nth-child(5)){
-        margin-right: 25px;
+        margin-right: 30px;
     }
 }
 

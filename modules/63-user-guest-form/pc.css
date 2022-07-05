@@ -1,5 +1,5 @@
 .user-guest-form-block {
-    background: url(/v4/images/reg-form-img.png) no-repeat left;
+    background: white url(/v4/images/reg-form-img.png) no-repeat left;
     display: flex;
     justify-content: flex-end;
     padding: 0 1em;
@@ -20,12 +20,10 @@
     padding-left: 2%;
 }
 .captcha {
-    padding: 1em;
     width: 60%;
-    border: 1px solid #222735;
     position: relative;
     left: -17.5%;
-    margin: 1em 0;
+    margin-bottom: 15px;
 }
 .user-guest-label {
     font-weight: 600;
@@ -37,12 +35,13 @@
 .user-guest-form-inp {
     border-radius: 10px;
     background-color: #F6F8FB;
-    padding: 0.4em 1em;
+    padding: 0.75em 1em;
     outline: none;
     border: none;
     width: 100%;
     cursor: pointer;
     margin-bottom: 1em;
+    height: 44px;
 }
 .user-guest-form {
     display: flex;
@@ -82,7 +81,7 @@
 .show-pass{
     position: absolute;
     right: 5%;
-    top: 2.4em;
+    top: 2.8em;
     cursor: pointer;
     background-image: url(/v4/images/show-pass.png);
     width: 20px;
@@ -93,7 +92,7 @@
 .hide-pass {
     position: absolute;
     right: 5%;
-    top: 2.5em;
+    top: 2.9em;
     cursor: pointer;
     width: 20px;
     height: 15px;
@@ -114,7 +113,7 @@
     display: none;
 }
 .user-guest-form-btn {
-    width: 95%;
+    width: 100%;
     border: none;
     margin-bottom: 1em;
 }

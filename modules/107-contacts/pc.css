@@ -51,7 +51,7 @@
     align-items: center;
 }
 .contacts-block-form .contact-form-text {
-    font-size: 0.75rem;
+    font-size: 0.69rem;
 }
 
 .contacts-block-text-img-block {
@@ -103,6 +103,43 @@
 
 .contacts-item-social a {
     margin-right: 14px;
+}
+
+.agreement-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.agreement-checkbox + label {
+    margin-right: 7px;
+    width: 14px;
+    height: 14px;
+}
+
+.agreement-checkbox + label::before {
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    border: 0.5px solid #636363;
+    border-radius: 4px;
+}
+
+.checked-checkmark,
+.agreement-checkbox:checked + label::before {
+    display: none;
+}
+
+.agreement-checkbox:checked + label .checked-checkmark {
+    display: inline-block;
+    cursor: pointer;
+    min-width: 14px;
+    margin: 3px 7px 8px 0;
 }
 
 @media only screen and (max-width: 1023px) {

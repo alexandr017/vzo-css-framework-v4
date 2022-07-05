@@ -1,0 +1,23 @@
+.crisis-block {
+    background-color: #FFFFFF;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.crisis-title {
+    align-items: center;
+    margin-left: 20px;
+}
+
+.crisis-title svg {
+    margin-right: 18px;
+}
+
+.crisis-title span {
+    font-family: 'Inter', sans-serif;
+}
+
+.crisis-block a {
+    margin-right: 25px;
+}

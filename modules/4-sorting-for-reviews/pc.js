@@ -49,3 +49,9 @@ document.addEventListener('click', function (e) {
         }
     }
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    if ($$("[data-answer='1']").length == 0) {
+        $$("[data-type='withAnswer']")[0].classList.add('hiddenStyle');
+    }
+});

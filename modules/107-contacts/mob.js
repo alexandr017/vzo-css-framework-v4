@@ -1,6 +1,11 @@
 if($$('#callMeForm_').length != 0) {
     $$('#callMeForm_')[0].getElementsByClassName('btn')[0].addEventListener('click',function (e) {
         e.preventDefault();
+
+        if (!$$('#c_checkbox')[0].checked) {
+            return false;
+        }
+
         var token = document.getElementsByName('csrf-token')[0].attributes[1].nodeValue;
         var name = $$('#c_name')[0].value;
         var phone = $$('#c_hone')[0].value;

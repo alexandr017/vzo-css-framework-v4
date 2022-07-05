@@ -11,6 +11,11 @@
 .lead-text-block .lead-text {
     font-size: 1.2rem;
 }
+
+.lead-text-block .lead-text-md {
+    font-size: 1.125rem;
+}
+
 .lead-wrap .search-block-1  {
     width: 100%;
 }

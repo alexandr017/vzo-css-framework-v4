@@ -31,3 +31,7 @@
 .review-f .rating-wrap svg {
     margin-right: 5px;
 }
+.form-1 .content-area:not(:last-of-type) {
+    border-bottom: 1px solid #E6EBEF;
+    height: 48px;
+}
