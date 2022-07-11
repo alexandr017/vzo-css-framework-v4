@@ -16,7 +16,7 @@
 .webinar-date {
     color: #95A5B0;
     font-size: 0.8rem;
-    margin-top: 3em;
+    margin-top: auto;
     display: flex;
     align-items: center;
 }
@@ -29,7 +29,9 @@
     border-radius: 15px;
     padding-bottom:1px;
 }
-
+.webinar-wrap a {
+    color: black;
+}
 .webinar-img {
     overflow: hidden;
     display: block;
@@ -43,6 +45,8 @@
 }
 
 .webinar-info {
-    margin: 20px 30px 30px 30px;
-    display: block;
+    margin: 15px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 115px ;
 }

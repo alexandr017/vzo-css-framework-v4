@@ -5,6 +5,7 @@ if(document.getElementsByClassName('webinar-slider').length>0){
         slidesToScroll:1,
         circleScroll:false,
         // height:document.getElementsByClassName('webinar-wrap')[0].offsetHeight,
+        height:'350',
         responsive: [
             {
                 breakpoint: 1200,
