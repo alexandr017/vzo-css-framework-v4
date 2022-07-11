@@ -72,6 +72,7 @@
 
 .block-reviews .review-wrap .review-part-body {
     margin-top: 5px;
+    word-wrap: break-word;
 }
 
 .block-reviews .review-wrap .review-btn-wrap {

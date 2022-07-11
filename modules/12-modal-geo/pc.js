@@ -3,7 +3,7 @@ if($$('.modal-list-container a').length != 0) {
         item.addEventListener('click', function () {
             document.cookie = "GEO_CITY=" + this.dataset.city + "; path=/;";
         });
-});
+    });
 }
 
 
@@ -33,7 +33,7 @@ if($$('.geo_cities_check').length != 0) {
         }).then((res) => {
         }).catch((err) => {
             console.log(err);
-    });
+        });
 
         var re = /\/$/;
         pageUrl = pageUrl.replace(re,'');
@@ -49,21 +49,21 @@ if($$('.choose-city').length != 0) {
             }).then((res) => {
                 return res.json().then((data) => {
                     var geoCities = {};
-            data.forEach(function(items) {
-                for (var key in items) {
-                    // skip loop if the property is from prototype
-                    if (!items.hasOwnProperty(key)) continue;
-                    var value = items[key];
-                    value.forEach((item) => {
-                        geoCities[item[1]] = item;
-                })
-                }
-            });
-            localStorage.setItem("geoCities",JSON.stringify(geoCities));
-        }).catch((err) => {
-                console.log(err);
-        });
-        })
+                    data.forEach(function(items) {
+                        for (var key in items) {
+                            // skip loop if the property is from prototype
+                            if (!items.hasOwnProperty(key)) continue;
+                            var value = items[key];
+                            value.forEach((item) => {
+                                geoCities[item[1]] = item;
+                            })
+                        }
+                    });
+                    localStorage.setItem("geoCities",JSON.stringify(geoCities));
+                }).catch((err) => {
+                    console.log(err);
+                });
+            })
         }
 
         return false;
@@ -153,24 +153,24 @@ document.addEventListener('DOMContentLoaded', function(){
         }).then((res) => {
             return res.json().then((data) => {
                 if($$('.your-geo-location').length != 0 && $$('.geo_cities_check').length != 0) {
-            var currentCityBlock = $$('.your-geo-location')[0].getElementsByTagName('b')[0];
-            var checkGeoCityBlock = $$('.geo_cities_check')[0];
-            if (data.url !== undefined) {
-                currentCityBlock.innerText = window.city;
-                checkGeoCityBlock.dataset['url'] =  data.url;
-                checkGeoCityBlock.dataset['name'] = data.imenitelny;
-                checkGeoCityBlock.dataset['value'] = data.url;
-            } else {
-                currentCityBlock.innerText = 'Москва';
-                checkGeoCityBlock.dataset['url'] = 'moskva';
-                checkGeoCityBlock.dataset['name'] = 'Москва';
-                checkGeoCityBlock.dataset['value'] = 'moskva';
-            }
-        }
-    }).catch((err) => {
-            console.log(err);
-    });
-    })
+                    var currentCityBlock = $$('.your-geo-location')[0].getElementsByTagName('b')[0];
+                    var checkGeoCityBlock = $$('.geo_cities_check')[0];
+                    if (data.url !== undefined) {
+                        currentCityBlock.innerText = window.city;
+                        checkGeoCityBlock.dataset['url'] =  data.url;
+                        checkGeoCityBlock.dataset['name'] = data.imenitelny;
+                        checkGeoCityBlock.dataset['value'] = data.url;
+                    } else {
+                        currentCityBlock.innerText = 'Москва';
+                        checkGeoCityBlock.dataset['url'] = 'moskva';
+                        checkGeoCityBlock.dataset['name'] = 'Москва';
+                        checkGeoCityBlock.dataset['value'] = 'moskva';
+                    }
+                }
+            }).catch((err) => {
+                console.log(err);
+            });
+        })
     }
 })
 

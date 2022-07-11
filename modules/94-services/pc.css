@@ -11,6 +11,9 @@
 
 .services-block img{
     border-radius: 10px 10px 0 0;
+    height: 172px;
+    width: 100%;
+    object-fit: contain;
 }
 
 .services-item {

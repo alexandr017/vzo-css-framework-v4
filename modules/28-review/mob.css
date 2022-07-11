@@ -50,6 +50,7 @@
 }
 .review-part {
     margin-top: 15px;
+    word-wrap: break-word;
 }
 .comments-count {
     color: #95A5B0;

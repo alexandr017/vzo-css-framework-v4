@@ -4,7 +4,7 @@
     background-color: #ffffff;
 }
 .contacts-item-name {
-    margin-left: 1em;
+    margin-left: 8px;
     text-align: left;
 }
 .contacts-item-name .dark-grey {
@@ -26,8 +26,8 @@
     display: flex;
 }
 .contacts-item-logo img {
-    height: 90px;
-    width: 90px;
+    height: 44px;
+    width: 44px;
     border-radius: 50%;
 }
 .contacts-block-form {
@@ -55,8 +55,7 @@
     align-items: center;
 }
 .contacts-block-form .contact-form-text {
-    font-size: 0.75rem;
-    margin-top: 16px;
+    font-size: 0.8rem;
 }
 .contacts-block-text-img-block {
     background-color: #ffffff;
@@ -90,4 +89,41 @@
 }
 .contacts-item-social a {
     margin-right: 12px;
+}
+
+.agreement-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.agreement-checkbox + label {
+    margin-right: 16px;
+    width: 14px;
+    height: 14px;
+}
+
+.agreement-checkbox + label::before {
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    border: 0.5px solid #636363;
+    border-radius: 4px;
+}
+
+.checked-checkmark,
+.agreement-checkbox:checked + label::before {
+    display: none;
+}
+
+.agreement-checkbox:checked + label .checked-checkmark {
+    display: inline-block;
+    cursor: pointer;
+    min-width: 14px;
+    margin: 3px 7px 8px 0;
 }

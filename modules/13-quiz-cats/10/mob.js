@@ -54,7 +54,7 @@ let inputQuizTermValue = document.querySelectorAll('.inputQuizTermValue')[0];
 let inputQuizRangeTerm = document.querySelectorAll('.inputQuizRangeTerm')[0];
 
 addSpaces(inputQuizNum, " ₽",  inputQuizNumValue);
-addSpaces(inputQuizTerm, " дней",  inputQuizTermValue);
+addSpaces(inputQuizTerm, " лет",  inputQuizTermValue);
 
 inputQuizNumValue.addEventListener('click',function(){
     hideValBlock(inputQuizNumValue, inputQuizNum);

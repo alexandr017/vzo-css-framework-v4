@@ -1,0 +1,25 @@
+.lead-wrap {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+.lead-text-block .lead-text {
+    font-size: 1.2rem;
+    margin-bottom: 17px;
+}
+.lead-text-block .h1{
+    margin-bottom: 9px;
+}
+.lead-text-block .lead-text-md {
+    font-size: 1.067rem;
+}
+
+.lead-wrap .search-block-1  {
+    width: 100%;
+    margin: 5px 0 15px 0;
+}
+.lead-wrap .lead-text p {
+    margin-bottom: 0;
+}

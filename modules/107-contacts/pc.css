@@ -146,6 +146,24 @@
 #callMeFormBlock .contact-block-form-left-side p {
     max-width: 90%;
 }
+
+.requisites {
+    margin-top: 67px;
+}
+
+.requisites-title {
+    margin-bottom: 30px;
+}
+
+.requisites p {
+    color: #636363;
+    margin-bottom: 12px;
+}
+
+.requisites-link {
+    margin-top: 26px;
+}
+
 @media only screen and (max-width: 1023px) {
     .contacts-block-item {
         width: 100%;

@@ -38,7 +38,7 @@
     margin-right: 5px;
 }
 .news-cats-menu .news-cat-item {
-    padding: 1.62em;
+    padding: 1.62em 1.4em;
     color: #000;
 }
 
@@ -160,11 +160,14 @@
 .news-lead-main-block .news-main-block-title .h1 {
     margin: 0 0 9px 0;
 }
-.post-menu-icon {
-    width: 20px;
-    height: 20px;
-    background-size: cover!important;
+.post-menu-icon svg {
+    height: 28px;
+}
+.news-cat-active .active-icon svg,
+.news-cat-active .active-icon svg * {
+    stroke: #355FF1;
 }
 .news-cats-menu .post-menu-icon {
-    margin-right: 20px;
+    margin-right: 14px;
+    display: inherit;
 }

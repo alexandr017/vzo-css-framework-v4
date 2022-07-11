@@ -1,15 +1,11 @@
-.hidden-card-rating-list .special-list{
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
-}
-
 .hidden-card-rating {
     margin: 20px 0;
     position: relative;
 }
 
 .hidden-card-rating .rating-more {
+    position: relative;
+    display: block;
     border-radius: 5px;
     width: 100%;
     margin: 0 0 10px;
@@ -17,53 +13,32 @@
     cursor: pointer;
     background: #fff;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
 
+.hidden-card-rating .rating-more svg {
+    float: right;
+    margin-top: 10px;
+    margin-right: -2px;
 }
 
 .hidden-card-rating .rating-more:after {
     height: 100%;
     position: absolute;
+    content: '';
     top: 0;
     bottom: 0;
     right: 0;
     padding: 9px 21px;
     border-left: 1px solid #E5E5E5;
 }
-.hidden-card-rating .rating-more.openHiddenRating {
-    border-bottom: none;
-    border-radius: 5px 5px 0 0;
-}
-
-.hidden-card-rating .rating-more[data-arrow=down]:after{
-    content: url(/v4/images/hidden-rating-arrow-down.svg);
-}
-
-.hidden-card-rating .rating-more.openHiddenRating[data-arrow=down]:after {
-    transform: rotate(180deg);
-    border-left: none;
-    border-right: 1px solid #E5E5E5;
-
-}
-
-.hidden-card-rating .rating-more.toggleRating:after {
-    -webkit-transform: translateY(-50%) rotate(-135deg);
-    transform: translateY(-50%) rotate(-135deg);
-}
 
 .hidden-card-rating .hidden-card-rating-block {
+    display: none;
+    margin-top: -11px;
     border-radius: 0 0 5px 5px;
     width: 100%;
     cursor: pointer;
-    position: absolute;
-    top: 100%;
-    visibility: hidden;
-    overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-    transition: 0.2s ease;
-    -webkit-transform: scale(1, 0);
-    transform: scale(1, 0);
-    -webkit-transform-origin: top center;
-    transform-origin: top center;
     background: #fff;
     border-top: 1px solid #E5E5E5;
 }
@@ -71,6 +46,12 @@
 .hidden-card-rating .hidden-card-rating-block .h3{
     text-align: center;
     padding: 0 16px;
+}
+
+.hidden-card-rating-list .special-list{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .hidden-card-rating .hidden-card-rating-block li {
@@ -85,10 +66,14 @@
     color: #000;
 }
 
-.hidden-card-rating .hidden-card-rating-block.toggleRating {
-    visibility: visible;
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    z-index: 1;
+#hidden-card-rating-input {
+    display: none;
 }
 
+#hidden-card-rating-input:checked + label + .hidden-card-rating-block{
+    display: block;
+}
+
+#hidden-card-rating-input:checked + .rating-more svg {
+    transform: rotate(-180deg);
+}

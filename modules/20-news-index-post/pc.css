@@ -9,12 +9,12 @@
     color: #636363;
 }
 .news-index-post-block .news-post-link {
-    font-weight: 600;
+    font-family: 'Inter', sans-serif;
     align-items: center;
     font-size: 0.875rem;
 }
 .news-post-padding, .news-post-content-padding {
-    padding: 0.9375rem 2rem 1.3125rem 2rem;
+    padding: 1.5rem 2rem 1.3125rem 2rem;
 }
 .news-index-post-footer {
     padding: 0 2rem 1.3125rem 2rem;

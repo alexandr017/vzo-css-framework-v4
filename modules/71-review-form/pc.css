@@ -53,3 +53,6 @@
 .block-reviews .review-form .form-1 input,.block-reviews .review-form .form-1 textarea,.block-reviews .review-form .form-1 .r-btn-wrap {
     background-color: #F6F8FB;
 }
+.content-area {
+    height: 50px;
+}

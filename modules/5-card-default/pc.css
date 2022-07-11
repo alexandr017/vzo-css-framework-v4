@@ -43,6 +43,10 @@
 }
 
 .card .card-header .card-first-line a,
+<<<<<<< HEAD
+=======
+.card .card-header .card-first-line div,
+>>>>>>> 03da734aec11937a7de646d08f687ce4895441cf
 .card .card-header .card-first-line span.no-link {
     font-family: 'Inter', sans-serif;
     font-weight: 600;

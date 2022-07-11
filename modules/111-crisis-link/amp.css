@@ -1,0 +1,21 @@
+.crisis-block {
+    height: 56px;
+    align-items: center;
+}
+
+.crisis-content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crisis-title svg {
+    margin-right: 13px;
+}
+
+.crisis-title span {
+    font-family: 'Inter', sans-serif;
+}
+
+.crisis-content a {
+    align-items: center;
+}

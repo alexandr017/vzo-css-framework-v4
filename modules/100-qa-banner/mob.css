@@ -1,6 +1,7 @@
 .qa-banner-block {
     background: url("/v4/images/qa-bg.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     position: relative;
     color: #fff;

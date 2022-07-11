@@ -80,20 +80,51 @@ function moveFormBack() {
     $$('#review-f')[0].parentNode.append(answerForm);
 }
 
-function allForMovingForm(){
+function showClosedComments() {
+    let closedComments = $$('.complainSuccessBlock');
 
+    closedComments.forEach(item => {
+        item.addEventListener('click', function () {
+            item.classList.remove('complainSuccessBlock');
+            item.querySelector('.replace-block').style.display = 'block';
+        })
+    })
+}
+
+function allForMovingForm(){
     let moveBtnBlock = $$('.review-btn-wrap-block');
     let mainFormBlock = $$('#review-f')[0];
     let formBlock = $$('.review-answer-form')[0];
 
     function moveBtnClick(moveBtnBlock) {
-        if(!moveBtnBlock.classList.contains('review-btn-wrap-block')) {
-            moveBtnBlock = moveBtnBlock.closest('.review-btn-wrap-block');
+        let reviewWrap = moveBtnBlock.closest('.review-wrap');
+
+        let hasReviewForm = reviewWrap.querySelector('.review-form') != null;
+        let isShowForm = formBlock.style.display != 'none';
+        let isNotCommentReply = moveBtnBlock.closest('.thread-answer-btn') == null;
+
+        if (hasReviewForm && isShowForm && isNotCommentReply) {
+            reviewWrap.querySelector('.replace-block').style.display = 'none';
+            formBlock.style.display = 'none';
             if($$('.clicked-review-btn').length != 0) {
                 $$('.clicked-review-btn')[0].classList.remove('clicked-review-btn');
             }
+            return;
+        } else {
+            reviewWrap.querySelector('.replace-block').style.display = 'block';
+            formBlock.style.display = 'block';
+        }
+
+        if(!moveBtnBlock.classList.contains('review-btn-wrap-block')) {
+            moveBtnBlock = moveBtnBlock.closest('.review-btn-wrap-block');
+
+            if($$('.clicked-review-btn').length != 0) {
+                $$('.clicked-review-btn')[0].classList.remove('clicked-review-btn');
+                $$('.replace-block')[0].style.display = 'none';
+            }
             moveBtnBlock.classList.add('clicked-review-btn');
         }
+
         var reviewForm = $$('#form-1');
         var answeredReviewBlock = formBlock.getElementsByClassName('answeredReview');
         if(!moveBtnBlock.classList.contains('answerAdded')) {
@@ -109,7 +140,7 @@ function allForMovingForm(){
         }
         let moveForm = moveBtnBlock.nextElementSibling;
 
-        moveBtnBlock.nextElementSibling.style.display = 'inline-flex';
+        moveBtnBlock.nextElementSibling.style.display = 'block';
         if (moveForm != null) {
             formBlock.style.display = 'block';
             moveBtnBlock.nextElementSibling.insertAdjacentElement('afterend', formBlock);
@@ -119,12 +150,9 @@ function allForMovingForm(){
     for(let i=0;i<moveBtnBlock.length;i++) {
         moveBtnBlock[i].addEventListener('click',function (e) {
             moveBtnClick(e.target);
-        });
+        },false);
     }
 }
-document.addEventListener('DOMContentLoaded', function(){
-    allForMovingForm();
-});
 
 //Скрыть решенный отзыв
 
@@ -135,12 +163,10 @@ for (let i = 0; i < successCompleteQuestion.length; i++) {
 
     if(successCompleteQuestion[i].querySelectorAll('.labelOfComplainSuccess').length > 0) {
         successCompleteQuestion[i].classList.add(complainSuccessBlock);
+        successCompleteQuestion[i].querySelector('.review-btn-wrap-block').classList.remove('review-btn-wrap-block');
+        successCompleteQuestion[i].querySelectorAll('.reply-bottom-info').forEach(n => n.remove());
     }
-    for (let j = 0; j < successLabel.length; j++) {
-        successLabel[j].addEventListener("click", function () {
-            this.closest('.review-wrap').classList.remove(complainSuccessBlock);
-        })
-    }
+
 }
 //сортировка отзывов по чекбоксам
 
@@ -222,8 +248,9 @@ function reviewsSortFilter() {
     if ($$('.reviewsBlock')[0] != undefined) {
         $$('.reviewsBlock')[0].innerHTML = strOfSortedFilteredItems;
         loadMoreItems();
-        allForMovingForm();
     }
+    allForMovingForm();
+    showClosedComments();
 }
 reviewsSortFilter();
 //открыть форму комментариев для трейта

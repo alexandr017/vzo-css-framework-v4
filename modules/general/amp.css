@@ -52,6 +52,8 @@ p {margin-top: 0;}
 
 .content table {
     font-size: 1rem;
+    overflow-x: auto;
+    display: block;
 }
 
 .content .table-bl {
@@ -214,9 +216,7 @@ figure figcaption {
 amp-iframe {
     min-height: 400px;
 }
+
 .play-video-el amp-iframe {
     min-height: 300px;
-}
-.i-amphtml-blurry-placeholder, .i-amphtml-fill-content {
-    margin: 0 auto;
 }
