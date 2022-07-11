@@ -74,34 +74,36 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     function addCompareActiveTabData() {
         var compareBlock = $$('.card-compare-slider')[0];
-        var category = document.querySelectorAll('.compare-items-tabs .on')[0].dataset['cat'];
-        let compare = localStorage.getItem('vzo_compare'+ category);
-        if(compare == null || compare == '' || compare == 'null'){
-            compareBlock.innerText = 'Нет предложений для сравнения';
-            $$('.clearCompare')[0].style.display = 'none';
-        } else {
-            let data = {
-                '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
-                'cards': compare,
-                'id': category
-            };
-            fetch('/compare_load', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json;charset=utf-8'
-                },
-                body: JSON.stringify(data)
-            }).then((res) => {
-                return res.text().then((value) => {
-                    compareBlock.innerHTML = value;
-            compareBlock.dataset['catid'] = category;
-            addCompareSliderBtns();
-            $$('.clearCompare')[0].style.display = 'block';
-            addClickToDeleteBtns();
-        }).catch((err) => {
-                console.log(err);
-        })
-        })
+        if( document.querySelectorAll('.compare-items-tabs .on').length != 0){
+            var category = document.querySelectorAll('.compare-items-tabs .on')[0].dataset['cat'];
+            let compare = localStorage.getItem('vzo_compare'+ category);
+            if(compare == null || compare == '' || compare == 'null'){
+                compareBlock.innerText = 'Нет предложений для сравнения';
+                $$('.clearCompare')[0].style.display = 'none';
+            } else {
+                let data = {
+                    '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
+                    'cards': compare,
+                    'id': category
+                };
+                fetch('/compare_load', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify(data)
+                }).then((res) => {
+                    return res.text().then((value) => {
+                        compareBlock.innerHTML = value;
+                compareBlock.dataset['catid'] = category;
+                addCompareSliderBtns();
+                $$('.clearCompare')[0].style.display = 'block';
+                addClickToDeleteBtns();
+            }).catch((err) => {
+                    console.log(err);
+            })
+            })
+            }
         }
     }
     function addCompareSliderBtns() {

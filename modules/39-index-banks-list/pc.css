@@ -29,6 +29,7 @@
 .bank-name {
     min-width: 20%;
     max-width: 200px;
+    justify-content: flex-end;
 }
 .bank-name .search-title {
     line-height: 20px;

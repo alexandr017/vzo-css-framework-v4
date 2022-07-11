@@ -7,7 +7,7 @@
 }
 
 .rat-block-header img {
-   max-width: fit-content;
+    max-width: fit-content;
 }
 
 .rat-block-sticker {
@@ -97,9 +97,9 @@
     padding-top: 10px;
 }
 
-.accordion-container{
-    padding: 0 30px;
-}
+/*.accordion-container{*/
+/*    padding: 0 30px;*/
+/*}*/
 
 .accordion-container .plus-minus-title {
     margin: 40px 0 10px;

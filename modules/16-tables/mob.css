@@ -51,8 +51,16 @@
     align-items: center;
     padding-right: 20px;
 }
+/*.sortingArrows {*/
+/*display: none;*/
+/*}*/
 .sortingArrows {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 12px;
+    height: 30px;
+    align-items: center;
+    margin-left: 10px;
 }
 .data-table-pagination {
     width: 28px;

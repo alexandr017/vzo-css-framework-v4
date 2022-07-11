@@ -13,13 +13,11 @@
 //     for(let q = 0; q < quizRangeInput.length; q++ ) {
 //         quizRangeInput[q].addEventListener('input', function(){
 //             quizNumInput[q].style.color = "#000";
-//             $$('.quiz-num-desc')[0].style.color = "#000";
 //         })
 //     }
 //     for(let j = 0; j < quizNumInput.length; j++ ) {
 //         quizNumInput[j].addEventListener('input', function(){
 //             quizNumInput[j].style.color = "#000";
-//             $$('quiz-num-desc')[0].style.color = "#000";
 //         })
 //     }
 // }
@@ -45,61 +43,89 @@
 // let inputQuizDays = document.querySelectorAll('.inputQuizDays')[0];
 // let inputQuizDaysValue = document.querySelectorAll('.inputQuizDaysValue')[0];
 // let inputQuizRangeDays = document.querySelectorAll('.inputQuizRangeDays')[0];
-// let spEl = "";
-//
-// inputQuizNumValue.addEventListener('click',function(){
-//     inputQuizNumValue.style.display="none";
-//     inputQuizNum.style.display = "block";
-//     inputQuizNum.focus();
-// });
-//
-// inputQuizDaysValue.addEventListener('click',function(){
-//     inputQuizDaysValue.style.display="none";
-//     inputQuizDays.style.display = "block";
-//     inputQuizDays.focus();
-// });
-//
-// function addSpaces(el, valInp, inpBl){
-//     spEl =+ el.value;
-//     spEl = spEl.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
-//     inpBl.innerHTML = spEl + valInp;
-//     return inpBl;
-// }
-// function addStyleSpaces(a, b){
-//     a.style.display = "none";
-//     b.style.display = "block";
-//     b.style.color = "#000";
-// }
 //
 // addSpaces(inputQuizNum, " ₽",  inputQuizNumValue);
 // addSpaces(inputQuizDays, " дней",  inputQuizDaysValue);
 //
+// inputQuizNumValue.addEventListener('click',function(){
+//     hideValBlock(inputQuizNumValue, inputQuizNum);
+// });
+//
+// inputQuizDaysValue.addEventListener('click',function(){
+//     hideValBlock(inputQuizDaysValue, inputQuizDays)
+// });
+//
+//
 // inputQuizNum.addEventListener("input",function(){
 //     addSpaces(inputQuizNum, " ₽",  inputQuizNumValue);
-//     setTimeout(addStyleSpaces, 1000, inputQuizNum, inputQuizNumValue);
+//     setTimeout(showInpBlock, 1000, inputQuizNum, inputQuizNumValue);
 // });
 //
 // inputQuizRangeSum.addEventListener('change',function(){
 //     addSpaces(inputQuizNum, " ₽",  inputQuizNumValue);
-//     setTimeout(addStyleSpaces, 500, inputQuizNum, inputQuizNumValue);
+//     setTimeout(showInpBlock, 500, inputQuizNum, inputQuizNumValue);
 // });
 //
 // inputQuizDays.addEventListener("input",function(){
 //     addSpaces(inputQuizDays, " дней",  inputQuizDaysValue);
-//     setTimeout(addStyleSpaces, 1000, inputQuizDays, inputQuizDaysValue);
+//     setTimeout(showInpBlock, 1000, inputQuizDays, inputQuizDaysValue);
 // });
 //
 // inputQuizRangeDays.addEventListener("change",function(){
 //     addSpaces(inputQuizDays, " дней",  inputQuizDaysValue);
-//     setTimeout(addStyleSpaces, 500, inputQuizDays, inputQuizDaysValue);
+//     setTimeout(showInpBlock, 500, inputQuizDays, inputQuizDaysValue);
 // });
 var rangInputs = document.querySelectorAll('.quiz-block input[type=range]');
 for(let i=0;i<rangInputs.length;i++) {
+    if(rangInputs[i].previousElementSibling.tagName == 'DIV') {
+        rangInputs[i].previousElementSibling.addEventListener('click', function (e) {
+            rangInputs[i].valueAsNumber = e.target.innerHTML.replace(' ','');
+        })
+    }
+
+    if(rangInputs[i].previousElementSibling.previousElementSibling.tagName == 'INPUT') {
+        rangInputs[i].previousElementSibling.previousElementSibling.addEventListener('focus', function (e) {
+            const end = e.target.value.length;
+            e.target.type = 'text';
+            e.target.setSelectionRange(end, end);
+            e.target.type = 'number';
+            e.target.focus();
+        })
+    }
     rangInputs[i].addEventListener('input',function (e) {
         let valOfRangeInp = e.target.value;
-        let closestTextInpBlock = e.target.previousElementSibling.previousElementSibling;
+        let closestTextInpBlock = e.target.previousElementSibling;
         if(closestTextInpBlock.length != 0){
+            if(e.target.value == e.target.max) {
+                valOfRangeInp += '+';
+            }
             closestTextInpBlock.innerHTML = valOfRangeInp;
         }
     })
+}
+var quiaResetBtn = $$('.reset-quiz-params');
+if(quiaResetBtn.length != 0) {
+    quiaResetBtn[0].addEventListener('click',function (e) {
+        // var quizNumInputs = e.target.closest('.quiz-block').querySelectorAll('input[type=number]');
+        // for(let i=0;i<quizNumInputs.length;i++) {
+        //     quizNumInputs[i].value = quizNumInputs[i].min;
+        //     quizNumInputs[i].closest('.quiz-part-block').querySelectorAll('input[type=range]')[0].valueAsNumber = quizNumInputs[i].min;
+        //     quizNumInputs[i].closest('.quiz-part-block').querySelectorAll('input[type=range]')[0].style.backgroundSize = '0 100%';
+        //     quizNumInputs[i].closest('.quiz-part-block').querySelectorAll('div')[0].innerHTML = quizNumInputs[i].min;
+        // }
+        location.reload();
+    })
+}
+
+function setQuizInputRangeValue(input) {
+    let minValue = parseInt(input.getAttribute('min'));
+    let maxByTableValue = parseInt(input.getAttribute('maxbytable'));
+    let maxValue = parseInt(input.getAttribute('max'));
+    let inputValue = parseInt(input.value)
+    input.setAttribute('valuebeforechange',inputValue);
+    if (inputValue > maxByTableValue) {
+        input.value = maxValue;
+    } else if (inputValue < minValue && inputValue != 0) {
+        input.value = minValue;
+    }
 }

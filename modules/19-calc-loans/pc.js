@@ -17,9 +17,9 @@ function loanCalc() {
             }
         }
         loanRangeInput.forEach(input => {
-            input.addEventListener('input', loanCalcChange)
+            input.addEventListener('change', loanCalcChange)
         });
-        loanNumInput[i].addEventListener('input', loanCalcChange);
+        loanNumInput[i].addEventListener('change', loanCalcChange);
     }
 }
 document.addEventListener('DOMContentLoaded', loanCalc);
@@ -83,47 +83,51 @@ if(inputCalcPercentValue){
 
 if(inputCalcSum) {
     addSpaces(inputCalcSum, inputCalcSumValue);
-    inputCalcSum.addEventListener('input',function(){
+    inputCalcSum.addEventListener('change',function(){
+        inputRangeSumCalc.valueAsNumber = inputCalcSum.value;
         addSpaces(inputCalcSum, inputCalcSumValue);
-        setTimeout(showInpBlock, 1000, inputCalcSum, inputCalcSumValue);
+        setTimeout(showInpBlock, 300, inputCalcSum, inputCalcSumValue);
+
     });
 }
 if(inputCalcDays) {
     addSpaces(inputCalcDays, inputCalcDaysValue);
-    inputCalcDays.addEventListener('input',function(){
+    inputCalcDays.addEventListener('change',function(){
+        inputRangeDaysCalc.valueAsNumber = inputCalcDays.value;
         addSpaces(inputCalcDays, inputCalcDaysValue);
-        setTimeout(showInpBlock, 1000, inputCalcDays, inputCalcDaysValue);
+        setTimeout(showInpBlock, 300, inputCalcDays, inputCalcDaysValue);
     });
 }
 if(inputCalcPercent) {
     addSpaces(inputCalcPercent, inputCalcPercentValue);
-    inputCalcPercent.addEventListener('input',function(){
+    inputCalcPercent.addEventListener('change',function(){
+        inputRangePercentCalc.valueAsNumber = inputCalcPercent.value;
         addSpaces(inputCalcPercent, inputCalcPercentValue);
-        setTimeout(showInpBlock, 1000, inputCalcPercent, inputCalcPercentValue);
+        setTimeout(showInpBlock, 300, inputCalcPercent, inputCalcPercentValue);
     });
 }
 if(inputRangeSumCalc){
     inputRangeSumCalc.addEventListener('change', function () {
         addSpaces(inputCalcSum, inputCalcSumValue);
-        setTimeout(showInpBlock, 500, inputCalcSum, inputCalcSumValue);
+        setTimeout(showInpBlock, 300, inputCalcSum, inputCalcSumValue);
     });
 }
 if(inputRangeDaysCalc){
     inputRangeDaysCalc.addEventListener('change',function(){
         addSpaces(inputCalcDays, inputCalcDaysValue);
-        setTimeout(showInpBlock, 500, inputCalcDays, inputCalcDaysValue);
+        setTimeout(showInpBlock, 300, inputCalcDays, inputCalcDaysValue);
     });
 }
 
 if(inputRangePercentCalc){
     inputRangePercentCalc.addEventListener('change',function(){
         addSpaces(inputCalcPercent, inputCalcPercentValue);
-        setTimeout(showInpBlock, 1000, inputCalcPercent, inputCalcPercentValue);
+        setTimeout(showInpBlock, 300, inputCalcPercent, inputCalcPercentValue);
     });
 }
-var rangInputs = document.querySelectorAll('.loan-overpayment-calc input[type=range]');
-for(let i=0;i<rangInputs.length;i++) {
-    rangInputs[i].addEventListener('input',function (e) {
+var calcRangInputs = document.querySelectorAll('.loan-overpayment-calc input[type=range]');
+for(let i=0;i<calcRangInputs.length;i++) {
+    calcRangInputs[i].addEventListener('change',function (e) {
         let valOfRangeInp = e.target.value;
         let closestTextInpBlock = e.target.previousElementSibling.previousElementSibling;
         if(closestTextInpBlock.length != 0){
@@ -136,13 +140,13 @@ if($$('.total_cards_table_js').length != 0) {
     let sum_max = totalTableLastTr.dataset.summax;
     let term_max = totalTableLastTr.dataset.termmax;
     let sum_min = totalTableLastTr.dataset.summin;
-    let term_min = totalTableLastTr.dataset.termmin;
+    // let term_min = totalTableLastTr.dataset.termmin;
     if(inputCalcSum.attributes['max']){inputCalcSum.attributes['max'].value = sum_max} else inputCalcSum.setAttribute('max',sum_max);
     if(inputCalcDays.attributes['max']){inputCalcDays.attributes['max'].value = term_max} else inputCalcDays.setAttribute('max',term_max);
     if(inputRangeSumCalc.attributes['max']){inputRangeSumCalc.attributes['max'].value = sum_max} else inputRangeSumCalc.setAttribute('max',sum_max);
     if(inputRangeDaysCalc.attributes['max']){inputRangeDaysCalc.attributes['max'].value = term_max} else inputRangeDaysCalc.setAttribute('max',term_max);
     if(inputCalcSum.attributes['min']){inputCalcSum.attributes['min'].value = sum_min} else inputCalcSum.setAttribute('min',sum_min);
-    if(inputCalcDays.attributes['min']){inputCalcDays.attributes['min'].value = term_min} else inputCalcDays.setAttribute('min',term_min);
+    // if(inputCalcDays.attributes['min']){inputCalcDays.attributes['min'].value = term_min} else inputCalcDays.setAttribute('min',term_min);
     if(inputRangeSumCalc.attributes['min']){inputRangeSumCalc.attributes['min'].value = sum_min} else inputRangeSumCalc.setAttribute('min',sum_min);
-    if(inputRangeDaysCalc.attributes['min']){inputRangeDaysCalc.attributes['min'].value = term_min} else inputRangeDaysCalc.setAttribute('min',term_min);
+    // if(inputRangeDaysCalc.attributes['min']){inputRangeDaysCalc.attributes['min'].value = term_min} else inputRangeDaysCalc.setAttribute('min',term_min);
 }

@@ -5,6 +5,7 @@
 .card {
     width: 100%;
     margin: 30px 0;
+    background-color: #fff;
 }
 
 
@@ -59,16 +60,16 @@
 
 .card .card-header .card-top-inner .block-row .card-head-intro {
     font-weight: 600;
-    width: 100%;
 }
 
 .card .card-header .card-top-inner .block-row .card-cont {
-    color: #95A5B0;
     font-size: 0.9rem;
     line-height: 1.2rem;
-    margin-top: 15px;
+    margin-top: 5px;
 }
-
+.card .card-header .card-top-inner .block-row .card-cont:not(.k5m-modal-btn) {
+    color: #636363;
+}
 .card .card-header .reviews span {
     font-size: 1rem;
     margin-left: 5px;
@@ -88,10 +89,12 @@
 
 
 .card .card-body .card-body-inner .card-more ,.card .card-body .card-body-inner .card-less {
-    color: #4FABFA;
     cursor: pointer;
     margin: 10px 0 15px 65px;
     align-items: center;
+    font-weight: 600;
+    font-size: .875rem;
+    color: #355FF1;
 }
 
 .card .card-body .card-body-inner .card-more svg,.card .card-body .card-body-inner .card-less svg {
@@ -126,7 +129,7 @@
 }
 
 .line-scale .card-progress {
-    background: #355FF1;
+    background: #636363;
     height: 6px;
     display: block;
 }

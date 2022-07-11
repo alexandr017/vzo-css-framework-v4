@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .employee-short-card-el a.top-line{
@@ -31,4 +32,46 @@
     height: 164px;
     border-radius: 50%;
 }
+.employee-short-card-tooltip {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    width: 100%;
+    right: calc(50% - 102px);
+    padding-right: 30px;
+    text-align: right;
+}
 
+.employee-short-card-tooltip .tooltip {
+    display: none;
+    background: #000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    max-width: 190px;
+    position: absolute;
+    right: 85px;
+    top: -5px;
+    min-height: 50px;
+}
+
+.employee-short-card-tooltip .tooltip:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.employee-short-card-tooltip .tooltip a{
+    color: #fff;
+    text-decoration: underline;
+    font-size: .87rem;
+
+}
+
+.employee-short-card-tooltip:hover .tooltip{
+    display: block;
+}

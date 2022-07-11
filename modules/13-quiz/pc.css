@@ -26,9 +26,13 @@
 .quiz-num-value:focus {
     outline: none;
 }
-.quiz-part-block {
+.quiz-part-block:not(.quiz-btns-block) {
     width: 315px;
     margin: 0.5em 1em;
+}
+.quiz-btns-block {
+    width: 210px;
+    margin: 0.5em 0;
 }
 .quiz-part-block input[type=range] {
     outline: none;
@@ -98,4 +102,12 @@
     font-size: 1.5rem;
     width: 100%;
     margin: 0.5em 0;
+}
+.reset-quiz-params {
+    justify-content: space-around;
+    align-items: flex-end;
+    color: #636363;
+    font-weight: normal;
+    width: 105px;
+    margin: 0 auto;
 }

@@ -7,11 +7,110 @@
 }
 .lead-text-block .lead-text {
     font-size: 1.2rem;
+    margin-bottom: 17px;
 }
-.lead-wrap .search-block-1 {
-    margin-top: 24px;
+.lead-text-block .h1{
+    margin-bottom: 9px;
+}
+.lead-text-block .lead-text-md {
+    font-size: 1.067rem;
+}
+
+.lead-wrap .search-block-1  {
     width: 100%;
+    margin: 5px 0 15px 0;
 }
 .lead-wrap .lead-text p {
     margin-bottom: 0;
+}
+
+.search-qa-btns {
+    display: flex;
+    align-items: center;
+}
+
+.qa-search-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: inherit;
+    position: absolute;
+    right: 45px;
+}
+
+.qa-search-clear-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: inherit;
+    position: absolute;
+    right: 30px;
+}
+
+.lead-wrap .input-text {
+    padding: 5px;
+    outline: none;
+    border: 1px solid #E5E5E5;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 5px;
+    height: 46px;
+    /*border-radius: 23px;*/
+    /*background-color: #F7F7F7;*/
+}
+.lead-wrap .input-text .search-block__input {
+    width: calc(100% - 40px);
+    outline: none;
+    height: 100%;
+    padding-left: 20px;
+    border: none;
+}
+::-webkit-input-placeholder{
+    color: #888;
+}
+
+.input-text:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.qa-search-block .input-text{
+    margin-bottom: 0;
+}
+.search-block-terms .searched-terms-block {
+    max-height: 180px;
+    overflow: auto;
+    padding: 0;
+}
+
+.search-block-terms .searched-terms-block::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+    height: 30px;
+}
+.search-block-terms .searched-terms-block::-webkit-scrollbar-thumb {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
+}
+
+.search-block-terms .searched-terms-block span a {
+    display: flex;
+    align-items: center;
+    list-style-type: none !important;
+    cursor: pointer;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 5px 20px;
+}
+.search-block-terms .search-block-close-btn {
+    display: none;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: inherit;
+    height: 40px;
+    width: 40px;
+    padding: 12px 8px;
+    position: absolute;
+    right: 0;
 }

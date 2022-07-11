@@ -73,3 +73,9 @@
 .our-headquarters-block .about-short-code-content {
     margin-bottom: 55px;
 }
+.about-headquarters-img-el .insert-video-block{
+    height: 290px;
+}
+.about-headquarters-img-el .insert-video-block .play-video-el{
+    height: 100%;
+}

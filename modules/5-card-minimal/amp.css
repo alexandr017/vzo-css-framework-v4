@@ -36,7 +36,7 @@
 .card-min-rating svg {
     margin-right: 0.5em;
 }
-.card-min-col img {
+.card-min-logo img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -49,6 +49,8 @@
 
 .card-min-label {
     font-weight: 600;
+    text-align: right;
+    padding-left: 1em;
 }
 
 .card-minimal-wrap .card-min-info-el {
@@ -73,4 +75,7 @@
 }
 .card-min-top-block .card-name {
     display: block;
+}
+.card-minimal-block::-webkit-scrollbar {
+    width: 0;
 }

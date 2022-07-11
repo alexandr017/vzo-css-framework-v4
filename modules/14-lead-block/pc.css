@@ -24,6 +24,9 @@
 .lead-main-container .lead-icon {
     display: block;
     float: right;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .lead-btn-more,
@@ -93,4 +96,7 @@
 }
 .checked-by-expert svg {
     margin-right: 5px;
+}
+.lead-block {
+    margin-bottom: 2em;
 }

@@ -44,8 +44,8 @@
     margin-top: 16px;
 }
 
-.card-cont {
-    color: #888;
+.card-cont:not(.k5m-modal-btn) {
+    color: #636363;
 }
 
 .card-head-intro {
@@ -74,10 +74,6 @@
 .block-row {
     justify-content: space-between;
     margin-top: 16px;
-}
-
-.card-cont {
-    color: #888;
 }
 
 .card-head-intro {

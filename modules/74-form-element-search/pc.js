@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 function searchItems(searchHint){
     var search_hint = searchHint;
-    if(search_hint.indexOf('банк') == -1 && offersListItemsArr.length != 0){
+    if(typeof offersListItemsArr !== 'undefined' && offersListItemsArr.length != 0){
         var offersListItemsArrAfterSearch = [];
         offersListItemsArr.forEach(function (item) {
             if (item.getElementsByClassName('search-title')[0].innerText.toLowerCase().indexOf(searchHint.toLowerCase()) == -1) {

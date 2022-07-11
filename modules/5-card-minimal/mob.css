@@ -58,6 +58,8 @@
 
 .card-min-label {
     font-weight: 600;
+    text-align: right;
+    padding-left: 1em;
 }
 
 .card-minimal-wrap .card-min-info-el {

@@ -65,8 +65,10 @@ function addCardsMoreBtnsClick(value) {
 }
 
 function addToCompareBtnsClick (e){
-    var elem = e.getElementsByClassName('addToCompare')[0];
-    elem.addEventListener('click',() => addToCompareFunction(elem),false)
+    var elem = e.getElementsByClassName('addToCompare');
+    if(elem.length != 0) {
+        elem[0].addEventListener('click',() => addToCompareFunction(elem[0]),false)
+    }
 }
 
 function addToCompareFunction(elem) {
@@ -141,7 +143,7 @@ function addOrRemoveFromFavorites(card) {
             if($$('.fav-items-count').length != 0) {
                 if(favoritesArr != null && favoritesArr.length != 0) {
                     $$('.fav-items-count')[0].innerText = favoritesArr.length;
-                    $$('.fav-items-count')[0].style.display = 'flex';
+                    $$('.fav-items-count')[0].style.display = 'block';
                 } else {
                     $$('.fav-items-count')[0].style.display = 'none';
                 }
@@ -160,6 +162,9 @@ function addCardsBtnsEvents() {
     addOrRemoveFromFavorites(card);
     addCardsMoreBtnsClick(card);
     addToCompareBtnsClick(card);
+    if (typeof showModalBlock === "function") {
+        showModalBlock();
+    }
     let cardIconsBlock = card.getElementsByClassName('card-icons')[0];
     if(cardIconsBlock != undefined) {
         if ($$('.compare-block').length != 0) {

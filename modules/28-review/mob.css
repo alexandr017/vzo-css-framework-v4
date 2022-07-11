@@ -55,6 +55,9 @@
     color: #95A5B0;
     margin-top: 8px;
 }
+.comments-count.clicked-review-btn {
+    color: #355FF1;
+}
 .mark-review-5 {
     background: #2CDD88;
 }
@@ -92,10 +95,30 @@
 }
 
 .review-count-comments {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    color: #95A5B0;
 }
-
+.clicked-review-btn ~ .review-count-comments,.clicked-review-btn .review-count-comments {
+    color: #355FF1;
+}
 .review-count-comments svg {
     margin-right: 4px;
+}
+.review-count-comments svg path,.thread-answer-btn svg {
+    stroke: #95A5B0;
+}
+.clicked-review-btn .review-count-comments svg path,.clicked-review-btn .thread-answer-btn svg path {
+    stroke: #355FF1;
+}
+.thread-answer-btn {
+    display: inline-flex;
+    align-items: center;
+    color: #95A5B0;
+}
+.thread-answer-btn svg {
+    margin-left: 5px;
+}
+.clicked-review-btn .thread-answer-btn {
+    color: #355FF1;
 }

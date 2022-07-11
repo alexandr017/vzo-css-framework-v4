@@ -21,10 +21,14 @@
     padding: 3px 15px;
     margin-right: 30px;
     font-size: .875rem;
+    font-weight: 400;
+    font-family: 'Proxima Nova Rg';
+    margin-top: 5px;
 }
 
 .card-icons{
     align-items: center;
+    margin: -40px -50px 0;
 }
 
 .card .card-header {
@@ -38,7 +42,8 @@
     justify-content: space-between;
 }
 
-.card .card-header .card-first-line a, .card .card-header .card-first-line span.no-link {
+.card .card-header .card-first-line a,
+.card .card-header .card-first-line span.no-link {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     margin-top: 10px;
@@ -49,7 +54,7 @@
 }
 
 .card .card-header .card-top-inner {
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .card .card-header .card-top-inner .logo {
@@ -62,6 +67,7 @@
 }
 .card .card-header .card-top-inner .logo img{
     max-width: fit-content;
+    height: fit-content;
 }
 
 .card .card-header .card-top-inner .card-row-wrap {
@@ -89,7 +95,7 @@
 .card .card-header .card-top-inner .block-row .card-cont {
     font-size: 0.875rem;
     line-height: 1.2rem;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .card .card-header .reviews span {
@@ -98,7 +104,7 @@
 }
 
 .card .card-body {
-    margin-top: -20px;
+    margin-top: -30px;
     padding-bottom: 5px;
 }
 
@@ -110,10 +116,10 @@
 
 .card .card-body .card-body-inner .card-upd {
     font-size:  0.875rem;
-    line-height: 1.125rem;
-    padding: 10px 60px;
+    /*line-height: 1.125rem;*/
+    /*padding: 10px 60px;*/
     float: right;
-    margin-right: 30px;
+    margin-right: 90px;
 }
 
 .card .card-body .card-body-inner .card-more ,.card .card-body .card-body-inner .card-less {
@@ -213,7 +219,27 @@
     padding: 18px 35px 21px 35px;
     width: 100%;
 }
-
+.hidden-card-info .tab-wrap .rko-tab{
+    position: relative;
+}
+.rko-scrolling-tab-block {
+    white-space: nowrap;
+    width: 98%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.rko-tab-btn {
+    position: absolute;
+    top: 25px;
+    cursor: pointer;
+}
+.rko-tab-right-btn {
+    right: 30px;
+}
+.rko-tab-left-btn {
+    display: none;
+    transform: rotate(180deg);
+}
 .hidden-card-info .tab .tab-links {
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -222,12 +248,11 @@
     padding: 5px 0;
     transition: 0.3s;
     font-weight: 600;
-    color: #95A5B0;
-    font-size: .875rem;
+    color: #636363;
 }
 
 .hidden-card-info .tab .tab-links.on {
-    color: #355FF1;
+    color: #000000;
     border-bottom: none;
 
 }
@@ -236,8 +261,6 @@
     display:block;
     border-top: 1px solid #E5E5E5;
     border-bottom: 1px solid #E5E5E5;
-    font-size: 0.875rem;
-
 }
 
 .hidden-card-info .tabs-items .tab-content {
@@ -247,9 +270,14 @@
 .hidden-card-info .tabs-items .tab-content p{
     padding: 34px;
 }
-
+.hidden-card-info .tabs-items .tab-content .td p{
+    padding: 0;
+}
 .hidden-card-info .tabs-items .tab-content ul {
     list-style-type: none;
+}
+.hidden-card-info .tabs-items .tab-content ul:not(.docs-list) {
+    padding-left: 0;
 }
 .hidden-card-info .tabs-items .tab-content ul li {
     margin-top: 15px;
@@ -266,20 +294,21 @@
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .td:first-of-type {
-    width: 35%;
-    color: #888;
+    width: 25%;
+    color: #636363;
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .td:last-of-type {
-    width: 65%;
+    width: 75%;
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .td {
-    padding: 10px 34px;
+    padding: 5px 34px;
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .l-el {
     display: flex;
+    align-items: center;
 }
 
 .hidden-card-info .tabs-items .tab-content .table-vertical-block .tr .l-el .card-rating {
@@ -287,7 +316,6 @@
     height: 6px;
     background: #E5E5E5;
     border-radius: 28px;
-    margin-top: 6px;
 }
 
 .hidden-card-info .table-vertical-block .tr .l-el .card-rating .w-1 {
@@ -326,7 +354,7 @@
 
 .hidden-card-info .table-vertical-block .tr .l-el .card-rating .percent {
     height: 6px;
-    background: #888;
+    background: #636363;
     border-radius: 28px;
 }
 .hidden-card-info .table-vertical-block .tr .l-el .rating-val {
@@ -347,6 +375,8 @@
     text-align: center;
     border: 1px solid #E5E5E5;
     margin: 0 8px;
+    height: 100%;
+    padding: 10px;
 }
 
 .card .hidden-card-info .card-slider-block .card-slider-info .card-tooltip{
@@ -367,7 +397,7 @@
 .hidden-card-info .list-card-block {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 65px;
+    padding: 0 34px;
 }
 
 .hidden-card-info .list-card-block .list-card_el {
@@ -379,17 +409,20 @@
 .hidden-card-info .list-card-block .list-card_el svg {
     margin-top: 5px;
 }
+.hidden-card-info .list-card-block .list-card_el svg path:first-of-type {
+    fill: #355FF1;
+}
 
 .hidden-card-info .list-card-block .list-card_el span {
     margin-left: 10px;
 }
 
 .hidden-card-info .card-btn-wrap {
-    padding: 0 80px;
+    padding: 0 34px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 0 50px 0;
+    margin: 20px 0;
 }
 
 .hidden-card-info .card-btn-wrap .card-left-btn .btn-circle {
@@ -401,7 +434,7 @@
 }
 
 .hidden-card-info .card-btn-wrap .btn:last-of-type {
-    margin-left: 65px;
+    margin-left: 24px;
 }
 
 .pay-icons-wrap span {
@@ -409,6 +442,7 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
     margin-right: 5px;
+    position: relative;
 }
 .card-slider-block .jsSlideItem img {
     margin: 0 auto;
@@ -425,8 +459,9 @@
 }
 
 .card-slider-block .jsSlideItem {
-    width: 22% !important;
-    min-width: 22% !important;
+    /*width: 22% !important;*/
+    /*min-width: 22% !important;*/
+    padding: 0;
 }
 
 .card-slider-block .js-slide-btn-left, .card-slider-block .js-slide-btn-right {
@@ -436,7 +471,17 @@
     width: 30px;
     height: 30px;
 }
-
+.block-row.reviews {
+    width: 95px;
+}
+.card-head-center-block {
+    justify-content: space-around;
+    width: calc(100% - 350px);
+}
+.card-head-center-block .block-row {
+    min-width: fit-content;
+    width: 70px;
+}
 @media screen and (max-width: 992px) {
     .card .card-header .card-first-line {
         margin-left: 0;

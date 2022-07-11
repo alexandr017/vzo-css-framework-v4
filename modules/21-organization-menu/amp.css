@@ -74,8 +74,8 @@
 /*}*/
 
 .org-products-block .org-link-el .org-icon-bg {
-    margin-right: 1em;
-    width: 40px;
+    /*margin-right: 1em;*/
+    width: 30px;
     height: 40px;
     /*background-color: #F7F7F7;*/
     /*border-radius: 50%;*/

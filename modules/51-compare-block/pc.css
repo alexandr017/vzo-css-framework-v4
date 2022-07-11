@@ -34,6 +34,8 @@
 .compare-block .compare-item {
     width: 60px;
     height: 60px;
+    display: flex;
+    align-items: center;
 }
 .compare-block .compare-block-text {
     color: #FFFFFF;

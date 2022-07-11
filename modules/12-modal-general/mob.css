@@ -60,6 +60,9 @@
     outline: none;
     border: 1px solid #E5E5E5;
 }
+.modal-container .modal-block-container {
+    margin-top: 20px;
+}
 
 
 .modal-content .modal-block-container textarea {

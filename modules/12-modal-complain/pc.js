@@ -55,7 +55,6 @@ function closeAllSelect(el) {
             }
         }
     }
-
 }
 document.addEventListener("click", closeAllSelect);
 
@@ -70,6 +69,68 @@ if($$('.select-items').length != 0) {
                 hiddenBlock.style.display = 'none';
         }, false)
     }
+}
+
+var modalComplain = $$('#modalComplainForm');
+if(modalComplain.length !=0) {
+    modalComplain[0].addEventListener('submit',function (e) {
+        e.preventDefault();
+
+        var type_complaint = $$('.selected-item')[0].innerText;
+        var comment = $$('.hidden-claim-el')[0].value;
+        var isEmail = $$('.isEmail')[0].value;
+        if (isEmail == ''){
+            $$('.email-confirm')[0].style.display = "block";
+            return false;
+        }
+
+        if (type_complaint === 'Выберите тип жалобы') {
+            alert('Выберите тип жалобы');
+            return false;
+        }
+
+        if (type_complaint === 'Другое' && comment == '') {
+            alert('Вы не указали причину жалобы');
+            return false;
+        }
+
+        let data = {
+            '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
+            'h1': $$('.org-title')[0].innerHTML.trim(),
+            'type_complaint': type_complaint,
+            'email': $$('#ttt')[0].value,
+            'comment': comment
+        };
+
+        fetch('/forms/phone_complaint', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(data)
+        }).then((res) => {
+            $$('#modal-complain')[0].classList.remove('open');
+        var modalBack =  $$('#modal-back')[0];
+        modalBack.classList.add('open');
+        let exits = [].slice.call(modalBack.getElementsByClassName('modal-exit'));
+        exits.forEach(function (exit) {
+            exit.addEventListener('click', function (event) {
+                event.preventDefault();
+                modalBack.classList.remove('open');
+            });
+        });
+    }).catch((err) => {
+            console.log(err);
+    });
+        return false;
+    })
+}
+if($$('.isEmail').length != 0){
+    $$('.isEmail')[0].addEventListener('input',function () {
+        if ($$('.email-confirm')[0].style.display = "block") {
+            $$('.email-confirm')[0].style.display = "none";
+        }
+    })
 }
 
 // $$('.selected-item')[0].addEventListener('click',function () {

@@ -77,18 +77,23 @@
 .block-reviews .review-wrap .review-btn-wrap {
     align-items: center;
     margin: 10px 0 0 0;
-}
-.block-reviews .review-wrap .review-btn-wrap .review-count-comments {
-    margin-right: 5px;
     color: #95A5B0;
+}
+.block-reviews .review-wrap .clicked-review-btn .review-btn-wrap {
+    color: #355FF1;
+}
+.block-reviews .review-wrap .review-count-comments {
+    margin-right: 5px;
 }
 .block-reviews .review-wrap .review-btn-wrap .btn-answer {
     cursor: pointer;
 }
+.block-reviews .review-wrap .clicked-review-btn .review-btn-wrap .btn-answer path {
+    stroke: #355FF1;
+}
 
 .review-count-comments {
     font-weight: 600;
-    color: #355FF1;
     cursor:pointer;
     display: inline-flex;
     align-items: center;
@@ -150,11 +155,21 @@
 }
 
 .reply-bottom-info .thread-answer-btn {
-    color: #355FF1;
+    color: #95A5B0;
     /*margin: 0 25px;*/
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
-
+.reply-bottom-info .clicked-review-btn .thread-answer-btn {
+    color: #355FF1;
+}
+.reply-bottom-info .thread-answer-btn svg {
+    margin-left: 5px;
+}
+.reply-bottom-info .clicked-review-btn .thread-answer-btn svg path {
+    stroke: #355FF1;
+}
 .account-review-top-block {
     justify-content: space-between;
     align-items: center;

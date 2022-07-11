@@ -22,7 +22,7 @@
 
 .claim-select .selected-item:after {
     position: relative;
-    content: url("/v4/images/select-arow-mob.svg");
+    content: url("/v4/images/select-arow.svg");
     float: right;
     margin-right: 10px;
 }
@@ -56,14 +56,23 @@
 .claim-select .select-items {
     position: absolute;
     background-color: #fff;
+    max-height: 115px;
+    overflow-y: auto;
     width: 410px;
     margin: -20px auto 0;
     z-index: 99;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 10px 10px rgba(135, 145, 159, 0.15);
 }
-
-.claim-select .select-hide {
+.claim-select .select-items::-webkit-scrollbar {
+    width: 5px;
+}
+.claim-select .select-items::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
+}
+.claim-select .select-items.select-hide {
     display: none;
 }
 
@@ -73,3 +82,8 @@
     color: #355FF1;
 }
 
+.email-confirm {
+    display: none;
+    margin: 10px 0;
+    color: #EF3124;
+}

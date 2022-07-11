@@ -8,7 +8,7 @@ for(let j=0; j < offerFiltersMainBlock.length; j++) {
     let offerListDotsBlock = offerFiltersMainBlock[j].querySelectorAll(".offer-slider-dots")[0];
 
     for (let i = 0; i < offersListItem.length; i++) {
-        offersListItem[i].addEventListener('click', function () {
+        offersListItem[i].addEventListener('click', function (e) {
             offersListHiddenBlock.style.display = 'block';
             offerFiltersMainBlock[j].querySelector('.offer-filter-main-block').style.display = "none";
             offersListHiddenTitleItem.innerHTML = offersListItem[i].querySelector('.of-title').innerHTML;
@@ -37,7 +37,7 @@ for(let j=0; j < offerFiltersMainBlock.length; j++) {
                     offerFiltersSliderList.append(partOfItemBlock);
                 }
             }
-            createDotsElem();
+            createDotsElem(e);
 
             let sliderTrack = offersListHiddenBlock.querySelector('.offer-filters-slider-list'),
                 offerListSlideItem = offersListHiddenBlock.querySelectorAll('.part-of-item-block'),
@@ -203,7 +203,7 @@ for(let j=0; j < offerFiltersMainBlock.length; j++) {
             sliderTrack.addEventListener('transitionend', () => allowSwipe = true);
             offersListHiddenBlock.addEventListener('touchstart', swipeStart);
             offersListHiddenBlock.addEventListener('mousedown', swipeStart);
-
+            scrollLeftFn(e);
         });
         offersListCloseBtn.addEventListener('click', function () {
             offersListHiddenBlock.style.display = 'none';
@@ -214,7 +214,7 @@ for(let j=0; j < offerFiltersMainBlock.length; j++) {
 
     }
 
-    function createDotsElem() {
+    function createDotsElem(e) {
         for (let q = 0; q < offerFiltersSliderList.querySelectorAll('.part-of-item-block').length; q++) {
             if (offerFiltersSliderList.querySelectorAll('.part-of-item-block').length > 1) {
                 let creatDotEl = document.createElement("span");
@@ -222,9 +222,10 @@ for(let j=0; j < offerFiltersMainBlock.length; j++) {
                 offerListDotsBlock.append(creatDotEl);
             }
         }
-        if (document.querySelectorAll('.off-list-dot-el').length > 1) {
-            document.querySelectorAll('.off-list-dot-el')[0].classList.add('offListActiveDot');
-        }
+        // if (document.querySelectorAll('.off-list-dot-el').length > 1) {
+        //     document.querySelectorAll('.off-list-dot-el')[0].classList.add('offListActiveDot');
+        // }
+        e.target.closest('.offer-filters').getElementsByClassName('off-list-dot-el')[0].classList.add('offListActiveDot');
     }
 
 }
@@ -236,3 +237,17 @@ document.addEventListener('click',function (e){
         }
     }
 },false)
+function scrollLeftFn (e) {
+    var dotsOfOfferFilters = e.target.closest('.offer-filters').getElementsByClassName('off-list-dot-el');
+    if(dotsOfOfferFilters.length !=0) {
+        for(let i=0;i<dotsOfOfferFilters.length;i++){
+            dotsOfOfferFilters[i].addEventListener('click',function (e){
+                let scrollingBlock = e.target.closest('.offer-slider-dots').parentElement.getElementsByClassName('offer-filters-slider-list')[0];
+                var scrollToPoint = scrollingBlock.children[i].offsetLeft;
+                e.target.parentNode.getElementsByClassName('offListActiveDot')[0].classList.remove('offListActiveDot');
+                e.target.classList.add('offListActiveDot');
+                scrollingBlock.style.transform = "translate3d(-"+scrollToPoint+"px, 0px, 0px)";
+            })
+        }
+    }
+}

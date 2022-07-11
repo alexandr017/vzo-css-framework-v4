@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 });
 
-function setCompareBlockDynamicData(compareItemsCount,newAdded = false) {
+function setCompareBlockDynamicData(compareItemsCount,newAdded = false,elem=null) {
     // if(compareItemsCount > 9) {
     //     compareItemsCount = Number(compareItemsCount.toString().slice(-1));
     // }
@@ -41,6 +41,8 @@ function setCompareBlockDynamicData(compareItemsCount,newAdded = false) {
     }
     if(compareItemsCount > 0 && $$('.compare-block').length != 0 && newAdded == true) {
         $$('.compare-block')[0].style.display = 'flex';
+    }else {
+        $$('.compare-block')[0].style.display = 'none';
     }
     if(compareItemsCount > 1) {
         $$('.count-of-comparing-items')[0].style.display = 'flex';
@@ -48,7 +50,11 @@ function setCompareBlockDynamicData(compareItemsCount,newAdded = false) {
         $$('.count-of-comparing-items')[0].style.display = 'none';
     }
     if($$('.addedToCompare').length != 0) {
-        var firsComparedItem = $$('.addedToCompare')[0].closest('.card').querySelectorAll('.logo a img')[0].src;
+        if(elem != null && elem.querySelectorAll('.addedToCompare').length != 0) {
+            var firsComparedItem = elem.querySelectorAll('.logo a img')[0].src;
+        } else {
+            var firsComparedItem = $$('.addedToCompare')[0].closest('.card').querySelectorAll('.logo a img')[0].src;
+        }
         if($$('.compare-block').length != 0) {
             $$('.compare-block .compare-item img')[0].src = firsComparedItem;
         }

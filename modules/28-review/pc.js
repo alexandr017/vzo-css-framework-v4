@@ -52,56 +52,67 @@ if(loadReviewsMoreBtn.length != 0) {
 }
 
 //Перемищение формы по странице
-document.addEventListener('DOMContentLoaded', function(){
+
+let answerForm = $$('#review-form')[0].cloneNode(true);
+answerForm.classList.add('review-answer-form');
+$$('#review-f')[0].parentNode.append(answerForm);
+answerForm.style.display = 'none';
+
+answerForm.querySelector('#plus').style.display = 'none';
+answerForm.querySelector('#minus').style.display = 'none';
+
+answerForm.querySelector('.r-btn-wrap').innerHTML = '<div class="r-btn-wrap flex">\n' +
+    '<div class="cancel-btn">Отмена</div>\n' +
+    '<button type="submit" class="btn-1-dark">\n' +
+    '<svg width="18" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+    '<path d="M1.06336 0.0704598L13.5781 5.85306C13.7044 5.91147 13.8111 6.00321 13.8857 6.11769C13.9604 6.23216 14 6.3647 14 6.5C14 6.6353 13.9604 6.76784 13.8857 6.88231C13.8111 6.99679 13.7044 7.08853 13.5781 7.14694L1.06336 12.9295C0.935014 12.989 0.791689 13.0115 0.650457 12.9945C0.509225 12.9774 0.376038 12.9215 0.26676 12.8334C0.157481 12.7454 0.076717 12.6288 0.0340863 12.4976C-0.00854428 12.3664 -0.0112445 12.2262 0.0263072 12.0935L1.27837 7.65933C1.2937 7.60499 1.32525 7.5562 1.36908 7.51906C1.41291 7.48192 1.46709 7.45807 1.52487 7.45047L7.5892 6.65463C7.61448 6.65121 7.63843 6.64154 7.65871 6.62656C7.679 6.61159 7.69495 6.59181 7.70502 6.56914L7.71571 6.53299C7.7204 6.50096 7.71373 6.46833 7.6968 6.44042C7.67988 6.4125 7.65368 6.39094 7.62246 6.37922L7.58979 6.37061L1.5314 5.57535C1.47374 5.56765 1.41968 5.54375 1.37596 5.50661C1.33225 5.46948 1.30079 5.42075 1.2855 5.36649L0.0263072 0.906463C-0.0112445 0.773841 -0.00854428 0.633586 0.0340863 0.502404C0.076717 0.371223 0.157481 0.254643 0.26676 0.16655C0.376038 0.0784565 0.509225 0.0225633 0.650457 0.00552727C0.791689 -0.0115088 0.935014 0.0110302 1.06336 0.0704598Z" fill="white"/>\n' +
+    '</svg>\n' +
+    '</button>\n' +
+    '</div>';
+formCancelBtn();
+document.getElementsByClassName('cancel-btn')[0].addEventListener('click',function () {
+    clearForm(this);
+    moveFormBack();
+},false);
+
+function moveFormBack() {
+    answerForm.style.display = 'none';
+    $$('#review-f')[0].parentNode.append(answerForm);
+}
+
+function allForMovingForm(){
 
     let moveBtnBlock = $$('.review-btn-wrap-block');
-    let formBlock = $$('#review-form')[0];
-    let backForm = $$('#review-f-bl')[0];
-    let plus = $$('#plus')[0];
-    let minus = $$('#minus')[0];
     let mainFormBlock = $$('#review-f')[0];
-    let btnFormBlock = $$('.r-btn-wrap')[0];
+    let formBlock = $$('.review-answer-form')[0];
 
     function moveBtnClick(moveBtnBlock) {
         if(!moveBtnBlock.classList.contains('review-btn-wrap-block')) {
             moveBtnBlock = moveBtnBlock.closest('.review-btn-wrap-block');
+            if($$('.clicked-review-btn').length != 0) {
+                $$('.clicked-review-btn')[0].classList.remove('clicked-review-btn');
+            }
+            moveBtnBlock.classList.add('clicked-review-btn');
+        }
+        var reviewForm = $$('#form-1');
+        var answeredReviewBlock = formBlock.getElementsByClassName('answeredReview');
+        if(!moveBtnBlock.classList.contains('answerAdded')) {
+            reviewForm[0].style.display = 'block';
+            if(answeredReviewBlock.length != 0) {
+                answeredReviewBlock[0].style.display = 'none';
+            }
+        } else {
+            reviewForm[0].style.display = 'none';
+            if(answeredReviewBlock.length != 0) {
+                answeredReviewBlock[0].style.display = 'block';
+            }
         }
         let moveForm = moveBtnBlock.nextElementSibling;
+
         moveBtnBlock.nextElementSibling.style.display = 'inline-flex';
         if (moveForm != null) {
             formBlock.style.display = 'block';
-            plus.style.display = 'none';
-            minus.style.display = 'none';
             moveBtnBlock.nextElementSibling.insertAdjacentElement('afterend', formBlock);
-            mainFormBlock.style.display = 'none';
-            btnFormBlock.innerHTML = '<div class="r-btn-wrap flex">\n' +
-                '<div class="cancel-btn">Отмена</div>\n' +
-                '<button type="submit" class="btn-1-dark">\n' +
-                '<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">\n' +
-                '<path d="M2.2484 0.37674L20.3084 9.01503C20.4907 9.10229 20.6446 9.23933 20.7524 9.41034C20.8601 9.58135 20.9173 9.77934 20.9173 9.98145C20.9173 10.1836 20.8601 10.3816 20.7524 10.5526C20.6446 10.7236 20.4907 10.8606 20.3084 10.9479L2.2484 19.5862C2.06319 19.6749 1.85635 19.7086 1.65254 19.6832C1.44873 19.6577 1.25653 19.5742 1.09883 19.4426C0.941128 19.311 0.824577 19.1369 0.763057 18.9409C0.701537 18.7449 0.69764 18.5354 0.751831 18.3373L2.55869 11.7133C2.58081 11.6321 2.62633 11.5593 2.68959 11.5038C2.75284 11.4483 2.83103 11.4127 2.9144 11.4013L11.6658 10.2125C11.7023 10.2073 11.7369 10.1929 11.7662 10.1705C11.7954 10.1481 11.8184 10.1186 11.833 10.0847L11.8484 10.0307C11.8552 9.98289 11.8455 9.93415 11.8211 9.89245C11.7967 9.85075 11.7589 9.81853 11.7138 9.80103L11.6667 9.78817L2.92383 8.60017C2.84061 8.58867 2.76261 8.55296 2.69952 8.49749C2.63643 8.44202 2.59103 8.36923 2.56897 8.28817L0.751831 1.6256C0.69764 1.42748 0.701537 1.21796 0.763057 1.022C0.824577 0.826032 0.941128 0.65188 1.09883 0.520283C1.25653 0.388686 1.44873 0.30519 1.65254 0.279741C1.85635 0.254292 2.06319 0.287962 2.2484 0.37674Z" fill="white"/>\n' +
-                '</svg>\n' +
-                '</button>\n' +
-                '</div>';
-            formCancelBtn();
-            document.getElementsByClassName('cancel-btn')[0].addEventListener('click',function () {
-                clearForm(this);
-                moveFormBack();
-            },false);
-        }
-    }
-
-    function moveFormBack() {
-        if ( formBlock.style.display == 'block' ) {
-            let moveBack = document.createDocumentFragment();
-            moveBack.appendChild(formBlock);
-            backForm.appendChild(moveBack);
-            plus.style.display = 'block';
-            minus.style.display = 'block';
-            mainFormBlock.style.display = 'block';
-            backForm.style.flexDirection = 'row-reverse';
-            btnFormBlock.innerHTML = '<div class="r-btn-wrap">\n' +
-                '<button class="btn btn-light-3">Отправить</button>\n' +
-                '</div>';
         }
     }
 
@@ -110,6 +121,9 @@ document.addEventListener('DOMContentLoaded', function(){
             moveBtnClick(e.target);
         });
     }
+}
+document.addEventListener('DOMContentLoaded', function(){
+    allForMovingForm();
 });
 
 //Скрыть решенный отзыв
@@ -143,6 +157,7 @@ sortingReviewCheckboxes.forEach(item => {
     })
 });
 function reviewsSortFilter() {
+    moveFormBack();
     let checkedCheckboxesArr = [] // gets all chacked checkboxes
     let checkboxes = $$('.custom-checkbox');
     for(i=0;i<checkboxes.length;i++){
@@ -207,6 +222,7 @@ function reviewsSortFilter() {
     if ($$('.reviewsBlock')[0] != undefined) {
         $$('.reviewsBlock')[0].innerHTML = strOfSortedFilteredItems;
         loadMoreItems();
+        allForMovingForm();
     }
 }
 reviewsSortFilter();
@@ -232,14 +248,23 @@ for(let i=0;i<moveReviewBtnBlock.length;i++) {
 
 //скрытие сортировочного блока и кнопки
 
-let hideSortBlock = $$(".sort")[0];
-let hideButtonBlock = $$(".main-reviews-wrap-btn-block")[0];
+let hideSortBlock = $$(".sort");
+let hideButtonBlock = $$(".main-reviews-wrap-btn-block");
 window.addEventListener('change', function(){
     if (document.querySelectorAll('input[type="checkbox"]:checked').length == 0) {
-        hideSortBlock.style.display = "none";
-        hideButtonBlock.style.display = "none";
+        if(hideSortBlock.length != 0) {
+            hideSortBlock[0].style.display = "none";
+        }
+        if(hideButtonBlock.length != 0) {
+            hideButtonBlock[0].style.display = "none";
+        }
     } else {
-        hideSortBlock.style.display = "flex";
-        hideButtonBlock.style.display = "block";
+        if(hideSortBlock.length != 0) {
+            hideSortBlock[0].style.display = "flex";
+        }
+        if(hideButtonBlock.length != 0) {
+            hideButtonBlock[0].style.display = "block";
+        }
     }
 })
+

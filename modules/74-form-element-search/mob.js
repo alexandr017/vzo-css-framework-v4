@@ -71,9 +71,10 @@ document.addEventListener('DOMContentLoaded', function(){
         searchItems(e.target.value);
     })
 });
+
 function searchItems(searchHint){
     var search_hint = searchHint;
-    if(search_hint.indexOf('банк') == -1 && offersListItemsArr.length != 0){
+    if(typeof offersListItemsArr !== 'undefined' && offersListItemsArr.length != 0){
         var offersListItemsArrAfterSearch = [];
         offersListItemsArr.forEach(function (item) {
             if (item.getElementsByClassName('search-title')[0].innerText.toLowerCase().indexOf(searchHint.toLowerCase()) == -1) {
@@ -86,8 +87,8 @@ function searchItems(searchHint){
 
         var pagesCount = Math.ceil(offersListItemsArrAfterSearch.length/10);
         if(offersListItemsArrAfterSearch.length != 0) {
-            page(1,offersListItemsArrAfterSearch);
             window.itemsArr = offersListItemsArrAfterSearch;
+            page(1,offersListItemsArrAfterSearch);
             if (pagesCount == 1) {
                 $$('.pagination')[0].style.display = 'none';
             } else {

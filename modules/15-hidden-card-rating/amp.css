@@ -30,10 +30,11 @@
 }
 
 .amp-hidden-card-rating {
-    display: none;
+    opacity: 0;
+    position: absolute;
 }
 
-.amp-hidden-card-rating:checked ~ .label-for-amp-hidden-card-rating .rating-more{
+.hidden-card-rating:focus-within .label-for-amp-hidden-card-rating .rating-more{
     border-bottom: none;
     border-radius: 5px 5px 0 0;
 }
@@ -42,7 +43,7 @@
     content: url(/v4/images/hidden-rating-arrow-down.svg);
 }
 
-.amp-hidden-card-rating:checked ~ .label-for-amp-hidden-card-rating .rating-more[data-arrow=down]:after {
+.hidden-card-rating:focus-within .label-for-amp-hidden-card-rating .rating-more[data-arrow=down]:after {
     transform: rotate(180deg);
     border-right: 1px solid #E8EEF6;
     border-left: none;
@@ -83,11 +84,9 @@
 .hidden-card-rating .hidden-card-rating-block li a {
     color: #000;
 }
-
-.amp-hidden-card-rating:checked ~ .hidden-card-rating-block{
+.hidden-card-rating:focus-within .hidden-card-rating-block {
     visibility: visible;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     z-index: 1;
 }
-

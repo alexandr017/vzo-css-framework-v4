@@ -8,7 +8,7 @@ function setQuizRangeValues() {
         input.addEventListener('input', quizInpChange)
     });
     for (let i = 0; i < quizNumInput.length; i++) {
-        quizRangeInput[i].style.backgroundSize = quizRangeInput[i].value * 100  / (quizRangeInput[i].max - quizRangeInput[i].min) + '% 100%';
+        quizRangeInput[i].style.backgroundSize = (quizRangeInput[i].value-quizRangeInput[i].min) * 100  / (quizRangeInput[i].max - quizRangeInput[i].min) + '% 100%';
     }
 }
 function quizInpChange(e) {
@@ -18,11 +18,20 @@ function quizInpChange(e) {
     let max = target.max;
     if (e.target.type == 'range') {
         target.parentElement.getElementsByClassName('quiz-num-value')[0].value = val;
-    } else {
+    }else {
         target = target.parentElement.getElementsByClassName('quiz-range-value')[0];
+        if(val == '') {
+            val = 0;
+        }
         target.value = val;
     }
-    target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%';
+    let backgroundSize = (val - min) * 100 / (max - min);
+
+    if (backgroundSize < 0) {
+        backgroundSize = 0
+    }
+
+    target.style.backgroundSize = backgroundSize + '% 100%';
 }
 
 document.addEventListener('DOMContentLoaded', setQuizRangeValues);
@@ -45,7 +54,9 @@ inputQuizTermValue.addEventListener('click',function(){
     hideValBlock(inputQuizTermValue, inputQuizTerm);
 });
 
-inputQuizNum.addEventListener('input',function(){
+inputQuizNum.addEventListener('change',function(){
+    setQuizInputRangeValue(inputQuizNum);
+    inputQuizNumValue.innerHTML = inputQuizNum.value;
     addSpaces(inputQuizNum, inputQuizNumValue);
     setTimeout(showInpBlock, 1000, inputQuizNum, inputQuizNumValue);
 });
@@ -55,7 +66,9 @@ inputQuizRangeSum.addEventListener('change',function(){
     setTimeout(showInpBlock, 500, inputQuizNum, inputQuizNumValue);
 });
 
-inputQuizTerm.addEventListener('input',function(){
+inputQuizTerm.addEventListener('change',function(){
+    setQuizInputRangeValue(inputQuizTerm);
+    inputQuizTermValue.innerHTML = inputQuizTerm.value;
     addSpaces(inputQuizTerm, inputQuizTermValue);
     setTimeout(showInpBlock, 1000, inputQuizTerm, inputQuizTermValue);
 });
@@ -64,7 +77,7 @@ inputQuizRangeTerm.addEventListener('change',function(){
     addSpaces(inputQuizTerm, inputQuizTermValue);
     setTimeout(showInpBlock, 500, inputQuizTerm, inputQuizTermValue);
 });
-function addQuizInputsParams(params)() {
+function addQuizInputsParams(params) {
     if($$('#mortgageSum').length != 0) {
         params['slf_summ'] = $$('#mortgageSum')[0].value;
     }
@@ -78,12 +91,8 @@ if($$('.total_cards_table_js').length != 0) {
     let term_max = totalTableLastTr.dataset.termmax;
     let sum_min = totalTableLastTr.dataset.summin;
     let term_min = totalTableLastTr.dataset.termmin;
-    if(inputQuizNum.attributes['max']){inputQuizNum.attributes['max'].value = sum_max} else inputQuizNum.setAttribute('max',sum_max);
-    if(inputQuizTerm.attributes['max']){inputQuizTerm.attributes['max'].value = term_max} else inputQuizTerm.setAttribute('max',term_max);
-    if(inputQuizRangeSum.attributes['max']){inputQuizRangeSum.attributes['max'].value = sum_max} else inputQuizRangeSum.setAttribute('max',sum_max);
-    if(inputQuizRangeTerm.attributes['max']){inputQuizRangeTerm.attributes['max'].value = term_max} else inputQuizRangeTerm.setAttribute('max',term_max);
+    if(inputQuizNum.attributes['maxbytable']){inputQuizNum.attributes['maxbytable'].value = sum_max} else inputQuizNum.setAttribute('maxbytable',sum_max);
+    if(inputQuizTerm.attributes['maxbytable']){inputQuizTerm.attributes['maxbytable'].value = term_max} else inputQuizTerm.setAttribute('maxbytable',term_max);
     if(inputQuizNum.attributes['min']){inputQuizNum.attributes['min'].value = sum_min} else inputQuizNum.setAttribute('min',sum_min);
-    if(inputQuizTerm.attributes['min']){inputQuizTerm.attributes['min'].value = term_min} else inputQuizTerm.setAttribute('min',term_min);
     if(inputQuizRangeSum.attributes['min']){inputQuizRangeSum.attributes['min'].value = sum_min} else inputQuizRangeSum.setAttribute('min',sum_min);
-    if(inputQuizRangeTerm.attributes['min']){inputQuizRangeTerm.attributes['min'].value = term_min} else inputQuizRangeTerm.setAttribute('min',term_min);
 }

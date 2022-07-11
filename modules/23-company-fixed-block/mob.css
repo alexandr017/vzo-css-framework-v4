@@ -1,0 +1,32 @@
+.comp-fixed-block {
+    display: none;
+    align-items: center;
+    padding: 0.6em 2em;
+    justify-content: space-between;
+    margin: 70px 0 30px;
+}
+.comp-fixed-text {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.container .comp-fixed {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    max-width: 1110px;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+}
+.comp-fixed-text .btn-cnv {
+    width: 256px;
+}
+@media only screen and (max-width: 1200px) {
+    .container .comp-fixed {
+        width: calc(100% - 2em);
+        max-width: calc(100% - 2em);
+        left: 1em;
+    }
+}

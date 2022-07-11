@@ -21,5 +21,8 @@
 
 .our-securities-text {
     color: #7B878E;
-    font-size: .87rem;
+    font-size: .875rem;
+}
+.our-security-item .h5 {
+    font-size: .875rem;
 }

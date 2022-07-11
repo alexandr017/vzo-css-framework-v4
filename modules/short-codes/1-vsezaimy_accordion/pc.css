@@ -45,3 +45,6 @@
     margin: 10px 0;
     display: inherit;
 }
+.accordion-item .accordion-title {
+    margin-right: 10px;
+}

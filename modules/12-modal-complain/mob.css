@@ -63,8 +63,17 @@
     border: 1px solid #DCE4EC;
     border-top: none;
     width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
 }
-
+.claim-select .select-items::-webkit-scrollbar {
+    width: 5px;
+}
+.claim-select .select-items::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
+}
 .claim-select .select-hide {
     display: none;
 }

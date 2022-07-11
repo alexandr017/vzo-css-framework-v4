@@ -1,7 +1,7 @@
 .lead-wrap {
     background: #FFFFFF;
-    margin-bottom: 30px;
-    padding: 0 65px 15px 65px;
+    margin-bottom: 22px;
+    padding: 0 65px 45px 65px;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
@@ -11,6 +11,11 @@
 .lead-text-block .lead-text {
     font-size: 1.2rem;
 }
+
+.lead-text-block .lead-text-md {
+    font-size: 1.125rem;
+}
+
 .lead-wrap .search-block-1  {
     width: 100%;
 }
@@ -27,11 +32,21 @@
     outline: none;
     background: inherit;
     position: absolute;
+    right: 35px;
+}
+
+.qa-search-clear-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: inherit;
+    position: absolute;
     right: 13px;
 }
 
 .lead-wrap .search-block-1 {
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 .lead-wrap .input-text {
@@ -61,6 +76,7 @@
 .search-block-terms {
     width:100%;
     margin-top: 25px;
+    position: relative;
 }
 
 
@@ -73,29 +89,52 @@
 .search-block-terms.hints form{
     margin-bottom:0;
 }
-.search-block-terms.hints .search-block__input{
+.search-block-terms.hints .search-block-container {
     border-radius: 22px 22px 0 0;
     background: #fff;
     border-bottom: 1px solid #f5f5f5;
 }
-
+.search-block-terms .search-block-container {
+    border-radius: 23px;
+}
 
 .search-block-terms .searched-terms-block {
     max-height: 180px;
     overflow: auto;
     padding: 0;
-
 }
 
 .search-block-terms .searched-terms-block::-webkit-scrollbar {
-    width:0;
+    width: 5px;
+    background-color: #fff;
+    height: 30px;
+}
+.search-block-terms .searched-terms-block::-webkit-scrollbar-thumb {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
 }
 
-.search-block-terms .searched-terms-block span {
+.search-block-terms .searched-terms-block span a {
     display: flex;
     align-items: center;
     list-style-type: none !important;
     cursor: pointer;
     border-bottom: 1px solid #f5f5f5;
     padding: 5px 20px;
+}
+.search-block-terms .search-block__input {
+    width: calc(100% - 40px);
+    background-color: inherit;
+}
+.search-block-terms .search-block-close-btn {
+    display: none;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: inherit;
+    height: 40px;
+    width: 40px;
+    padding: 12px 8px;
+    position: absolute;
+    right: 0;
 }

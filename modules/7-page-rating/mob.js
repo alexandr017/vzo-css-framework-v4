@@ -26,36 +26,36 @@ if($$('.rating-wrap').length !=0) {
         }
     }
 }
-
-var ratingStars = $$('.rating-wrap')[0].getElementsByTagName('svg');
-for(let i=0; i < ratingStars.length; i++) {
-    ratingStars[i].addEventListener('click', function (e) {
-        var elem = e.target.closest('svg');
-        e.preventDefault();
-        let data = {
-            '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
-            'rating': elem.attributes['data-item'].value,
-            'id': elem.parentElement.attributes['data-id'].value,
-            'type' : elem.parentElement.attributes['data-type'].value,
-        };
-        if(elem.parentElement.attributes['data-id']) {
-            fetch('/forms/rating_add', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json;charset=utf-8'
-                },
-                body: JSON.stringify(data)
-            }).then((res) => {
-                return res.text().then((value) => {
-                    $$('.rating-area .rating-wrap')[0].remove();
-                    $$('.rating-area .rating-val')[0].remove();
-                    $$('.rating-area')[0].innerHTML += '<div class="result-rating-vote">' + value + '</div>';
-                }).catch((err) => {
+if($$('.rating-wrap').length != 0){
+    var ratingStars = $$('.rating-wrap')[0].getElementsByTagName('svg');
+    for(let i=0; i < ratingStars.length; i++) {
+        ratingStars[i].addEventListener('click', function (e) {
+            var elem = e.target.closest('svg');
+            e.preventDefault();
+            let data = {
+                '_token': document.getElementsByName('csrf-token')[0].attributes[1].nodeValue,
+                'rating': elem.attributes['data-item'].value,
+                'id': elem.parentElement.attributes['data-id'].value,
+                'type' : elem.parentElement.attributes['data-type'].value,
+            };
+            if(elem.parentElement.attributes['data-id']) {
+                fetch('/forms/rating_add', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify(data)
+                }).then((res) => {
+                    return res.text().then((value) => {
+                        $$('.rating-area .rating-wrap')[0].remove();
+                $$('.rating-area .rating-val')[0].remove();
+                $$('.rating-area')[0].innerHTML += '<div class="result-rating-vote">' + value + '</div>';
+            }).catch((err) => {
                     console.log(err);
-                });
             });
-        }
-        return false;
-    })
+            });
+            }
+            return false;
+        })
+    }
 }
-

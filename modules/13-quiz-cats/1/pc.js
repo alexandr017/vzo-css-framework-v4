@@ -9,7 +9,7 @@ function setQuizRangeValues() {
         input.addEventListener('input', quizInpChange)
     });
     for (let i = 0; i < quizNumInput.length; i++) {
-        quizRangeInput[i].style.backgroundSize = quizRangeInput[i].value * 100  / (quizRangeInput[i].max - quizRangeInput[i].min) + '% 100%';
+        quizRangeInput[i].style.backgroundSize = (quizRangeInput[i].value - quizRangeInput[i].min) * 100  / (quizRangeInput[i].max - quizRangeInput[i].min) + '% 100%';
     }
 }
 function quizInpChange(e) {
@@ -21,6 +21,9 @@ function quizInpChange(e) {
         target.parentElement.getElementsByClassName('quiz-num-value')[0].value = val;
     } else {
         target = target.parentElement.getElementsByClassName('quiz-range-value')[0];
+        if(val == '') {
+            val = 0;
+        }
         target.value = val;
     }
     let backgroundSize = (val - min) * 100 / (max - min);
@@ -34,16 +37,17 @@ function quizInpChange(e) {
 
 function setQuizInputRangeValue(input) {
     let minValue = parseInt(input.getAttribute('min'));
+    let maxByTableValue = parseInt(input.getAttribute('maxbytable'));
     let maxValue = parseInt(input.getAttribute('max'));
     let inputValue = parseInt(input.value)
 
     if (!minValue || !maxValue) {
         return;
     }
-
-    if (inputValue > maxValue) {
+    input.setAttribute('valuebeforechange',inputValue);
+    if (inputValue > maxByTableValue) {
         input.value = maxValue;
-    } else if (inputValue < minValue) {
+    } else if (inputValue < minValue && inputValue != 0) {
         input.value = minValue;
     }
 }
@@ -67,11 +71,11 @@ inputQuizNumValue.addEventListener('click',function(){
 inputQuizDaysValue.addEventListener('click',function(){
     hideValBlock(inputQuizDaysValue, inputQuizDays);
 });
-
 inputQuizNum.addEventListener('change',function(){
     setQuizInputRangeValue(inputQuizNum);
+    inputQuizNumValue.innerHTML = inputQuizNum.value;
     addSpaces(inputQuizNum, inputQuizNumValue);
-    setTimeout(showInpBlock, 1000, inputQuizNum, inputQuizNumValue);
+    setTimeout(showInpBlock, 500, inputQuizNum, inputQuizNumValue);
 });
 
 inputQuizRangeSum.addEventListener('change',function(){
@@ -81,8 +85,9 @@ inputQuizRangeSum.addEventListener('change',function(){
 
 inputQuizDays.addEventListener('change',function(){
     setQuizInputRangeValue(inputQuizDays);
+    inputQuizDays.innerHTML = inputQuizDays.value;
     addSpaces(inputQuizDays, inputQuizDaysValue);
-    setTimeout(showInpBlock, 1000, inputQuizDays, inputQuizDaysValue);
+    setTimeout(showInpBlock, 500, inputQuizDays, inputQuizDaysValue);
 });
 
 inputQuizRangeDays.addEventListener('change',function(){
@@ -104,12 +109,12 @@ if($$('.total_cards_table_js').length != 0) {
     let term_max = totalTableLastTr.dataset.termmax;
     let sum_min = totalTableLastTr.dataset.summin;
     let term_min = totalTableLastTr.dataset.termmin;
-    if(inputQuizNum.attributes['max']){inputQuizNum.attributes['max'].value = sum_max} else inputQuizNum.setAttribute('max',sum_max);
-    if(inputQuizDays.attributes['max']){inputQuizDays.attributes['max'].value = term_max} else inputQuizDays.setAttribute('max',term_max);
-    if(inputQuizRangeSum.attributes['max']){inputQuizRangeSum.attributes['max'].value = sum_max} else inputQuizRangeSum.setAttribute('max',sum_max);
-    if(inputQuizRangeDays.attributes['max']){inputQuizRangeDays.attributes['max'].value = term_max} else inputQuizRangeDays.setAttribute('max',term_max);
+    if(inputQuizNum.attributes['maxbytable']){inputQuizNum.attributes['maxbytable'].value = sum_max} else inputQuizNum.setAttribute('maxbytable',sum_max);
+    if(inputQuizDays.attributes['maxbytable']){inputQuizDays.attributes['maxbytable'].value = term_max} else inputQuizDays.setAttribute('maxbytable',term_max);
+    // if(inputQuizRangeSum.attributes['max']){inputQuizRangeSum.attributes['max'].value = sum_max} else inputQuizRangeSum.setAttribute('max',sum_max);
+    // if(inputQuizRangeDays.attributes['max']){inputQuizRangeDays.attributes['max'].value = term_max} else inputQuizRangeDays.setAttribute('max',term_max);
     if(inputQuizNum.attributes['min']){inputQuizNum.attributes['min'].value = sum_min} else inputQuizNum.setAttribute('min',sum_min);
-    if(inputQuizDays.attributes['min']){inputQuizDays.attributes['min'].value = term_min} else inputQuizDays.setAttribute('min',term_min);
+    // if(inputQuizDays.attributes['min']){inputQuizDays.attributes['min'].value = term_min} else inputQuizDays.setAttribute('min',term_min);
     if(inputQuizRangeSum.attributes['min']){inputQuizRangeSum.attributes['min'].value = sum_min} else inputQuizRangeSum.setAttribute('min',sum_min);
-    if(inputQuizRangeDays.attributes['min']){inputQuizRangeDays.attributes['min'].value = term_min} else inputQuizRangeDays.setAttribute('min',term_min);
+    // if(inputQuizRangeDays.attributes['min']){inputQuizRangeDays.attributes['min'].value = term_min} else inputQuizRangeDays.setAttribute('min',term_min);
 }

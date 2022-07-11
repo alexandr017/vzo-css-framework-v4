@@ -73,12 +73,12 @@
     position: relative;
 }
 .card-compare-next {
-    top: 50%;
+    top: 60px;
     right: 5em;
     position: absolute;
 }
 .card-compare-prev {
-    top: 50%;
+    top: 60px;
     left: 5em;
     position: absolute;
     display: none;

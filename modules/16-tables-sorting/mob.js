@@ -196,38 +196,38 @@ var dataTable = (function () {
                     trCollections = [].slice.call(trCollections);
                     trCollections.forEach((datatableTrEl) => {
                         if(datatableTrEl.getElementsByTagName('td').length != 0){
-                        datatableTrEl.classList.remove('matchesToSearch');
-                        if(findedRows < itemsCountPerPage) {
-                            datatableTrEl.classList.add('showed-items');
-                            datatableTrEl.classList.remove('dataTableHiddenTd');
-                        }else {
-                            datatableTrEl.classList.add('dataTableHiddenTd');
+                            datatableTrEl.classList.remove('matchesToSearch');
+                            if(findedRows < itemsCountPerPage) {
+                                datatableTrEl.classList.add('showed-items');
+                                datatableTrEl.classList.remove('dataTableHiddenTd');
+                            }else {
+                                datatableTrEl.classList.add('dataTableHiddenTd');
+                            }
+                            findedRows++;
                         }
-                        findedRows++;
-                    }
-                })
+                    })
                     createContent(0,itemsCountPerPage,false,true);
                     return;
                 }
             }
             trCollections.forEach((datatableTrEl) => {
                 if(datatableTrEl.getElementsByTagName('td').length != 0){
-                var datatableTrText = datatableTrEl.innerText.toLowerCase().replace(/\s/g, '');
-                if(datatableTrText.indexOf(inpVal) == -1) {
-                    datatableTrEl.classList.add('dataTableHiddenTd');
-                    datatableTrEl.classList.remove('matchesToSearch');
-                } else {
-                    datatableTrEl.classList.add('matchesToSearch');
-                    if(findedRows < itemsCountPerPage) {
-                        datatableTrEl.classList.remove('dataTableHiddenTd');
-                        datatableTrEl.classList.remove('display_none');
-                    } else {
+                    var datatableTrText = datatableTrEl.innerText.toLowerCase().replace(/\s/g, '');
+                    if(datatableTrText.indexOf(inpVal) == -1) {
                         datatableTrEl.classList.add('dataTableHiddenTd');
+                        datatableTrEl.classList.remove('matchesToSearch');
+                    } else {
+                        datatableTrEl.classList.add('matchesToSearch');
+                        if(findedRows < itemsCountPerPage) {
+                            datatableTrEl.classList.remove('dataTableHiddenTd');
+                            datatableTrEl.classList.remove('display_none');
+                        } else {
+                            datatableTrEl.classList.add('dataTableHiddenTd');
+                        }
+                        findedRows++;
                     }
-                    findedRows++;
                 }
-            }
-        })
+            })
 
             if(findedRows != 0) {
                 pagesCount = Math.ceil(findedRows/itemsCountPerPage);
@@ -273,11 +273,11 @@ var dataTable = (function () {
                     let sortElem = event.target.closest('th');
                     if(sortElem.classList.contains('sorted') && sortElem.dataset['order'] == 1){
                         sortItemUp.classList.toggle("jsTableDisplayNone");
-                        sortingArrowsCollection[i].style.alignItems = 'flex-end';
+                        // sortingArrowsCollection[i].style.alignItems = 'flex-end';
                         sortItemDown.classList.add('activeSortItem');
                     } else {
                         sortItemDown.classList.toggle("jsTableDisplayNone");
-                        sortingArrowsCollection[i].style.alignItems = 'flex-start';
+                        // sortingArrowsCollection[i].style.alignItems = 'flex-start';
                         sortItemUp.classList.add('activeSortItem');
                     }
                     afterSort = true;

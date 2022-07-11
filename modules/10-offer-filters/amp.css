@@ -3,7 +3,7 @@
     box-sizing: border-box;
     border-radius: 5px;
     padding: 0 32px 0 22px;
-    margin-bottom: 16px;
+    margin: 16px 0;
 }
 
 .open-offer-filters-block{
@@ -28,6 +28,7 @@
     padding: 0 20px 10px 20px;
     display: none;
     overflow: hidden;
+    text-align: left;
 }
 
 .accordion-line {

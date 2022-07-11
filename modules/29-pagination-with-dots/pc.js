@@ -53,6 +53,9 @@ function page(e,offersListItemsArrAfterSearch=false) {
             }
         }
         $$('.offers-list')[0].innerHTML = pageItems;
+        // if(pagesCount == pageNum && $$('.pagination').length != 0) {
+        //     $$('.offers-list .card ')[$$('.offers-list .card ').length-1].scrollIntoView({behavior: "smooth"});
+        // }
     }
     paintPages(pagesCount,pageNum);
 }

@@ -6,6 +6,10 @@
     margin: 26px 0 20px 0;
 }
 
+.sort-margin .quiz-count-cards.h5 {
+    margin: 16px 0 16px 0;
+}
+
 .quiz {
     background: #fff;
     padding: 10px 16px;
@@ -118,4 +122,13 @@
     font-size: 1.375rem;
     width: 100%;
     margin: 0.5em 0;
+}
+.reset-quiz-params {
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #636363;
+    font-weight: normal;
+    font-size: 0.9375rem;
+    width: 100px;
+    margin: 15px auto 0;
 }

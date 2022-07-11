@@ -5,11 +5,11 @@ let indexItem = 1;
 selectMenu.forEach(a => {
     a.addEventListener('click', b => {
         let nextEl = b.target.nextElementSibling;
-nextEl.classList.toggle('toggleSelect');
-nextEl.style.zIndex = indexItem++;
-a.classList.toggle('openSelect');
-a.dataset.type = (a.dataset.type == 'up') ? 'down' : 'up';
-})
+        nextEl.classList.toggle('toggleSelect');
+        nextEl.style.zIndex = indexItem++;
+        a.classList.toggle('openSelect');
+        a.dataset.type = (a.dataset.type == 'up') ? 'down' : 'up';
+    })
 });
 //клиентская сортировка(сли нужна серверная сортировка,подключить файл public\v4\js\sorting-load-cards\load.js)
 if($$('.sort').length != 0 && $$('.sort')[0].classList.contains('with-pagination')) {
@@ -54,7 +54,7 @@ if($$('.sort').length != 0 && $$('.sort')[0].classList.contains('with-pagination
         } else {
             sortedArr.forEach((elem)=>{
                 elementsBlock.append(elem);
-        });
+            });
         }
     };
 }
@@ -66,7 +66,7 @@ document.addEventListener('click',function (e) {
             let selDropdown = document.getElementsByClassName('selected-dropdown')[0];
             selDropdown.classList.remove('toggleSelect');
             selectedItem.classList.remove('openSelect');
-            selectedItem.dataset.type = 'up';
+            // selectedItem.dataset.type = 'up';
         }
     }
 })

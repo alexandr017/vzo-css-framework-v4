@@ -1,10 +1,12 @@
-$$('#menuButton')[0].addEventListener('click', () => {
-    let headerMenuInner = $$('.header-menu-inner')[0];
-headerMenuInner.classList.toggle('active-menu');
+if($$('#menuButton').length != 0) {
+    $$('#menuButton')[0].addEventListener('click', () => {
+        let headerMenuInner = $$('.header-menu-inner')[0];
+    headerMenuInner.classList.toggle('active-menu');
 
-headerMenuInner.closest('.container').classList.toggle('header-active');
-document.body.classList.toggle('fixed-body')
+    headerMenuInner.closest('.container').classList.toggle('header-active');
+    document.body.classList.toggle('fixed-body')
 });
+}
 
 $$('.header-item-menu-title').forEach((el) => {
     el.addEventListener('click', () => {
@@ -22,47 +24,53 @@ function closeMenuButton(){
     },1000);
 }
 
-let searchClickBg = $$('.search-bg')[0];
+let searchClickBg = $$('.search-bg');
+if(searchClickBg.length != 0) {
 //change click for touchend
-searchClickBg.addEventListener('click',function (e) {
-    if(!e.target.classList.contains('show-form')){
-        let openedSearchBlock = document.getElementsByClassName('header-search-form-wrap');
-        if(openedSearchBlock.length != 0) {
-            openedSearchBlock[0].classList.remove('show-form');
+    searchClickBg[0].addEventListener('click',function (e) {
+        if(!e.target.classList.contains('show-form')){
+            let openedSearchBlock = document.getElementsByClassName('header-search-form-wrap');
+            if(openedSearchBlock.length != 0) {
+                openedSearchBlock[0].classList.remove('show-form');
+            }
         }
-    }
-})
+    })
+}
 
 initMobMenu();
 function initMobMenu(){
-    let button =  $$('#menuButton')[0];
-    button.addEventListener('click', () => {
-        button.classList.toggle('is-active');
-});
+    let button =  $$('#menuButton');
+    if(button.length != 0) {
+        button[0].addEventListener('click', () => {
+            button[0].classList.toggle('is-active');
+    });
+    }
 }
 
-
-$$('#searchButtonShowForm')[0].addEventListener('click', () => {
-    let form = $$('.header-search-form-wrap')[0];
-form.classList.add('show-form');
+if($$('#searchButtonShowForm').length != 0) {
+    $$('#searchButtonShowForm')[0].addEventListener('click', () => {
+        let form = $$('.header-search-form-wrap')[0];
+    form.classList.add('show-form');
 });
+}
+if($$('#searchButtonHideForm').length !=0){
+    $$('#searchButtonHideForm')[0].addEventListener('click', () => {
+        let form = $$('.header-search-form-wrap')[0];
+    form.classList.remove('show-form');
 
-$$('#searchButtonHideForm')[0].addEventListener('click', () => {
-    let form = $$('.header-search-form-wrap')[0];
-form.classList.remove('show-form');
-
-let headerMenuInner = $$('.header-menu-inner')[0];
-headerMenuInner.classList.remove('active-menu');
-headerMenuInner.closest('.container').classList.remove('header-active');
-document.body.classList.remove('fixed-body')
-$$('#menuButton')[0].classList.remove('is-active');
+    let headerMenuInner = $$('.header-menu-inner')[0];
+    headerMenuInner.classList.remove('active-menu');
+    headerMenuInner.closest('.container').classList.remove('header-active');
+    document.body.classList.remove('fixed-body')
+    $$('#menuButton')[0].classList.remove('is-active');
 });
+}
 
 document.addEventListener('DOMContentLoaded', function(){
     var favorites = localStorage.getItem('vzo');
     if(favorites != null) {
         favorites = favorites.split(',');
-        if(favorites.length != 0){
+        if(favorites.length != 0 && $$('.fav-items-count').length != 0){
             $$('.fav-items-count')[0].innerHTML = favorites.length;
             $$('.fav-items-count')[0].style.display = 'block';
         }

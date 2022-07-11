@@ -3,7 +3,7 @@
 }
 .header {
     width: 100%;
-    height: 60px;
+    height: 64px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -30,27 +30,24 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
+.header-logo {
+    align-items: center;
+}
+
 .header .logo .logo-name {
     font-size: 1.875rem;
     font-weight: 700;
     line-height: 1em;
     font-family: 'Inter', sans-serif;
     display: block;
-    color: #000 !important;
-}
-
-.header .logo .logo-text {
-    font-size: .625rem;
-    display: block;
-    margin-top: -5px;
-    color: #000 !important;
+    max-width: 64px;
 }
 
 .hl-item-title, .hr-item-title {
     font-family: 'Inter', sans-serif;
     font-size: 0.875rem;
     padding: 15px 5px;
-    margin: 0 5px;
+    margin: 0 7px;
     cursor: pointer;
     color: #222735;
     position: relative;
@@ -79,23 +76,23 @@
     display: none;
 }
 .h-sub-menu-mag {
-    padding: 40px 0 40px 205px;
+    padding: 40px 440px 40px 125px;
 }
 
 .h-sub-menu-other {
-    padding: 40px 0 40px 205px;
+    padding: 40px 0 40px 125px;
 }
 
 .h-sub-menu-cards {
-    padding: 40px 150px 40px 205px;
+    padding: 40px 170px 40px 125px;
 }
 
 .h-sub-menu-credit {
-    padding: 40px 230px 40px 205px;
+    padding: 40px 320px 40px 125px;
 }
 
 .h-sub-menu-loans {
-    padding: 40px 210px 40px 205px;
+    padding: 40px 350px 40px 125px;
 }
 
 .hl-item:hover .h-sub-menu {
@@ -115,7 +112,8 @@
 }
 
 .hl-item:hover .h-sub-menu a {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    font-family: 'Proxima Nova Rg', sans-serif;
     display: inline-block;
     line-height: 2.5rem;
 }
@@ -148,6 +146,8 @@
 .hl-item:hover .h-sub-menu .h-sub-title {
     font-size: 1.125rem;
     font-weight: 600;
+    line-height: 2.5rem;
+    font-family: 'Proxima Nova Rg', sans-serif;
 }
 
 .h-sub-menu a, .h-sub-menu span {
@@ -235,12 +235,12 @@ header svg {
 
 .h-sub-menu-auth-user .sub-nav_one-column span{
     display: block;
-    color: #95A5B0;
+    color: #888;
 }
 
 .h-sub-menu-auth-user .sub-nav_one-column a {
     display: block;
-    color: #222735;
+    color: #000;
 }
 
 .h-sub-menu-more-info .sub-nav_one-column,
@@ -259,7 +259,7 @@ header svg {
 }
 
 .h-sub-menu-more-info .more-info-el a, .h-sub-menu-more-info .more-info-el span{
-    color:#222735;
+    color: #000;
     display: flex;
     align-items: center;
 }
@@ -440,6 +440,18 @@ header svg {
     margin-top:13px;
     border-radius: 50%;
 }
+.header .hr-item-tel {
+    width: 200px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.hr-item-tel .h6 {
+    color: #636363;
+    font-size: 0.875rem;
+}
+.header-right-menu {
+    align-items: center;
+}
 
 @media screen and (max-width: 1200px) {
     .search-block {
@@ -450,6 +462,15 @@ header svg {
 
 @media screen and (max-width: 992px) {
     .search-block {
-        width: 460px;
+        width: 490px;
+        margin-left: -5px;
+    }
+
+    header svg {
+        margin-left: 0;
+    }
+
+    .hl-item-title, .hr-item-title {
+        margin: 0;
     }
 }

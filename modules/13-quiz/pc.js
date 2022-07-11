@@ -26,7 +26,6 @@
 // }
 //
 // document.addEventListener('DOMContentLoaded', setQuizRangeValues);
-//
 // let inputQuizNumValue = document.querySelectorAll('.inputQuizNumValue')[0];
 // let inputQuizNum = document.querySelectorAll('.inputQuizNum')[0];
 // let inputQuizRangeSum = document.querySelectorAll('.inputQuizRangeSum')[0];
@@ -67,11 +66,59 @@
 // });
 var rangInputs = document.querySelectorAll('.quiz-block input[type=range]');
 for(let i=0;i<rangInputs.length;i++) {
+    if(rangInputs[i].previousElementSibling.tagName == 'DIV') {
+        rangInputs[i].previousElementSibling.addEventListener('click', function (e) {
+            rangInputs[i].valueAsNumber = e.target.innerHTML.replace(' ','');
+        })
+    }
+
+    if(rangInputs[i].previousElementSibling.previousElementSibling.tagName == 'INPUT') {
+        rangInputs[i].previousElementSibling.previousElementSibling.addEventListener('focus', function (e) {
+            //         // if(Number(e.target.value) > Number(e.target.max)) {
+            //         //     e.target.value = e.target.max;
+            //         //     rangInputs[i].valueAsNumber = e.target.max;
+            //         // }
+            const end = e.target.value.length;
+            e.target.type = 'text';
+            e.target.setSelectionRange(end, end);
+            e.target.type = 'number';
+            e.target.focus();
+        })
+    }
     rangInputs[i].addEventListener('input',function (e) {
         let valOfRangeInp = e.target.value;
         let closestTextInpBlock = e.target.previousElementSibling;
         if(closestTextInpBlock.length != 0){
+            if(e.target.value == e.target.max) {
+                valOfRangeInp += '+';
+            }
             closestTextInpBlock.innerHTML = valOfRangeInp;
         }
     })
+}
+var quiaResetBtn = $$('.reset-quiz-params');
+if(quiaResetBtn.length != 0) {
+    quiaResetBtn[0].addEventListener('click',function (e) {
+        // var quizNumInputs = e.target.closest('.quiz-block').querySelectorAll('input[type=number]');
+        // for(let i=0;i<quizNumInputs.length;i++) {
+        //     quizNumInputs[i].value = quizNumInputs[i].min;
+        //     quizNumInputs[i].closest('.quiz-part-block').querySelectorAll('input[type=range]')[0].valueAsNumber = quizNumInputs[i].min;
+        //     quizNumInputs[i].closest('.quiz-part-block').querySelectorAll('input[type=range]')[0].style.backgroundSize = '0 100%';
+        //     quizNumInputs[i].closest('.quiz-part-block').querySelectorAll('div')[0].innerHTML = quizNumInputs[i].min;
+        // }
+        location.reload();
+    })
+}
+
+function setQuizInputRangeValue(input) {
+    let minValue = parseInt(input.getAttribute('min'));
+    let maxByTableValue = parseInt(input.getAttribute('maxbytable'));
+    let maxValue = parseInt(input.getAttribute('max'));
+    let inputValue = parseInt(input.value)
+    input.setAttribute('valuebeforechange',inputValue);
+    if (inputValue > maxByTableValue) {
+        input.value = maxValue;
+    } else if (inputValue < minValue && inputValue != 0) {
+        input.value = minValue;
+    }
 }
