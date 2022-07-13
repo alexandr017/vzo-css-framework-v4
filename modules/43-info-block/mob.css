@@ -1,3 +1,6 @@
 .info-block {
     padding: 30px 0;
 }
+.info-block p {
+    margin: 0;
+}

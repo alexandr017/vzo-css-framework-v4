@@ -45,9 +45,11 @@
     align-items: center;
     margin-top: 40px;
 }
+
 .employee-short-card-btn-wrap .btn {
     width: 100%;
 }
+
 .employee-card-img {
     overflow: hidden;
     max-height: 215px;
@@ -108,4 +110,29 @@
 
 .employee-short-card-tooltip:hover .tooltip{
     display: block;
+}
+
+.employee-short-card-position-expert {
+    font-size: .87rem;
+    margin-top: 5px;
+    height: 30%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.employee-short-card-info-expert {
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px 0;
+    height: 205px;
+    margin-top: -17px;
+}
+.employee-short-card-btn-wrap-expert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 25px;
 }
