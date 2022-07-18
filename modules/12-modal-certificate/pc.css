@@ -1,0 +1,27 @@
+
+.modal-certificate .modal-container {
+    min-height: fit-content;
+    min-width: fit-content;
+    overflow: hidden;
+}
+
+.modal-certificate .modal-block-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+
+}
+
+.description {
+    margin: 0 5% 20px 5%;
+    max-width: fit-content;
+    text-align: center;
+
+}
+.certificate-img {
+    padding: 0 10%;
+    max-width: 100%;
+    max-height: 75vh;
+}
