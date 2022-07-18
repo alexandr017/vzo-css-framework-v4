@@ -365,6 +365,7 @@ table .main-td {
 
 .table-scroll {
     overflow: auto;
+    margin-bottom: 15px;
 }
 
 .table-scroll table {
@@ -381,4 +382,23 @@ table.cell-padding td, table.cell-padding th{
 
 .post-content table td:first-child {
     padding-left: 0;
+}
+.content table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0.5px #e5e5e5;
+    margin-bottom: 15px;
+}
+.content table tr td {
+    border: 1px solid #E5E5E5;
+    padding: 18px 22px;
+    min-width: 200px;
+}
+.table-scroll::-webkit-scrollbar {
+    background-color: #fff;
+    height: 5px;
+}
+.table-scroll::-webkit-scrollbar-thumb {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
 }

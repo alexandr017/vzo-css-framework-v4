@@ -35,6 +35,7 @@ function quizInpChange(e) {
         }
         target.value = val;
     }
+    debugger
     let backgroundSize = (val - min) * 100 / (max - min);
 
     if (backgroundSize < 0) {
@@ -54,7 +55,7 @@ let inputQuizTermValue = document.querySelectorAll('.inputQuizTermValue')[0];
 let inputQuizRangeTerm = document.querySelectorAll('.inputQuizRangeTerm')[0];
 
 addSpaces(inputQuizNum, " ₽",  inputQuizNumValue);
-addSpaces(inputQuizTerm, " дней",  inputQuizTermValue);
+addSpaces(inputQuizTerm, " месяцев",  inputQuizTermValue);
 
 inputQuizNumValue.addEventListener('click',function(){
     hideValBlock(inputQuizNumValue, inputQuizNum);
@@ -65,7 +66,7 @@ inputQuizTermValue.addEventListener('click',function(){
 });
 
 
-inputQuizNum.addEventListener("change",function(){
+inputQuizNum.addEventListener("change",function(){debugger
     setQuizInputRangeValue(inputQuizNum);
     inputQuizNumValue.innerHTML = inputQuizNum.value;
     addSpaces(inputQuizNum, " ₽",  inputQuizNumValue);
@@ -80,12 +81,12 @@ inputQuizRangeSum.addEventListener('change',function(){
 inputQuizTerm.addEventListener("change",function(){
     setQuizInputRangeValue(inputQuizTerm);
     inputQuizTermValue.innerHTML = inputQuizTerm.value;
-    addSpaces(inputQuizTerm, " дней",  inputQuizTermValue);
+    addSpaces(inputQuizTerm, " месяцев",  inputQuizTermValue);
     setTimeout(showInpBlock, 500, inputQuizTerm, inputQuizTermValue);
 });
 
 inputQuizRangeTerm.addEventListener("change",function(){
-    addSpaces(inputQuizTerm, " дней",  inputQuizTermValue);
+    addSpaces(inputQuizTerm, " месяцев",  inputQuizTermValue);
     setTimeout(showInpBlock, 500, inputQuizTerm, inputQuizTermValue);
 });
 function addQuizInputsParams(params) {
@@ -106,4 +107,5 @@ if($$('.total_cards_table_js').length != 0) {
     if(inputQuizTerm.attributes['maxbytable']){inputQuizTerm.attributes['maxbytable'].value = term_max} else inputQuizTerm.setAttribute('maxbytable',term_max);
     if(inputQuizNum.attributes['min']){inputQuizNum.attributes['min'].value = sum_min} else inputQuizNum.setAttribute('min',sum_min);
     if(inputQuizRangeSum.attributes['min']){inputQuizRangeSum.attributes['min'].value = sum_min} else inputQuizRangeSum.setAttribute('min',sum_min);
+    if(inputQuizRangeSum.attributes['max']){inputQuizRangeSum.attributes['max'].value = sum_max} else inputQuizRangeSum.setAttribute('max',sum_max);
 }

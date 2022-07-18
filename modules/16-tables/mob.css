@@ -214,6 +214,7 @@ table .main-td {
 
 .table-scroll {
     overflow: auto;
+    margin-bottom: 15px;
 }
 
 .table-scroll table {
@@ -226,4 +227,43 @@ table tr.hide {
 .total_cards_table_text {
     font-size: 16px;
     padding: 0 16px;
+}
+
+.table-toggle-wrap tr:first-of-type {
+    vertical-align: baseline;
+}
+
+.table-toggle-wrap td {
+    padding: 4px 8px;
+}
+.content table {
+    border-collapse: collapse;
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 0 0 0.5px #e5e5e5;*/
+    margin-bottom: 15px;
+}
+.content table tr td {
+    border: 1px solid #E5E5E5;
+    padding: 9px 15px;
+    /*min-width: 200px;*/
+}
+.table-scroll::-webkit-scrollbar {
+    background-color: #fff;
+    height: 5px;
+}
+.table-scroll::-webkit-scrollbar-thumb {
+    background: rgba(135, 145, 159, 0.4);
+    border-radius: 3px;
+}
+@media only screen and (max-width: 540px) {
+    .content table {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+    .content table tr td:first-of-type {
+        border-left: none;
+    }
+    .content table tr td:last-of-type {
+        border-right: none;
+    }
 }

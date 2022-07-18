@@ -74,10 +74,6 @@ for(let i=0;i<rangInputs.length;i++) {
 
     if(rangInputs[i].previousElementSibling.previousElementSibling.tagName == 'INPUT') {
         rangInputs[i].previousElementSibling.previousElementSibling.addEventListener('focus', function (e) {
-            //         // if(Number(e.target.value) > Number(e.target.max)) {
-            //         //     e.target.value = e.target.max;
-            //         //     rangInputs[i].valueAsNumber = e.target.max;
-            //         // }
             const end = e.target.value.length;
             e.target.type = 'text';
             e.target.setSelectionRange(end, end);
@@ -99,13 +95,6 @@ for(let i=0;i<rangInputs.length;i++) {
 var quiaResetBtn = $$('.reset-quiz-params');
 if(quiaResetBtn.length != 0) {
     quiaResetBtn[0].addEventListener('click',function (e) {
-        // var quizNumInputs = e.target.closest('.quiz-block').querySelectorAll('input[type=number]');
-        // for(let i=0;i<quizNumInputs.length;i++) {
-        //     quizNumInputs[i].value = quizNumInputs[i].min;
-        //     quizNumInputs[i].closest('.quiz-part-block').querySelectorAll('input[type=range]')[0].valueAsNumber = quizNumInputs[i].min;
-        //     quizNumInputs[i].closest('.quiz-part-block').querySelectorAll('input[type=range]')[0].style.backgroundSize = '0 100%';
-        //     quizNumInputs[i].closest('.quiz-part-block').querySelectorAll('div')[0].innerHTML = quizNumInputs[i].min;
-        // }
         location.reload();
     })
 }
