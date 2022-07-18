@@ -1,16 +1,20 @@
 .personal-achievements {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .personal-certificates-block {
-    flex-wrap: wrap;
+    overflow: auto;
+    padding-top: 0;
+    height: 340px;
 }
 
+.personal-certificates-block::-webkit-scrollbar {
+    height: 0;
+}
 .personal-certificates-el {
-    width: 350px;
-    height: 370px;
-    margin: 10px;
+    width: 281px;
+    height: 305px;
+    margin: 10px 5px 10px 15px;
 }
 
 .personal-certificates-el img {
@@ -19,16 +23,30 @@
 }
 
 .personal-certificates-info {
-    padding: 15px 30px;
+    padding: 0 15px;
 }
+
+.certificate-title {
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 5;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+
 
 .personal-certificate-image {
     background: rgba(0, 0, 0, 1);
     align-items: center;
     justify-content: center;
     border-radius: 15px 15px 0 0;
-    height: 215px;
-    width: 350px;
+    height: 180px;
+    width: 281px;
 }
 
 .personal-achievements-btn-wrap {
